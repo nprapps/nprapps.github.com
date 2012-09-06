@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <title>{% if page.title %} {{ page.title }} - {% endif %}</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-  <div class="page-container">
-  	<header>
-  		<h1 class="bouncer-container"><a href="/">NPR News Apps</a></h1>
-  	</header>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  	<div class="page clearfix">
-    	<section class="content">
-    		{{ content }}
-    	</section>
-    </div>
-  </div>
-	<footer class="clearfix">
-	  <section class="footer-content">
-	    <p>@ NPR, 2012
-		</section>
-	</footer>
-</body>
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/css/app.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+	    <div class="span9">
+			{{ content }}
+        </div><!--/span-->
+	    <div class="span3">
+            <ul class="nav nav-list">
+              <li class="nav-header">We are the NPR News Apps team. We take data and bring it to the masses. Find our work here and at npr.org</li>
+              <li><a href="#">Our App Nerds</a></li>
+              <li><a href="#">View Our Apps</a></li>
+              <li><a href="#">Got Our Code On GitHub</a></li>
+            </ul>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <footer>
+        <p>&copy; NPR 2012</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+  </body>
 </html>
