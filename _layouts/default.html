@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
@@ -18,7 +19,7 @@
 
   <body>
 	<div class="container">
-		<div class="header"><a href="/"><img src="/img/logo.gif"><img class="nprlogo" src="/img/npr_logo.png" alt="news apps logo"></div>
+		<div><a href="/"><img class="appslogo" src="/img/logo.gif"></a><a href="http://npr.org"><img class="nprlogo" src="/img/npr_logo.png"></a></div>
 		<div class="row">
 		<div class="span9">
 			{{ content }}
@@ -32,11 +33,16 @@
 				<hr>
               <li><a href="#">Got Our Code<br> On GitHub</a></li>
             </ul>
+
+			<div class="twitter-widget">
+				<a class="twitter-timeline" href="https://twitter.com/nprapps/npr-news-apps-team" width="220" height="400"  data-widget-id="245228396911661058">Tweets from @nprapps/npr-news-apps-team</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</div>
         </div>
 		</div>
 
       <footer>
-        <p>&copy; NPR 2012</p>
+        <p class="footer">&copy; NPR 2012</p>
       </footer>
 
     </div>
