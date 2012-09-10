@@ -9,6 +9,7 @@ title: NPR News Apps | Nerd Blog
     <article>
 
     	<header>
+	
 			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 		</header>
 
@@ -21,12 +22,13 @@ title: NPR News Apps | Nerd Blog
     	  {% endfor %}
     	</section> -->
 
-		<section> By {{ post.author }} </section>
-		
-		<section>{{ post.date | date_to_string }} </section>
-		
-		<section> <a href="{{ post.url }}">Read more...</a> </section>
-
+		<div class="post-meta">
+			<ul>
+				<li>By <a href="#">{{ post.author }}</a></li>
+				<li>{{ post.date | date_to_string }}</li>
+				<li><a href="{{ post.url }}">Read More</a></li>
+			</ul>
+		</div>
     </article>
 
 {% endfor %}

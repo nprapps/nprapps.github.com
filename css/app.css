@@ -1,1 +1,71 @@
-a { color:red; }
+body {
+border-top: 10px solid black;    
+}
+
+a {
+    color:#3d80a7;
+    }
+
+a:hover: {
+    color: #33576E;
+    }
+
+hr {
+margin: 18px 0px 18px 0px;
+border-top: 1px solid #CBCBCB;
+}
+
+h2 {
+font-family: arial;
+}
+
+article {
+padding: 20px 0px 20px 0px;
+border-bottom: 1px solid #CBCBCB;
+
+}
+
+.nav-list > li > a {
+color: #666;
+font-weight: bold;
+font-size: 22px;
+line-height: 36px;
+text-align: center;
+}
+
+.header {
+border-bottom: 1px solid #CBCBCB;
+padding-bottom: 25px;
+padding-top: 40px;
+}
+
+.nprlogo {
+float: right;
+padding-right: 4px;
+padding-top: 15px;
+
+}
+
+.nav-list {
+margin-top: 15px;
+}
+
+.entry {
+font-size: 14px;
+color: #333;
+line-height: 22px;
+}
+
+.nav .nav-header {
+text-transform: none;
+font-weight: normal;
+color: #333;
+font-size: 13px;
+}
+
+.post-meta {
+font-size: 12px;
+color: #333;
+font-weight: bold;
+padding-top: 20px;
+}
