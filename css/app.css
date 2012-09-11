@@ -3,41 +3,98 @@ border-top: 10px solid black;
 }
 
 a {
-    color:#3d80a7;
+color:#3d80a7;
+font-weight: bold;
     }
 
 a:hover: {
-    color: #33576E;
+color: #33576E;
+font-weight: bold;
+text-transform: underline;
     }
 
-hr {
-margin: 18px 0px 18px 0px;
-border-top: 1px solid #CBCBCB;
+h1 {
+font-family: arial;
+margin-bottom: 10px;
+font-size: 35px;
 }
 
 h2 {
 font-family: arial;
 }
 
+hr {
+margin: 18px 0px 18px 0px;
+border-top: 1px solid #CBCBCB;
+}
+
+article {
+padding: 20px 0px 20px 0px;
+border-bottom: 1px solid #CBCBCB;
+}
+
+cite {
+float: right;
+font-size: 11px;
+text-decoration: none;
+color: #666;
+}
+
+blockquote p {
+margin: 30px 20px 30px 20px;
+font-size: 14px;
+font-weight: 200;
+line-height: 23px;
+}
+
+.entry li {
+list-style: square;
+color: #555;
+}
+
+.entry ul {
+line-height: 20px;
+margin: 0px 0px 10px 30px;
+}
+
+.caption-right {
+clear: both;
+float: none;
+font-size: 13px;
+color: #333;
+padding: 0px 0px 10px 10px;
+}
+
+.caption-left {
+clear: both;
+float: none;
+font-size: 13px;
+color: #333;
+padding: 7px 20px 10px 0px
+}
+
+.post-media-right {
+float: right;
+}
+
+.post-media-left {
+float: right;
+}
+
 .img-right {
 float: right;
-padding: 0px 0px 10px 10px;
+padding: 0px 0px 5px 10px;
 }
 
 .img-left {
 float: left;
-padding: 7px 20px 10px 0px
+padding: 7px 20px 5px 0px
 }
 
 .footer {
 font-family: arial;
 margin-top: 15px;
 color: #999;
-}
-
-article {
-padding: 20px 0px 20px 0px;
-border-bottom: 1px solid #CBCBCB;
 }
 
 .twitter-widget {
