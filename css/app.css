@@ -174,7 +174,7 @@ padding-right: 10px;
 }
 @media screen and (max-width:600px) { 
 .appslogo { 
-        width:200px;
+        width:170px;
         margin-top: 0px;
     }
 }
@@ -185,6 +185,6 @@ padding-right: 10px;
 }
 @media screen and (max-width:600px) { 
 .nprlogo { 
-        width:70px;
+        width:60px;
     }
 }
