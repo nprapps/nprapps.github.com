@@ -127,7 +127,7 @@ padding-top: 25px;
 }
 
 .appslogo {
-padding: 20px 0px 20px 0px;
+padding: 0px;
 
 }
 
@@ -178,6 +178,8 @@ max-width: 220px;
 
 .logos { 
 max-width:940px;
+height: 77px;
+padding: 10px 0px 10px 0px;
 }
 
 #disqus_thread {
