@@ -15,7 +15,7 @@ title: NPR News Apps Blog
 			<ul>
 				<li>{{ post.date | date: "%B %d, %Y" }}</li>
 				<li>By <a href="#">{{ post.author }}</a></li>
-				<li>Filed under: {% for category in post.categories %}<a href="#">{{ category | capitalize }}</a>  {% endfor %}</li>
+				<!-- <li>Filed under: {% for category in post.categories %}<a href="{{ post.categories }}">{{ category | capitalize }}</a>  {% endfor %}</li>-->
 				<li><a href="{{ post.url }}#disqus_thread"></a></li>
 			</ul>
 		</div>
