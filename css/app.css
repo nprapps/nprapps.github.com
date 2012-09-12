@@ -146,6 +146,7 @@ text-transform: none;
 font-weight: normal;
 color: #333;
 font-size: 13px;
+padding-bottom: 20px;
 }
 
 .post-meta {
@@ -165,6 +166,22 @@ margin: 0px;
 .post-meta li {
 display: inline;
 padding-right: 10px;
+}
+
+.span9 {
+max-width: 700px;
+}
+
+.span3 {
+max-width: 220px;
+}
+
+.logos { 
+max-width:940px;
+}
+
+#disqus_thread {
+padding-top: 20px;
 }
 
 @media screen and (max-width:800px) { 

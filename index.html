@@ -13,8 +13,10 @@ title: NPR News Apps Blog
 		</section>
    		<div class="post-meta">
 			<ul>
-				<li>By <a href="#">{{ post.author }}</a></li>
 				<li>{{ post.date | date: "%B %d, %Y" }}</li>
+				<li>By <a href="#">{{ post.author }}</a></li>
+				<li>Filed under: {% for category in post.categories %}<a href="#">{{ category | capitalize }}</a>  {% endfor %}</li>
+				<li><a href="{{ post.url }}#disqus_thread"></a></li>
 			</ul>
 		</div>
     </article>

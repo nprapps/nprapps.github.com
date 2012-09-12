@@ -18,8 +18,9 @@ title: Archive
 	
 	<div class="post-meta">
 		<ul>
-			<li>By <a href="#">{{ post.author }}</a></li>
 			<li>{{ post.date | date: "%B %d, %Y" }}</li>
+			<li>By <a href="#">{{ post.author }}</a></li>
+			<li>Filed under: {% for category in post.categories %}<a href="#">{{ category | capitalize }}</a>  {% endfor %}</li>
 			</ul>
 	</div>
 

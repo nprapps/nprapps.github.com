@@ -7,9 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-    <link href="/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="/bootstrap/css/bootstrap-responsive-test.css" rel="stylesheet">
+	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
     <link href="/css/app.css" rel="stylesheet">
     <link rel="shortcut icon" href="ico/favicon.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
@@ -20,14 +19,15 @@
 
   <body>
 	<div class="container">
-		<div><a href="/"><img class="appslogo" src="/img/logo.gif"></a><a href="http://npr.org"><img class="nprlogo" src="/img/npr_logo.png"></a></div>
+		<div class="logos"><a href="/"><img class="appslogo" src="/img/logo.gif"></a><a href="http://npr.org"><img class="nprlogo" src="/img/npr_logo.png"></a></div>
+		
 		<div class="row">
 		<div class="span9">
 			{{ content }}
         </div>
 		<div class="span3">
 			<ul class="nav nav-list">
-              <li class="nav-header">We are the NPR News Apps team. We take data and bring it to the masses. Find our work here and at npr.org</li>
+              <li class="nav-header">We are the NPR News Apps team. We take data and bring it to the masses. Find our work here and at npr.org.</li>
               <li><a href="#">About Our Team</a></li>
 				<hr>
               <li><a href="http://apps.npr.org">View Our Apps</a></li>
@@ -48,7 +48,20 @@
 
     </div>
 
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'nprnewsappsblog'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+	</script>
 
   </body>
 </html>
