@@ -65,4 +65,4 @@ We add headlines linking to the corresponding posts with <code>&#123;&#123; post
 
 We've created a GitHub repo called "[nprapps.github.com](https://github.com/nprapps/nprapps.github.com)". Inside that directory on your local machine, run <code>jekyll</code>. That will build the side. As you edit, the site will be automatically rebuilt, a process you'll notice in the Terminal. To see the site running locally, execute <code>jekyll --server</code>, and the point your browsers to <code>localhost:4000</code>. 
 
-When you're satisfied with your post, commit the code and run <code>git push</code>. 
+When you're satisfied with your post, commit the code and run <code>git push</code>, and the site will be updated soon after.
