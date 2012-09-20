@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Welcome To Our 'Nerd Blog'"
+title: "Nerd Blogging With Jekyll"
 description: "Today the NPR news applications team is launching our “nerd blog,” a space for us to share and discuss our work, much like our friends at ProPublica and elsewhere. This post explains how to use Jekyll, a static website generator in Ruby, to publish a basic blog."
 author: Matt Stiles
 ---

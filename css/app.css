@@ -74,6 +74,15 @@ font-weight: 200;
 line-height: 23px;
 }
 
+.social {
+padding: 5px 5px 12px 0px;
+}
+
+.fb-like {
+float: left;
+margin: 0px 10px 10px 0px;
+}
+
 .entry li {
 list-style: square;
 color: #555;
@@ -171,9 +180,27 @@ line-height: 22px;
 .nav .nav-header {
 text-transform: none;
 font-weight: normal;
-color: #333;
-font-size: 13px;
-padding-bottom: 20px;
+color: #444;
+font-size: 12px;
+padding-bottom: 18px;
+}
+
+p.nav-header {
+text-transform: none;
+font-weight: normal;
+color: #444;
+font-size: 12px;
+padding-bottom: 18px;
+}
+
+p.nav-header.a {
+text-transform: none;
+font-weight: normal;
+color: #444;
+font-size: 12px;
+padding-bottom: 18px;
+color:#3d80a7;
+font-weight: bold;
 }
 
 .post-meta {

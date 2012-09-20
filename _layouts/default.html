@@ -18,6 +18,16 @@
   </head>
 
   <body>
+	<div id="fb-root"></div>
+	    <script>(function(d, s, id) {
+	      var js, fjs = d.getElementsByTagName(s)[0];
+	      if (d.getElementById(id)) return;
+	      js = d.createElement(s); js.id = id;
+	      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	      fjs.parentNode.insertBefore(js, fjs);
+	    }(document, 'script', 'facebook-jssdk'));
+		</script>
+	
 	<div class="container">
 		<div class="logos"><a href="/"><img class="appslogo" src="/img/logo.gif"></a><a href="http://npr.org"><img class="nprlogo" src="/img/npr_logo.png"></a></div>
 		
@@ -26,14 +36,11 @@
 			{{ content }}
         </div>
 		<div class="span3">
+			<p class="nav-header">We are the NPR News Apps team. We take data and bring it to the masses. Find our work here and at <a href="http://npr.org">npr.org</a>.</p>
 			<ul class="nav nav-list">
-              <li class="nav-header">We are the NPR News Apps team. We take data and bring it to the masses. Find our work here and at npr.org.</li>
-              <!-- <li><a href="/about/">About Our Team</a></li> -->
-				<hr>
               <li><a href="http://github.com/nprapps">Get Our Code</a></li>
 				<hr>
               <li><a href="/about/">About The Team</a></li>
-				<hr>
             </ul>
 
 			<div class="twitter-widget">
@@ -44,7 +51,7 @@
 		</div>
 
       <footer>
-        <p class="footer">&copy; NPR 2012</p>
+        <p class="footer">&copy; NPR 2012 | Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a></p>
       </footer>
 
     </div>
