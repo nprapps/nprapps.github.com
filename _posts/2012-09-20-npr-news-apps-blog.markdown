@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Welcome To Our 'Nerd Blog'"
-description: "Today the NPR news applications team is launching a “nerd blog,” a space for us to share and discuss our work, a la our friends at ProPublica et al. This post explains how to use Jekyll to publish a blog."
+description: "Today the NPR news applications team is launching a “nerd blog,” a space for us to share and discuss our work, much like our friends at ProPublica and elsewhere. This post explains how to use Jekyll, a static website generator in Ruby, to publish a basic blog."
 author: Matt Stiles
 ---
 Today the NPR news applications [team](/about/) is launching a “nerd blog,” a space for us to share and discuss our work, much like our friends at [ProPublica](http://www.propublica.org/nerds/) and elsewhere.
 
-We're a new team, and we're trying something new (at least for us) as a blog publishing platform: Jekyll, a generator that creates simple, static websites. We're [not breaking any ground](http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/) with this choice, of course, but we liked the idea of launching a blog that's completely open source -- both its code and its content. 
+We're a new team, and we're trying something new (at least for us) as a blog publishing platform: Jekyll, a generates that creates simple, static websites in Ruby. We're [not breaking any ground](http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/) with this choice, of course, but we liked the idea of launching a blog that's entirely open source -- both its code and also its content. 
 
 This initial post is an introduction to Jekyll for the members of our team -- and anyone else who wants to get started with the tool and/or steal our simple code for their own site. 
 
