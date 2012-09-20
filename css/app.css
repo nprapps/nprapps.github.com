@@ -31,7 +31,7 @@ padding-
 
 hr {
 margin: 18px 0px 18px 0px;
-border-top: 1px solid #CBCBCB;
+border-top: 1px solid #E6E6E6;
 }
 
 h3 {
@@ -40,6 +40,7 @@ h3 {
 
 article {
 padding: 0px 0px 20px 0px;
+margin: 0px 40px 0px 0px;
 }
 
 cite {
@@ -225,6 +226,8 @@ padding-right: 10px;
 
 .span9 {
 max-width: 700px;
+border-right: 1px solid #E6E6E6;
+margin-left: 19px;
 }
 
 .span3 {
@@ -268,4 +271,8 @@ padding-top: 20px;
     }
 }
 
-
+@media screen and (max-width:800px) { 
+.span9 { 
+border-right: 0px;
+    }
+}
