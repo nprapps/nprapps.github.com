@@ -61,7 +61,7 @@ Above [YAML Front Matter](http://github.com/mojombo/jekyll/wiki/YAML-Front-Matte
 
 We add headlines linking to the corresponding posts with <code>&#123;&#123; post.url &#125;&#125;</code> and <code>&#123;&#123; post.title &#125;&#125;</code> Liquid output markup. We do the same with the date, and we've defined the display format using [Liquid's filter syntax](http://liquid.rubyforge.org/classes/Liquid/StandardFilters.html#M000012). (As we add posts to the &#95;posts directory, and <code>git push</code> them, more will display on the live home page).
 
-###Publishing
+###Publishing to GitHub
 
 We've created a GitHub repo called "[nprapps.github.com](https://github.com/nprapps/nprapps.github.com)". Inside that directory on your local machine, run <code>jekyll</code>. That will build the side. As you edit, the site will be automatically rebuilt, a process you'll notice in the Terminal. To see the site running locally, execute <code>jekyll --server</code>, and the point your browsers to <code>localhost:4000</code>. 
 
