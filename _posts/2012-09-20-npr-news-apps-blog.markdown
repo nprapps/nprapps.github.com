@@ -1,18 +1,18 @@
 ---
 layout: post
 title: "Welcome To Our 'Nerd Blog'"
-description: "Today the NPR news applications team is launching a “nerd blog,” a space for us to share and discuss our work, much like our friends at ProPublica and elsewhere. This post explains how to use Jekyll, a static website generator in Ruby, to publish a basic blog."
+description: "Today the NPR news applications team is launching our “nerd blog,” a space for us to share and discuss our work, much like our friends at ProPublica and elsewhere. This post explains how to use Jekyll, a static website generator in Ruby, to publish a basic blog."
 author: Matt Stiles
 ---
-Today the NPR news applications [team](/about/) is launching a “nerd blog,” a space for us to share and discuss our work, much like our friends at [ProPublica](http://www.propublica.org/nerds/) and elsewhere.
+Today the NPR news applications [team](/about/) is launching our “nerd blog,” a space for us to share and discuss our work, much like our friends at [ProPublica](http://www.propublica.org/nerds/) and elsewhere.
 
-We're a new team, and we're trying something new (at least for us) as a blog publishing platform: Jekyll, a generates that creates simple, static websites in Ruby. We're [not breaking any ground](http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/) with this choice, of course, but we liked the idea of launching a blog that's entirely open source -- both its code and also its content. 
+We're a new team, and we're trying something new (at least for us) as a blog publishing platform: Jekyll, a generator that creates simple, static websites in Ruby. We're [not breaking any ground](http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/) with this choice, of course, but we liked the idea of launching a blog that's entirely open source -- both its code and also its content. 
 
 This initial post is an introduction to Jekyll for the members of our team -- and anyone else who wants to get started with the tool and/or steal our simple code for their own site. 
 
 ###Getting Started
 
-By using this tool, we're eliminating the need for a traditional content management system. Instead, we'll be creating old-school HTML pages and serving them from GitHub Pages, where we host our blog code.
+By using this tool, we're eliminating the need for a traditional blog content management system, like WordPress. Instead, we'll be creating old-school HTML pages and serving them from GitHub Pages, where we host our blog code.
 
 To get started, install the Ruby gem with [these instructions](https://github.com/mojombo/jekyll/wiki/install). 
 
@@ -45,24 +45,31 @@ This structure is explained in the [usage documentation](https://github.com/mojo
 
 ###Adding content
 
-Below is the markdown of [this post](http://blog.apps.npr.org/2012/09/17/npr-news-apps-blog.html): 
+Below is the Markdown of [this post](http://blog.apps.npr.org/2012/09/17/npr-news-apps-blog.html): 
 
 <script src="https://gist.github.com/3745792.js?file=post">
 </script> 
 
-The [YAML Front Matter](http://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) determines which layout file is used (in this case a post) as well as the title, description and author. You can add more information here, like categories and tags, for example, but we haven't built out those pages yet. Also notice that these files use markdown -- <code>[team](/about/)</code> creates a hyperlink to our about page, for example -- that Jekyll will churn out as HTML later.
+The [YAML Front Matter](http://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) at the top determines which layout file is used (in this case a post) as well as the title, description and author. You can add more information here, like categories and tags, for example, but we haven't built out those features yet. Also notice that these files use Markdown -- <code>[team](/about/)</code> creates a hyperlink to our about page, for example -- that Jekyll will churn out as HTML later.
 
-Below is the markdown of the index.html file, which serves as the <code>&#123;&#123; content &#125;&#125;</code> we inject into the default.html template for displaying the home page:
+Below is the HTML of the index.html file, which is the <code>&#123;&#123; content &#125;&#125;</code> we inject into the default.html template for displaying the home page:
 
 <script src="https://gist.github.com/3745411.js?file=index.html">
 </script>
 
 Above [YAML Front Matter](http://github.com/mojombo/jekyll/wiki/YAML-Front-Matter) selects the default.html template and defines the title element. We're creating a reverse chronological list of stories, with headlines, dates, author names, and descriptions (here limited to the four most recent posts).
 
-We add headlines linking to the corresponding posts with <code>&#123;&#123; post.url &#125;&#125;</code> and <code>&#123;&#123; post.title &#125;&#125;</code> Liquid output markup. We do the same with the date, and we've defined the display format using [Liquid's filter syntax](http://liquid.rubyforge.org/classes/Liquid/StandardFilters.html#M000012). (As we add posts to the &#95;posts directory, and <code>git push</code> them, more will display on the live home page).
+We add headlines linking to the corresponding posts with <code>&#123;&#123; post.url &#125;&#125;</code> and <code>&#123;&#123; post.title &#125;&#125;</code> Liquid output markup. We do the same with the date, and we've defined the display format using [Liquid's filter syntax](http://liquid.rubyforge.org/classes/Liquid/StandardFilters.html#M000012). (As we add posts to the &#95;posts directory, and <code>git push</code> them, more will display on the live home page). Notice the "#disqus_thread" attached to the post URL. That gives us a comment count. 
+
+Below is the HTML for the post.html template. Posts also get injected into the default.html template, but obviously with a deferent design. It too use Liquid output markup to get content onto the static page when Jekyll runs: 
+
+<script src="https://gist.github.com/3757582.js?file=post.html">
+</script>
 
 ###Publishing to GitHub
 
-We've created a GitHub repo called "[nprapps.github.com](https://github.com/nprapps/nprapps.github.com)". Inside that directory on your local machine, run <code>jekyll</code>. That will build the side. As you edit, the site will be automatically rebuilt, a process you'll notice in the Terminal. To see the site running locally, execute <code>jekyll --server</code>, and the point your browsers to <code>localhost:4000</code>. 
+We've created a GitHub repo called "[nprapps.github.com](https://github.com/nprapps/nprapps.github.com)". Inside that directory on your local machine, run <code>jekyll</code>. That will build the side. As you edit, the site will be automatically rebuilt, a process you'll notice in the Terminal. To see the site running locally, execute <code>jekyll --server</code>, and the point your browser to <code>localhost:4000</code>. 
 
-When you're satisfied with your post, commit the code and run <code>git push</code>, and the site will be updated soon after.
+When you're satisfied with your post, commit the code and use <code>git push</code> to publish, and the site will be updated soon after.
+
+<em>Note: Thanks to our former interns, <a href="http://twitter.com/afwong">Angela Wong</a> and <a href="http://twitter.com/KevinUhrm">Kevin Uhrmacher</a>, for their work on this blog.</em> 
