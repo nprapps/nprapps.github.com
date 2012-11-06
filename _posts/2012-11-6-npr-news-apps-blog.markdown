@@ -31,7 +31,7 @@ Our templates are built on top of the [Twitter Bootstrap](http://twitter.github.
 	|   |-- default.html
 	|   `-- post.html
 	|-- _posts
-	|   |-- 2012-09-17-npr-news-apps-blog.markdown
+	|   |-- 2012-11-06-npr-news-apps-blog.markdown
 	|-- _site
 	|-- about
 	|-- bootstrap
