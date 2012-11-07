@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nerd Blogging With Jekyll"
+title: "Hello, And Nerd Blogging With Jekyll"
 description: "Today the NPR news applications team is launching our “nerd blog,” a space for us to share and discuss our work, much like our friends at ProPublica and elsewhere. This post explains how to use Jekyll, a static website generator in Ruby, to publish a basic blog."
 author: Matt Stiles
 ---
@@ -16,7 +16,7 @@ By using this tool, we're eliminating the need for a traditional blog content ma
 
 To get started, install the Ruby gem with [these instructions](https://github.com/mojombo/jekyll/wiki/install). 
 
-Next, familiarize yourself with the [usage](https://github.com/mojombo/jekyll/wiki/Usage) and [configuration](https://github.com/mojombo/jekyll/wiki/Configuration) documentation provided by Jekyll. There's more detail in there about further customizing a site, which we'll do over time (what we have now super basic). 
+Next, familiarize yourself with the [usage](https://github.com/mojombo/jekyll/wiki/Usage) and [configuration](https://github.com/mojombo/jekyll/wiki/Configuration) documentation provided by Jekyll. There's more detail in there about further customizing a site, which we'll do over time (what we have now is super basic). 
 
 As you'll see, Jekyll uses your source directory templates and converts your [Markdown](http://daringfireball.net/projects/markdown/syntax) text and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) tags, building out a static website. The website -- and any posts you create -- then get published with a <code>git push</code> to GitHub.
 
@@ -31,7 +31,7 @@ Our templates are built on top of the [Twitter Bootstrap](http://twitter.github.
 	|   |-- default.html
 	|   `-- post.html
 	|-- _posts
-	|   |-- 2012-09-17-npr-news-apps-blog.markdown
+	|   |-- 2012-11-06-npr-news-apps-blog.markdown
 	|-- _site
 	|-- about
 	|-- bootstrap
@@ -72,4 +72,4 @@ We've created a GitHub repo called "[nprapps.github.com](https://github.com/npra
 
 When you're satisfied with your post, commit the code and use <code>git push</code> to publish, and the site will be updated soon after.
 
-<em>Note: Thanks to our former interns, <a href="http://twitter.com/afwong">Angela Wong</a> and <a href="http://twitter.com/KevinUhrm">Kevin Uhrmacher</a>, for their work on this blog.</em> 
+<em>Note: Thanks to our former interns, <a href="http://twitter.com/afwong">Angela Wong</a> and <a href="http://twitter.com/KevinUhrm">Kevin Uhrmacher</a>, for their design work.</em> 
