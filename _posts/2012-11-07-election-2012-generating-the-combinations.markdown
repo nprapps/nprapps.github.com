@@ -18,7 +18,7 @@ With these constraints in mind I set to work prototyping the algorithms that gen
 
 ### Pruning the combinations
 
-The resulting combinations still needed to be pruned down in order to be interesting. We filtered them in two ways. First, and most obviously, we only included ones that accumulated enough votes to form a winning combination. (This would probably have been faster if we pushed the logic down into the combinations algorithm, but I preferred to keep things well-factored.) Secondly, we remove any combination which was a superset of a previous combination. That is, if we already had the combination "Florida + Colorado", then we discarded "Florida + Colorado + New Hampshire". Fortunately the output of our combinations algorithm was sorted, so we were able to do all this pruning in a single iteration over the list.
+The resulting combinations still needed to be pruned down in order to be interesting. We filtered them in two ways. First, and most obviously, we only included ones that accumulated enough votes to form a winning combination. (This would probably have been faster if we pushed the logic down into the combinations algorithm, but I preferred to keep things well-factored.) Secondly, we removed any combination which was a superset of a previous combination. That is, if we already had the combination "Florida + Colorado", then we discarded "Florida + Colorado + New Hampshire". Fortunately the output of our combinations algorithm was sorted, so we were able to do all this pruning in a single iteration over the list.
 
 Here is the final code that generates and prunes the combinations for the Scorecard:
 
