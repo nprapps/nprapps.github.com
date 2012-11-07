@@ -1,28 +1,30 @@
 ---
 layout: post
-title: "Hello, and nerd blogging with Jekyll"
-description: "Today the NPR news applications team is launching our “nerd blog,” a space for us to share and discuss our work, much like our friends at ProPublica and elsewhere. This post explains how to use Jekyll, a static website generator in Ruby, to publish a basic blog."
+title: "Hello world: Nerd blogging with Jekyll"
+description: "We're a new team, and we're trying something new (at least for us) as a blog publishing platform: Jekyll, a generator that creates simple, static websites in Ruby. <br><br>
+
+We're not breaking any ground with this choice, of course, but we liked the idea of launching a blog that's entirely open source — both its code and also its content.<br><br>
+
+This initial post is an introduction to Jekyll for the members of our team -- and anyone else who wants to get started with the tool and/or steal our simple code for their own site."
 author: Matt Stiles
 ---
-Today the NPR news applications [team](/about/) is launching our “nerd blog,” a space for us to share and discuss our work, much like our friends at [ProPublica](http://www.propublica.org/nerds/) and elsewhere.
-
 We're a new team, and we're trying something new (at least for us) as a blog publishing platform: Jekyll, a generator that creates simple, static websites in Ruby. We're [not breaking any ground](http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/) with this choice, of course, but we liked the idea of launching a blog that's entirely open source -- both its code and also its content. 
 
 This initial post is an introduction to Jekyll for the members of our team -- and anyone else who wants to get started with the tool and/or steal our simple code for their own site. 
 
 ###Getting started
 
-By using this tool, we're eliminating the need for a traditional blog content management system, like WordPress. Instead, we'll be creating old-school HTML pages and serving them from GitHub Pages, where we host our blog code.
+Jekyll eliminates the need for a traditional content management system, like WordPress. Instead, we're creating plain-old HTML pages and serving them from GitHub Pages, where we host our blog code.
 
 To get started, install the Ruby gem with [these instructions](https://github.com/mojombo/jekyll/wiki/install). 
 
 Next, familiarize yourself with the [usage](https://github.com/mojombo/jekyll/wiki/Usage) and [configuration](https://github.com/mojombo/jekyll/wiki/Configuration) documentation provided by Jekyll. There's more detail in there about further customizing a site, which we'll do over time (what we have now is super basic). 
 
-As you'll see, Jekyll uses your source directory templates and converts your [Markdown](http://daringfireball.net/projects/markdown/syntax) text and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) tags, building out a static website. The website -- and any posts you create -- then get published with a <code>git push</code> to GitHub.
+As you'll see, Jekyll uses your source directory templates and converts your [Markdown](http://daringfireball.net/projects/markdown/syntax) text and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) tags to build a static website. The website -- and any posts you create -- then get published with a <code>git push</code> to GitHub.
 
 ###Our configuration
 
-Our templates are built on top of the [Twitter Bootstrap](http://twitter.github.com/bootstrap/) framework, giving us responsive pages that we've customized for Jekyll. Your source directory should like this:
+Our templates are built from scratch on top of the [Twitter Bootstrap](http://twitter.github.com/bootstrap/) framework, giving us responsive pages that we've customized for Jekyll. Your source directory should like this:
 
 	.
 	|-- _config.yml
@@ -68,8 +70,8 @@ Below is the HTML for the post.html template. Posts also get injected into the d
 
 ###Publishing to GitHub
 
-We've created a GitHub repo called "[nprapps.github.com](https://github.com/nprapps/nprapps.github.com)". Inside that directory on your local machine, run <code>jekyll</code>. That will build the site. As you edit, the site will be automatically rebuilt, a process you'll notice in the Terminal. To see the site running locally, execute <code>jekyll --server</code>, and then point your browser to <code>localhost:4000</code>. 
+We've created a GitHub repo called "[nprapps.github.com](https://github.com/nprapps/nprapps.github.com)" (see documentation for publishing to ). Inside that directory on your local machine, run <code>jekyll</code>. That will build the site. As you edit, the site will be automatically rebuilt, a process you'll notice in the Terminal. To see the site running locally, execute <code>jekyll --server</code>, and then point your browser to <code>localhost:4000</code>. 
 
 When you're satisfied with your post, commit the code and use <code>git push</code> to publish. The site will be updated online soon after.
 
-<em>Thanks to our former interns, <a href="http://twitter.com/afwong">Angela Wong</a> and <a href="http://twitter.com/KevinUhrm">Kevin Uhrmacher</a>, for their design work.</em> 
+<em>Thanks to our former interns, <a href="http://twitter.com/afwong">Angela Wong</a> and <a href="http://twitter.com/KevinUhrm">Kevin Uhrmacher</a>, for designing the site.</em> 

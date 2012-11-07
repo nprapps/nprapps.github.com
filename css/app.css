@@ -24,10 +24,11 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 .nav-list > li > a { color: #666; font-weight: bold; font-size: 22px; line-height: 36px; text-align: center; }
 .header { padding-bottom: 25px; padding-top: 40px; }
 
-.nprlogo { float: right; padding-right: 29px; padding-top: 25px; }
 .appslogo { padding: 20px 0px 20px 0px; }
-.img-right { float: right; padding: 0px 0px 5px 10px; }
-.img-left { float: left; padding: 7px 20px 5px 0px }
+.img-right { float: right; padding: 0px 0px 5px 10px; width: 50%}
+.img-left { float: left; padding: 7px 20px 5px 0px; width: 50%}
+.img-mug { float: right; padding: 0px 0px 5px 10px; }
+
 .caption-right { clear: both; float: none; font-size: 13px; color: #333; padding: 0px 0px 10px 10px; }
 .caption-left { clear: both; float: none; font-size: 13px; color: #333; padding: 7px 20px 10px 0px; }
 .post-media-right { float: right; }
@@ -35,7 +36,7 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 
 .nav-list { margin-top: 15px; }
 .entry { font-size: 14px; color: #333; line-height: 22px; }
-.nav .nav-header { text-transform: none; font-weight: normal; color: #444; font-size: 12px; padding-bottom: 18px; }
+.nav .nav-header { text-transform: none; font-weight: normal; color: #444; font-size: 13px; padding-bottom: 18px; }
 
 p.nav-header { text-transform: none; font-weight: normal; color: #444; font-size: 12px; padding-bottom: 18px; }
 p.nav-header.a { text-transform: none; font-weight: normal; color: #444; font-size: 12px; padding-bottom: 18px; color:#3d80a7; font-weight: bold; }
@@ -45,16 +46,18 @@ p.nav-header.a { text-transform: none; font-weight: normal; color: #444; font-si
 .post-meta li { display: inline; padding-right: 10px; }
 .post-pagination { font-size: 18px; }
 
+.twitter-widget { padding: 20px 0px 0px 0px; }
+
+.row { margin-top: 50px; }
 .span9 { max-width: 700px; border-right: 1px solid #E6E6E6; margin-left: 19px; }
 .span3 { max-width: 220px; }
-.logos { max-width:940px; height: 77px; padding: 10px 0px 30px 0px; }
 
 #disqus_thread { padding-top: 20px; }
+.small-nprlogo { display:none; }
+.nprlogo { padding-bottom: 20px; }
 
-@media screen and (max-width:800px) { .appslogo { width:395px; } }
-@media screen and (max-width:600px) { .appslogo { width:170px; margin-top: 0px; } }
-@media screen and (max-width:800px) { .nprlogo { width:129px; } }
-@media screen and (max-width:600px) { .nprlogo { width:60px; } }
-@media screen and (max-width:600px) { .logos { padding:10px 0px 4px 20px; } }
+@media screen and (max-width:800px) { .row { margin-top: 20px; } }
+@media screen and (max-width:600px) { .small-nprlogo { width: 100px; padding-bottom: 15px; display: inline; margin: 10px 0 0 20px; } }
+@media screen and (max-width:600px) { .nprlogo { display: none; } }
 @media screen and (max-width:600px) { .span3 { margin-left: 20px; } }
 @media screen and (max-width:600px) { .span9 { border-right: 0px; } .footer { margin-left: 20px; } }
