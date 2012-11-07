@@ -22,7 +22,7 @@ As you'll see, Jekyll uses your source directory templates and converts your [Ma
 
 ###Our configuration
 
-Our templates are built on top of the [Twitter Bootstrap](http://twitter.github.com/bootstrap/) framework, giving us responsive pages that we've customized for Jekyl. Your source directory should like this:
+Our templates are built on top of the [Twitter Bootstrap](http://twitter.github.com/bootstrap/) framework, giving us responsive pages that we've customized for Jekyll. Your source directory should like this:
 
 	.
 	|-- _config.yml
@@ -68,8 +68,8 @@ Below is the HTML for the post.html template. Posts also get injected into the d
 
 ###Publishing to GitHub
 
-We've created a GitHub repo called "[nprapps.github.com](https://github.com/nprapps/nprapps.github.com)". Inside that directory on your local machine, run <code>jekyll</code>. That will build the side. As you edit, the site will be automatically rebuilt, a process you'll notice in the Terminal. To see the site running locally, execute <code>jekyll --server</code>, and the point your browser to <code>localhost:4000</code>. 
+We've created a GitHub repo called "[nprapps.github.com](https://github.com/nprapps/nprapps.github.com)". Inside that directory on your local machine, run <code>jekyll</code>. That will build the site. As you edit, the site will be automatically rebuilt, a process you'll notice in the Terminal. To see the site running locally, execute <code>jekyll --server</code>, and then point your browser to <code>localhost:4000</code>. 
 
-When you're satisfied with your post, commit the code and use <code>git push</code> to publish, and the site will be updated soon after.
+When you're satisfied with your post, commit the code and use <code>git push</code> to publish. The site will be updated online soon after.
 
 <em>Thanks to our former interns, <a href="http://twitter.com/afwong">Angela Wong</a> and <a href="http://twitter.com/KevinUhrm">Kevin Uhrmacher</a>, for their design work.</em> 
