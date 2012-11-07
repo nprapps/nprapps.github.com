@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Hello, And Nerd Blogging With Jekyll"
+title: "Hello, and nerd blogging with Jekyll"
 description: "Today the NPR news applications team is launching our “nerd blog,” a space for us to share and discuss our work, much like our friends at ProPublica and elsewhere. This post explains how to use Jekyll, a static website generator in Ruby, to publish a basic blog."
 author: Matt Stiles
 ---
@@ -10,7 +10,7 @@ We're a new team, and we're trying something new (at least for us) as a blog pub
 
 This initial post is an introduction to Jekyll for the members of our team -- and anyone else who wants to get started with the tool and/or steal our simple code for their own site. 
 
-###Getting Started
+###Getting started
 
 By using this tool, we're eliminating the need for a traditional blog content management system, like WordPress. Instead, we'll be creating old-school HTML pages and serving them from GitHub Pages, where we host our blog code.
 
@@ -20,7 +20,7 @@ Next, familiarize yourself with the [usage](https://github.com/mojombo/jekyll/wi
 
 As you'll see, Jekyll uses your source directory templates and converts your [Markdown](http://daringfireball.net/projects/markdown/syntax) text and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) tags, building out a static website. The website -- and any posts you create -- then get published with a <code>git push</code> to GitHub.
 
-###Our Configuration
+###Our configuration
 
 Our templates are built on top of the [Twitter Bootstrap](http://twitter.github.com/bootstrap/) framework, giving us responsive pages that we've customized for Jekyl. Your source directory should like this:
 
@@ -72,4 +72,4 @@ We've created a GitHub repo called "[nprapps.github.com](https://github.com/npra
 
 When you're satisfied with your post, commit the code and use <code>git push</code> to publish, and the site will be updated soon after.
 
-<em>Note: Thanks to our former interns, <a href="http://twitter.com/afwong">Angela Wong</a> and <a href="http://twitter.com/KevinUhrm">Kevin Uhrmacher</a>, for their design work.</em> 
+<em>Thanks to our former interns, <a href="http://twitter.com/afwong">Angela Wong</a> and <a href="http://twitter.com/KevinUhrm">Kevin Uhrmacher</a>, for their design work.</em> 
