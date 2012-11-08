@@ -3,12 +3,12 @@ layout: post
 title: "Hello world: Nerd blogging with Jekyll"
 description: "We're a new team, and we're trying something new (at least for us) as a blog publishing platform: Jekyll, a generator that creates simple, static websites. <br><br>
 
-We're not breaking any ground with this choice, of course, but we liked the idea of launching a blog that's entirely open source — both its code and also its content.<br><br>
+We're not breaking any ground with this choice, of course, but we liked the idea of launching a blog that's open source — both its code and also its content.<br><br>
 
 This initial post is an introduction to Jekyll for the members of our team -- and anyone else who wants to get started with the tool and/or steal our simple code for their own site."
 author: Matt Stiles
 ---
-We're a new team, and we're trying something new (at least for us) as a blog publishing platform: Jekyll, a generator that creates simple, static websites. We're [not breaking any ground](http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/) with this choice, of course, but we liked the idea of launching a blog that's entirely open source -- both its code and also its content. 
+We're a new team, and we're trying something new (at least for us) as a blog publishing platform: Jekyll, a generator that creates simple, static websites. We're [not breaking any ground](http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/) with this choice, of course, but we liked the idea of launching a blog that's [open source](http://github.com/nprapps/nprapps.github.com) -- both its code and also its content. 
 
 This initial post is an introduction to Jekyll for the members of our team -- and anyone else who wants to get started with the tool and/or steal our simple code for their own site. 
 
@@ -48,7 +48,7 @@ This structure is explained in the [usage documentation](https://github.com/mojo
 
 ###Adding content
 
-Below is the Markdown of [this post](http://blog.apps.npr.org/2012/09/17/npr-news-apps-blog.html): 
+Below is the Markdown of [this post](http://blog.apps.npr.org/2012/11/08/npr-news-apps-blog.html): 
 
 <script src="https://gist.github.com/3745792.js?file=post">
 </script> 
