@@ -58,6 +58,6 @@ p.nav-header.a { text-transform: none; font-weight: normal; color: #444; font-si
 
 @media screen and (max-width:800px) { .row { margin-top: 20px; } }
 @media screen and (max-width:760px) { .small-nprlogo {  width: 100px; padding-bottom: 15px; display: inline; margin: 10px 0 0 20px; } }
-@media screen and (max-width:600px) { .nprlogo { display: none; } }
+@media screen and (max-width:760px) { .nprlogo { display: none; } }
 @media screen and (max-width:600px) { .span3 { margin-left: 20px; } }
 @media screen and (max-width:770px) { .span9 { border-right: 0px; border-right: 0px; } .footer { margin-left: 20px; } }
