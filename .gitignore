@@ -1,2 +1,5 @@
 _site/
 _posts/drafts/
+*.swp
+*.swo
+.DS_Store
