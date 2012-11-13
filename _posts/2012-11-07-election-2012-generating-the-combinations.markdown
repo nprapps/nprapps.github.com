@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Election 2012: Electoral combinations"
-description: "TKTK"
+description: "Early in the development of the Swing State Scorecard we determined that we wanted to tell a story about how many combinations (2-state, 3-state) of tossup states there are which would win the election for Obama or Romney."
 author: Christopher Groskopf
 ---
 *This is the first in a series of two (or more) blog posts about how we built the [Swing State Scorecard](http://apps.npr.org/swing-state-scorecard/) and our [Election 2012 results site](http://election2012.npr.org/).*
