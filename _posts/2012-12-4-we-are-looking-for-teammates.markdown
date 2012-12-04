@@ -20,7 +20,7 @@ The news applications crew at NPR is looking for teammates. We work with news, m
 
 ### Bonus points to folks who...
 
-* Kick ass at making maps
+* Kick ass at statistics
 * Love information design
 * Know a thing or two about government data
 * Want to teach us stuff!!
