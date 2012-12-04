@@ -15,7 +15,6 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 
 .social { padding: 5px 5px 12px 0px; }
 .fb-like { float: left; margin: 0px 10px 10px 0px; }
-.twitter-widget { padding: 20px 0px 0px 10px; }
 
 .entry li { list-style: square; line-height:22px; }
 .entry ul { line-height: 20px; margin: 0px 0px 10px 30px; }
@@ -47,6 +46,7 @@ p.nav-header.a { text-transform: none; font-weight: normal; font-size: 12px; pad
 .post-pagination { font-size: 18px; }
 
 .twitter-widget { padding: 20px 0px 0px 0px; }
+.twitter-timeline { width:100%; height:600px; margin-top:20px; }
 
 .row { margin-top: 50px; }
 
