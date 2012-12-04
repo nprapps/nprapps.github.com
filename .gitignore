@@ -3,3 +3,4 @@ _posts/drafts/
 *.swp
 *.swo
 .DS_Store
+.rbenv-version
