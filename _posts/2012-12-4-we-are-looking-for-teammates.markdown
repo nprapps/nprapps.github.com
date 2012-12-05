@@ -33,7 +33,7 @@ The news applications crew at NPR is looking for teammates. We work with news, m
 The newsroom is a crucible. We work on tight schedules with hard deadlines. That may sound stressful, but check this out: with every project we learn from our mistakes and refine our methods. It’s a fast-moving, volatile environment that will make you more awesome, every day. Job perks include...
 
 * Live music at the Tiny Desk
-* All the totebags you can eat
+* All the tote bags you can eat
 * A sense of purpose
 
 Also, NPR is a really super place to work, and you'll make your mom proud.
