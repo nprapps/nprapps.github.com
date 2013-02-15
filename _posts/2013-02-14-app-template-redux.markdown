@@ -64,7 +64,7 @@ There's a lot of work that went into this app template and a fair amount of disc
 
 Here's a rundown of how we chose the right tools for the job and why.
 
-#### Flask — *seamless development workflow*
+### Flask — *seamless development workflow*
 
 We run a Flask app to simplify local development and is the crucial part of our template.
 
@@ -77,7 +77,7 @@ We run a Flask app to simplify local development and is the crucial part of our 
 
 That last point is worth elaborating on. We store our application configuration in `app_config.py`. We use environment variables to set our deployment targets. This allows `app_config.py` to detect if we're running in staging or production and changes config values appropriately. For both local dev and deployed projects, we automatically compile `app_config.js` to have our same application configuration available on the client side. Consistent configuration without repetition — it's [DRY]!
 
-#### Asset pipeline – *simplifies local development*
+### Asset pipeline – *simplifies local development*
 
 Our homegrown app template asset pipeline is quite nifty. As noted above, we write styles in LESS and keep our JS in separate files when developing locally. When we deploy, we push all our CSS into one file and all of our JS into a single file. We then gzip all of these assets for production (we only gzip, not minify, to avoid obfuscation).
 
@@ -111,7 +111,7 @@ So what does this actually mean? Our asset pipeline works like this:
 
 We push all our CSS and JS into single files to make our apps mobile-friendly. This translates to fewer browser requests and a faster page load time. Of course, this helps with desktop performance as well, but you really feel the snappiness on your phone.
 
-#### Bootstrap – *front-end foundation*
+### Bootstrap – *front-end foundation*
 
 We use Bootstrap as our base layer of CSS. Why? Because of reasons.
 
@@ -125,7 +125,7 @@ Let's elaborate on that last point. Having Bootstrap on the page is a giant CSS 
 
 As a n00b on the apps team, using the Bootstrap as a foundation gives me _reasonable_ peace of mind that the hacky JavaScript event bindings and functions I write will work across browsers.
 
-#### Fab is fabulous — *DRY (don't repeat yourself!)*
+### Fab is fabulous — *DRY (don't repeat yourself!)*
 
 `fab` ties our template together. We've got environment-configuration functions, template functions, deployment functions and supermerge functions (stay tuned!) all covered.
 
