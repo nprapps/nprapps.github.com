@@ -24,7 +24,7 @@ But the thing that really blew my mind is this: We're only running two servers. 
 
 Developing in the newsroom is fast-paced and comes with a different set of priorities than when you're coding for a technology product team. There are three salient Boyerisms I've picked up in my month as an NP-Rapper that sum up these differences:
 
-1. **Servers are for chumps.** Newsrooms aren't exactly making it rain. Cost-effectiveness is key. Servers are expensive and maintaining servers means less time to make the internets. Boo and boo.
+1. **Servers are for chumps.** Newsrooms aren't exactly making it rain. Cost-effectiveness is key. Servers are expensive and maintaining servers means less time to make the internets. Boo and boo. (We're currently running only one production server, an [EC2 small instance](http://aws.amazon.com/ec2/pricing/#on-demand) for running scheduled jobs. It does not serve web content.)
 
 2. **If it doesn't work on mobile, it doesn't work.** Most of our work averages 10 to 20 percent mobile traffic. But for our [elections app], 50 percent of users visited our [Big Board] on their phone. (And it wasn't even responsive!) Moral of the stats: A good mobile experience is absolutely necessary.
 
