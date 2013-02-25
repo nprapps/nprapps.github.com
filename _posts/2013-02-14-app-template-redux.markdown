@@ -4,7 +4,8 @@ title: "How to build a news app that never goes down and costs you practically n
 description: "Spoiler: Our app template makes it possible."
 
 author: Katie Zhu
-email: kzhu@npr.org
+email: kzhu91@gmail.com
+twitter: kzhu91
 ---
 
 ![inauguration app](/img/posts/inaug.png)<br/>
