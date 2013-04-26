@@ -26,7 +26,6 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 
 .img-right { float: right; padding: 0px 0px 5px 10px; width: 50%}
 .img-left { float: left; padding: 7px 20px 5px 0px; width: 50%}
-.img-mug { float: right; padding: 0px 0px 5px 10px; }
 
 .caption-right { clear: both; float: none; font-size: 13px; padding: 0px 0px 10px 10px; }
 .caption-left { clear: both; float: none; font-size: 13px; padding: 7px 20px 10px 0px; }
@@ -52,6 +51,9 @@ p.nav-header.a { text-transform: none; font-weight: normal; font-size: 12px; pad
 
 #disqus_thread { padding-top: 20px; }
 #small-logo { display:none; }
+
+#about h3 { clear:both; margin-top:40px; }
+#about .img-mug { float: right; padding: 0px 0px 5px 10px; width:73px; height:73px;}
 
 @media screen and (max-width:760px) {
     #small-logo { display: block; }
