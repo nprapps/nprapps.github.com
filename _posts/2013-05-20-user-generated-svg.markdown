@@ -14,7 +14,7 @@ For NPR's ongoing series ["The Changing Lives of Women"](http://www.npr.org/seri
 
 With that in mind we sketched up a user interface that gave users some ability to customize their submission&mdash;font, color&mdash;but also guaranteed us a certain amount of visual and thematic consistency.
 
-<img src="/img/posts/she-works-editor.png" />
+<img src="/img/posts/she-works-editor.jpg" />
 
 ### Making images online
 
@@ -50,4 +50,12 @@ A similar issue happened with IE9, which for no apparent reason was duplicating 
 
 Unfortunately, no amount of clever rewriting was ever going to make this work in IE8, which does not support SVG. Note that Raphael does support IE8, by rendering VML instead of SVG, however, we have no way to convert the VML to raster graphics on the server and even if we could it probably wouldn't be worth the effort.
 
+Here is the code we use to normalize the SVG's before passing them to cairosvg:
 
+<script src="https://gist.github.com/onyxfish/5615894.js"></script> 
+
+#### Conclusion
+
+By using SVG to generate images we were able to produce user-generated images suitable for printing at large size in a cross-platform and mobile-friendly way. The "sign generator" approach seems to have resonated with users and resulted in over 1,100 submissions!
+
+<img src="/img/posts/she-works-grid.jpg" />
