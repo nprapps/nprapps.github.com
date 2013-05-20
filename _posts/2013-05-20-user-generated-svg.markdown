@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "User-generated graphics in the browser with SVG"
-description: "TKTK"
+description: "How we used SVG to generate shareable, high-resolution and print-friendly graphics directly in our user's browsers."
 author: Christopher Groskopf
 ---
 
