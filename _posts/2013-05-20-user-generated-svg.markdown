@@ -52,7 +52,7 @@ Unfortunately, no amount of clever rewriting was ever going to make this work in
 
 Here is the code we use to normalize the SVG's before passing them to cairosvg:
 
-<script src="https://gist.github.com/onyxfish/5615894.js"></script> 
+<script src="https://gist.github.com/onyxfish/5615894.js"> </script> 
 
 #### Conclusion
 
