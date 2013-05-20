@@ -56,6 +56,6 @@ Here is the code we use to normalize the SVG's before passing them to cairosvg:
 
 #### Conclusion
 
-By using SVG to generate images we were able to produce user-generated images suitable for printing at large size in a cross-platform and mobile-friendly way. The "sign generator" approach seems to have resonated with users and resulted in over 1,100 submissions!
+By using SVG to generate images we were able to produce user-generated images suitable for printing at large size in a cross-platform and mobile-friendly way. The "sign generator" approach seems to have resonated with users and resulted in over <a href="http://she-works.tumblr.com">1,100 submissions</a>!
 
-<img src="/img/posts/she-works-grid.jpg" />
+<a href="http://she-works.tumblr.com/"><img src="/img/posts/she-works-grid.jpg" /></a>
