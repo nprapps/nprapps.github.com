@@ -11,6 +11,7 @@ For NPR's ongoing series ["The Changing Lives of Women"](http://www.npr.org/seri
 
 *"What’s your note to self – a piece of advice that’s helped you at work?"*
 
+
 With that in mind we sketched up a user interface that gave users some ability to customize their submission&mdash;font, color&mdash;but also guaranteed us a certain amount of visual and thematic consistency.
 
 <img src="/img/posts/she-works-editor.png" />
@@ -25,7 +26,9 @@ The first prototype of this strategy came together remarkably quickly. The user 
 
 <script src="https://gist.github.com/onyxfish/5615173.js"> </script>
 
-The SVG graphic is sent to the server as text, where we save it into a local file. From there we use [cairosvg](http://cairosvg.org/) to cut an image, which we POST to Tumblr. Tumblr returns a url to the new "blog post", which we then send to the user as a 301 redirect. To the user it appears as though they posted their image directly to Tumblr.
+The SVG graphic is sent to the server as text, where we save it into a local file. We've already been running servers for our Tumblr projects so that we can construct the post content and add tags before submitting it to Tumblr. (Tumblr also provides a form for having users submit directly, which we are not using.) You can see our boilerplate for building projects with Tumblr on the [init-tumblr branch](https://github.com/nprapps/app-template/tree/init-tumblr) of our app-template.
+
+Once the SVG is on the server we use [cairosvg](http://cairosvg.org/) to cut an image, which we POST to Tumblr. Tumblr returns a url to the new "blog post", which we then send to the user as a 301 redirect. To the user it appears as though they posted their image directly to Tumblr.
 
 ### Problems
 
