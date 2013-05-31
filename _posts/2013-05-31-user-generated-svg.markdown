@@ -21,7 +21,7 @@ With that in mind we sketched up a user interface that gave users some ability t
 
 The traditional way of generating images in the browser is to use Flash, which is what sites like [quickmeme](http://www.quickmeme.com/make/caption/#id=190021979&name=Insanity+puppy&topic=Cute) do. We certainly weren't going to do that. All of our apps must work across all major browsers and on mobile devices. My initial instinct said we could solve this problem with [the HTML5 Canvas element](http://en.wikipedia.org/wiki/Canvas_element). Some folks already use Canvas for [resizing images on mobile devices before uploading them](https://github.com/gokercebeci/canvasResize), so it seemed like a natural fit. However, in addition to saving the images to Tumblr, we also wanted to generate a very high-resolution version for printing. Generating this on the client would have made for large file sizes at upload time&mdash;a deal-breaker for mobile devices. Scaling it up on the server would have lead to poor quality for printing.
 
-After some deliberation I fell upon the idea of using [Raphael.js](http://raphaeljs.com/) to generate [SVG](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics) in the browser. SVG stands for Scalable Vector Graphics, an image format typically used for icons, logos and other graphics that need to be rendered at a variety of sizes. SVG, like HTML, is based on XML and in [modern browsers](http://caniuse.com/svg) you can embed SVG content directly into your HTML. This also means that you can use standard DOM manipulation tools to modify SVG elements directly in the browser. (And also style them dynamically, as you can see in our recent [Arrested Development visualization](http://apps.npr.org/arrested-development/).)
+After some deliberation I fell upon the idea of using [Raphaël.js](http://raphaeljs.com/) to generate [SVG](http://en.wikipedia.org/wiki/Scalable_Vector_Graphics) in the browser. SVG stands for Scalable Vector Graphics, an image format typically used for icons, logos and other graphics that need to be rendered at a variety of sizes. SVG, like HTML, is based on XML and in [modern browsers](http://caniuse.com/svg) you can embed SVG content directly into your HTML. This also means that you can use standard DOM manipulation tools to modify SVG elements directly in the browser. (And also style them dynamically, as you can see in our recent [Arrested Development visualization](http://apps.npr.org/arrested-development/).)
 
 The first prototype of this strategy came together remarkably quickly. The user selects text, colors and ornamentation. These are rendered as SVG elements directly into the page DOM. Upon hitting submit, we grab the text of the SVG using jQuery's `html` method and then assign to a hidden input in the form:
 
@@ -29,7 +29,7 @@ The first prototype of this strategy came together remarkably quickly. The user 
 
 The SVG graphic is sent to the server as text via the hidden form field. We've already been running servers for our Tumblr projects to construct the post content and add tags before submitting to Tumblr, so we didn't have to create any new infrastructure for this. (Tumblr also provides a form for having users submit directly, which we are not using for a variety of reasons.) You can see our boilerplate for building projects with Tumblr on the [init-tumblr branch](https://github.com/nprapps/app-template/tree/init-tumblr) of our app-template.
 
-Once the SVG text is on the server we save it to a file and use [cairosvg](http://cairosvg.org/) to cut an PNG, which we then POST to Tumblr. Tumblr returns a url to the new "blog post", which we then send to the user as a 301 redirect. To the user it appears as though they posted their image directly to Tumblr.
+Once the SVG text is on the server we save it to a file and use [cairosvg](http://cairosvg.org/) to cut a PNG, which we then POST to Tumblr. Tumblr returns a URL to the new "blog post", which we then send to the user as a 301 redirect. To the user it appears as though they posted their image directly to Tumblr.
 
 <p> </p>
 ### Problems
@@ -44,7 +44,7 @@ Here is the same text ([Quicksand 400](http://www.google.com/fonts/#QuickUsePlac
 <img src="/img/posts/text_chrome_ie9.png" />
 &nbsp;
 
-Researching a solution for this led me to discover [Cufon fonts](https://github.com/sorccu/cufon/wiki/About), a JSON format for representing fonts as SVG paths (technically [VML](http://en.wikipedia.org/wiki/Vector_Markup_Language) paths, but that doesn't matter). There is a Cufon Javascript library for using these fonts directly, however, there are also built-in hooks for using them Raphael.js. (For those who care: they get loaded up via a "magic" callback name.) These resulting fonts are ideal for us, because the paths are already set and thus look the same in every browser *and* when rendered on the server. It's a beautiful thing:
+Researching a solution for this led me to discover [Cufon fonts](https://github.com/sorccu/cufon/wiki/About), a JSON format for representing fonts as SVG paths (technically [VML](http://en.wikipedia.org/wiki/Vector_Markup_Language) paths, but that doesn't matter). There is a Cufon Javascript library for using these fonts directly, however, there are also built-in hooks for using them Raphaël. (For those who care: they get loaded up via a "magic" callback name.) These resulting fonts are ideal for us, because the paths are already set and thus look the same in every browser *and* when rendered on the server. It's a beautiful thing:
 
 <script type="text/javascript" src="http://apps.npr.org/changing-lives/js/lib/jquery-1.8.3.js"> </script>
 <script type="text/javascript" src="http://apps.npr.org/changing-lives/js/lib/raphael.js"> </script>
@@ -68,15 +68,15 @@ Researching a solution for this led me to discover [Cufon fonts](https://github.
 
 #### Scaling
 
-We found that the various SVG implementations we had to work with (Webkit, IE, Cairo) had different interpretations of "width", "height" and "viewBox" parameters of the SVG. We ended up using a fixed size for the viewBox (2048x2048) and rendering everything in that coordinate reference system. Width and height we scaled with our responsive viewport. On the server this width and height were stripped before the SVG was sent to cairosvg, causing it to render the resulting PNGs at "full" viewBox size. See the next section for the code that cleans up the SVG on th server.
+We found that the various SVG implementations we had to work with (Webkit, IE, Cairo) had different interpretations of `width`, `height` and `viewBox` parameters of the SVG. We ended up using a fixed size for `viewBox` (2048x2048) and rendering everything in that coordinate reference system. The `width` and `height` we scaled with our responsive viewport. On the server `width` and `height` were stripped before the SVG was sent to cairosvg, causing it to render the resulting PNGs at `viewBox` size. See the next section for the code that cleans up the SVG on the server.
 
 #### Browser support
 
 A similar issue happened with IE9, which for no apparent reason was duplicating the XML namespace attribute of the SVG, `xmlns`. This caused cairosvg to bomb, so we had to strip it.
 
-Unfortunately, no amount of clever rewriting was ever going to make this work in IE8, which does not support SVG. Note that Raphael does support IE8, by rendering VML instead of SVG, however, we have no way to get the XML text of the VML from the browser. (And even if we could we would then have to figure out how to convert the VML to a PNG in a way that precisely matched the output from our SVG process.)
+Unfortunately, no amount of clever rewriting was ever going to make this work in IE8, which does not support SVG. Note that Raphaël does support IE8, by rendering VML instead of SVG, however, we have no way to get the XML text of the VML from the browser. (And even if we could we would then have to figure out how to convert the VML to a PNG in a way that precisely matched the output from our SVG process.)
 
-Here is the code we use to normalize the SVG's before passing them to cairosvg:
+Here is the code we use to normalize the SVGs before passing them to cairosvg:
 
 <script src="https://gist.github.com/onyxfish/5615894.js"> </script> 
 
