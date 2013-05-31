@@ -37,18 +37,25 @@ Once the SVG text is on the server we save it to a file and use [cairosvg](http:
 
 Text was probably the hardest thing to get right. Because each browser renders text in a different way we found that our resulting images were inconsistent and often ugly. Worse yet, because our server-side, Cairo-based renderer was also different, we couldn't guarantee the text layout a user saw on their screen would match that of the final image once we'd converted it to a PNG.
 
-Researching a solution for this led me to discover [Cufon fonts](https://github.com/sorccu/cufon/wiki/About), a JSON format for representing fonts as SVG paths (technically [VML](http://en.wikipedia.org/wiki/Vector_Markup_Language) paths, but that doesn't matter). There is a Cufon Javascript library for using these fonts directly, however, there are also built-in hooks for using them Raphael.js. (For those who care: they get loaded up via a "magic" callback name.) These resulting fonts are ideal for us, because the paths are already set and thus look the same in every browser *and* when rendered on the server. It's a beautiful thing:
+Here is the same text ([Quicksand 400](http://www.google.com/fonts/#QuickUsePlace:quickUse/Family:Quicksand)), rendered in Chrome on the left and IE9 on the right:
 
-<div id="#cufon-example" style="width: 100%; height: 100px;"> </div>
+&nbsp;
+<img src="/img/posts/text_chrome_ie9.png" />
+&nbsp;
+
+Researching a solution for this led me to discover [Cufon fonts](https://github.com/sorccu/cufon/wiki/About), a JSON format for representing fonts as SVG paths (technically [VML](http://en.wikipedia.org/wiki/Vector_Markup_Language) paths, but that doesn't matter). There is a Cufon Javascript library for using these fonts directly, however, there are also built-in hooks for using them Raphael.js. (For those who care: they get loaded up via a "magic" callback name.) These resulting fonts are ideal for us, because the paths are already set and thus look the same in every browser *and* when rendered on the server. It's a beautiful thing:
 
 <script type="text/javascript" src="http://apps.npr.org/changing-lives/js/lib/jquery-1.8.3.js"> </script>
 <script type="text/javascript" src="http://apps.npr.org/changing-lives/js/lib/raphael.js"> </script>
 <script type="text/javascript" src="http://apps.npr.org/changing-lives/js/Snippet_400.font.js"> </script>
+
+<div id="cufon-example" style="width: 100%; height: 100px;"> </div>
+
 <script type="text/javascript">
     $(function() {
         var width = $('.entry').width();
 
-        var paper = Raphael('#cufon-example', width, 100, function() {
+        var paper = Raphael('cufon-example', width, 100, function() {
             var snippet_font = this.getFont('Snippet');
             var text_path = this.print(0, 50, 'Cufon fonts', snippet_font, 50); 
 
