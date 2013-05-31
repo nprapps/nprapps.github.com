@@ -15,8 +15,8 @@ For NPR's ongoing series ["The Changing Lives of Women"](http://www.npr.org/seri
 With that in mind we sketched up a user interface that gave users some ability to customize their submission&mdash;font, color, etc&mdash;but also guaranteed us a certain amount of visual and thematic consistency.
 
 <img src="/img/posts/she-works-editor.jpg" />
-&nbsp;
 
+<p> </p>
 ### Making images online
 
 The traditional way of generating images in the browser is to use Flash, which is what sites like [quickmeme](http://www.quickmeme.com/make/caption/#id=190021979&name=Insanity+puppy&topic=Cute) do. We certainly weren't going to do that. All of our apps must work across all major browsers and on mobile devices. My initial instinct said we could solve this problem with [the HTML5 Canvas element](http://en.wikipedia.org/wiki/Canvas_element). Some folks already use Canvas for [resizing images on mobile devices before uploading them](https://github.com/gokercebeci/canvasResize), so it seemed like a natural fit. However, in addition to saving the images to Tumblr, we also wanted to generate a very high-resolution version for printing. Generating this on the client would have made for large file sizes at upload time&mdash;a deal-breaker for mobile devices. Scaling it up on the server would have lead to poor quality for printing.
@@ -31,6 +31,7 @@ The SVG graphic is sent to the server as text via the hidden form field. We've a
 
 Once the SVG text is on the server we save it to a file and use [cairosvg](http://cairosvg.org/) to cut an PNG, which we then POST to Tumblr. Tumblr returns a url to the new "blog post", which we then send to the user as a 301 redirect. To the user it appears as though they posted their image directly to Tumblr.
 
+<p> </p>
 ### Problems
 
 #### Text
@@ -79,8 +80,25 @@ Here is the code we use to normalize the SVG's before passing them to cairosvg:
 
 <script src="https://gist.github.com/onyxfish/5615894.js"> </script> 
 
-#### Conclusion
+<p> </p>
+### Glyphs
 
-By using SVG to generate images we were able to produce user-generated images suitable for printing at large size in a cross-platform and mobile-friendly way. The "sign generator" approach seems to have resonated with users and resulted in over <a href="http://she-works.tumblr.com">1,100 submissions</a>!
+One final thing we did for this project that is worth mentioning is building out a lightweight system for defining the ornaments you that can be selected as decoration for your quote. Although there is nothing technically challenging about this (it's a grid of squares), it was awfully fun code to write:
 
+<script src="https://gist.github.com/onyxfish/5686884.js"> </script>
+
+And it gave us a chance to use good-old-fashioned bitmaps for the configuration:
+
+<p> </p>
+<img src="/img/posts/she-works-glyphs.png" />
+<p> </p>
+
+You can see the full ornament definitions in [this gist](https://gist.github.com/onyxfish/5686902).
+
+<p> </p>
+### Conclusion
+
+By using SVG to generate images we were able to produce user-generated images suitable for printing at large size in a cross-platform and mobile-friendly way. It also provided us an opportunity to be playful and explore some interesting new image composition techniques. This "sign generator" approach seems to have resonated with users and resulted in over <a href="http://she-works.tumblr.com">1,100 submissions</a>!
+
+&nbsp;
 <a href="http://she-works.tumblr.com/"><img src="/img/posts/she-works-grid.jpg" /></a>
