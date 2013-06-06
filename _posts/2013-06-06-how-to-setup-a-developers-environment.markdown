@@ -1,4 +1,5 @@
-yout: post
+---
+layout: post
 title: "How to Develop like NPR News Apps"
 description: "(Almost) everything you always wanted to know about working from the command line, but were too afraid to ask"
 author: Gerald Rich
@@ -16,7 +17,7 @@ We'll be installing a number of programs from the command line in this tutorial,
 
 Click on the Apple menu > System Preferences > Users & Groups and check your status against this handy screenshot.
 
-![Are you an admin?](/img/posts/c0_admin.png)
+![Are you an admin?](/img/c0_admin.png)
 
 ## Update your software
 Click on the Apple menu > Software update. Continue installing and rebooting until there is nothing left to update.
@@ -27,7 +28,7 @@ Xcode is billed as Mac's one stop shop for developers wanting to make apps, but 
 * Get [Xcode](https://developer.apple.com/xcode/) from the app store.
 * Get the Xcode command line tools by going to Xcode > Preferences > Downloads and checking the "install" button next to the command line tools.
 
-![Install Xcode's command line tools](/img/posts/c0_xcode.png)
+![Install Xcode's command line tools](/img/c0_xcode.png)
 
 # Chapter 1: Install Homebrew
 
@@ -104,4 +105,4 @@ To make styling our apps easier, we use a language called LESS which is then com
 
 	export NODE_PATH=/usr/local/lib/node_modules
 
-Save and exit out of `nano` using control + O and control + 0, and then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/). Cheers!
+Save and exit out of `nano` using control + O and control + O, and then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/). Cheers!
