@@ -105,4 +105,4 @@ To make styling our apps easier, we use a language called LESS which is then com
 
 	export NODE_PATH=/usr/local/lib/node_modules
 
-Save and exit out of `nano` using control + O and control + O, and then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/). Cheers!
+Save and exit out of `nano` using control + O and control + X, and then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/). Cheers!
