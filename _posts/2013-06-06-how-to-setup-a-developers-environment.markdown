@@ -116,12 +116,12 @@ Save and exit out of `nano` using control + O and control + X, and then type `so
 ## Appendix 1: Postgres and PostGIS
 We occasionally need to do work with geographic data for interactive maps. This requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data. We'll explain these tools a bit more as we install them.
 
-### Step 0: NumPy
+### NumPy
 First, we need to install a Python library called NumPy. We don't use NumPy directly, but PostGIS uses it for making geographic calculations.
 
     sudo pip install numpy
 
-### Step 1: Postgres
+### Postgres
 Next up: the Postgres database server. Postgres is a useful tool for dealing with all kinds of data, not just geography, so we'll get it setup first then tweak it to be able to interpret geographic data.
 
 	brew install postgresql
@@ -143,7 +143,7 @@ Finally, let's start up the Postgres server.
 
 	pgup
 
-### Step 2: PostGIS
+### PostGIS
 This deceptively simple command will install an awful lot of software. It's going to take some time, and your laptop fans will probably sound like a fighter jet trying to take off. Don't worry; it can take the heat.
 
 	brew install postgis gdal
