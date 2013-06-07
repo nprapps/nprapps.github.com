@@ -67,7 +67,9 @@ Once you've added the line of code, you can save the file by typing pressing con
 
 Working on multiple Python projects can be difficult. Virtualenv will isolate each of your Python projects in their own little sandboxes, keeping your environment variables and installed software neat and tidy.
 
-First, you'll need to install `pip`, Python's very own package manager. It's like Homebrew, but it's specific to Python.
+(First, you'll need to make sure your laptop points to your version of Python)
+
+First, you'll need to install make sure your `pip`, Python's very own package manager. It's like Homebrew, but it's specific to Python.
 
 	sudo easy_install pip
 
@@ -109,4 +111,4 @@ To make styling our apps easier, we use a language called LESS which is then com
 
 	export NODE_PATH=/usr/local/lib/node_modules
 
-Save and exit out of `nano` using control + O and control + X, and then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/). Cheers!
+Save and exit out of `nano` using control + O and control + X, and then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
