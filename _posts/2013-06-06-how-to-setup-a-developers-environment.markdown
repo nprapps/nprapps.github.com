@@ -34,8 +34,7 @@ Xcode is billed as Mac's one stop shop for developers wanting to make apps, but 
 
 [Homebrew](http://brew.sh/) is a package manager for your Mac. It's like the Mac app store for programming tools. You can access Homebrew via the terminal, like [all good things](http://www.amazon.com/Beginning-was-Command-Line-Neal-Stephenson/dp/0380815931). Inspiration for this section comes from Kenneth Reitz's excellent [Python guide](http://docs.python-guide.org/en/latest/starting/install/osx.html).
 
-1. Open your terminal application. All Macs come with an app called "Terminal." If you'd like something fancier, we like [iTerm2](http://iterm2.com/downloads/stable/iTerm2_v1_0_0.zip).
-1. Install Homebrew by pasting this command into your terminal and hit "enter."
+Open your terminal application. All Macs come with an app called "Terminal." If you'd like something fancier, we like [iTerm2](http://iterm2.com/downloads/stable/iTerm2_v1_0_0.zip). Install Homebrew by pasting this command into your terminal and hit "enter."
 
 	ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
@@ -73,13 +72,13 @@ First, you'll need to install make sure your `pip`, Python's very own package ma
 
 	sudo easy_install pip
 
-1. Install virtualenv and virtualenvwrapper. We'll use pip to install this software for everyone who might use your computer.
+Install virtualenv and virtualenvwrapper. We'll use pip to install this software for everyone who might use your computer.
 
 	sudo pip install virtualenv virtualenvwrapper
 
 **Note**: `virtualenv` is the actual environment that you'll be using, while `virtualwrapper` helps you access the environment and its variables from your `PATH`.
 
-2. Edit your `~/.bash_profile` file again,
+Edit your `~/.bash_profile` file again,
 
 	nano ~/.bash_profile
 
@@ -99,15 +98,15 @@ If you don't see the following bit of code in the file, run `nano ~/.bash_profil
 # Chapter 3: Set up Node and NPM
 To make styling our apps easier, we use a language called LESS which is then compiled into CSS with some handy Node.js. So, we'll need to install Node and its own separate package manager as well.
 
-1. Install Node.js using Homebrew.
+Install Node.js using Homebrew.
 
 	brew install node
 
-2. Install NPM, the Node Package Manager.
+Install NPM, the Node Package Manager.
 
 	curl https://npmjs.org/install.sh | sh
 
-3. Finally, add Node to your `~/.bash_profile` like you did for Homebrew and virtualwrapper. Copy and paste the following line below the previous two.
+Finally, add Node to your `~/.bash_profile` like you did for Homebrew and virtualwrapper. Copy and paste the following line below the previous two.
 
 	export NODE_PATH=/usr/local/lib/node_modules
 
