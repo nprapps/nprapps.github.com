@@ -67,6 +67,10 @@ Once you've added the line of code, you can save the file by typing pressing con
 
 Working on multiple Python projects can be difficult. Virtualenv will isolate each of your Python projects in their own little sandboxes, keeping your environment variables and installed software neat and tidy.
 
+First, you'll need to install `pip`, Python's very own package manager. It's like Homebrew, but it's specific to Python.
+
+	sudo easy_install pip
+
 1. Install virtualenv and virtualenvwrapper. We'll use pip to install this software for everyone who might use your computer.
 
 	sudo pip install virtualenv virtualenvwrapper
