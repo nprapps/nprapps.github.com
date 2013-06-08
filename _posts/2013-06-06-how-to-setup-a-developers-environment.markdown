@@ -146,7 +146,11 @@ Add these two lines:
 	alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 	alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
-Update your session one more time, and let's initialize your Postgres server. We only need to do this once after installing it.
+Update your session one more time, 
+
+	source ~/.bash_profile
+
+and let's initialize your Postgres server. We only need to do this once after installing it.
 
 	initdb /usr/local/var/postgres/ -E utf-8
 
@@ -163,7 +167,7 @@ Still hanging in there?
 
 	brew install postgis
 
-Now you can create your first geographically-enabled database. For more information on how to do that postgis [tells you how to do this](http://postgis.refractions.net/documentation/manual-1.5/ch02.html).
+Now you can create your first geographically-enabled database. For more information on how to do that postgis [tells you how to do this](http://postgis.net/docs/manual-2.0/postgis_installation.html#create_new_db_extensions).
 
 ## Appendix 2: The Terminal
 Since you're going to be working from the command line a lot, it's worth investing time to make your terminal something that's a little more easy on the eyes.
