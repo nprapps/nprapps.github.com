@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "How to Build News Applications like We Do"
+title: "How to Setup Your Mac to Develop News Applications Like We Do"
 description: "(Almost) everything you always wanted to know about working from the command line, but were too afraid to ask"
 author: Gerald Rich
 email: grich@npr.org
 twitter: gerald_arthur
 ---
 
-I joined the News Apps team a week ago in their shiny new DC offices. In between awesome the awesome food and sick Tiny Desk concerts, we've been documenting the quickest and simplest way to get other journalists setup to build news apps like the pros.
+I joined the News Apps team a week ago in their shiny new DC offices, and in between eating awesome food and Tiny Desk concerts, we've been documenting the best way to get other journalists setup to build news apps like the pros.
 
 The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with Mountain Lion OS X 10.8 installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
 
@@ -23,7 +23,7 @@ Click on the Apple menu > System Preferences > Users & Groups and check your sta
 Click on the Apple menu > Software update. Continue installing and rebooting until there is nothing left to update.
 
 ## Install Xcode and the Xcode's command line tools
-We don't use Xcode everyday to develop, but it does give us some tools that you'll need to install. This part can take a while, so feel free to grab your first cup of while this is downloading.
+We don't use Xcode everyday to develop, but it does give us some tools that you'll need to install. This part can take a while, so feel free to grab a cup of soup while this is downloading.
 
 * Get [Xcode](https://developer.apple.com/xcode/) from the app store.
 * Get the Xcode command line tools by going to Xcode > Preferences > Downloads and checking the "install" button next to the command line tools.
@@ -32,7 +32,7 @@ We don't use Xcode everyday to develop, but it does give us some tools that you'
 
 # Chapter 1: Install Homebrew
 
-[Homebrew](http://brew.sh/) is like the Mac app store for programming tools. You can access Homebrew via the terminal, like [all good things](http://www.amazon.com/Beginning-was-Command-Line-Neal-Stephenson/dp/0380815931). Inspiration for this section comes from Kenneth Reitz's excellent [Python guide](http://docs.python-guide.org/en/latest/starting/install/osx.html).
+[Homebrew](http://brew.sh/) is like the Mac app store for programming tools. You can access Homebrew via the terminal, ([like all good things](http://www.amazon.com/Beginning-was-Command-Line-Neal-Stephenson/dp/0380815931)). Inspiration for this section comes from Kenneth Reitz's excellent [Python guide](http://docs.python-guide.org/en/latest/starting/install/osx.html).
 
 Open your terminal application. All Macs come with an app called "Terminal." If you'd like something fancier, we like [iTerm2](http://iterm2.com/downloads/stable/iTerm2_v1_0_0.zip). Install Homebrew by pasting this command into your terminal and hit "enter."
 
@@ -42,13 +42,19 @@ Now, paste this this line to test Homebrew.
 
 	brew doctor
 
+This will test your Homebrew setup, and any tools you've installed to make sure they're working properly. If they are, Homebrew tell you
+
+	Your system is ready to brew.
+
+If anything isn't working properly, follow their instructions to get things working correctly.
+
 **Note**: If there are two lines inside any of the code blocks in this article, paste them separately and hit enter after each of them.
 
-Next you'll need to edit a file that ensures you can use what you've just downloaded. Editing your `~/.bash_profile` file allows you preload and access all these fun things we've been installing.
+Next you'll need to go in and edit  `~/.bash_profile` to ensures you can use what you've just downloaded. `bash_profile` acts like a configuration file for your terminal.
 
 **Note**: There are many editors available on your computer. You can use a pretty graphical editor like [SublimeText2](http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1.dmg) or you can use one built-in to your terminal, like [`vim`](http://www.vim.org/docs.php) or [`nano`](http://www.nano-editor.org/dist/v2.2/nano.html). We'll be using `nano` for this tutorial just to keep things simple.
 
-Open your `~/.bash_profile` with the following command.
+Open your `bash_profile` with the following command.
 
 	nano ~/.bash_profile
 
@@ -66,7 +72,7 @@ You'll only need to source the `bash_profile` since we're editing the file right
 
 Virtualenv isolates each of your Python projects in their own little sandboxes, keeping your environment variables and installed software neat and tidy. Your Mac comes pre-packaged with the most stable version of Python, but you'll need to tell your `bash_profile` to use it first. Edit the file again and add this line:
 
-export PATH=/usr/local/lib/python2.7/site-packages:$PATH
+	export PATH=/usr/local/lib/python2.7/site-packages:$PATH
 
 Next, you'll need to install `pip`. Like Homebrew, it's sort of an app store but for Python code.
 
@@ -110,11 +116,11 @@ Finally, add Node to your `~/.bash_profile` like you did for Homebrew and virtua
 
 	export NODE_PATH=/usr/local/lib/node_modules
 
-Save and exit out of `nano` using control + O and control + X, and then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to your next cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
+Save and exit out of `nano` using control + O and control + X, and then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
 
 # Appendices
 ## Appendix 1: Postgres and PostGIS
-We occasionally need to do work with geographic data for interactive maps. This requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data. We'll explain these tools a bit more as we install them.
+We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data. We'll explain these tools a bit more as we install them.
 
 ### NumPy
 First, we need to install a Python library called NumPy. We don't use NumPy directly, but PostGIS uses it for making geographic calculations.
@@ -144,22 +150,15 @@ Finally, let's start up the Postgres server.
 	pgup
 
 ### PostGIS
-This deceptively simple command will install an awful lot of software. It's going to take some time, and your laptop fans will probably sound like a fighter jet trying to take off. Don't worry; it can take the heat.
+This deceptively simple command will install an awful lot of software. It's going to take some time, and your laptop fans will probably sound like a fighter jet taking off. Don't worry; it can take the heat.
 
-	brew install postgis gdal
+	brew install gdal --with-postgres
 
-Still hanging in there? Now you can create your first geographically-enabled database.
+Still hanging in there? 
 
-First, let's create a database that isn't geographically-enabled. We can create databases for Postgres with the `createdb` command. Let's call this database `geodb`, but you could name it anything you want.
+	brew install postgis
 
-	createdb geodb
-
-Now that we have a database created, let's convert it to one that's geographically-enabled.
-
-	psql -d geodb -c "CREATE EXTENSION postgis;"
-	psql -d geodb -c "CREATE EXTENSION postgis_topology;"
-
-And voila! You know have a geodatabase to perform some calculations.
+Now you can create your first geographically-enabled database. For more information on how to do that postgis [tells you how to do this](http://postgis.refractions.net/documentation/manual-1.5/ch02.html).
 
 ## Appendix 2: The Terminal
 Since you're going to be working from the command line a lot, it's worth investing time to make your terminal something that's a little more easy on the eyes.
@@ -180,7 +179,7 @@ See? Much nicer.
 Since your code is stored entirely as text files on your computer, you'll want a nice text editor. Our instructions showed you how to use `nano`, a text editor that you'll find on almost every computer. However, there are at least two others that the team uses. Text editors are like the Microsoft Word of the programming world, except they come packed with all kinds of handy dandy features to make writing code a synch.
 
 ### SublimeText 2
-[SublimeText2](http://www.sublimetext.com/2) has [remarkable number of customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland)
+If you're more comfortable with an editor that you can open up like Word, [SublimeText2](http://www.sublimetext.com/2) has a sweet graphical user interface and some [nice customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland)
 
 ### Vim
-Personally, I prefer vim. It also comes pre-installed on your computer, but there's a lot of little keyboard shortcuts you'll need to get comfy with before you can just dive-in. Here's a nice [cheat sheet](http://www.tuxfiles.org/linuxhelp/vimcheat.html), though, you might want to keep open in a tab if this is your not familiar with it. You can add all kinds of features, but Chris Groskopf recommends [nerdtree](https://github.com/tpope/vim-surround) and [surround](https://github.com/scrooloose/nerdtree). Here are [some videos](http://net.tutsplus.com/sessions/vim-essential-plugins/) to help make vim and those particular add-ons.
+Personally, I prefer vim &mdash; a terminal based editor that requires you to type rather than point-and-click to work on files. It comes pre-installed on your computer, but there's a lot of little keyboard shortcuts you'll need to get comfy with before you can just dive-in. Here's a nice [cheat sheet](http://www.tuxfiles.org/linuxhelp/vimcheat.html), though, you might want to keep open in a tab if this is your not familiar with it. You can add all kinds of features, but our teammate Chris recommends [nerdtree](https://github.com/tpope/vim-surround) and [surround](https://github.com/scrooloose/nerdtree). Here are [some videos](http://net.tutsplus.com/sessions/vim-essential-plugins/) to help make vim and those particular add-ons.
