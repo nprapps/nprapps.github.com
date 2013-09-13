@@ -36,11 +36,11 @@ Start by opening up your terminal application. All Macs come with an app called 
 
 [Homebrew](http://brew.sh/) is like the Mac app store for programming tools. You can access Homebrew via the terminal, ([like all good things](http://www.amazon.com/Beginning-was-Command-Line-Neal-Stephenson/dp/0380815931)). Inspiration for this section comes from Kenneth Reitz's excellent [Python guide](http://docs.python-guide.org/en/latest/starting/install/osx.html).
 
-Install Homebrew by pasting this command into your terminal and hit "enter."
+Install Homebrew by pasting this command into your terminal and then hitting "enter." 
 
 	ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
-Now, paste this this line to test Homebrew.
+It will ask for your password, so type that in and hit "enter" again. Now, paste this line to test Homebrew.
 
 	brew doctor
 
@@ -64,7 +64,7 @@ Then copy and paste this line of code at the very top. This lets Homebrew handle
 
 	export PATH=/usr/local/bin:$PATH
 
-Once you've added the line of code, you can save the file by typing pressing control + O, then control + X. You'll find yourself back at the command line and needing to update your terminal session like so. Copy and paste the next line of code into your terminal and hit enter.
+Once you've added the line of code, you can save the file by typing pressing control + O. Doing so lets you adjust the file name. Just leave it as is, then hit enter to save. Hit control + X to exit. You'll find yourself back at the command line and needing to update your terminal session like so. Copy and paste the next line of code into your terminal and hit enter.
 
 	source ~/.bash_profile
 
@@ -72,7 +72,7 @@ You'll only need to source the `bash_profile` since we're editing the file right
 
 # Chapter 2: Install Virtualenv
 
-Virtualenv isolates each of your Python projects in their own little sandboxes, keeping your installed software neat and tidy. Your Mac comes pre-packaged with the most stable version of Python, but you'll need to tell your `bash_profile` to use it first. Edit the file again and add this line:
+Virtualenv isolates each of your Python projects in their own little sandboxes, keeping your installed software neat and tidy. Your Mac comes pre-packaged with the most stable version of Python, but you'll need to tell your `bash_profile` to use it first. Edit the file again with `nano` and add this line:
 
 	export PATH=/usr/local/lib/python2.7/site-packages:$PATH
 
@@ -105,7 +105,10 @@ and add this line below the line you just added:
 It should look like this:
 
 	export PATH=/usr/local/bin:$PATH
+	export PATH=/usr/local/lib/python2.7/site-packages:$PATH
 	source /usr/local/share/python/virtualenvwrapper_lazy.sh
+
+To exit less, press "Q".
 
 # Chapter 3: Set up Node and NPM
 Finally, we'll install a tool called LESS that we use to write CSS, the language that styles websites. LESS is a built with Node, so we'll need to install that and NPM, Node's version of `pip` or Homebrew.
@@ -122,7 +125,7 @@ Finally, add Node to your `~/.bash_profile` like you did for Homebrew and virtua
 
 	export NODE_PATH=/usr/local/lib/node_modules
 
-Save and exit out of `nano` using control + O and control + X, and then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
+Save and exit out of `nano` using control + O, enter, and then control + X. Then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
 
 ## Appendix 1: Postgres and PostGIS
 We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data. We'll explain these tools a bit more as we install them.
@@ -176,9 +179,9 @@ Since you're going to be working from the command line a lot, it's worth investi
 Download [iTerm2](http://www.iterm2.com/#/section/home). The built-in terminal application which comes with your Mac is fine, but iTerm2 is slicker and more configurable. One of the better features is splitting your terminal into different horizontal and vertical panes: one for an active pane, another for any files you might want to have open, and a third for a local server.
 
 ### Solarized
-[Solarized](http://ethanschoonover.com/solarized/files/solarized.zip) is a set of nice, readable colors. Unzip the `solarized.zip` file and navigate to `solarized/iterm2-colors-solarized/`. Double-click on `Solarized Dark.itermcolors`.
+[Solarized](http://ethanschoonover.com/solarized/files/solarized.zip) is a set of nice, readable colors. Unzip the `solarized.zip` file.
 
-Now, inside iTerm2 go to iTerm > Preferences > Profiles and select "Default." Choose "Colors" and find the "Load Presets…" button at the bottom of the window. Click and select "Solarized Dark."
+Now, inside iTerm2 go to iTerm > Preferences > Profiles and select "Default." Choose "Colors" and find the "Load Presets…" button at the bottom of the window. Select "Import" and navigate to `solarized/iterm2-colors-solarized/` and double-click on `Solarized Dark.itermcolors`. After it's been imported, you can find "Solarized Dark" on the "Load Presets" list. Click and select "Solarized Dark" to change the colors appropriately.
 
 ![You can edit your theme from the Preferences menu](/img/posts/a2_solarized.png)
 
