@@ -6,9 +6,9 @@ author: Jeremy Bowers
 email: jbowers@npr.org
 twitter: jeremybowers
 ---
-![You can build and deploy complex sites without running servers. Here's how.](/img/posts/playgrounds_header.png)
-
 *This post is [cross-posted with our friends at Source](http://source.mozillaopennews.org/en-US/articles/dont-go-full-server/).*
+
+![You can build and deploy complex sites without running servers. Here's how.](/img/posts/playgrounds_header.png)
 
 We usually build [relatively](https://github.com/nprapps/us-wildfires/) [simple](https://github.com/nprapps/moore-tornado/) [sites](https://github.com/nprapps/grainbins/) with our [app template](http://blog.apps.npr.org/2013/02/14/app-template-redux.html). [Our accessible playgrounds project](https://github.com/nprapps/playgrounds2/) needed to be more complex. We needed to deal with moderated, user-generated data. But we didn't have to go full server in order to make this site work; we just modified our [app template](https://github.com/nprapps/app-template/).
 
