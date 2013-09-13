@@ -10,7 +10,7 @@ twitter: jeremybowers
 
 ![You can build and deploy complex sites without running servers. Here's how.](/img/posts/playgrounds_header.png)
 
-We usually build [relatively](https://github.com/nprapps/us-wildfires/) [simple](https://github.com/nprapps/moore-tornado/) [sites](https://github.com/nprapps/grainbins/) with our [app template](http://blog.apps.npr.org/2013/02/14/app-template-redux.html). [Our accessible playgrounds project](https://github.com/nprapps/playgrounds2/) needed to be more complex. We needed to deal with moderated, user-generated data. But we didn't have to go full server in order to make this site work; we just modified our [app template](https://github.com/nprapps/app-template/).
+We usually build [relatively](http://apps.npr.org/fire-forecast/) [simple](http://apps.npr.org/moore-oklahoma-tornado-damage/) [sites](http://apps.npr.org/buried-in-grain/) with our [app template](http://blog.apps.npr.org/2013/02/14/app-template-redux.html). [Our accessible playgrounds project](http://apps.npr.org/playgrounds/) needed to be more complex. We needed to deal with moderated, user-generated data. But we didn't have to go full server in order to make this site work; we just modified our [app template](https://github.com/nprapps/app-template/).
 
 # Asynchronous Updates
 App template-based sites are HTML files rendered from templates and deployed to Amazon's Simple Storage Service (S3). This technique works tremendously for sites that never change, but our playgrounds site needs to be dynamic.
