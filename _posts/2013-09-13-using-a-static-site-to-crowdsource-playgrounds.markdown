@@ -8,6 +8,8 @@ twitter: jeremybowers
 ---
 ![You can build and deploy complex sites without running servers. Here's how.](/img/posts/playgrounds_header.png)
 
+*This post is [cross-posted with our friends at Source](http://source.mozillaopennews.org/en-US/articles/dont-go-full-server/).*
+
 We usually build [relatively](https://github.com/nprapps/us-wildfires/) [simple](https://github.com/nprapps/moore-tornado/) [sites](https://github.com/nprapps/grainbins/) with our [app template](http://blog.apps.npr.org/2013/02/14/app-template-redux.html). [Our accessible playgrounds project](https://github.com/nprapps/playgrounds2/) needed to be more complex. We needed to deal with moderated, user-generated data. But we didn't have to go full server in order to make this site work; we just modified our [app template](https://github.com/nprapps/app-template/).
 
 # Asynchronous Updates
@@ -63,8 +65,6 @@ Also, a single CloudSearch instance is not very stable when running high-CPU que
 Finally, while Amazon would auto-scale our CloudSearch instances to match demand, we couldn't find any published material explaining how often Amazon would spin up new servers or how many would initialize at once. So, we reached out to Amazon. They were able to set our CloudSearch domain to always have at least two servers at all times. With the extra firepower and our retry solution, on launch day we had no problems at all.
 
 # Retrofitting CloudSearch For JSONP
-![JSONP over Nginx proxy.](/img/posts/playgrounds_ajax.png)
-
 You might notice we're doing all of our CloudSearch interaction on the client. But the CloudSearch API doesn't support JSONP natively. So we need to proxy the responses with Nginx.
 
 ## Option 1: CORS
