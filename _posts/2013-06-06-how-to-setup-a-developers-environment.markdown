@@ -108,7 +108,7 @@ It should look like this:
 	export PATH=/usr/local/lib/python2.7/site-packages:$PATH
 	source /usr/local/share/python/virtualenvwrapper_lazy.sh
 
-To exit less, press "Q".
+To exit `less`, press "Q".
 
 # Chapter 3: Set up Node and NPM
 Finally, we'll install a tool called LESS that we use to write CSS, the language that styles websites. LESS is a built with Node, so we'll need to install that and NPM, Node's version of `pip` or Homebrew.
