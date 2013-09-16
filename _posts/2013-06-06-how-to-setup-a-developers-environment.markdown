@@ -7,6 +7,10 @@ email: grich@npr.org
 twitter: gerald_arthur
 ---
 
+*Updated Sept 13, 2013, to correct some details.*
+
+*Hey guys, I'm [Shelly Tan](https://twitter.com/Tan_Shelly), the latest News Apps intern. You'll be hearing more from me later, but for now, just know that I'm still in awe of everything at NPR and have to resist keeling over in my rabid fangirling; Gerald wasn't kidding about the shiny offices and awesome food. Anyways, back to Gerald.*
+
 I joined the News Apps team a week ago in their shiny new DC offices, and in-between eating awesome food and Tiny Desk concerts, we've been documenting the best way to get other journalists setup to build news apps like the pros.
 
 The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with Mountain Lion OS X 10.8 installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
