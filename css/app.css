@@ -1,4 +1,7 @@
-body { border-top: 10px solid black; }
+@import url("/css/GothamSSm.css");
+
+body { border-top: 10px solid black; font-family: "Gotham SSm", Helvetica, Arial, sans-serif; 
+   }
 a { color:#3d80a7; font-weight: bold; }
 a:hover: { color: #33576E; font-weight: bold; text-transform: underline; }
 h1 { margin-bottom: 10px; font-size: 32px; }
@@ -55,6 +58,43 @@ p.nav-header.a { text-transform: none; font-weight: normal; font-size: 12px; pad
 #about h3 { clear:both; margin-top:40px; }
 #about .img-mug { float: right; padding: 0px 0px 5px 10px; width:73px; height:73px;}
 
+/*.apps-grid {
+	margin-top: 30px;
+}
+*/
+.app {
+	border-style: solid;
+	border-color: #ebebeb;
+	border-width: 0 0 1px 0;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+.grid h3 a {
+	font-size: 24px;
+	/*font-weight: normal;*/
+}
+
+.grid img {
+	width: 200px;
+	display: block;
+	border-style: solid;
+	border-color: #ebebeb;
+	border-width: 1px;
+	
+}
+
+.text-grid {
+	padding: 30px 0 30px 0;
+	margin-top: 37px;
+	font-size: 14px; 
+	color: #333;
+}
+
+.text-grid a {
+	float: right;
+}
+
 @media screen and (max-width:760px) {
     #small-logo { display: block; }
     #small-logo img { width: 100px; }
@@ -64,4 +104,8 @@ p.nav-header.a { text-transform: none; font-weight: normal; font-size: 12px; pad
     #logo { text-align:center; }
     #logo img { width:100px; }
     p.nav-header { width:60%; margin: 20px auto 0; text-align:center;}
+}
+
+@media screen and (max-width:480px) {
+    .grid .text-grid a {bottom: 5%;}
 }
