@@ -42,7 +42,7 @@ Start by opening up your terminal application. All Macs come with an app called 
 
 Install Homebrew by pasting this command into your terminal and then hitting "enter." 
 
-	ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+	ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
 It will ask for your password, so type that in and hit "enter" again. Now, paste this line to test Homebrew.
 

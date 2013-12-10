@@ -4,3 +4,4 @@ _posts/drafts/
 *.swo
 .DS_Store
 .rbenv-version
+node_modules
