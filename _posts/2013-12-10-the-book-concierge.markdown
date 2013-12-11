@@ -47,4 +47,4 @@ All of these UI changes were made to better present the tags and to allow for th
 
 # Check us out
 
-Wanna see our code? You can find it [here](https://github.com/nprapps/books13) on our GitHub page. Don’t hesitate to [get in touch ](mailto:nprapps@npr.org)with any questions or feedback. 
+Wanna see our code? You can find it [here](https://github.com/nprapps/books13) on our GitHub page. Don’t hesitate to [get in touch ](mailto:nprapps@npr.org) with any questions or feedback. 
