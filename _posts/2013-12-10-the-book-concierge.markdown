@@ -6,7 +6,7 @@ author: Shelly Tan
 email: nprapps@npr.org
 twitter: Tan_Shelly 
 ---
-*Thish post is [cross-posted with our friends at Source](http://source.opennews.org/en-US/articles/how-we-made-book-concierge/).*
+*This post is [cross-posted with our friends at Source](http://source.opennews.org/en-US/articles/how-we-made-book-concierge/).*
 
 We started [the Book Concierge](http://apps.npr.org/best-books-2013/) with the [NPR Books](http://www.npr.org/books/) team about four weeks back in early November. I worked alongside Danny Debelius, Jeremy Bowers and Chris Groskopf. The project centered on Books’ annual best books review, which is traditionally [published in multiple lists](http://www.npr.org/series/165293711/best-books-of-2012) in categories [like](http://www.npr.org/templates/story/story.php?storyId=247389525&live=1) "10 Books To Help You Recover From A Tense 2012." But this presentation was limiting; Books wanted to [take a break from lists.](http://www.npr.org/blogs/monkeysee/2013/12/04/247389525/a-list-of-reasons-we-re-taking-a-break-from-lists) 
 
