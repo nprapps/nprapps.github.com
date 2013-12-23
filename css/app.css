@@ -3,13 +3,12 @@
 body { border-top: 10px solid black; font-family: "Gotham SSm", Helvetica, Arial, sans-serif; 
    }
 a { color:#3d80a7; font-weight: bold; }
-a:hover: { color: #33576E; font-weight: bold; text-transform: underline; }
+a:hover { color: #33576E; font-weight: bold; text-decoration:none; }
 h1 { margin-bottom: 10px; font-size: 32px; }
-h2 { line-height:28px; margin-bottom: 10px; }
+h2 { line-height:1.2em; margin-bottom: 22px; }
 h3 { margin-bottom: 10px; }
-hr { margin: 18px 0px 18px 0px; border-top: 1px solid #E6E6E6; }
 
-article { padding: 20px 0px 20px 0px; margin: 0px 40px 0px 0px; }
+article { padding: 44px 0px 44px 0px; margin: 0px 44px 0px 0px; }
 article:not(:last-child) { border-bottom: 1px solid #e6e6e6;}
 cite { float: right; font-size: 11px; text-decoration: none; color: #666; }
 code { padding: 2px 4px; color: #D14; background-color: #F7F7F9; border: 1px solid #E1E1E8; }
@@ -24,7 +23,19 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 .byline { font-size: 12px; color: #666; }
 
 .footer { margin-top: 20px; color: #666; }
-.nav-list > li > a { color: #666; font-weight: bold; font-size: 22px; line-height: 28px; text-align: center; }
+
+.nav-list {
+    padding: 0;
+    margin: 0 0 44px;
+}
+.nav-list li {
+    font-size:22px;
+    line-height:2em;
+    text-align:center;
+}
+.nav-list li a {
+}
+
 .header { padding-bottom: 25px; padding-top: 40px; }
 
 .img-right { float: right; padding: 0px 0px 5px 10px; width: 50%}
@@ -35,24 +46,34 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 .post-media-right { float: right; }
 .post-media-left { float: right; }
 
-.nav-list { margin-top: 15px; }
-.entry { font-size: 14px; line-height: 22px; }
-.nav .nav-header { text-transform: none; font-weight: normal; font-size: 13px; padding-bottom: 18px; }
+.entry { font-size: 18px; line-height: 1.5em; }
 
-p.nav-header { text-transform: none; font-weight: normal; font-size:14px; line-height:22px; padding-bottom: 18px; }
-p.nav-header.a { text-transform: none; font-weight: normal; font-size: 12px; padding-bottom: 18px; color:#3d80a7; font-weight: bold; }
-
-.post-meta { color:#666; font-size: 12px; font-weight: bold; padding: 10px 0 0 0; }
+.post-meta { color:#666; font-size: 12px; padding: 10px 0 0 0; }
 .post-meta ul { list-style: none; padding: 0px; margin: 0px; font-size: 12px; }
 .post-meta li { display: inline; padding-right: 10px; }
 .post-pagination { font-size: 18px; }
 
-.twitter-widget { padding: 20px 0px 0px 0px; }
-.twitter-timeline { width:100%; height:600px; margin-top:20px; }
+.twitter-timeline { width:100%; height:888px; margin-top:20px; }
 
 .row { margin-top: 50px; }
 
 #disqus_thread { padding-top: 20px; }
+
+#logo {
+    margin: 44px 0 88px 0;
+}
+
+#logo img {
+    width:100%;
+}
+
+#logo a p {
+    text-align: center;
+    font-size: 66px;
+    margin: 44px 0 0;
+    font-weight: normal;
+    color: black;
+}
 #small-logo { display:none; }
 
 #about h3 { clear:both; margin-top:40px; }
