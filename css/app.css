@@ -31,7 +31,6 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 .nav-list li {
     font-size:22px;
     line-height:2em;
-    text-align:center;
 }
 .nav-list li a {
 }
@@ -67,9 +66,9 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
     width:100%;
 }
 
-#logo a p {
-    text-align: center;
-    font-size: 66px;
+#logo h1 a {
+    font-size: 88px;
+    line-height:1.2em;
     margin: 44px 0 0;
     font-weight: normal;
     color: black;
