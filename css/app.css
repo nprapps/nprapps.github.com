@@ -1,6 +1,6 @@
 @import url("/css/GothamSSm.css");
 
-body { border-top: 10px solid black; font-family: "Gotham SSm", Helvetica, Arial, sans-serif; 
+body { font-family: "Gotham SSm", Helvetica, Arial, sans-serif; 
    }
 a { color:#3d80a7; font-weight: bold; }
 a:hover { color: #33576E; font-weight: bold; text-decoration:none; }
