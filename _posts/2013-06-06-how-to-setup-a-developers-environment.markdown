@@ -15,18 +15,18 @@ I joined the News Apps team a week ago in their shiny new DC offices, and in-bet
 
 The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with Mountain Lion OS X 10.8 installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
 
-# Chapter 0: Prerequisites
-## Are you an administrator?
+## Chapter 0: Prerequisites
+### Are you an administrator?
 We'll be installing a number of programs from the command line in this tutorial, so that means you must have administrative privledges. If you're not an admin, talk with your friendly IT Department.
 
 Click on the Apple menu > System Preferences > Users & Groups and check your status against this handy screenshot.
 
 ![Are you an admin?](/img/posts/c0_admin.png)
 
-## Update your software
+### Update your software
 Click on the Apple menu > Software Update. Continue installing and rebooting until there is nothing left to update.
 
-## Install Xcode and the Xcode's command line tools
+### Install Xcode and the Xcode's command line tools
 We don't use Xcode everyday to develop, but it does give us some tools that you'll need to install. This part can take a while, so feel free to grab a cup of soup while this is downloading.
 
 * Get [Xcode](https://developer.apple.com/xcode/) from the app store.
@@ -34,7 +34,7 @@ We don't use Xcode everyday to develop, but it does give us some tools that you'
 
 ![Install Xcode's command line tools](/img/posts/c0_xcode.png)
 
-# Chapter 1: Install Homebrew
+## Chapter 1: Install Homebrew
 
 Start by opening up your terminal application. All Macs come with an app called "Terminal." You can find it under Applications > Utilities. Double click to open that bad boy up, and let's start with installing Homebrew.
 
@@ -74,7 +74,7 @@ Once you've added the line of code, you can save the file by typing pressing con
 
 You'll only need to source the `bash_profile` since we're editing the file right now. It's the equivalent of quitting your terminal application and opening it up again, but `source` lets you soldier forward and setup Python.
 
-# Chapter 2: Install Virtualenv
+## Chapter 2: Install Virtualenv
 
 Virtualenv isolates each of your Python projects in their own little sandboxes, keeping your installed software neat and tidy. Your Mac comes pre-packaged with the most stable version of Python, but you'll need to tell your `bash_profile` to use it first. Edit the file again with `nano` and add this line:
 
@@ -114,7 +114,7 @@ It should look like this:
 
 To exit `less`, press "Q".
 
-# Chapter 3: Set up Node and NPM
+## Chapter 3: Set up Node and NPM
 Finally, we'll install a tool called LESS that we use to write CSS, the language that styles websites. LESS is a built with Node, so we'll need to install that and NPM, Node's version of `pip` or Homebrew.
 
 Install Node using Homebrew.
@@ -131,15 +131,15 @@ Finally, add Node to your `~/.bash_profile` like you did for Homebrew and virtua
 
 Save and exit out of `nano` using control + O, enter, and then control + X. Then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
 
-## Appendix 1: Postgres and PostGIS
+### Appendix 1: Postgres and PostGIS
 We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data. We'll explain these tools a bit more as we install them.
 
-### NumPy
+#### NumPy
 First, we need to install a Python library called NumPy. We don't use NumPy directly, but PostGIS uses it for making geographic calculations.
 
     sudo pip install numpy
 
-### Postgres
+#### Postgres
 Next up: the Postgres database server. Postgres is a useful tool for dealing with all kinds of data, not just geography, so we'll get it setup first then tweak it to be able to interpret geographic data.
 
 	brew install postgresql
@@ -165,7 +165,7 @@ Finally, let's start up the Postgres server.
 
 	pgup
 
-### PostGIS
+#### PostGIS
 These deceptively simple commands will install an awful lot of software. It's going to take some time, and your laptop fans will probably sound like a fighter jet taking off. Don't worry; it can take the heat.
 
 	brew install gdal --with-postgres
@@ -176,13 +176,13 @@ Still hanging in there?
 
 Now you can create your first geographically-enabled database. For more information on how to do that postgis [tells you how to do this](http://postgis.net/docs/manual-2.0/postgis_installation.html#create_new_db_extensions).
 
-## Appendix 2: The Terminal
+### Appendix 2: The Terminal
 Since you're going to be working from the command line a lot, it's worth investing time to make your terminal something that's a little more easy on the eyes.
 
-### iTerm2
+#### iTerm2
 Download [iTerm2](http://www.iterm2.com/#/section/home). The built-in terminal application which comes with your Mac is fine, but iTerm2 is slicker and more configurable. One of the better features is splitting your terminal into different horizontal and vertical panes: one for an active pane, another for any files you might want to have open, and a third for a local server.
 
-### Solarized
+#### Solarized
 [Solarized](http://ethanschoonover.com/solarized/files/solarized.zip) is a set of nice, readable colors. Unzip the `solarized.zip` file.
 
 Now, inside iTerm2 go to iTerm > Preferences > Profiles and select "Default." Choose "Colors" and find the "Load Presets…" button at the bottom of the window. Select "Import" and navigate to `solarized/iterm2-colors-solarized/` and double-click on `Solarized Dark.itermcolors`. After it's been imported, you can find "Solarized Dark" on the "Load Presets" list. Click and select "Solarized Dark" to change the colors appropriately.
@@ -191,14 +191,14 @@ Now, inside iTerm2 go to iTerm > Preferences > Profiles and select "Default." Ch
 
 See? Much nicer.
 
-## Appendix 3: The Text Editor
+### Appendix 3: The Text Editor
 Since your code is stored entirely as text files on your computer, you'll want a nice text editor. Our instructions showed you how to use `nano`, a text editor that you'll find on almost every computer. However, there are at least two others that the team uses. Text editors are like the Microsoft Word of the programming world, except they come packed with all kinds of handy dandy features to make writing code a synch.
 
-### SublimeText 2
+#### SublimeText 2
 If you're more comfortable with an editor that you can open up like Word, [SublimeText2](http://www.sublimetext.com/2) has a sweet graphical user interface and some [nice customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland)
 
-### Vim
+#### Vim
 Personally, I prefer vim &mdash; a terminal based editor that requires you to type rather than point-and-click to work on files. It comes pre-installed on your computer, but there's a lot of little keyboard shortcuts you'll need to get comfy with before you can just dive-in. Here's a nice [cheat sheet](http://www.tuxfiles.org/linuxhelp/vimcheat.html), though, you might want to keep open in a tab if this is your not familiar with it. You can add all kinds of features, but our teammate Chris recommends [nerdtree](https://github.com/tpope/vim-surround) and [surround](https://github.com/scrooloose/nerdtree). Here are [some videos](http://net.tutsplus.com/sessions/vim-essential-plugins/) to help make vim and those particular add-ons.
 
-# Conclusion
+## Conclusion
 And with that you now have a sweet hackintosh. Happy hacking, and if you haven't setup a [Github](https://github.com/) account, you can try out your new tools and [play with some of our code](https://github.com/nprapps). Github provides [a thorough walkthrough](https://help.github.com/) to get you setup and working on some open sourced projects.

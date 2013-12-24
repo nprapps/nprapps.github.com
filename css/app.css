@@ -1,28 +1,32 @@
 @import url("/css/GothamSSm.css");
 
-body { font-family: "Gotham SSm", Helvetica, Arial, sans-serif; 
-   }
-a { color:#3d80a7; font-weight: bold; }
-a:hover { color: #33576E; font-weight: bold; text-decoration:none; }
+body {
+    font-family: "Gotham SSm", Helvetica, Arial, sans-serif;
+}
+a { color:#222; font-weight: bold; }
+a:hover { color: #6d8ac4; font-weight: bold; text-decoration:none; }
 h1 { margin-bottom: 10px; font-size: 32px; }
 h2 { line-height:1.2em; margin-bottom: 22px; }
 h3 { margin-bottom: 10px; }
 
-article { padding: 44px 0px 44px 0px; margin: 0; }
+article {
+    padding: 44px 0px 44px 0px;
+    margin: 0;
+}
+#home article, #things article {
+    color:#777;
+}
 article:not(:last-child) { border-bottom: 1px solid #e6e6e6;}
 cite { float: right; font-size: 11px; text-decoration: none; color: #666; }
 code { padding: 2px 4px; color: #D14; background-color: #F7F7F9; border: 1px solid #E1E1E8; }
-pre { background-color: #F7F7F9; border: 1px solid #E1E1E8; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px; border-radius: 3px; }
+pre { background-color: #F7F7F9; border: 1px solid #E1E1E8; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px; border-radius: 3px; margin: 0 0 22px;}
 blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; line-height: 23px; }
 
-.social { padding: 5px 5px 12px 0px; }
-.fb-like { float: left; margin: 0px 10px 10px 0px; }
-
-.entry li { list-style: square; line-height:22px; }
-.entry ul { line-height: 20px; margin: 0px 0px 10px 30px; }
 .byline { font-size: 12px; color: #666; }
 
-.footer { margin-top: 20px; color: #666; }
+.footer {
+    margin: 66px 0;
+}
 
 .nav-list {
     padding: 0;
@@ -33,6 +37,7 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
     line-height:2em;
 }
 .nav-list li a {
+    font-weight:normal;
 }
 
 .header { padding-bottom: 25px; padding-top: 40px; }
@@ -45,7 +50,29 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 .post-media-right { float: right; }
 .post-media-left { float: right; }
 
-.entry { font-size: 18px; line-height: 1.5em; }
+.entry h1 {
+    margin-bottom: 22px;
+    font-size: 44px;
+    line-height: 1.2em;
+    font-weight: normal;
+}
+.entry h2 {
+    margin:44px 0 22px;
+}
+.entry h3 {
+    margin:0 0 22px;
+}
+.entry h4 {
+    font-size:16px;
+    margin:0 0 11px;
+}
+.entry a { color: #6d8ac4;}
+.entry a:hover { color: #bccae5;}
+.entry section p { margin: 0 0 22px; }
+.entry section { font-size: 16px; line-height: 1.5em; margin-top:44px;}
+.entry section img { margin: 0 0 22px;}
+.entry li { list-style: square; line-height:22px; }
+.entry ul { margin: 0px 0px 22px 33px; }
 
 .post-meta { color:#666; font-size: 12px; padding: 10px 0 0 0; }
 .post-meta ul { list-style: none; padding: 0px; margin: 0px; font-size: 12px; }
@@ -59,19 +86,22 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 #disqus_thread { padding-top: 20px; }
 
 #logo {
-    margin: 44px 0 88px 0;
+    margin: 0 0 88px 0;
 }
 
-#logo img {
-    width:100%;
+#logo h1 img {
+    display:block;
+    margin: 44px 0 33px;
+}
+
+#logo h1 {
+    font-size: 88px;
+    line-height:1em;
+    margin: 0;
 }
 
 #logo h1 a {
-    font-size: 88px;
-    line-height:1.2em;
-    margin: 44px 0 0;
     font-weight: normal;
-    color: black;
 }
 #small-logo { display:none; }
 

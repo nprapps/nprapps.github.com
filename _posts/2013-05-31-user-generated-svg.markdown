@@ -5,7 +5,7 @@ description: "How we used SVG to generate shareable, high-resolution and print-f
 author: Christopher Groskopf
 ---
 
-### The challenge
+## The challenge
 
 For NPR's ongoing series ["The Changing Lives of Women"](http://www.npr.org/series/177622347/the-changing-lives-of-women), we wanted to ask women to share advice gleaned from their experience in the workforce. We've done a few user-generated content projects using Tumblr as a backend, most notably [Cook Your Cupboard](http://cookyourcupboard.tumblr.com), so we knew we wanted to reuse that infrastructure. Tumblr provides a very natural format for displaying images as well as baked in tools for sharing and content management. For Cook your Cupboard we had users submit photos, but for this project we couldn't think of a photo to ask our users to take that would say something meaningful about their workplace experience. So, with the help of our friends at Morning Edition, we arrived at the idea of a sign generator and our question: 
 
@@ -16,8 +16,7 @@ With that in mind we sketched up a user interface that gave users some ability t
 
 <img src="/img/posts/she-works-editor.jpg" />
 
-<p> </p>
-### Making images online
+## Making images online
 
 The traditional way of generating images in the browser is to use Flash, which is what sites like [quickmeme](http://www.quickmeme.com/make/caption/#id=190021979&name=Insanity+puppy&topic=Cute) do. We certainly weren't going to do that. All of our apps must work across all major browsers and on mobile devices. My initial instinct said we could solve this problem with [the HTML5 Canvas element](http://en.wikipedia.org/wiki/Canvas_element). Some folks already use Canvas for [resizing images on mobile devices before uploading them](https://github.com/gokercebeci/canvasResize), so it seemed like a natural fit. However, in addition to saving the images to Tumblr, we also wanted to generate a very high-resolution version for printing. Generating this on the client would have made for large file sizes at upload time&mdash;a deal-breaker for mobile devices. Scaling it up on the server would have lead to poor quality for printing.
 
@@ -31,23 +30,22 @@ The SVG graphic is sent to the server as text via the hidden form field. We've a
 
 Once the SVG text is on the server we save it to a file and use [cairosvg](http://cairosvg.org/) to cut a PNG, which we then POST to Tumblr. Tumblr returns a URL to the new "blog post", which we then send to the user as a 301 redirect. To the user it appears as though they posted their image directly to Tumblr.
 
-<p> </p>
-### Problems
+## Problems
 
-#### Text
+### Text
 
 Text was probably the hardest thing to get right. Because each browser renders text in a different way we found that our resulting images were inconsistent and often ugly. Worse yet, because our server-side, Cairo-based renderer was also different, we couldn't guarantee the text layout a user saw on their screen would match that of the final image once we'd converted it to a PNG.
 
 Here is the same text ([Quicksand 400](http://www.google.com/fonts/#QuickUsePlace:quickUse/Family:Quicksand)), rendered in Chrome on the left and IE9 on the right:
 
-&nbsp;
 <img src="/img/posts/text_chrome_ie9.png" />
-&nbsp;
 
 Researching a solution for this led me to discover [Cufon fonts](https://github.com/sorccu/cufon/wiki/About), a JSON format for representing fonts as SVG paths (technically [VML](http://en.wikipedia.org/wiki/Vector_Markup_Language) paths, but that doesn't matter). There is a Cufon Javascript library for using these fonts directly, however, there are also built-in hooks for using them Raphaël. (For those who care: they get loaded up via a "magic" callback name.) These resulting fonts are ideal for us, because the paths are already set and thus look the same in every browser *and* when rendered on the server. It's a beautiful thing:
 
 <script type="text/javascript" src="http://apps.npr.org/changing-lives/js/lib/jquery-1.8.3.js"> </script>
+
 <script type="text/javascript" src="http://apps.npr.org/changing-lives/js/lib/raphael.js"> </script>
+
 <script type="text/javascript" src="http://apps.npr.org/changing-lives/js/Snippet_400.font.js"> </script>
 
 <div id="cufon-example" style="width: 100%; height: 100px;"> </div>
@@ -66,11 +64,11 @@ Researching a solution for this led me to discover [Cufon fonts](https://github.
     });
 </script>
 
-#### Scaling
+### Scaling
 
 We found that the various SVG implementations we had to work with (Webkit, IE, Cairo) had different interpretations of `width`, `height` and `viewBox` parameters of the SVG. We ended up using a fixed size for `viewBox` (2048x2048) and rendering everything in that coordinate reference system. The `width` and `height` we scaled with our responsive viewport. On the server `width` and `height` were stripped before the SVG was sent to cairosvg, causing it to render the resulting PNGs at `viewBox` size. See the next section for the code that cleans up the SVG on the server.
 
-#### Browser support
+### Browser support
 
 A similar issue happened with IE9, which for no apparent reason was duplicating the XML namespace attribute of the SVG, `xmlns`. This caused cairosvg to bomb, so we had to strip it.
 
@@ -80,8 +78,7 @@ Here is the code we use to normalize the SVGs before passing them to cairosvg:
 
 <script src="https://gist.github.com/onyxfish/5615894.js"> </script> 
 
-<p> </p>
-### Glyphs
+## Glyphs
 
 One final thing we did for this project that is worth mentioning is building out a lightweight system for defining the ornaments you that can be selected as decoration for your quote. Although there is nothing technically challenging about this (it's a grid of squares), it was awfully fun code to write:
 
@@ -89,16 +86,12 @@ One final thing we did for this project that is worth mentioning is building out
 
 And it gave us a chance to use good-old-fashioned bitmaps for the configuration:
 
-<p> </p>
 <img src="/img/posts/she-works-glyphs.png" />
-<p> </p>
 
 You can see the full ornament definitions in [this gist](https://gist.github.com/onyxfish/5686902).
 
-<p> </p>
-### Conclusion
+## Conclusion
 
 By using SVG to generate images we were able to produce user-generated images suitable for printing at large size in a cross-platform and mobile-friendly way. It also provided us an opportunity to be playful and explore some interesting new image composition techniques. This "sign generator" approach seems to have resonated with users and resulted in over <a href="http://she-works.tumblr.com">1,100 submissions</a>!
 
-&nbsp;
 <a href="http://she-works.tumblr.com/"><img src="/img/posts/she-works-grid.jpg" /></a>

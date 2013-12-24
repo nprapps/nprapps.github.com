@@ -40,8 +40,6 @@ Cue our team's [app template].
 
 *drumroll ...*
 
----
-
 ## Raison d'être
 
 It's an opinionated template for building client-side apps, lovingly maintained by [Chris], which provides a skeleton for bootstrapping projects that can be served entirely from flat files.
@@ -58,8 +56,6 @@ Briefly, it ships with:
 For a more detailed rundown of the structure, check out the [README].
 
 There's a lot of work that went into this app template and a fair amount of discipline after each project we do to continue to maintain it. With every project we learn something new, so we backport these things accordingly to ensure our app template is in tip-top shape and ready to go for the next project.
-
----
 
 ## Design choices: A brief primer
 
@@ -137,8 +133,6 @@ Here's the command that deploys our master branch to production:
 	$ fab production master deploy
 
 This will automatically render files with the correct configuration for prod, gzips our assets, and then pushes files out to S3.
-
----
 
 ## Sold?
 

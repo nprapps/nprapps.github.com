@@ -2,24 +2,20 @@
 layout: default
 title: NPR Visuals
 ---
-
-{% for post in site.posts limit: 10  %}
-
-<article>
-    <header>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    </header>
-    <section class="entry">
-        {{ post.description }}
-    </section>
-       <div class="post-meta">
-        <ul>
-            <li>by <a href="mailto:{{ post.email }}">{{ post.author }}</a>, {{ post.date | date: "%B %d, %Y" }}</li>
-        </ul>
-    </div>
-</article>
-
-{% endfor %}
-
-<!--
-<h2 class="post-pagination">Older posts: 1 | <a href="/index2.html">2</a></h2> -->
+<div id="home">
+    {% for post in site.posts limit: 10  %}
+    <article>
+        <header>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        </header>
+        <section class="entry">
+            {{ post.description }}
+        </section>
+           <div class="post-meta">
+            <ul>
+                <li>by <a href="mailto:{{ post.email }}">{{ post.author }}</a>, {{ post.date | date: "%B %d, %Y" }}</li>
+            </ul>
+        </div>
+    </article>
+    {% endfor %}
+</div>
