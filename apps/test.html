@@ -1,43 +1,76 @@
 ---
 layout: default
-title: NPR News Apps Blog
+title: 'Things We Made : NPR Visuals'
 ---
 
 {{ site.config }}
 
-{% for app in site.data.apps  %}
+<div id="things">
 
-<article>
-    <div class="row">
-        <div class="span2">
-            <img src="http://apps.npr.org/arrested-development/img/promo-facebook.png"/>
-        </div>
-        <div class="span4">
-            <header>
-                <h2>
-                    {% if app.url != null %}
-                    <a href="{{ app.url }}">{{ app.name }}</a>
-                    {% else %}
-                    {{ app.name }}
-                    {% endif %}
-                </h2>
-            </header>
-            <section class="entry">{{ app.description }}</p>
-            </section>
-            <div class="post-meta">
-                <ul>
-                    {% if app.github_url != null %}
-                    <li><a href="{{ app.github_url }}">Source on GitHub &#8594;</a></li>
-                    {% endif %}
-                </ul>
+    <div>
+        <h2>Tools</h2>
+        {% for tool in site.data.tools  %}
+        <article>
+            <div class="row">
+                <div class="span2">
+                    <a href="{{ tool.url }}"><img src="{{ tool.image }}"/></a>
+                </div>
+                <div class="span4">
+                    <header>
+                        <h3>
+                            {% if tool.url != null %}
+                            <a href="{{ tool.url }}">{{ tool.name }}</a>
+                            {% else %}
+                            {{ tool.name }}
+                            {% endif %}
+                        </h3>
+                    </header>
+                    <section class="entry">{{ tool.description }}</p>
+                    </section>
+                    <div class="post-meta">
+                        <ul>
+                            {% if tool.github_url != null %}
+                            <li><a href="{{ tool.github_url }}">Source on GitHub &#8594;</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
+        </article>
+    {% endfor %}    
     </div>
-</article>
 
-{% endfor %}
-
-TODO:
-write a script to regenerate the apps file?
-use a combination of app urls and github urls
-scrape for the og:title and the og:description?
+    <div>
+        <h2>Apps</h2>
+        {% for app in site.data.apps reversed %}
+        <article>
+            <div class="row">
+                <div class="span2">
+                    <a href="{{ app.url }}"><img src="{{ app.image }}"/></a>
+                </div>
+                <div class="span4">
+                    <header>
+                        <h3>
+                            {% if app.url != null %}
+                            <a href="{{ app.url }}">{{ app.name }}</a>
+                            {% else %}
+                            {{ app.name }}
+                            {% endif %}
+                        </h3>
+                    </header>
+                    <section class="entry">{{ app.description }}</p>
+                    </section>
+                    <div class="post-meta">
+                        <ul>
+                            <li>{{ app.date }}</li>
+                            {% if app.github_url != null %}
+                            <li><a href="{{ app.github_url }}">Source on GitHub &#8594;</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+</div>

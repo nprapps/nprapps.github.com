@@ -79,6 +79,22 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 #about h3 { clear:both; margin-top:40px; }
 #about .img-mug { float: right; padding: 0px 0px 5px 10px; width:73px; height:73px;}
 
+#things {
+    margin-top:44px;
+}
+
+#things h2 {
+    font-size:28px;
+    margin:0;
+    font-weight:normal;
+}
+
+#things h3 {
+    font-size:22px;
+    line-height: 1.2em;
+}
+
+
 /*.apps-grid {
 	margin-top: 30px;
 }
