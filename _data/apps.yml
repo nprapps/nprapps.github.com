@@ -1,0 +1,8 @@
+- name: App Template
+  description: An opinionated project template for (mostly) server-less apps.
+  url:
+  github_url: https://github.com/nprapps/app-template
+- name: "Previously, On Arrested Development"
+  description: "NPR&#39;s slightly obsessive guide to the running gags on Arrested Development, updated for season 4."
+  url: http://apps.npr.org/arrested-development/
+  github_url: https://github.com/nprapps/arrested-development

@@ -1,0 +1,36 @@
+---
+layout: default
+title: NPR News Apps Blog
+---
+
+{{ site.config }}
+
+{% for app in site.data.apps  %}
+
+<article>
+    <header>
+        <h2>
+            {% if app.url != null %}
+            <a href="{{ app.url }}">{{ app.name }}</a>
+            {% else %}
+            {{ app.name }}
+            {% endif %}
+        </h2>
+    </header>
+    <section class="entry">{{ app.description }}</p>
+    </section>
+       <div class="post-meta">
+        <ul>
+            {% if app.github_url != null %}
+            <li><a href="{{ app.github_url }}">Source on GitHub &raquo;</a></li>
+            {% endif %}
+        </ul>
+    </div>
+</article>
+
+{% endfor %}
+
+TODO:
+write a script to regenerate the apps file?
+use a combination of app urls and github urls
+scrape for the og:title and the og:description?

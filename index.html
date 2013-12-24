@@ -5,18 +5,18 @@ title: NPR News Apps Blog
 
 {% for post in site.posts limit: 10  %}
 
-    <article>
-    	<header>
-			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-		</header>
-    	<section class="entry">{{ post.description }}</p>
-		</section>
-   		<div class="post-meta">
-			<ul>
-				<li>by <a href="mailto:{{ post.email }}">{{ post.author }}</a>, {{ post.date | date: "%B %d, %Y" }}</li>
-			</ul>
-		</div>
-    </article>
+<article>
+    <header>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </header>
+    <section class="entry">{{ post.description }}</p>
+    </section>
+       <div class="post-meta">
+        <ul>
+            <li>by <a href="mailto:{{ post.email }}">{{ post.author }}</a>, {{ post.date | date: "%B %d, %Y" }}</li>
+        </ul>
+    </div>
+</article>
 
 {% endfor %}
 
