@@ -8,23 +8,30 @@ title: NPR News Apps Blog
 {% for app in site.data.apps  %}
 
 <article>
-    <header>
-        <h2>
-            {% if app.url != null %}
-            <a href="{{ app.url }}">{{ app.name }}</a>
-            {% else %}
-            {{ app.name }}
-            {% endif %}
-        </h2>
-    </header>
-    <section class="entry">{{ app.description }}</p>
-    </section>
-       <div class="post-meta">
-        <ul>
-            {% if app.github_url != null %}
-            <li><a href="{{ app.github_url }}">Source on GitHub &raquo;</a></li>
-            {% endif %}
-        </ul>
+    <div class="row">
+        <div class="span2">
+            <img src="http://apps.npr.org/arrested-development/img/promo-facebook.png"/>
+        </div>
+        <div class="span4">
+            <header>
+                <h2>
+                    {% if app.url != null %}
+                    <a href="{{ app.url }}">{{ app.name }}</a>
+                    {% else %}
+                    {{ app.name }}
+                    {% endif %}
+                </h2>
+            </header>
+            <section class="entry">{{ app.description }}</p>
+            </section>
+            <div class="post-meta">
+                <ul>
+                    {% if app.github_url != null %}
+                    <li><a href="{{ app.github_url }}">Source on GitHub &raquo;</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
     </div>
 </article>
 

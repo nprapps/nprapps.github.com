@@ -8,7 +8,7 @@ h1 { margin-bottom: 10px; font-size: 32px; }
 h2 { line-height:1.2em; margin-bottom: 22px; }
 h3 { margin-bottom: 10px; }
 
-article { padding: 44px 0px 44px 0px; margin: 0px 44px 0px 0px; }
+article { padding: 44px 0px 44px 0px; margin: 0; }
 article:not(:last-child) { border-bottom: 1px solid #e6e6e6;}
 cite { float: right; font-size: 11px; text-decoration: none; color: #666; }
 code { padding: 2px 4px; color: #D14; background-color: #F7F7F9; border: 1px solid #E1E1E8; }
@@ -55,7 +55,7 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 
 .twitter-timeline { width:100%; height:888px; margin-top:20px; }
 
-.row { margin-top: 50px; }
+.container { margin-top: 50px; }
 
 #disqus_thread { padding-top: 20px; }
 
