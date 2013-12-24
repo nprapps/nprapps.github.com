@@ -77,6 +77,9 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 .post-meta { color:#666; font-size: 12px; padding: 10px 0 0 0; }
 .post-meta ul { list-style: none; padding: 0px; margin: 0px; font-size: 12px; }
 .post-meta li { display: inline; padding-right: 10px; }
+.post-meta a { color: #6d8ac4;}
+.post-meta a:hover { color: #bccae5;}
+
 .post-pagination { font-size: 18px; }
 
 .twitter-timeline { width:100%; height:888px; margin-top:20px; }
@@ -123,7 +126,6 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
     line-height: 1.2em;
 }
 
-
 /*.apps-grid {
 	margin-top: 30px;
 }
@@ -162,14 +164,28 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 }
 
 @media screen and (max-width:760px) {
-    #small-logo { display: block; }
+    #small-logo {
+        font-size:22px;
+        display: block;
+    }
+    #small-logo a { font-weight:normal; }
     #small-logo img { width: 100px; }
-}
-@media screen and (max-width:760px) {
+    
     #rail { margin-top:20px; }
-    #logo { text-align:center; }
-    #logo img { width:100px; }
+    #logo { margin: 0 0 22px 0;}
+    #logo h1 { font-size: 33px; }
+    #logo h1 img { margin:22px 0 22px; }
+    
+    .nav-list { margin: 0 0 22px; }
+    .nav-list li { font-size:16px; }
+    .footer { margin: 22px 0; }
     p.nav-header { width:60%; margin: 20px auto 0; text-align:center;}
+    
+    .entry h1 {
+        font-size: 33px;
+    }
+    
+    #things img { display:none; }
 }
 
 @media screen and (max-width:480px) {
