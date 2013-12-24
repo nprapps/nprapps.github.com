@@ -1,0 +1,21 @@
+- name: "App Template"
+  description: "An opinionated project template for (mostly) server-less apps."
+  image: "../img/apps/apptemplate.png"
+  url: https://github.com/nprapps/app-template
+  github_url: https://github.com/nprapps/app-template
+- name: "Chart Builder"
+  description: "Our fork of Quartz's Chartbuilder project."
+  image: "../img/apps/charts.png"
+  url: https://github.com/nprapps/Chartbuilder
+  github_url: https://github.com/nprapps/Chartbuilder
+- name: "Quotable"
+  description: "This machine makes quote images for sharing."
+  image: "../img/apps/quote.png"
+  url: https://github.com/nprapps/quotable
+  github_url: https://github.com/nprapps/quotable
+- name: "Tumble"
+  description: "A rig for handling static tumblr themes in a reasonable fashion."
+  date:
+  image: "http://31.media.tumblr.com/9133de6d9b6ad0c367fd74c6201d7772/tumblr_mumkh6pJxp1swbibso1_400.jpg"
+  url: https://github.com/nprapps/tumble
+  github_url: https://github.com/nprapps/tumble

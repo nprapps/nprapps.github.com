@@ -1,0 +1,204 @@
+- name: "Mapping The U.S. Drought"
+  description: "More than half the country is experiencing drought conditions, some of them severe."
+  date: "July 8, 2012"
+  image: "http://media.npr.org/assets/img/2012/07/19/2012-07-10-1dd502b157c4bc06097ec34345949ed809c466b9.png"
+  url: http://www.npr.org/2012/07/18/156989764/interactive-mapping-the-u-s-drought
+  github_url: https://github.com/nprapps/us-drought
+- name: "The Anatomy Of Human Tissue Profits"
+  description: "Explore how much medical facilities pay for body parts commonly used from tissue donors."
+  date: "July 17, 2012"
+  image: "../img/apps/bone.gif"
+  url: http://www.npr.org/2012/07/17/156837673/interactive-the-anatomy-of-human-tissue-profits
+  github_url:
+- name: "Track The Spread Of AIDS Across The Globe"
+  description: "A few AIDS cases were seen in the U.S. in the early '80s. Soon AIDS was found around the world."
+  date: "July 25, 2012"
+  image: "http://media.npr.org/assets/img/2012/07/19/aidspromoart-300866beced9debbd8e7cb79f1d24a2e1e58e001.jpg"
+  url: http://www.npr.org/blogs/health/2012/07/25/156991065/track-the-spread-of-aids-across-the-globe
+  github_url:
+- name: "Fire Forecast"
+  description: "Check the wildfire danger in your area. Updated daily."
+  date: "August 23, 2012"
+  image: "http://npr.org/news/graphics/2012/08/firemap.png"
+  url: http://apps.npr.org/fire-forecast/
+  github_url: https://github.com/nprapps/us-wildfires
+- name: "Lost and Found : The amazing story of Charles Cushman in full color"
+  description: "In the late 1930s, color film was pretty rare. But one amateur named Charles Cushman couldn't get enough. Over three decades he shot more than 14,000 photos of an era we usually see in black-and-white -- including one of the first color photos of the Golden Gate Bridge. Check out this special interactive to learn more."
+  date: "Sept. 14, 2012"
+  image: "http://media.npr.org/news/specials/2012/cushman/img/cush-photos/goldengate1938.jpg"
+  url: http://www.npr.org/news/specials/2012/cushman/
+  github_url: https://github.com/npr/cushman
+- name: "Election 2012 Early And Absentee Voting"
+  description: "Early and absentee voting are now options in most of the country, and roughly a third of all Americans casting a ballot in the 2012 presidential race are expected to do so before Nov. 6, Election Day. Here’s an early voting calendar and state deadlines for voter registration."
+  date: "Sept. 25, 2012"
+  image: "http://media.npr.org/news/specials/2012/elections/early-voting_sq.gif"
+  url: http://apps.npr.org/early-voting-2012/
+  github_url: https://github.com/nprapps/early-voting-2012
+- name: "Live Coverage of the 2012 Presidential Conventions and Debates"
+  description: "For example: NPR's coverage of the Second Presidential Debate in Hempstead, N.Y. Live: audio of the speeches, analysis and chat."
+  date: "Aug. through October, 2013"
+  image: "http://media.npr.org/news/specials/2012/elections/debate_sq.png"
+  url: http://apps.npr.org/2012-second-presidential-debate/
+  github_url:
+- name: "Pop-Up Politics: Beyond The Speeches"
+  description: "Can't wait for the presidential debate? Watch these virtual face-offs on video."
+  date: "Oct. 2, 2012"
+  image: "http://media.npr.org/assets/img/2012/10/01/pop-up-promo-b529f9ae6381924b4a1874c14237dcb01c1c83ba.jpg"
+  url: http://www.npr.org/2012/10/02/161884952/pop-up-politics-2012-general-election-edition
+  github_url:
+- name: "Election 2012: Swing State Scorecard : NPR"
+  description: "Plot Obama and Romney's paths to victory with NPR's Swing State Scorecard."
+  date: "Oct. 23, 2012"
+  image: "http://media.npr.org/news/specials/2012/elections/electris-promo_sq.gif"
+  url: http://apps.npr.org/swing-state-scorecard/
+  github_url: https://github.com/nprapps/electris
+- name: "Election 2012: Live Coverage From NPR News"
+  description: "Follow the latest results, get breaking news and analysis, and listen to our live special broadcast."
+  date: "Nov. 6, 2012"
+  image: "http://media.npr.org/news/specials/2012/elections/election-promo_sq.gif"
+  url: http://elections2012.npr.org/
+  github_url: https://github.com/nprapps/electris
+- name: "BoomTown"
+  description: "What does a flurry of natural gas drilling do to a small town? See and hear how businesses, crime trends and relationships were forever changed as the Norman Rockwell painting went bye-bye in Towanda, Pennsylvania."
+  date: "Dec. 10, 2012"
+  image: "http://stateimpact.npr.org/pennsylvania/boomtown/img/flower-bridge.jpg"
+  url: http://stateimpact.npr.org/pennsylvania/boomtown/
+  github_url:
+- name: "NPR Music Presents: In Memoriam 2012"
+  description: "NPR Music remembers the singers, instrumentalists, songwriters and personalities who died in 2012. Explore their musical legacies."
+  date: "Dec. 24, 2012"
+  image: "http://media.npr.org/assets/img/2012/12/20/in-memoriam-promo_sq.png"
+  url: http://apps.npr.org/music-memoriam-2012/
+  github_url: https://github.com/nprapps/in-memoriam
+- name: "Bob Boilen's Wristbands 2012"
+  description: "Bob saw 462 shows in 2012 and saved his tickets, wristbands and media passes."
+  date: "Dec. 31, 2012"
+  image: "http://apps.npr.org/bob-boilens-wristbands-2012/img/tiles/2/3/2.jpg"
+  url: http://apps.npr.org/bob-boilens-wristbands-2012/
+  github_url: https://github.com/nprapps/bobs-concert-tickets
+- name: "From The Bronx To The Bench: The Family Photos Of Justice Sotomayor"
+  description: "Supreme Court Justice Sonia Sotomayor shares her story — and a suitcase brimming with family photos — with NPR."
+  date: "Jan. 12, 2013"
+  image: "../img/apps/sotomayor.png"
+  url: http://apps.npr.org/sotomayor-family-photos/
+  github_url: https://github.com/nprapps/sotomayor
+- name: "Inauguration 2013"
+  description: "What do you want the president to remember in his second term? Send a postcard, chat about the inauguration & tune in to NPR!"
+  date: "Jan 21, 2013"
+  image: "../img/apps/inauguration.jpg"
+  url: http://apps.npr.org/inauguration/
+  github_url: https://github.com/nprapps/inauguration
+- name: "'Pride And Prejudice' Turns 200: A Cartoon Celebration"
+  description: "This week marks an important milestone for anyone who swoons at the very mention of Mr. Darcy."
+  date: "Jan. 27, 2013"
+  image: "http://media.npr.org/assets/img/2013/01/26/pg1-rgb_wide-dd0704a6c5d914b0e7615f4cd4550cd3d6bc59b4.jpg"
+  url: http://www.npr.org/2013/01/27/170253360/pride-and-prejudice-turns-200
+  github_url:
+- name: "State of the Union"
+  description: "Listen in and discuss the State of the Union address with NPR's correspondents on our live blog."
+  date: "Feb. 12, 2013"
+  image: "http://media.npr.org/assets/img/2012/01/24/sotu01_sq-s2.jpg"
+  url: http://apps.npr.org/state-of-the-union-2013/
+  github_url: https://github.com/nprapps/sotu
+- name: "Oscar Party!"
+  description: "Come to NPR's house to watch the awards with NPR's Linda Holmes and friends."
+  date: "Feb. 24, 2013"
+  image: "http://media.npr.org/assets/img/2013/02/22/ap100306122316_sq-6aaf3b3754e09b8dcd0bd3151830019bba911834-s3.jpg"
+  url: http://apps.npr.org/oscars-2013/
+  github_url: https://github.com/nprapps/oscars
+- name: "Dinnertime Confessional"
+  description: "Dinner is hard. We want to know what's on your family's table, and why. Share yours at NPR's Dinnertime Confessional."
+  date: "Feb. 27, 2013"
+  image: "http://apps.npr.org/familymeal/img/family-meal.png"
+  url: http://dinnertimeconfessional.tumblr.com/
+  github_url: https://github.com/nprapps/familymeal
+- name: "Buried In Grain"
+  description: '"He entered the bin to investigate when he was sucked under the grain and buried. Employee #1 died of asphyxia."'
+  date: "March 24, 2013"
+  image: "http://apps.npr.org/buried-in-grain/img/grain-bin.jpg"
+  url: http://apps.npr.org/buried-in-grain/
+  github_url: https://github.com/nprapps/grainbins
+- name: "Cook Your Cupboard"
+  description: "We're almost afraid to ask what you've got in your freezer. Homemade chicken stock you never think to use? Veggies for a rainy day? Send us a photo. We'll ask chefs about our favorites on NPR's Morning Edition."
+  date: "April 3, 2013"
+  image: "http://apps.npr.org/cook-your-cupboard/img/round-5-freezer.jpg"
+  url: http://cookyourcupboard.tumblr.com/
+  github_url: https://github.com/nprapps/shelf-life
+- name: "She Works: Note To Self"
+  description: "Workplace wisdom you can print! Create a motivational poster and hang it somewhere with NPR's \"Note To Self\" project."
+  date: "May 6, 2013"
+  image: "http://apps.npr.org/changing-lives/img/print_sample.jpg"
+  url: http://she-works.tumblr.com/
+  github_url: https://github.com/nprapps/changinglives
+- name: "Teenage Diaries Revisited"
+  description: "In 1996, Radio Diaries gave tape recorders to teenagers to create audio diaries about their lives. Amanda, Juan, Frankie, Josh and Melissa are now in their 30s and have recorded new stories about where life has led them."
+  date: "May 6, 2013"
+  image: "http://apps.npr.org/teenage-diaries/img/melissa_facebook.jpg"
+  url: http://apps.npr.org/teenage-diaries/
+  github_url: https://github.com/nprapps/teenage-diaries
+- name: "Previously, On Arrested Development"
+  description: "NPR's slightly obsessive guide to the running gags on Arrested Development, updated for season 4."
+  date: "May 18, 2013"
+  image: "http://apps.npr.org/arrested-development/img/promo-facebook.png"
+  url: http://apps.npr.org/arrested-development/
+  github_url: https://github.com/nprapps/arrested-development
+- name: "Deals for Developers, Cash for Campaigns: A WAMU Investigation"
+  description: "DC city officials give valuable tax breaks and subsidies to land developers. Who is really benefiting?"
+  date: "May 20, 2013"
+  image: "http://apps.npr.org/deals-for-developers-wamu/img/day1crane.jpg"
+  url: http://apps.npr.org/deals-for-developers-wamu/
+  github_url:
+- name: "Zoom In On Oklahoma Tornado Damage"
+  description: "Survey the damage from the tornado that struck Moore, Oklahoma."
+  date: "May 22, 2013"
+  image: "http://apps.npr.org/moore-oklahoma-tornado-damage/img/moore-ok.png"
+  url: http://apps.npr.org/moore-oklahoma-tornado-damage/
+  github_url: https://github.com/nprapps/moore-tornado
+- name: "Growing Up In Meriden: Behind Okkervil River's new album"
+  description: "Time travel to 1986 and tour Meriden, N.H., hometown of Okkervil River's Will Sheff. And hear the band's new single!"
+  date: "July 15, 2013"
+  image: "http://apps.npr.org/okkervil-river/img/okkervil-river.jpg"
+  url: http://apps.npr.org/okkervil-river/
+  github_url: https://github.com/nprapps/okkervil
+- name: "Playgrounds For Everyone"
+  description: "Wood chips don't work for kids in wheelchairs. NPR is building a guide to playgrounds designed so that *all* kids can play alongside friends, siblings or any other child. You can help!"
+  date: "Aug. 27, 2013"
+  image: "http://apps.npr.org/playgrounds/img/og-image-playgrounds.jpg"
+  url: http://apps.npr.org/playgrounds/
+  github_url: https://github.com/nprapps/playgrounds2
+- name: "The March On Washington"
+  description: "50 years later, five people recall their experiences."
+  date: "August 28, 2013"
+  image: "http://zeegaimages1.s3.amazonaws.com/5846a1caf7c5aa24590e89e6b5f82b37_7.jpg"
+  url: http://zeega.com/153873
+  github_url:
+- name: "Lobbying Missouri"
+  description: "Tracking lobbyist gifts to Missouri lawmakers. How much did yours accept? #MoLeg via @stlpublicradio and @npr"
+  date: "Nov. 4, 2013"
+  image: "http://www.lobbyingmissouri.org/img/promo.png"
+  url: http://www.lobbyingmissouri.org/
+  github_url: https://github.com/nprapps/stl-lobbying
+- name: "Planet Money Makes A T-Shirt"
+  description: "The world behind a simple shirt, in five chapters."
+  date: "Dec. 2, 2013"
+  image: "http://apps.npr.org/tshirt/img/social-thumb.jpg"
+  url: http://apps.npr.org/tshirt/
+  github_url: https://github.com/nprapps/tshirt
+- name: "NPR's Book Concierge"
+  description: "Find your next great read with our guide to 2013's best books."
+  date: "Dec. 4, 2013"
+  image: "http://apps.npr.org/best-books-2013/img/facebook.png"
+  url: http://apps.npr.org/best-books-2013/
+  github_url: https://github.com/nprapps/books13
+- name: "Your Questions About The Affordable Care Act"
+  description: "NPR Health answers your questions about The Affordable Care Act."
+  date: "Dec. 18, 2013"
+  image: "http://apps.npr.org/affordable-care-act-questions/img/promo2.png"
+  url: http://apps.npr.org/affordable-care-act-questions/
+  github_url: https://github.com/nprapps/healthcare
+- name: "In Memoriam: Musicians And Entertainers Who Died In 2013"
+  description: "NPR Music remembers the musicians, composers, producers and other visionaries whom we lost in 2013."
+  date: "Dec. 19, 2013"
+  image: "http://apps.npr.org/music-memoriam-2013/img/promo-facebook.jpg"
+  url: http://apps.npr.org/music-memoriam-2013/
+  github_url: https://github.com/nprapps/in-memoriam-2013
