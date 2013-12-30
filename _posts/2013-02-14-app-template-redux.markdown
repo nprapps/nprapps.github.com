@@ -97,7 +97,7 @@ Chris wrote some dope "pseudo-template tags" for Jinja that allow us to automati
 {% endraw %}
 
 
-You can see these in action in [\_base.html].
+You can see these in action in [base.html].
 
 The `push` and `render` are defined in [render_utils.py].
 
@@ -144,7 +144,7 @@ Happy hacking!
 
 
 [render_utils.py]: https://github.com/nprapps/app-template/blob/master/render_utils.py
-[\_base.html]: https://github.com/nprapps/app-template/blob/master/templates/_base.html
+[base.html]: https://github.com/nprapps/app-template/blob/master/templates/_base.html
 [DRY]: http://en.wikipedia.org/wiki/Don't_repeat_yourself
 [inauguration app]: http://apps.npr.org/inauguration
 [family photos of Justice Sotomayor]: http://apps.npr.org/sotomayor-family-photos
