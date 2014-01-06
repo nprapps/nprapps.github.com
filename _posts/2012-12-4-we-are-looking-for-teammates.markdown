@@ -4,6 +4,7 @@ title: "We're looking for teammates!"
 description: "Do you want to make the world a better place? Are you a designer or developer or designer-developer or ux-ui or hacker-journalist? (We love hyphens!) Well, have we got a job for you."
 author: Brian Boyer
 email: bboyer@npr.org
+twitter: brianboyer
 ---
 ![Elections are better with soup.](/img/posts/team-soup.jpg)<br/>
 <small>Elections are better with soup. (<a href="http://instagram.com/p/RnoKv_Jq6e/">Photo by Alyson Hurt</a>)</small>

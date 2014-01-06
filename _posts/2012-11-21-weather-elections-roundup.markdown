@@ -4,6 +4,7 @@ title: "Our first news apps: Tracking weather and elections"
 description: "We've been working together as a team for about four months now, with most of our work focused on the presidential campaign and this week’s elections. Here’s a rundown of some of our favorites."
 author: Matt Stiles
 email: mstiles@npr.org
+twitter: stiles
 ---
 We've been working together as a [team](/about/) for about four months now, with most of our projects focused on the presidential campaign and this month's elections. Here’s a rundown of some of our favorites:
 

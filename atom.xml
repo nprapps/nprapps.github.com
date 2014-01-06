@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>NPR News Apps Blog</title>
+ <title>NPR visuals team blog</title>
  <link href="http://blog.apps.npr.org/atom.xml" rel="self"/>
  <link href="http://blog.apps.npr.org/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
