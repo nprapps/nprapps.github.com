@@ -86,13 +86,11 @@ Update your session again
 
 	source ~/.bash_profile
 
-Next, you'll need to install `pip`. Like Homebrew, it's sort of an app store but for Python code.
+Next, you'll need to install `pip`. Like Homebrew, it's sort of an app store but for Python code. (We're installing version 1.4.1 of `pip` because, although there is a newer version of `pip`, it is still a little buggy and does not work easily with some of our tools.)
 
 	sudo easy_install pip==1.4.1
 
 We use `sudo` to install this software for everyone who might use your computer. `sudo` lets you install things as the admin.
-
-We're installing version 1.4.1 of `pip` because, although there is a newer version of `pip`, it is still a little buggy and does not work easily with some of our tools.
 
 Next, we'll actually install `virtualenv`.
 
@@ -120,14 +118,12 @@ It should look like this:
 
 To exit `less`, press "Q".
 
-## Chapter 3: Set up Node and NPM
+## Chapter 3: Set up Node
 Finally, we'll install a tool called LESS that we use to write CSS, the language that styles websites. LESS is a built with Node, so we'll need to install that and NPM, Node's version of `pip` or Homebrew.
 
 Install Node using Homebrew.
 
 	brew install node
-
-We used to install NPM separately. However, the latest versions of Node now come with NPM prepackaged, so we'll move on.
 
 Then, add Node to your `~/.bash_profile` like you did for Homebrew and virtualwrapper. Copy and paste the following line below the previous two.
 
