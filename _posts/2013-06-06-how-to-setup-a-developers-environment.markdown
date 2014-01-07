@@ -24,7 +24,7 @@ Click on the Apple menu > System Preferences > Users & Groups and check your sta
 ![Are you an admin?](/img/posts/c0_admin.png)
 
 ### Update your software
-Go to the App Store and go to the updates tab. If there are system updates, install and rebooting until there is nothing left to update.
+Go to the App Store and go to the updates tab. If there are system updates, install and reboot until there is nothing left to update.
 
 ### Install command line tools
 With the release of OS X 10.9, Apple decoupled its command line tools necessary for compiling some of the tools we use from Xcode, Apple's proprietary development suite.
@@ -35,7 +35,7 @@ Start by opening up your terminal application. All Macs come with an app called 
 
 That's it. Your laptop should prompt you to install the command line tools because you're trying to use a tool, `gcc`, that requires the tools (we're not actually using the tool, but let's pretend). Install the tools and move on once that process has completed.
 
-**Note**: If you are running OS X 10.8 or lower, you will need to go to the App Store and download XCode. After that, open the program, and go to Xcode > Preferences > Downloads and installing the command line tools from there.
+**Note**: If you are running OS X 10.8 or lower, you will need to go to the App Store and download Xcode. After that, open the program, and go to Xcode > Preferences > Downloads and installing the command line tools from there.
 
 ## Chapter 1: Install Homebrew
 
