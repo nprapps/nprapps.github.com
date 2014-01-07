@@ -7,13 +7,13 @@ email: grich@npr.org
 twitter: gerald_arthur
 ---
 
-*Updated Sept 13, 2013, to correct some details.*
+*Updated Jan 7, 2014 to correct some details.*
 
-*Hey guys, I'm [Shelly Tan](https://twitter.com/Tan_Shelly), the latest News Apps intern. You'll be hearing more from me later, but for now, just know that I'm still in awe of everything at NPR and have to resist keeling over in my rabid fangirling; Gerald wasn't kidding about the shiny offices and awesome food. Anyways, back to Gerald.*
+*Hey everyone, I'm [Tyler Fisher](https://twitter.com/tylrfishr), the Winter/Spring 2014 news apps intern. Today, I setup my work machine with OS X Mavericks and found some new wrinkles in the process, so I thought I would update this blog post to reflect the latest changes. [Shelly Tan](https://twitter.com/Tan_Shelly) also contributed to this post in September 2013.*
 
 I joined the News Apps team a week ago in their shiny new DC offices, and in-between eating awesome food and Tiny Desk concerts, we've been documenting the best way to get other journalists setup to build news apps like the pros.
 
-The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with Mountain Lion OS X 10.8 installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
+The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with OS X 10.9, or Mavericks, installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
 
 ## Chapter 0: Prerequisites
 ### Are you an administrator?
@@ -26,21 +26,23 @@ Click on the Apple menu > System Preferences > Users & Groups and check your sta
 ### Update your software
 Click on the Apple menu > Software Update. Continue installing and rebooting until there is nothing left to update.
 
-### Install Xcode and the Xcode's command line tools
-We don't use Xcode everyday to develop, but it does give us some tools that you'll need to install. This part can take a while, so feel free to grab a cup of soup while this is downloading.
+### Install command line tools
+With the release of OS X 10.9, Apple decoupled its command line tools necessary for compiling some of the tools we use from Xcode, Apple's proprietary development suite.
 
-* Get [Xcode](https://developer.apple.com/xcode/) from the app store.
-* Get the Xcode command line tools by going to Xcode > Preferences > Downloads and checking the "Install" button next to the command line tools.
+Start by opening up your terminal application. All Macs come with an app called "Terminal." You can find it under Applications > Utilities. Double click to open that bad boy up, and run this command:
 
-![Install Xcode's command line tools](/img/posts/c0_xcode.png)
+	gcc
+
+That's it. Your laptop should prompt you to install the command line tools because you're trying to use a tool, `gcc`, that requires the tools (we're not actually using the tool, but let's pretend). Install the tools and move on once that process has completed.
+
+**Note**: If you are running OS X 10.8 or lower, you will need to go to the App Store and download XCode. After that, open the program, and go to Xcode > Preferences > Downloads and installing the command line tools from there.
 
 ## Chapter 1: Install Homebrew
 
-Start by opening up your terminal application. All Macs come with an app called "Terminal." You can find it under Applications > Utilities. Double click to open that bad boy up, and let's start with installing Homebrew.
 
 [Homebrew](http://brew.sh/) is like the Mac app store for programming tools. You can access Homebrew via the terminal, ([like all good things](http://www.amazon.com/Beginning-was-Command-Line-Neal-Stephenson/dp/0380815931)). Inspiration for this section comes from Kenneth Reitz's excellent [Python guide](http://docs.python-guide.org/en/latest/starting/install/osx.html).
 
-Install Homebrew by pasting this command into your terminal and then hitting "enter." 
+Install Homebrew by pasting this command into your terminal and then hitting "enter."
 
 	ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 
@@ -86,9 +88,13 @@ Update your session again
 
 Next, you'll need to install `pip`. Like Homebrew, it's sort of an app store but for Python code.
 
-	sudo easy_install pip
+	sudo easy_install pip==1.4.1
 
 We use `sudo` to install this software for everyone who might use your computer. `sudo` lets you install things as the admin.
+
+We're installing version 1.4.1 of `pip` because, although there is a newer version of `pip`, it is still a little buggy and does not work easily with some of our tools.
+
+Next, we'll actually install `virtualenv`.
 
 	sudo pip install virtualenv virtualenvwrapper
 
@@ -121,11 +127,9 @@ Install Node using Homebrew.
 
 	brew install node
 
-Install NPM, the Node Package Manager.
+We used to install NPM separately. However, the latest versions of Node now come with NPM prepackaged, so we'll move on.
 
-	curl https://npmjs.org/install.sh | sh
-
-Finally, add Node to your `~/.bash_profile` like you did for Homebrew and virtualwrapper. Copy and paste the following line below the previous two.
+Then, add Node to your `~/.bash_profile` like you did for Homebrew and virtualwrapper. Copy and paste the following line below the previous two.
 
 	export NODE_PATH=/usr/local/lib/node_modules
 
@@ -135,7 +139,7 @@ Save and exit out of `nano` using control + O, enter, and then control + X. Then
 We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data. We'll explain these tools a bit more as we install them.
 
 #### NumPy
-First, we need to install a Python library called NumPy. We don't use NumPy directly, but PostGIS uses it for making geographic calculations.
+First, we need to install a Python library called NumPy. We don't use NumPy directly, but PostGIS uses it for making geographic calculations. This may already be installed, but run this command just to double-check.
 
     sudo pip install numpy
 
@@ -153,7 +157,7 @@ Add these two lines:
 	alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 	alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
-Update your session one more time, 
+Update your session one more time,
 
 	source ~/.bash_profile
 
@@ -170,7 +174,7 @@ These deceptively simple commands will install an awful lot of software. It's go
 
 	brew install gdal --with-postgres
 
-Still hanging in there? 
+Still hanging in there?
 
 	brew install postgis
 
@@ -194,8 +198,8 @@ See? Much nicer.
 ### Appendix 3: The Text Editor
 Since your code is stored entirely as text files on your computer, you'll want a nice text editor. Our instructions showed you how to use `nano`, a text editor that you'll find on almost every computer. However, there are at least two others that the team uses. Text editors are like the Microsoft Word of the programming world, except they come packed with all kinds of handy dandy features to make writing code a synch.
 
-#### SublimeText 2
-If you're more comfortable with an editor that you can open up like Word, [SublimeText2](http://www.sublimetext.com/2) has a sweet graphical user interface and some [nice customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland)
+#### Sublime Text 2
+If you're more comfortable with an editor that you can open up like Word, [Sublime Text 2](http://www.sublimetext.com/2) has a sweet graphical user interface and some [nice customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland)
 
 #### Vim
 Personally, I prefer vim &mdash; a terminal based editor that requires you to type rather than point-and-click to work on files. It comes pre-installed on your computer, but there's a lot of little keyboard shortcuts you'll need to get comfy with before you can just dive-in. Here's a nice [cheat sheet](http://www.tuxfiles.org/linuxhelp/vimcheat.html), though, you might want to keep open in a tab if this is your not familiar with it. You can add all kinds of features, but our teammate Chris recommends [nerdtree](https://github.com/tpope/vim-surround) and [surround](https://github.com/scrooloose/nerdtree). Here are [some videos](http://net.tutsplus.com/sessions/vim-essential-plugins/) to help make vim and those particular add-ons.
