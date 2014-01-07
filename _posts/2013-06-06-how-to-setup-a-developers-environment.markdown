@@ -24,7 +24,7 @@ Click on the Apple menu > System Preferences > Users & Groups and check your sta
 ![Are you an admin?](/img/posts/c0_admin.png)
 
 ### Update your software
-Click on the Apple menu > Software Update. Continue installing and rebooting until there is nothing left to update.
+Go to the App Store and go to the updates tab. If there are system updates, install and rebooting until there is nothing left to update.
 
 ### Install command line tools
 With the release of OS X 10.9, Apple decoupled its command line tools necessary for compiling some of the tools we use from Xcode, Apple's proprietary development suite.
