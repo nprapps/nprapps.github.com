@@ -4,3 +4,31 @@ Copyright 2013 NPR.  All rights reserved.  No part of these materials may be rep
 
 nprapps.github.com
 ==================
+
+### Getting Started
+
+Matt Stiles has a helpful post explaining [how to get set up](http://blog.apps.npr.org/2012/11/08/npr-news-apps-blog.html).
+
+### Things To Know
+
+* Pushing code to the repo will automatically publish any changes you've made. If you're not ready to publish yet, save your changes to a separate branch, and then merge it back to ```master``` when you're ready.
+
+* Writing a blog post? [Use this as a starting point.](https://github.com/nprapps/nprapps.github.com/blob/master/_posts/2013-12-10-the-book-concierge.markdown)
+
+* Linking to a post we've written somewhere else (like Source)? [Use this as a starting point.](https://github.com/nprapps/nprapps.github.com/blob/master/_posts/2014-01-02-source-tshirt-ux.markdown)
+
+### How To Embed Code Snippets
+
+Save your code snippet as a Gist on your GitHub account. For example: https://gist.github.com/alykat/8319004
+
+Take the username and Gist ID in the URL and sub it into the script tag below:
+
+```
+<script src="https://gist.github.com/YOUR-USERNAME/GIST-ID.js"> </script>
+```
+
+So the example Gist URL would get you:
+
+```
+<script src="https://gist.github.com/alykat/8319004.js"> </script>
+```
