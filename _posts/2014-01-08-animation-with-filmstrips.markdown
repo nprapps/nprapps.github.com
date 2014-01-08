@@ -20,9 +20,10 @@ Drawback:
 
 * Implementation is very code-based, which makes it much more complicated to share the animation on Tumblr or embed it in a CMS. Depending on your project needs, this may not matter.
 
-We decided to use this technique to show a snippet of a [1937 Department of Agriculture documentary](https://archive.org/details/CEP165) in which teams of men roll large bales of cotton onto a steamboat. It's a striking contrast to the highly efficient modern shipping methods that are the focus of this chapter, and having it play immediately, over and over, underscores the drudgery of it.
+We decided to use this technique to show a snippet of a [1937 Department of Agriculture documentary](https://archive.org/details/CEP165) in which teams of men roll large bales of cotton onto a steamboat. It's a striking contrast to the highly efficient modern shipping methods that are the focus of this chapter, and having it [play immediately, over and over](http://apps.npr.org/tshirt/#/boxes), underscores the drudgery of it.
 
 <img src="/img/posts/filmstrip-original.jpg" alt="screenshot from the video" />
+_(This is just a screenshot. You can see the animated version in the ["Boxes" chapter](http://apps.npr.org/tshirt/#/boxes) of the t-shirt site.)_
 
 
 Making A Filmstrip
