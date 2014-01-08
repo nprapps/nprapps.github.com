@@ -12,11 +12,11 @@ layout: nil
 
  {% for post in site.posts %}
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="http://blog.apps.npr.org{{ post.url }}"/>
+   <title>{{ post.title }} {% if post.external_url %}({{ post.external_site }}){% endif %}</title>
+   <link href="{% if post.external_url %}{{ post.external_url }}{% else %}http://blog.apps.npr.org{{ post.url }}{% endif %}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://blog.apps.npr.org{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <id>{% if post.external_url %}{{ post.external_url }}{% else %}http://blog.apps.npr.org{{ post.id }}{% endif %}</id>
+   <content type="html">{% if post.external_url %}{{ post.description | xml_escape }}{% else %}{{ post.content | xml_escape }}{% endif %}</content>
  </entry>
  {% endfor %}
 

@@ -13,6 +13,9 @@ article {
     padding: 44px 0px 44px 0px;
     margin: 0;
 }
+
+article.external h6 { margin-bottom: 9px; }
+
 #home article, #things article {
     color:#777;
 }
