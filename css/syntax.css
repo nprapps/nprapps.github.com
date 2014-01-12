@@ -1,5 +1,5 @@
 .highlight { 
-  overflow: auto;
+  overflow-x: auto;
 }
 
 code {
