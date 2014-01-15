@@ -6,6 +6,8 @@ author: Alyson Hurt
 email: ahurt@npr.org
 twitter: alykat 
 ---
+*This post is [cross-posted with our friends at Source](https://source.opennews.org/en-US/articles/animation-filmstrips/).*
+
 Animated gifs have immediate visual impact &mdash; from [space cats](http://collegecandy.files.wordpress.com/2013/09/pizza_cat_in_space.gif) to [artistic cinemagraphs](http://iwdrm.tumblr.com/). For NPR's "[Planet Money Makes A T-Shirt](http://apps.npr.org/tshirt/)" project, we wanted to experiment with using looping images to convey a quick concept or establish a mood.
 
 However, GIF as a format requires so many compromises in image quality and the resulting files can be enormous. A few months ago, [Zeega](http://zeega.com)'s Jesse Shapins wrote about a [different technique](https://medium.com/p/de37c61e1d71) that his company is using: [filmstrips](http://www.niemanlab.org/2013/09/can-you-build-a-better-gif-zeega-wants-to-remake-the-aged-animation-format-for-mobile/). The frames of the animation are stacked vertically and saved out as a JPG. The JPG is set as the background image of a div, and a CSS animation is used to shift the y-position of the image.
