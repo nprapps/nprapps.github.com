@@ -9,6 +9,18 @@ nprapps.github.com
 
 Matt Stiles has a helpful post explaining [how to get set up](http://blog.apps.npr.org/2012/11/08/npr-news-apps-blog.html).
 
+Once you have Jekyll installed, run this command to start up the development server and have it automatically regenerate files:
+
+```
+jekyll serve --watch
+```
+
+You can see it in your browser here:
+
+```
+http://localhost:4000
+```
+
 ### Things To Know
 
 * Pushing code to the repo will automatically publish any changes you've made. If you're not ready to publish yet, save your changes to a separate branch, and then merge it back to ```master``` when you're ready.
