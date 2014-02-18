@@ -3,27 +3,29 @@ layout: default
 ---
 <div id="home">
     {% for post in site.posts  %}
-    <article {% if post.external_url %}class="external"{% endif %}>
-        <header>
-            {% if post.external_url %}
-                <h6>{{ post.external_site }}</h6>
-                <h2><a href="{{ post.external_url }}">{{ post.title }}</a></h2>
-            {% else %}
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-            {% endif %}
-        </header>
-        <section class="entry">
-            {{ post.description }}
+        {% if post.redirect_url == nil %}
+            <article {% if post.external_url %}class="external"{% endif %}>
+                <header>
+                    {% if post.external_url %}
+                        <h6>{{ post.external_site }}</h6>
+                        <h2><a href="{{ post.external_url }}">{{ post.title }}</a></h2>
+                    {% else %}
+                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    {% endif %}
+                </header>
+                <section class="entry">
+                    {{ post.description }}
 
-            {% if post.external_url %}
-                <em>(external link)</em>
-            {% endif %}
-        </section>
-           <div class="post-meta">
-            <ul>
-                <li>by <a href="http://twitter.com/{{ post.twitter }}">{{ post.author }}</a>, {{ post.date | date: "%B %d, %Y" }}</li>
-            </ul>
-        </div>
-    </article>
+                    {% if post.external_url %}
+                        <em>(external link)</em>
+                    {% endif %}
+                </section>
+                   <div class="post-meta">
+                    <ul>
+                        <li>by <a href="http://twitter.com/{{ post.twitter }}">{{ post.author }}</a>, {{ post.date | date: "%B %d, %Y" }}</li>
+                    </ul>
+                </div>
+            </article>
+        {% endif %}
     {% endfor %}
 </div>
