@@ -36,8 +36,7 @@ Please...
 - Love to write, edit and research
 - Be awesome at making pictures
 
-Are you awesome? [Apply now!]
-[Apply now!]: https://interns-npr.icims.com/jobs/1995/summer-2014%3a-digital-news%2c-picture-%26-multimedia/job
+Are you awesome? [Apply now!](https://interns-npr.icims.com/jobs/1995/summer-2014%3a-digital-news%2c-picture-%26-multimedia/job)
 
 ## News applications
 
@@ -48,5 +47,4 @@ Please...
 - Show your work. If you don't have an online portfolio, github account, or other evidence of your work, we won't call you.
 - Code or design. We're not the radio people. We don't do social media. We make stuff.
 
-Are you awesome? [Apply now!]
-[Apply now!]: https://interns-npr.icims.com/jobs/1980/summer-2014%3a-news-apps/job
+Are you awesome? [Apply now!](https://interns-npr.icims.com/jobs/1980/summer-2014%3a-news-apps/job)
