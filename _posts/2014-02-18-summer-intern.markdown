@@ -48,3 +48,9 @@ Please...
 - Code or design. We're not the radio people. We don't do social media. We make stuff.
 
 Are you awesome? [Apply now!](https://interns-npr.icims.com/jobs/1980/summer-2014%3a-news-apps/job)
+
+## What will I be paid? What are the dates?
+
+Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info.
+
+Thx!
