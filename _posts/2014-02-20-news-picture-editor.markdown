@@ -15,7 +15,7 @@ Obsessed with the web?
 
 Do you find [magic in the mundane](http://www.npr.org/2014/01/29/266757131/welcome-to-oil-country-a-modern-day-gold-rush-in-north-dakota)?
 
-The visuals team is looking for a **News Picture Editor**. It's a new and important role. You’ll rethink our photographic approach to daily news. You’ll work on stories that matter, at a place people love. You’ll invent new ways to see stories and teach them to our newsroom.
+The visuals team is looking for a **News Picture Editor**. It's a new and important role, fit for an experienced editor. You’ll rethink our photographic approach to daily news. You’ll work on stories that matter, at a place people love. You’ll invent new ways to see stories and teach them to our newsroom.
 
 You'll work fast and hard. You'll have a damned good time.
 
