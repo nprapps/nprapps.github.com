@@ -6,10 +6,8 @@ author: Brian Boyer
 email: bboyer@npr.org
 twitter: brianboyer
 big_picture: "/img/afghan.jpg"
-big_picture_caption: "People gather in a remote Afghan village at a 2009 rally for president Hamid Karzai."
+big_picture_caption: "People gather in a remote Afghan village at a 2009 rally for president Hamid Karzai. David Gilkey/NPR"
 ---
-<!-- <img src="/img/afghan.jpg">
-<p><small>People gather in a remote Afghan village at a 2009 rally for president Hamid Karzai.</small></p> -->
 
 Love photography?
 
