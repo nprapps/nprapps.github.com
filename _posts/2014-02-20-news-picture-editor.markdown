@@ -35,7 +35,7 @@ You'll work fast and hard. You'll have a damned good time.
 
 NPR tells amazing stories, and it's our team's job to tell those stories visually. We're not a huge team, but we are an essential, growing part of the newsroom.
 
-We’re [pushing the limits](apps.npr.org/tshirt/) of [online storytelling](http://apps.npr.org/wolves/), and photography is at the heart of this effort. Our new picture editor will be a leader and advocate for visual awesomeness, every day. Job perks include...
+We’re [pushing the limits](http://apps.npr.org/tshirt/) of [online storytelling](http://apps.npr.org/wolves/), and photography is at the heart of this effort. Our new picture editor will be a leader and advocate for visual awesomeness, every day. Job perks include...
 
 - Live music at the [Tiny Desk](http://www.npr.org/series/tiny-desk-concerts/)
 - All the tote bags you can eat
