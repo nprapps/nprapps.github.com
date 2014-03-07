@@ -6,6 +6,7 @@ author: Brian Boyer
 email: bboyer@npr.org
 twitter: brianboyer 
 ---
+
 Love to code?
 
 Want to use your skills to make the world a better place?
@@ -40,4 +41,6 @@ The newsroom is a crucible. We work on tight schedules with hard deadlines. That
 
 Like what you’ve heard? [Check out what we’ve built](http://blog.apps.npr.org/apps/) and [our code on GitHub](https://github.com/nprapps).
 
-Interested? Email your info to [bboyer@npr.org](mailto:bboyer@npr.org)! Thanks!
+<s>Interested? Email your info to [bboyer@npr.org](mailto:bboyer@npr.org)! Thanks!</s>
+
+_This position has been filled. Thanks!_
