@@ -13,6 +13,12 @@
   image: "../img/apps/quote.png"
   url: https://github.com/nprapps/quotable
   github_url: https://github.com/nprapps/quotable
+- name: "Pym.js"
+  description: "A JavaScript library for responsive iframes"
+  date:
+  image:
+  url: http://blog.apps.npr.org/pym.js/
+  github_url: https://github.com/nprapps/pym.js/
 - name: "Tumble"
   description: "A rig for handling static tumblr themes in a reasonable fashion."
   date:
