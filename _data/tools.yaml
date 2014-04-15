@@ -16,7 +16,7 @@
 - name: "Pym.js"
   description: "A JavaScript library for responsive iframes"
   date:
-  image:
+  image: "img/pym.png"
   url: http://blog.apps.npr.org/pym.js/
   github_url: https://github.com/nprapps/pym.js/
 - name: "Tumble"
