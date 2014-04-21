@@ -8,6 +8,11 @@
   image: "../img/apps/charts.png"
   url: https://github.com/nprapps/Chartbuilder
   github_url: https://github.com/nprapps/Chartbuilder
+- name: "Copytext"
+  description: "A Python library for accessing a spreadsheet as a native object suitable for templating."
+  image: "../img/apps/copytext.jpg"
+  url: http://copytext.readthedocs.org
+  github_url: https://github.com/nprapps/copytext
 - name: "Quotable"
   description: "This machine makes quote images for sharing."
   image: "../img/apps/quote.png"
