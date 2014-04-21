@@ -7,10 +7,9 @@ email: cgroskopf@npr.org
 twitter: onyxfish
 ---
 
-!["We used copytext to power [Planet Money Makes a T-Shirt](http://apps.npr.org/tshirt/).](/img/copytext.jpg)
+!["We used copytext for Planet Money Makes a T-Shirt.](/img/copytext.jpg)
 
-
-One common problem with building visual news stories is that the tools you use to create them are difficult for reporters and editors to use. We can hardly expect every veteran journalist to put aside their beat in order to learn how to navigate HTML, CSS, Javascript, and Python.
+Most of our work lives outside of NPR's content management system. This has many upsides, but it complicates the editing process. We can hardly expect every veteran journalist to put aside their beat in order to learn how to do their writing inside HTML, CSS, Javascript, and Python&mdash;to say nothing of version control.
 
 That's why we made [copytext](http://copytext.readthedocs.org), a library that allows us to give editorial control back to our reporters and editors, without sacrificing our capacity to iterate quickly.
 
