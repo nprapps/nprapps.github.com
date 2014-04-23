@@ -11,7 +11,7 @@ Since the NPR News Apps team merged with the Multimedia team, now known as the V
 
 Borderland is a giant slide deck. 129 slides, to be exact. Within those slides, we tell 12 independent stories about the U.S.-Mexico border. Some of these stories are told [in photos](http://apps.npr.org/borderland/#_/empty-houses), some are told [in text](http://apps.npr.org/borderland/#_/apprehension), some are told [in maps](http://apps.npr.org/borderland/#_/drawing-the-line) and some are told [in video](http://apps.npr.org/borderland/#_/junior). Managing all of this varying content coming from writers, photographers, editors and cartographers was a challenge, and one that made editing an HTML file directly impossible. Instead, we used a spreadsheet to manage all of our content.
 
-![A screenshot of our content spreadsheet](/img/words.jpg)
+![A screenshot of our content spreadsheet](/img/spreadsheet.jpg)
 
 On Monday, the team released [copytext.py](http://github.com/nprapps/copytext), a Python library for accessing spreadsheets as native Python objects so that they can be used for templating. Copytext, paired with our Flask-driven [app template](http://github.com/nprapps/app-template), allows us to use Google Spreadsheets as a lightweight CMS. You can read the fine details about how we set that up in the Flask app [here](http://blog.apps.npr.org/2014/04/21/introducing-copytext-py.html), but for now, know that we have a global `COPY` object accessible to our templates that is filled with the data from a Google Spreadsheet.
 
