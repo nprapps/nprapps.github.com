@@ -1,4 +1,4 @@
-Copyright 2013 NPR.  All rights reserved.  No part of these materials may be reproduced, modified, stored in a retrieval system, or retransmitted, in any form or by any means, electronic, mechanical or otherwise, without prior written permission from NPR.
+Copyright 2013-14 NPR.  All rights reserved.  No part of these materials may be reproduced, modified, stored in a retrieval system, or retransmitted, in any form or by any means, electronic, mechanical or otherwise, without prior written permission from NPR.
 
 (Want to use this code? Send an email to nprapps@npr.org!)
 
@@ -7,7 +7,7 @@ nprapps.github.com
 
 ### Getting Started
 
-Matt Stiles has a helpful post explaining [how to get set up](http://blog.apps.npr.org/2012/11/08/npr-news-apps-blog.html).
+Matt Stiles wrote a helpful post explaining [how to get set up](http://blog.apps.npr.org/2012/11/08/npr-news-apps-blog.html).
 
 Once you have Jekyll installed, run this command to start up the development server and have it automatically regenerate files:
 
