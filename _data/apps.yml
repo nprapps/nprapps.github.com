@@ -226,3 +226,9 @@
   image: "http://apps.npr.org/borderland/assets/img/facebook.jpg"
   url: http://apps.npr.org/borderland/
   github_url: https://github.com/nprapps/borders-map
+- name: "The Best Commencement Speeches, Ever"
+  description: "’ve hand-picked over 300 addresses going back to 1774. Search by name, school, date or theme."
+  date: "May 19, 2014"
+  image: "http://apps.npr.org/commencement/quote-images/john-f-kennedy-yale-university-1962.png"
+  url: http://apps.npr.org/commencement/
+  github_url: https://github.com/nprapps/commencement
