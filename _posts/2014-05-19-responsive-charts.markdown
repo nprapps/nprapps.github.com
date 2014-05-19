@@ -18,17 +18,16 @@ If you render your graphics in code &mdash; perhaps using something like [D3](ht
 
 ## Case Study: Make A Simple Line Graph Work Responsively
 
+<div id="line-graph" style="margin-bottom: 1em;"></div>
+<script type="text/javascript" src="http://blog.apps.npr.org/pym.js/src/pym.js"></script>
+<script>
+    var line_graph_parent = new pym.Parent('line-graph', 'http://blog.apps.npr.org/pym.js/examples/graphic/child.html', {});
+</script>
+
 You can [find all the files here](https://github.com/nprapps/pym.js/tree/master/examples/graphic). I won't get into how to draw the graph itself, but I'll explain how to make it responsive. The general idea:
 
 * Calculate the graph's dimensions based on the width of its container (rather than fixed numbers)
 * If the page is resized, destroy the graph, check for new dimensions and redraw the graph.
-
-<div id="line-graph"></div>
-<script type="text/javascript" src="http://blog.apps.npr.org/pym.js/src/pym.js"></script>
-<script>
-    var line-graph-parent = new pym.Parent('line-graph', 'http://blog.apps.npr.org/pym.js/examples/graphic/child.html', {});
-</script>
-
 
 ### [Structure Of The HTML File](https://github.com/nprapps/pym.js/blob/master/examples/graphic/child.html):
 
