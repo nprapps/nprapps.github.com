@@ -235,7 +235,7 @@ This is what we'll paste into our CMS, so the story page can communicate with th
     <div id="line-graph"></div>
     <script type="text/javascript" src="path/to/pym.js"></script>
     <script>
-        var line-graph-parent = new pym.Parent('line-graph', 'path/to/child.html', {});
+        var line_graph_parent = new pym.Parent('line-graph', 'path/to/child.html', {});
     </script>
 
 * ```#line-graph``` in this case is the containing div on the parent page.
