@@ -78,14 +78,14 @@ The ``cell_wrapper_cls=Markup`` ensures that any HTML you put into your spreadsh
 And in your template:
     
     <header>
-        <h1>{{ COPY.content.header_title }}</h1>
-        <h2>{{ COPY.content.lorem_ipsum }}</h2>
+        <h1>\{\{ COPY.content.header_title \}\}</h1>
+        <h2>\{\{ COPY.content.lorem_ipsum \}\}</h2>
     </header>
     
     <dl>
-        {% for row in COPY.example_list %}
-        <dt>{{ row.term }}</dt><dd>{{ row.definition }}</dd>
-        {% endfor %}
+        \{% for row in COPY.example_list %\}
+        <dt>\{\{ row.term \}\}</dt><dd>\{\{ row.definition \}\}</dd>
+        \{% endfor %\}
     </dl>
 
 ## The spreadsheet is your CMS
