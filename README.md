@@ -31,16 +31,8 @@ http://localhost:4000
 
 ### How To Embed Code Snippets
 
-Save your code snippet as a Gist on your GitHub account. For example: https://gist.github.com/alykat/8319004
+A couple options:
 
-Take the username and Gist ID in the URL and sub it into the script tag below:
+* Tab-indent your code, and Markdown will recognize it as a code snippet. However, if that snippet includes ```{{ }}``` tags, wrap the block of code in ```{% raw %} {% endraw %}``` to escape it. ([Example](https://github.com/nprapps/nprapps.github.com/commit/5ead926c125807af9a41afce80baba0628bc2aa9#diff-f81649843a7256ddce49a0cb115a3a27))
 
-```
-<script src="https://gist.github.com/YOUR-USERNAME/GIST-ID.js"> </script>
-```
-
-So the example Gist URL would get you:
-
-```
-<script src="https://gist.github.com/alykat/8319004.js"> </script>
-```
+* Save your code snippet as a Gist on your GitHub account &mdash; for example, https://gist.github.com/alykat/8319004. Take the username and Gist ID in the URL and sub it into the script tag: ```<script src="https://gist.github.com/YOUR-USERNAME/GIST-ID.js"> </script>```
