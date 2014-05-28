@@ -117,3 +117,12 @@ This is explained in greater detail [in the README](https://github.com/nprapps/d
 Our **dailygraphics** rig offers a fairly lightweight system for developing and deploying small chunks of code-based content, with some useful extras like support for Google Spreadsheets and responsive iframes. We're sharing it in the hope that it might be useful for those who need something to collect and deploy small projects, but don't need something as robust as our full [app-template](https://github.com/nprapps/app-template).
 
 If you end up using it or taking inspiration from it, let us know!
+
+----------
+
+#### Related Posts
+
+* [Responsive Charts With D3 And Pym.js](http://blog.apps.npr.org/2014/05/19/responsive-charts.html)
+* [Making Data Tables Responsive](http://blog.apps.npr.org/2014/05/09/responsive-data-tables.html)
+* [Introducing copytext.py: your words are data too](http://blog.apps.npr.org/2014/04/21/introducing-copytext-py.html)
+* [Introducing Pym.js](https://source.opennews.org/en-US/articles/introducing-pym/)

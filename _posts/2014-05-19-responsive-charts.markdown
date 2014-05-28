@@ -240,3 +240,12 @@ This is what we'll paste into our CMS, so the story page can communicate with th
 
 * ```#line-graph``` in this case is the containing div on the parent page.
 * Sub out all the ```path/to/``` references with the actual published paths to those files.
+
+----------
+
+#### Related Posts
+
+* [Creating And Deploying Small-Scale Projects](http://blog.apps.npr.org/2014/05/27/dailygraphics.html)
+* [Responsive Charts With D3 And Pym.js](http://blog.apps.npr.org/2014/05/19/responsive-charts.html)
+* [Introducing copytext.py: your words are data too](http://blog.apps.npr.org/2014/04/21/introducing-copytext-py.html)
+* [Introducing Pym.js](https://source.opennews.org/en-US/articles/introducing-pym/)

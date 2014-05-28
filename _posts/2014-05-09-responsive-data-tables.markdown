@@ -242,3 +242,12 @@ In this case, we have a [Google Spreadsheet with two sheets in it](https://docs.
 Once we point the project to my Google Spreadsheet ID, we can supply some basic markup and have [Flask + Jinja](http://copytext.readthedocs.org/en/latest/#using-with-flask) output the rest of the table for us:
 
 <script src="https://gist.github.com/alykat/1a9e2409458080a13af4.js"></script>
+
+----------
+
+#### Related Posts
+
+* [Creating And Deploying Small-Scale Projects](http://blog.apps.npr.org/2014/05/27/dailygraphics.html)
+* [Making Data Tables Responsive](http://blog.apps.npr.org/2014/05/09/responsive-data-tables.html)
+* [Introducing copytext.py: your words are data too](http://blog.apps.npr.org/2014/04/21/introducing-copytext-py.html)
+* [Introducing Pym.js](https://source.opennews.org/en-US/articles/introducing-pym/)
