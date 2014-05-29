@@ -7,9 +7,11 @@ email: visuals@npr.org
 twitter: nprviz
 ---
 
+<img src="/img/posts/ifttt-assignment-cat.jpg" alt="">
+
 At NPR, we regularly ask our audience to submit photos on a certain theme related to a series or particular story. We wanted a way to streamline these callouts on Instagram using the hashtag we’ve assigned, so we turned to [IFTTT](http://ifttt.com).
 
-IFTTT is a website whose name means “If This, Then That.” You can use the service to set up “recipes” where an event on one site can trigger a different even on another site. For example, if someone tags an Instagram photo with a particular hashtag, IFTTT can log it in a Google Spreadsheet. (Sadly, this will not work with photos posted to Twitter.)
+IFTTT is a website whose name means “If This, Then That.” You can use the service to set up “recipes” where an event on one site can trigger a different event on another site. For example, if someone tags an Instagram photo with a particular hashtag, IFTTT can log it in a Google Spreadsheet. (Sadly, this will not work with photos posted to Twitter.)
 
 Here, we’ll explain our workflow, from IFTTT recipe to moderation to putting the results on a page.
 
