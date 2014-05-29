@@ -9,7 +9,7 @@ twitter: nprviz
 
 At NPR, we regularly ask our audience to submit photos on a certain theme related to a series or particular story. We wanted a way to streamline these callouts on Instagram using the hashtag we’ve assigned, so we turned to [IFTTT](http://ifttt.com).
 
-IFTTT is a website whose name means “If This, Then That.” You can use the service to set up “recipes” where an event on one site can trigger a different even on another site. For example, if someone tags a photo with a particular hashtag, IFTTT can log it in a Google Spreadsheet.
+IFTTT is a website whose name means “If This, Then That.” You can use the service to set up “recipes” where an event on one site can trigger a different even on another site. For example, if someone tags an Instagram photo with a particular hashtag, IFTTT can log it in a Google Spreadsheet. (Sadly, this will not work with photos posted to Twitter.)
 
 Here, we’ll explain our workflow, from IFTTT recipe to moderation to putting the results on a page.
 
@@ -39,7 +39,7 @@ Then enter your hashtag (in this case, **#cats**).
 
 <img src="/img/posts/ifttt-trigger-fields.png" alt="">
 
-_(Note: We'd normally use a much more specific hashtag, like #nprshevotes or #nprpublicsquare &mdash; the assumption being that users who tag their photos with such a specific hashtag want NPR to see the photos and potentially use them. But for the sake of this example, #cats is fun.)_
+_(Note: We're not using this to scrape Instagram and republish photos without permission. We'd normally use a much more specific hashtag, like #nprshevotes or #nprpublicsquare &mdash; the assumption being that users who tag their photos with such a specific hashtag want NPR to see the photos and potentially use them. But for the sake of this example, #cats is fun.)_
 
 Next, select **Google Drive** as the “action channel,” and **add row to spreadsheet** as the action. 
 
