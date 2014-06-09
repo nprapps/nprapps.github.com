@@ -226,6 +226,12 @@
   image: "http://apps.npr.org/borderland/assets/img/facebook.jpg"
   url: http://apps.npr.org/borderland/
   github_url: https://github.com/nprapps/borders-map
+- name: "Buzkashi"
+  description: "Afghanistan's national sport is like polo, with a headless goat."
+  date: "May 4, 2014"
+  image: "http://apps.npr.org/buzkashi/assets/img/twitter.jpg"
+  url: http://apps.npr.org/buzkashi/
+  github_url: 
 - name: "The Best Commencement Speeches, Ever"
   description: "We've hand-picked over 300 addresses going back to 1774. Search by name, school, date or theme."
   date: "May 19, 2014"
