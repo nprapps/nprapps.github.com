@@ -1,15 +1,15 @@
 ---
 layout: post
 title: "How to Setup Your Mac to Develop News Applications Like We Do"
-description: "(Almost) everything you always wanted to know about working from the command line, but were too afraid to ask"
+description: "(Almost) everything you always wanted to know about working from the command line, but were too afraid to ask."
 author: Gerald Rich
 email: grich@npr.org
 twitter: gerald_arthur
 ---
 
-*Updated Jan 7, 2014 to correct some details.*
+*Updated June 12, 2014.*
 
-*Hey everyone, I'm [Tyler Fisher](https://twitter.com/tylrfishr), the Winter/Spring 2014 news apps intern. Today, I setup my work machine with OS X Mavericks and found some new wrinkles in the process, so I thought I would update this blog post to reflect the latest changes. [Shelly Tan](https://twitter.com/Tan_Shelly) also contributed to this post in September 2013.*
+*Hey everyone, I'm [Tyler Fisher](https://twitter.com/tylrfishr), the Winter/Spring 2014 news apps intern. Today, I setup my work machine with OS X Mavericks and found some new wrinkles in the process, so I thought I would update this blog post to reflect the latest changes. [Shelly Tan](https://twitter.com/Tan_Shelly) and [Helga Salinas](https://twitter.com/helga_salinas) also contributed to this post.*
 
 I joined the News Apps team a week ago in their shiny new DC offices, and in-between eating awesome food and Tiny Desk concerts, we've been documenting the best way to get other journalists setup to build news apps like the pros.
 
@@ -17,7 +17,7 @@ The following steps will help you convert your laptop to hacktop, assuming you'r
 
 ## Chapter 0: Prerequisites
 ### Are you an administrator?
-We'll be installing a number of programs from the command line in this tutorial, so that means you must have administrative privledges. If you're not an admin, talk with your friendly IT Department.
+We'll be installing a number of programs from the command line in this tutorial, so that means you must have administrative privileges. If you're not an admin, talk with your friendly IT Department.
 
 Click on the Apple menu > System Preferences > Users & Groups and check your status against this handy screenshot.
 
@@ -29,18 +29,22 @@ Go to the App Store and go to the updates tab. If there are system updates, inst
 ### Install command line tools
 With the release of OS X 10.9, Apple decoupled its command line tools necessary for compiling some of the tools we use from Xcode, Apple's proprietary development suite.
 
-Start by opening up your terminal application. All Macs come with an app called "Terminal." You can find it under Applications > Utilities. Double click to open that bad boy up, and run this command:
+ All Macs come with an app called "Terminal." You can find it under Applications > Utilities. Double click to open that bad boy up, and run this command:
 
-	gcc
+	xcode-select --install
 
-That's it. Your laptop should prompt you to install the command line tools because you're trying to use a tool, `gcc`, that requires the tools (we're not actually using the tool, but let's pretend). Install the tools and move on once that process has completed.
+Your laptop should prompt you to install the command line tools. Install the tools and move on once that process has completed.
 
-**Note**: If you are running OS X 10.8 or lower, you will need to go to the App Store and download Xcode. After that, open the program, and go to Xcode > Preferences > Downloads and installing the command line tools from there.
+If it doesn't install, or there isn't an update for Xcode to install the tools, you'll have to download the command line tools from [developer.apple.com/downloads/index.action](http://developer.apple.com/downloads/index.action). You have to register, or you can log in with your Apple ID. 
+
+![In my case, it was Command Line Tools (OS X Mavericks).](/img/posts/download_clt.png)
+
+Search for "command line tools," and download the package appropriate to your version of OS X. Double click on the .dmg file in your downloads file, and proceed to install. In my case, I downloaded Command Line Tools (OS X Mavericks), which is highlighted in the screenshot above. 
 
 ## Chapter 1: Install Homebrew
 
 
-[Homebrew](http://brew.sh/) is like the Mac app store for programming tools. You can access Homebrew via the terminal, ([like all good things](http://www.amazon.com/Beginning-was-Command-Line-Neal-Stephenson/dp/0380815931)). Inspiration for this section comes from Kenneth Reitz's excellent [Python guide](http://docs.python-guide.org/en/latest/starting/install/osx.html).
+[Homebrew](http://brew.sh/) is like the Mac app store for programming tools. You can access Homebrew via the terminal, ([like all good things](http://www.amazon.com/Beginning-was-Command-Line-Neal-Stephenson/dp/0380815931)). Inspiration for this section comes from Kenneth Reitz's excellent [Python guide](http://docs.python-guide.org/en/latest/starting/install/osx/).
 
 Install Homebrew by pasting this command into your terminal and then hitting "enter."
 
@@ -192,13 +196,15 @@ Now, inside iTerm2 go to iTerm > Preferences > Profiles and select "Default." Ch
 See? Much nicer.
 
 ### Appendix 3: The Text Editor
-Since your code is stored entirely as text files on your computer, you'll want a nice text editor. Our instructions showed you how to use `nano`, a text editor that you'll find on almost every computer. However, there are at least two others that the team uses. Text editors are like the Microsoft Word of the programming world, except they come packed with all kinds of handy dandy features to make writing code a synch.
+Since your code is stored entirely as text files on your computer, you'll want a nice text editor. Our instructions showed you how to use `nano`, a text editor that you'll find on almost every computer. However, there are at least two others that the team uses. Text editors are like the Microsoft Word of the programming world, except they come packed with all kinds of handy dandy features to make writing code a cinch.
 
 #### Sublime Text 2
-If you're more comfortable with an editor that you can open up like Word, [Sublime Text 2](http://www.sublimetext.com/2) has a sweet graphical user interface and some [nice customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland)
+If you're more comfortable with an editor that you can open up like Word, [Sublime Text 2](http://www.sublimetext.com/2) has a sweet graphical user interface and some [nice customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland).
 
 #### Vim
-Personally, I prefer vim &mdash; a terminal based editor that requires you to type rather than point-and-click to work on files. It comes pre-installed on your computer, but there's a lot of little keyboard shortcuts you'll need to get comfy with before you can just dive-in. Here's a nice [cheat sheet](http://www.tuxfiles.org/linuxhelp/vimcheat.html), though, you might want to keep open in a tab if this is your not familiar with it. You can add all kinds of features, but our teammate Chris recommends [nerdtree](https://github.com/tpope/vim-surround) and [surround](https://github.com/scrooloose/nerdtree). Here are [some videos](http://net.tutsplus.com/sessions/vim-essential-plugins/) to help make vim and those particular add-ons.
+Personally, I prefer vim &mdash; a terminal based editor that requires you to type rather than point-and-click to work on files. It comes pre-installed on your computer, but there's a lot of little keyboard shortcuts you'll need to get comfy with before you can just dive-in. You can add all kinds of features, but our teammate Chris recommends [nerdtree](https://github.com/tpope/vim-surround) and [surround](https://github.com/scrooloose/nerdtree). Here are [some videos](http://net.tutsplus.com/sessions/vim-essential-plugins/) to help make vim and those particular add-ons.
+
+**Note**: In your terminal, type in `vim` to begin using the editor. Here's a resource to become more acquainted with vim: [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki).
 
 ## Conclusion
 And with that you now have a sweet hackintosh. Happy hacking, and if you haven't setup a [Github](https://github.com/) account, you can try out your new tools and [play with some of our code](https://github.com/nprapps). Github provides [a thorough walkthrough](https://help.github.com/) to get you setup and working on some open sourced projects.
