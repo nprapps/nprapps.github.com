@@ -238,3 +238,9 @@
   image: "http://apps.npr.org/commencement/quote-images/john-f-kennedy-yale-university-1962.png"
   url: http://apps.npr.org/commencement/
   github_url: https://github.com/nprapps/commencement
+- name: "Tiny Desk Concerts from NPR"
+  description: "(For your Roku!) Intimate video performances, recorded live at the desk of All Songs Considered host Bob Boilen."
+  date: "May 23, 2014"
+  image: "http://blog.apps.npr.org/img/roku-preview.jpg"
+  url: "http://www.roku.com/channels/#!details/41305/tiny-desk-concerts-from-npr"
+  github_url: https://github.com/nprapps/roku-tinydesk
