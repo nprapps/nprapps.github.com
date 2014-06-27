@@ -1,4 +1,4 @@
 ---
 layout: redirect
-redirect_url: /2014/02/18/summer-intern.html
+redirect_url: /2014/06/26/internships.html
 ---
