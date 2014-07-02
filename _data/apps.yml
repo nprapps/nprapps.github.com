@@ -244,3 +244,9 @@
   image: "http://blog.apps.npr.org/img/roku-preview.jpg"
   url: "http://www.roku.com/channels/#!details/41305/tiny-desk-concerts-from-npr"
   github_url: https://github.com/nprapps/roku-tinydesk
+- name: "Behind The Civil Rights Act"
+  description: "How it was made and what it means today—commentary on the landmark Civil Rights Act of 1964."
+  date: "July 2, 2014"
+  image: "http://blog.apps.npr.org/img/civilrightsact.jpg"
+  url: "http://apps.npr.org/behind-the-civil-rights-act/"
+  github_url: https://github.com/nprapps/civilrights
