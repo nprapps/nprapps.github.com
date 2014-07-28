@@ -118,7 +118,7 @@ It should look like this:
 
 	export PATH=/usr/local/bin:$PATH
 	export PATH=/usr/local/lib/python2.7/site-packages:$PATH
-	source /usr/local/share/python/virtualenvwrapper_lazy.sh
+	source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 To exit `less`, press "Q".
 
