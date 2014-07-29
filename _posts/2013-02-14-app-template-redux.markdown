@@ -142,6 +142,8 @@ Get our code [here]. It's got a shiny [MIT license] so take 'er for a spin! If y
 
 Happy hacking!
 
+**NOTE: We published an updated explanation of our app template. Read about all the cool new stuff it does [here](http://blog.apps.npr.org/2014/07/29/everything-our-app-template-does.html).**
+
 
 [render_utils.py]: https://github.com/nprapps/app-template/blob/master/render_utils.py
 [base.html]: https://github.com/nprapps/app-template/blob/master/templates/_base.html
