@@ -172,7 +172,7 @@ Finally, let's start up the Postgres server.
 #### PostGIS
 These deceptively simple commands will install an awful lot of software. It's going to take some time, and your laptop fans will probably sound like a fighter jet taking off. Don't worry; it can take the heat.
 
-	brew install gdal --with-postgres
+	brew install gdal --with-postgresql
 
 Still hanging in there?
 
