@@ -125,7 +125,7 @@ Below, what the table will look like when it appears in a viewport that is 480px
         table,
         tbody {
             display: block;
-            width: 100%:
+            width: 100%;
         }
 
 Make the table ```display: block;``` instead of ```display: table;``` and make sure it spans the full width of the content well.
@@ -221,9 +221,9 @@ At the bottom of your page, add this bit of JavaScript:
 This is what we'll paste into our CMS, so the story page can communicate with the graphic:
 
     <div id="jobs-table"></div>
-    <script type="text/javascript" src="path/to/pym.js"></script>
+    <script type="text/javascript" src="http://blog.apps.npr.org/pym.js/src/pym.js"></script>
     <script>
-        var jobs-table-parent = new pym.Parent('jobs-table', 'path/to/child.html', {});
+        var jobs_table_parent = new pym.Parent('jobs-table', 'http://blog.apps.npr.org/pym.js/examples/table/child.html', {});
     </script>
 
 * ```#jobs-table``` in this case is the containing div on the parent page.
