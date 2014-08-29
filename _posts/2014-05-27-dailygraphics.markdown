@@ -104,7 +104,7 @@ One of our NPR Visuals mantras is **Don't store binaries in the repo!** And when
 
 We store larger files (such as photos or audio) separate from the graphics, with a process to upload them directly to Amazon S3 and sync them between users.
 
-When I create a new project with ```fab add_graphic:my-new-graphic```, the new project folder includes an ```assets``` folder. After saving media files to this folder, I can, in **Tab 1** of my Terminal (**dailygraphics**), run ```fab assets.sync:name-of-graphic``` to sync my local ```assets``` folder with what's already on S3. None of these files will go to GitHub.
+When I create a new project with ```fab add_graphic:my-new-graphic```, the new project folder includes an ```assets``` folder. After saving media files to this folder, I can, in **Tab 1** of my Terminal (**dailygraphics**), run ```fab assets.sync:my-new-graphic``` to sync my local ```assets``` folder with what's already on S3. None of these files will go to GitHub.
 
 This is explained in greater detail [in the README](https://github.com/nprapps/dailygraphics#storing-media-assets).
 
