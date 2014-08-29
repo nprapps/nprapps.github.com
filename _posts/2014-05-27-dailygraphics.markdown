@@ -104,10 +104,7 @@ One of our NPR Visuals mantras is **Don't store binaries in the repo!** And when
 
 We store larger files (such as photos or audio) separate from the graphics, with a process to upload them directly to Amazon S3 and sync them between users.
 
-When I create a new project with ```fab add_graphic:my-new-graphic```, the new project folder includes an ```assets```. After I copy media files to this folder, I can, in **Tab 1** of my Terminal (**dailygraphics**), run ```fab assets.sync``` to sync my local ```assets``` folder with what's already on S3. None of these files will go to GitHub.
-
-Here's how I might reference one of those files on my page:<br />
-```<img src="assets/photo.jpg" alt="Photo" />```
+When I create a new project with ```fab add_graphic:my-new-graphic```, the new project folder includes an ```assets``` folder. After saving media files to this folder, I can, in **Tab 1** of my Terminal (**dailygraphics**), run ```fab assets.sync``` to sync my local ```assets``` folder with what's already on S3. None of these files will go to GitHub.
 
 This is explained in greater detail [in the README](https://github.com/nprapps/dailygraphics#storing-media-assets).
 
@@ -117,6 +114,8 @@ This is explained in greater detail [in the README](https://github.com/nprapps/d
 Our **dailygraphics** rig offers a fairly lightweight system for developing and deploying small chunks of code-based content, with some useful extras like support for Google Spreadsheets and responsive iframes. We're sharing it in the hope that it might be useful for those who need something to collect and deploy small projects, but don't need something as robust as our full [app-template](https://github.com/nprapps/app-template).
 
 If you end up using it or taking inspiration from it, let us know!
+
+_(This was updated in August 2014 to reflect changes to ```dailygraphics```.)_
 
 ----------
 
