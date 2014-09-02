@@ -8,9 +8,9 @@ email: deads@npr.org
 twitter: eads
 ---
 
-The NPR Visuals team was recently tasked with analysing data from the Pentagon’s program to disperse surplus military gear to law enforcement agencies around the country through the Law Enforcement Support Office (LESO). The project offers a useful case study in creating data processing pipelines for data analysis and reporting.
+The NPR Visuals team was recently tasked with [analysing data from the Pentagon’s program to disperse surplus military gear](http://www.npr.org/2014/09/02/2014/08/22/342494225/mraps-and-bayonets-what-we-know-about-the-pentagons-1033-program) to law enforcement agencies around the country through the Law Enforcement Support Office (LESO), also known as the "1033" program. The project offers a useful case study in creating data processing pipelines for data analysis and reporting.
 
-The source code for the processing scripts discussed in this post is [available on Github](https://github.com/nprapps/leso/).
+The source code for the processing scripts discussed in this post is [available on Github](https://github.com/nprapps/leso/). The processed data is available in a  [folder on Google Drive](https://drive.google.com/folderview?id=0B03IIavLYTovdWg4NGtzSW9wb2c&usp=sharing).
 
 ## Automate everything
 
