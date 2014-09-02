@@ -60,7 +60,9 @@ The data, provided by the Defense Logistics Agency's Law Enforcement Support Off
 
 [Import script source](https://github.com/nprapps/leso/blob/master/import.sh)
 
-Our data process starts with a single Excel file and builds a relational database around it. Here’s the whole workflow:
+The process starts with a single Excel file and builds a relational database around it. The Excel file is cleaned and converted into a CSV file and imported into a PostgreSQL database. Then additional data is loaded that help categorize and contextualize the primary dataset.
+
+Here’s the whole workflow:
 
 * [Convert Excel data to CSV with Python](https://github.com/nprapps/leso/blob/master/clean.py).
   * Parse the date field, which represents dates in two different formats
