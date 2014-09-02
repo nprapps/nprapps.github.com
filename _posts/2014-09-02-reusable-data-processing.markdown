@@ -107,7 +107,7 @@ select c.full_name, c.code as federal_supply_class,
 
 This builds a table that calculates the total acquisition cost for each federal supply class:
 
-<table>
+<table class="table">
   <thead>
     <tr>
       <th>full_name</th>
