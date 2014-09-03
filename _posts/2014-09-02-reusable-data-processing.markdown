@@ -73,7 +73,7 @@ Here’s the whole workflow:
 * [Import the CSVs generated from the source data into PostgreSQL](https://github.com/nprapps/leso/blob/master/import.sh#L7:L29).
 * [Import a “FIPS crosswalk” CSV into PostgreSQL](https://github.com/nprapps/leso/blob/master/import.sh#L31:L37). This file, provided to us by an NPR reporter, lets us map county name and state to the Federal Information Processing Standard identifier used by the Census Bureau to identify counties.
 * [Import a CSV file with Federal Supply Codes into PostgreSQL](https://github.com/nprapps/leso/blob/master/import.sh#L40:L54). Because there are repeated values, this data is de-depulicated after import.
-* [Import 5 year county population estimates](https://github.com/nprapps/leso/blob/master/import.sh#L56:L168) from the US Census Bureau’s American Community Survey using the American FactFinder download tool. The files were added to the repository because there is no direct link or API to get the data.
+* [Import 5 year county population estimates](https://github.com/nprapps/leso/blob/master/import.sh#L56:L168) from the US Census Bureau’s American Community Survey using the American FactFinder download tool. The file was added to the repository because there is no direct link or API to get the data.
 * [Create a PostgreSQL view](https://github.com/nprapps/leso/blob/master/import.sh#L171:L179) that joins the LESO data with census data through the FIPS crosswalk table for convenience. 
 
 We also [import a list of all agencies](https://github.com/nprapps/leso/blob/master/import.sh#L181:L193) using [csvkit](https://csvkit.readthedocs.org):
