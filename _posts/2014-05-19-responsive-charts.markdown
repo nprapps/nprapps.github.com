@@ -24,20 +24,20 @@ If you render your graphics in code &mdash; perhaps using something like [D3](ht
     var line_graph_parent = new pym.Parent('line-graph', 'http://blog.apps.npr.org/pym.js/examples/graphic/child.html', {});
 </script>
 
-You can [find all the files here](https://github.com/nprapps/pym.js/tree/master/examples/graphic). I won't get into how to draw the graph itself, but I'll explain how to make it responsive. The general idea:
+You can [find all the files here](https://github.com/nprapps/pym.js/tree/master/examples/graphic-onresize). I won't get into how to draw the graph itself, but I'll explain how to make it responsive. The general idea:
 
 * Calculate the graph's dimensions based on the width of its container (rather than fixed numbers)
 * If the page is resized, destroy the graph, check for new dimensions and redraw the graph.
 
-### [Structure Of The HTML File](https://github.com/nprapps/pym.js/blob/master/examples/graphic/child.html):
+### [Structure Of The HTML File](https://github.com/nprapps/pym.js/blob/master/examples/graphic-onresize/child.html):
 
 * CSS styles
 * A container div (```#graphic```) for the line graph (including a static fallback image for browsers that don't support SVG)
 * Footnotes and credits
-* JavaScript libraries and [the JavaScript file for this graphic](https://github.com/nprapps/pym.js/blob/master/examples/graphic/js/graphic.js)
+* JavaScript libraries and [the JavaScript file for this graphic](https://github.com/nprapps/pym.js/blob/master/examples/graphic-onresize/js/graphic.js)
 
 
-### [The JavaScript File](https://github.com/nprapps/pym.js/blob/master/examples/graphic/js/graphic.js)
+### [The JavaScript File](https://github.com/nprapps/pym.js/blob/master/examples/graphic-onresize/js/graphic.js)
 
 #### Set Global Variables:
 
@@ -101,7 +101,7 @@ You don't need the fallback image (or whatever else is in your container div). D
             
 Another small bit of responsiveness: use tickFormat to conditionally display dates along the x-axis (e.g., "2008" when the graph is rendered large and "'08" when it is rendered small).
 
-Then [set up and draw the rest of the chart](https://github.com/nprapps/pym.js/blob/master/examples/graphic/js/graphic.js#L45-L126). 
+Then [set up and draw the rest of the chart](https://github.com/nprapps/pym.js/blob/master/examples/graphic-onresize/js/graphic.js#L40-L121). 
 
 #### Load The Data And Actually Draw The Graphic
 
@@ -141,7 +141,7 @@ To make the graphic self-adjust any time the overall page resizes, add an onresi
             });
             
             drawGraphic();
-            window.onresize(drawGraphic);
+            window.onresize = drawGraphic;
         });
     }
 
@@ -240,6 +240,8 @@ This is what we'll paste into our CMS, so the story page can communicate with th
 
 * ```#line-graph``` in this case is the containing div on the parent page.
 * Sub out all the ```path/to/``` references with the actual published paths to those files.
+
+<em>(Edited Sept. 4, 2014: Thanks to <a href="https://twitter.com/gerald_arthur">Gerald Rich</a> for <a href="https://github.com/nprapps/nprapps.github.com/issues/45">spotting a bug</a> in the onresize example code.)</em>
 
 ----------
 
