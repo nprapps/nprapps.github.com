@@ -8,6 +8,8 @@ email: deads@npr.org
 twitter: eads
 ---
 
+*Correction (09-02-2014 8:55pm EST): We originally stated that the script should combine data from multiple American Community Survey estimates. [This methodology is not valid](https://github.com/ryanpitts/journalists-guide-datasets/blob/master/datasets/american_community_survey.md#comparing-acs-data-from-different-releases). This post and the accompanying source code have been updated accordingly.*
+
 The NPR Visuals team was recently tasked with [analysing data from the Pentagon’s program to disperse surplus military gear](http://www.npr.org/2014/09/02/2014/08/22/342494225/mraps-and-bayonets-what-we-know-about-the-pentagons-1033-program) to law enforcement agencies around the country through the Law Enforcement Support Office (LESO), also known as the "1033" program. The project offers a useful case study in creating data processing pipelines for data analysis and reporting.
 
 The source code for the processing scripts discussed in this post is [available on Github](https://github.com/nprapps/leso/). The processed data is available in a  [folder on Google Drive](https://drive.google.com/folderview?id=0B03IIavLYTovdWg4NGtzSW9wb2c&usp=sharing).
@@ -71,11 +73,7 @@ Here’s the whole workflow:
 * [Import the CSVs generated from the source data into PostgreSQL](https://github.com/nprapps/leso/blob/master/import.sh#L7:L29).
 * [Import a “FIPS crosswalk” CSV into PostgreSQL](https://github.com/nprapps/leso/blob/master/import.sh#L31:L37). This file, provided to us by an NPR reporter, lets us map county name and state to the Federal Information Processing Standard identifier used by the Census Bureau to identify counties.
 * [Import a CSV file with Federal Supply Codes into PostgreSQL](https://github.com/nprapps/leso/blob/master/import.sh#L40:L54). Because there are repeated values, this data is de-depulicated after import.
-* [Import county population estimates](https://github.com/nprapps/leso/blob/master/import.sh#L56:L168) from the US Census Bureau’s American Community Survey using the American FactFinder download tool. The files were added to the repository because there is no direct link or API to get the data.
-  * Import 5 year county population estimates (covers all US counties)
-  * Import 3 year county population estimates (covers approximately 53% of the most populous US counties)
-  * Import 1 year county population (covers approximately 25% of the most populous US counties).
-  * Generate a single population estimate table by overwriting 5 year estimates with 3 year estimates or 1 year estimates (if they exist).
+* [Import 5 year county population estimates](https://github.com/nprapps/leso/blob/master/import.sh#L56:L168) from the US Census Bureau’s American Community Survey using the American FactFinder download tool. The files were added to the repository because there is no direct link or API to get the data.
 * [Create a PostgreSQL view](https://github.com/nprapps/leso/blob/master/import.sh#L171:L179) that joins the LESO data with census data through the FIPS crosswalk table for convenience. 
 
 We also [import a list of all agencies](https://github.com/nprapps/leso/blob/master/import.sh#L181:L193) using [csvkit](https://csvkit.readthedocs.org):
