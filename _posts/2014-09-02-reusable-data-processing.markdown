@@ -8,7 +8,7 @@ email: deads@npr.org
 twitter: eads
 ---
 
-*Correction (09-02-2014 8:55pm EST): We originally stated that the script should combine data from multiple American Community Survey estimates. [This methodology is not valid](https://github.com/ryanpitts/journalists-guide-datasets/blob/master/datasets/american_community_survey.md#comparing-acs-data-from-different-releases). This post and the accompanying source code have been updated accordingly.*
+*Correction (September 2, 2014 8:55pm EDT): We originally stated that the script should combine data from multiple American Community Survey estimates. [This methodology is not valid](https://github.com/ryanpitts/journalists-guide-datasets/blob/master/datasets/american_community_survey.md#comparing-acs-data-from-different-releases). This post and the accompanying source code have been updated accordingly.*
 
 The NPR Visuals team was recently tasked with [analysing data from the Pentagon’s program to disperse surplus military gear](http://www.npr.org/2014/09/02/2014/08/22/342494225/mraps-and-bayonets-what-we-know-about-the-pentagons-1033-program) to law enforcement agencies around the country through the Law Enforcement Support Office (LESO), also known as the "1033" program. The project offers a useful case study in creating data processing pipelines for data analysis and reporting.
 
