@@ -8,9 +8,7 @@ email: bboyer@npr.org
 twitter: brianboyer
 ---
 
-<iframe src="https://vine.co/v/bXm3FjFtqAp/card" height="600" width="600" border="0" frameborder="0">
-    <!--whitespace seems important to markdown, silly-->
-</iframe>
+<style>.embed-container {position: relative; padding-bottom: 100%; height: 0; overflow: hidden;} .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe width='100%' src='https://vine.co/v/bXm3FjFtqAp/embed/simple' frameborder='0' scrolling='no' allowtransparency='true'></iframe><script async src='//platform.vine.co/static/scripts/embed.js' charset='utf-8'></script></div>
 <p><small>Why aren't we flying? Because getting there is half the fun. You know that. (Visuals en route to <a href="http://ire.org/conferences/nicar-2013/">NICAR 2013</a>.)</small></p>
 
 Hey!
