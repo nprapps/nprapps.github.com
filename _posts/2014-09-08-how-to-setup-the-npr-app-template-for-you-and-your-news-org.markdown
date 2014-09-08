@@ -31,7 +31,9 @@ Also, all of our projects are deployed from the template to Amazon S3. You shoul
 
 ## Cloning the template
 
-All of our projects start and end in version control, so the first thing to do for your project is to fork [our app template](https://github.com/nprapps/app-template) so you have a place for all of your defaults when you use the app template for more projects. Once that is done, clone your fork to your local machine so we can start changing some defaults.
+All of our projects start and end in version control, so the first thing to do for your project is to fork [our app template](https://github.com/nprapps/app-template) so you have a place for all of your defaults when you use the app template for more projects. This is going to be the place where all of your app template projects begin. When you want to start a new project, you clone your *fork* of the app template.
+
+Once that is done, clone your fork to your local machine so we can start changing some defaults.
 
 ```
 git clone git@github.com:$YOUR_GITHUB_USERNAME/app-template.git
