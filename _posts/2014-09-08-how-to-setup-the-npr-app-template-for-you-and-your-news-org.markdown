@@ -98,7 +98,7 @@ With all of this changed, you should be able to bootstrap a new project, work on
 
 First, make sure you have pushed all of the changes you just made back to Github. Then, make a test repository for a new app template project on Github. Take note of what you call this repository.
 
-Clone your fork of the app template once again. This time, we’re going to specify that the clone is created in a folder **with the name of the repository you just created**. For example, if you made a repository called `my-new-awesome-project`, your clone command would look like this:
+Clone your fork of the app template once again. This is how you will begin all individual app template projects. This time, we’re going to specify that the clone is created in a folder **with the name of the repository you just created**. For example, if you made a repository called `my-new-awesome-project`, your clone command would look like this:
 
 ```
 git clone git@github.com:$YOUR_GITHUB_USERNAME/app-template.git my-new-awesome-project
