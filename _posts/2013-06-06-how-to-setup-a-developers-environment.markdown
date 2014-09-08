@@ -90,9 +90,9 @@ Update your session again
 
 	source ~/.bash_profile
 
-Next, you'll need to install `pip`. Like Homebrew, it's sort of an app store but for Python code. (We're installing version 1.4.1 of `pip` because, although there is a newer version of `pip`, it is still a little buggy and does not work easily with some of our tools.)
+Next, you'll need to install `pip`. Like Homebrew, it's sort of an app store but for Python code.
 
-	sudo easy_install pip==1.4.1
+	sudo easy_install pip
 
 We use `sudo` to install this software for everyone who might use your computer. `sudo` lets you install things as the admin.
 
