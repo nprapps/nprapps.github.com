@@ -48,7 +48,7 @@ Search for "command line tools," and download the package appropriate to your ve
 
 Install Homebrew by pasting this command into your terminal and then hitting "enter."
 
-	ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 It will ask for your password, so type that in and hit "enter" again. Now, paste this line to test Homebrew.
 
