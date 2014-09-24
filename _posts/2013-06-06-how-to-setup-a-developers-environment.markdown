@@ -135,6 +135,12 @@ Then, add Node to your `~/.bash_profile` like you did for Homebrew and virtualwr
 
 Save and exit out of `nano` using control + O, enter, and then control + X. Then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
 
+### Chapter 4: Set up SSH for Github
+
+Github has written a great guide for setting up SSH authentication for Github. You will want to do this so Github knows about your computer and will allow you to push to repositories you have access to.
+
+Read that tutorial [here](https://help.github.com/articles/generating-ssh-keys). Do **not** download the native app. Start at "Step 1: Check for SSH keys".
+
 ### Appendix 1: Postgres and PostGIS
 We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data. We'll explain these tools a bit more as we install them.
 
