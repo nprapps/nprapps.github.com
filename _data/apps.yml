@@ -256,7 +256,7 @@
   image: "http://apps.npr.org/the-end-of-neighborhood-schools/assets/img/nola_share_image_sq.jpg"
   url: "http://apps.npr.org/the-end-of-neighborhood-schools/"
   github_url: https://github.com/nprapps/nola
-- name: "What do homeless vets look like?"
+- name: "Look At This: What do homeless vets look like?"
   description: "9 conversations from a pop-up photo studio in San Diego"
   date: "September 18, 2014"
   image: "http://apps.npr.org/lookatthis/veterans/assets/veterans_share_image_sq.jpg"
