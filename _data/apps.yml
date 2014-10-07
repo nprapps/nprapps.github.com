@@ -250,3 +250,15 @@
   image: "http://blog.apps.npr.org/img/civilrightsact.jpg"
   url: "http://apps.npr.org/behind-the-civil-rights-act/"
   github_url: https://github.com/nprapps/civilrights
+- name: "The End Of Neighborhood Schools"
+  description: "New Orleans is home to the nation’s first all-charter district. Is this the future of education?"
+  date: "September 2, 2014"
+  image: "http://apps.npr.org/the-end-of-neighborhood-schools/assets/img/nola_share_image_sq.jpg"
+  url: "http://apps.npr.org/the-end-of-neighborhood-schools/"
+  github_url: https://github.com/nprapps/nola
+- name: "What do homeless vets look like?"
+  description: "9 conversations from a pop-up photo studio in San Diego"
+  date: "September 18, 2014"
+  image: "http://apps.npr.org/lookatthis/veterans/assets/veterans_share_image_sq.jpg"
+  url: "http://apps.npr.org/lookatthis/posts/veterans/"
+  github_url: https://github.com/nprapps/lookatthis
