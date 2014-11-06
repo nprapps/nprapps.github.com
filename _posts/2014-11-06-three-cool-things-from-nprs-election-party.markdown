@@ -10,7 +10,7 @@ twitter: tylrfishr
 
 ![The NPR Election Party welcome screen](/img/posts/elections-2014-promo.png)
 
-NPR’s Election Party app has a lot of moving parts. It displays live election results from the Associated Press, ingests posts from our [Tumblr liveblog](http://nprpolitics.tumblr.com), bakes out visualizations of our data, and presents all of this in a slideshow that, on election night, was continuously changing through an admin. It even works as a Chromecast app.
+[NPR’s Election Party](http://elections.npr.org) app has a lot of moving parts. It displays live election results from the Associated Press, ingests posts from our [Tumblr liveblog](http://nprpolitics.tumblr.com), bakes out visualizations of our data, and presents all of this in a slideshow that, on election night, was continuously changing through an admin. It even works as a Chromecast app.
 
 All of the code [is open source](http://github.com/nprapps/elections14) and freely available to read and use, but it can be hard to make sense of all of it without knowledge of our app template and all the things this app actually does.
 
