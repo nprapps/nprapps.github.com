@@ -8,19 +8,19 @@ email: tfisher@npr.org
 twitter: tylrfishr
 ---
 
-![The NPR Election Party welcome screen](/img/posts/elections-2014-promo.png)
+![The NPR Election Party welcome screen](/img/posts/elections14-promo.png)
 
 [NPR’s Election Party](http://elections.npr.org) app has a lot of moving parts. It displays live election results from the Associated Press, ingests posts from our [Tumblr liveblog](http://nprpolitics.tumblr.com), bakes out visualizations of our data, and presents all of this in a slideshow that, on election night, was continuously changing through an admin. It even works as a Chromecast app.
 
 All of the code [is open source](http://github.com/nprapps/elections14) and freely available to read and use, but it can be hard to make sense of all of it without knowledge of our app template and all the things this app actually does.
 
-There are countless little snippets of this app I could share, but I chose three interesting pieces of the app that would be interesting to share in isolation.
+There are countless little snippets of this app I could share, but I chose three pieces of the app that would be interesting to share in isolation.
 
-## Resetting everyone on your web page
+## Deploying bug fixes by reloading your user's browsers
 
 Our app was a static web page, as all of our apps are. We had a server separately parsing AP data, ingesting Tumblr posts and baking out the static website every few minutes, but the client never touched the server. This made it difficult to deploy bug fixes if something broke on election night. 
 
-To solve this problem, we devised a simple way to force every client to refresh the web browser. We deployed a file with a timestamp to S3, and on page load, the client downloaded that file, read the timestamp and stored it. Then, every three minutes, the client would check that file to see if the timestamp had changed. If the timestamp had changed, the browser refreshed the page. Here's the client-side code:
+To solve this problem, we devised a simple way to force every client to refresh the web page. We deployed a file with a timestamp to S3, and on page load, the client downloaded that file, read the timestamp and stored it. Then, every three minutes, the client would check that file to see if the timestamp had changed. If the timestamp had changed, the browser refreshed the page. Here's the client-side code:
 
 {% highlight javascript %}
 var reloadTimestamp = null;
@@ -49,7 +49,8 @@ var checkTimestamp = function() {
             
             // if the initial timestamp doesn't match the new one, refresh
             if (reloadTimestamp != newTime) {
-                // set a cookie in case we need to do special things
+                // set a cookie in case we need to something to happen
+                // when the page reloads
                 $.cookie('reload', true);
                 window.location.reload(true);
             }
@@ -62,7 +63,7 @@ $(document).ready(function)() {
     
     // stuff you only want to happen if we forced a refresh
     if ($.cookie('reload')) {
-        // stuff
+        // for example, skip a welcome screen or hide some UI element
         
         $.removeCookie('reload');
     }
@@ -115,9 +116,9 @@ We used this once early in the night when we discovered an error with how we wer
 
 ## Widescreen slides on any device
 
-The particular design of our application, a rotating slideshow of cards with various pieces of information, made responsive design a particularly unique challenge. We never wanted a user to have to scroll, instead allowing them to lean back and *watch*, rather than interact. 
+For our app, we decided to optimize for 16x9 or wider devices, which gets you most TVs, laptops, tablets and phones (in landscape mode). Fixing these slides to this aspect ratio *and* getting everything in the slides to size appropriately was tricky. We used an unusual technique to achieve this. 
 
-We decided to optimize for 16x9 or wider devices, which gets you most TVs, laptops, tablets and phones (in landscape mode). Fixing these slides to this aspect ratio *and* getting everything in the slides to size appropriately was tricky. We ended up using a combination of vws and rems in CSS, and a JavaScript resize function, to achieve this.
+First, we set the base font size to 1 <em>vw</em> (that is, 1% of the viewport width). Then, we scaled everything else with <em>rem</em> units (like an <em>em</em> unit, but based only on the base font size). By doing this, we were able to accomplish a couple things: We ensured that everything scaled to 16x9 based on the width of the viewport. With some JavaScript, we could also <strong>shrink</strong> the base font size when the client browser is shorter than 16x9.
 
 A demo of this is simple.
 
@@ -202,7 +203,7 @@ var onWindowResize = function(){
 }
 {% endhighlight %}
 
-This, of course, required prompting users to shift their phones and tablets into landscape mode. It was a compromise, but one we felt was worth making with the audience we intended to reach.
+This, of course, required prompting users to shift their phones and tablets into landscape mode.
 
 If you want to see this demo in action, [see it on Codepen](http://codepen.io/TylerFisher/pen/Jtpmd) and resize your browser a bunch. In addition, [here is a gist of all the code.](https://gist.github.com/TylerFisher/2396feb4936848c6d695)
 
@@ -238,7 +239,7 @@ window['__onGCastApiAvailable'] = function(loaded, errorInfo) {
 }
 {% endhighlight %}
 
-An important thing to keep in mind is that, in our model, the Chromecast app actually runs the same code as the client. You need to maintain state across your app so that your code knows whether the client is a Chromecast or a web browser. Thus, you would have a function for the sender when a Chromecast session is initiated, and a code path in your ready function for Chromecasts specifically:
+An important thing to keep in mind is that, in our model, the Chromecast app actually runs the same code as the client. You need to maintain state across your app so that your code knows whether the client is a Chromecast or a regular web browser. Thus, you would have a function for the sender when a Chromecast session is initiated, and a code path in your ready function for Chromecasts specifically:
 
 {% highlight javascript %}
 // function for casting devices
@@ -313,4 +314,4 @@ Importantly, we were able to handle both casting devices and one-screen sessions
 
 Again, [read the full source of our Chromecast code in this gist.](https://gist.github.com/TylerFisher/9415aa0e75040f13028d)
 
-The many moving parts of our elections app created more interesting pieces of code, and you can dig through everything in our [repo](https://github.com/nprapps/elections14). As always, the code is open sourced and free to use.
+The many moving parts of our elections app created more interesting pieces of code, and you can dig through everything in our [repo](https://github.com/nprapps/elections14). As always, the code is open source and free to use.
