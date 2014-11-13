@@ -256,9 +256,27 @@
   image: "http://apps.npr.org/the-end-of-neighborhood-schools/assets/img/nola_share_image_sq.jpg"
   url: "http://apps.npr.org/the-end-of-neighborhood-schools/"
   github_url: https://github.com/nprapps/nola
-- name: "Look At This: What do homeless vets look like?"
+- name: "Look At This: What Do Homeless Vets Look Like?"
   description: "9 conversations from a pop-up photo studio in San Diego"
   date: "September 18, 2014"
   image: "http://apps.npr.org/lookatthis/veterans/assets/veterans_share_image_sq.jpg"
   url: "http://apps.npr.org/lookatthis/posts/veterans/"
   github_url: https://github.com/nprapps/lookatthis
+- name: "Look At This: Plastic Rebirth"
+  description: "Seven women who have had cosmetic surgery explain what beauty means to them."
+  date: "October 9, 2014"
+  image: "http://apps.npr.org/lookatthis/posts/plastic/assets/plastic_share_image_sq.jpg"
+  url: "http://apps.npr.org/lookatthis/posts/plastic/"
+  github_url: https://github.com/nprapps/lookatthis
+- name: "Look At This: This Is Color"
+  description: "A weird little lesson about color, in rainbow order."
+  date: "October 23, 2014"
+  image: "http://apps.npr.org/lookatthis/posts/colors/assets/colors_share_image_sq.jpg"
+  url: "http://apps.npr.org/lookatthis/posts/colors/"
+  github_url: https://github.com/nprapps/lookatthis
+- name: "NPR Election Party"
+  description: "Stream election results, data and news, NPR-style. Optimized for your TV, Chromecast or coffee table. #nprparty"
+  date: "November 4, 2014"
+  image: "http://elections.npr.org/assets/facebook.jpg"
+  url: "http://elections.npr.org/"
+  github_url: https://github.com/nprapps/elections14
