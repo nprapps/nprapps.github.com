@@ -16,7 +16,7 @@ All of the code [is open source](http://github.com/nprapps/elections14) and free
 
 There are countless little snippets of this app I could share, but I chose three pieces of the app that would be interesting to share in isolation.
 
-## Deploying bug fixes by reloading your user's browsers
+## Deploying bug fixes by reloading your users' browsers
 
 Our app was a static web page, as all of our apps are. We had a server separately parsing AP data, ingesting Tumblr posts and baking out the static website every few minutes, but the client never touched the server. This made it difficult to deploy bug fixes if something broke on election night. 
 
