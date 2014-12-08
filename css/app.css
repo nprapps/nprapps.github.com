@@ -222,3 +222,17 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 @media screen and (max-width:480px) {
     .grid .text-grid a {bottom: 5%;}
 }
+
+
+
+/*styling to get books14 images side-by-side*/
+.wrapper-image{
+    width:100%;
+    float:left;
+    clear:both;
+}
+.col{
+    float:left;
+    width:45%;
+    margin-right:5%;
+}

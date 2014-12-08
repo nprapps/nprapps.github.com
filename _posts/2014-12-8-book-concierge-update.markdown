@@ -16,7 +16,10 @@ We changed the modal proportions so that it fits into a wider range of screen si
 We also replaced the modal’s ‘previous’ and ‘next’ buttons &mdash; which were tucked away at the bottom of the review &mdash; with side paddles. This allows the user to easily click through the reviews without having to hunt for the buttons at the bottom of each review.
 
 <img src="/img/posts/books14-image-size-2013.jpg" alt="">
+<p><small>2013<small></p>
+
 <img src="/img/posts/books14-image-size-2014.jpg" alt="">
+<p><small>2014</small></p>
 
 ###Social Buttons
 We added social buttons to the book modal, allowing users to share individual book reviews.
@@ -25,21 +28,37 @@ We also removed the top bar that housed share buttons for the overall app. Inste
 ###Tag Colors
 We added a color gradient over the list of tags. This helps distinguish the tags from each other and improves the legibility of the tags when displayed in a block. And it’s pretty.
 
-<img src="/img/posts/books14-tags-2013.jpg" alt="">
-<img src="/img/posts/books14-tags-2014.jpg" alt="">
-
+<div class="wrapper-image">
+    <div class="col">
+        <img src="/img/posts/books14-tags-2013.jpg" alt="">
+        <p><small>2013</small></p>
+    </div>
+    <div class="col">
+        <img src="/img/posts/books14-tags-2014.jpg" alt="">
+        <p><small>2014</small></p>
+    </div>
+</div>
 
 ###Filter Button Location
 On smaller screens, we moved the ‘filter’ button out of the header and closer to the content. This puts the button in a more appropriate context.
 
-<img src="/img/posts/books14-filter-2013.jpg" alt="">
-<img src="/img/posts/books14-filter-2014.jpg" alt="">
-
+<div class="wrapper-image">
+    <div class="col">
+        <img src="/img/posts/books14-filter-2013.jpg" alt="">
+        <p><small>2013</small></p>
+    </div>
+    <div class="col">
+        <img src="/img/posts/books14-filter-2014.jpg" alt="">
+        <p><small>2014</small></p>
+    </div>
+</div>
 
 ###Links to Previous Years
 Ideally, we would have combined the books from 2013 and 2014 into one big concierge, but due to time restrictions and data management complexity we kept them separate. We still wanted to reference last year’s concierge as well as book lists from previous years, so we added these links to the header. Additionally, we added a link below the tags list to catch people who skipped past the header. 
 
-<img src="/img/posts/books14-links-2014.png" alt="">
+<img src="/img/posts/books14-links-2014.jpg" alt="">
+<p><small>2014</small></p>
+
 
 ###Lighten page load, improve performance
 We’ve been able to realize significant performance gains in recent projects by using custom builds of our libraries and assets. We shaved over 300k off the initial page load by using a custom icon font generated with Fontello (http://fontello.com/) rather than including all of Font Awesome.
