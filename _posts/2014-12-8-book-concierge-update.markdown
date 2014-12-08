@@ -51,5 +51,12 @@ Paradoxically, we were able to improve performance by eliminating thumbnail size
 ###Listening to users
 After we launched the site, some librarians suggested to NPR Books that next year we should include a link to Worldcat, a site that will help you find a book at your local library.
 
-We thought this was a lovely idea and didn’t see why it needed to wait.  So we used the Online Computer Library Center identifier API to get the magic book identifier used by Worldcat and added a “find at your library” link the day after launch. 
+We thought this was a lovely idea and didn’t see why it needed to wait.  So we used the Online Computer Library Center identifier API to get the magic book identifier used by Worldcat and added a “find at your library” link the day after launch.
 
+###How did the improvements help?
+
+As of writing, we have analytics data for the first 5 days of the site's launch. Comparing to last year is complicated by changing methods for collecting analytics. In 2013, about 370,000 people landed on the concierge home page during the first 5 days. In 2014, it has been a little lower -- about 337,000 people. 
+
+Despite the lower number of visitors, engagement appears to have increased fairly significantly. About 86,000 people clicked the most popular tag (NPR Staff Picks) in 2014, up from about 75,000 in 2013. Similarly, the top review so far in 2014 has been David Mitchell's The Bone Clocks with 23,000 views, while the top book in 2013, Dave Eggers' The Circle, was viewed about 18,000 times.
+
+In all, visitors read about 1.25 million book reviews in the first five days and selected some combination of tags 923,000 times.
