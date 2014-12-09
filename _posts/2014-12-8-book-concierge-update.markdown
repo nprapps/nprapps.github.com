@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Book Concierge Update"
+description: "This is a catalog of small improvements we made to the book concierge project from 2013 to 2014."
 
 author: David Eads and Christina Rees
 email: visuals@npr.org
