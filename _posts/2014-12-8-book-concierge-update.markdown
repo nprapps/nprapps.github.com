@@ -1,20 +1,46 @@
 ---
 layout: post
-title: "Book Concierge Update"
-description: "This is a catalog of small improvements we made to the book concierge project from 2013 to 2014."
+title: "Improving User Engagement Through Subtle Changes: Updating the Book Concierge"
+description: "This is a catalog of small improvements, why we made them, and the difference they made."
 
 author: David Eads and Christina Rees
 email: visuals@npr.org
 twitter: nprviz
 ---
-The 2013 NPR year-end “Book Concierge” was a big hit. Instead of writing a bunch of relatively boring lists, the books team solicited over 200 short reviews by critics and staff and put them into a single, beautiful website designed to make discovering great books fun. Readers loved it.
+The 2013 NPR year-end “Book Concierge” was a big hit. Instead of writing a bunch of lists, the books team solicited over 200 short reviews by critics and staff and put them into a single, beautiful website designed to make discovering great books fun. Readers loved it. For 2014, our goal was to build  on last year’s success and resist the urge to rewrite the code or wildly redesign. 
 
-Approaching the 2014 Book Concierge, our goal was to build off the success of last year’s version while resisting the urge to completely rewrite the code or wildly revamp the site. This is a catalog of small improvements that add up to an improved experience.
+This is a catalog of small improvements, why we made them, and the difference they made. We’re using analytics for the first five days following the site's launch. Overall, pageviews are slightly down from last year (370,000 in the first five days in 2014 versus 337,000 in 2014), but engagement appears to have increased fairly significantly.
+
+
+###Tag Styling
+In the 2013 concierge the list of tags blends together, making them difficult to scan. To improve the tags’ legibility and click-ability, we tried different color combinations and styles with varying success. We tried alternating between 2 tag colors, as well as varying the tag length, but neither were satisfying.  
+
+Our final solution was to apply a color gradient over the list of tags. This transformed the tags into individually identifiable buttons that still feel like a cohesive unit. This year, there was an average of 2.7 tag selections per visit versus 2.3 in 2013, a 17% increase. In 5 days, about 86,000 people clicked the most popular tag (NPR Staff Picks), up from about 75,000 in 2013. 
+
+<div class="wrapper-image">
+    <div class="col2">
+        <img src="/img/posts/books14-tags-2013.jpg" alt="">
+        <p><small>2013</small></p>
+    </div>
+
+    <div class="col2">
+        <img src="/img/posts/books14-tags-switch.jpg" alt="">
+    </div>
+
+    <div class="col2">
+        <img src="/img/posts/books14-tags-length.jpg" alt="">
+    </div>
+
+    <div class="col2">
+        <img src="/img/posts/books14-tags-2014.jpg" alt="">
+        <p><small>2014</small></p>
+    </div>
+
+</div>
 
 ###Modal Improvements
-We changed the modal proportions so that it fits into a wider range of screen sizes without forcing the user to scroll. We also added a max-width to the modal, limiting the book cover image size on larger screens.
 
-We also replaced the modal’s ‘previous’ and ‘next’ buttons &mdash; which were tucked away at the bottom of the review &mdash; with side paddles. This allows the user to easily click through the reviews without having to hunt for the buttons at the bottom of each review.
+We changed the modal design to help encourage users to read more book reviews. We replaced the modal’s ‘previous’ and ‘next’ buttons &mdash; which were tucked away at the bottom of the review &mdash; with side paddles. This allows viewers to easily click through the reviews without having to hunt for the buttons at the bottom of each review. We also changed the modal proportions so that it fits into a wider range of screen sizes without forcing the user to scroll. By putting a max-width on the modal and limiting the book cover image size, we eliminated a lot of dead white space which improves the user’s reading experience. We believe these changes worked. This year, users viewed an average of 3.7 reviews per visit, up 54% from 2013.
 
 <img src="/img/posts/books14-image-size-2013.jpg" alt="">
 <p><small>2013<small></p>
@@ -22,26 +48,8 @@ We also replaced the modal’s ‘previous’ and ‘next’ buttons &mdash; whi
 <img src="/img/posts/books14-image-size-2014.jpg" alt="">
 <p><small>2014</small></p>
 
-###Social Buttons
-We added social buttons to the book modal, allowing users to share individual book reviews.
-We also removed the top bar that housed share buttons for the overall app. Instead, we link to our share modal from a single button in the header.
-
-###Tag Colors
-We added a color gradient over the list of tags. This helps distinguish the tags from each other and improves the legibility of the tags when displayed in a block. And it’s pretty.
-
-<div class="wrapper-image">
-    <div class="col">
-        <img src="/img/posts/books14-tags-2013.jpg" alt="">
-        <p><small>2013</small></p>
-    </div>
-    <div class="col">
-        <img src="/img/posts/books14-tags-2014.jpg" alt="">
-        <p><small>2014</small></p>
-    </div>
-</div>
-
 ###Filter Button Location
-On smaller screens, we moved the ‘filter’ button out of the header and closer to the content. This puts the button in a more appropriate context.
+In the 2013 concierge the filter button is positioned in the header above the ad on mobile devices, leaving a gap between the button and the book grid. In the 2014 version, we moved the filter button under the ad below the header, grouping the button with the content that it affects. Although the tag usage per viewer on mobile is similar for both years, we thought that this change created a more organized layout.
 
 <div class="wrapper-image">
     <div class="col">
@@ -54,29 +62,29 @@ On smaller screens, we moved the ‘filter’ button out of the header and close
     </div>
 </div>
 
+###Social Buttons
+We wanted to help users share their favorite books and reviews, so we added share buttons to the book modal. In the first 5 days, 6,110 reviews were shared through email, followed by facebook (2,866), pinterest (2,091) and twitter (559). 
+
 ###Links to Previous Years
-Ideally, we would have combined the books from 2013 and 2014 into one big concierge, but due to time restrictions and data management complexity we kept them separate. We still wanted to reference last year’s concierge as well as book lists from previous years, so we added these links to the header. Additionally, we added a link below the tags list to catch people who skipped past the header. 
+It would have been cool to combine 2013 and 2014 into one big concierge, but we didn’t have time for that. We still wanted to reference last year’s concierge, as well as book lists from previous years, so we added these links to the header. Additionally, we added a link below the tags list to catch people who skipped past the header. On launch day, the 2013 concierge got 20,330 pageviews driven by the 2014 page.
 
 <img src="/img/posts/books14-links-2014.jpg" alt="">
 <p><small>2014</small></p>
 
 
 ###Lighten page load, improve performance
-We’ve been able to realize significant performance gains in recent projects by using custom builds of our libraries and assets. We shaved over 300k off the initial page load by using a custom icon font generated with Fontello (http://fontello.com/) rather than including all of Font Awesome.
+We’ve been able to realize significant performance gains in recent projects by using custom builds of our libraries and assets. We shaved over 300kb off the initial page load by using a custom icon font generated with [Fontello](http://fontello.com/) rather than including all of Font Awesome. To further lighten the load, we dropped a few unnecessary libraries and consolidated all our scripts into a single file loaded at the bottom of the source. 
 
-To further lighten the load, we dropped a few unnecessary libraries and consolidated all our scripts into a single file loaded at the bottom of the source. We disabled CSS transitions at small viewport sizes to improve mobile performance and dropped all CPU intensive 3D CSS transitions.
+In 2013 each book had two images, a thumbnail for the homepage and a bigger version for the modal.  This year, we cut the thumbnail and aggressively optimized the full-size cover images. The page weight is almost identical, but instead of loading a thumbnail for the cover and a full sized cover when looking at a review, only a single image is loaded. This makes load time feel faster on the homepage, and helps load the reviews faster. 
 
-Paradoxically, we were able to improve performance by eliminating thumbnail sized book cover images. In 2013, we made a slightly smaller thumbnail version of the cover image. This year, we aggressively optimized the full-size cover images. The page weight is almost identical, but instead of loading a thumbnail for the the cover and a full sized cover when looking at a review, only a single image is loaded.
+We also disabled CSS transitions at small viewport sizes to improve mobile performance and dropped all CPU intensive 3D CSS transitions.
 
-###Listening to users
-After we launched the site, some librarians suggested to NPR Books that next year we should include a link to Worldcat, a site that will help you find a book at your local library.
+### Responding to users after launch 
+Finally, some librarians suggested to NPR Books that next year we should include a link to Worldcat, a site that will help you find a book at your local library.
 
-We thought this was a lovely idea and didn’t see why it needed to wait.  So we used the Online Computer Library Center identifier API to get the magic book identifier used by Worldcat and added a “find at your library” link the day after launch.
+<img src="/img/posts/books14-library.jpg" alt="">
+<p><small>2014</small></p>
 
-###How did the improvements help?
+We thought this was a lovely idea and didn’t see why it needed to wait.  So we used the Online Computer Library Center identifier API to get the magic book identifier used by Worldcat and added a “find at your library” link the day after launch. This quickly became the second most clicked exterior link after the “amazon” button.
 
-As of writing, we have analytics data for the first 5 days of the site's launch. Comparing to last year is complicated by changing methods for collecting analytics. In 2013, about 370,000 people landed on the concierge home page during the first 5 days. In 2014, it has been a little lower -- about 337,000 people. 
-
-Despite the lower number of visitors, engagement appears to have increased fairly significantly. About 86,000 people clicked the most popular tag (NPR Staff Picks) in 2014, up from about 75,000 in 2013. Similarly, the top review so far in 2014 has been David Mitchell's The Bone Clocks with 23,000 views, while the top book in 2013, Dave Eggers' The Circle, was viewed about 18,000 times.
-
-In all, visitors read about 1.25 million book reviews in the first five days and selected some combination of tags 923,000 times.
+It’s always awesome to make librarians happy. 

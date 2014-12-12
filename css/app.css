@@ -236,3 +236,11 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
     width:45%;
     margin-right:5%;
 }
+
+.col2{
+    float:left;
+    width:20%;
+    margin-right:5%;
+}
+
+
