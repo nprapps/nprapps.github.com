@@ -9,7 +9,7 @@ twitter: nprviz
 ---
 The 2013 NPR year-end “Book Concierge” was a big hit. Instead of writing a bunch of lists, the books team solicited over 200 short reviews by critics and staff and put them into a single, beautiful website designed to make discovering great books fun. Readers loved it. For 2014, our goal was to build  on last year’s success and resist the urge to rewrite the code or wildly redesign. 
 
-This is a catalog of small improvements, why we made them, and the difference they made. We’re using analytics for the first five days following the site's launch. Overall, pageviews are slightly down from last year (370,000 in the first five days in 2014 versus 337,000 in 2014), but engagement appears to have increased fairly significantly.
+This is a catalog of small improvements, why we made them, and the difference they made. We’re using analytics for the first five days following the site's launch. Overall, pageviews are slightly down from last year (337,000 in the first five days in 2014 versus 370,000 in 2013), but engagement appears to have increased fairly significantly.
 
 
 ###Tag Styling
