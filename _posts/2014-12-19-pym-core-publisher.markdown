@@ -59,7 +59,7 @@ _(Note: If you&rsquo;re embedding multiple Pym.js iframes on a page, you only ne
 
 Most of the time the script tag should be fine since it is a simple one &mdash; only the tag and URL, and no other arguments. Sometimes Core Publisher will still strip it out. This should be the last thing you place in your post before you save to preview or publish.
 
-Also watch out for is stripping if you go in later and edit the post. Be sure to double-check after an edit to ensure that the script wasn&rsquo;t dropped.
+If you go in later and edit the post, double-check that the script wasn&rsquo;t stripped out.
 
 A good sign that the script wasn&rsquo;t dropped? The following text might appear in the normal WYSIWYG text view: `{cke_protected_1}`. Don&rsquo;t delete it: That&rsquo;s script code.
 
