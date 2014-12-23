@@ -274,9 +274,44 @@
   image: "http://apps.npr.org/lookatthis/posts/colors/assets/colors_share_image_sq.jpg"
   url: "http://apps.npr.org/lookatthis/posts/colors/"
   github_url: https://github.com/nprapps/lookatthis
+- name: "Talking While Female"
+  description: "Ask a woman if anybody has ever complained about her voice and, chances are, you'll get a story."
+  date: "October 24, 2014"
+  image: "http://media.npr.org/assets/img/2014/10/23/or7-1919cf7206a33084f2dec1b4e4492ba7bc050c12.jpg?s=300"
+  url: http://www.npr.org/blogs/health/2014/10/24/357584372/video-what-women-get-flak-for-when-they-talk
 - name: "NPR Election Party"
   description: "Stream election results, data and news, NPR-style. Optimized for your TV, Chromecast or coffee table. #nprparty"
   date: "November 4, 2014"
   image: "http://elections.npr.org/assets/facebook.jpg"
   url: "http://elections.npr.org/"
   github_url: https://github.com/nprapps/elections14
+- name: "A Photo I Love"
+  description: "There's an interesting story behind this old photo. Photo editor Erin Mystkowski explains why she loves it."
+  date: "November 18, 2014"
+  image: "http://apps.npr.org/lookatthis/posts/mystkowski-loves/assets/pil_share.jpg"
+  url: http://apps.npr.org/lookatthis/posts/mystkowski-loves/
+  github_url: https://github.com/nprapps/lookatthis
+- name: "NPR's Book Concierge"
+  description: "Visit the #bookconcierge, NPR’s guide to 2014's great reads. http://apps.npr.org/best-books-2014/"
+  date: "December 3, 2014"
+  image: "http://apps.npr.org/best-books-2014/assets/img/covers.jpg"
+  url: http://apps.npr.org/best-books-2014/
+  github_url: https://github.com/nprapps/books14
+- name: "Songs We Love 2014"
+  description: "Put on your headphones and listen to more than 300 of NPR Music's favorite songs from 2014."
+  date: "December 10, 2014"
+  image: "http://apps.npr.org/best-songs-2014/assets/img/facebook-share.jpg"
+  url: http://apps.npr.org/best-songs-2014/
+  github_url: https://github.com/nprapps/bestsongs14
+- name: "Naughty Or Nice"
+  description: "The true (not true) story of naughty-or-nice adjudication at the North Pole. An audio Christmas card from NPR."
+  date: "December 21, 2014"
+  image: "http://www.npr.org/assets/img/2014/12/19/naughty-or-nice14_sq.jpg"
+  url: http://apps.npr.org/naughty-or-nice/
+  github_url: https://github.com/nprapps/naughty-list
+- name: "Demolished: The End Of Chicago's Public Housing"
+  description: "In 1993, photographer Patricia Evans took this photo of 10-year-old Tiffany Sanders. Almost 20 years later, Tiffany saw her photo on a book cover and got in touch with Evans. This is the story of what happened in those intervening years — to them, and to public housing in Chicago."
+  date: "December 23, 2014"
+  image: "http://apps.npr.org/lookatthis/posts/publichousing/assets/facebook-share.jpg"
+  url: http://apps.npr.org/lookatthis/posts/publichousing/
+  github_url: https://github.com/nprapps/lookatthis
