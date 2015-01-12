@@ -279,6 +279,12 @@
   date: "October 24, 2014"
   image: "http://media.npr.org/assets/img/2014/10/23/or7-1919cf7206a33084f2dec1b4e4492ba7bc050c12.jpg?s=300"
   url: http://www.npr.org/blogs/health/2014/10/24/357584372/video-what-women-get-flak-for-when-they-talk
+- name: "Bat Sounds"
+  description: "An endangered species soundscape."
+  date: "October 30, 2014"
+  image: "http://apps.npr.org/bats/assets/bats_share_image_sq.jpg"
+  url: http://apps.npr.org/bats/
+  github_url: https://github.com/nprapps/bats
 - name: "NPR Election Party"
   description: "Stream election results, data and news, NPR-style. Optimized for your TV, Chromecast or coffee table. #nprparty"
   date: "November 4, 2014"
