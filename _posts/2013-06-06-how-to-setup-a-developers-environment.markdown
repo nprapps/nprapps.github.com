@@ -7,13 +7,13 @@ email: grich@npr.org
 twitter: gerald_arthur
 ---
 
-*Updated June 12, 2014.*
+*Updated January 13, 2015.*
 
-*Hey everyone, I'm [Tyler Fisher](https://twitter.com/tylrfishr), the Winter/Spring 2014 news apps intern. Today, I setup my work machine with OS X Mavericks and found some new wrinkles in the process, so I thought I would update this blog post to reflect the latest changes. [Shelly Tan](https://twitter.com/Tan_Shelly) and [Helga Salinas](https://twitter.com/helga_salinas) also contributed to this post.*
+*Hey everyone, I'm [Tyler Fisher](https://twitter.com/tylrfishr), the Winter/Spring 2014 news apps intern. Today, I setup my work machine with OS X Mavericks and found some new wrinkles in the process, so I thought I would update this blog post to reflect the latest changes. [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/helga_salinas) and [Suyeon Son](https://twitter.com/suymilk) also contributed to this post.*
 
 I joined the News Apps team a week ago in their shiny new DC offices, and in-between eating awesome food and Tiny Desk concerts, we've been documenting the best way to get other journalists setup to build news apps like the pros.
 
-The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with OS X 10.9, or Mavericks, installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
+The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with OS X 10.10, or Yosemite, installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
 
 ## Chapter 0: Prerequisites
 ### Are you an administrator?
@@ -154,7 +154,11 @@ Next up: the Postgres database server. Postgres is a useful tool for dealing wit
 
 	brew install postgresql
 
-Edit your `~/.bash_profile` to add a pair of commands for starting and stopping your Postgres database server. `pgup` will start the server; `pgdown` will stop it. FYI You'll rarely ever need to `pgdown`, but we've include the command just in case.
+**Note**: If you're running Yosemite on your machine, Homebrew might complain about symlinks. If this happens, try running this code.
+
+	brew prune; brew link --force openssl
+
+Then, edit your `~/.bash_profile` to add a pair of commands for starting and stopping your Postgres database server. `pgup` will start the server; `pgdown` will stop it. FYI You'll rarely ever need to `pgdown`, but we've include the command just in case.
 
 	nano -w ~/.bash_profile
 
