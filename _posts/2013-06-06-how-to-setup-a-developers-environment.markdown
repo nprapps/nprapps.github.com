@@ -7,7 +7,7 @@ email: grich@npr.org
 twitter: gerald_arthur
 ---
 
-*Updated January 13, 2015.*
+*Updated Jan. 13, 2015.*
 
 *Hey everyone, I'm [Tyler Fisher](https://twitter.com/tylrfishr), the Winter/Spring 2014 news apps intern. Today, I setup my work machine with OS X Mavericks and found some new wrinkles in the process, so I thought I would update this blog post to reflect the latest changes. [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/helga_salinas) and [Suyeon Son](https://twitter.com/suymilk) also contributed to this post.*
 
