@@ -11,7 +11,9 @@ email: mstiles@npr.org
 twitter: stiles
 ---
 
-*Updated June 12, 2014 by [Helga Salinas](https://twitter.com/helga_salinas)*
+*Updated Jan. 13, 2015 by [Suyeon Son](https://twitter.com/suymilk).*
+
+*Updated June 12, 2014 by [Helga Salinas](https://twitter.com/helga_salinas).*
 
 We're a new team, and we're trying something new (at least for us) as a blog publishing platform: Jekyll, a generator that creates simple, static websites. We're [not breaking any ground](http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/) with this choice, of course, but we liked the idea of launching a blog that's [open source](http://github.com/nprapps/nprapps.github.com) -- both its code and also its content. 
 
@@ -78,7 +80,7 @@ Below is the HTML for the post.html template. Posts also get injected into the d
 
 We've created a GitHub repo called "[nprapps.github.com](https://github.com/nprapps/nprapps.github.com)" (btw: see documentation for publishing to a custom domain [here](https://help.github.com/articles/setting-up-a-custom-domain-with-pages)). 
 
-Inside that directory on your local machine, run <code>jekyll</code>. That will build the site. As you edit, the site will be automatically rebuilt, a process you'll notice in the Terminal. To run the site locally, execute <code>jekyll --server watch</code>, then point your browser to <code>localhost:4000</code>. 
+Inside that directory on your local machine, run <code>jekyll</code>. That will build the site. As you edit, the site will be automatically rebuilt, a process you'll notice in the Terminal. To run the site locally, execute <code>jekyll serve watch</code>, then point your browser to <code>localhost:4000</code>. 
 
 When you're satisfied with your post, commit the code and use <code>git push</code> to publish. The site will be updated online soon after.
 
