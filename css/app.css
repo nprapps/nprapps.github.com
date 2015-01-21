@@ -190,6 +190,29 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 	float: right;
 }
 
+
+table.data {
+    width: 100%;
+    margin-bottom: 3em;
+    font-size: 80%;
+    color: #666;
+}
+table.data caption {
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    border-bottom: 2px solid #eee;
+    padding: 0 11px 11px 11px;
+}
+table.data td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+table.data td.amt { text-align: right; }
+
+
+
 @media screen and (max-width:1000px) {
     #big-picture-nav { display:none; }
 }
