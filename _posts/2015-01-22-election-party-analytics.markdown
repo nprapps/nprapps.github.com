@@ -89,7 +89,7 @@ Did it work? Here's what we learned.
 
 _(Chrome usage likely also includes Chromecast. Safari (in-app) figures reflect users clicking links iOS apps, such as Twitter and Facebook.)_
 
-Brower usage of our app generally tracked with that of the overall NPR.org site. Exceptions: The share of Chrome users was a few percentage points higher for our app; the share of Internet Explorer users, a few percentage points lower.
+Browser usage of our app generally tracked with that of the overall NPR.org site. Exceptions: The share of Chrome users was a few percentage points higher for our app; the share of Internet Explorer users, a few percentage points lower.
 
 
 ## Non-Interactivity
