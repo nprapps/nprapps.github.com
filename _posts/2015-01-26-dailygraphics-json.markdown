@@ -1,43 +1,44 @@
 ---
 layout: post
-title: "Store Your Text AND Your Data In A Spreadsheet"
-description: "How to "
-
+title: "Bake Your Chart Data Into Your Page"
+description: "A new dailygraphics feature lets users embed JSON data from a Google Spreadsheet."
 author: Alyson Hurt
 email: ahurt@npr.org
 twitter: alykat
 ---
 
-Do you use our [dailygraphics](http://blog.apps.npr.org/2014/05/27/dailygraphics.html) rig to create and deploy small charts? The latest version of [copytext.py](http://blog.apps.npr.org/2014/04/21/introducing-copytext-py.html) allows users to inject serialized JSON from a Google Spreadsheet onto their page with one line of template code.
-
-{% raw %}
-    <script type="text/javascript">
-        var GRAPHIC_DATA = {{ COPY.data_line.json() }};
-    </script>
-{% endraw %}
+Do you use our [dailygraphics](http://blog.apps.npr.org/2014/05/27/dailygraphics.html) rig to create and deploy small charts? We've introduced a new feature: The latest version of [copytext.py](http://blog.apps.npr.org/2014/04/21/introducing-copytext-py.html) allows users to inject serialized JSON from a Google Spreadsheet onto their page with one line of template code.
 
 #### Benefits:
 
-* Store your text and your data in one Google Spreadsheet, making editing a little simpler.
+* Store your text _and_ your data in one Google Spreadsheet, making editing a little simpler.
 * The data is baked right into your page, so there's one fewer file to load.
+
+(Thanks to Christopher Groskopf and Danny DeBelius for making this work.)
 
 If you're already using dailygraphics, pull the latest code from GitHub (we've updated libraries and made other bugfixes in recent weeks), and update requirements:
 
     pip install -Ur requirements.txt
 
-Here are a couple examples, using [this datafile](https://docs.google.com/spreadsheets/d/18HIRf1ZSWbK1od50DiwBbsiBlrp63DuEt4nIImWU5zA/edit?usp=sharing):
+----------
+
+## Examples
+
+The following examples assume that you are using our [dailygraphics](http://blog.apps.npr.org/2014/05/27/dailygraphics.html) rig. Both examples point to [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/18HIRf1ZSWbK1od50DiwBbsiBlrp63DuEt4nIImWU5zA/edit?usp=sharing).
 
 <iframe src="https://docs.google.com/spreadsheets/d/18HIRf1ZSWbK1od50DiwBbsiBlrp63DuEt4nIImWU5zA/pubhtml?widget=true&amp;headers=false" style="width: 100%; height: 300px;"></iframe>
 
+The spreadsheet has three tabs:
+
+* ```labels```: Text information (headline, credits, etc.)
+* ```data_bar```: The data for the bar chart example below
+* ```data_line```: The data for the line chart example below
+
+_Note: Copytext works best when all values (even numeric ones) are cast as text/strings, rather than numbers or dates. You can convert them to their proper types later in JavaScript._
+
 ----------
 
-### Line Chart
-
-
-
-----------
-
-### Bar Chart
+### Bar Chart ([Source code on GitHub](https://github.com/nprapps/nprapps.github.com/tree/master/_examples/test-json-object-bar/))
 
 <div id="responsive-embed-test-json-object-bar"></div>
 <script src="http://apps.npr.org/dailygraphics/graphics/test-json-object-bar/js/lib/pym.js" type="text/javascript"></script>
@@ -49,8 +50,75 @@ Here are a couple examples, using [this datafile](https://docs.google.com/spread
     );
 </script>
 
+In ```child_template.html```, add a ```<script></script>``` tag above all the other JavaScript embeds [at the bottom of the page](https://github.com/nprapps/nprapps.github.com/blob/master/_examples/test-json-object-bar/child_template.html#L154-L156), and then declare the variable for your data.
 
+{% raw %}
+    <script type="text/javascript">
+        var GRAPHIC_DATA = {{ COPY.data_bar.json() }};
+    </script>
+{% endraw %}
 
+* ```GRAPHIC_DATA``` is the variable name you'll use to reference this data
+* ```COPY``` refers to the overall spreadsheet
+* ```data_bar``` is the name of the specific sheet within the spreadsheet (in this case, the spreadsheet has three sheets)
+
+The result looks like this, with the keys corresponding to the column headers in the table:
+
+{% raw %}
+    <script type="text/javascript">
+        var GRAPHIC_DATA = [{"amt": "2", "label": "Alabama"}, {"amt": "4", "label": "Alaska"}, {"amt": "6", "label": "Arizona"}, {"amt": "8", "label": "Arkansas"}, {"amt": "10", "label": "California"}, {"amt": "12", "label": "Colorado"}, {"amt": "14", "label": "Connecticut"}];
+    </script>
+{% endraw %}
+
+In ```js/graphic.js```, don't bother with declaring or importing ```GRAPHIC_DATA``` — just go straight to whatever additional processing you need to do (like, in this case, [explicitly casting the numeric values as numbers](https://github.com/nprapps/nprapps.github.com/blob/master/_examples/test-json-object-bar/js/graphic.js#L29-L46)).
+
+{% raw %}
+    GRAPHIC_DATA.forEach(function(d) {
+        d['amt'] = +d['amt'];
+    });
+{% endraw %}
+
+----------
+
+### Line Chart ([Source code on GitHub](https://github.com/nprapps/nprapps.github.com/tree/master/_examples/test-json-object-line/))
+
+<div id="responsive-embed-test-json-object-line"></div>
+<script src="http://apps.npr.org/dailygraphics/graphics/test-json-object-line/js/lib/pym.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var pymParentLine = new pym.Parent(
+        'responsive-embed-test-json-object-line',
+        'http://apps.npr.org/dailygraphics/graphics/test-json-object-line/child.html',
+        {}
+    );
+</script>
+
+In ```child_template.html```, add a ```<script></script>``` tag above all the other JavaScript embeds [at the bottom of the page](https://github.com/nprapps/nprapps.github.com/blob/master/_examples/test-json-object-line/child_template.html#L136-L138), and then declare the variable for your data.
+
+{% raw %}
+    <script type="text/javascript">
+        var GRAPHIC_DATA = {{ COPY.data_line.json() }};
+    </script>
+{% endraw %}
+
+* ```GRAPHIC_DATA``` is the variable name you'll use to reference this data
+* ```COPY``` refers to the overall spreadsheet
+* ```data_line``` is the name of the specific sheet within the spreadsheet (in this case, the spreadsheet has three sheets)
+
+The result looks like this, with the keys corresponding to the column headers in the table:
+
+{% raw %}
+    <script type="text/javascript">
+        var GRAPHIC_DATA = [{"date": "1/1/1989", "Four": "2.76", "Three": "5.80", "Two": "3.86", "One": "1.84"}, {"date": "4/1/1989", "Four": "2.78", "Three": "5.83", "Two": "3.89", "One": "1.85"}, {"date": "7/1/1989", "Four": "2.81", "Three": "5.89", "Two": "3.93", "One": "1.87"}, {"date": "10/1/1989", "Four": "2.82", "Three": "5.92", "Two": "3.95", "One": "1.88"}, {"date": "1/1/1990", "Four": "2.78", "Three": "5.83", "Two": "3.89", "One": "1.85"} ... [and so on] ...;
+    </script>
+{% endraw %}
+
+In ```js/graphic.js```, don't bother with declaring or importing ```GRAPHIC_DATA``` — just go straight to whatever additional processing you need to do (like, in this case, [explicitly casting the dates as dates](https://github.com/nprapps/nprapps.github.com/blob/master/_examples/test-json-object-line/js/graphic.js#L31-L33)).
+
+{% raw %}
+    GRAPHIC_DATA.forEach(function(d) {
+        d['date'] = d3.time.format('%m/%d/%Y').parse(d['date']);
+    });
+{% endraw %}
 
 ----------
 
