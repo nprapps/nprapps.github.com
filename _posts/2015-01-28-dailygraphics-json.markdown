@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "Bake Your Chart Data Into Your Page"
+title: "Baking Chart Data Into Your Page"
 description: "A new dailygraphics feature lets users embed JSON data from a Google Spreadsheet."
 author: Alyson Hurt
 email: ahurt@npr.org
 twitter: alykat
 ---
 
-Do you use our [dailygraphics](http://blog.apps.npr.org/2014/05/27/dailygraphics.html) rig to create and deploy small charts? We've introduced a new feature: The latest version of [copytext.py](https://github.com/nprapps/copytext) (0.1.7) allows users to inject serialized JSON from a Google Spreadsheet onto their page with one line of template code.
+Do you use our [dailygraphics](http://blog.apps.npr.org/2014/05/27/dailygraphics.html) rig to create and deploy small charts? We've introduced a new feature: The latest version of [copytext.py](https://github.com/nprapps/copytext) (0.1.8) allows users to inject serialized JSON from a Google Spreadsheet onto their page with one line of template code.
 
 #### Benefits:
 
@@ -66,7 +66,7 @@ The result looks like this, with the keys corresponding to the column headers in
 
 {% raw %}
     <script type="text/javascript">
-        var GRAPHIC_DATA = [{"label": "Alabama", "amt": "2", "null": null}, {"label": "Alaska", "amt": "4", "null": null}, {"label": "Arizona", "amt": "6", "null": null}, {"label": "Arkansas", "amt": "8", "null": null}, {"label": "California", "amt": "10", "null": null}, {"label": "Colorado", "amt": "12", "null": null}, {"label": "Connecticut", "amt": "14", "null": null}];
+        var GRAPHIC_DATA = [{"label": "Alabama", "amt": "2"}, {"label": "Alaska", "amt": "4"}, {"label": "Arizona", "amt": "6"}, {"label": "Arkansas", "amt": "8"}, {"label": "California", "amt": "10"}, {"label": "Colorado", "amt": "12"}, {"label": "Connecticut", "amt": "14"}];
     </script>
 {% endraw %}
 
