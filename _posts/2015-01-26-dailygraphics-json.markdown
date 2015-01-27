@@ -7,11 +7,11 @@ email: ahurt@npr.org
 twitter: alykat
 ---
 
-Do you use our [dailygraphics](http://blog.apps.npr.org/2014/05/27/dailygraphics.html) rig to create and deploy small charts? We've introduced a new feature: The latest version of [copytext.py](http://blog.apps.npr.org/2014/04/21/introducing-copytext-py.html) allows users to inject serialized JSON from a Google Spreadsheet onto their page with one line of template code.
+Do you use our [dailygraphics](http://blog.apps.npr.org/2014/05/27/dailygraphics.html) rig to create and deploy small charts? We've introduced a new feature: The latest version of [copytext.py](https://github.com/nprapps/copytext) (0.1.7) allows users to inject serialized JSON from a Google Spreadsheet onto their page with one line of template code.
 
 #### Benefits:
 
-* Store your text _and_ your data in one Google Spreadsheet, making editing a little simpler.
+* Store your text _and_ your data in the same Google Spreadsheet, making editing a little simpler.
 * The data is baked right into your page, so there's one fewer file to load.
 
 (Thanks to Christopher Groskopf and Danny DeBelius for making this work.)
@@ -34,11 +34,11 @@ The spreadsheet has three tabs:
 * ```data_bar```: The data for the bar chart example below
 * ```data_line```: The data for the line chart example below
 
-_Note: Copytext works best when all values (even numeric ones) are cast as text/strings, rather than numbers or dates. You can convert them to their proper types later in JavaScript._
+_Note: Copytext works best when all values (even numeric ones) are cast as text/strings in the Google Spreadsheet, rather than numbers or dates. You can convert them to their proper types later in JavaScript._
 
 ----------
 
-### Bar Chart ([Source code on GitHub](https://github.com/nprapps/nprapps.github.com/tree/master/_examples/test-json-object-bar/))
+### Bar Chart ([Source code on GitHub](https://github.com/nprapps/nprapps.github.com/tree/master/examples/test-json-object-bar/))
 
 <div id="responsive-embed-test-json-object-bar"></div>
 <script src="http://apps.npr.org/dailygraphics/graphics/test-json-object-bar/js/lib/pym.js" type="text/javascript"></script>
@@ -50,7 +50,7 @@ _Note: Copytext works best when all values (even numeric ones) are cast as text/
     );
 </script>
 
-In ```child_template.html```, add a ```<script></script>``` tag above all the other JavaScript embeds [at the bottom of the page](https://github.com/nprapps/nprapps.github.com/blob/master/_examples/test-json-object-bar/child_template.html#L154-L156), and then declare the variable for your data.
+In ```child_template.html```, add a ```<script></script>``` tag above all the other JavaScript embeds [at the bottom of the page](https://github.com/nprapps/nprapps.github.com/blob/master/examples/test-json-object-bar/child_template.html#L154-L156), and then declare the variable for your data.
 
 {% raw %}
     <script type="text/javascript">
@@ -66,11 +66,11 @@ The result looks like this, with the keys corresponding to the column headers in
 
 {% raw %}
     <script type="text/javascript">
-        var GRAPHIC_DATA = [{"amt": "2", "label": "Alabama"}, {"amt": "4", "label": "Alaska"}, {"amt": "6", "label": "Arizona"}, {"amt": "8", "label": "Arkansas"}, {"amt": "10", "label": "California"}, {"amt": "12", "label": "Colorado"}, {"amt": "14", "label": "Connecticut"}];
+        var GRAPHIC_DATA = [{"label": "Alabama", "amt": "2", "null": null}, {"label": "Alaska", "amt": "4", "null": null}, {"label": "Arizona", "amt": "6", "null": null}, {"label": "Arkansas", "amt": "8", "null": null}, {"label": "California", "amt": "10", "null": null}, {"label": "Colorado", "amt": "12", "null": null}, {"label": "Connecticut", "amt": "14", "null": null}];
     </script>
 {% endraw %}
 
-In ```js/graphic.js```, don't bother with declaring or importing ```GRAPHIC_DATA``` — just go straight to whatever additional processing you need to do (like, in this case, [explicitly casting the numeric values as numbers](https://github.com/nprapps/nprapps.github.com/blob/master/_examples/test-json-object-bar/js/graphic.js#L29-L46)).
+In ```js/graphic.js```, don't bother with declaring or importing ```GRAPHIC_DATA``` — just go straight to whatever additional processing you need to do (like, in this case, [explicitly casting the numeric values as numbers](https://github.com/nprapps/nprapps.github.com/blob/master/examples/test-json-object-bar/js/graphic.js#L29-L46)).
 
 {% raw %}
     GRAPHIC_DATA.forEach(function(d) {
@@ -80,7 +80,7 @@ In ```js/graphic.js```, don't bother with declaring or importing ```GRAPHIC_DATA
 
 ----------
 
-### Line Chart ([Source code on GitHub](https://github.com/nprapps/nprapps.github.com/tree/master/_examples/test-json-object-line/))
+### Line Chart ([Source code on GitHub](https://github.com/nprapps/nprapps.github.com/tree/master/examples/test-json-object-line/))
 
 <div id="responsive-embed-test-json-object-line"></div>
 <script src="http://apps.npr.org/dailygraphics/graphics/test-json-object-line/js/lib/pym.js" type="text/javascript"></script>
@@ -92,7 +92,7 @@ In ```js/graphic.js```, don't bother with declaring or importing ```GRAPHIC_DATA
     );
 </script>
 
-In ```child_template.html```, add a ```<script></script>``` tag above all the other JavaScript embeds [at the bottom of the page](https://github.com/nprapps/nprapps.github.com/blob/master/_examples/test-json-object-line/child_template.html#L136-L138), and then declare the variable for your data.
+In ```child_template.html```, add a ```<script></script>``` tag above all the other JavaScript embeds [at the bottom of the page](https://github.com/nprapps/nprapps.github.com/blob/master/examples/test-json-object-line/child_template.html#L136-L138), and then declare the variable for your data.
 
 {% raw %}
     <script type="text/javascript">
@@ -108,11 +108,11 @@ The result looks like this, with the keys corresponding to the column headers in
 
 {% raw %}
     <script type="text/javascript">
-        var GRAPHIC_DATA = [{"date": "1/1/1989", "Four": "2.76", "Three": "5.80", "Two": "3.86", "One": "1.84"}, {"date": "4/1/1989", "Four": "2.78", "Three": "5.83", "Two": "3.89", "One": "1.85"}, {"date": "7/1/1989", "Four": "2.81", "Three": "5.89", "Two": "3.93", "One": "1.87"}, {"date": "10/1/1989", "Four": "2.82", "Three": "5.92", "Two": "3.95", "One": "1.88"}, {"date": "1/1/1990", "Four": "2.78", "Three": "5.83", "Two": "3.89", "One": "1.85"} ... [and so on] ...;
+        var GRAPHIC_DATA = [{"date": "1/1/1989", "One": "1.84", "Two": "3.86", "Three": "5.80", "Four": "2.76"}, {"date": "4/1/1989", "One": "1.85", "Two": "3.89", "Three": "5.83", "Four": "2.78"}, {"date": "7/1/1989", "One": "1.87", "Two": "3.93", "Three": "5.89", "Four": "2.81"}, {"date": "10/1/1989", "One": "1.88", "Two": "3.95", "Three": "5.92", "Four": "2.82"} ... [and so on] ...;
     </script>
 {% endraw %}
 
-In ```js/graphic.js```, don't bother with declaring or importing ```GRAPHIC_DATA``` — just go straight to whatever additional processing you need to do (like, in this case, [explicitly casting the dates as dates](https://github.com/nprapps/nprapps.github.com/blob/master/_examples/test-json-object-line/js/graphic.js#L31-L33)).
+In ```js/graphic.js```, don't bother with declaring or importing ```GRAPHIC_DATA``` — just go straight to whatever additional processing you need to do (like, in this case, [explicitly casting the dates as dates](https://github.com/nprapps/nprapps.github.com/blob/master/examples/test-json-object-line/js/graphic.js#L31-L33)).
 
 {% raw %}
     GRAPHIC_DATA.forEach(function(d) {
