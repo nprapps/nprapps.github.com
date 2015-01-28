@@ -34,7 +34,7 @@ Tell **dailygraphics** where the graphics live (relative to itself) in ```dailyg
 When working on these projects, I'll keep three tabs open in Terminal:
 
 * Tab 1: **dailygraphics**, running in a virtualenv, to create graphics, update copy, sync assets and deploy files
-* Tab 2: **dailygraphics local Flask webserver**, running ```dailygraphics/app.py``` in a virtualenv, to preview my graphics as I'm building them
+* Tab 2: **dailygraphics local webserver**, running in a virtual environment, to preview my graphics as I'm building them (start it up using ```fab app```)
 * Tab 3: **graphics**, to commit the code in my graphics to GitHub
 
 
@@ -91,11 +91,13 @@ I can use [Jinja](http://jinja.pocoo.org/docs/templates/) tags to reference the 
     </dl>
 {% endraw %}
 
+You can also use it to, say, output the content of a data spreadsheet into a <a href="http://blog.apps.npr.org/2014/05/09/responsive-data-tables.html">table</a> or <a href="http://blog.apps.npr.org/2015/01/28/dailygraphics-json.html">JSON object</a>.
+
 (For more on how to use copytext, [read the docs](http://copytext.readthedocs.org).)
 
 When I publish out the graphic, the deploy script will flatten the Google Spreadsheet content on ```child_template.html``` into a new file, ```child.html```.
 
-_(Note: A published graphic will not automatically reflect edits to its Google Spreadsheet. The graphic must be republished for any changes to show up.)_
+_(Note: A published graphic will not automatically reflect edits to its Google Spreadsheet. The graphic must be republished for any changes to appear.)_
 
 
 ## Storing Larger Assets
@@ -115,7 +117,7 @@ Our **dailygraphics** rig offers a fairly lightweight system for developing and 
 
 If you end up using it or taking inspiration from it, let us know!
 
-_(This was updated in August 2014 to reflect changes to ```dailygraphics```.)_
+_(This was updated in August 2014 and January 2015 to reflect changes to ```dailygraphics```.)_
 
 ----------
 
