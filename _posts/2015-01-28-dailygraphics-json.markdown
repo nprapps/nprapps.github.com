@@ -20,9 +20,11 @@ If you're already using dailygraphics, pull the latest code from GitHub (we've u
 
     pip install -Ur requirements.txt
 
+You can see this at work in a [graphic published today](http://www.npr.org/blogs/parallels/2015/01/28/382173205/where-is-all-that-excess-oil-going#res382183215) on NPR.org.
+
 ----------
 
-## Examples
+## Here's How It Works
 
 The following examples assume that you are using our [dailygraphics](http://blog.apps.npr.org/2014/05/27/dailygraphics.html) rig. Both examples point to [this Google Spreadsheet](https://docs.google.com/spreadsheets/d/18HIRf1ZSWbK1od50DiwBbsiBlrp63DuEt4nIImWU5zA/edit?usp=sharing).
 
