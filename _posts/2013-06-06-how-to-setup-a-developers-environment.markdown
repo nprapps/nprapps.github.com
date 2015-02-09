@@ -7,6 +7,10 @@ email: grich@npr.org
 twitter: gerald_arthur
 ---
 
+*Updated February 9, 2015*
+
+*Hi, [Livia Labate](https://twitter.com/livlab) here, [Knight-Mozilla Fellow](http://opennews.org/what/fellowships/) working with the Visuals team. These great instructions have been verified for OS X Yosemite and a few tips and clarifications added throughout.*
+
 *Updated June 12, 2014.*
 
 *Hey everyone, I'm [Tyler Fisher](https://twitter.com/tylrfishr), the Winter/Spring 2014 news apps intern. Today, I setup my work machine with OS X Mavericks and found some new wrinkles in the process, so I thought I would update this blog post to reflect the latest changes. [Shelly Tan](https://twitter.com/Tan_Shelly) and [Helga Salinas](https://twitter.com/helga_salinas) also contributed to this post.*
@@ -33,7 +37,7 @@ With the release of OS X 10.9, Apple decoupled its command line tools necessary 
 
 	xcode-select --install
 
-Your laptop should prompt you to install the command line tools. Install the tools and move on once that process has completed.
+Your laptop should prompt you to install the command line tools. Install the tools and move on once that process has completed (about 5 minutes).
 
 If it doesn't install, or there isn't an update for Xcode to install the tools, you'll have to download the command line tools from [developer.apple.com/downloads/index.action](http://developer.apple.com/downloads/index.action). You have to register, or you can log in with your Apple ID. 
 
@@ -74,7 +78,7 @@ Then copy and paste this line of code at the very top. This lets Homebrew handle
 
 	export PATH=/usr/local/bin:$PATH
 
-Once you've added the line of code, you can save the file by typing pressing control + O. Doing so lets you adjust the file name. Just leave it as is, then hit enter to save. Hit control + X to exit. You'll find yourself back at the command line and needing to update your terminal session like so. Copy and paste the next line of code into your terminal and hit enter.
+Once you've added the line of code, you can save the file by typing control + O. Doing so lets you adjust the file name. Just leave it as is, then hit enter to save. Hit control + X to exit. You'll find yourself back at the command line and needing to update your terminal session like so. Copy and paste the next line of code into your terminal and hit enter.
 
 	source ~/.bash_profile
 
@@ -94,7 +98,7 @@ Next, you'll need to install `pip`. Like Homebrew, it's sort of an app store but
 
 	sudo easy_install pip
 
-We use `sudo` to install this software for everyone who might use your computer. `sudo` lets you install things as the admin.
+We use `sudo` to install this software for everyone who might use your computer. `sudo` lets you install things as the admin. You will be prompted for your password.
 
 Next, we'll actually install `virtualenv`.
 
@@ -109,6 +113,8 @@ Edit your `~/.bash_profile` file again,
 and add this line below the line you just added:
 
 	source /usr/local/bin/virtualenvwrapper_lazy.sh
+
+Save and exit out of `nano` using control + O, enter, and then control + X.
 
 **Sanity Check**: Double check your `~/.bash_profile` file, and make sure you've properly saved your `PATH` variables.
 
@@ -145,12 +151,12 @@ Read that tutorial [here](https://help.github.com/articles/generating-ssh-keys).
 We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data. We'll explain these tools a bit more as we install them.
 
 #### NumPy
-First, we need to install a Python library called NumPy. We don't use NumPy directly, but PostGIS uses it for making geographic calculations. This may already be installed, but run this command just to double-check.
+First, we need to install a Python library called NumPy. We don't use NumPy directly, but PostGIS uses it for making geographic calculations. This may already be installed, but run this command just to double-check. You will be prompted for your password.
 
     sudo pip install numpy
 
 #### Postgres
-Next up: the Postgres database server. Postgres is a useful tool for dealing with all kinds of data, not just geography, so we'll get it setup first then tweak it to be able to interpret geographic data.
+Next up: the Postgres database server. Postgres is a useful tool for dealing with all kinds of data, not just geography, so we'll get it setup first then tweak it to be able to interpret geographic data. Postgres will take about 10 minutes to install.
 
 	brew install postgresql
 
@@ -163,7 +169,7 @@ Add these two lines:
 	alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 	alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 
-Update your session one more time,
+Save and exit out of `nano` using control + O, enter, and then control + X, and update your session one more time,
 
 	source ~/.bash_profile
 
@@ -206,6 +212,8 @@ Since your code is stored entirely as text files on your computer, you'll want a
 
 #### Sublime Text 2
 If you're more comfortable with an editor that you can open up like Word, [Sublime Text 2](http://www.sublimetext.com/2) has a sweet graphical user interface and some [nice customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland).
+
+**Note**: In recent versions, installing Package Control (necessary for many customizations) assumes you have purchased Sublime Text, so consider getting a license first. Additionally, speed up your use by making Sublime Text your default editor from the command line. Here's [how](http://www.sublimetext.com/docs/2/osx_command_line.html). And [another way](http://olivierlacan.com/posts/launch-sublime-text-2-from-the-command-line/).
 
 #### Vim
 Personally, I prefer vim &mdash; a terminal based editor that requires you to type rather than point-and-click to work on files. It comes pre-installed on your computer, but there's a lot of little keyboard shortcuts you'll need to get comfy with before you can just dive-in. You can add all kinds of features, but our teammate Chris recommends [nerdtree](https://github.com/scrooloose/nerdtree) and [surround](https://github.com/tpope/vim-surround). Here are [some videos](http://net.tutsplus.com/sessions/vim-essential-plugins/) to help make vim and those particular add-ons.
