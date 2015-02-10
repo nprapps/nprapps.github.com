@@ -1,2 +1,2 @@
-pygments: true
+highlighter: pygments
 markdown: redcarpet
