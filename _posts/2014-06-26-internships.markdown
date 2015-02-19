@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /2015/02/18/summer-internships.html
+
 title: "Be our fall intern!"
 description: "Do you design? Develop? Love the web? Love democracy? Want to spend this fall in Washington, DC?"
 
