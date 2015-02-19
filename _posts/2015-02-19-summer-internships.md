@@ -18,7 +18,7 @@ Do you design? Develop? Love the web?
 
 Do you make pictures? Want to learn to be a great photo editor?
 
-If so, we'd very much like to hear from you. You'll spend the spring working on the visuals team here at NPR's headquarters in Washington, DC. We're a small group of photographers, videographers, photo editors, developers, designers and reporters in the NPR newsroom who work on visual stuff for npr.org. Our work varies widely, [check it out here](http://blog.apps.npr.org/apps/).
+If so, we'd very much like to hear from you. You'll spend the summer working on the visuals team here at NPR's headquarters in Washington, DC. We're a small group of photographers, videographers, photo editors, developers, designers and reporters in the NPR newsroom who work on visual stuff for npr.org. Our work varies widely, [check it out here](http://blog.apps.npr.org/apps/).
 
 ## Photo editing
 
@@ -40,7 +40,7 @@ Please...
 - Our work is for the web, so be a web maker!
 - We'd especially love to hear from folks who love illustration, news graphics and information design.
 
-Are you awesome? [Apply now!](https://interns-npr.icims.com/jobs/2331/summer-2015%3a-digital-news%2c-picture-editing-%26-visual-journalist/job)
+Are you awesome? [Apply now!](https://interns-npr.icims.com/jobs/2319/summer-2015%3a-news-apps/job)
 
 ## What will I be paid? What are the dates?
 
