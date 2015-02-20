@@ -207,7 +207,7 @@
   date: "January 29, 2014"
   image: "http://media.npr.org/assets/img/2014/01/28/goldrig_sq.jpg"
   url: http://www.npr.org/2014/01/29/266757131/welcome-to-oil-country-a-modern-day-gold-rush-in-north-dakota
-  github_url: 
+  github_url:
 - name: "Wolves At The Door"
   description: "Can two top predators coexist in the American West?"
   date: "February 3, 2014"
@@ -320,4 +320,28 @@
   date: "December 23, 2014"
   image: "http://apps.npr.org/lookatthis/posts/publichousing/assets/facebook-share.jpg"
   url: http://apps.npr.org/lookatthis/posts/publichousing/
+  github_url: https://github.com/nprapps/lookatthis
+- name: "Look At This: A Brother And Sister In Love"
+  description: "While looking through old family photos as a kid, John Fugelsang discovered something strange about his mother. Hint: It had to do with being Catholic."
+  date: "February 13, 2015"
+  image: "http://apps.npr.org/lookatthis/posts/lovestory/assets/fb.jpg"
+  url: http://apps.npr.org/lookatthis/posts/lovestory/
+  github_url: https://github.com/nprapps/lookatthis
+- name: "Can't Go Home"
+  description: "Over 11 million Syrians have been displaced since civil war broke out. The fighting has caused the largest refugee crisis in the world. Here are four stories of families struggling to stay together."
+  date: "February 14, 2015"
+  image: "http://apps.npr.org/syria/assets/img/facebook-thumb.jpg"
+  url: http://apps.npr.org/syria/
+  github_url: https://github.com/nprapps/syria
+- name: "Life After Death"
+  description: "The world is starting to forget about Ebola. The village of Barkedu can't."
+  date: "February 20, 2015"
+  image: "http://apps.npr.org/life-after-death/assets/facebook-share.jpg"
+  url: http://apps.npr.org/life-after-death/
+  github_url: https://github.com/nprapps/barkedu
+- name: "A Photo I Love"
+  description: "Thomas Allen Harris made an entire film about photos. In a two-minute audio short, he shares just one -- of his grandparents -- and explains what it has to do with the American family photo album."
+  date: "February 20, 2015"
+  image: "http://apps.npr.org/lookatthis/posts/harrisloves/assets/fb.jpg"
+  url: http://apps.npr.org/lookatthis/posts/harrisloves
   github_url: https://github.com/nprapps/lookatthis
