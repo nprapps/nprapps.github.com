@@ -44,19 +44,19 @@ In this blog post, we will run through some of the results of our tests and what
     <caption>Total Traffic</caption>
     <tr>
         <td>Pageviews</td>
-        <td class="amt">488,630</td>
+        <td class="amt">499,394</td>
     </tr>
     <tr>
         <td>Unique Pageviews</td>
-        <td class="amt">444,247</td>
+        <td class="amt">454,567</td>
     </tr>
     <tr>
         <td>Users</td>
-        <td class="amt">422,373</td>
+        <td class="amt">429,089</td>
     </tr>
     <tr>
         <td>Sessions</td>
-        <td class="amt">445,998</td>
+        <td class="amt">455,114</td>
     </tr>
 </table>
 
@@ -64,15 +64,15 @@ In this blog post, we will run through some of the results of our tests and what
     <caption>Devices (Share of Sessions)</caption>
     <tr>
         <td>Mobile</td>
-        <td class="amt">56.5%</td>
+        <td class="amt">56.3%</td>
     </tr>
     <tr>
         <td>Desktop</td>
-        <td class="amt">33.0%</td>
+        <td class="amt">32.8%</td>
     </tr>
     <tr>
         <td>Tablet</td>
-        <td class="amt">10.5%</td>
+        <td class="amt">10.9%</td>
     </tr>
 </table>
 
@@ -84,7 +84,7 @@ We received **nearly 450,000 sessions** on this story, which is the best any Loo
     <caption>Completion (share of sessions)</caption>
     <tr>
         <td>25% complete</td>
-        <td class="amt">43.9%</td>
+        <td class="amt">44.0%</td>
     </tr>
     <tr>
         <td>50% complete</td>
@@ -92,11 +92,11 @@ We received **nearly 450,000 sessions** on this story, which is the best any Loo
     </tr>
     <tr>
         <td>75% complete</td>
-        <td class="amt">36.0%</td>
+        <td class="amt">35.8%</td>
     </tr>
     <tr>
         <td>100% complete</td>
-        <td class="amt">33.9%</td>
+        <td class="amt">33.8%</td>
     </tr>
 </table>
 
