@@ -8,7 +8,7 @@ email: visuals@npr.org
 twitter: nprviz
 ---
 
-When we made ["A Brother And Sister Fall In Love"](apps.npr.org/lookatthis/posts/lovestory/), we decided we wanted to do more than track pageviews and share counts once we launched. We wanted to run an experiment, to try a few different ideas at once and see what stuck. In particular, we were concerned with how we ended the story and prompted users to take action in some way.
+When we made ["A Brother And Sister Fall In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), we decided we wanted to do more than track pageviews and share counts once we launched. We wanted to run an experiment, to try a few different ideas at once and see what stuck. In particular, we were concerned with how we ended the story and prompted users to take action in some way.
 
 The story, if you haven’t seen it, is presented as an audio slideshow. Users listen to story while text, photos, and animated gifs appear on the screen, synchronized to the audio. After the story has finished, we show a conclusion slide with project credits and a link to [another Look At This post](http://apps.npr.org/lookatthis/posts/mystkowski-loves/) we think users of this story would like. In previous stories, we would also include share buttons for Facebook, Twitter and email on this slide. We have tried something like this on a few stories now, and the share buttons have been highly unsuccessful. No one uses them.
 
@@ -76,7 +76,7 @@ In this blog post, we will run through some of the results of our tests and what
     </tr>
 </table>
 
-We received **nearly 450,000 sessions** on this story, which is the best any Look At This story has ever done by a wide margin. The closest, ["Plastic Rebirth"](apps.npr.org/lookatthis/posts/plastic/), received just over 300,000 sessions. With traffic at this scale, we were able to run our tests on a large number of users. This also received the highest percentage of mobile users on a custom app that we have ever built.
+We received **over 450,000 sessions** on this story, which is the best any Look At This story has ever done by a wide margin. The closest, ["Plastic Rebirth"](http://apps.npr.org/lookatthis/posts/plastic/), received just over 300,000 sessions. With traffic at this scale, we were able to run our tests on a large number of users. This also received the highest percentage of mobile users on a custom app that we have ever built.
 
 ### Completion
 
@@ -100,7 +100,7 @@ We received **nearly 450,000 sessions** on this story, which is the best any Loo
     </tr>
 </table>
 
-About **34% of sessions completed the piece.** In this case, completion is defined as reaching the last slide of content, not reaching the conclusion slide .  For comparison, ["This Is Color"](http://apps.npr.org/lookatthis/posts/colors/) and ["Plastic Rebirth"](apps.npr.org/lookatthis/posts/plastic/) had ~28% completion rates, while ["What Do Homeless Vets Look Like?"](http://apps.npr.org/lookatthis/posts/veterans/) had ~42%, but completion was defined as the last slide (including conclusion slides) for those stories. Completion rate is important for understanding our test, because we ran the test after people completed the story.
+**33.8% of sessions completed the piece.** In this case, completion is defined as reaching the last slide of content, not reaching the conclusion slide .  For comparison, ["This Is Color"](http://apps.npr.org/lookatthis/posts/colors/) and ["Plastic Rebirth"](http://apps.npr.org/lookatthis/posts/plastic/) had ~28% completion rates, while ["What Do Homeless Vets Look Like?"](http://apps.npr.org/lookatthis/posts/veterans/) had ~42%, but completion was defined as the last slide (including conclusion slides) for those stories. Completion rate is important for understanding our test, because we ran the test after people completed the story. This gives us a sense of how many people we lost between the last slide of content and the conclusion slide.
 
 More interestingly, **77% of sessions that got 25% of the way through the story completed the piece.** If users began the story and stuck with us for a quarter of the piece, they were very likely to finish the whole thing. However, only **44% of sessions got 25% of the way through.** It seems like the biggest road block was hooking people and getting them started. The story’s **high bounce rate (52%)** also backs up this conclusion.
 
@@ -108,11 +108,11 @@ More interestingly, **77% of sessions that got 25% of the way through the story 
 
 **Caveat**: We attempted to use custom variables on events, which Google has removed support for and we did not know. Due to this, we do not know for certain the following things:
 
-1. Whether people who clicked on to follow us on social media was prompted with the question "Did you like this story?" or not.
+1. Whether people who clicked on to follow us on social media was prompted with the question "Did you like this story?" or not. Thus, we are unable to make any real conclusions about it, though we can say how many people clicked those links in total.
 
 2. How many tests we ran for each of the two main actions (follow on social media, and support public radio), but we can deduce this from other evidence.
 
-A total of **147,481 sessions** reached the conclusion slide. As intended, about half of users received the prompt with the question and half did not. Though we lost the exact numbers for the breakdown between follow and support links, the same random integer code was used to determine both tests, so we can deduce that the split was about even for that as well.
+A total of **147,481 sessions** reached the conclusion slide. This means we lost 6,424 sessions between the last slide of content and the conclusion slide. As intended, about half of users received the prompt with the question and half did not. Though we lost the exact numbers for the breakdown between follow and support links, the same random integer code was used to determine both tests, so we can deduce that the split was about even for that as well.
 
 ### The Care Question
 
@@ -128,9 +128,11 @@ Of the 74,262 users who saw the care question, **19,639** of them took action, o
 
 **775 people clicked the support link.** If we estimate that ~74,000 people were given the support prompt, then we converted **1.0% of sessions** to the donate page. 
 
-However, **91.5%** of the support clicks came after clicking “Yes” from the care question. We can guess that ~37,000 sessions had the combination of a care question and the support button. Using that guess, we converted **1.9% of those sessions** to the donate page.
+However, upon breaking the clicks in two -- by users who answered the Care Question and those who did not -- the data becomes much more interesting. We had 73,765 visitors converted 66 times to support public radio upon finishing the story, while 74,262 visitors converted 709 times when the question was asked first. That means **91.5%** of the support clicks came after clicking “Yes” from the care question.
 
-Clearly, asking people if they liked a story before we ask them to donate is a much more successful path. If we had done this for everyone, we can estimate that we could have sent more than 2,800 people to the [NPR donate page](http://www.npr.org/stations/donate).
+In other words, a user was __10 times more likely__ to click the support button if they were asked the Care Question first. Given the size of our dataset, we can say this is true with a 99.9% confidence interval.
+
+So yes, the hypothesis that presenting a sensitizing question before offering an action like supporting public radio encouraged that action hold up. If we had done this for everyone, we can estimate that we could have sent more than 2,800 people to the [NPR donate page](http://www.npr.org/stations/donate).
 
 ### Social network links
 
@@ -155,7 +157,7 @@ Everyone who reached the conclusion slide saw the prompt to click to the next po
 - In terms of raw sessions, this was the most successful Look At This story we’ve run yet. However, the high bounce rate indicates that not all of these sessions were all that productive.
 - We received the highest proportion of mobile traffic any of our custom apps have ever seen.
 - The story’s completion rate was good, but we lost a large percentage of users before the story even started. If the user started the story, we maintained a high number of those users until the end. (Something else to explore in the future!)
-- The care questoin was much more successful in driving users to the donate page than just showing them the donate link.
+- The care question was much more successful in driving users to the donate page than just showing them the donate link.
 - The Tumblr link is successful as the first link in the list of social media accounts, but Facebook is still the primary network of interest. (We can further experiement with order and phrasing to see what impact it may have in helping people find more stories in their chosen social media platform)
 - Users who did not like the story will sometimes take action if we give them the option.
 
