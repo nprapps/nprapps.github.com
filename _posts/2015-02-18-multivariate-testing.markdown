@@ -3,9 +3,9 @@ layout: post
 title: "Multivariate testing: Learning what works from your users at scale"
 description: "We ran an experiment to figure out how to end a story. Here are the results."
 
-author: Tyler Fisher
-email: tfisher@npr.org
-twitter: tylrfishr
+author: Tyler Fisher and Livia Labate
+email: visuals@npr.org
+twitter: nprviz
 ---
 
 When we made ["A Brother And Sister Fall In Love"](apps.npr.org/lookatthis/posts/lovestory/), we decided we wanted to do more than track pageviews and share counts once we launched. We wanted to run an experiment, to try a few different ideas at once and see what stuck. In particular, we were concerned with how we ended the story and prompted users to take action in some way.
