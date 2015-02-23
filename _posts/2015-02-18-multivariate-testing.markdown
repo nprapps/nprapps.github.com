@@ -118,7 +118,7 @@ A total of **147,481 sessions** reached the conclusion slide. As intended, about
 
 ![Care Question](/img/posts/mvt-like.png)
 
-Of the ~74,000 users who saw the care question, **~19,000** of them took action, or 25%. **98%** of those users clicked “Yes”. This is expected; if users made their way through a 5-and-a-half minute audio piece, they probably enjoyed it.
+Of the 74,262 users who saw the care question, **19,639** of them took action, or __26.4%__. 98% of those users clicked “Yes”. This is expected; if users made their way through a 5-and-a-half minute audio piece, they probably enjoyed it.
 
 **Note:** The specific language used for this question is something we want to explore further, so for this test we kept it as simple as possible (and the love theme carried through nicely!)
 
@@ -126,11 +126,11 @@ Of the ~74,000 users who saw the care question, **~19,000** of them took action,
 
 ![support prompt](/img/posts/mvt-support.png)
 
-**711 people clicked the support link.** If we estimate that ~74,000 people were given the support prompt, then we converted **1% of sessions** to the donate page. 
+**775 people clicked the support link.** If we estimate that ~74,000 people were given the support prompt, then we converted **1.0% of sessions** to the donate page. 
 
 However, **91.5%** of the support clicks came after clicking “Yes” from the care question. We can guess that ~37,000 sessions had the combination of a care question and the support button. Using that guess, we converted **1.9% of those sessions** to the donate page.
 
-Clearly, asking people if they liked a story before we ask them to donate is a much more successful path. If we had done this for everyone, we can estimate that we could have sent more than 2,500 people to the [NPR donate page](http://www.npr.org/stations/donate).
+Clearly, asking people if they liked a story before we ask them to donate is a much more successful path. If we had done this for everyone, we can estimate that we could have sent more than 2,800 people to the [NPR donate page](http://www.npr.org/stations/donate).
 
 ### Social network links
 
