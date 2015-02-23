@@ -16,19 +16,21 @@ Our mission as a team is to help [create empathy](http://hackerjournalist.net/20
 
 First, we chose to experiment with two main actions: following our social media accounts for more stories or donating to NPR so we can continue to do more work like this. Then, we hypothesized that there would be an impact if we first asked users if they liked the story (our "Care Question") before presenting either of these options.
 
-So, the overall test model was:
+The overall test model worked like this:
 
-Story > Question > Action
+Story > Question > Action 
+
    |_________________^
 
 Combining all the possibilities we ended up with the following variations:
 
-Story > Follow
-Story > Question > Follow
-Story > Support
-Story > Question > Support
+* Story > Follow
+* Story > Question (Yes) > Follow
+* Story > Support
+* Story > Question (Yes) > Support
+* Story > Question (No) > Email
 
-When we ran the test, about half of users saw a prompt asking them “Did you love this story?” with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, while clicking No revealed a prompt to email us feedback. The other half of users was shown either of the two actions without the question preceeding it.
+When we ran the test, about half of users saw a prompt asking them the Care Question (“Did you love this story?”) with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, while clicking No revealed a prompt to email us feedback. The other half of users was shown either of the two actions without the question preceeding it.
 
 ## Analysis
 
