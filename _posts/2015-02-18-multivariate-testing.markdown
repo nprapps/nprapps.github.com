@@ -130,7 +130,7 @@ Of the 74,262 users who saw the care question, **19,639** of them took action, o
 
 However, upon breaking the clicks in two -- by users who answered the Care Question and those who did not -- the data becomes much more interesting. We had 73,765 visitors converted 66 times to support public radio upon finishing the story, while 74,262 visitors converted 709 times when the question was asked first. That means **91.5%** of the support clicks came after clicking “Yes” from the care question.
 
-In other words, a user was __10 times more likely__ to click the support button if they were asked the Care Question first. Given the size of our dataset, we can say this is true with a 99.9% confidence interval.
+In other words, a user was __10 times more likely__ to click the support button if they were asked the Care Question first. Given the size of our dataset, we can say with 99.9% confidence that this is true.
 
 So yes, the hypothesis that presenting a sensitizing question before offering an action like supporting public radio encouraged that action hold up. If we had done this for everyone, we can estimate that we could have sent more than 2,800 people to the [NPR donate page](http://www.npr.org/stations/donate).
 
