@@ -81,7 +81,7 @@ Despite the data we lost from our misuse of custom variables with Google Analyti
 
 ## "Life After Death"
 
-One week later, after we had seen the preliminary results of our test from "A Brother And Sister Fall In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This and there was an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
+One week later, after we had seen the preliminary results of our test from "A Brother And Sister Fall In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This, and there was not an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
 
 We wanted to confirm that users would convert at a higher percentage when presented with a Care Question first, so we kept the same control scenario. Instead of only using one question, we decided to run a multivariate test with four possible questions. The control scenario and the four question variations each received ~20% of the possible tests. The four possible questions were:
 
