@@ -127,6 +127,8 @@ We left the same Care Question, "Did you love this story?", and maintained our L
     );
 </script>
 
+Once again, we determined that giving users a question before a prompt to take action is a more successful path for conversion. Though only at a 95.58% confidence interval, the follow buttons performed in the same way, but in a less dramatic fashion, with the conversion rate only improving 0.8%.
+
 ## What We Have Learned So Far
 
 We learned a lot in a short amount of time: some things about the stories themselves, a lot about the running of live tests and the math behind it. A few insights:
