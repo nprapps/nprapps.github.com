@@ -10,7 +10,7 @@ twitter: nprviz
 
 For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements and the ability to navigate between cards. As we have iterated over this format, we have experimented with various tweaks to the presentation, but without a good process for measuring whether these tweaks were actually more successful.
 
-In the middle of February, we had three stories approaching launch based around this format: ["A Brother And Sister Fall In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/). In [previous](http://apps.npr.org/lookatthis/posts/colors/) [iterations](http://apps.npr.org/lookatthis/posts/publichousing/) of this format, we had concluded the story with some combination of share buttons and a promotion for another post to see. Our Google Analytics event tracking had shown that the share buttons were vastly unsuccessful; most users shared the story in ways that didn't use our share buttons.
+In the middle of February, we had three stories approaching launch based around this format: ["A Brother And Sister Fall In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/). In [previous](http://apps.npr.org/lookatthis/posts/colors/) [iterations](http://apps.npr.org/lookatthis/posts/publichousing/) of this format, we had concluded the story with some combination of share buttons and a promotion for another post to see. Our Google Analytics event tracking had shown that the share buttons were vastly unsuccessful; most users shared the story in ways that didn't use our share buttons.
 
 With three opportunities coming up to try something else, we decided to properly test different conversion rates for getting a user to take action at the end of a story. We also concluded that sharing the story was not the most productive action a user could take. Instead, we wanted to encourage users to either support NPR by donating to member stations or, in the case of "A Brother And Sister Fall In Love" and "A Photo I Love", follow our new project [Look At This](http://lookatthisstory.tumblr.com) on various social media.
 
@@ -18,7 +18,7 @@ To find out what is the most successful way of getting users to take action, we 
 
 In multivariate testing, you determine a control scenario (something you already know) and form a hypothesis that a variation of that scenario would perform better (such as getting more users to click on a link) than the control. 
 
-**Note**: You will see the term multivariate testing, A/B testing or split testing to discuss experiments like this. While there is a technical difference between the implementation of these various methods, they all seek to accomplish the same thing so we are not going to worry too much about accuracy for the purposes of discussing this.
+**Note**: You will see the term multivariate testing, A/B testing or split testing to discuss experiments like this. While there is a technical difference between the implementation of these various methods, they all seek to accomplish the same thing so we are not going to worry too much about accuracy of the label for the purposes of discussing what we learned.
 
 In our tests, the control scenario was simply presenting a user with a link to either support public radio or follow us on various social media. We hypothesized that presenting users with a yes or no question that asked them how they felt about the story they just saw before seeing these options, would make them more likely to take action. We'll call this question, which changed slightly on each project, the "Care Question", as it always tried to gauge whether a user cared about a story.
 
@@ -83,7 +83,7 @@ Despite the data we lost from our misuse of custom variables with Google Analyti
 
 One week later, after we had seen the preliminary results of our test from "A Brother And Sister Fall In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This and there was an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
 
-We wanted to confirm that users would convert at a higher percentage when presented with a Care Question first, so we kept the same control scenario. Instead of only using one question, we decided to run a multivariate test with four possible questions. The control scenario and the four question variations each received ~20% of the possible tests. The four possible questions were:
+We wanted to confirm that users would convert at a higher percentage when presented with a Care Question first, so we kept the same control scenario. Instead of only using one question, we decided to run a multivariate test with four possible questions. The control scenario and the four question variations each received ~20% of the test traffic. The four possible questions were:
 
 * Did you like this story?
 * Did you like this story? (It helps us to know)
@@ -105,7 +105,7 @@ We wanted to confirm that users would convert at a higher percentage when presen
 
 Once again, we determined that presenting users with a Care Question before asking them to support public radio was a more successful path. Each of our four questions outperformed the control scenario at > 95% confidence intervals. Of the four questions, the two asking "Does this type of reporting matter to you?" were the best performers, which perhaps suggests that tailoring the Care Question to the content is the best course of action. Life After Death is a harrowing, intense story about a devastated village in Liberia, so perhaps asking a user if they "liked" a story was offputting in this case.
 
-## "A Photo I Love"
+## "A Photo I Love: Thomas Allen Harris"
 
 A week after "A Brother And Sister Fall In Love", we were able to run another test on a very similar story. It was a slide-based story that was also driven by the audio. We decided to rerun our original test, but fix our errors when logging to Google Analytics to create a better testing environment.
 
@@ -124,3 +124,15 @@ We left the same Care Question, "Did you love this story?", and maintained our L
         {}
     );
 </script>
+
+## What We Have Learned So Far
+
+We learned a lot in a short amount of time: some things about the stories themselves, a lot about the running of live tests and the math behind it. A few insights:
+
+* Running the same test twice helped us simply validate that everything was working as planned (we are new to this, so it's not a bad idea to double check) as well as quelch any concerns about the validity of the Care Question hypothesis when run on a more standard slide-based story versus one more coreographed around an audio track.
+
+* One of the most interesting insights beyond the validation of the hypothesis itself, is the realization that, while most places that use multivariate testing to iterate on a product over time, we can only apply lessons learned to another, future story, due to the nature of the stories we tell.
+
+* Also regarding test design, due to the nature of the traffic we usually see for our stories (intense 2-4 days of high volume followed by a long tail of decreased traffic), we need to make sure statistical significance is achieved with the first few days, as running a test for longer doesn't add much at all.
+
+* Another consequence, we learned, is that sampling our traffic to run a test (a very common practice) is not necessary, and we should expose our entire audience to the test to make the most of it as soon as possible. (This is a nice thing because calculating the right sample size is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect since it varies from story to story)
