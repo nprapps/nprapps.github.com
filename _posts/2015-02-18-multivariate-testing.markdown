@@ -127,16 +127,18 @@ We left the same Care Question, "Did you love this story?", and maintained our L
     );
 </script>
 
-## What We Have Learned So Far
+## Lessons Learned
 
 We learned a lot in a short amount of time: some things about the stories themselves, a lot about the running of live tests and the math behind it. A few insights:
+
+* First, we learned that a Care Question has a positive impact on performance of actions presented at the end of stories. We also demonstrated that the language used to frame the Care Question matters (and so far aligning its tone to that of the story seems to the the right path to take).
 
 * Running the same test twice helped us simply validate that everything was working as planned (we are new to this, so it's not a bad idea to double check) as well as quelch any concerns about the validity of the Care Question hypothesis when run on a more standard slide-based story versus one more coreographed around an audio track.
 
 * One of the most interesting insights beyond the validation of the hypothesis itself, is the realization that, while most places that use multivariate testing to iterate on a product over time, we can only apply lessons learned to another, future story, due to the nature of the stories we tell.
 
-* Also regarding test design, due to the nature of the traffic we usually see for our stories (intense 2-4 days of high volume followed by a long tail of decreased traffic), we need to make sure statistical significance is achieved with the first few days, as running a test for longer doesn't add much at all.
+* Also regarding test design, given the nature of the traffic we usually see for our stories (intense 2-4 days of high volume followed by a long tail of decreased traffic), we need to make sure statistical significance is achieved within the first few days, as running a test for a longer period of time doesn't add much at all.
 
 * Another consequence, we learned, is that sampling our traffic to run a test (a very common practice) is not necessary, and we should expose our entire audience to the test to make the most of it as soon as possible. (This is a nice thing because calculating the right sample size is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect since it varies from story to story)
 
-* Google Analytics automatically samples of your data if your sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture so request an unsampled report (Premium only) so you can be sure your test is valid and reliable. Also, stay away from custom variables on events as a way to identify the variations of your test as GA doesn't support those anymore.
+* Google Analytics automatically samples your data if your sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture so request an unsampled report (Premium only) so you can be sure your test is valid and reliable. Also, stay away from custom variables on events as a way to identify the variations of your test as GA doesn't support those anymore.
