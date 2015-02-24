@@ -42,7 +42,7 @@ We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and c
 
 Determining whether the difference between a hypothesis scenario and the control scenario is statistically significant requires some pretty complex calculations, which you can read about [here](TKTK: A GOOD EXPLAINER). Luckily, Hubspot provides a [simple-to-use calculator](http://www.hubspot.com/ab-test-calculator) to determine the statistical significance of your results. Significance is determined by the confidence interval, or how confident you can be that your numbers are not determined simply by randomness. Usually, a 95% confidence interval or greater is high enough to draw a conclusion.
 
-In the following results, we will reveal the results of performing these calculations by determining how much more successful.
+In the following results, we will reveal the results of performing these calculations and determine whether or not our hypotheses proved true.
 
 ## "A Brother And Sister Fall In Love"
 
