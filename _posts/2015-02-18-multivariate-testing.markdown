@@ -89,8 +89,8 @@ We wanted to confirm that users would convert at a higher percentage when presen
 
 * Did you like this story?
 * Did you like this story? (It helps us to know)
-* Does this type of reporting matter to you?
-* Does this type of reporting matter to you? (It helps us to know)
+* Does this kind of reporting matter to you?
+* Does this kind of reporting matter to you? (It helps us to know)
 
 ### Results
 
@@ -127,7 +127,7 @@ We left the same Care Question, "Did you love this story?", and maintained our L
     );
 </script>
 
-Once again, we determined that giving users a question before a prompt to take action is a more successful path for conversion. Though only at a 95.58% confidence interval, the follow buttons performed in the same way, but in a less dramatic fashion, with the conversion rate only improving 0.8%.
+Once again, we determined that giving users a question before a prompt to take action is a more successful path for conversion. Though only at a 95.58% confidence interval, the follow buttons performed in the same way, but in a less dramatic fashion, with the conversion rate only improving 0.8%. With our third test confirming that the Care Question makes more users go where we want them to go, we feel confident in saying this is something we want to implement by default going forward.
 
 ## What We Have Learned So Far
 
