@@ -18,6 +18,8 @@ To find out what is the most successful way of getting users to take action, we 
 
 In multivariate testing, you determine a control scenario (something you already know) and form a hypothesis that a variation of that scenario would perform better (such as getting more users to click on a link) than the control. 
 
+**Note**: You will see the term multivariate testing, A/B testing or split testing to discuss experiments like this. While there is a technical difference between the implementation of these various methods, they all seek to accomplish the same thing so we are not going to worry too much about accuracy for the purposes of discussing this.
+
 In our tests, the control scenario was simply presenting a user with a link to either support public radio or follow us on various social media. We hypothesized that presenting users with a yes or no question that asked them how they felt about the story they just saw before seeing these options, would make them more likely to take action. We'll call this question, which changed slightly on each project, the "Care Question", as it always tried to gauge whether a user cared about a story.
 
 The overall test model worked like this:
@@ -34,7 +36,7 @@ In this blog post, we will show how we determined our results, run through the r
 
 ## Process
 
-To measure the success of each scenario, we used Google Analytics' custom event tracking. When a user reached a conclusion slide, we would send an event to Google Analytics to log which tests a particular user was running. This will give us the denominator for any calculation of success for a particular scenario.
+To measure the success of each scenario, we used Google Analytics' custom event tracking. When a user reached a conclusion slide, we sent an event to Google Analytics to log which tests a particular user was running. This gave us the denominator for any calculation of success for a particular scenario.
 
 We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the support link, each of the follow links and the email link. We consider a click a success, thus becoming the numerator in our calculations of success. 
 
