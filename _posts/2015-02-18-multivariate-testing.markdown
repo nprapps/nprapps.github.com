@@ -8,19 +8,43 @@ email: visuals@npr.org
 twitter: nprviz
 ---
 
-When we made ["A Brother And Sister Fall In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), we decided we wanted to do more than track pageviews and share counts once we launched. We wanted to run an experiment, to try a few different ideas at once and see what stuck. In particular, we were concerned with how we ended the story and prompted users to take action in some way.
+For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements and the ability to navigate between cards. As we have iterated over this format, we have experimented with various tweaks to the presentation, but without a good process for measuring whether these tweaks were actually more successful.
 
-The story, if you haven’t seen it, is presented as an audio slideshow. Users listen to story while text, photos, and animated gifs appear on the screen, synchronized to the audio. After the story has finished, we show a conclusion slide with project credits and a link to [another Look At This post](http://apps.npr.org/lookatthis/posts/mystkowski-loves/) we think users of this story would like. In previous stories, we would also include share buttons for Facebook, Twitter and email on this slide. We have tried something like this on a few stories now, and the share buttons have been highly unsuccessful. No one uses them.
+In the middle of February, we had three stories approaching launch based around this format: ["A Brother And Sister Fall In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/). In [previous](http://apps.npr.org/lookatthis/posts/colors/) [iterations](http://apps.npr.org/lookatthis/posts/publichousing/) of this format, we had concluded the story with some combination of share buttons and a promotion for another post to see. Our Google Analytics event tracking had shown that the share buttons were vastly unsuccessful; most users shared the story in ways that didn't use our share buttons.
 
-Our mission as a team is to help [create empathy](http://hackerjournalist.net/2014/04/24/what-is-your-mission/), so letting the stories shine on their own always comes first, but once you've seen a story we also want to help you do other meaningful things. We want to encourage users to take more productive actions at the end of stories so to see which action would be *most* productive, we decided to test some variations.
+With three opportunities coming up to try something else, we decided to properly test different conversion rates for getting a user to take action at the end of a story. We also decided that sharing the story was not the most productive action a user could take. Instead, we wanted to encourage users to either support NPR by donating to member stations or, in the case of "A Brother And Sister Fall In Love" and "A Photo I Love", follow our new project [Look At This](http://lookatthisstory.tumblr.com) on various social media.
 
-First, we chose to experiment with two main actions: following our social media accounts for more stories or donating to NPR so we can continue to do more work like this. Then, we hypothesized that there would be an impact if we first asked users if they liked the story (our "Care Question") before presenting either of these options.
+To test the most successful way of getting users to take action, we used a process called multivariate testing. In multivariate testing, we determined a control scenario and formed a hypothesis that a particular scenario would perform better, or get more users to click where we wanted them to click, than the control. 
+
+In our tests, the control scenario was simply presenting a user with a link to either support public radio or follow us on various social media. We hypothesized that presenting users with a yes or no question that asked them how they felt about the story they just saw would make them more likely to take action. We'll call this question, which changed slightly on each project, the "Care Question", as it always tried to gauge whether a user cared about a story.
 
 The overall test model worked like this:
 
 Story > Question > Action 
 
    |_________________^
+
+When we ran the test, about half of users saw a prompt asking them the Care Question with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, while clicking No revealed a prompt to email us feedback. The other half of users was shown the action we wanted them to take.
+
+With [a small amount of code](https://github.com/nprapps/lookatthis/blob/master/posts/fugelsang/www/js/app.js#L204-L225) to determine which version of the conclusion slide to serve, we were able to run these tests at about equal intervals.
+
+In this blog post, we will show how we determined our results, run through the results of each test and what conclusions we have drawn from those tests.
+
+## Process
+
+To measure the success of each scenario, we used Google Analytics' custom event tracking. When a user reached a conclusion slide, we would send an event to Google Analytics to log which tests a particular user was running. This will give us the denominator for any calculation of success for a particular scenario.
+
+We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the support link, each of the follow links and the email link. We consider a click a success, thus becoming the numerator in our calculations of success. 
+
+Determining whether the difference between a hypothesis scenario and the control scenario is statistically significant requires some pretty complex calculations, which you can read about [here](TKTK: A GOOD EXPLAINER). Luckily, Hubspot provides a [simple-to-use calculator](http://www.hubspot.com/ab-test-calculator) to determine the statistical significance of your results. Significance is determined by the confidence interval, or how confident you can be that your numbers are not determined simply by randomness. Usually, a 95% confidence interval or greater is high enough to draw a conclusion.
+
+In the following results, we will reveal the results of performing these calculations by determining how much more successful.
+
+## "A Brother And Sister Fall In Love"
+
+The first test we ran happened on ["A Brother And Sister Fall In Love"](http://apps.npr.org/lookatthis/posts/lovestory/). The format of the story is a little different than our typical slide-based story: it is entirely scripted based on an audio story. Rather than allowing users to advance through the slideshow at their own pace, the slides advance in sync with the audio story.
+
+Still, it borrowed many of the design elements from our previous slide-based stories, including ending with a conclusion slide. The test for this story was actually two separate A/B tests, whether a user was prompted with the Care Question or not, and whether they were prompted to follow Look At This on social media or support NPR by donating. The Care Question was "Did you love this story?"
 
 Combining all the possibilities we ended up with the following variations:
 
@@ -30,135 +54,69 @@ Combining all the possibilities we ended up with the following variations:
 * Story > Question (Yes) > Support
 * Story > Question (No) > Email
 
-When we ran the test, about half of users saw a prompt asking them the Care Question (“Did you love this story?”) with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, while clicking No revealed a prompt to email us feedback. The other half of users was shown either of the two actions without the question preceeding it.
-
-## Analysis
-
-With Google Analytics and [a small amount of code](https://github.com/nprapps/lookatthis/blob/master/posts/fugelsang/www/js/app.js#L204-L225) to determine which version of the conclusion slide to serve, we were able to run these tests, determine their effectiveness and come to some conclusions about what works and what doesn’t.
-
-In this blog post, we will run through some of the results of our tests and what we can learn from those conclusions. First, we will share some of the baseline analytics (sessions, device usage, completion rates) necessary for understanding these numbers.
-
-### Traffic / Usage
-
-<table class="data">
-    <caption>Total Traffic</caption>
-    <tr>
-        <td>Pageviews</td>
-        <td class="amt">499,394</td>
-    </tr>
-    <tr>
-        <td>Unique Pageviews</td>
-        <td class="amt">454,567</td>
-    </tr>
-    <tr>
-        <td>Users</td>
-        <td class="amt">429,089</td>
-    </tr>
-    <tr>
-        <td>Sessions</td>
-        <td class="amt">455,114</td>
-    </tr>
-</table>
-
-<table class="data">
-    <caption>Devices (Share of Sessions)</caption>
-    <tr>
-        <td>Mobile</td>
-        <td class="amt">56.3%</td>
-    </tr>
-    <tr>
-        <td>Desktop</td>
-        <td class="amt">32.8%</td>
-    </tr>
-    <tr>
-        <td>Tablet</td>
-        <td class="amt">10.9%</td>
-    </tr>
-</table>
-
-We received **over 450,000 sessions** on this story, which is the best any Look At This story has ever done by a wide margin. The closest, ["Plastic Rebirth"](http://apps.npr.org/lookatthis/posts/plastic/), received just over 300,000 sessions. With traffic at this scale, we were able to run our tests on a large number of users. This also received the highest percentage of mobile users on a custom app that we have ever built.
-
-### Completion
-
-<table class="data">
-    <caption>Completion (share of sessions)</caption>
-    <tr>
-        <td>25% complete</td>
-        <td class="amt">44.0%</td>
-    </tr>
-    <tr>
-        <td>50% complete</td>
-        <td class="amt">41.0%</td>
-    </tr>
-    <tr>
-        <td>75% complete</td>
-        <td class="amt">35.8%</td>
-    </tr>
-    <tr>
-        <td>100% complete</td>
-        <td class="amt">33.8%</td>
-    </tr>
-</table>
-
-**33.8% of sessions completed the piece.** In this case, completion is defined as reaching the last slide of content, not reaching the conclusion slide .  For comparison, ["This Is Color"](http://apps.npr.org/lookatthis/posts/colors/) and ["Plastic Rebirth"](http://apps.npr.org/lookatthis/posts/plastic/) had ~28% completion rates, while ["What Do Homeless Vets Look Like?"](http://apps.npr.org/lookatthis/posts/veterans/) had ~42%, but completion was defined as the last slide (including conclusion slides) for those stories. Completion rate is important for understanding our test, because we ran the test after people completed the story. This gives us a sense of how many people we lost between the last slide of content and the conclusion slide.
-
-More interestingly, **77% of sessions that got 25% of the way through the story completed the piece.** If users began the story and stuck with us for a quarter of the piece, they were very likely to finish the whole thing. However, only **44% of sessions got 25% of the way through.** It seems like the biggest road block was hooking people and getting them started. The story’s **high bounce rate (52%)** also backs up this conclusion.
-
-### Running The Test: Tracking Challenges
+### Results
 
 **Caveat**: We attempted to use custom variables on events, which Google has removed support for and we did not know. Due to this, we do not know for certain the following things:
 
-1. Whether people who clicked on to follow us on social media was prompted with the question "Did you like this story?" or not. Thus, we are unable to make any real conclusions about it, though we can say how many people clicked those links in total.
+1. Whether people who clicked on to follow us on social media was prompted with the Care Questoin or not. Thus, we were not able to run this test.
 
-2. How many tests we ran for each of the two main actions (follow on social media, and support public radio), but we can deduce this from other evidence.
+2. How many tests we ran for each of the two main actions (follow on social media, and support public radio), but we can deduce this from other evidence. Given that we ran a random integer test to determine which test they ran, and we know the total number of tests, we can estimate that about 50% were given the follow links and about 50% were given the support link.
 
-A total of **147,481 sessions** reached the conclusion slide. This means we lost 6,424 sessions between the last slide of content and the conclusion slide. As intended, about half of users received the prompt with the question and half did not. Though we lost the exact numbers for the breakdown between follow and support links, the same random integer code was used to determine both tests, so we can deduce that the split was about even for that as well.
+<div id="responsive-embed-mvt-lovestory">
+</div>
+<script src="http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var pymParent = new pym.Parent(
+        'responsive-embed-mvt-lovestory',
+        'http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/child.html',
+        {}
+    );
+</script>
 
-### The Care Question
+Despite the data we lost from our misuse of custom variables with Google Analytics, we were able to determine with 99.90% confidence that prompting a user with a question before asking them to "Support Public Radio" was more successful. We converted 0.184% of users who did not receive the Care Question and 1.913% of users who did, which makes a user who received the Care Question 10 times more likely to click the support link.
 
-![Care Question](/img/posts/mvt-like.png)
+## "Life After Death"
 
-Of the 74,262 users who saw the care question, **19,639** of them took action, or __26.4%__. 98% of those users clicked “Yes”. This is expected; if users made their way through a 5-and-a-half minute audio piece, they probably enjoyed it.
+One week later, after we had seen the preliminary results of our test from "A Brother And Sister Fall In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This and there was an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
 
-**Note:** The specific language used for this question is something we want to explore further, so for this test we kept it as simple as possible (and the love theme carried through nicely!)
+We wanted to confirm that users would convert at a higher percentage when presented with a Care Question first, so we kept the same control scenario. Instead of only using one question, we decided to run a multivariate test with four possible questions. The control scenario and the four question variations each received ~20% of the possible tests. The four possible questions were:
 
-### Support link
+* Did you like this story?
+* Did you like this story? (It helps us to know)
+* Does this type of reporting matter to you?
+* Does this type of reporting matter to you? (It helps us to know)
 
-![support prompt](/img/posts/mvt-support.png)
+### Results
 
-**775 people clicked the support link.** If we estimate that ~74,000 people were given the support prompt, then we converted **1.0% of sessions** to the donate page. 
+<div id="responsive-embed-mvt-liberia">
+</div>
+<script src="http://apps.npr.org/dailygraphics/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
+<script type="text/javascript">
+    var pymParent = new pym.Parent(
+        'responsive-embed-mvt-liberia',
+        'http://apps.npr.org/dailygraphics/graphics/mvt-liberia/child.html',
+        {}
+    );
+</script>
 
-However, upon breaking the clicks in two -- by users who answered the Care Question and those who did not -- the data becomes much more interesting. We had 73,765 visitors converted 66 times to support public radio upon finishing the story, while 74,262 visitors converted 709 times when the question was asked first. That means **91.5%** of the support clicks came after clicking “Yes” from the care question.
+Once again, we determined that presenting users with a Care Question before asking them to support public radio was a more successful path. Each of our four questions outperformed the control scenario at > 95% confidence intervals. Of the four questions, the two asking "Does this type of reporting matter to you?" were the best performers, which perhaps suggests that tailoring the Care Question to the content is the best course of action. Life After Death is a harrowing, intense story about a devastated village in Liberia, so perhaps asking a user if they "liked" a story was offputting in this case.
 
-In other words, a user was __10 times more likely__ to click the support button if they were asked the Care Question first. Given the size of our dataset, we can say with 99.9% confidence that this is true.
+## "A Photo I Love"
 
-So yes, the hypothesis that presenting a sensitizing question before offering an action like supporting public radio encouraged that action hold up. If we had done this for everyone, we can estimate that we could have sent more than 2,800 people to the [NPR donate page](http://www.npr.org/stations/donate).
+A week after "A Brother And Sister Fall In Love", we were able to run another test on a very similar story. It was a slide-based story that was also driven by the audio. We decided to rerun our original test, but fix our errors when logging to Google Analytics to create a better testing environment.
 
-### Social network links
+We left the same Care Question, "Did you love this story?", and maintained our Look At This follow links.
 
-![follow prompt](/img/posts/mvt-follow.png)
+### Results
 
-**900 people clicked one of the links to the Look At This social media accounts** -- either Facebook, Tumblr or Twitter. Facebook was the most popular of the links, account for 52.2% of clicks. Tumblr accounted for 41.8%, while Twitter only accounted for 6%.
+<div id="responsive-embed-mvt-harris">
+</div>
+<script src="http://apps.npr.org/dailygraphics/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
+<script type="text/javascript">
 
-Unfortunately, due to the information we lost using custom variables, we do not know whether the care question was as successful in this case as it was in the support case.
-
-### Email us
-
-![email prompt](/img/posts/mvt-email.png)
-
-The email link, which only appeared if a user clicked "No" on the care question, received **39 clicks.** 390 people clicked no in total, so **10% of users took action.** We received eight actual emails from this.
-
-### Next post clicks
-
-Everyone who reached the conclusion slide saw the prompt to click to the next post. __4,828 sessions clicked forward to the next post__, or about __3.3% of people who reached the conclusion slide.__ 
-
-## Insights
-
-- In terms of raw sessions, this was the most successful Look At This story we’ve run yet. However, the high bounce rate indicates that not all of these sessions were all that productive.
-- We received the highest proportion of mobile traffic any of our custom apps have ever seen.
-- The story’s completion rate was good, but we lost a large percentage of users before the story even started. If the user started the story, we maintained a high number of those users until the end. (Something else to explore in the future!)
-- The care question was much more successful in driving users to the donate page than just showing them the donate link.
-- The Tumblr link is successful as the first link in the list of social media accounts, but Facebook is still the primary network of interest. (We can further experiement with order and phrasing to see what impact it may have in helping people find more stories in their chosen social media platform)
-- Users who did not like the story will sometimes take action if we give them the option.
-
-In conclusion, we learned a fair bit with this first experiment (primarily validating the hypothesis that asking a question about the story before offering the user more actions is a more productive way to engage them in those actions) and have a variety of new questions we want to explore next. You'll hear more from us about this soon!
+    var pymParent = new pym.Parent(
+        'responsive-embed-mvt-harris',
+        'http://apps.npr.org/dailygraphics/graphics/mvt-harris/child.html',
+        {}
+    );
+</script>
