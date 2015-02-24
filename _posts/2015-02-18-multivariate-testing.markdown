@@ -42,7 +42,7 @@ We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and c
 
 Determining whether the difference between a hypothesis scenario and the control scenario is statistically significant requires some pretty complex calculations, which you can read about [here](TKTK: A GOOD EXPLAINER). Luckily, Hubspot provides a [simple-to-use calculator](http://www.hubspot.com/ab-test-calculator) to determine the statistical significance of your results. Significance is determined by the confidence interval, or how confident you can be that your numbers are not determined simply by randomness. Usually, a 95% confidence interval or greater is high enough to draw a conclusion.
 
-In the following results, we will reveal the results of performing these calculations by determining how much more successful.
+In the following results, we will reveal the results of performing these calculations and determine whether or not our hypotheses proved true.
 
 ## "A Brother And Sister Fall In Love"
 
@@ -81,7 +81,7 @@ Despite the data we lost from our misuse of custom variables with Google Analyti
 
 ## "Life After Death"
 
-One week later, after we had seen the preliminary results of our test from "A Brother And Sister Fall In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This and there was an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
+One week later, after we had seen the preliminary results of our test from "A Brother And Sister Fall In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This, and there was not an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
 
 We wanted to confirm that users would convert at a higher percentage when presented with a Care Question first, so we kept the same control scenario. Instead of only using one question, we decided to run a multivariate test with four possible questions. The control scenario and the four question variations each received ~20% of the test traffic. The four possible questions were:
 
