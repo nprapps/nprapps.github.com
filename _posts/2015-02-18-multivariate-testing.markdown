@@ -33,7 +33,7 @@ When we ran the test, we showed half of users the Care Question with two buttons
 
 We were able to run these tests at about equal intervals with [a small amount of code](https://github.com/nprapps/lookatthis/blob/master/posts/fugelsang/www/js/app.js#L204-L225).
 
-In this blog post, we will show the results, how we determined them and what conclusions we learned.
+In this blog post, we will show the results, how we determined them and what we learned.
 
 ## Process
 
