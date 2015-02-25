@@ -39,7 +39,7 @@ In this blog post, we will show how we determined our results, run through the r
 
 When a user reached a conclusion slide, we sent an event to Google Analytics to log which set of tests ran. 
 
-We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the support link, each of the follow links and the email link. 
+We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the subsequent actions (support link, each of the follow links and the feedback email link). 
 
 <img src="/img/mvt-care-question.png" alt="Example Care Question" />
 <p><small>The Care Question used in A Brother And Sister In Love</small></p>
