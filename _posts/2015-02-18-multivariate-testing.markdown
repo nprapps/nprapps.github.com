@@ -52,19 +52,21 @@ Significance is determined by the confidence interval, or how confident you can 
 
 The test for ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/) was actually two separate A/B tests at the same time: whether a user was prompted to follow Look At This on social media or support NPR by donating. For each scenario, users were prompted with the Care Question or not. The Care Question was "Did you love this story?"
 
-Combining all the possibilities we ended up with the following variations:
+This breaks down into two tests, a "follow test" and a "support test", with a control and variation scenario for each: 
 
+### Follow test, control
 ![The follow prompt, no question beforehand](/img/posts/mvt-lovestory-follow.png)
-<p><small>The control scenario for the follow test: a prompt with no question beforehand.</small></p>
 
+### Follow test, variation
 ![The follow prompt, no question beforehand](/img/posts/mvt-lovestory-question-follow.gif)
-<p><small>The variation scenario for the follow test: a question before the follow prompt.</small></p>
 
+### Support test, control
 ![The support prompt, no question beforehand](/img/posts/mvt-support.png)
-<p><small>The control scenario for the support test: a prompt with no question beforehand.</small></p>
 
+### Support test, variation
 ![The support prompt, no question beforehand](/img/posts/mvt-lovestory-question-support.gif)
-<p><small>The variatoin scenario for the support test: a question before the support prompt.</small></p>
+
+Finally, if a user clicked no, we provided a prompt to email us feedback.
 
 ![The support prompt, no question beforehand](/img/posts/mvt-lovestory-question-email.gif)
 <p><small>If a user answered "No" to the Care Question, we asked them to email us feedback.</small></p>
@@ -85,6 +87,8 @@ We were able to determine with 99.90% confidence that prompting a user with a qu
 ## "Life After Death"
 
 One week later, after we had seen the preliminary results of our test from "A Brother And Sister In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This, and there was not an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
+
+![An example of one of our question variations](/img/mvt-life-after-death-question-A.png)
 
 We wanted to confirm that users would convert at a higher percentage when presented with a Care Question first, so we kept the same control scenario. Instead of only using one question, we decided to run a multivariate test with four possible questions. The control scenario and the four question variations each received ~20% of the test traffic. The four possible questions were:
 
@@ -111,6 +115,8 @@ Once again, we determined that presenting users with a Care Question before aski
 ## "A Photo I Love: Thomas Allen Harris"
 
 A week later, we were able to run another test on a very similar story. It was a slide-based story that was also driven by the audio. We decided to rerun our original test, but fix our errors when logging to Google Analytics to create a better testing environment.
+
+![The Photo I Love conclusion slide](/img/mvt-pil-question.png)
 
 We left the same Care Question, "Did you love this story?", and maintained our Look At This follow links.
 
