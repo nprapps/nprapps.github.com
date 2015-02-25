@@ -18,7 +18,7 @@ To find out, we conducted live experiments using multivariate testing, a researc
 
 In multivariate testing, you determine a control scenario (something you already know) and form a hypothesis that a variation of that scenario would perform better than the control. 
 
-(**Note**: You will see the term multivariate testing, A/B testing or split testing to discuss experiments like this. While there is a technical difference between the implementation of these various methods, they all seek to accomplish the same thing so we are not going to worry too much about accuracy of the label for the purposes of discussing what we learned. Read more about this on [Wikipedia](http://en.wikipedia.org/wiki/A/B_testing#See_also).)
+(**Note**: You will see the term multivariate testing, A/B testing or split testing to discuss experiments like this. While there is a technical difference between the implementation of these various methods, they all seek to accomplish the same thing so we are not going to worry too much about accuracy of the label for the purposes of discussing what we learned.)
 
 In the control scenario we presented a user with a link to either support public radio or follow us on social media. We hypothesized that presenting users with a yes or no question that asked them how the story made them feel, would make them more likely to take action. 
 
