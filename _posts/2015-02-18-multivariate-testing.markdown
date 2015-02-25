@@ -129,7 +129,7 @@ Once again, we determined that giving users a question before a prompt to take a
 
 We learned a lot in a short amount of time: some things about the stories themselves, a lot about the running of live tests and the math behind it. A few insights:
 
-* With our third test confirming that the Care Question has a positive impact on performance of actions presented at the end of stories, we feel confident in saying this is something we want to implement by default going forward.
+* With our third test confirming that the Care Question has a positive impact on performance of actions presented at the end of stories, we feel confident implement this behavior by default going forward.
 
 * We also demonstrated that the language used to frame the Care Question matters. So far, aligning the tone of the question with the tone of the story has proven most successful.
 
