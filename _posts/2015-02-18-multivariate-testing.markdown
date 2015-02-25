@@ -135,7 +135,7 @@ We learned a lot in a short amount of time: some things about the stories themse
 
 * Also regarding test design, given the nature of the traffic we usually see for our stories (intense 2-4 days of high volume followed by a long tail of decreased traffic), we need to make sure statistical significance is achieved within the first few days, as running a test for a longer period of time doesn't add much at all.
 
-* Another consequence of our traffic patterns is that sampling our traffic to run a test (a very common practice) is not necessary, and we should expose our entire audience to the test to make the most of it as soon as possible. This is a nice thing because calculating the right sample size is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect since it varies from story to story.
+* Calculating the right sample size for a test is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect (since it varies from story to story), so we found we don't need to do that at all. Instead, we can simply expose the entire audience for a story to the test we run and make the most of it as soon as possible. 
 
 * Double check your math. We made several mistakes while analyzing the data simply because this is not something we do every day. Having multiple people look at the analysis as it was happening, helped us both correct errors and get a better understanding of how to make sense of the numbers. 
 
