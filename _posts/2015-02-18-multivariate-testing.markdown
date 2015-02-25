@@ -69,11 +69,11 @@ Combining all the possibilities we ended up with the following variations:
 
 <div id="responsive-embed-mvt-lovestory">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://127.0.0.1:8000/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-lovestory',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/child.html',
+        'http://127.0.0.1:8000/graphics/mvt-lovestory/child.html',
         {}
     );
 </script>
@@ -93,15 +93,13 @@ We wanted to confirm that users would convert at a higher percentage when presen
 
 ### Results
 
-In this test, we calculated success by testing each of the questions' conversion rates against the control scenario -- showing the support button without showing a question at all.
-
 <div id="responsive-embed-mvt-liberia">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://127.0.0.1:8000/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-liberia',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-liberia/child.html',
+        'http://127.0.0.1:8000/graphics/mvt-liberia/child.html',
         {}
     );
 </script>
@@ -118,12 +116,12 @@ We left the same Care Question, "Did you love this story?", and maintained our L
 
 <div id="responsive-embed-mvt-harris">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://127.0.0.1:8000/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
 
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-harris',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-harris/child.html',
+        'http://127.0.0.1:8000/graphics/mvt-harris/child.html',
         {}
     );
 </script>
@@ -144,7 +142,7 @@ We learned a lot in a short amount of time: some things about the stories themse
 
 * Another consequence, we learned, is that sampling our traffic to run a test (a very common practice) is not necessary, and we should expose our entire audience to the test to make the most of it as soon as possible. (This is a nice thing because calculating the right sample size is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect since it varies from story to story)
 
-* Double check your math. We made several mistakes while analyzing the data simply because this is not something we do every day. Having multiple people look at the analysis as it was happening, helped us both correct errors and get a better understanding of how to make sense of the numbers.
+* Double check your math. We made several mistakes while analyzing the data simply because this is not something we do every day. Having multiple people look at the analysis as it was happening, helped us both correct errors and get a better understanding of how to make sense of the numbers. 
 
 * Google Analytics automatically samples your reporting data if your sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture of your audience, so request an unsampled report (Premium only) so can ensure your test is valid and reliable. Also, stay away from custom variables on events as a way to identify the variations of your test as GA doesn't support those anymore.
 
