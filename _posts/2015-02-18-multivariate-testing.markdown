@@ -119,7 +119,7 @@ We left the same Care Question, "Did you love this story?", and maintained our L
     );
 </script>
 
-Once again, we determined that giving users a question before a prompt to take action is a more successful path to conversion. Though at a lower confidence interval (at 95.58%), the follow buttons performed in the same positive way, but in a less dramatic fashion, with the **conversion rate improving over 60%**. 
+Once again, we determined that giving users a question before a prompt to take action is a more successful path to conversion (1.7 times better for the Follow action and 13.5 times for the Support action). 
 
 ## Lessons Learned
 
