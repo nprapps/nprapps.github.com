@@ -131,9 +131,9 @@ We learned a lot in a short amount of time: some things about the stories themse
 
 * First, we learned that a Care Question has a positive impact on performance of actions presented at the end of stories. We also demonstrated that the language used to frame the Care Question matters. So far, aligning the tone of th question with the tone of the story has proven most successful.
 
-* Running the same test twice helped us simply validate that everything was working as planned. We are new to this, so it's not a bad idea to double check. We also quelched any concerns about the validity of the Care Question hypothesis when run on a more standard slide-based story versus one more choreographed around an audio track.
+* Running the same test twice helped us simply validate that everything was working as planned. We are new to this, so it's not a bad idea to double check!
 
-* Also regarding test design, given the nature of the traffic we usually see for our stories (intense 2-4 days of high volume followed by a long tail of decreased traffic), we need to make sure statistical significance is achieved within the first few days, as running a test for a longer period of time doesn't add much at all.
+* Given the nature of the traffic for our stories (2-4 days of high volume followed by a long tail of decreased traffic), we need to make sure statistical significance is achieved within the first few days, as running a test for a longer period of time doesn't add much at all.
 
 * Calculating the right sample size for a test is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect (since it varies from story to story), so we found we don't need to do that at all. Instead, we can simply expose the entire audience for a story to the test we run and make the most of it as soon as possible. 
 
