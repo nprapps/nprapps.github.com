@@ -107,7 +107,7 @@ Once again, we determined that presenting users with a Care Question before aski
 
 ## "A Photo I Love: Thomas Allen Harris"
 
-A week after "A Brother And Sister In Love", we were able to run another test on a very similar story. It was a slide-based story that was also driven by the audio. We decided to rerun our original test, but fix our errors when logging to Google Analytics to create a better testing environment.
+A week later, we were able to run another test on a very similar story. It was a slide-based story that was also driven by the audio. We decided to rerun our original test, but fix our errors when logging to Google Analytics to create a better testing environment.
 
 We left the same Care Question, "Did you love this story?", and maintained our Look At This follow links.
 
