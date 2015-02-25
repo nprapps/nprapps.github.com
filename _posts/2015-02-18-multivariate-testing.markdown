@@ -70,11 +70,11 @@ Combining all the possibilities we ended up with the following variations:
 
 <div id="responsive-embed-mvt-lovestory">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://127.0.0.1:8000/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-lovestory',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/child.html',
+        'http://127.0.0.1:8000/graphics/mvt-lovestory/child.html',
         {}
     );
 </script>
@@ -96,11 +96,11 @@ We wanted to confirm that users would convert at a higher percentage when presen
 
 <div id="responsive-embed-mvt-liberia">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://127.0.0.1:8000/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-liberia',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-liberia/child.html',
+        'http://127.0.0.1:8000/graphics/mvt-liberia/child.html',
         {}
     );
 </script>
@@ -117,23 +117,19 @@ We left the same Care Question, "Did you love this story?", and maintained our L
 
 <div id="responsive-embed-mvt-harris">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://127.0.0.1:8000/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
 
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-harris',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-harris/child.html',
+        'http://127.0.0.1:8000/graphics/mvt-harris/child.html',
         {}
     );
 </script>
 
-<<<<<<< HEAD
-## Lessons Learned
-=======
 Once again, we determined that giving users a question before a prompt to take action is a more successful path for conversion. Though only at a 95.58% confidence interval, the follow buttons performed in the same way, but in a less dramatic fashion, with the conversion rate only improving 0.8%. With our third test confirming that the Care Question makes more users go where we want them to go, we feel confident in saying this is something we want to implement by default going forward.
 
-## What We Have Learned So Far
->>>>>>> e6403f4ea7ff4a839d0c195a72a169f8eaf84632
+## Lessons Learned
 
 We learned a lot in a short amount of time: some things about the stories themselves, a lot about the running of live tests and the math behind it. A few insights:
 
