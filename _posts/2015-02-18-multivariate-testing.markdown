@@ -39,7 +39,7 @@ To measure the success of each scenario, we used Google Analytics' custom event 
 
 We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the support link, each of the follow links and the email link. We consider a click a success, thus becoming the numerator in our calculations of success. 
 
-Determining whether the difference between a hypothesis scenario and the control scenario is statistically significant requires some pretty complex calculations, which you can read about [here](TKTK: A GOOD EXPLAINER). Luckily, Hubspot provides a [simple-to-use calculator](http://www.hubspot.com/ab-test-calculator) to determine the statistical significance of your results. 
+Determining whether the difference between a hypothesis scenario and the control scenario is statistically significant requires some pretty complex calculations, which you can read about [here](http://20bits.com/article/statistical-analysis-and-ab-testing). Luckily, Hubspot provides a [simple-to-use calculator](http://www.hubspot.com/ab-test-calculator) to determine the statistical significance of your results. 
 
 Significance is determined by the confidence interval, or how confident you can be that your numbers are not determined simply by randomness. Usually, a 95% confidence interval or greater is high enough to draw a conclusion. Using the calculator, we determined whether the _difference in conversion rates_ (where conversion rate is defined as clicks / the number of times a particular test was run) was statistically significant.
 
@@ -132,15 +132,15 @@ Once again, we determined that giving users a question before a prompt to take a
 
 We learned a lot in a short amount of time: some things about the stories themselves, a lot about the running of live tests and the math behind it. A few insights:
 
-* First, we learned that a Care Question has a positive impact on performance of actions presented at the end of stories. We also demonstrated that the language used to frame the Care Question matters (and so far aligning its tone to that of the story seems to the the right path to take).
+* First, we learned that a Care Question has a positive impact on performance of actions presented at the end of stories. We also demonstrated that the language used to frame the Care Question matters. So far, aligning the tone of th question with the tone of the story has proven most successful.
 
-* Running the same test twice helped us simply validate that everything was working as planned (we are new to this, so it's not a bad idea to double check) as well as quelch any concerns about the validity of the Care Question hypothesis when run on a more standard slide-based story versus one more coreographed around an audio track.
+* Running the same test twice helped us simply validate that everything was working as planned. We are new to this, so it's not a bad idea to double check. We also quelched any concerns about the validity of the Care Question hypothesis when run on a more standard slide-based story versus one more choreographed around an audio track.
 
-* One of the most interesting insights beyond the validation of the hypothesis itself, is the realization that, while most places use multivariate testing to iterate on a product over time, we can only apply lessons learned to another, future story, due to the nature of the stories we tell.
+* One of the most interesting insights beyond the validation of the hypothesis itself is the realization that, while most places use multivariate testing to iterate on a product over time, we can only apply lessons learned to another, future story, due to the nature of the stories we tell.
 
 * Also regarding test design, given the nature of the traffic we usually see for our stories (intense 2-4 days of high volume followed by a long tail of decreased traffic), we need to make sure statistical significance is achieved within the first few days, as running a test for a longer period of time doesn't add much at all.
 
-* Another consequence, we learned, is that sampling our traffic to run a test (a very common practice) is not necessary, and we should expose our entire audience to the test to make the most of it as soon as possible. (This is a nice thing because calculating the right sample size is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect since it varies from story to story)
+* Another consequence of our traffic patterns is that sampling our traffic to run a test (a very common practice) is not necessary, and we should expose our entire audience to the test to make the most of it as soon as possible. This is a nice thing because calculating the right sample size is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect since it varies from story to story.
 
 * Double check your math. We made several mistakes while analyzing the data simply because this is not something we do every day. Having multiple people look at the analysis as it was happening, helped us both correct errors and get a better understanding of how to make sense of the numbers. 
 
