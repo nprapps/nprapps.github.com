@@ -149,6 +149,8 @@ We learned a lot in a short amount of time: some things about the stories themse
 
 * Double check your math. We made several mistakes while analyzing the data simply because this is not something we do every day. Having multiple people look at the analysis as it was happening, helped us both correct errors and get a better understanding of how to make sense of the numbers. 
 
-* Google Analytics automatically samples your reporting data if your sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture of your audience, so request an unsampled report (Premium only) so can ensure your test is valid and reliable. Also, stay away from custom variables on events as a way to identify the variations of your test as GA doesn't support those anymore.
+* Google Analytics automatically samples your reporting data if your sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture of your audience, so request an unsampled report (available from [GA Premium](https://www.google.com/analytics/premium/) only) so you can ensure your test is valid and reliable. 
+
+* Also, with Google Analytics dropping [support for custom variables](https://developers.google.com/analytics/devguides/collection/upgrade/faq#custom-vars), use distinct events to identify the variations of your test instead.
 
 
