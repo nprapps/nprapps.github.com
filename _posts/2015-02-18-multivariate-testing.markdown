@@ -50,9 +50,7 @@ Significance is determined by the confidence interval, or how confident you can 
 
 ## "A Brother And Sister In Love"
 
-The first test we ran happened on ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/). The format of the story is a little different than our typical slide-based story: it is entirely scripted based on an audio story. Rather than allowing users to advance through the slideshow at their own pace, the slides advance in sync with the audio story.
-
-Still, it borrowed many of the design elements from our previous slide-based stories, including ending with a conclusion slide. The test for this story was actually two separate A/B tests, whether a user was prompted with the Care Question or not, and whether they were prompted to follow Look At This on social media or support NPR by donating. The Care Question was "Did you love this story?"
+The test for ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/) was actually two separate A/B tests at the same time: whether a user was prompted to follow Look At This on social media or support NPR by donating. For each scenario, users were prompted with the Care Question or not. The Care Question was "Did you love this story?"
 
 Combining all the possibilities we ended up with the following variations:
 
