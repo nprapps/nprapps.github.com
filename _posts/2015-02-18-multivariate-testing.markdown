@@ -96,6 +96,8 @@ We wanted to confirm that users would convert at a higher percentage when presen
 
 ### Results
 
+For this test, we tested each question against the control scenario -- presenting the user with a support button without showing them a question first.
+
 <div id="responsive-embed-mvt-liberia">
 </div>
 <script src="http://127.0.0.1:8000/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
