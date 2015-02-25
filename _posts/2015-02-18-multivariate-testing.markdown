@@ -24,7 +24,7 @@ In our tests, the control scenario was simply presenting a user with a link to e
 
 The overall test model worked like this:
 
-<img src="/img/posts/mvt-test-model.png" alt="Test model" />
+<img src="/img/mvt-test-model.png" alt="Test model" />
 <p><small>this is a placeholder diagram</small></p>
 
 When we ran the test, about half of users saw a prompt asking them the Care Question with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, while clicking No revealed a prompt to email us feedback. The other half of users was shown the action we wanted them to take.
