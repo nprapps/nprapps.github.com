@@ -10,9 +10,9 @@ twitter: nprviz
 
 For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements and the ability to navigate between cards. As we have iterated over this format, we have experimented with various tweaks to the presentation, but without a good process for measuring whether these tweaks were actually more successful.
 
-In the middle of February, we had three stories approaching launch based around this format: ["A Brother And Sister Fall In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/). In [previous](http://apps.npr.org/lookatthis/posts/colors/) [iterations](http://apps.npr.org/lookatthis/posts/publichousing/) of this format, we had concluded the story with some combination of share buttons and a promotion for another post to see. Our Google Analytics event tracking had shown that the share buttons were vastly unsuccessful; most users shared the story in ways that didn't use our share buttons.
+In the middle of February, we had three stories approaching launch based around this format: ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/). In [previous](http://apps.npr.org/lookatthis/posts/colors/) [iterations](http://apps.npr.org/lookatthis/posts/publichousing/) of this format, we had concluded the story with some combination of share buttons and a promotion for another post to see. Our Google Analytics event tracking had shown that the share buttons were vastly unsuccessful; most users shared the story in ways that didn't use our share buttons.
 
-With three opportunities coming up to try something else, we decided to properly test different conversion rates for getting a user to take action at the end of a story. We also concluded that sharing the story was not the most productive action a user could take. Instead, we wanted to encourage users to either support NPR by donating to member stations or, in the case of "A Brother And Sister Fall In Love" and "A Photo I Love", follow our new project [Look At This](http://lookatthisstory.tumblr.com) on various social media.
+With three opportunities coming up to try something else, we decided to properly test different conversion rates for getting a user to take action at the end of a story. We also concluded that sharing the story was not the most productive action a user could take. Instead, we wanted to encourage users to either support NPR by donating to member stations or, in the case of "A Brother And Sister In Love" and "A Photo I Love", follow our new project [Look At This](http://lookatthisstory.tumblr.com) on various social media.
 
 To find out what is the most successful way of getting users to take action, we conducted a live experiment using multivariate testing, a research method that allows us to show users slightly different versions of the same page and assess which version people respond to more positively.
 
@@ -46,9 +46,9 @@ Significance is determined by the confidence interval, or how confident you can 
 
 In the following results, we will reveal the results of performing these calculations and determine whether or not our hypotheses proved true.
 
-## "A Brother And Sister Fall In Love"
+## "A Brother And Sister In Love"
 
-The first test we ran happened on ["A Brother And Sister Fall In Love"](http://apps.npr.org/lookatthis/posts/lovestory/). The format of the story is a little different than our typical slide-based story: it is entirely scripted based on an audio story. Rather than allowing users to advance through the slideshow at their own pace, the slides advance in sync with the audio story.
+The first test we ran happened on ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/). The format of the story is a little different than our typical slide-based story: it is entirely scripted based on an audio story. Rather than allowing users to advance through the slideshow at their own pace, the slides advance in sync with the audio story.
 
 Still, it borrowed many of the design elements from our previous slide-based stories, including ending with a conclusion slide. The test for this story was actually two separate A/B tests, whether a user was prompted with the Care Question or not, and whether they were prompted to follow Look At This on social media or support NPR by donating. The Care Question was "Did you love this story?"
 
@@ -83,14 +83,14 @@ Despite the data we lost from our misuse of custom variables with Google Analyti
 
 ## "Life After Death"
 
-One week later, after we had seen the preliminary results of our test from "A Brother And Sister Fall In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This, and there was not an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
+One week later, after we had seen the preliminary results of our test from "A Brother And Sister In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This, and there was not an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
 
 We wanted to confirm that users would convert at a higher percentage when presented with a Care Question first, so we kept the same control scenario. Instead of only using one question, we decided to run a multivariate test with four possible questions. The control scenario and the four question variations each received ~20% of the test traffic. The four possible questions were:
 
 * Did you like this story?
 * Did you like this story? (It helps us to know)
-* Does this type of reporting matter to you?
-* Does this type of reporting matter to you? (It helps us to know)
+* Does this kind of reporting matter to you?
+* Does this kind of reporting matter to you? (It helps us to know)
 
 ### Results
 
@@ -109,7 +109,7 @@ Once again, we determined that presenting users with a Care Question before aski
 
 ## "A Photo I Love: Thomas Allen Harris"
 
-A week after "A Brother And Sister Fall In Love", we were able to run another test on a very similar story. It was a slide-based story that was also driven by the audio. We decided to rerun our original test, but fix our errors when logging to Google Analytics to create a better testing environment.
+A week after "A Brother And Sister In Love", we were able to run another test on a very similar story. It was a slide-based story that was also driven by the audio. We decided to rerun our original test, but fix our errors when logging to Google Analytics to create a better testing environment.
 
 We left the same Care Question, "Did you love this story?", and maintained our Look At This follow links.
 
@@ -127,7 +127,13 @@ We left the same Care Question, "Did you love this story?", and maintained our L
     );
 </script>
 
+<<<<<<< HEAD
 ## Lessons Learned
+=======
+Once again, we determined that giving users a question before a prompt to take action is a more successful path for conversion. Though only at a 95.58% confidence interval, the follow buttons performed in the same way, but in a less dramatic fashion, with the conversion rate only improving 0.8%. With our third test confirming that the Care Question makes more users go where we want them to go, we feel confident in saying this is something we want to implement by default going forward.
+
+## What We Have Learned So Far
+>>>>>>> e6403f4ea7ff4a839d0c195a72a169f8eaf84632
 
 We learned a lot in a short amount of time: some things about the stories themselves, a lot about the running of live tests and the math behind it. A few insights:
 
