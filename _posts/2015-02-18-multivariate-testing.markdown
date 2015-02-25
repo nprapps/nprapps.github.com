@@ -22,14 +22,16 @@ In multivariate testing, you determine a control scenario (something you already
 
 **Note**: You will see the term multivariate testing, A/B testing or split testing to discuss experiments like this. While there is a technical difference between the implementation of these various methods, they all seek to accomplish the same thing so we are not going to worry too much about accuracy of the label for the purposes of discussing what we learned.
 
-In our tests, the control scenario was simply presenting a user with a link to either support public radio or follow us on various social media. We hypothesized that presenting users with a yes or no question that asked them how they felt about the story they just saw before seeing these options, would make them more likely to take action. We'll call this question, which changed slightly on each project, the "Care Question", as it always tried to gauge whether a user cared about a story.
+In the control scenario we presented a user with a link to either support public radio or follow us on social media. We hypothesized that presenting users with a yes or no question that asked them how the story made them feel, would make them more likely to take action. 
+
+We call this question, which changed slightly on each project, the "Care Question", as it always tried to gauge whether a user cared about a story.
 
 The overall test model worked like this:
 
 <img src="/img/mvt-test-model.png" alt="Test model" />
 <p><small>The variations exposed two possible paths to users</small></p>
 
-When we ran the test, about half of users saw a prompt asking them the Care Question with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, while clicking No revealed a prompt to email us feedback. The other half of users was shown the action we wanted them to take.
+When we ran the test, we showed half of users the Care Question with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, clicking No revealed a prompt to email us feedback. The control group was shown the action we wanted them to take.
 
 With [a small amount of code](https://github.com/nprapps/lookatthis/blob/master/posts/fugelsang/www/js/app.js#L204-L225) to determine which version of the conclusion slide to serve, we were able to run these tests at about equal intervals.
 
@@ -46,7 +48,7 @@ We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and c
 
 Determining whether the results were statistically significant required some pretty complex calculations, which you can read about [here](http://20bits.com/article/statistical-analysis-and-ab-testing). Luckily, Hubspot provides a [simple-to-use calculator](http://www.hubspot.com/ab-test-calculator) to determine the statistical significance of your results. 
 
-Significance is determined by the confidence interval, or how confident you can be that your numbers are not determined simply by randomness. Usually, a 95% confidence interval or greater is high enough to draw a conclusion. Using the calculator, we determined whether the _difference in conversion rates_ (where conversion rate is defined as clicks / the number of times a particular test was run) was statistically significant.
+Significance is determined by the confidence interval, or how confident you can be that your numbers are not determined simply by randomness. Usually, a 95% confidence interval or greater is high enough to draw a conclusion. Using the calculator, we determined whether the _difference in conversion rates_ (where conversion rate is defined as clicks over the number of times a particular test was run) was statistically significant.
 
 ## "A Brother And Sister In Love"
 
