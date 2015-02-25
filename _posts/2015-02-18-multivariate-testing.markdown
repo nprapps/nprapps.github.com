@@ -75,9 +75,7 @@ Combining all the possibilities we ended up with the following variations:
     );
 </script>
 
-**Caveat**: We attempted to use custom variables on events, which Google has removed support for and we did not know. Due to this, 
-
-Despite the data we lost from our misuse of custom variables with Google Analytics, we were able to determine with 99.90% confidence that prompting a user with a question before asking them to "Support Public Radio" was more successful. We converted 0.184% of users who did not receive the Care Question and 1.913% of users who did, which makes a user who received the Care Question 10 times more likely to click the support link.
+We were able to determine with 99.90% confidence that prompting a user with a question before asking them to "Support Public Radio" was more successful. We converted 0.184% of users who did not receive the Care Question and 1.913% of users who did, which makes a user who received the Care Question **10 times more likely** to click the support link.
 
 ## "Life After Death"
 
