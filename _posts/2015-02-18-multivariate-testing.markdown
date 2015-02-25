@@ -93,6 +93,8 @@ We wanted to confirm that users would convert at a higher percentage when presen
 
 ### Results
 
+In this test, we calculated success by testing each of the questions' conversion rates against the control scenario -- showing the support button without showing a question at all.
+
 <div id="responsive-embed-mvt-liberia">
 </div>
 <script src="http://apps.npr.org/dailygraphics/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
