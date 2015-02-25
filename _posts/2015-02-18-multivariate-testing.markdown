@@ -37,14 +37,14 @@ In this blog post, we will show how we determined our results, run through the r
 
 ## Process
 
-To measure the success of each scenario, we used Google Analytics' custom event tracking. When a user reached a conclusion slide, we sent an event to Google Analytics to log which tests a particular user was running. This gave us the denominator for any calculation of success for a particular scenario.
+When a user reached a conclusion slide, we sent an event to Google Analytics to log which set of tests ran. 
 
-We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the support link, each of the follow links and the email link. We consider a click on either the support or follow link a success, thus becoming the numerator in our calculations of success. 
+We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the support link, each of the follow links and the email link. 
 
 <img src="/img/mvt-care-question.png" alt="Example Care Question" />
 <p><small>The Care Question used in A Brother And Sister In Love</small></p>
 
-Determining whether the difference between a hypothesis scenario and the control scenario is statistically significant requires some pretty complex calculations, which you can read about [here](http://20bits.com/article/statistical-analysis-and-ab-testing). Luckily, Hubspot provides a [simple-to-use calculator](http://www.hubspot.com/ab-test-calculator) to determine the statistical significance of your results. 
+Determining whether the results were statistically significant required some pretty complex calculations, which you can read about [here](http://20bits.com/article/statistical-analysis-and-ab-testing). Luckily, Hubspot provides a [simple-to-use calculator](http://www.hubspot.com/ab-test-calculator) to determine the statistical significance of your results. 
 
 Significance is determined by the confidence interval, or how confident you can be that your numbers are not determined simply by randomness. Usually, a 95% confidence interval or greater is high enough to draw a conclusion. Using the calculator, we determined whether the _difference in conversion rates_ (where conversion rate is defined as clicks / the number of times a particular test was run) was statistically significant.
 
