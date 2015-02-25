@@ -62,24 +62,18 @@ Combining all the possibilities we ended up with the following variations:
 * Story > Question (Yes) > Support
 * Story > Question (No) > Email
 
-### Results
-
-**Caveat**: We attempted to use custom variables on events, which Google has removed support for and we did not know. Due to this, we do not know for certain the following things:
-
-1. Whether people who clicked on to follow us on social media was prompted with the Care Questoin or not. Thus, we were not able to run this test.
-
-2. How many tests we ran for each of the two main actions (follow on social media, and support public radio), but we can deduce this from other evidence. Given that we ran a random integer test to determine which test they ran, and we know the total number of tests, we can estimate that about 50% were given the follow links and about 50% were given the support link.
-
 <div id="responsive-embed-mvt-lovestory">
 </div>
-<script src="http://127.0.0.1:8000/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-lovestory',
-        'http://127.0.0.1:8000/graphics/mvt-lovestory/child.html',
+        'http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/child.html',
         {}
     );
 </script>
+
+**Caveat**: We attempted to use custom variables on events, which Google has removed support for and we did not know. Due to this, 
 
 Despite the data we lost from our misuse of custom variables with Google Analytics, we were able to determine with 99.90% confidence that prompting a user with a question before asking them to "Support Public Radio" was more successful. We converted 0.184% of users who did not receive the Care Question and 1.913% of users who did, which makes a user who received the Care Question 10 times more likely to click the support link.
 
@@ -94,17 +88,15 @@ We wanted to confirm that users would convert at a higher percentage when presen
 * Does this kind of reporting matter to you?
 * Does this kind of reporting matter to you? (It helps us to know)
 
-### Results
-
 For this test, we tested each question against the control scenario -- presenting the user with a support button without showing them a question first.
 
 <div id="responsive-embed-mvt-liberia">
 </div>
-<script src="http://127.0.0.1:8000/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://apps.npr.org/dailygraphics/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-liberia',
-        'http://127.0.0.1:8000/graphics/mvt-liberia/child.html',
+        'http://apps.npr.org/dailygraphics/graphics/mvt-liberia/child.html',
         {}
     );
 </script>
@@ -117,16 +109,14 @@ A week after "A Brother And Sister In Love", we were able to run another test on
 
 We left the same Care Question, "Did you love this story?", and maintained our Look At This follow links.
 
-### Results
-
 <div id="responsive-embed-mvt-harris">
 </div>
-<script src="http://127.0.0.1:8000/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://apps.npr.org/dailygraphics/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
 
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-harris',
-        'http://127.0.0.1:8000/graphics/mvt-harris/child.html',
+        'http://apps.npr.org/dailygraphics/graphics/mvt-harris/child.html',
         {}
     );
 </script>
