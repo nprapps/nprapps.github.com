@@ -48,8 +48,6 @@ Determining whether the difference between a hypothesis scenario and the control
 
 Significance is determined by the confidence interval, or how confident you can be that your numbers are not determined simply by randomness. Usually, a 95% confidence interval or greater is high enough to draw a conclusion. Using the calculator, we determined whether the _difference in conversion rates_ (where conversion rate is defined as clicks / the number of times a particular test was run) was statistically significant.
 
-In the following results, we will reveal the results of performing these calculations and determine whether or not our hypotheses proved true.
-
 ## "A Brother And Sister In Love"
 
 The first test we ran happened on ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/). The format of the story is a little different than our typical slide-based story: it is entirely scripted based on an audio story. Rather than allowing users to advance through the slideshow at their own pace, the slides advance in sync with the audio story.
