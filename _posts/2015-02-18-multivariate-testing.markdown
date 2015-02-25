@@ -69,11 +69,11 @@ Combining all the possibilities we ended up with the following variations:
 
 <div id="responsive-embed-mvt-lovestory">
 </div>
-<script src="http://127.0.0.1:8000/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-lovestory',
-        'http://127.0.0.1:8000/graphics/mvt-lovestory/child.html',
+        'http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/child.html',
         {}
     );
 </script>
@@ -95,11 +95,11 @@ We wanted to confirm that users would convert at a higher percentage when presen
 
 <div id="responsive-embed-mvt-liberia">
 </div>
-<script src="http://127.0.0.1:8000/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://apps.npr.org/dailygraphics/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-liberia',
-        'http://127.0.0.1:8000/graphics/mvt-liberia/child.html',
+        'http://apps.npr.org/dailygraphics/graphics/mvt-liberia/child.html',
         {}
     );
 </script>
@@ -116,12 +116,12 @@ We left the same Care Question, "Did you love this story?", and maintained our L
 
 <div id="responsive-embed-mvt-harris">
 </div>
-<script src="http://127.0.0.1:8000/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://apps.npr.org/dailygraphics/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
 
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-harris',
-        'http://127.0.0.1:8000/graphics/mvt-harris/child.html',
+        'http://apps.npr.org/dailygraphics/graphics/mvt-harris/child.html',
         {}
     );
 </script>
