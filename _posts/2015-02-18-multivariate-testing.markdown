@@ -12,15 +12,13 @@ twitter: nprviz
 
 For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements and the ability to navigate between cards. We have experimented with various tweaks to the presentation, but since each story is substantially different, it's been hard to know what works.
 
-In the middle of February, we had three stories approaching launch based around this format: ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/). In [previous](http://apps.npr.org/lookatthis/posts/colors/) [iterations](http://apps.npr.org/lookatthis/posts/publichousing/) of this format, we had concluded the story with some combination of share buttons and a promotion for another post. Our Google Analytics event tracking had shown that the share buttons were vastly unsuccessful; most users shared the story in ways that didn't use our share buttons.
+With three stories approaching launch in the middle of February (["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/)), we decided to properly test different ways to get a user take action at the end of a story. We wanted to encourage users to support NPR or, in the case of "A Brother And Sister In Love" and "A Photo I Love", to follow our new project [Look At This](http://lookatthisstory.tumblr.com) on social media.
 
-With three opportunities coming up to try something else, we decided to properly test different conversion rates for getting a user to take action at the end of a story. We also discussed how sharing the story was not the most productive action a user could take. Instead, we wanted to encourage users to either support NPR by donating to member stations or, in the case of "A Brother And Sister In Love" and "A Photo I Love", to follow our new project [Look At This](http://lookatthisstory.tumblr.com) on various social media.
-
-To find out we conducted live experiments using multivariate testing, a research method that allows us to show users slightly different versions of the same page and assess which version people respond to more positively.
+To find out, we conducted live experiments using multivariate testing, a research method that allows us to show users slightly different versions of the same page and assess which version people respond to more positively.
 
 In multivariate testing, you determine a control scenario (something you already know) and form a hypothesis that a variation of that scenario would perform better than the control. 
 
-**Note**: You will see the term multivariate testing, A/B testing or split testing to discuss experiments like this. While there is a technical difference between the implementation of these various methods, they all seek to accomplish the same thing so we are not going to worry too much about accuracy of the label for the purposes of discussing what we learned.
+(**Note**: You will see the term multivariate testing, A/B testing or split testing to discuss experiments like this. While there is a technical difference between the implementation of these various methods, they all seek to accomplish the same thing so we are not going to worry too much about accuracy of the label for the purposes of discussing what we learned. Read more about this on [Wikipedia](http://en.wikipedia.org/wiki/A/B_testing#See_also).)
 
 In the control scenario we presented a user with a link to either support public radio or follow us on social media. We hypothesized that presenting users with a yes or no question that asked them how the story made them feel, would make them more likely to take action. 
 
@@ -33,7 +31,7 @@ The overall test model worked like this:
 
 When we ran the test, we showed half of users the Care Question with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, clicking No revealed a prompt to email us feedback. The control group was shown the action we wanted them to take.
 
-With [a small amount of code](https://github.com/nprapps/lookatthis/blob/master/posts/fugelsang/www/js/app.js#L204-L225) to determine which version of the conclusion slide to serve, we were able to run these tests at about equal intervals.
+We were able to run these tests at about equal intervals with [a small amount of code](https://github.com/nprapps/lookatthis/blob/master/posts/fugelsang/www/js/app.js#L204-L225).
 
 In this blog post, we will show how we determined our results, run through the results of each test and what conclusions we have drawn from those tests.
 
@@ -56,11 +54,20 @@ The test for ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/pos
 
 Combining all the possibilities we ended up with the following variations:
 
-* Story > Follow
-* Story > Question (Yes) > Follow
-* Story > Support
-* Story > Question (Yes) > Support
-* Story > Question (No) > Email
+![The follow prompt, no question beforehand](/img/posts/mvt-lovestory-follow.png)
+<p><small>The control scenario for the follow test: a prompt with no question beforehand.</small></p>
+
+![The follow prompt, no question beforehand](/img/posts/mvt-lovestory-question-follow.gif)
+<p><small>The variation scenario for the follow test: a question before the follow prompt.</small></p>
+
+![The support prompt, no question beforehand](/img/posts/mvt-support.png)
+<p><small>The control scenario for the support test: a prompt with no question beforehand.</small></p>
+
+![The support prompt, no question beforehand](/img/posts/mvt-lovestory-question-support.gif)
+<p><small>The variatoin scenario for the support test: a question before the support prompt.</small></p>
+
+![The support prompt, no question beforehand](/img/posts/mvt-lovestory-question-email.gif)
+<p><small>If a user answered "No" to the Care Question, we asked them to email us feedback.</small></p>
 
 <div id="responsive-embed-mvt-lovestory">
 </div>
@@ -73,7 +80,7 @@ Combining all the possibilities we ended up with the following variations:
     );
 </script>
 
-We were able to determine with 99.90% confidence that prompting a user with a question before asking them to "Support Public Radio" was more successful. We converted 0.184% of users who did not receive the Care Question and 1.913% of users who did, which makes a user who received the Care Question **10 times more likely** to click the support link.
+We were able to determine with 99.90% confidence that prompting a user with a question before asking them to "Support Public Radio" was more successful. We converted 0.184% of users who did not receive the Care Question and 1.913% of users who did, which makes a user who received the Care Question 10 times more likely to click the support link.
 
 ## "Life After Death"
 
