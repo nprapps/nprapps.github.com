@@ -125,13 +125,13 @@ We left the same Care Question, "Did you love this story?", and maintained our L
 
 Once again, we determined that giving users a question before a prompt to take action is a more successful path to conversion. Though at a lower confidence interval (at 95.58%), the follow buttons performed in the same positive way, but in a less dramatic fashion, with the **conversion rate improving over 60%**. 
 
-With our third test confirming that the Care Question makes more users go where we want them to go, we feel confident in saying this is something we want to implement by default going forward.
-
 ## Lessons Learned
 
 We learned a lot in a short amount of time: some things about the stories themselves, a lot about the running of live tests and the math behind it. A few insights:
 
-* First, we learned that a Care Question has a positive impact on performance of actions presented at the end of stories. We also demonstrated that the language used to frame the Care Question matters. So far, aligning the tone of th question with the tone of the story has proven most successful.
+* With our third test confirming that the Care Question has a positive impact on performance of actions presented at the end of stories, we feel confident in saying this is something we want to implement by default going forward.
+
+* We also demonstrated that the language used to frame the Care Question matters. So far, aligning the tone of the question with the tone of the story has proven most successful.
 
 * Running the same test twice helped us simply validate that everything was working as planned. We are new to this, so it's not a bad idea to double check!
 
