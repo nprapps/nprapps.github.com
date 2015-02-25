@@ -10,9 +10,9 @@ twitter: nprviz
 
 For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements and the ability to navigate between cards. As we have iterated over this format, we have experimented with various tweaks to the presentation, but without a good process for measuring whether these tweaks were actually more successful.
 
-In the middle of February, we had three stories approaching launch based around this format: ["A Brother And Sister Fall In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/). In [previous](http://apps.npr.org/lookatthis/posts/colors/) [iterations](http://apps.npr.org/lookatthis/posts/publichousing/) of this format, we had concluded the story with some combination of share buttons and a promotion for another post to see. Our Google Analytics event tracking had shown that the share buttons were vastly unsuccessful; most users shared the story in ways that didn't use our share buttons.
+In the middle of February, we had three stories approaching launch based around this format: ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/). In [previous](http://apps.npr.org/lookatthis/posts/colors/) [iterations](http://apps.npr.org/lookatthis/posts/publichousing/) of this format, we had concluded the story with some combination of share buttons and a promotion for another post. Our Google Analytics event tracking had shown that the share buttons were vastly unsuccessful; most users shared the story in ways that didn't use our share buttons.
 
-With three opportunities coming up to try something else, we decided to properly test different conversion rates for getting a user to take action at the end of a story. We also concluded that sharing the story was not the most productive action a user could take. Instead, we wanted to encourage users to either support NPR by donating to member stations or, in the case of "A Brother And Sister Fall In Love" and "A Photo I Love", follow our new project [Look At This](http://lookatthisstory.tumblr.com) on various social media.
+With three opportunities coming up to try something else, we decided to properly test different conversion rates for getting a user to take action at the end of a story. We also discussed how sharing the story was not the most productive action a user could take. Instead, we wanted to encourage users to either support NPR by donating to member stations or, in the case of "A Brother And Sister In Love" and "A Photo I Love", follow our new project [Look At This](http://lookatthisstory.tumblr.com) on various social media.
 
 To find out what is the most successful way of getting users to take action, we conducted a live experiment using multivariate testing, a research method that allows us to show users slightly different versions of the same page and assess which version people respond to more positively.
 
@@ -24,9 +24,8 @@ In our tests, the control scenario was simply presenting a user with a link to e
 
 The overall test model worked like this:
 
-Story > Question > Action 
-
-   |_________________^
+<img src="/img/mvt-test-model.png" alt="Test model" />
+<p><small>this is a placeholder diagram</small></p>
 
 When we ran the test, about half of users saw a prompt asking them the Care Question with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, while clicking No revealed a prompt to email us feedback. The other half of users was shown the action we wanted them to take.
 
@@ -46,9 +45,9 @@ Significance is determined by the confidence interval, or how confident you can 
 
 In the following results, we will reveal the results of performing these calculations and determine whether or not our hypotheses proved true.
 
-## "A Brother And Sister Fall In Love"
+## "A Brother And Sister In Love"
 
-The first test we ran happened on ["A Brother And Sister Fall In Love"](http://apps.npr.org/lookatthis/posts/lovestory/). The format of the story is a little different than our typical slide-based story: it is entirely scripted based on an audio story. Rather than allowing users to advance through the slideshow at their own pace, the slides advance in sync with the audio story.
+The first test we ran happened on ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/). The format of the story is a little different than our typical slide-based story: it is entirely scripted based on an audio story. Rather than allowing users to advance through the slideshow at their own pace, the slides advance in sync with the audio story.
 
 Still, it borrowed many of the design elements from our previous slide-based stories, including ending with a conclusion slide. The test for this story was actually two separate A/B tests, whether a user was prompted with the Care Question or not, and whether they were prompted to follow Look At This on social media or support NPR by donating. The Care Question was "Did you love this story?"
 
@@ -70,11 +69,11 @@ Combining all the possibilities we ended up with the following variations:
 
 <div id="responsive-embed-mvt-lovestory">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://127.0.0.1:8000/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-lovestory',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/child.html',
+        'http://127.0.0.1:8000/graphics/mvt-lovestory/child.html',
         {}
     );
 </script>
@@ -83,7 +82,7 @@ Despite the data we lost from our misuse of custom variables with Google Analyti
 
 ## "Life After Death"
 
-One week later, after we had seen the preliminary results of our test from "A Brother And Sister Fall In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This, and there was not an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
+One week later, after we had seen the preliminary results of our test from "A Brother And Sister In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This, and there was not an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
 
 We wanted to confirm that users would convert at a higher percentage when presented with a Care Question first, so we kept the same control scenario. Instead of only using one question, we decided to run a multivariate test with four possible questions. The control scenario and the four question variations each received ~20% of the test traffic. The four possible questions were:
 
@@ -96,11 +95,11 @@ We wanted to confirm that users would convert at a higher percentage when presen
 
 <div id="responsive-embed-mvt-liberia">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://127.0.0.1:8000/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-liberia',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-liberia/child.html',
+        'http://127.0.0.1:8000/graphics/mvt-liberia/child.html',
         {}
     );
 </script>
@@ -109,7 +108,7 @@ Once again, we determined that presenting users with a Care Question before aski
 
 ## "A Photo I Love: Thomas Allen Harris"
 
-A week after "A Brother And Sister Fall In Love", we were able to run another test on a very similar story. It was a slide-based story that was also driven by the audio. We decided to rerun our original test, but fix our errors when logging to Google Analytics to create a better testing environment.
+A week after "A Brother And Sister In Love", we were able to run another test on a very similar story. It was a slide-based story that was also driven by the audio. We decided to rerun our original test, but fix our errors when logging to Google Analytics to create a better testing environment.
 
 We left the same Care Question, "Did you love this story?", and maintained our Look At This follow links.
 
@@ -117,28 +116,30 @@ We left the same Care Question, "Did you love this story?", and maintained our L
 
 <div id="responsive-embed-mvt-harris">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
+<script src="http://127.0.0.1:8000/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
 
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-harris',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-harris/child.html',
+        'http://127.0.0.1:8000/graphics/mvt-harris/child.html',
         {}
     );
 </script>
 
 Once again, we determined that giving users a question before a prompt to take action is a more successful path for conversion. Though only at a 95.58% confidence interval, the follow buttons performed in the same way, but in a less dramatic fashion, with the conversion rate only improving 0.8%. With our third test confirming that the Care Question makes more users go where we want them to go, we feel confident in saying this is something we want to implement by default going forward.
 
-## What We Have Learned So Far
+## Lessons Learned
 
 We learned a lot in a short amount of time: some things about the stories themselves, a lot about the running of live tests and the math behind it. A few insights:
+
+* First, we learned that a Care Question has a positive impact on performance of actions presented at the end of stories. We also demonstrated that the language used to frame the Care Question matters (and so far aligning its tone to that of the story seems to the the right path to take).
 
 * Running the same test twice helped us simply validate that everything was working as planned (we are new to this, so it's not a bad idea to double check) as well as quelch any concerns about the validity of the Care Question hypothesis when run on a more standard slide-based story versus one more coreographed around an audio track.
 
 * One of the most interesting insights beyond the validation of the hypothesis itself, is the realization that, while most places that use multivariate testing to iterate on a product over time, we can only apply lessons learned to another, future story, due to the nature of the stories we tell.
 
-* Also regarding test design, due to the nature of the traffic we usually see for our stories (intense 2-4 days of high volume followed by a long tail of decreased traffic), we need to make sure statistical significance is achieved with the first few days, as running a test for longer doesn't add much at all.
+* Also regarding test design, given the nature of the traffic we usually see for our stories (intense 2-4 days of high volume followed by a long tail of decreased traffic), we need to make sure statistical significance is achieved within the first few days, as running a test for a longer period of time doesn't add much at all.
 
 * Another consequence, we learned, is that sampling our traffic to run a test (a very common practice) is not necessary, and we should expose our entire audience to the test to make the most of it as soon as possible. (This is a nice thing because calculating the right sample size is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect since it varies from story to story)
 
-* Google Analytics automatically samples of your data if your sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture so request an unsampled report (Premium only) so you can be sure your test is valid and reliable. Also, stay away from custom variables on events as a way to identify the variations of your test as GA doesn't support those anymore.
+* Google Analytics automatically samples your data if your sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture so request an unsampled report (Premium only) so you can be sure your test is valid and reliable. Also, stay away from custom variables on events as a way to identify the variations of your test as GA doesn't support those anymore.
