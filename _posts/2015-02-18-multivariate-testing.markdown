@@ -10,9 +10,9 @@ twitter: nprviz
 
 For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements and the ability to navigate between cards. As we have iterated over this format, we have experimented with various tweaks to the presentation, but without a good process for measuring whether these tweaks were actually more successful.
 
-In the middle of February, we had three stories approaching launch based around this format: ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/). In [previous](http://apps.npr.org/lookatthis/posts/colors/) [iterations](http://apps.npr.org/lookatthis/posts/publichousing/) of this format, we had concluded the story with some combination of share buttons and a promotion for another post to see. Our Google Analytics event tracking had shown that the share buttons were vastly unsuccessful; most users shared the story in ways that didn't use our share buttons.
+In the middle of February, we had three stories approaching launch based around this format: ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/). In [previous](http://apps.npr.org/lookatthis/posts/colors/) [iterations](http://apps.npr.org/lookatthis/posts/publichousing/) of this format, we had concluded the story with some combination of share buttons and a promotion for another post. Our Google Analytics event tracking had shown that the share buttons were vastly unsuccessful; most users shared the story in ways that didn't use our share buttons.
 
-With three opportunities coming up to try something else, we decided to properly test different conversion rates for getting a user to take action at the end of a story. We also concluded that sharing the story was not the most productive action a user could take. Instead, we wanted to encourage users to either support NPR by donating to member stations or, in the case of "A Brother And Sister In Love" and "A Photo I Love", follow our new project [Look At This](http://lookatthisstory.tumblr.com) on various social media.
+With three opportunities coming up to try something else, we decided to properly test different conversion rates for getting a user to take action at the end of a story. We also discussed how sharing the story was not the most productive action a user could take. Instead, we wanted to encourage users to either support NPR by donating to member stations or, in the case of "A Brother And Sister In Love" and "A Photo I Love", follow our new project [Look At This](http://lookatthisstory.tumblr.com) on various social media.
 
 To find out what is the most successful way of getting users to take action, we conducted a live experiment using multivariate testing, a research method that allows us to show users slightly different versions of the same page and assess which version people respond to more positively.
 
@@ -24,9 +24,8 @@ In our tests, the control scenario was simply presenting a user with a link to e
 
 The overall test model worked like this:
 
-Story > Question > Action 
-
-   |_________________^
+<img src="/img/posts/mvt-test-model.png" alt="Test model" />
+<p><small>this is a placeholder diagram</small></p>
 
 When we ran the test, about half of users saw a prompt asking them the Care Question with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, while clicking No revealed a prompt to email us feedback. The other half of users was shown the action we wanted them to take.
 
