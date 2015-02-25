@@ -8,6 +8,8 @@ email: visuals@npr.org
 twitter: nprviz
 ---
 
+[Multivariate and AB testing](http://en.wikipedia.org/wiki/A/B_testing) are very popular research methods used to iterate on products over time. But what do you do when your product is always different, like the visual stories we tell? We've been exploring how we to continuously learn from our audience while apply insights to future stories.
+
 For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements and the ability to navigate between cards. As we have iterated over this format, we have experimented with various tweaks to the presentation, but without a good process for measuring whether these tweaks were actually more successful.
 
 In the middle of February, we had three stories approaching launch based around this format: ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/). In [previous](http://apps.npr.org/lookatthis/posts/colors/) [iterations](http://apps.npr.org/lookatthis/posts/publichousing/) of this format, we had concluded the story with some combination of share buttons and a promotion for another post. Our Google Analytics event tracking had shown that the share buttons were vastly unsuccessful; most users shared the story in ways that didn't use our share buttons.
@@ -131,14 +133,14 @@ We learned a lot in a short amount of time: some things about the stories themse
 
 * Running the same test twice helped us simply validate that everything was working as planned. We are new to this, so it's not a bad idea to double check. We also quelched any concerns about the validity of the Care Question hypothesis when run on a more standard slide-based story versus one more choreographed around an audio track.
 
-* One of the most interesting insights beyond the validation of the hypothesis itself is the realization that, while most places use multivariate testing to iterate on a product over time, we can only apply lessons learned to another, future story, due to the nature of the stories we tell.
-
 * Also regarding test design, given the nature of the traffic we usually see for our stories (intense 2-4 days of high volume followed by a long tail of decreased traffic), we need to make sure statistical significance is achieved within the first few days, as running a test for a longer period of time doesn't add much at all.
 
 * Another consequence of our traffic patterns is that sampling our traffic to run a test (a very common practice) is not necessary, and we should expose our entire audience to the test to make the most of it as soon as possible. This is a nice thing because calculating the right sample size is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect since it varies from story to story.
 
 * Double check your math. We made several mistakes while analyzing the data simply because this is not something we do every day. Having multiple people look at the analysis as it was happening, helped us both correct errors and get a better understanding of how to make sense of the numbers. 
 
-* Google Analytics automatically samples your reporting data if your sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture of your audience, so request an unsampled report (Premium only) so can ensure your test is valid and reliable. Also, stay away from custom variables on events as a way to identify the variations of your test as GA doesn't support those anymore.
+* Google Analytics automatically samples your reporting data if your sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture of your audience, so request an unsampled report (available from [GA Premium](https://www.google.com/analytics/premium/) only) so you can ensure your test is valid and reliable. 
+
+* Also, with Google Analytics dropping [support for custom variables](https://developers.google.com/analytics/devguides/collection/upgrade/faq#custom-vars), use distinct events to identify the variations of your test instead.
 
 
