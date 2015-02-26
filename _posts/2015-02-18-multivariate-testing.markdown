@@ -8,7 +8,7 @@ email: visuals@npr.org
 twitter: nprviz
 ---
 
-[Multivariate and AB testing](http://en.wikipedia.org/wiki/A/B_testing) are generally used to iterate on products over time. But what do you do when your product is always different, like the visual stories we tell? We've been exploring how to continuously learn from our audience while apply insights to future stories.
+[Multivariate and AB testing](http://en.wikipedia.org/wiki/A/B_testing) are generally used to iterate on products over time. But what do you do when your product is always different, like the visual stories we tell? We've been exploring how to continuously learn from our audience while applying insights to future stories.
 
 For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements. We have made various tweaks to the presentation, but since each story is substantially different, it's hard to know know definitively what works.
 
