@@ -246,6 +246,21 @@ table.data td.amt { text-align: right; }
     .grid .text-grid a {bottom: 5%;}
 }
 
+@media print
+{
+    body { padding: 0 60px; }
+    .container { width:100%; }
+    .row { margin-left:0; }
+    #small-logo { display:block; }
+    #small-logo a { font-size: 18px; }
+    #small-logo a img { height: 18px; }
+    #rail { display:none; }
+    #content { width:100%; margin:0; }
+    .entry h1 { font-size:24px; }
+    .entry section { font-size:12px; }
+    #disqus_thread { display:none; }
+}
+
 
 
 /*styling to get books14 images side-by-side*/
