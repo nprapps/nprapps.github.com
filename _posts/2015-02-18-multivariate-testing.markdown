@@ -8,11 +8,11 @@ email: visuals@npr.org
 twitter: nprviz
 ---
 
-[Multivariate and AB testing](http://en.wikipedia.org/wiki/A/B_testing) are very popular research methods used to iterate on products over time. But what do you do when your product is always different, like the visual stories we tell? We've been exploring how to continuously learn from our audience while apply insights to future stories.
+[Multivariate and AB testing](http://en.wikipedia.org/wiki/A/B_testing) are generally used to iterate on products over time. But what do you do when your product is always different, like the visual stories we tell? We've been exploring how to continuously learn from our audience while apply insights to future stories.
 
-For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements and the ability to navigate between cards. We have experimented with various tweaks to the presentation, but since each story is substantially different, it's been hard to know what works.
+For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements. We have made various tweaks to the presentation, but since each story is substantially different, it's hard to know know definitively what works.
 
-With three stories approaching launch in the middle of February (["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/)), we decided to properly test different ways to get a user to take action at the end of a story. We wanted to encourage users to support NPR or, in the case of "A Brother And Sister In Love" and "A Photo I Love", to follow our new project [Look At This](http://lookatthisstory.tumblr.com) on social media.
+With three stories approaching launch in the middle of February (["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/)), we decided to test different ways to get a user to take action at the end of a story. We wanted to encourage users to support NPR or, in the case of "A Brother And Sister In Love" and "A Photo I Love", to follow our new project [Look At This](http://lookatthisstory.tumblr.com) on social media.
 
 To find out, we conducted live experiments using multivariate testing, a research method that allows us to show users slightly different versions of the same page and assess which version people respond to more positively.
 
@@ -27,9 +27,9 @@ We call this question, which changed slightly on each project, the "Care Questio
 The overall test model worked like this:
 
 <img src="/img/mvt-test-model.png" alt="Test model" />
-<p><small>The variations exposed two possible paths to users</small></p>
+<p><small>The test exposed two possible paths to users</small></p>
 
-When we ran the test, we showed half of users the Care Question with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, clicking No revealed a prompt to email us feedback. The control group was shown the action we wanted them to take.
+When we ran the test, we showed half of users the Care Question with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, clicking No revealed a prompt to email us feedback. The control group was shown the action we wanted them to take, without a preceeding question.
 
 We were able to run these tests at about equal intervals with [a small amount of code](https://github.com/nprapps/lookatthis/blob/master/posts/fugelsang/www/js/app.js#L204-L225).
 
@@ -37,7 +37,7 @@ In this blog post, we will show the results, how we determined them and what we 
 
 ## Process
 
-When a user reached a conclusion slide, we sent an event to Google Analytics to log which set of tests ran. 
+When a user reached the conclusion slide, we sent an event to Google Analytics to log which set of tests ran. 
 
 We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the subsequent actions (support link, each of the follow links and the feedback email link). 
 
@@ -148,10 +148,10 @@ We learned a lot in a short amount of time: some things about the stories themse
 
 * Calculating the right sample size for a test is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect (since it varies from story to story), so we found we don't need to do that at all. Instead, we can simply expose the entire audience for a story to the test we run and make the most of it as soon as possible. 
 
-* Double check your math. We made several mistakes while analyzing the data simply because this is not something we do every day. Having multiple people look at the analysis as it was happening, helped us both correct errors and get a better understanding of how to make sense of the numbers. 
+* We made several mistakes while analyzing the data simply because this is not something we do every day. Having multiple people look at the analysis as it was happening, helped us both correct errors and get a better understanding of how to make sense of the numbers. 
 
 * Google Analytics automatically samples your reporting data if your sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture of your audience, so request an unsampled report (available from [GA Premium](https://www.google.com/analytics/premium/) only) so you can ensure your test is valid and reliable. 
 
-* Also, with Google Analytics dropping [support for custom variables](https://developers.google.com/analytics/devguides/collection/upgrade/faq#custom-vars), use distinct events to identify the variations of your test instead.
+* Also, with Google Analytics dropping [support for custom variables](http://developers.google.com/analytics/devguides/collection/upgrade/faq#custom-vars), use distinct events to identify the variations of your test instead.
 
 
