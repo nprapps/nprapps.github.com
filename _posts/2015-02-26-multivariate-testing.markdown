@@ -10,7 +10,7 @@ twitter: nprviz
 
 [Multivariate and AB testing](http://en.wikipedia.org/wiki/A/B_testing) are generally used to iterate on products over time. But what do you do when your product is always different, like the visual stories we tell? We've been exploring how to continuously learn from our audience while applying insights to future stories.
 
-For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements. We have made various tweaks to the presentation, but since each story is substantially different, it's hard to know know definitively what works.
+For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements. We have made various tweaks to the presentation, but since each story is substantially different, it's hard to know definitively what works.
 
 With three stories approaching launch in the middle of February (["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/), ["Life After Death"](http://apps.npr.org/life-after-death) and ["A Photo I Love: Thomas Allen Harris"](http://apps.npr.org/lookatthis/posts/harrisloves/)), we decided to test different ways to get a user to take action at the end of a story. We wanted to encourage users to support NPR or, in the case of "A Brother And Sister In Love" and "A Photo I Love", to follow our new project [Look At This](http://lookatthisstory.tumblr.com) on social media.
 
