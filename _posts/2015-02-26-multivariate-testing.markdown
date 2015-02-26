@@ -8,7 +8,7 @@ email: visuals@npr.org
 twitter: nprviz
 ---
 
-[Multivariate and AB testing](http://en.wikipedia.org/wiki/A/B_testing) are generally used to iterate on products over time. But what do you do when your product is always different, like the visual stories we tell? We've been exploring how to continuously learn from our audience while applying insights to future stories.
+[Multivariate and AB testing](http://en.wikipedia.org/wiki/A/B_testing) are generally used to iterate on products over time. But what do you do when your product is always different, like the visual stories we tell? 
 
 For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements. We have made various tweaks to the presentation, but since each story is substantially different, it's hard to know definitively what works.
 
@@ -20,7 +20,7 @@ In multivariate testing, you determine a control scenario (something you already
 
 (**Note**: You will see the term multivariate testing, A/B testing or split testing to discuss experiments like this. While there is a technical difference between the implementation of these various methods, they all seek to accomplish the same thing so we are not going to worry too much about accuracy of the label for the purposes of discussing what we learned.)
 
-In the control scenario we presented a user with a link to either support public radio or follow us on social media. We hypothesized that presenting users with a yes or no question that asked them how the story made them feel, would make them more likely to take action. 
+In the control scenario we presented a user with a link to either 1) support public radio or 2) follow us on social media. We hypothesized that users would be more likely to take action if we presented them with a yes or no question that asked them how the story made them feel.
 
 We call this question, which changed slightly on each project, the "Care Question", as it always tried to gauge whether a user cared about a story.
 
@@ -29,7 +29,7 @@ The overall test model worked like this:
 <img src="/img/mvt-test-model.png" alt="Test model" />
 <p><small>The test exposed two possible paths to users</small></p>
 
-When we ran the test, we showed half of users the Care Question with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, clicking No revealed a prompt to email us feedback. The control group was shown the action we wanted them to take, without a preceeding question.
+When we ran the test, we showed half of users (who reached the final slide) the Care Question with two buttons, “Yes” and “No”. Clicking Yes brought them to one of the two actions listed above, clicking No revealed a prompt to email us feedback. The control group was shown the action we wanted them to take, without a preceeding question.
 
 We were able to run these tests at about equal intervals with [a small amount of code](https://github.com/nprapps/lookatthis/blob/master/posts/fugelsang/www/js/app.js#L204-L225).
 
@@ -39,7 +39,7 @@ In this blog post, we will show the results, how we determined them and what we 
 
 When a user reached the conclusion slide, we sent an event to Google Analytics to log which set of tests ran. 
 
-We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the subsequent actions (support link, each of the follow links and the feedback email link). 
+We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the subsequent actions (support link, each of the follow links, and the feedback email link). 
 
 <img src="/img/mvt-care-question.png" alt="Example Care Question" />
 <p><small>The Care Question used in A Brother And Sister In Love</small></p>
@@ -90,7 +90,7 @@ One week later, after we had seen the preliminary results of our test from "A Br
 
 ![An example of one of our question variations](/img/mvt-life-after-death-question-A.png)
 
-We wanted to confirm that users would convert at a higher percentage when presented with a Care Question first, so we kept the same control scenario. Instead of only using one question, we decided to run a multivariate test with four possible questions. The control scenario and the four question variations each received ~20% of the test traffic. The four possible questions were:
+We wanted to confirm that users would convert at a higher percentage when presented with a Care Question first, so we kept the same control scenario. Instead of only using one question, we decided to run a multivariate test with four possible different phrasings. The control scenario and the four question variations each received ~20% of the test traffic. The four possible questions were:
 
 * Did you like this story?
 * Did you like this story? (It helps us to know)
