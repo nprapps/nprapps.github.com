@@ -14,11 +14,11 @@ Most App Template developers only need to consult the [Configuring your system](
 
 ## Why OAuth?
 
-Prior to this change, the App Template accessed Google spreadsheets with a user account and password. These account details were accessed from environment variables stored in [cleartext](http://en.wikipedia.org/wiki/Plaintext). Storing a password in cleartext is a bad security practice, and the method led to other dubious practices like sharing credentials for a common Google account. 
+Prior to this change, the App Template accessed Google spreadsheets with a user account and password. These account details were accessed from environment variables stored in [cleartext](http://en.wikipedia.org/wiki/Plaintext). Storing a password in cleartext is a bad security practice, and the method led to other dubious practices like sharing credentials for a common Google account.
 
-[OAuth](http://en.wikipedia.org/wiki/OAuth) is a protocol for accessing online resources on behalf of a user without a password. The user must authenticate with the service using her password to allow the app to act on her behalf. In turn the app receives a magic access token. Instead of directly authenticating the user with the service, the application uses the token to access resources. 
+[OAuth](http://en.wikipedia.org/wiki/OAuth) is a protocol for accessing online resources on behalf of a user without a password. The user must authenticate with the service using her password to allow the app to act on her behalf. In turn the app receives a magic access token. Instead of directly authenticating the user with the service, the application uses the token to access resources.
 
-There are many advantages to this approach. These access tokens can be revoked or invalidated and if used properly they are always tied to an individual user account. An application can force all users to re-authenticate by resetting the application credentials. Accessing Google Drive resources with this method is also quite a bit faster than our previous technique.
+There are many advantages to this approach. These access tokens can be revoked or invalidated. If used properly, OAuth credentials are always tied to an individual user account. An application can force all users to re-authenticate by resetting the application credentials. Accessing Google Drive resources with this method is also quite a bit faster than our previous technique.
 
 ## Setting up the Google API application
 
