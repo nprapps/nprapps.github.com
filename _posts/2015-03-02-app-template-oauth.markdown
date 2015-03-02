@@ -8,9 +8,9 @@ email: visuals@npr.org
 twitter: nprviz
 ---
 
-Suyeon Son and David Eads re-worked the authentication mechanism for accessing Google Spreadsheets with the NPR Visuals App Template. This is a significant change for App Template users. Here’s why we did it and how it works.
+*Suyeon Son and David Eads re-worked the authentication mechanism for accessing Google Spreadsheets with the NPR Visuals App Template. This is a significant change for App Template users. Here’s why we did it and how it works.*
 
-Most App Template developers only need to consult the [Configuring your system](#configure) and [Authenticating](#authenticate) sections of this post, provided someone on your team has gone through the process of creating a Google API application and given you credentials.
+*Most App Template developers only need to consult the [Configuring your system](#configure) and [Authenticating](#authenticate) sections of this post, provided someone on your team has gone through the process of creating a Google API application and given you credentials.*
 
 ## Why OAuth?
 
