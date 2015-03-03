@@ -127,7 +127,7 @@ By default, credentials are global -- once you’re authenticated for one app te
 GOOGLE_OAUTH_CREDENTIALS_PATH = '~/.special_project_credentials'
 {% endhighlight %}
 
-Finally, the Google Doc access mechanism has changed. If you need to access a Google spreadsheet that's not involved with the default COPY rig, use the new `get_document` helper function. `get_document()` takes two parameters: a spreadsheet key and path to write the exported Excel file. Here's an example of what you might do:
+Finally, the Google Doc access mechanism has changed. If you need to access a Google spreadsheet that's not involved with the default COPY rig, use the new `get_document(key, file_path)` helper function. The function takes two parameters: a spreadsheet key and path to write the exported Excel file. Here's an example of what you might do:
 
 {% highlight python %}
 from copytext import Copy
