@@ -46,7 +46,7 @@ Finally, create client credentials by clicking “Credentials” in the left han
 
 <img src="/img/posts/oauth-client-id-create.png"/>
 
-Make sure “Web application” is selected. Set the Javascript origins to “http://localhost:8000” and “http://127.0.0.1:8000”. Set the Authorized Redirect URIs to “http://localhost:8000/authenticate/” and “http://127.0.0.1:8000/authenticate/”:
+Make sure “Web application” is selected. Set the Javascript origins to “http://localhost:8000”, “http://127.0.0.1:8000”, "http://localhost:8888" and "http://127.0.0.1:8888". Set the Authorized Redirect URIs to “http://localhost:8000/authenticate/”, “http://127.0.0.1:8000/authenticate/”, "http://localhost:8888/authenticate/" and "http://127.0.0.1:8888".
 
 <img src="/img/posts/oauth-create-details.png"/>
 
