@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Putting Radio On The Televison"
+title: "Putting Radio On The Television"
 description: "How people used the 2014 Election Party, and what we learned."
 
 author: Christopher Grokopf and Alyson Hurt

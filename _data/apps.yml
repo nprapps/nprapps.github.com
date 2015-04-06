@@ -345,3 +345,9 @@
   image: "http://apps.npr.org/lookatthis/posts/harrisloves/assets/fb.jpg"
   url: http://apps.npr.org/lookatthis/posts/harrisloves
   github_url: https://github.com/nprapps/lookatthis
+- name: "The Austin 100"
+  description: "Put on your headphones and listen to 100 of NPR Music's favorite songs from SXSW 2015."
+  date: "March 3, 2015"
+  image: "http://apps.npr.org/austin/assets/img/austin100_facebook.jpg"
+  url: http://apps.npr.org/austin/
+  github_url: https://github.com/nprapps/austin
