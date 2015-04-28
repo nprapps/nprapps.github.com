@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Better, faster, more: recent improvements to the Daily Graphics rig"
+title: "Better, faster, more: recent improvements to our dailygraphics rig"
 description: "A week of hacking on the daily graphics rig allow us to work faster and with more flexible components."
 author: Christopher Groskopf
 email: cgroskopf@npr.org
