@@ -1,6 +1,6 @@
 ---
 layout: redirect
-redirect_url: /2015/02/18/summer-internships.html
+redirect_url: /2015/02/19/summer-internships.html
 
 title: "Be our summer intern!"
 description: "Do you design? Develop? Love the web? Love democracy? Want to spend a summer in Washington, DC?"
