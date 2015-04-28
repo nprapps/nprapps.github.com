@@ -60,7 +60,7 @@ Our new base template also now includes code for embedding Google Analytics with
 
 ## Improvements to the graphic viewer (parent.html)
 
-<img src="/img/posts/dailygraphics-parent.png">
+<img src="/img/posts/dailygraphics-parent.gif">
 
 Perhaps the most obvious changes to the dailygraphics rig are our suite of improvements to the graphic preview template (a.k.a. ``parent.html``). These changes are aimed at making it easier to see how the final graphic will work and making it faster to test. They include:
 
