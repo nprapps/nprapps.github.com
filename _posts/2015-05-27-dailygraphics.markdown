@@ -7,7 +7,7 @@ email: cgroskopf@npr.org
 twitter: onyxfish
 ---
 
-In the past couple weeks the Visuals team has consciously shifted resources to focus on the parts of our work that have the highest impact. As part of this reorganization the graphics team has grown from one (Graphics Editor [Alyson Hurt](https://twitter.com/alykat)) to two&mdash;the second being me! Having a dedicated engineer working on daily graphics means we aren't only doubling down on both the amount of content we can create and on the tools we use to create it. For the last week I've been sprinting on a slew of improvements to our [dailygraphics](https://github.com/nprapps/dailygraphics) rig. Most of these are small changes, but collectively they represent the biggest iteration we've made to dailygraphics since creating it over a year ago.
+In the past couple weeks the Visuals team has consciously shifted resources to focus on the parts of our work that have the highest impact. As part of this reorganization the graphics team has grown from one (Graphics Editor [Alyson Hurt](https://twitter.com/alykat)) to two&mdash;the second being me! Having a dedicated engineer working on daily graphics means we are doubling down both the amount of content we can create and on the tools we use to create it. For the last week I've been sprinting on a slew of improvements to our [dailygraphics](https://github.com/nprapps/dailygraphics) rig. Most of these are small changes, but collectively they represent the biggest iteration we've made to dailygraphics since creating it over a year ago.
 
 ## OAuth
 
