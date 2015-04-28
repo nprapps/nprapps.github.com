@@ -11,7 +11,7 @@ In the past couple weeks the Visuals team has consciously shifted resources to f
 
 ## OAuth
 
-Amongst a group of features we've ported over from the [app-template](https://github.com/nprapps/app-template) is the addition of an OAuth support for access to our ["copytext"](https://github.com/nprapps/dailygraphics#connecting-to-a-google-spreadsheet) Google spreadsheets. This means Google credentials no longer need to be stored in environment variables, which increases to security and portability. (Hat tip to [David Eads](https://twitter.com/eads) for untangling OAuth for all of our projects.)
+Amongst a group of features we've ported over from the [app-template](https://github.com/nprapps/app-template) is the addition of an OAuth support for access to our ["copytext"](https://github.com/nprapps/dailygraphics#connecting-to-a-google-spreadsheet) Google spreadsheets. This means Google credentials no longer need to be stored in environment variables, which increases security and portability. (Hat tip to [David Eads](https://twitter.com/eads) for untangling OAuth for all of our projects.)
 
 This change also allowed us to implement a more significant feature: automatically creating copytext spreadsheets. Each time you add a graphic a spreadsheet will be automatically created. (You can opt out of this by not specifying a ``COPY_GOOGLE_DOC_KEY`` in your base graphic template or by deleting ``graphic_config.py`` entirely.)
 
