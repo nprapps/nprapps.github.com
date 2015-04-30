@@ -30,3 +30,9 @@
   image: "http://31.media.tumblr.com/9133de6d9b6ad0c367fd74c6201d7772/tumblr_mumkh6pJxp1swbibso1_400.jpg"
   url: https://github.com/nprapps/tumble
   github_url: https://github.com/nprapps/tumble
+- name: "Waterbug"
+  description: "A tool for putting watermarks and proper attribution onto photos suitable for Twitter."
+  date:
+  image: "https://github.com/nprapps/waterbug/raw/master/examples/waterbug-ui.png"
+  url: https://github.com/nprapps/waterbug
+  github_url: https://github.com/nprapps/waterbug
