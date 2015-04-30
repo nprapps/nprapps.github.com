@@ -351,3 +351,15 @@
   image: "http://apps.npr.org/austin/assets/img/austin100_facebook.jpg"
   url: http://apps.npr.org/austin/
   github_url: https://github.com/nprapps/austin
+- name: "A Photo I Love: Reid Wiseman"
+  description: "In space, Astronaut Reid Wiseman was also a photographer. His Tweeted some amazing photos down to Earth -- and talks about one of his favorites."
+  date: "March 27, 2015"
+  image: "http://apps.npr.org/lookatthis/posts/spacepix/assets/fb.jpg"
+  url: http://apps.npr.org/lookatthis/posts/spacepix
+  github_url: https://github.com/nprapps/lookatthis
+- name: "The Bus Station"
+  description: "Last year, 21,000 inmates were released in Huntsville, Texas -- one of the largest prison towns in America. For most of them, the gateway to the free world is the Huntsville Greyhound station. Here is the story by John Burnett, with photos by David Gilkey.."
+  date: "April 27, 2015"
+  image: "http://apps.npr.org/lookatthis/posts/bus-station/assets/lead-art.jpg"
+  url: http://apps.npr.org/lookatthis/posts/bus-station
+  github_url: https://github.com/nprapps/lookatthis
