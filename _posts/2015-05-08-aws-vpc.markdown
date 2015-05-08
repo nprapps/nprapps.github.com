@@ -1,0 +1,39 @@
+---
+layout: post
+title: "Tech note: Connecting to an Amazon RDS database from a legacy EC2 server"
+description: "New Amazon RDS instances require the use of Virtual Private Cloud networking, which can cause connectivity issues for old EC2 instances. Here's how to connect."
+author: David Eads
+email: deads@npr.org
+twitter: eads
+---
+
+Amazon’s Relational Database Service (RDS) is an excellent way to host databases. The service is affordable, low-maintenance, and self-contained. If you use the Amazon cloud, there are precious few reasons to maintain your own database server.
+
+At some point, Amazon started requiring RDS instances to use Virtual Private Cloud (VPC) networking. However, if you’re like the NPR Visuals team, you might have older Amazon Elastic Cloud Compute (EC2) server instances that don’t use VPC but need to connect to RDS databases. Even if you don't, you might need to connect to your RDS instance locally.
+
+As is often the case with Amazon, it's not entirely clear how to configure the correct security rules to allow access from outside the VPC. Here's what worked for us.
+
+During creation, make sure your RDS instance is publicly accessible. This setting cannot be edited later.
+
+<img src="/img/posts/aws-vpc-accessible.png" alt="Make your RDS instance publicly accessible" />
+
+Either option for security group will suffice, though creating a new security group will help isolate the network access rules for this database instance.
+
+Once created, click on the security group from the instance details:
+
+<img src="/img/posts/aws-vpc-sg.png" alt="Click the security group link" />
+
+A new tab or window will open with the security group selected. Click “inbound rules” in the lower window pane, then click the "edit" button to add rules to allow the IP addresses you want to access the RDS instance
+
+<img src="/img/posts/aws-vpc-inbound.png" alt="Click inbound tab, then click edit" />
+
+Now you can configure the inbound rules in the modal that opens:
+
+<img src="/img/posts/aws-vpc-sg-modal.png" alt="Edit inbound rules in the modal" />
+
+I found a lot of places in the VPC interface to set inbound rules, but only the security group rules actually worked to allow local machines and non-VPC EC2 instances access to the RDS database.
+
+If you know a better way to handle this, let us know in the comments!
+
+
+
