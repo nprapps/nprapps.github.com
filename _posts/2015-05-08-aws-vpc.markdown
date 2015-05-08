@@ -17,13 +17,13 @@ During creation, make sure your RDS instance is publicly accessible. This settin
 
 <img src="/img/posts/aws-vpc-accessible.png" alt="Make your RDS instance publicly accessible" />
 
-Either option for security group will suffice, though creating a new security group will help isolate the network access rules for this database instance.
+For the security group setting, either option will suffice, though creating a new security group will help isolate the network access rules for this database instance.
 
 Once created, click on the security group from the instance details:
 
 <img src="/img/posts/aws-vpc-sg.png" alt="Click the security group link" />
 
-A new tab or window will open with the security group selected. Click “inbound rules” in the lower window pane, then click the "edit" button to add rules to allow the IP addresses you want to access the RDS instance
+A new tab or window will open with the security group selected. Click the “Inbound” tab in the lower window pane, then click the "Edit" button to add rules to allow the IP addresses you want to access the RDS instance
 
 <img src="/img/posts/aws-vpc-inbound.png" alt="Click inbound tab, then click edit" />
 
