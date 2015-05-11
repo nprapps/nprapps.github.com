@@ -11,9 +11,9 @@ twitter: dannydb
 
 <p class="caption"><small>A hexagon tile grid, square tile grid and geographic choropleth map. Maps by Danny DeBelius and Alyson Hurt.</small></p>
 
-As the saying goes, nothing is certain in this life but death, taxes and requests for geographic data to be plotted on a map.
+As the saying goes, nothing is certain in this life but death, taxes and requests for geographic data to be represented on a map.
 
-When that data is associated with geographic areas, the choropleth map is a tried and true visualization technique, but not without significant dangers depending on the nature of the data and map areas represented. Clarity of mapped state-level data, for instance, is frequently complicated by the reality that most states in the western U.S. carry far more visual weight than the northeastern states.
+For area data, the choropleth map is a tried and true visualization technique, but not without significant dangers depending on the nature of the data and map areas represented. Clarity of mapped state-level data, for instance, is frequently complicated by the reality that most states in the western U.S. carry far more visual weight than the northeastern states.
 
 ![Are more northeastern states shaded than western? That’s hard to say with this type of choropleth. Whatever, though. West coast, best coast, right?](/img/posts/2015-05-11-hex-tile-maps/geo-choropleth.png)
 
