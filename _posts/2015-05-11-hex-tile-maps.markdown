@@ -13,7 +13,7 @@ twitter: dannydb
 
 As the saying goes, nothing is certain in this life but death, taxes and requests for geographic data to be represented on a map.
 
-For area data, the choropleth map is a tried and true visualization technique, but not without significant dangers depending on the nature of the data and map areas represented. Clarity of mapped state-level data, for instance, is frequently complicated by the reality that most states in the western U.S. carry far more visual weight than the northeastern states.
+For area data, the choropleth map is a tried and true visualization technique, but not without significant dangers depending on the nature oif the data and map areas represented. Clarity of mapped state-level data, for instance, is frequently complicated by the reality that most states in the western U.S. carry far more visual weight than the northeastern states.
 
 ![Are more northeastern states shaded than western? That’s hard to say with this type of choropleth. Whatever, though. West coast, best coast, right?](/img/posts/2015-05-11-hex-tile-maps/geo-choropleth.png)
 
@@ -27,7 +27,7 @@ One popular solution to this problem is the cartogram — maps where geography i
 
 <p class="caption"><small>A cartogram of the U.S. with states sized proportionally by electoral votes. Map by Adam Cole.</small></p>
 
-Recently, a third variation of choropleth has gained popularity — the tile grid map. In this version, the map areas are reduced to a uniform size and shape (typically a square) and the tiles are arranged to roughly approximate their real-world geographic locations. Tile grid maps avoid the visual imbalances inherent to traditional choropleths, while keeping the map a quick read by forgoing the complexity of a combined choropleth/cartogram.
+Recently, a third variation of choropleth has gained popularity — the tile grid map. In this version, the map areas are reduced to a uniform size and shape (typically a square) and the tiles are arranged to roughly approximate their real-world geographic locations. It's still a cartogram of sorts, but where the area sizing is based on the shared value of one "map unit." Tile grid maps avoid the visual imbalances inherent to traditional choropleths, while keeping the map a quick read by forgoing the complexity of cartograms with map areas sized by a variable data point.
 
 Tile grid maps are a great option for mapped state data where population figures are not part of the story we’re trying to tell with the map. Several news organizations have used this approach to great effect, including [FiveThirtyEight](http://fivethirtyeight.com/features/where-your-state-gets-its-money/), [Bloomberg Business](http://www.bloomberg.com/graphics/2015-pace-of-social-change/),  [The Guardian](http://www.theguardian.com/us-news/ng-interactive/2014/oct/22/-sp-voting-rights-identification-how-friendly-is-your-state), [The Washington Post](http://www.washingtonpost.com/graphics/health/how-fast-does-measles-spread/) and [The New York Times](http://www.nytimes.com/interactive/2013/06/26/us/scotus-gay-marriage.html).
 
@@ -65,7 +65,7 @@ In case you were wondering, news dev Twitter loves talking about maps:
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-We recently published our [first use of the hexagon tile grid map](http://www.npr.org/blogs/itsallpolitics/2015/04/28/402774189/activists-urge-states-to-protect-the-civil-rights-of-lgbt-people) to show the states that currently have laws restricting discrimination in employment, housing and public accommodations based on sexual orientation, gender identity and gender expression.
+We recently published our [first use of the hexagon tile grid map](http://www.npr.org/blogs/itsallpolitics/2015/04/28/402774189/activists-urge-states-to-protect-the-civil-rights-of-lgbt-people) to show the states that currently have laws restricting discrimination in employment, housing and public accommodations based on sexual orientation, gender identity and gender expression. The hex grid tile map also made appearances in several presentations of last week's U.K. election results, including those by [The Guardian](http://www.theguardian.com/politics/ng-interactive/2015/may/07/live-uk-election-results-in-full), [Bloomberg Business](http://www.bloomberg.com/graphics/2015-uk-election/) and [The Economist](http://www.economist.com/news/special-report/21647798-why-election-exceptionally-hard-predict-aint-got-swing?fsrc=scn/fb/te/pe/ed/aintgotthatswing).
 
 What do you think? Vote in the poll below!
 
