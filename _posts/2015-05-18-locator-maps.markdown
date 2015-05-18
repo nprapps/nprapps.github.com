@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simplifying Map Production"
-description: "tk tk tk"
+description: "We're experimenting with making simple locator maps in D3 (bypassing ArcMap), with geo data processed through a new command line utility called mapturner."
 author: Alyson Hurt
 email: ahurt@npr.org
 twitter: alykat
