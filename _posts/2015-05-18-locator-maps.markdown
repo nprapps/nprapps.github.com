@@ -154,7 +154,7 @@ We've rolled sample map code into our [dailygraphics rig](https://github.com/npr
 
 * This process will NOT produce finished maps — and is not intended to do so. Our goal is to simplify one part of the process and get someone, say, 80 percent of the way to a basic map. It still requires craft on the part of the map-maker — research, judgement, design and polish.
 
-* These maps are only as good as their source data and the regional knowledge of the person making them. For example, the Natural Earth country shapefiles still include Crimea as part of Ukraine. Depending on where your newsroom stands on that, this may mean extra work to specially call out Crimea as a [disputed territory](http://opennews.kzhu.io/map-disputes/#crimea).
+* These maps are only as good as their source data and the regional knowledge of the person making them. For example, the Natural Earth country shapefiles still include Crimea as part of Ukraine. Depending on where your newsroom stands on that, this may mean extra work to specially call out Crimea as a [disputed territory](http://www.npr.org/sections/thetwo-way/2014/04/12/302337754/google-maps-displays-crimean-border-differently-in-russia-u-s).
 
 * When everything's in code, it becomes a lot harder to work with vague boundaries and data that is not in geo format. I can't just highlight and clip an area in Illustrator. We'll have to figure out how to handle this as we go. (Any suggestions? Please leave a comment!)
 
