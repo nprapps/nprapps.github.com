@@ -113,7 +113,7 @@ Mapturner currently supports SHP, JSON and CSV files.
 
 I've been pretty impressed with the relative ease of using D3 to [render maps](https://github.com/nprapps/dailygraphics/blob/master/graphic_templates/locator_map/js/graphic.js#L109-L135) and test [projections](https://github.com/mbostock/d3/wiki/Geo-Projections). Need to adjust the scope of the map? It might just be a matter of adjusting the map scale and centroid (and, if necessary, expanding the overall bounding-box and re-running the mapturner script) — much faster than redrawing a flat map.
 
-Label positioning is a tricky thing. So far, the best way I've found to deal with it is to set up [an object at the top of the JS with all the nit-picky adjustments, and then checking for that when the labels are rendered.
+Label positioning is a tricky thing. So far, the best way I've found to deal with it is to set up an object at the top of the JS with all the nit-picky adjustments, and then checking for that when the labels are rendered.
 
     var CITY_LABEL_ADJUSTMENTS = [];
     CITY_LABEL_ADJUSTMENTS['Biratnagar'] = { 'dy': -3 };
@@ -123,7 +123,7 @@ Label positioning is a tricky thing. So far, the best way I've found to deal wit
     CITY_LABEL_ADJUSTMENTS['Pokhara'] = { 'text-anchor': 'end', 'dx': -6 };
     CITY_LABEL_ADJUSTMENTS['Kanpur'] = { 'dy': 12 };
 
-Responsiveness makes label positioning even more of a challenge. In the Nepal example, I used LESS in a media query to hide cities above a certain scalerank on smaller screens.
+Responsiveness makes label positioning even more of a challenge. In the Nepal example, I gave each label a class corresponding to its scalerank, and then used LESS in a media query to hide cities above a certain scalerank on smaller screens.
 
     @media screen and (max-width: 480px) {
         .city-labels text,
