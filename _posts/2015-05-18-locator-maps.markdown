@@ -13,11 +13,11 @@ When news happens in locations that our audience may not know very well, a map s
 
 But good maps take time.*
 
-In [ArcMap](http://www.esri.com/software/arcgis), I'll assemble the skeleton of my map with shapefiles from [Natural Earth](http://naturalearthdata.com) and other sources and find an appropriate projection. Then I'll export it to .AI format and bring it into Adobe Illustrator for styling. (In the example below, I also separately exported a raster topography layer.) And then I'll port the final thing, layer by layer, to Adobe Photoshop, applying layer effects and sharpening straight lines as necessary.
+In [ArcMap](http://www.esri.com/software/arcgis), I'll assemble the skeleton of my map with shapefiles from [Natural Earth](http://naturalearthdata.com) and other sources and find an appropriate projection. Then I'll export it to .AI format and bring it into Adobe Illustrator for styling. (In the example below, I also separately exported a [raster layer](http://www.naturalearthdata.com/downloads/10m-raster-data/) for shaded relief.) And then I'll port the final thing, layer by layer, to Adobe Photoshop, applying layer effects and sharpening straight lines as necessary.
 
 ![Mapping process](/img/posts/map-arc-process.png)
 
-_(* Note: I do not claim to be a professional cartographer, and I know I still have a lot to learn.)_
+_(* Note: I enjoy making maps, but I am unqualified to call myself a cartographer. I owe much, though, to the influence of cartographer colleagues and GIS professors.)_
 
 I concede that this workflow has some definite drawbacks:
 
@@ -32,9 +32,6 @@ I concede that this workflow has some definite drawbacks:
 * Nothing's in version control.
 
 So for the most recent round of [Serendipity Day](http://www.npr.org/sections/inside/2011/10/14/141312774/happy-accidents-the-joy-of-serendipity-days) at NPR (an internal hackday), I resolved to explore ways to improve the process for at least very simple locator maps -- and maybe bypass the expensive software altogether.
-
-<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/alykat">@alykat</a> LOCATORS UNTO THE LOCATOR GOD</p>&mdash; Appropriate Tributes (@godtributes) <a href="https://twitter.com/godtributes/status/599303492684095489">May 15, 2015</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Filtering And Converting Geodata
 
@@ -114,11 +111,40 @@ Mapturner currently supports SHP, JSON and CSV files.
 
 ## Drawing The Map
 
+I've been pretty impressed with the relative ease of using D3 to [render maps](https://github.com/nprapps/dailygraphics/blob/master/graphic_templates/locator_map/js/graphic.js#L109-L135) and test [projections](https://github.com/mbostock/d3/wiki/Geo-Projections). Need to adjust the scope of the map? It might just be a matter of adjusting the map scale and centroid (and, if necessary, expanding the overall bounding-box and re-running the mapturner script) — much faster than redrawing a flat map.
+
+Label positioning is a tricky thing. So far, the best way I've found to deal with it is to set up [an object at the top of the JS with all the nit-picky adjustments, and then checking for that when the labels are rendered.
+
+    var CITY_LABEL_ADJUSTMENTS = [];
+    CITY_LABEL_ADJUSTMENTS['Biratnagar'] = { 'dy': -3 };
+    CITY_LABEL_ADJUSTMENTS['Birganj'] = { 'dy': -3 };
+    CITY_LABEL_ADJUSTMENTS['Kathmandu'] = { 'text-anchor': 'end', 'dx': -4, 'dy': -4 };
+    CITY_LABEL_ADJUSTMENTS['Nepalganj'] = { 'text-anchor': 'end', 'dx': -4, 'dy': 12 };
+    CITY_LABEL_ADJUSTMENTS['Pokhara'] = { 'text-anchor': 'end', 'dx': -6 };
+    CITY_LABEL_ADJUSTMENTS['Kanpur'] = { 'dy': 12 };
+
+Responsiveness makes label positioning even more of a challenge. In the Nepal example, I used LESS in a media query to hide cities above a certain scalerank on smaller screens.
+
+    @media screen and (max-width: 480px) {
+        .city-labels text,
+        .cities path {
+            &.scalerank-4,
+            &.scalerank-5,
+            &.scalerank-6,
+            &.scalerank-7,
+            &.scalerank-8 {
+                display: none;
+            }
+        }
+    }
+
 Our finished example map (or as finished as anything is at the end of a hackday):
 
 <div data-pym-src="http://apps.npr.org/dailygraphics/graphics/test-map-nepal-earthquake/child.html">&nbsp;</div><script src="http://apps.npr.org/dailygraphics/graphics/test-map-nepal-earthquake/js/lib/pym.js" type="text/javascript"></script>
 
+There's still more polishing to do — for example, the Bangladesh counry label, even abbreviated, is still getting cut off. And the quake dots need more labelling and context. But it's a reasonable start.
 
+Drawing these maps in code has also meant revisiting our map styles — colors, typography, label and line conventions, etc. Our static map styles rely heavily on Helvetica Neue Condensed, which we don't have as a webfont. We do have access to Gotham, which is lovely but too wide to be a universal go-to. So we may end up with a mix of Gotham and Helvetica — or something else entirely. We'll see how it evolves.
 
 ## Locator Maps And Dailygraphics
 
@@ -132,4 +158,4 @@ We've rolled sample map code into our [dailygraphics rig](https://github.com/npr
 
 * When everything's in code, it becomes a lot harder to work with vague boundaries and data that is not in geo format. I can't just highlight and clip an area in Illustrator. We'll have to figure out how to handle this as we go. (Any suggestions? Please leave a comment!)
 
-* We've figured out how to make smart scale bars. Next up: inset maps and pointer boxes.
+* We've figured out how to [make smart scale bars](https://github.com/nprapps/dailygraphics/blob/master/graphic_templates/locator_map/js/graphic.js#L248-L264). Next up: inset maps and pointer boxes. I'd also like to figure out how to incorporate raster topo layers.
