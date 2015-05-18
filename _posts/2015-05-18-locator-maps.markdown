@@ -142,7 +142,7 @@ Our finished example map (or as finished as anything is at the end of a hackday)
 
 <div data-pym-src="http://apps.npr.org/dailygraphics/graphics/test-map-nepal-earthquake/child.html">&nbsp;</div><script src="http://apps.npr.org/dailygraphics/graphics/test-map-nepal-earthquake/js/lib/pym.js" type="text/javascript"></script>
 
-There's still more polishing to do — for example, the Bangladesh counry label, even abbreviated, is still getting cut off. And the quake dots need more labelling and context. But it's a reasonable start.
+There's still more polishing to do — for example, the Bangladesh country label, even abbreviated, is still getting cut off. And the quake dots need more labelling and context. But it's a reasonable start.
 
 Drawing these maps in code has also meant revisiting our map styles — colors, typography, label and line conventions, etc. Our static map styles rely heavily on Helvetica Neue Condensed, which we don't have as a webfont. We do have access to Gotham, which is lovely but too wide to be a universal go-to. So we may end up with a mix of Gotham and Helvetica — or something else entirely. We'll see how it evolves.
 
