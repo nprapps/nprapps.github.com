@@ -17,15 +17,19 @@ In [ArcMap](http://www.esri.com/software/arcgis), I'll assemble the skeleton of 
 
 ![Mapping process](/img/posts/map-arc-process.png)
 
-_* Note: I do not claim to be a professional cartographer, and I know I still have a lot to learn._
+_(* Note: I do not claim to be a professional cartographer, and I know I still have a lot to learn.)_
 
 I concede that this workflow has some definite drawbacks:
 
-- It's cumbersome and undocumented (my own fault), and it's difficult to train others how to do it.
-- It relies on an expensive piece of software that we have on a single PC. (I know there are free options out there like QGIS, but I find QGIS's editing interface difficult to use and SVG export frustrating. ArcMap is difficult to use, too, but I'm used to its quirks and the .AI export preserves layers better.)
-- This reliance on ArcMap means I can't easily make maps from scratch if I'm not in the office.
-- The final maps are flat images, which means that text doesn't always scale readably between desktop and mobile.
-- Nothing's in version control.
+* It's cumbersome and undocumented (my own fault), and it's difficult to train others how to do it.
+
+* It relies on an expensive piece of software that we have on a single PC. (I know there are free options out there like QGIS, but I find QGIS's editing interface difficult to use and SVG export frustrating. ArcMap has its own challenges, but I'm used to its quirks and the .AI export preserves layers better.)
+
+* This reliance on ArcMap means we can't easily make maps from scratch if we're not in the office.
+
+* The final maps are flat images, which means that text doesn't always scale readably between desktop and mobile.
+
+* Nothing's in version control.
 
 So for the most recent round of [Serendipity Day](http://www.npr.org/sections/inside/2011/10/14/141312774/happy-accidents-the-joy-of-serendipity-days) at NPR (an internal hackday), I resolved to explore ways to improve the process for at least very simple locator maps -- and maybe bypass the expensive software altogether.
 
@@ -34,7 +38,9 @@ So for the most recent round of [Serendipity Day](http://www.npr.org/sections/in
 
 ## Filtering And Converting Geodata
 
-My colleague Danny DeBelius had explored a little bit of scripted mapmaking with his animated map of [ISIS-claimed territory](http://www.npr.org/sections/parallels/2014/07/23/334475601/common-ground-between-iraqs-rebels-may-be-crumbling#res334476838). And Mike Bostock has a [great tutorial](http://bost.ocks.org/mike/map/) for making maps using [ogr2ogr](http://www.gdal.org/ogr2ogr.html), [TopoJSON](https://github.com/mbostock/topojson) and D3.
+My colleague Danny DeBelius had explored a little bit of scripted mapmaking with his animated map of [ISIS-claimed territory](http://www.npr.org/sections/parallels/2014/07/23/334475601/common-ground-between-iraqs-rebels-may-be-crumbling#res334476838). And Mike Bostock has a [great tutorial](http://bost.ocks.org/mike/map/) for making maps using ogr2ogr, TopoJSON and D3.
+
+_([ogr2ogr](http://www.gdal.org/ogr2ogr.html) is a utility bundled with [GDAL](http://www.gdal.org) that converts between geo formats. In this case, we're using it to convert GIS shapefiles and CSVs with latitude/longitude to [GeoJSON](http://geojson.org) format. [TopoJSON](https://github.com/mbostock/topojson) is a utility that compresses GeoJSON.)_
 
 Danny figured out how to use ogr2ogr to clip a shapefile to a defined bounding box. This way, we only have shapes relevant to the map we're making, keeping filesize down. 
 
@@ -48,7 +54,7 @@ We applied that to a variety of shapefile layers — populated places, rivers, r
 
     ogr2ogr -f GeoJSON -clipsrc 77.25 24.28 91.45 31.5 data/nepal-neighbors.json -where "adm0name != 'Nepal' AND scalerank <= 2" ../_basemaps/cultural/ne_10m_populated_places_simple_v3.0/ne_10m_populated_places_simple.shp
 
-    ogr2ogr -f GeoJSON -where \"featurecla = 'River' AND scalerank < 8\" -clipsrc 77.25 24.28 91.45 31.5 data/nepal-rivers.json ../_basemaps/physical/ne_10m_rivers_lake_centerlines_v3.1/ne_10m_rivers_lake_centerlines.shp
+    ogr2ogr -f GeoJSON -where "featurecla = 'River' AND scalerank < 8" -clipsrc 77.25 24.28 91.45 31.5 data/nepal-rivers.json ../_basemaps/physical/ne_10m_rivers_lake_centerlines_v3.1/ne_10m_rivers_lake_centerlines.shp
 
     ogr2ogr -f GeoJSON -clipsrc 77.25 24.28 91.45 31.5 data/nepal-lakes.json ../_basemaps/physical/ne_10m_lakes_v3.0/ne_10m_lakes.shp
 
@@ -60,9 +66,9 @@ _(Why two separate calls for city data? The Natural Earth shapefile for populate
 
 ## Mapturner
 
-Christopher Groskopf and Tyler Fisher extended that series of ogr2ogr and TopoJSON commands to a command-line utility: [mapturner](https://github.com/nprapps/mapturner).
+Christopher Groskopf and Tyler Fisher extended that series of ogr2ogr and TopoJSON commands to a new command-line utility: [mapturner](https://github.com/nprapps/mapturner).
 
-Mapturner takes in a YAML configuration file, filled out with the bounding box, layers, column names and other information you want, processes the data and saves out a compressed TopoJSON file. The config file for our Nepal example looked like this:
+Mapturner takes in a YAML configuration file, processes the data and saves out a compressed TopoJSON file. Users can specify settings for each data layer, including data columns to preserve and attributes to query. The config file for our Nepal example looked like this:
 
     bbox: '77.25 24.28 91.45 31.5'
     layers:
@@ -108,14 +114,22 @@ Mapturner currently supports SHP, JSON and CSV files.
 
 ## Drawing The Map
 
-tk tk tk
+Our finished example map (or as finished as anything is at the end of a hackday):
 
 <div data-pym-src="http://apps.npr.org/dailygraphics/graphics/test-map-nepal-earthquake/child.html">&nbsp;</div><script src="http://apps.npr.org/dailygraphics/graphics/test-map-nepal-earthquake/js/lib/pym.js" type="text/javascript"></script>
 
+
+
 ## Locator Maps And Dailygraphics
 
-tk tk tk
+We've rolled sample map code into our [dailygraphics rig](https://github.com/nprapps/dailygraphics) for small embedded projects. Run ```fab add_map:$SLUG``` to get going with a new map. To process geo data, you'll need to install mapturner (and its dependencies, GDAL and TopoJSON). [Instructions are in the README.](https://github.com/nprapps/dailygraphics#creating-locator-maps)
 
 ## Caveats And Next Steps
 
-tk tk tk
+* This process will NOT produce finished maps — and is not intended to do so. Our goal is to simplify one part of the process and get someone, say, 80 percent of the way to a basic map. It still requires craft on the part of the map-maker — research, judgement, design and polish.
+
+* These maps are only as good as their source data and the regional knowledge of the person making them. For example, the Natural Earth country shapefiles still include Crimea as part of Ukraine. Depending on where your newsroom stands on that, this may mean extra work to specially call out Crimea as a [disputed territory](http://opennews.kzhu.io/map-disputes/#crimea).
+
+* When everything's in code, it becomes a lot harder to work with vague boundaries and data that is not in geo format. I can't just highlight and clip an area in Illustrator. We'll have to figure out how to handle this as we go. (Any suggestions? Please leave a comment!)
+
+* We've figured out how to make smart scale bars. Next up: inset maps and pointer boxes.
