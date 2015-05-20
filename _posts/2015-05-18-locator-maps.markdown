@@ -59,7 +59,7 @@ We applied that to a variety of shapefile layers — populated places, rivers, r
 
     topojson -o data/nepal-topo.json --id-property NAME -p featurecla,city=name,country=NAME -- data/nepal-geo.json data/nepal-cities.json data/nepal-neighbors.json data/nepal-rivers.json data/nepal-lakes.json data/nepal-roads.json data/nepal-quakes.csv
     
-_(Why two separate calls for city data? The Natural Earth shapefile for populated places have a column called ```scalerank```, which ranks cities by importance or size. Since our example was a map of Nepal, I wanted to show a range of cities inside Nepal, but only major cities outside.)_
+_(Why two separate calls for city data? The Natural Earth shapefile for populated places has a column called ```scalerank```, which ranks cities by importance or size. Since our example was a map of Nepal, I wanted to show a range of cities inside Nepal, but only major cities outside.)_
 
 ## Mapturner
 
