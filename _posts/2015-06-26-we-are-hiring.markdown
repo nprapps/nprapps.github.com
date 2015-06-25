@@ -6,6 +6,7 @@ author: Brian Boyer
 email: bboyer@npr.org
 twitter: brianboyer
 ---
+![The NPR Visuals team](/img/posts/selfie.jpg)
 
 Love to design and code?
 
