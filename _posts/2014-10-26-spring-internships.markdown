@@ -1,6 +1,6 @@
 ---
 layout: redirect
-redirect_url: /2015/02/18/summer-internships.html
+redirect_url: /2015/02/19/summer-internships.html
 
 title: "Apply NOW for a spring internship with NPR Visuals"
 description: "Do you design? Develop? Make pictures? Love the web? We'd love to hear from you!"
