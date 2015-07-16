@@ -44,7 +44,7 @@ Are you awesome? [Apply now!](https://interns-npr.icims.com/jobs/2446/fall-2015%
 
 ## What will I be paid? What are the dates?
 
-The deadline for applications is <b>July 30, 2015</b>.
+The deadline for applications is <b>July 31, 2015</b>.
 
 Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info.
 
