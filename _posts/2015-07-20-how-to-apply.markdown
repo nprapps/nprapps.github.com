@@ -43,7 +43,7 @@ We’ll follow up with all of our finalists with some constructive criticism abo
 
 Everyone on the Visuals team wants to open our field to the best people out there, but the process doesn't always work that way. So we’re trying to make the job application process more accessible.
 
-Applicants with strong cover letters and good interview skills naturally tend to do well in this process. Often, those skills are a result of coaching and support &mdash; something that not all students are priviledged to have. To help candidates without those resources, we’re being more transparent about our process and expectations.
+Applicants with strong cover letters and good interview skills naturally tend to do well in this process. Often, those skills are a result of coaching and support &mdash; something that not all students are privileged to have. To help candidates without those resources, we’re being more transparent about our process and expectations.
 
 We’re certain that we’re missing out on candidates with great talent and potential who don’t have that kind of support in their lives. We think knowing our cover letter expectations and interview questions ahead of time will help level the playing field, keep our personal bias out of the interview process, and allow better comparisons between candidates.
 
