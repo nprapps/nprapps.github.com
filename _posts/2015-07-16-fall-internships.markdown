@@ -20,6 +20,8 @@ Do you make pictures? Want to learn to be a great photo editor?
 
 If so, we'd very much like to hear from you. You'll spend the fall working on the visuals team here at NPR's headquarters in Washington, DC. We're a small group of photographers, videographers, photo editors, developers and designers in the NPR newsroom who work on visual stuff for npr.org. Our work varies widely, [check it out here](http://blog.apps.npr.org/apps/).
 
+Before you apply, please [read our guide about what we expect in an internship application](http://blog.apps.npr.org/2015/07/20/how-to-apply.html).
+
 ## Photo editing
 
 Our photo editing intern will work with our digital news team to edit photos for npr.org. It'll be awesome. There will also be opportunities to research and pitch original work.
