@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "It's time for you to discover your mission."
-description: "Join our team next year through the Knight-Mozilla fellowship."
+description: "Join our team next year through the Knight-Mozilla fellowships."
 
 author: Brian Boyer
 email: bboyer@npr.org
