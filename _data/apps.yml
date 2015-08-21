@@ -363,3 +363,21 @@
   image: "http://apps.npr.org/lookatthis/posts/bus-station/assets/lead-art.jpg"
   url: http://apps.npr.org/lookatthis/posts/bus-station
   github_url: https://github.com/nprapps/lookatthis
+- name: "A Girl Can Dream"
+  description: "But in Afghanistan, can dreams become reality?"
+  date: "July 15, 2015"
+  image: "http://apps.npr.org/lookatthis/posts/afghan-teens/assets/grid.jpg"
+  url: http://apps.npr.org/lookatthis/posts/afghan-teens/
+  github_url: https://github.com/nprapps/lookatthis
+- name: "What Does Music Look Like?"
+  description: "When Denise Burt started designing classical music album covers, she knew nothing about the music. And that might have been to her advantage."
+  date: "July 28, 2015"
+  image: "http://apps.npr.org/lookatthis/posts/album-art/assets/lead-art.jpg"
+  url: http://apps.npr.org/lookatthis/posts/album-art/
+  github_url: https://github.com/nprapps/lookatthis
+- name: "The Unthinkable"
+  description: "An ancient city plunges into darkness as a war on civilians rages."
+  date: "Aug 21, 2015"
+  image: "http://apps.npr.org/lookatthis/posts/yemen/assets/final-edit/lead-art.jpg"
+  url: http://apps.npr.org/lookatthis/posts/yemen/
+  github_url: https://github.com/nprapps/lookatthis
