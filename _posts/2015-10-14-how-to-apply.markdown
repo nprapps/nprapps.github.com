@@ -26,7 +26,7 @@ All candidates must submit a cover letter. Your cover letter should be a stateme
 
 ## Other expectations
 
-* Photo internships candidates must have a portfolio.
+* Photo internship candidates must have a portfolio.
 * Programming/design candidates with either projects on Github or a personal site are strongly preferred.
 
 ## Selection process
@@ -41,7 +41,7 @@ We’ll follow up with all of our finalists with some constructive criticism abo
 
 ## Who we are
 
-We’re a small group of photographers, videographers, photo editors, developers and designers in the NPR newsroom who make visual journalism. (Yeah, NPR is a radio thing, and yeah, it's weird sometimes.) Check out [latest stuff](https://twitter.com/nprviz)!
+We’re a small group of photographers, videographers, photo editors, developers and designers in the NPR newsroom who make visual journalism. (Yeah, NPR is a radio thing, and yeah, it's weird sometimes.) Check out our [latest stuff](https://twitter.com/nprviz)!
 
 ## Why we’re doing this
 
