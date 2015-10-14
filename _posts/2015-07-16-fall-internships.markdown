@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /2015/10/14/how-to-apply.html
 title: "Work with us this fall!"
 description: "Do you design? Develop? Make pictures? Love the web? Be our fall intern!"
 

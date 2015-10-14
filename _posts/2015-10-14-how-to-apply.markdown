@@ -1,8 +1,6 @@
 ---
-layout: redirect
-redirect_url: /2015/10/14/how-to-apply.html
-
-title: "How to apply for an internship at NPR Visuals"
+layout: post
+title: "How to be an intern at NPR Visuals (Apply now for Winter/Spring 2016!)"
 description: "How to write a cover letter and give a great interview."
 
 author: David Eads
@@ -10,11 +8,11 @@ email: deads@npr.org
 twitter: eads
 ---
 
+We're currently looking for interns for spring 2016!
+
 We want to see your best work.
 
 Here’s how.
-
-(In case you missed it, [applications are currently open for our fall internships](http://blog.apps.npr.org/2015/07/16/fall-internships.html).)
 
 ## Cover letters
 
@@ -41,6 +39,10 @@ Then we’ll call references and conduct some follow-up via email, possibly aski
 
 We’ll follow up with all of our finalists with some constructive criticism about their application and interview.
 
+## Who we are
+
+We’re a small group of photographers, videographers, photo editors, developers and designers in the NPR newsroom who make visual journalism. (Yeah, NPR is a radio thing, and yeah, it's weird sometimes.) Check out [latest stuff](https://twitter.com/nprviz)!
+
 ## Why we’re doing this
 
 Everyone on the Visuals team wants to open our field to the best people out there, but the process doesn't always work that way. So we’re trying to make the job application process more accessible.
@@ -49,6 +51,34 @@ Applicants with strong cover letters and good interview skills naturally tend to
 
 We’re certain that we’re missing out on candidates with great talent and potential who don’t have that kind of support in their lives. We think knowing our cover letter expectations and interview questions ahead of time will help level the playing field, keep our personal bias out of the interview process, and allow better comparisons between candidates.
 
-## Apply for this fall!
+## Apply!
 
-If you’re looking for a gig, [please apply](http://blog.apps.npr.org/2015/07/16/fall-internships.html). If you know somebody who may be, please pass this along.
+### Photo editing
+
+Our photo editing intern will work with our digital news team to edit photos for npr.org. It'll be awesome. There will also be opportunities to research and pitch original work.
+
+Please...
+
+- Love to write, edit and research
+- Be awesome at making pictures
+
+Are you awesome? [Apply now!](https://interns-npr.icims.com/jobs/2571/winter-spring-2016%3a-digital-news%2c-picture-editing-%26-visual-journalist/job)
+
+### Design and code
+
+This intern will work as a designer and/or developer on graphics and projects for npr.org. It'll be awesome.
+
+Please...
+
+- Our work is for the web, so be a web maker!
+- We'd especially love to hear from folks who love illustration, news graphics and information design.
+
+Are you awesome? [Apply now!](https://interns-npr.icims.com/jobs/2568/winter-spring-2016%3a-news-apps/job)
+
+### What will I be paid? What are the dates?
+
+The deadline for applications is <b>November 1, 2015</b>.
+
+Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info.
+
+Thx!
