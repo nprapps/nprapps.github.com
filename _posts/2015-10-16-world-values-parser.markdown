@@ -145,7 +145,7 @@ for row in result:
         counts[row['country']] = initialize_counts(question_id)
 
     counts[row["country"]][row["response"]] += 1
-    ```
+```
 
 If you were to present the `counts` dict as a table, the processed data looks like this:
 
