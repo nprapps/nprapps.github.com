@@ -31,7 +31,7 @@ We use a three-step process to get implicit column creation *and* fast import.
 
 [Dataset](https://dataset.readthedocs.org/en/latest/), a Python database wrapper, auto-magically creates database fields as data is added to a table. That handles the schema creation. But Dataset is wildly inefficient at inserting over 86,000 rows with 431 columns each.
 
-The Postgres `COPY [table] FROM [file]`  syntax is very efficient at importing data from a CSV, but notoriously finkicky about data formatting. Happily, the WVS provides CSV data files. If they didn't, we'd use a tool like R to convert from Stata or SPSS to CSV. Less happily, the WVS uses inconsistent quoting, which causes the Postgres `COPY` routine to choke.
+The Postgres `COPY [table] FROM [file]` syntax is very efficient at importing data from a CSV, but notoriously finkicky about data formatting. Happily, the WVS provides CSV data files. If they didn't, we'd use a tool like R to convert from Stata or SPSS to CSV. Less happily, the WVS uses inconsistent quoting, which causes the Postgres `COPY` routine to choke.
 
 To get the advantages of both tools, we took a hybrid approach. It's a bit ugly, but it does the job with aplomb. Our import process looks like this:
 
