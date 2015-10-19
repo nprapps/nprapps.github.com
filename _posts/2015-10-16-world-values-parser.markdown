@@ -74,6 +74,9 @@ The codebook format is fairly typical. There are columns for the question ID, de
                 -1##Don´t know<br/>
             </td>
         </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;"> ... </td>
+        </tr>
     </tbody>
 </table>
 
@@ -114,7 +117,7 @@ result = db.query("""
 
 The results look like:
 
-<table class="table">
+<table class="table" style="font-size: 12px;">
     <thead>
         <tr>
             <th>Country</th>
@@ -128,7 +131,18 @@ The results look like:
         </tr>
         <tr>
             <td>Brazil</td>
-            <td>Disgree</td>
+            <td>Agree</td>
+        </tr>
+        <tr>
+            <td>Brazil</td>
+            <td>Neither</td>
+        </tr>
+        <tr>
+            <td>Brazil</td>
+            <td>Disagree</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"> ... </td>
         </tr>
     </tbody>
 </table>
@@ -149,7 +163,7 @@ for row in result:
 
 If you were to present the `counts` dict as a table, the processed data looks like this:
 
-<table class="table">
+<table class="table" style="font-size: 12px;">
     <thead>
         <tr>
             <th>Country</th>
@@ -164,6 +178,9 @@ If you were to present the `counts` dict as a table, the processed data looks li
             <td>1,043</td>
             <td>683</td>
             <td>482</td>
+        </tr>
+        <tr>
+            <td colspan="4" style="text-align: center;"> ... </td>
         </tr>
     </tbody>
 </table>
