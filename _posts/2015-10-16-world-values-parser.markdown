@@ -148,7 +148,7 @@ The results look like:
 </table>
 
 You could try to write a mega-query with SQL to automatically summarize this data further, 
-but using a little basic Python (or a slick analysis tool like Agate) works just as well.
+but using a little basic Python (or a slick analysis tool like [Agate](https://github.com/onyxfish/agate) ) works just as well.
 
 Here's a snippet from our processing code that adds up the counts for each response (`initialize_counts` is a helper function to create a dict with zeroed out values for all possible responses; you could also use Python's DefaultDict):
 
