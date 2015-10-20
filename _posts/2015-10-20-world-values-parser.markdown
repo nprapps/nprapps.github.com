@@ -202,7 +202,9 @@ The results look like:
 </table>
 
 We could have expanded on the SQL above to summarize this data further,
-but using a little basic Python (or a slick analysis tool like [Agate](http://agate.readthedocs.org/en/0.11.0/)) works just as well and has some advantages. Specifically, caculating percentages for arbitrary response values in pure SQL would have led to a rather ugly query (we tried), so post-processing was going to be necessary in all events. And the relatively simple format let us use the query results for more advanced analysis, specifically to add "agree/strongly agree" and favorable Likert scale responses into a composite values for reporting purposes.
+but using a little basic Python (or a slick analysis tool like [Agate](http://agate.readthedocs.org/en/0.11.0/)) has some advantages. 
+
+Specifically, because of our database structure, caculating percentages for arbitrary response values in pure SQL would have led to a rather ugly query (we tried). Post-processing was going to be necessary in all events. And the relatively simple format let us use the query results for more advanced analysis, specifically to add "agree/strongly agree" and favorable Likert scale responses into a composite values for reporting purposes.
 
 Here's a snippet from our processing code that adds up the counts for each response (`initialize_counts` is a helper function to create a dict with zeroed out values for all possible responses; you could also use Python's DefaultDict):
 
@@ -239,7 +241,7 @@ If you were to present the `counts` dict as a table, the processed data looks li
     </tbody>
 </table>
 
-This simple example might have been better handled with SQL. The real code calculates percentages as well as counts, which turned out to be hard because of our less-than-ideal database structure. And the code uses the same query mechanism to come up with those composite agreement and Likert numbers. A query that returns the data partially processed turned out to be the best option for the full range of analysis we wanted to run.
+A query that returns partially processed data turned out to be the best option for the full range of analysis we wanted to do.
 
 ## Half-way solutions for the win
 
