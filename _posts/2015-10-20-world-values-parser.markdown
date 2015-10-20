@@ -36,9 +36,9 @@ We use a three-step process to get implicit column creation *and* fast import.
 
 [Dataset](https://dataset.readthedocs.org/en/latest/), a Python database wrapper, auto-magically creates database fields as data is added to a table. That handles the schema creation. But because of all the magic under the hood, Dataset is very inefficient at inserting large datasets. The WVS data -- with over 86,000 rows with 431 columns each -- took many hours to import.
 
-The Postgres `COPY [table] FROM [file]` [command](http://www.postgresql.org/docs/9.4/static/sql-copy.html) is very efficient at importing data from a CSV, but notoriously finkicky about data formatting. Instead of hours, `COPY` runs in seconds.
+The Postgres `COPY [table] FROM [file]` [command](http://www.postgresql.org/docs/9.4/static/sql-copy.html) is very efficient at importing data from a CSV, but notoriously finkicky about data formatting. Instead of hours, `COPY` runs in seconds, but your data needs to be *perfectly* formatted for the table you're importing into.
 
-The good news is that the WVS provides CSV data files. If they didn't, we'd use a tool like R to convert from Stata or SPSS to CSV. Less happily, the WVS data files use inconsistent quoting and have a few other oddities that causes the Postgres `COPY` routine to choke.
+The good news is that the WVS provides CSV data files. If they didn't provide CSV, we'd use a tool like R to convert from Stata or SPSS to CSV. The bad news is that the WVS data files use inconsistent quoting and contain a few other oddities that causes the Postgres `COPY` routine to choke.
 
 To get the advantages of both tools, we took a hybrid approach. It's a bit ugly, but it does the job nicely. Our import process looks like this:
 
@@ -149,22 +149,24 @@ Now we have three tables -- survey responses, codebook questions, and potential 
 
 What we need to do is write some code that can dynamically generate a query that gets all the responses to a given question. Once we have that, we can summarize and analyze the numbers as needed with Python code.
 
-The helper query looks like this, and dynamically generates a query against the correct column and joins the correct survey responses using subqueries:
+The helper query dynamically generates a query against the correct column and joins the correct survey responses using subqueries:
 
 ```python
 result = db.query("""
-    select
-        countries.value as country, c.value as response
-    from
-        survey_responses r
-    join
-        (select * from categories where question_id='{0}') c on r.{0}=c.code
-    join
-        (select * from categories where question_id='v2a') countries on r.v2a=countries.code
-    order by
-        country
-    ;
-    """.format(question_id))
+  select
+    countries.value as country, c.value as response
+  from
+    survey_responses r
+  join
+    (select * from categories where question_id='{0}') c 
+    on r.{0}=c.code
+  join
+    (select * from categories where question_id='v2a') countries
+    on r.v2a=countries.code
+  order by
+    country
+  ;
+  """.format(question_id))
 ```
 
 The results look like:
