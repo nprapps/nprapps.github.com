@@ -82,6 +82,7 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 .entry section img { display: block; margin: 0 0 22px;}
 .entry li { list-style: square; line-height:22px; }
 .entry ul { margin: 0px 0px 22px 33px; }
+.entry ul ul { margin-bottom: 0; }
 .entry .caption { line-height: 1.1; }
 
 .post-meta { color:#666; font-size: 12px; padding: 10px 0 0 0; }
