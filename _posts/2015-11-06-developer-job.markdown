@@ -32,6 +32,8 @@ And we'd love it if you'd join us.
 * Attention to detail and love for making things
 * A genuine and friendly disposition
 
+(What "developer" exactly means for this position is pretty flexible. You might do lots of front-end stuff like graphics, or data crunching, or other stuff. We'd love to hear from people with many different skills and interests!)
+
 ### Bonus points for…
 * Deep knowledge of Javascript and programming performant web software
 * Proven experience and a passion for running open-source projects
