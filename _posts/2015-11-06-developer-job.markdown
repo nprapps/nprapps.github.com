@@ -14,7 +14,7 @@ Want to use your skills to make the world a better place?
 
 We're a crew of visual journalists (developers, designers, photojournalists...lots of things) in the newsroom at NPR headquarters in sunny Washington, DC. We make [charts and maps](http://www.npr.org/sections/goatsandsoda/2015/10/20/448407788/where-the-girls-are-and-aren-t-15girls), we [make and edit pictures and video](http://www.npr.org/2015/11/05/453239276/in-the-amazons-fire-season-you-either-burn-or-you-starve), we [help reporters with data](http://www.npr.org/2014/09/02/342494225/mraps-and-bayonets-what-we-know-about-the-pentagons-1033-program), and we create all sorts of [web-native visual stories](http://apps.npr.org/lookatthis/posts/yemen/) and weird [data-driven websites](http://earbud.fm/).
 
-(And yeah, sometimes it's strange to be a visuals team at a radio organization. But there’s this special thing about audio. It’s intimate, it’s personal. Well, visual storytelling is really similar. It's power is innate. Humans invented writing &mdash; visual and audio storytelling are built in, deep in our primordial lizard brains. So, anyway, yeah, we fit right in.)
+(And yeah, sometimes it's strange to be a visuals team at a radio organization. But there’s this special thing about audio. It’s intimate, it’s personal. Well, visual storytelling is really similar. Its power is innate. Humans invented writing &mdash; visual and audio storytelling are built in, deep in our primordial lizard brains. So, anyway, yeah, we fit right in.)
 
 Pictures and graphics are little empathy machines. And that's our mission. To create empathy. **To make people care.**
 
