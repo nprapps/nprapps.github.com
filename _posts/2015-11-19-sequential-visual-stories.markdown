@@ -67,7 +67,7 @@ Using the same two measures as the overall completion rate, the weighted engaged
 
 The weighted method, accounting for traffic to a given stories, show that stories with audio have much higher engaged user completion rates than stories without audio &mdash; 57.8% to 44.1%. If we use an equal weighting method, the disparity is a little less extreme &mdash; 54.5% for stories with audio to 48.5% without. 
 
-(Note that for all of these calculations, I considered "beginning" the story getting after the audio warning on the second slide in the case of Drowned Out and Rethinking Arab Art.)
+(Note that for all of these calculations, I considered "beginning" the story getting after the audio warning on the second slide in the case of Drowned Out and Arab Art Redefined.)
 
 So what's the answer? I think the jury is still out on whether integrating audio into our sequential visual stories makes them perform better or worse because our sample size is still quite small, but early indicators point towards them being better for users that choose to engage. However, [A Photo I Love: Reid Wiseman](http://apps.npr.org/lookatthis/posts/spacepix) is our highest performing story overall with regards to engaged user completion rate, so we have evidence that at its best, combining audio and visuals can make a compelling, engaging story.
 
