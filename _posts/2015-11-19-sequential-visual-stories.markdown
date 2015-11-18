@@ -83,7 +83,7 @@ Maybe? It's clear that we are achieving high completion rates even on our lowest
 
 Of course, in order to determine how successful we were, we often track other metrics such as shares per 1,000 pageviews, as well as qualitative measures like sampling Facebook comments and Twitter replies.
 
-Ultimately, making people care is about the quality of the story itself, not about the format in which we tell it. But I think that, with stories where text plays a large role, we are capable of making people read stories longer than they normally would because of how sequential visual storytelling allows us to pace the story. And when audio is driving the story, we are getting people to listen to short audio stories at higher rates than we normally see on [npr.org](http://npr.org).
+Ultimately, making people care is about the quality of the story itself, not about the format in which we tell it. But I think that, with stories where text plays a large role, we are capable of making people read stories longer than they normally would because of how sequential visual storytelling allows us to pace the story.
 
 Of course, this is not an argument for telling all stories in the sequential visual story format. Sequential visual stories work when the visuals are strong enough to deem the treatment. Not all of our stories have worked. But when they do, we can tell important stories in a way that pulls people through to the end.
 
