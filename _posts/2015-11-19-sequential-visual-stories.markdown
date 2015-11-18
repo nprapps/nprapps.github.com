@@ -25,7 +25,7 @@ A consistent feature among our set of stories is a titlecard that presents a cle
 
 ![An example titlecard](/img/posts/titlecard-example.png)
 
-For the stories where begin performance fell flat, we can point to a clear reason: "Put on your headphones" prompts or similar warnings that audio will be a part of the experience. Of all users who saw a titlecard without an audio warning, 74.4% of them clicked to the next slide. If an audio warning was on the slide, only 59.8% of users faced with that titlecard moved forward. The lowest performing titlecard was on [A Photo I Love: Erin Mystkowski](apps.npr.org/lookatthis/posts/mystkowski-loves/), which prompted users to "Listen" instead of "Begin."
+For the stories where begin performance fell flat, we can point to a clear reason: "Put on your headphones" prompts or similar notices that audio will be a part of the experience. Of all users who saw a titlecard without an audio notice, 74.4% of them clicked to the next slide. If an audio notice was on the slide, only 59.8% of users faced with that titlecard moved forward. The lowest performing titlecard was on [A Photo I Love: Erin Mystkowski](apps.npr.org/lookatthis/posts/mystkowski-loves/), which prompted users to "Listen" instead of "Begin."
 
 <div id="begin"></div>
 <script type="text/javascript" src="http://stage-apps.npr.org/dailygraphics/graphics/look-begin-rate-table/js/lib/pym.js"></script>
@@ -33,9 +33,9 @@ For the stories where begin performance fell flat, we can point to a clear reaso
     var pymParent = new pym.Parent('begin', 'http://stage-apps.npr.org/dailygraphics/graphics/look-begin-rate-table/child.html', {});
 </script>
 
-It is also worth nothing that we have tried audio warnings at other places in our stories, and we see similar levels of dropoff. In [Drowned Out](http://apps.npr.org/lookatthis/posts/whales) and [Rethinking Arab Art](http://apps.npr.org/lookatthis/posts/al-qassemi), we placed the audio warning on a second slide. With Drowned Out, only 61.28% of users got past both slides, while with Rethinking Arab Art, only 44.3% did. Though these are two examples with lower traffic than most stories, it seems clear that this is not a more effective way of getting users into the story.
+It is also worth nothing that we have tried audio notices at other places in our stories, and we see similar levels of dropoff. In [Drowned Out](http://apps.npr.org/lookatthis/posts/whales) and [Arab Art Redefined](http://apps.npr.org/lookatthis/posts/al-qassemi), we placed the audio notice on a second slide. With Drowned Out, only 61.28% of users got past both slides, while with Arab Art Redefined, only 44.3% did. Though these are two examples with lower traffic than most stories, it seems clear that this is not a more effective way of getting users into the story.
 
-Does this mean we should remove audio warnings from titlecards? Or stop doing sequential visual stories that integrate audio altogether? Maybe, but as we will see later, stories with audio in them perform better in other aspects that filter out the begin rate.
+Does this mean we should remove audio notices from titlecards? Or stop doing sequential visual stories that integrate audio altogether? Maybe, but as we will see later, stories with audio in them perform better in other aspects that filter out the begin rate.
 
 ## Sequential Visual Stories Effectively Move Users Through Stories
 
@@ -67,7 +67,7 @@ Using the same two measures as the overall completion rate, the weighted engaged
 
 The weighted method, accounting for traffic to a given stories, show that stories with audio have much higher engaged user completion rates than stories without audio &mdash; 57.8% to 44.1%. If we use an equal weighting method, the disparity is a little less extreme &mdash; 54.5% for stories with audio to 48.5% without. 
 
-(Note that for all of these calculations, I considered "beginning" the story getting after the audio warning on the second slide in the case of Drowned Out and Arab Art Redefined.)
+(Note that for all of these calculations, I considered "beginning" the story getting after the audio notice on the second slide in the case of Drowned Out and Arab Art Redefined.)
 
 So what's the answer? I think the jury is still out on whether integrating audio into our sequential visual stories makes them perform better or worse because our sample size is still quite small, but early indicators point towards them being better for users that choose to engage. However, [A Photo I Love: Reid Wiseman](http://apps.npr.org/lookatthis/posts/spacepix) is our highest performing story overall with regards to engaged user completion rate, so we have evidence that at its best, combining audio and visuals can make a compelling, engaging story.
 
@@ -81,6 +81,10 @@ So what's the answer? I think the jury is still out on whether integrating audio
 
 Maybe? It's clear that we are achieving high completion rates even on our lowest performing stories. Consider that Borderland, our lowest performing story with a completion rate of 20.1% and engaged user completion rate of 31.6%, was over 2,500 words long. 
 
-Ultimately, making people care is about the quality of the story itself, not about the format in which we tell it. But I feel that, with stories where text plays a large role, we are capable of making people read stories longer than they normally would because of how sequential visual storytelling allows us to pace the story. And when audio is driving the story, we are getting people to listen to short audio stories at higher rates than we normally see on [npr.org](http://npr.org).
+Of course, in order to determine how successful we were, we often track other metrics such as shares per 1,000 pageviews, as well as qualitative measures like sampling Facebook comments and Twitter replies.
+
+Ultimately, making people care is about the quality of the story itself, not about the format in which we tell it. But I think that, with stories where text plays a large role, we are capable of making people read stories longer than they normally would because of how sequential visual storytelling allows us to pace the story. And when audio is driving the story, we are getting people to listen to short audio stories at higher rates than we normally see on [npr.org](http://npr.org).
 
 Of course, this is not an argument for telling all stories in the sequential visual story format. Sequential visual stories work when the visuals are strong enough to deem the treatment. Not all of our stories have worked. But when they do, we can tell important stories in a way that pulls people through to the end.
+
+To truly evaluate the success of our sequential visual stories, it would help to see data from other organizations who have tried this type of storytelling. If you have insights to share, please share them with me in the comments, [on Twitter](http://twitter.com/tylrfishr) or through email at <a href="mailto:tfisher@npr.org">tfisher@npr.org</a>.
