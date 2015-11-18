@@ -9,9 +9,9 @@ twitter: tylrfishr
 
 Since we published Borderland in April of 2014, the NPR Visuals Team has been iterating on a style of storytelling we call "sequential visual stories." They integrate photography, text, and sometimes audio, video or illustration into a slideshow-like format. My colleague Wes Lindamood [already wrote more eloquently than I can](https://source.opennews.org/en-US/learning/evolution-nprs-picture-stories/) about the design approach we took to evolving these stories, and you should absolutely read that.
 
-In this blog post, I will take a more analytical approach towards talking about the evolution of our sequential visual stories. At the time of writing, we have published 18 stories that roughly fall within the sequential visual story format. 
+In this blog post, I will use data from Google Analytics event tracking to evaluate the performance of certain features of our sequential visual storytelling, focusing on our ability to get users to start and finish our stories.
 
-With a few abberations, we have consistently tracked user engagement on these stories and, with over 2 million unique pageviews on our sequential visual storytelling, we can come to some conclusions about how users interact with this type of storytelling, particularly about how to get users to start reading and how long they will keep reading in this format.
+With a few abberations, we have consistently tracked user engagement on these stories and, with over 2 million unique pageviews on our sequential visual storytelling, we can come to some conclusions about how users interact with this type of storytelling.
 
 ## Why Do This?
 
@@ -37,13 +37,25 @@ Does this mean we should remove audio warnings from titlecards? Or stop doing se
 
 ## Sequential Visual Stories Effectively Move Users Through Stories
 
-We can calculate the mean completion rate for our sequential visual stories in two ways: one by weighting the stories by the amount of traffic they received and another by treating each story as equal. The former bears out an average 31.2% completion rate, while the latter shows a 35.4% completion rate. 
+One of the most important metrics for us in determining the success of our stories is completion rate. Completion is defined as when a user reaches the last slide of content in a sequential visual story. 
+
+We can calculate the mean completion rate for our sequential visual stories in two ways. The first takes all completion events fired across our sequential visual stories and divides it by the total number of unique pageviews. In this scenario, stories with higher pageviews will affect the outcome of the average more than stories with lower pageviews. I will call this the weighted method.
+
+A second method takes the overall completion rates of each story, adds them together, and divides by the total number of stories. This gives each story equal weight, but now we're averaging percentages, which is maybe weird. I will call this the equal method. Neither method is perfect.
+
+Across our sequential visual stories, the weighted method bears out an average 31.2% completion rate, while the equal method shows a 35.4% completion rate. 
 
 Compare that to [Chartbeat data about the average web page](http://time.com/12933/what-you-think-you-know-about-the-web-is-wrong/), where 55% of users spend less than 15 seconds on a page. Chartbeat never talked about completion rate, but if the average web page were to compete with our sequential visual stories, 85-90% of users who spend more than 15 seconds with a page would have to finish the page. That seems unlikely.
 
 However, completion rates varied wildly across stories. In our first sequential visual story, [Borderland](http://apps.npr.org/borderland), we only acheived a completion rate of 20%. It was also 130 slides long, nearly twice as many slides as any other sequential visual story we've done. Meanwhile, [The Unthinkable](http://apps.npr.org/lookatthis/posts/yemen), a heavy story about the "war on civilians" in Yemen, managed a completion rate of 57.6%, our highest ever. It clocked in at 35 slides. 
 
 Despite these two data points, there seems to be no correlation between number of slides and completion rate. For example, [Plastic Rebirth](http://apps.npr.org/lookatthis/posts/plastic/), a relatively quick story about plastic surgery in Brazil, only had 33 slides and had completion rate of 33.2%.
+
+<div id="correlation"></div>
+<script type="text/javascript" src="http://stage-apps.npr.org/dailygraphics/graphics/look-slides-completion/js/lib/pym.js"></script>
+<script>
+    var pymParent = new pym.Parent('correlation', 'http://stage-apps.npr.org/dailygraphics/graphics/look-slides-completion/child.html', {});
+</script>
 
 ## A Better Completion Rate
 
