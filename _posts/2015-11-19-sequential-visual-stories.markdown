@@ -33,6 +33,8 @@ For the stories where begin performance fell flat, we can point to a clear reaso
     var pymParent = new pym.Parent('begin', 'http://stage-apps.npr.org/dailygraphics/graphics/look-begin-rate-table/child.html', {});
 </script>
 
+It is also worth nothing that we have tried audio warnings at other places in our stories, and we see similar levels of dropoff. In [Drowned Out](http://apps.npr.org/lookatthis/posts/whales) and [Rethinking Arab Art](http://apps.npr.org/lookatthis/posts/al-qassemi), we placed the audio warning on a second slide. With Drowned Out, only 61.28% of users got past both slides, while with Rethinking Arab Art, only 44.3% did. Though these are two examples with lower traffic than most stories, it seems clear that this is not a more effective way of getting users into the story.
+
 Does this mean we should remove audio warnings from titlecards? Or stop doing sequential visual stories that integrate audio altogether? Maybe, but as we will see later, stories with audio in them perform better in other aspects that filter out the begin rate.
 
 ## Sequential Visual Stories Effectively Move Users Through Stories
@@ -59,15 +61,15 @@ Despite these two data points, there seems to be no correlation between number o
 
 ## A Better Completion Rate
 
-However, as demonstrated by the wide variance in begin rate across stories, completion rate is highly influenced by the ability for the titlecard to entice people to continue into the story. So I created a new metric, what I call "engaged user completion rate," to find which of our stories were doing the best at pulling an engaged user all the way through.
+However, as demonstrated by the wide variance in begin rate across stories, completion rate is highly influenced by the ability for the titlecard to entice people to continue into the story. So I created a new metric, what I call "engaged user completion rate," to find which of our stories were doing the best at pulling an engaged user all the way through. Engaged user completion rate uses the number of users who began the story as the denominator instead of the number of unique pageviews.
 
-Using the same two measures as the overall completion rate, the weighted engaged user completion rate was 42.2% while the equal rate was 49.0%. But the data gets more interesting when we start dividing by story subtypes &mdash; particulary the divide between stories that integrate audio and those that do not.
+Using the same two measures as the overall completion rate, the weighted engaged user completion rate was 42.4% while the equal rate was 50.9%. But the data gets more interesting when we start dividing by story subtypes &mdash; particulary the divide between stories that integrate audio and those that do not.
 
-The weighted method, accounting for traffic to a given stories, show that stories with audio have much higher engaged user completion rates than stories without audio &mdash; 55.2% to 44.1%. If we use an equal weighting method, the disparity is less extreme &mdash; 49.9% for stories with audio to 48.5% without. 
+The weighted method, accounting for traffic to a given stories, show that stories with audio have much higher engaged user completion rates than stories without audio &mdash; 57.8% to 44.1%. If we use an equal weighting method, the disparity is a little less extreme &mdash; 54.5% for stories with audio to 48.5% without. 
 
-The disparity is largely because we only have six audio stories where we accurately computed both begin and completion rate. So the one story that was more successful in terms of completion and traffic ([A Photo I Love: Reid Wiseman](http://apps.npr.org/lookatthis/posts/spacepix)) significantly skews the results in the weighted method. However, only having six stories to average, including a couple that drew very little interest from our audience in general, makes an equal weight approach problematic as well.
+(Note that for all of these calculations, I considered "beginning" the story getting after the audio warning on the second slide in the case of Drowned Out and Rethinking Arab Art.)
 
-So what's the answer? I think the jury is still out on whether integrating audio into our sequential visual stories makes them perform better or worse, but early indicators point towards them being better for users that choose to engage. However, [A Photo I Love: Reid Wiseman](http://apps.npr.org/lookatthis/posts/spacepix) is our highest performing story overall with regards to engaged user completion rate, so we have evidence that at its best, combining audio and visuals can make a compelling, engaging story.
+So what's the answer? I think the jury is still out on whether integrating audio into our sequential visual stories makes them perform better or worse because our sample size is still quite small, but early indicators point towards them being better for users that choose to engage. However, [A Photo I Love: Reid Wiseman](http://apps.npr.org/lookatthis/posts/spacepix) is our highest performing story overall with regards to engaged user completion rate, so we have evidence that at its best, combining audio and visuals can make a compelling, engaging story.
 
 <div id="completion"></div>
 <script type="text/javascript" src="http://stage-apps.npr.org/dailygraphics/graphics/look-completion-rate-table/js/lib/pym.js"></script>
