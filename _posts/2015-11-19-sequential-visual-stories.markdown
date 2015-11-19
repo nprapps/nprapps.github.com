@@ -11,7 +11,7 @@ Since we published [Borderland](http://apps.npr.org/borderland) in April of 2014
 
 In this blog post, I will use event tracking data from Google Analytics to evaluate the performance of certain features of our sequential visual storytelling, focusing on our ability to get users to start and finish our stories.
 
-With a few abberations, we have consistently tracked user engagement on these stories and, with over 2 million unique pageviews on our sequential visual storytelling, we can come to some conclusions about how users interact with this type of storytelling.
+With a few aberrations, we have consistently tracked user engagement on these stories and, with over 2 million unique pageviews on our sequential visual storytelling, we can come to some conclusions about how users interact with this type of storytelling.
 
 ## Why Do This?
 
