@@ -28,9 +28,9 @@ A consistent feature among our set of stories is a titlecard that presents a cle
 For the stories where begin performance fell flat, we can point to a clear reason: "Put on your headphones" prompts or similar notices that audio will be a part of the experience. Of all users who saw a titlecard without an audio notice, 74.4% of them clicked to the next slide. If an audio notice was on the slide, only 59.8% of users faced with that titlecard moved forward. The lowest performing titlecard was on prompted users to ["Listen"](http://apps.npr.org/lookatthis/posts/mystkowski-loves/) instead of "Begin."
 
 <div id="begin"></div>
-<script type="text/javascript" src="http://stage-apps.npr.org/dailygraphics/graphics/look-begin-rate-table/js/lib/pym.js"></script>
+<script type="text/javascript" src="http://apps.npr.org/dailygraphics/graphics/look-begin-rate-table/js/lib/pym.js"></script>
 <script>
-    var pymParent = new pym.Parent('begin', 'http://stage-apps.npr.org/dailygraphics/graphics/look-begin-rate-table/child.html', {});
+    var pymParent = new pym.Parent('begin', 'http://apps.npr.org/dailygraphics/graphics/look-begin-rate-table/child.html', {});
 </script>
 
 It is also worth nothing that we have tried audio notices at other places in our stories, and we see similar levels of dropoff. In [Drowned Out](http://apps.npr.org/lookatthis/posts/whales) and [Arab Art Redefined](http://apps.npr.org/lookatthis/posts/al-qassemi), we placed the audio notice on a second slide. With Drowned Out, only 61.28% of users got past both slides, while with Arab Art Redefined, only 44.3% did. Though these are two examples with lower traffic than most stories, it seems clear that this is not a more effective way of getting users into the story.
@@ -52,9 +52,9 @@ However, completion rates varied wildly across stories. In our first sequential 
 Despite these two data points, there seems to be no correlation between number of slides and completion rate. For example, [Plastic Rebirth](http://apps.npr.org/lookatthis/posts/plastic/), a relatively quick story about plastic surgery in Brazil, only had 33 slides and had completion rate of 33.2% (which is a number we were still pretty happy with).
 
 <div id="correlation"></div>
-<script type="text/javascript" src="http://stage-apps.npr.org/dailygraphics/graphics/look-slides-completion/js/lib/pym.js"></script>
+<script type="text/javascript" src="http://apps.npr.org/dailygraphics/graphics/look-slides-completion/js/lib/pym.js"></script>
 <script>
-    var pymParent = new pym.Parent('correlation', 'http://stage-apps.npr.org/dailygraphics/graphics/look-slides-completion/child.html', {});
+    var pymParent = new pym.Parent('correlation', 'http://apps.npr.org/dailygraphics/graphics/look-slides-completion/child.html', {});
 </script>
 
 ## A Better Completion Rate
@@ -68,9 +68,9 @@ Our average engaged user completion rate across stories was 50.9%. But the data 
 So what's the answer? I think the jury is still out on whether integrating audio into our sequential visual stories makes them perform better or worse because our sample size is still quite small, but early indicators point towards them being better for users that choose to engage. However, [A Photo I Love: Reid Wiseman](http://apps.npr.org/lookatthis/posts/spacepix) is our highest performing story overall with regards to engaged user completion rate, so we have evidence that at its best, combining audio and visuals can make a compelling, engaging story.
 
 <div id="completion"></div>
-<script type="text/javascript" src="http://stage-apps.npr.org/dailygraphics/graphics/look-completion-rate-table/js/lib/pym.js"></script>
+<script type="text/javascript" src="http://apps.npr.org/dailygraphics/graphics/look-completion-rate-table/js/lib/pym.js"></script>
 <script>
-    var pymParent = new pym.Parent('completion', 'http://stage-apps.npr.org/dailygraphics/graphics/look-completion-rate-table/child.html', {});
+    var pymParent = new pym.Parent('completion', 'http://apps.npr.org/dailygraphics/graphics/look-completion-rate-table/child.html', {});
 </script>
 
 ## So, Did We Make People Care?
