@@ -7,7 +7,7 @@ email: tfisher@npr.org
 twitter: tylrfishr
 ---
 
-Since we published Borderland in April of 2014, the NPR Visuals Team has been iterating on a style of storytelling we call "sequential visual stories." They integrate photography, text, and sometimes audio, video or illustration into a slideshow-like format. My colleague Wes Lindamood [already wrote more eloquently than I can](https://source.opennews.org/en-US/learning/evolution-nprs-picture-stories/) about the design approach we took to evolving these stories, and you should absolutely read that.
+Since we published [Borderland](http://apps.npr.org/borderland) in April of 2014, the NPR Visuals Team has been iterating on a style of storytelling we call "sequential visual stories." They integrate photography, text, and sometimes audio, video or illustration into a slideshow-like format. My colleague Wes Lindamood [already wrote more eloquently than I can](https://source.opennews.org/en-US/learning/evolution-nprs-picture-stories/) about the design approach we took to evolving these stories, and you should absolutely read that.
 
 In this blog post, I will use event tracking data from Google Analytics to evaluate the performance of certain features of our sequential visual storytelling, focusing on our ability to get users to start and finish our stories.
 
