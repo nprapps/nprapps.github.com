@@ -33,7 +33,7 @@ For the stories where begin performance fell flat, we can point to a clear reaso
     var pymParent = new pym.Parent('begin', 'http://apps.npr.org/dailygraphics/graphics/look-begin-rate-table/child.html', {});
 </script>
 
-It is also worth nothing that we have tried audio notices at other places in our stories, and we see similar levels of dropoff. In [Drowned Out](http://apps.npr.org/lookatthis/posts/whales) and [Arab Art Redefined](http://apps.npr.org/lookatthis/posts/al-qassemi), we placed the audio notice on a second slide. With Drowned Out, only 61.28% of users got past both slides, while with Arab Art Redefined, only 44.3% did. Though these are two examples with lower traffic than most stories, it seems clear that this is not a more effective way of getting users into the story.
+It is also worth noting that we have tried audio notices at other places in our stories, and we see similar levels of dropoff. In [Drowned Out](http://apps.npr.org/lookatthis/posts/whales) and [Arab Art Redefined](http://apps.npr.org/lookatthis/posts/al-qassemi), we placed the audio notice on a second slide. With Drowned Out, only 61.28% of users got past both slides, while with Arab Art Redefined, only 44.3% did. Though these are two examples with lower traffic than most stories, it seems clear that this is not a more effective way of getting users into the story.
 
 Does this mean we should remove audio notices from titlecards? Or stop doing sequential visual stories that integrate audio altogether? Not necessarily. As we will see later, stories with audio in them perform better in other aspects that filter out the begin rate.
 
