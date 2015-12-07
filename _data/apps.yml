@@ -381,3 +381,17 @@
   image: "http://apps.npr.org/lookatthis/posts/yemen/assets/final-edit/lead-art.jpg"
   url: http://apps.npr.org/lookatthis/posts/yemen/
   github_url: https://github.com/nprapps/lookatthis
+- name: "earbud.fm"
+  description: "Your friendly guide To great podcasts."
+  date: "Nov. 3, 2015"
+  image: "http://earbud.fm/assets/img/earbud-promo-fb-optimized-sm.jpg"
+  url: http://earbud.fm
+  github_url:
+- name: "Book Concierge 2015"
+  description: "Your friendly guide To great podcasts."
+  date: "Dec. 8, 2015"
+  image: "http://apps.npr.org/best-books-2015/assets/img/covers.jpg"
+  url: http://apps.npr.org/best-books-2015/
+  github_url:
+
+
