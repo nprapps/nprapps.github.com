@@ -80,8 +80,9 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 .entry section p { margin: 0 0 22px; }
 .entry section { font-size: 16px; line-height: 1.5em; margin-top:44px;}
 .entry section img { display: block; margin: 0 0 22px;}
-.entry li { list-style: square; line-height:22px; }
 .entry ul { margin: 0px 0px 22px 33px; }
+.entry ul li { list-style: square; line-height:22px; }
+.entry ol li { line-height:22px; }
 .entry ul ul { margin-bottom: 0; }
 .entry .caption { line-height: 1.1; }
 
