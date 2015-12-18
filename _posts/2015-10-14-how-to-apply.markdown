@@ -1,15 +1,12 @@
 ---
 layout: post
-title: "How to be an intern at NPR Visuals (Apply now for Winter/Spring 2016!)"
-description: "How to write a cover letter and give a great interview."
+title: "How to write a great cover letter for your internship at NPR Visuals"
+description: "We're working to make our job application process more accessible."
 
 author: David Eads
 email: deads@npr.org
 twitter: eads
 ---
-
-We're currently looking for interns for spring 2016!
-
 We want to see your best work.
 
 Here’s how.
@@ -51,34 +48,11 @@ Applicants with strong cover letters and good interview skills naturally tend to
 
 We’re certain that we’re missing out on candidates with great talent and potential who don’t have that kind of support in their lives. We think knowing our cover letter expectations and interview questions ahead of time will help level the playing field, keep our personal bias out of the interview process, and allow better comparisons between candidates.
 
-## Apply!
+## Current positions
 
-### Photo editing
+- [Photo editing](/2015/12/14/summer-photo-internship.html), Summer 2016 &mdash; due January 3, 2016
+- [Design and code](/2015/12/16/summer-2016-designer-developer-internship.html), Summer 2016 &mdash; due January 3, 2016
 
-Our photo editing intern will work with our digital news team to edit photos for npr.org. It'll be awesome. There will also be opportunities to research and pitch original work.
+Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info on dates, pay, etc.
 
-Please...
-
-- Love to write, edit and research
-- Be awesome at making pictures
-
-Are you awesome? [Apply now!](https://interns-npr.icims.com/jobs/2571/winter-spring-2016%3a-digital-news%2c-picture-editing-%26-visual-journalist/job)
-
-### Design and code
-
-This intern will work as a designer and/or developer on graphics and projects for npr.org. It'll be awesome.
-
-Please...
-
-- Our work is for the web, so be a web maker!
-- We'd especially love to hear from folks who love illustration, news graphics and information design.
-
-Are you awesome? [Apply now!](https://interns-npr.icims.com/jobs/2568/winter-spring-2016%3a-news-apps/job)
-
-### What will I be paid? What are the dates?
-
-The deadline for applications is <b>November 1, 2015</b>.
-
-Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info.
-
-Thx!
+We hope to hear from you!
