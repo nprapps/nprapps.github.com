@@ -34,6 +34,8 @@ We're based in Washington, DC. It's cool if you work remotely, but we'll want yo
 
 It's a three-month gig, Februaryish-Aprilish.
 
-Interested? Email [bboyer@npr.org](mailto:bboyer@npr.org).
+<s>Interested? Email [bboyer@npr.org](mailto:bboyer@npr.org).</s>
 
-Know somebody who'd love this? Please spread the word!!!
+<s>Know somebody who'd love this? Please spread the word!!!</s>
+
+_This position has been filled. Thanks!_
