@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="home">
-    {% for post in site.posts  %}
+    {% for post in site.posts %}
         {% if post.redirect_url == nil %}
             <article {% if post.external_url %}class="external"{% endif %}>
                 <header>

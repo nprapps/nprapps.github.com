@@ -1,38 +1,98 @@
 ---
 layout: base
 ---
-<section id="header">
-    <section id="title">
+<div id="homepage">
+
+    <section id="header">
+        <section id="title">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <h1><img src="/img/nprlogo.gif" alt="NPR" /> visuals team</h1>
+                        <h2>We are a team of photographers, coders and designers in the NPR&nbsp;newsroom.</h2>
+                        <p class="manifesto">
+                            <a href="https://twitter.com/nprviz/lists/the-team/members">Who We Are</a> |
+                            <a href="/2014/06/04/how-we-work.html">How We Work</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="jobs">
+            <div class="container">
+                <div class="row">
+                    <div class="span12">
+                        <p class="jobs">
+                            <strong>Join Our Team!</strong>
+                            <a href="/2015/11/06/developer-job.html">We're looking for a developer</a>.
+                        </p>
+                        <p class="internships">
+                            <strong>Summer 2016 Internships:</strong>
+                            <a href="/2015/12/16/summer-2016-designer-developer-internship.html">Design/Code/???</a> |
+                            <a href="/2015/12/14/summer-photo-internship.html">Photo Editing</a>
+                            <em>(Deadline:&nbsp;Jan.&nbsp;3)</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section id="work">
+        <div class="row">
+            <div class="span12">
+                <h2>Recent Work</h2>
+                <p class="more"><a href="/apps/">More</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools">
         <div class="container">
             <div class="row">
                 <div class="span12">
-                    <h1><img src="/img/nprlogo.gif" alt="NPR" /> visuals team</h1>
-                    <h2>We are a team of photographers, coders and designers in the NPR&nbsp;newsroom.</h2>
-                    <p class="manifesto">
-                        <a href="https://twitter.com/nprviz/lists/the-team/members">Who We Are</a> |
-                        <a href="/2014/06/04/how-we-work.html">How We Work</a>
-                    </p>
+                    <h2>Open-Source Tools</h2>
+                    <p class="more"><a href="/tools/">More</a></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="jobs">
+    <section id="blog">
         <div class="container">
             <div class="row">
-                <div class="span12">
-                    <p class="jobs">
-                        <strong>Join Our Team!</strong>
-                        <a href="/2015/11/06/developer-job.html">We're looking for a developer</a>.
-                    </p>
-                    <p class="internships">
-                        <strong>Summer 2016 Internships:</strong>
-                        <a href="/2015/12/16/summer-2016-designer-developer-internship.html">Design/Code/???</a> |
-                        <a href="/2015/12/14/summer-photo-internship.html">Photo Editing</a>
-                        <em>(Deadline:&nbsp;Jan.&nbsp;3)</em>
-                    </p>
+                <div class="span2">&nbsp;</div>
+                <div class="span8">
+
+                    <h2>Recently, On The Team Blog&hellip;</h2>
+
+                    {% for post in site.posts limit:3 %}
+                        {% if post.redirect_url == nil %}
+                            <article {% if post.external_url %}class="external"{% endif %}>
+                                <h6>{{ post.date | date: "%B %d, %Y" }}</h6>
+                                {% if post.external_url %}
+                                    <h3><a href="{{ post.external_url }}">{{ post.title }}</a></h3>
+                                {% else %}
+                                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                                {% endif %}
+                                <p class="entry">
+                                    {{ post.description }}
+
+                                    {% if post.external_url %}
+                                        <em>(external link)</em>
+                                    {% endif %}
+                                </p>
+                            </article>
+                        {% endif %}
+                    {% endfor %}
+
+                    <p class="more"><a href="/blog/">More</a></p>
+
                 </div>
+                <div class="span2">&nbsp;</div>
             </div>
         </div>
     </section>
-</section>
+
+</div>

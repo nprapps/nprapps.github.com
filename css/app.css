@@ -14,10 +14,16 @@ hr { margin: 33px 0; }
 
 
 /*
-  HEADER
+  HOMEPAGE
 */
-#header {
+#homepage {
     text-align: center;
+    padding-bottom: 33px;
+}
+#homepage h2 {
+    text-align: center;
+    font-weight: 400;
+    margin: 0 0 22px 0;
 }
 #title {
     padding: 66px 0 22px 0;
@@ -36,7 +42,6 @@ hr { margin: 33px 0; }
 }
 #header h2 {
     margin: 0 0 33px 0;
-    font-weight: 400;
     color: #777;
     font-size: 18px;
 }
@@ -48,10 +53,38 @@ hr { margin: 33px 0; }
     font-style: normal;
 }
 #header a {
-    font-weight: normal;
+    font-weight: 400;
     color: #6d8ac4;
 }
 #header a:hover { color: #bccae5; }
+
+/* hp blog list */
+#homepage #blog article {
+    text-align: center;
+    padding: 0 0 22px 0;
+    margin-bottom: 11px;
+    line-height: 1.4;
+    border-bottom: none;
+}
+#homepage #blog article a {
+    font-weight: 400;
+    color: #6d8ac4;
+}
+#homepage #blog article h6 {
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+#homepage #blog article h3 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+#homepage #blog article .entry {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 0;
+}
 
 
 article {
