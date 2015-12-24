@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: default
 title: 'Things We Made'
 ---
 
@@ -10,7 +10,7 @@ title: 'Things We Made'
     <div>
         <h2>Tools</h2>
         {% for tool in site.data.tools  %}
-        {% assign loopindex = forloop.index | modulo: 3 %}
+        {% assign loopindex = forloop.index | modulo: 2 %}
         {% if loopindex == 1 %}
         <div class="row clearfix">
         {% endif %}
