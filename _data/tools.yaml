@@ -3,17 +3,17 @@
   description: "An opinionated project template for (mostly) server-less apps."
   links:
     -
-      - title: "How to build a news app that never goes down and costs you practically nothing"
-      - url: /2013/02/14/app-template-redux.html
+      title: "How to build a news app that never goes down and costs you practically nothing"
+      url: /2013/02/14/app-template-redux.html
     -
-      - title: "Everything our app template does: July 2014 edition"
-      - url: /2014/07/29/everything-our-app-template-does.html
+      title: "Everything our app template does: July 2014 edition"
+      url: /2014/07/29/everything-our-app-template-does.html
     -
-      - title: "How to Setup the NPR App Template for You and Your News Org"
-      - url: /2014/09/08/how-to-setup-the-npr-app-template-for-you-and-your-news-org.html
+      title: "How to Setup the NPR App Template for You and Your News Org"
+      url: /2014/09/08/how-to-setup-the-npr-app-template-for-you-and-your-news-org.html
     -
-      - title: "Switching to OAuth in the App Template"
-      - url: /2015/03/02/app-template-oauth.html
+      title: "Switching to OAuth in the App Template"
+      url: /2015/03/02/app-template-oauth.html
 # - name: "Daily Graphics"
 #   url: https://github.com/nprapps/dailygraphics
 #   description: "A framework for creating and deploying responsive graphics suitable for publishing inside a CMS with pym.js."

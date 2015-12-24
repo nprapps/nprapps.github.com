@@ -32,11 +32,13 @@ title: 'Tools you can use'
                     <section class="entry">{{ tool.description }}</p>
                     </section>
                     <div class="post-meta">
+                        {% if tool.links != null %}
                         <ul>
-                            {% if tool.github_url != null %}
-                            <li><a href="{{ tool.github_url }}">Source on GitHub &#8594;</a></li>
-                            {% endif %}
+                            {% for link in tool.links %}
+                                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                            {% endfor %}
                         </ul>
+                        {% endif %}
                     </div>
                 </div>
             </article>
