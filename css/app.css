@@ -14,33 +14,77 @@ hr { margin: 33px 0; }
 
 
 /*
-  HEADER
+  HOMEPAGE
 */
-#header {
-    background-color: #e0e0e0;
+#homepage {
     text-align: center;
-    padding: 66px 0 33px 0;
+    padding-bottom: 33px;
+}
+#homepage h2 {
+    text-align: center;
+    font-weight: 400;
+    margin: 0 0 22px 0;
+}
+#title {
+    padding: 66px 0 22px 0;
+    background-color: #e0e0e0;
+}
+#jobs {
+    background-color: #f1f1f1;
+    padding: 15px 0 10px 0;
 }
 #header .container { margin-top: 0; }
 #header h1 {
-    margin: 0 0 33px 0;
+    margin: 0 0 22px 0;
     font-size: 44px;
     font-weight: 400;
     color: #333;
 }
 #header h2 {
-    margin: 0 0 22px 0;
-    font-weight: 400;
+    margin: 0 0 33px 0;
     color: #777;
     font-size: 18px;
 }
-#header p { font-size: 14px; }
-#header em { color: #787878; }
+#header p { margin-bottom: 5px; }
+#title p { font-size: 14px; }
+#jobs p { font-size: 12px; }
+#header em {
+    color: #787878;
+    font-style: normal;
+}
 #header a {
-    font-weight: normal;
+    font-weight: 400;
     color: #6d8ac4;
 }
 #header a:hover { color: #bccae5; }
+
+/* hp blog list */
+#homepage #blog article {
+    text-align: center;
+    padding: 0 0 22px 0;
+    margin-bottom: 11px;
+    line-height: 1.4;
+    border-bottom: none;
+}
+#homepage #blog article a {
+    font-weight: 400;
+    color: #6d8ac4;
+}
+#homepage #blog article h6 {
+    color: #999;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+#homepage #blog article h3 {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+#homepage #blog article .entry {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 0;
+}
 
 
 article {
@@ -50,11 +94,11 @@ article {
 
 article.external h6 { margin-bottom: 9px; }
 
-#home article, #things article {
+#home article, .things article {
     color:#777;
 }
 article:not(:last-child) { border-bottom: 1px solid #e6e6e6;}
-#things article:not(:last-child) { border-bottom: none;}
+.things article:not(:last-child) { border-bottom: none;}
 cite { float: right; font-size: 11px; text-decoration: none; color: #666; }
 code { padding: 2px 4px; color: #D14; background-color: #F7F7F9; border: 1px solid #E1E1E8; }
 pre { background-color: #F7F7F9; border: 1px solid #E1E1E8; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px; border-radius: 3px; margin: 0 0 22px;}
@@ -172,17 +216,24 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 #about h3 { clear:both; margin-top:40px; }
 #about .img-mug { float: right; padding: 0px 0px 5px 10px; width:73px; height:73px;}
 
-#things {
-    margin-top:44px;
+.things {
+    margin-top:22px;
 }
 
-#things h2 {
+.things h2 {
     font-size:28px;
     margin:0;
     font-weight:normal;
 }
 
-#things h3 {
+.things p.subtitle {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    color: #777;
+    margin: 1em 0;
+}
+
+.things h3 {
     font-size:22px;
     line-height: 1.2em;
 }
@@ -252,14 +303,14 @@ table.data td.amt { text-align: right; }
 }
 
 @media screen and (max-width:760px) {
-    #header {
+    #header section {
         margin-left: -20px;
         margin-right: -20px;
-        padding: 33px 20px 11px 20px;
+        padding: 15px 20px 15px 20px;
     }
     #header h1 {
         font-size: 22px;
-        margin-bottom: 22px;
+        margin-bottom: 0;
     }
     #header h1 img {
         width: 90px;
@@ -290,7 +341,7 @@ table.data td.amt { text-align: right; }
         font-size: 33px;
     }
 
-    #things img { display:none; }
+    .things img { display:none; }
 }
 
 @media screen and (max-width:480px) {
