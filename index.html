@@ -40,16 +40,35 @@ layout: base
     </section>
 
     <section id="work">
-        <div class="row">
-            <div class="span12">
-                <h2>Our Work</h2>
-                <p class="more"><a href="/work/">More</a></p>
+        <div class="container fluid">
+            <div class="row">
+                <div class="span12">
+                    <h2>Our Work</h2>
+                </div>
+                <div class="row">
+                    {% for app in site.data.apps reversed %}
+                    {% assign loopindex = forloop.index %}
+                    {% if loopindex <= 3 %}
+                    <div class="span4">
+                        <article>
+                            <a href="{{ app.url }}"><img src="{{ app.image }}" alt="Image"></a>
+                            <h3><a href="{{ app.url }}">{{ app.name }}</a></h3>
+                            <p class="entry">{{ app.description }}</p>
+                        </article>
+                    </div>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="row">
+                    <div class="span12">
+                    <p class="more"><a href="/work/">More</a></p>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="tools">
-        <div class="container">
+        <div class="container fluid">
             <div class="row">
                 <div class="span12">
                     <h2>Open-Source Tools</h2>
