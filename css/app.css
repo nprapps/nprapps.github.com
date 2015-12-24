@@ -13,6 +13,18 @@ hr {
     margin: 33px 0;
 }
 
+#header {
+    background-color: #e0e0e0;
+    text-align: center;
+    padding: 66px 0 44px 0;
+}
+#header .container { margin-top: 0; }
+#header h1 {
+    margin: 0;
+    font-size: 44px;
+    font-weight: 400;
+}
+
 article {
     padding: 44px 0px 44px 0px;
     margin: 0;
