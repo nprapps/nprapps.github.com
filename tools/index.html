@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 title: 'Things We Made'
 ---
 
@@ -10,11 +10,11 @@ title: 'Things We Made'
     <div>
         <h2>Tools</h2>
         {% for tool in site.data.tools  %}
-        <article>
-            <div class="row">
-                <div class="span2">
-                    <a href="{{ tool.url }}"><img src="{{ tool.image }}"/></a>
-                </div>
+        {% assign loopindex = forloop.index | modulo: 3 %}
+        {% if loopindex == 1 %}
+        <div class="row clearfix">
+        {% endif %}
+            <article class="span4">
                 <div class="span4">
                     <header>
                         <h3>
@@ -25,6 +25,7 @@ title: 'Things We Made'
                             {% endif %}
                         </h3>
                     </header>
+                    {% comment %}<a href="{{ tool.url }}"><img src="{{ tool.image }}"/></a>{% endcomment %}
                     <section class="entry">{{ tool.description }}</p>
                     </section>
                     <div class="post-meta">
@@ -35,8 +36,10 @@ title: 'Things We Made'
                         </ul>
                     </div>
                 </div>
-            </div>
-        </article>
-    {% endfor %}    
+            </article>
+        {% if loopindex == 0 %}
+        </div>
+        {% endif %}
+    {% endfor %}
     </div>
 </div>
