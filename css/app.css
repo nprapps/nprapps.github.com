@@ -163,7 +163,7 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 
 .post-meta { color:#666; font-size: 12px; padding: 10px 0 0 0; }
 .post-meta ul { list-style: none; padding: 0px; margin: 0px; font-size: 12px; }
-.post-meta li { display: inline; padding-right: 10px; }
+.post-meta li { padding-right: 10px; }
 .post-meta a { color: #6d8ac4;}
 .post-meta a:hover { color: #bccae5;}
 
