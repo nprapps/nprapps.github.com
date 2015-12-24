@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'Things We Made'
+title: 'Tools you can use'
 ---
 
 {{ site.config }}
@@ -8,7 +8,10 @@ title: 'Things We Made'
 <div id="things">
 
     <div>
-        <h2>Tools</h2>
+        <header>
+            <h2>Tools you can use</h2>
+            <p class="subtitle">Tools for your newsroom. Take a look through <a href="https://github.com/nprapps">all our repos</a> or read about <a href="https://github.com/nprapps/bestpractices">our best practices</a>.</p>
+        </header>
         {% for tool in site.data.tools  %}
         {% assign loopindex = forloop.index | modulo: 2 %}
         {% if loopindex == 1 %}

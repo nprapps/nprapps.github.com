@@ -1,13 +1,16 @@
 ---
 layout: default
-title: 'Things We Made'
+title: 'Our work'
 ---
 
 {{ site.config }}
 
 <div id="things">
     <div>
-        <h2>Apps</h2>
+        <header>
+            <h2>Our work</h2>
+            <p class="subtitle">Things we've made that you can look at and listen to.</p>
+        </header>
         {% for app in site.data.apps reversed %}
         {% assign loopindex = forloop.index | modulo: 2 %}
         {% if loopindex == 1 %}
