@@ -1,17 +1,23 @@
 ---
 layout: default
-title: 'Things We Made'
+title: 'Our work'
 ---
 
 {{ site.config }}
 
-<div id="things">
+<div id="our-work" class="things">
     <div>
-        <h2>Apps</h2>
+        <header>
+            <h2>Our work</h2>
+            <p class="subtitle">Things we've made that you can look at and listen to.</p>
+        </header>
         {% for app in site.data.apps reversed %}
-        <article>
-            <div class="row">
-                <div class="span2">
+        {% assign loopindex = forloop.index | modulo: 2 %}
+        {% if loopindex == 1 %}
+        <div class="row clearfix">
+        {% endif %}
+        <article class="span4">
+                <div class="span4">
                     <a href="{{ app.url }}"><img src="{{ app.image }}"/></a>
                 </div>
                 <div class="span4">
@@ -35,8 +41,10 @@ title: 'Things We Made'
                         </ul>
                     </div>
                 </div>
-            </div>
-        </article>
+            </article>
+        {% if loopindex == 0 %}
+        </div>
+        {% endif %}
         {% endfor %}
     </div>
 </div>
