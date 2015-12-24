@@ -14,51 +14,60 @@
     -
       title: "Switching to OAuth in the App Template"
       url: /2015/03/02/app-template-oauth.html
-# - name: "Daily Graphics"
-#   url: https://github.com/nprapps/dailygraphics
-#   description: "A framework for creating and deploying responsive graphics suitable for publishing inside a CMS with pym.js."
-#   -
-#     - title: "Creating And Deploying Small-Scale Projects"
-#     - url: /2014/05/27/dailygraphics.html
-#   -
-#     - title: ""
-#     - url:
-#   -
-#     - title: ""
-#     - url:
-#   -
-#     - title: ""
-#     - url:
-#   -
-#     - title: ""
-#     - url:
-# - name: "Copytext"
-#   description: "A Python library for accessing a spreadsheet as a native object suitable for templating."
-#   image: "../img/apps/copytext.jpg"
-#   url: http://copytext.readthedocs.org
-#   github_url: https://github.com/nprapps/copytext
-# - name: "Mapturner"
-#   description: "A command line utility for generating topojson from various data sources for fast maps."
-#   image: "../img/apps/mapturner.png"
-#   url: http://github.com/nprapps/mapturner
-#   github_url: http://github.com/nprapps/mapturner
-# - name: "Pym.js"
-#   description: "A JavaScript library for responsive iframes"
-#   date:
-#   image: "../img/pym.png"
-#   url: http://blog.apps.npr.org/pym.js/
-#   github_url: https://github.com/nprapps/pym.js/
-#
-# App Template
-# Daily Graphics (plus a link to graphics archive?)
-# Pym.js
+
+- name: "Daily Graphics"
+  url: https://github.com/nprapps/dailygraphics
+  description: "A framework for creating and deploying responsive graphics suitable for publishing inside a CMS with pym.js."
+  links:
+    -
+      title: "Creating And Deploying Small-Scale Projects"
+      url: /2014/05/27/dailygraphics.html
+    -
+      title: "What's new in our first release version of the dailygraphics rig?"
+      url: /2015/07/17/daily-graphics-label-positioning.html
+    -
+      title: "Better, faster, more: recent improvements to our dailygraphics rig"
+      url: /2015/04/28/dailygraphics.html
+    -
+      title: "Let’s Tesselate: Hexagons For Tile Grid Maps"
+      url: /2015/05/11/hex-tile-maps.html
+    -
+      title: "Baking Chart Data Into Your Page"
+      url: /2015/01/28/dailygraphics-json.html
+
+- name: "Mapturner"
+  description: "A command line utility for generating topojson from various data sources for fast maps."
+  url: http://github.com/nprapps/mapturner
+  links:
+    -
+      title: "Simplifying Map Production"
+      url: /2015/05/18/locator-maps.html
+
+- name: "Copytext"
+  description: "A Python library for accessing a spreadsheet as a native object suitable for templating."
+  url: http://copytext.readthedocs.org
+  links:
+    -
+      title: "Baking Chart Data Into Your Page"
+      url: /2015/01/28/dailygraphics-json.html
+    -
+      title: "Managing Instagram Photo Call-Outs"
+      url: /2014/05/29/photo-callouts.html
+
+- name: "Pym.js"
+  description: "A JavaScript library for responsive iframes"
+  url: http://blog.apps.npr.org/pym.js/
+  links:
+    -
+      title: "The Pympocalypse"
+      url: /2015/10/30/pympocalypse.html
+    -
+      title: "Responsive Graphics In Core Publisher With Pym.js"
+      url: /2014/12/19/pym-core-publisher.html
+
 # Elex
 # Lunchbox
 # Newscast.js
-# Mapturner
-# Copytext
 # Agate?
 # CSVKit?
 # Invar?
-#
-# https://github.com/nprapps/bestpractices
