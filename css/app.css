@@ -61,11 +61,11 @@ article {
 
 article.external h6 { margin-bottom: 9px; }
 
-#home article, #things article {
+#home article, .things article {
     color:#777;
 }
 article:not(:last-child) { border-bottom: 1px solid #e6e6e6;}
-#things article:not(:last-child) { border-bottom: none;}
+.things article:not(:last-child) { border-bottom: none;}
 cite { float: right; font-size: 11px; text-decoration: none; color: #666; }
 code { padding: 2px 4px; color: #D14; background-color: #F7F7F9; border: 1px solid #E1E1E8; }
 pre { background-color: #F7F7F9; border: 1px solid #E1E1E8; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px; border-radius: 3px; margin: 0 0 22px;}
@@ -183,17 +183,24 @@ blockquote p { margin: 30px 20px 30px 20px; font-size: 14px; font-weight: 200; l
 #about h3 { clear:both; margin-top:40px; }
 #about .img-mug { float: right; padding: 0px 0px 5px 10px; width:73px; height:73px;}
 
-#things {
-    margin-top:44px;
+.things {
+    margin-top:22px;
 }
 
-#things h2 {
+.things h2 {
     font-size:28px;
     margin:0;
     font-weight:normal;
 }
 
-#things h3 {
+.things p.subtitle {
+    font-size: 1.2em;
+    line-height: 1.3em;
+    color: #777;
+    margin: 1em 0;
+}
+
+.things h3 {
     font-size:22px;
     line-height: 1.2em;
 }
@@ -301,7 +308,7 @@ table.data td.amt { text-align: right; }
         font-size: 33px;
     }
 
-    #things img { display:none; }
+    .things img { display:none; }
 }
 
 @media screen and (max-width:480px) {
