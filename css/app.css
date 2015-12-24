@@ -65,6 +65,7 @@ article.external h6 { margin-bottom: 9px; }
     color:#777;
 }
 article:not(:last-child) { border-bottom: 1px solid #e6e6e6;}
+#things article:not(:last-child) { border-bottom: none;}
 cite { float: right; font-size: 11px; text-decoration: none; color: #666; }
 code { padding: 2px 4px; color: #D14; background-color: #F7F7F9; border: 1px solid #E1E1E8; }
 pre { background-color: #F7F7F9; border: 1px solid #E1E1E8; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px; border-radius: 3px; margin: 0 0 22px;}
