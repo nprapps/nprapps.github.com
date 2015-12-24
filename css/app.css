@@ -39,6 +39,12 @@ hr { margin: 33px 0; }
     margin: 0 0 22px 0;
     line-height: 1.6;
 }
+#homepage h2 a {
+    color: #333;
+    font-weight: 400;
+}
+#homepage h2 a:hover { color: #787878; }
+
 
 /* hp header */
 #homepage #header {
