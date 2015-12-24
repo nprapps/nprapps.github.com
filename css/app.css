@@ -359,22 +359,27 @@ table.data td.amt { text-align: right; }
 }
 
 @media screen and (max-width:760px) {
-    #header section {
+    #homepage section {
         margin-left: -20px;
         margin-right: -20px;
         padding: 15px 20px 15px 20px;
     }
-    #header h1 {
-        font-size: 22px;
-        margin-bottom: 0;
+    #homepage #header {
+        padding-top: 22px;
+        padding-bottom: 22px;
     }
-    #header h1 img {
+    #homepage #header h1 {
+        font-size: 22px;
+        margin-bottom: 22px;
+    }
+    #homepage #header h1 img {
         width: 90px;
         height: auto;
     }
-    #header p { font-size: 12px; }
-    #header h2,
-    #header .manifesto { display: none; }
+    #homepage #header .jobs { line-height: 1.8; }
+    #homepage #header .jobs span { display: block; }
+    #homepage #header h2,
+    #homepage #header .manifesto { display: none; }
 
     #small-logo {
         font-size:22px;
