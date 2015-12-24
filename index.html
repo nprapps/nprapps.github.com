@@ -4,39 +4,26 @@ layout: base
 <div id="homepage">
 
     <section id="header">
-        <section id="title">
-            <div class="container">
-                <div class="row">
-                    <div class="span12">
-                        <h1><img src="/img/nprlogo.gif" alt="NPR" /> visuals team</h1>
-                        <h2>We are a team of photographers, coders and designers in the NPR&nbsp;newsroom.</h2>
-                        <p class="manifesto">
-                            <a href="https://twitter.com/nprviz/lists/the-team/members">Who We Are</a> |
-                            <a href="/2014/06/04/how-we-work.html">How We Work</a>
-                        </p>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="span12">
+                    <h1><img src="/img/nprlogo.gif" alt="NPR" /> visuals team</h1>
+                    <h2>We are a team of photographers, coders and designers in the NPR&nbsp;newsroom.</h2>
+                    <p class="manifesto">
+                        <a href="https://twitter.com/nprviz/lists/the-team/members">Who We Are</a> |
+                        <a href="/2014/06/04/how-we-work.html">How We Work</a>
+                    </p>
+                    <p class="jobs">
+                        <strong>Join Our Team!</strong>
+                        <a href="/2015/11/06/developer-job.html">We're looking for a developer</a>.
+                        <strong>Summer 2016 Internships:</strong>
+                        <a href="/2015/12/16/summer-2016-designer-developer-internship.html">Design/Code/???</a> |
+                        <a href="/2015/12/14/summer-photo-internship.html">Photo Editing</a>
+                        <em>(Deadline:&nbsp;Jan.&nbsp;3)</em>
+                    </p>
                 </div>
             </div>
-        </section>
-
-        <section id="jobs">
-            <div class="container">
-                <div class="row">
-                    <div class="span12">
-                        <p class="jobs">
-                            <strong>Join Our Team!</strong>
-                            <a href="/2015/11/06/developer-job.html">We're looking for a developer</a>.
-                        </p>
-                        <p class="internships">
-                            <strong>Summer 2016 Internships:</strong>
-                            <a href="/2015/12/16/summer-2016-designer-developer-internship.html">Design/Code/???</a> |
-                            <a href="/2015/12/14/summer-photo-internship.html">Photo Editing</a>
-                            <em>(Deadline:&nbsp;Jan.&nbsp;3)</em>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </section>
 
     <section id="work">
@@ -49,7 +36,21 @@ layout: base
             <div class="row">
                 {% for app in site.data.apps reversed %}
                 {% assign loopindex = forloop.index %}
-                {% if loopindex <= 3 %}
+                {% if loopindex <= 1 %}
+                <div class="span12">
+                    <article>
+                        <a href="{{ app.url }}"><img src="{{ app.image }}" alt="Image"></a>
+                        <h3><a href="{{ app.url }}">{{ app.name }}</a></h3>
+                        <p class="entry">{{ app.description }}</p>
+                    </article>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <div class="row">
+                {% for app in site.data.apps reversed %}
+                {% assign loopindex = forloop.index %}
+                {% if loopindex > 1 and loopindex <= 4 %}
                 <div class="span4">
                     <article>
                         <a href="{{ app.url }}"><img src="{{ app.image }}" alt="Image"></a>

@@ -20,44 +20,64 @@ hr { margin: 33px 0; }
     text-align: center;
     padding-bottom: 33px;
 }
+#homepage section {
+    margin-bottom: 1px;
+    padding-top: 44px;
+    padding-bottom: 22px;
+}
+#homepage .container { margin-top: 0; }
 #homepage h2 {
     text-align: center;
     font-weight: 400;
     margin: 0 0 22px 0;
     line-height: 1.6;
 }
-#title {
-    padding: 66px 0 22px 0;
-    background-color: #e0e0e0;
+#homepage a { color: #6d8ac4; }
+#homepage a:hover { color: #bccae5; }
+
+/* hp header */
+#homepage #header {
+    background-color: #777;
+    color: #ccc;
+    -webkit-font-smoothing: antialiased;
+    padding-top: 66px;
+    padding-bottom: 33px;
 }
-#jobs {
-    background-color: #f1f1f1;
-    padding: 15px 0 10px 0;
-}
-#header { margin-bottom: 33px; }
 #header h1 {
-    margin: 0 0 22px 0;
+    margin: 0 0 15px 0;
     font-size: 44px;
     font-weight: 400;
-    color: #333;
+    color: #fff;
 }
 #header h2 {
-    margin: 0 0 33px 0;
-    color: #777;
+    margin: 0 0 11px 0;
+    color: #ccc;
     font-size: 18px;
 }
-#header p { margin-bottom: 5px; }
-#title p { font-size: 14px; }
-#jobs p { font-size: 12px; }
+#header p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+#header p.manifesto {
+    font-size: 14px;
+    margin-bottom: 33px;
+}
+#header strong {
+    background-color: #f19e14;
+    padding: 2px 5px;
+    color: #333;
+    margin: 0 5px 0 15px;
+}
+#header strong:first-child { margin-left: 0; }
+#header a { color: #color: #fff;; }
 #header em {
-    color: #787878;
     font-style: normal;
+    margin-left: 3px;
 }
 #header a {
-    font-weight: 400;
-    color: #6d8ac4;
+    font-weight: 700;
+    color: #fff;
 }
-#header a:hover { color: #bccae5; }
 
 p.more a {
     display: inline-block;
@@ -91,6 +111,10 @@ p.more a:after {
     line-height: 1.5;
     border-bottom: none;
 }
+#homepage article img {
+    display: block;
+    margin-bottom: 11px;
+}
 #homepage article h3 {
     font-size: 16px;
     line-height: 1.6;
@@ -101,16 +125,12 @@ p.more a:after {
     font-size: 14px;
     margin-bottom: 0;
 }
-#homepage article a { color: #6d8ac4; }
-#homepage article a:hover { color: #bccae5; }
+
+/* hp apps list */
+#homepage #work { background-color: #ddd; }
 
 /* hp tools list */
-#homepage #tools {
-    background-color: #f1f1f1;
-    padding-top: 44px;
-    padding-bottom: 22px;
-}
-#homepage #tools .container { margin-top: 0; }
+#homepage #tools { background-color: #f1f1f1; }
 
 /* hp blog list */
 #homepage #blog article h6 {
@@ -120,6 +140,7 @@ p.more a:after {
 }
 #homepage #blog article h3 { font-size: 14px; }
 #homepage #blog article .entry { font-size: 12px; }
+
 
 
 article {
