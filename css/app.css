@@ -17,25 +17,36 @@ hr { margin: 33px 0; }
   HEADER
 */
 #header {
-    background-color: #e0e0e0;
     text-align: center;
-    padding: 66px 0 33px 0;
+}
+#title {
+    padding: 66px 0 22px 0;
+    background-color: #e0e0e0;
+}
+#jobs {
+    background-color: #f1f1f1;
+    padding: 15px 0 10px 0;
 }
 #header .container { margin-top: 0; }
 #header h1 {
-    margin: 0 0 33px 0;
+    margin: 0 0 22px 0;
     font-size: 44px;
     font-weight: 400;
     color: #333;
 }
 #header h2 {
-    margin: 0 0 22px 0;
+    margin: 0 0 33px 0;
     font-weight: 400;
     color: #777;
     font-size: 18px;
 }
-#header p { font-size: 14px; }
-#header em { color: #787878; }
+#header p { margin-bottom: 5px; }
+#title p { font-size: 14px; }
+#jobs p { font-size: 12px; }
+#header em {
+    color: #787878;
+    font-style: normal;
+}
 #header a {
     font-weight: normal;
     color: #6d8ac4;
@@ -252,14 +263,14 @@ table.data td.amt { text-align: right; }
 }
 
 @media screen and (max-width:760px) {
-    #header {
+    #header section {
         margin-left: -20px;
         margin-right: -20px;
-        padding: 33px 20px 11px 20px;
+        padding: 15px 20px 15px 20px;
     }
     #header h1 {
         font-size: 22px;
-        margin-bottom: 22px;
+        margin-bottom: 0;
     }
     #header h1 img {
         width: 90px;
