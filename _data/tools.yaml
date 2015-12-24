@@ -23,6 +23,9 @@
       title: "Creating And Deploying Small-Scale Projects"
       url: /2014/05/27/dailygraphics.html
     -
+      title: "All About The Dailygraphics Rig From NPR"
+      url: https://source.opennews.org/en-US/articles/all-about-dailygraphics/
+    -
       title: "What's new in our first release version of the dailygraphics rig?"
       url: /2015/07/17/daily-graphics-label-positioning.html
     -
@@ -53,21 +56,50 @@
     -
       title: "Managing Instagram Photo Call-Outs"
       url: /2014/05/29/photo-callouts.html
+    -
+      title: "How We Built Borderland Out Of A Spreadsheet"
+      url: /2014/04/23/how-we-built-borderland-out-of-a-spreadsheet.html
+    -
+      title: "Introducing copytext.py: your words are data too"
+      url: /2014/04/21/introducing-copytext-py.html
 
 - name: "Pym.js"
   description: "A JavaScript library for responsive iframes"
   url: http://blog.apps.npr.org/pym.js/
   links:
     -
+      title: "Introducing Pym.js"
+      url: https://source.opennews.org/en-US/articles/introducing-pym/
+    -
       title: "The Pympocalypse"
       url: /2015/10/30/pympocalypse.html
+    -
+      title: "Responsive Charts With D3 And Pym.js"
+      url: /2014/05/19/responsive-charts.html
     -
       title: "Responsive Graphics In Core Publisher With Pym.js"
       url: /2014/12/19/pym-core-publisher.html
 
-# Elex
-# Lunchbox
-# Newscast.js
-# Agate?
-# CSVKit?
-# Invar?
+- name: "Newscast.js"
+  description: "A library to radically simplify Chromecast web app development."
+  url: http://apps.npr.org/newscast/docs/
+  links:
+    -
+      title: "Putting Radio On The Television"
+      url: http://blog.apps.npr.org/2015/01/22/election-party-analytics.html
+
+- name: "Elex"
+  description: "A command-line tool to get election results from the Associated Press Election API v2.0. Elex is designed to be friendly, fast and agnostic to your language/database choices."
+  url: http://elex.readthedocs.org/
+  links:
+    -
+      title: "Introducing Elex, a Tool to Make Election Coverage Better for Everyone"
+      url: https://source.opennews.org/en-US/articles/introducing-elex-tool-make-election-coverage-bette/
+
+- name: "Lunchbox"
+  description: "A suite of tools to create images for social media sharing."
+  url: http://blog.apps.npr.org/lunchbox/
+  links:
+    -
+      title: "Introducing Lunchbox"
+      url: https://source.opennews.org/en-US/articles/introducing-lunchbox/
