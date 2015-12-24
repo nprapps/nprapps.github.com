@@ -42,8 +42,8 @@ layout: base
     <section id="work">
         <div class="row">
             <div class="span12">
-                <h2>Recent Work</h2>
-                <p class="more"><a href="/apps/">More</a></p>
+                <h2>Our Work</h2>
+                <p class="more"><a href="/work/">More</a></p>
             </div>
         </div>
     </section>
@@ -53,6 +53,26 @@ layout: base
             <div class="row">
                 <div class="span12">
                     <h2>Open-Source Tools</h2>
+                </div>
+            </div>
+            <div class="row">
+                {% for tool in site.data.tools limit:3 %}
+                <div class="span4">
+                    <article>
+                        <h3>
+                            {% if tool.url != null %}
+                                <a href="{{ tool.url }}">{{ tool.name }}</a>
+                            {% else %}
+                                {{ tool.name }}
+                            {% endif %}
+                        </h3>
+                        <p class="entry">{{ tool.description }}</p>
+                    </article>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="span12">
                     <p class="more"><a href="/tools/">More</a></p>
                 </div>
             </div>
