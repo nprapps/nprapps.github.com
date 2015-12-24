@@ -14,13 +14,11 @@ title: 'Our work'
         {% for app in site.data.apps reversed %}
         {% assign loopindex = forloop.index | modulo: 2 %}
         {% if loopindex == 1 %}
-        <div class="row clearfix">
+        <div class="row-fluid">
         {% endif %}
-        <article class="span4">
-                <div class="span4">
+        <article class="span6">
+                <div class="span12">
                     <a href="{{ app.url }}"><img src="{{ app.image }}"/></a>
-                </div>
-                <div class="span4">
                     <header>
                         <h3>
                             {% if app.url != null %}
