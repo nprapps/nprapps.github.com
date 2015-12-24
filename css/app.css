@@ -68,7 +68,7 @@ hr { margin: 33px 0; }
     color: #333;
     margin: 0 5px 0 15px;
 }
-#header strong:first-child { margin-left: 0; }
+#header .job strong { margin-left: 0; }
 #header a { color: #color: #fff;; }
 #header em {
     font-style: normal;
@@ -79,7 +79,7 @@ hr { margin: 33px 0; }
     color: #fff;
 }
 
-p.more a {
+#homepage p.more a {
     display: inline-block;
     line-height: 1.4;
     padding: 7px 15px 10px;
@@ -93,11 +93,11 @@ p.more a {
     font-weight: 700;
     transition: background-color 0.1s ease-out, color 0.1s ease-out;
 }
-p.more a:hover {
+#homepage p.more a:hover {
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
 }
-p.more a:after {
+#homepage p.more a:after {
     content: ' \203A';
     font-size: 16px;
     line-height: 1.1;
