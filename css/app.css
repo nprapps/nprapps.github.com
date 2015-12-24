@@ -4,8 +4,15 @@ body {
     font-family: "Gotham SSm", Helvetica, Arial, sans-serif;
     color: #333;
 }
-a { color:#222; font-weight: bold; }
-a:hover { color: #6d8ac4; font-weight: bold; text-decoration:none; }
+a {
+    color: #6d8ac4;
+    font-weight: 700;
+}
+a:hover {
+    color: #bccae5;
+    text-decoration: none;
+}
+
 h1 { margin-bottom: 10px; font-size: 32px; }
 h2 { line-height:1.2em; margin-bottom: 22px; }
 h3 { margin-bottom: 10px; }
@@ -32,8 +39,6 @@ hr { margin: 33px 0; }
     margin: 0 0 22px 0;
     line-height: 1.6;
 }
-#homepage a { color: #6d8ac4; }
-#homepage a:hover { color: #bccae5; }
 
 /* hp header */
 #homepage #header {
