@@ -3,7 +3,6 @@ layout: base
 ---
 
 <div class="container">
-    {% if page.big_picture %}
     <div class="row">
         <div class="span2">&nbsp;</div>
         <div class="span8">
@@ -18,12 +17,14 @@ layout: base
         </div>
         <div class="span2">&nbsp;</div>
     </div>
+    {% if page.big_picture %}
     <div class="row">
         <div class="span12">
             <img src="{{ page.big_picture }}">
             <p><small>{{ page.big_picture_caption }}</small></p>
         </div>
     </div>
+    {% endif %}
     <div class="row">
         <div class="span2">&nbsp;</div>
         <div class="span8" id="content">
@@ -31,43 +32,4 @@ layout: base
         </div>
         <div class="span2">&nbsp;</div>
     </div>
-    <!-- <div class="row">
-        <div class="span2">&nbsp;</div>
-        <div class="span8" id="rail">
-            <div id="logo">
-                <h1>
-                    <a href="/"><img src="/img/nprlogo.gif"/> visuals team</a>
-                </h1>
-            </div>
-            <ul class="nav nav-list">
-                <li><a href="/apps/">Things We Made</a></li>
-                <li><a href="https://github.com/nprapps">Source On GitHub</a></li>
-                <li><a href="https://twitter.com/nprviz/the-team/members">Meet The Team</a></li>
-            </ul>
-        </div>
-        <div class="span2">&nbsp;</div>
-    </div> -->
-    {% else %}
-    <div class="row">
-        <div id="small-logo"><a href="/"><img src="/img/nprlogo.gif"/> visuals team</a></div>
-        <div class="span1">&nbsp;</div>
-        <div class="span6" id="content">
-            {{ content }}
-        </div>
-        <div class="span1">&nbsp;</div>
-        <div class="span3" id="rail">
-            <div id="logo">
-                <h1>
-                    <a href="/"><img src="/img/nprlogo.gif"/> visuals team</a>
-                </h1>
-            </div>
-            <ul class="nav nav-list">
-                <li><a href="/apps/">Things We Made</a></li>
-                <li><a href="https://github.com/nprapps">Source On GitHub</a></li>
-                <li><a href="https://twitter.com/nprviz/lists/the-team/members">Meet The Team</a></li>
-            </ul>
-        </div>
-        <div class="span1">&nbsp;</div>
-    </div>
-    {% endif %}
 </div>
