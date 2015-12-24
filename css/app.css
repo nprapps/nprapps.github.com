@@ -114,6 +114,9 @@ p.more a:after {
 #homepage article img {
     display: block;
     margin-bottom: 11px;
+    max-width: none;
+    width: 100%;
+    height: auto;
 }
 #homepage article h3 {
     font-size: 16px;
