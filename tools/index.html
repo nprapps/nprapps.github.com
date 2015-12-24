@@ -9,7 +9,7 @@ title: 'Tools you can use'
 
     <div>
         <header>
-            <h2>Tools you can use</h2>
+            <h2>Tools You Can Use</h2>
             <p class="subtitle">
                 Tools for your newsroom. Take a look through <a href="https://github.com/nprapps">all our repos</a>, read about <a href="https://github.com/nprapps/bestpractices">our best practices</a>, and learn how to <a href="http://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html">setup your Mac to develop like we do</a>.</p>
         </header>
@@ -18,8 +18,8 @@ title: 'Tools you can use'
         {% if loopindex == 1 %}
         <div class="row-fluid">
         {% endif %}
-            <article class="span6">
-                <div class="span12">
+            <div class="span6">
+                <article>
                     <header>
                         <h3>
                             {% if tool.url != null %}
@@ -30,8 +30,7 @@ title: 'Tools you can use'
                         </h3>
                     </header>
                     {% comment %}<a href="{{ tool.url }}"><img src="{{ tool.image }}"/></a>{% endcomment %}
-                    <section class="entry">{{ tool.description }}</p>
-                    </section>
+                    <section class="entry">{{ tool.description }}</section>
                     <div class="post-meta">
                         {% if tool.links != null %}
                         <ul>
