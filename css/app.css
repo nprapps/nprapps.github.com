@@ -35,7 +35,6 @@ hr { margin: 33px 0; }
     padding: 15px 0 10px 0;
 }
 #header { margin-bottom: 33px; }
-#header .container { margin-top: 0; }
 #header h1 {
     margin: 0 0 22px 0;
     font-size: 44px;
@@ -60,38 +59,67 @@ hr { margin: 33px 0; }
 }
 #header a:hover { color: #bccae5; }
 
-/* hp tools list */
-#tools {
-    background-color: #f1f1f1;
+p.more a {
+    display: inline-block;
+    line-height: 1.4;
+    padding: 7px 15px 10px;
+    color: #777;
+    border-radius: 4pt;
+    background-color: rgba(0, 0, 0, 0.07);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.18182em;
+    font-size: 11px;
+    font-weight: 700;
+    transition: background-color 0.1s ease-out, color 0.1s ease-out;
+}
+p.more a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+p.more a:after {
+    content: ' \203A';
+    font-size: 16px;
+    line-height: 1.1;
 }
 
-/* hp blog list */
-#homepage #blog article {
+/* hp lists */
+#homepage article {
     text-align: center;
     padding: 0 0 22px 0;
     margin-bottom: 11px;
-    line-height: 1.4;
+    line-height: 1.5;
     border-bottom: none;
 }
-#homepage #blog article a {
-    font-weight: 400;
-    color: #6d8ac4;
+#homepage article h3 {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 5px;
 }
+#homepage article .entry {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+#homepage article a { color: #6d8ac4; }
+#homepage article a:hover { color: #bccae5; }
+
+/* hp tools list */
+#homepage #tools {
+    background-color: #f1f1f1;
+    padding-top: 44px;
+    padding-bottom: 22px;
+}
+#homepage #tools .container { margin-top: 0; }
+
+/* hp blog list */
 #homepage #blog article h6 {
     color: #999;
     font-weight: 400;
     margin-bottom: 5px;
 }
-#homepage #blog article h3 {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 5px;
-}
-#homepage #blog article .entry {
-    color: #666;
-    font-size: 12px;
-    margin-bottom: 0;
-}
+#homepage #blog article h3 { font-size: 14px; }
+#homepage #blog article .entry { font-size: 12px; }
 
 
 article {

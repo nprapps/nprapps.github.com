@@ -43,38 +43,38 @@ layout: base
         <div class="container fluid">
             <div class="row">
                 <div class="span12">
-                    <h2>Our Work</h2>
+                    <h2>Recent Work</h2>
                 </div>
-                <div class="row">
-                    {% for app in site.data.apps reversed %}
-                    {% assign loopindex = forloop.index %}
-                    {% if loopindex <= 3 %}
-                    <div class="span4">
-                        <article>
-                            <a href="{{ app.url }}"><img src="{{ app.image }}" alt="Image"></a>
-                            <h3><a href="{{ app.url }}">{{ app.name }}</a></h3>
-                            <p class="entry">{{ app.description }}</p>
-                        </article>
-                    </div>
-                    {% endif %}
-                    {% endfor %}
+            </div>
+            <div class="row">
+                {% for app in site.data.apps reversed %}
+                {% assign loopindex = forloop.index %}
+                {% if loopindex <= 3 %}
+                <div class="span4">
+                    <article>
+                        <a href="{{ app.url }}"><img src="{{ app.image }}" alt="Image"></a>
+                        <h3><a href="{{ app.url }}">{{ app.name }}</a></h3>
+                        <p class="entry">{{ app.description }}</p>
+                    </article>
                 </div>
-                <div class="row">
-                    <div class="span12">
-                    <p class="more"><a href="/work/">More</a></p>
-                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="span12">
+                <p class="more"><a href="/work/">More</a></p>
             </div>
         </div>
     </section>
 
     <section id="tools">
         <div class="container fluid">
-            <div class="row">
+            <div class="row fluid">
                 <div class="span12">
                     <h2>Open-Source Tools</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row fluid">
                 {% for tool in site.data.tools limit:3 %}
                 <div class="span4">
                     <article>
@@ -90,7 +90,7 @@ layout: base
                 </div>
                 {% endfor %}
             </div>
-            <div class="row">
+            <div class="row fluid">
                 <div class="span12">
                     <p class="more"><a href="/tools/">More</a></p>
                 </div>
@@ -104,7 +104,7 @@ layout: base
                 <div class="span2">&nbsp;</div>
                 <div class="span8">
 
-                    <h2>Recently, On The Team Blog&hellip;</h2>
+                    <h2>On The Team Blog</h2>
 
                     {% for post in site.posts limit:3 %}
                         {% if post.redirect_url == nil %}
