@@ -8,9 +8,10 @@ title: 'Our work'
 <div id="our-work" class="things">
     <div>
         <header>
-            <h2>Our work</h2>
+            <h2>Our Work</h2>
             <p class="subtitle">Things we've made that you can look at and listen to.</p>
         </header>
+
         {% for app in site.data.apps reversed %}
         {% assign loopindex = forloop.index | modulo: 2 %}
         {% if loopindex == 1 %}

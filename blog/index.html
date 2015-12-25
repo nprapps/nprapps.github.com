@@ -2,15 +2,19 @@
 layout: default
 ---
 <div id="blog">
+    <header>
+        <h2>Visuals Team Blog</h2>
+    </header>
+
     {% for post in site.posts %}
         {% if post.redirect_url == nil %}
             <article {% if post.external_url %}class="external"{% endif %}>
                 <header>
                     {% if post.external_url %}
                         <h6>{{ post.external_site }}</h6>
-                        <h2><a href="{{ post.external_url }}">{{ post.title }}</a></h2>
+                        <h3><a href="{{ post.external_url }}">{{ post.title }}</a></h3>
                     {% else %}
-                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
                     {% endif %}
                 </header>
                 <section class="entry">
