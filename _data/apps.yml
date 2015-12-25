@@ -377,7 +377,7 @@
   github_url: https://github.com/nprapps/lookatthis
 - name: "The Unthinkable"
   description: "An ancient city plunges into darkness as a war on civilians rages."
-  date: "Aug 21, 2015"
+  date: "Aug. 21, 2015"
   image: "http://apps.npr.org/lookatthis/posts/yemen/assets/final-edit/lead-art.jpg"
   url: http://apps.npr.org/lookatthis/posts/yemen/
   github_url: https://github.com/nprapps/lookatthis
@@ -387,6 +387,12 @@
   image: "http://earbud.fm/assets/img/earbud-promo-fb-optimized-sm.jpg"
   url: http://earbud.fm
   github_url:
+- name: "Rain Forest Was Here"
+  description: "NPR spent 2 weeks in the Amazon to find out. Take 10 mins to look at our photos and learn about why it's so hard for us to stop deforestation &mdash; and what could happen if we don't."
+  date: "Nov. 12, 2015"
+  image: "http://apps.npr.org/lookatthis/posts/brazil/assets/take1/promo4.jpg"
+  url: http://apps.npr.org/lookatthis/posts/brazil/
+  github_url: https://github.com/nprapps/lookatthis
 - name: "Book Concierge 2015"
   description: "Your friendly guide to 2015's great books."
   date: "Dec. 8, 2015"
