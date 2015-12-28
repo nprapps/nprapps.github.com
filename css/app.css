@@ -129,7 +129,7 @@ article img {
     padding-right: 10px;
     margin: 0 0 5px 0;
 }
-.post-meta li:first-child:before {
+#tools .post-meta li:first-child:before {
     content: 'Start here: ';
     font-weight: bold;
 }
