@@ -145,16 +145,16 @@ article img {
     padding-bottom: 22px;
 }
 #homepage .container { margin-top: 0; }
-#homepage h2 {
+#homepage h2, .footer-section h2 {
     text-align: center;
     font-weight: 400;
     margin: 0 0 22px 0;
 }
-#homepage h2 a {
+#homepage h2 a, .footer-section h2 a {
     color: #333;
     font-weight: 400;
 }
-#homepage h2 a:hover { color: #787878; }
+#homepage h2 a:hover, .footer-section h2 a:hover { color: #787878; }
 
 
 /* hp header */
@@ -201,7 +201,7 @@ article img {
     color: #fff;
 }
 
-#homepage p.more a {
+#homepage p.more a, .footer-section p.more a {
     display: inline-block;
     line-height: 1.4;
     padding: 7px 15px 10px;
@@ -215,24 +215,24 @@ article img {
     font-weight: 700;
     transition: background-color 0.1s ease-out, color 0.1s ease-out;
 }
-#homepage p.more a:hover {
+#homepage p.more a:hover, .footer-section p.more a:hover {
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
 }
-#homepage p.more a:after {
+#homepage p.more a:after, .footer-section p.more a:after {
     content: ' \203A';
     font-size: 16px;
     line-height: 1.1;
 }
 
 /* hp lists */
-#homepage article {
+#homepage article, .footer-section article {
     text-align: center;
     padding: 0 0 22px 0;
     margin-bottom: 11px;
     border-bottom: none;
 }
-#homepage article h3 {
+#homepage article h3, .footer-section article h3 {
     font-size: 16px;
     margin-bottom: 5px;
 }
@@ -376,6 +376,37 @@ table.data td.amt { text-align: right; }
     margin-right:5%;
 }
 
+/*
+ * BLOG FOOTER
+ */
+
+.footer-section {
+    padding: 20px 0;
+}
+
+.footer-section h2 {
+    text-align: center;
+}
+
+.footer-section .container {
+    margin-top: 0;
+}
+
+.footer-section p.more {
+    text-align: center;
+}
+
+#work-post {
+    background-color: #ddd;
+}
+
+#tools-post {
+    background-color: #f1f1f1;
+}
+
+#blog-post article h3 { font-size: 14px; }
+#blog-post article .entry { font-size: 12px; }
+
 
 /*
  RESPONSIVE FUN
@@ -385,7 +416,7 @@ table.data td.amt { text-align: right; }
 }
 
 @media screen and (max-width:760px) {
-    #homepage section {
+    #homepage section, .footer-section {
         margin-left: -20px;
         margin-right: -20px;
         padding: 15px 20px 15px 20px;

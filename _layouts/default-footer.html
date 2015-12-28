@@ -1,0 +1,37 @@
+---
+layout: base
+---
+<div class="container">
+    <div class="row">
+        <div class="span2">&nbsp;</div>
+        <div class="span8">
+            <div id="big-picture-logo">
+                <a href="/"><img src="/img/nprlogo.gif"/> visuals team</a>
+            </div>
+            <ul id="big-picture-nav">
+                <li><a href="/tools/">Tools You Can Use</a></li>
+                <li><a href="/work/">Our Work</a></li>
+                <li><a href="/blog/">Blog</a></li>
+            </ul>
+        </div>
+        <div class="span2">&nbsp;</div>
+    </div>
+    {% if page.big_picture %}
+    <div class="row">
+        <div class="span12">
+            <img src="{{ page.big_picture }}">
+            <p><small>{{ page.big_picture_caption }}</small></p>
+        </div>
+    </div>
+    {% endif %}
+    <div class="row">
+        <div class="span2">&nbsp;</div>
+        <div class="span8" id="content">
+            {{ content }}
+        </div>
+        <div class="span2">&nbsp;</div>
+    </div>
+</div>
+
+{% include footer.html %}
+
