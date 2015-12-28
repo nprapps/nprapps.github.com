@@ -21,6 +21,11 @@ All candidates must submit a cover letter. Your cover letter should be a stateme
 * Tell us why this opportunity will help you reach your potential.
 * Tell us how you will contribute to our team.
 
+There are also a few simple style tips you should keep in mind:
+
+* Use hyperlinks for any reference to online work. We're mostly reading your work on our computers, and being able to click a link saves a lot of time.
+* Export your resume, cover letter, and all other documents as PDF. PDF is more secure and portable than Microsoft Word files.
+
 ## Other expectations
 
 * Photo internship candidates must have a portfolio.
@@ -30,11 +35,13 @@ All candidates must submit a cover letter. Your cover letter should be a stateme
 
 After you submit a resume and cover letter, our selection committee will read through all the applications. We’ll reduce the list to approximately 8-10 candidates by eliminating applications that don’t have a cover letter and resume or who clearly aren’t a good fit for the team.
 
-If you’re one of these candidates, two or three folks from the Visuals team will conduct a 30 minute Skype interview with you. You’ll get an email before your interview with outline of the questions you’ll be asked in the interview and also given the opportunity to ask any questions beforehand. The questions may vary a bit from interview to interview based on your professional experience, but we will be as consistent as possible.
+If you’re one of these candidates, two or three folks from the Visuals team will conduct a short Skype interview with you. Our interviews usually last 15 to 30 minutes, depending on the size of the applicant pool and our availability.
 
-Then we’ll call references and conduct some follow-up via email, possibly asking one or two more substantial, interview-style questions. Email communication is crucial in our workplace, and gives us an opportunity to see how you communicate in writing. We expect that answers are prompt, succinct, and clear.
+You’ll get an email before your interview with outline of the questions you’ll be asked in the interview and also given the opportunity to ask any questions beforehand. The questions may vary a bit from interview to interview based on your professional experience, but we will be as consistent as possible.
 
-We’ll follow up with all of our finalists with some constructive criticism about their application and interview.
+If you make it to the interview round, we'll collect references if you haven't uploaded them already. Then we’ll call your references and conduct some follow-up via email, possibly asking one or two more substantial, interview-style questions. Email communication is crucial in our workplace, and gives us an opportunity to see how you communicate in writing. We expect that answers are prompt, succinct, and clear.
+
+We’ll follow up with all of our finalists with some constructive criticism about their application and interview. While we can't promise to follow up with all applicants who meet the basic requirements, we will try to provide feedback to everyone who applies.
 
 ## Who we are
 
