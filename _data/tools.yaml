@@ -1,19 +1,27 @@
-- name: "App Template"
-  url: https://github.com/nprapps/app-template
-  description: "An opinionated template that gets the first 90% of building a static website out of the way. It integrates with Google Spreadsheets, Bootstrap and Github seamlessly."
+- name: "Elex"
+  description: "A command-line tool to get election results from the Associated Press Election API v2.0. Elex is designed to be friendly, fast and agnostic to your language/database choices."
+  url: http://elex.readthedocs.org/
   links:
     -
-      title: "How to Setup the NPR App Template for You and Your News Org"
-      url: /2014/09/08/how-to-setup-the-npr-app-template-for-you-and-your-news-org.html
+      title: "Introducing Elex, a Tool to Make Election Coverage Better for Everyone"
+      url: https://source.opennews.org/en-US/articles/introducing-elex-tool-make-election-coverage-bette/
+
+- name: "Pym.js"
+  description: "A JavaScript library for responsive iframes."
+  url: http://blog.apps.npr.org/pym.js/
+  links:
     -
-      title: "How to build a news app that never goes down and costs you practically nothing"
-      url: /2013/02/14/app-template-redux.html
+      title: "Introducing Pym.js"
+      url: https://source.opennews.org/en-US/articles/introducing-pym/
     -
-      title: "Everything our app template does: July 2014 edition"
-      url: /2014/07/29/everything-our-app-template-does.html
+      title: "Responsive Charts With D3 And Pym.js"
+      url: /2014/05/19/responsive-charts.html
     -
-      title: "Switching to OAuth in the App Template"
-      url: /2015/03/02/app-template-oauth.html
+      title: "Responsive Graphics In Core Publisher With Pym.js"
+      url: /2014/12/19/pym-core-publisher.html
+    -
+      title: "The Pympocalypse"
+      url: /2015/10/30/pympocalypse.html
 
 - name: "Dailygraphics"
   url: https://github.com/nprapps/dailygraphics
@@ -38,13 +46,30 @@
       title: "Baking Chart Data Into Your Page"
       url: /2015/01/28/dailygraphics-json.html
 
-- name: "Mapturner"
-  description: "A command line utility for generating topojson from various data sources for fast maps."
-  url: http://github.com/nprapps/mapturner
+- name: "Lunchbox"
+  description: "A suite of tools to create images for social media sharing."
+  url: http://blog.apps.npr.org/lunchbox/
   links:
     -
-      title: "Simplifying Map Production"
-      url: /2015/05/18/locator-maps.html
+      title: "Introducing Lunchbox"
+      url: https://source.opennews.org/en-US/articles/introducing-lunchbox/
+
+- name: "App Template"
+  url: https://github.com/nprapps/app-template
+  description: "An opinionated template that gets the first 90% of building a static website out of the way. It integrates with Google Spreadsheets, Bootstrap and Github seamlessly."
+  links:
+    -
+      title: "How to Setup the NPR App Template for You and Your News Org"
+      url: /2014/09/08/how-to-setup-the-npr-app-template-for-you-and-your-news-org.html
+    -
+      title: "How to build a news app that never goes down and costs you practically nothing"
+      url: /2013/02/14/app-template-redux.html
+    -
+      title: "Everything our app template does: July 2014 edition"
+      url: /2014/07/29/everything-our-app-template-does.html
+    -
+      title: "Switching to OAuth in the App Template"
+      url: /2015/03/02/app-template-oauth.html
 
 - name: "Copytext"
   description: "A Python library for accessing a spreadsheet as a native object suitable for templating."
@@ -63,22 +88,13 @@
       title: "Managing Instagram Photo Call-Outs"
       url: /2014/05/29/photo-callouts.html
 
-- name: "Pym.js"
-  description: "A JavaScript library for responsive iframes."
-  url: http://blog.apps.npr.org/pym.js/
+- name: "Mapturner"
+  description: "A command line utility for generating topojson from various data sources for fast maps."
+  url: http://github.com/nprapps/mapturner
   links:
     -
-      title: "Introducing Pym.js"
-      url: https://source.opennews.org/en-US/articles/introducing-pym/
-    -
-      title: "Responsive Charts With D3 And Pym.js"
-      url: /2014/05/19/responsive-charts.html
-    -
-      title: "Responsive Graphics In Core Publisher With Pym.js"
-      url: /2014/12/19/pym-core-publisher.html
-    -
-      title: "The Pympocalypse"
-      url: /2015/10/30/pympocalypse.html
+      title: "Simplifying Map Production"
+      url: /2015/05/18/locator-maps.html
 
 - name: "Newscast.js"
   description: "A library to radically simplify Chromecast web app development."
@@ -87,19 +103,3 @@
     -
       title: "Putting Radio On The Television"
       url: http://blog.apps.npr.org/2015/01/22/election-party-analytics.html
-
-- name: "Elex"
-  description: "A command-line tool to get election results from the Associated Press Election API v2.0. Elex is designed to be friendly, fast and agnostic to your language/database choices."
-  url: http://elex.readthedocs.org/
-  links:
-    -
-      title: "Introducing Elex, a Tool to Make Election Coverage Better for Everyone"
-      url: https://source.opennews.org/en-US/articles/introducing-elex-tool-make-election-coverage-bette/
-
-- name: "Lunchbox"
-  description: "A suite of tools to create images for social media sharing."
-  url: http://blog.apps.npr.org/lunchbox/
-  links:
-    -
-      title: "Introducing Lunchbox"
-      url: https://source.opennews.org/en-US/articles/introducing-lunchbox/
