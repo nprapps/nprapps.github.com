@@ -384,8 +384,12 @@ table.data td.amt { text-align: right; }
  * BLOG FOOTER
  */
 
+.huge-post-footer {
+    padding-bottom: 33px;
+}
+
 .footer-section {
-    padding: 20px 0;
+    padding: 44px 0 22px;
 }
 
 .footer-section h2 {
@@ -411,6 +415,18 @@ table.data td.amt { text-align: right; }
 #blog-post article h3 { font-size: 14px; }
 #blog-post article .entry { font-size: 12px; }
 
+
+footer ul {
+    text-align: center;
+    list-style: none;
+    margin: 0 0 20px;
+    font-size: 12px;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 0 3px;
+}
 
 /*
  RESPONSIVE FUN
