@@ -399,3 +399,9 @@
   image: "http://apps.npr.org/best-books-2015/assets/img/covers.jpg"
   url: http://apps.npr.org/best-books-2015/
   github_url:
+- name: "Songs We Love 2015"
+  description: "Put on your headphones, turn up the volume and enjoy all of NPR Music’s favorite songs of 2015."
+  date: "Dec. 15, 2015"
+  image: "http://apps.npr.org/best-songs-2015/assets/img/facebook-share-15-2.jpg"
+  url: http://apps.npr.org/best-songs-2015/
+  github_url:
