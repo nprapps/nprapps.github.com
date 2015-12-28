@@ -363,6 +363,24 @@
   image: "http://apps.npr.org/lookatthis/posts/bus-station/assets/lead-art.jpg"
   url: http://apps.npr.org/lookatthis/posts/bus-station
   github_url: https://github.com/nprapps/lookatthis
+- name: "Drowned Out"
+  description: "Scientist Chris Clark has been listening to whales for decades. But he says it's getting harder to hear them -- and for them to hear each other. Listen to all the noise we're making. Then imagine being a whale."
+  date: "May 22, 2015"
+  image: "http://apps.npr.org/lookatthis/posts/whales/assets/lead-art.jpg"
+  url: http://apps.npr.org/lookatthis/posts/whales
+  github_url: https://github.com/nprapps/lookatthis
+- name: "The Truth About America's Graduation Rate"
+  description: "Graduation rates have been rising since 2002. NPR Ed enlisted the help of 14 reporters at member stations around the country to find out why."
+  date: "June 5, 2015"
+  image: "http://apps.npr.org/grad-rates/assets/lead-art.jpg"
+  url: http://apps.npr.org/grad-rates
+  github_url: https://github.com/nprapps/grad-rates
+- name: "Songs We Love 2015... So Far"
+  description: "Put on your headphones and listen to 199 of NPR Music's favorite songs from 2015 (so far)."
+  date: "June 30, 2015"
+  image: "http://apps.npr.org/best-songs-2015-so-far/assets/img/facebook-share.jpg"
+  url: http://apps.npr.org/best-songs-2015-so-far
+  github_url: https://github.com/nprapps/bestsongs15-midyear
 - name: "A Girl Can Dream"
   description: "But in Afghanistan, can dreams become reality?"
   date: "July 15, 2015"
@@ -381,10 +399,16 @@
   image: "http://apps.npr.org/lookatthis/posts/yemen/assets/final-edit/lead-art.jpg"
   url: http://apps.npr.org/lookatthis/posts/yemen/
   github_url: https://github.com/nprapps/lookatthis
+- name: "Arab Art Redefined"
+  description: "Sultan Sooud Al-Qassemi got big on Twitter during the Arab Spring. Now, his revolution is art."
+  date: "Sep. 24, 2015"
+  image: "http://apps.npr.org/lookatthis/posts/al-qassemi/assets/promo.jpg"
+  url: http://apps.npr.org/lookatthis/posts/al-qassemi/
+  github_url: https://github.com/nprapps/lookatthis
 - name: "earbud.fm"
   description: "Your friendly guide to great podcasts."
   date: "Nov. 3, 2015"
-  image: "http://earbud.fm/assets/img/earbud-promo-fb-optimized-sm.jpg"
+  image: "http://earbud.fm/assets/img/earbud-promo-16x9-optimized-sm.jpg"
   url: http://earbud.fm
   github_url:
 - name: "Rain Forest Was Here"
