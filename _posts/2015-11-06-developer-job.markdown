@@ -50,4 +50,6 @@ The newsroom is a crucible. We work on tight schedules with hard deadlines. That
 
 Maybe it's you?
 
-Email [bboyer@npr.org](mailto:bboyer@npr.org)! Thanks!
+<s>Email [bboyer@npr.org](mailto:bboyer@npr.org)! Thanks!</s>
+
+_This position has been filled._
