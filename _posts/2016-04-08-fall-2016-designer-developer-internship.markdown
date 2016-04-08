@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Be our design/code/??? intern for summer 2016!"
+title: "Be our design/code/??? intern for fall 2016!"
 description: "Hey! You! With the weird talent!"
 
 author: David Eads
