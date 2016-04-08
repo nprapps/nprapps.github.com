@@ -1,6 +1,5 @@
 ---
-layout: redirect
-redirect_url: /2016/04/08/fall-2016-designer-developer-internship.html
+layout: post
 title: "Be our design/code/??? intern for summer 2016!"
 description: "Hey! You! With the weird talent!"
 
@@ -12,7 +11,7 @@ twitter: eads
 
 Hey! You! With the weird talent!
 
-We have two internships on the Visuals team. One is for [photo editing](/2015/12/14/summer-photo-internship.html), the other, well, it's weird.
+We have two internships on the Visuals team. One is for [photo editing](/2016/04/08/fall-photo-internship.html), the other, well, it's weird.
 
 We've had journalists who are learning to code, programmers who are learning about journalism, designers who love graphics, designers who love UX, reporters who love data, and illustrators who make beautiful things!
 
@@ -20,6 +19,6 @@ Does any of this sound like you? Please join our team! You'll learn a ton and it
 
 ## Here's how to apply
 
-Read our [post about how to write a cover letter](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2661/summer-2016%3a-news-apps/job)
+Read our [post about how to write a cover letter](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2757/fall-2016%3a-news-apps/job)
 
-The deadline for applications is **January 3, 2016, 11:59pm EST**.
+The deadline for applications is **May 22, 2016, 11:59pm EST**.
