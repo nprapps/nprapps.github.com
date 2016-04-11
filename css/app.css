@@ -431,6 +431,46 @@ footer ul li {
     padding: 0 3px;
 }
 
+.vizgigs {
+  background-color: #d46a69;
+  color: white;
+  padding: 1.7rem;
+  text-align: center;
+}
+
+.vizgigs p {
+  margin-bottom: 14px;
+}
+
+.vizgigs a {
+  color: white;
+  text-decoration: underline;
+}
+
+.vizgigs h2 {
+  margin-top: 22px;
+}
+
+.vizgigs input[type="text"] {
+    width: 80%;
+    height: 2.5rem;
+    margin: .5rem auto .5rem;
+    font-size: 1rem;
+}
+
+.vizgigs input[type="submit"] {
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.4;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
 /*
  RESPONSIVE FUN
 */
