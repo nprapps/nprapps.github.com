@@ -9,7 +9,7 @@ twitter: gerald_arthur
 
 *Updated April 18, 2016*
 
-*Hey, [David Eads](https://twitter.com/eads) coming at you. Even if you've used this guide before, check out the note at the end of Chapter 2 about creating virtual environments with the correct Python version.*
+*Hey, [David Eads](https://twitter.com/eads) coming at you. If you've used this guide before, check out the important note at the end of Chapter 2 about creating virtual environments with the correct Python version.*
 
 *Updated February 9, 2015*
 
@@ -134,7 +134,7 @@ To exit `less`, press "Q".
 
 ### A note about virtual environments
 
-We recently learned that if you installed `virtualenv` before installing the Homebrew version of Python (and possibly even if you installed Python first), the virtual environments you create may use the OS X system version of Python. This is not cool because that version of Python is compiled without key features and libraries.
+*April 18, 2016*: We recently learned that if you installed `virtualenv` before installing the Homebrew version of Python (and possibly even if you installed Python first), the virtual environments you create will use the OS X system version of Python. This is not cool because that version of Python is compiled without key features and libraries.
 
 To ensure you *always* are using your Homebrewed Python, always specify the `-p` flag when creating a virtual environment:
 
