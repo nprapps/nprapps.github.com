@@ -7,6 +7,10 @@ email: grich@npr.org
 twitter: gerald_arthur
 ---
 
+*Updated April 18, 2016*
+
+*Hey, [David Eads](https://twitter.com/eads) coming at you. Even if you've used this guide before, check out the note at the end of Chapter 2 about creating virtual environments with the correct Python version.*
+
 *Updated February 9, 2015*
 
 *Hi, [Livia Labate](https://twitter.com/livlab) here, [Knight-Mozilla Fellow](http://opennews.org/what/fellowships/) working with the Visuals team. These great instructions have been verified for OS X Yosemite and a few tips and clarifications added throughout.*
@@ -127,6 +131,16 @@ It should look like this:
 	source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 To exit `less`, press "Q".
+
+### A note about virtual environments
+
+We recently learned that if you installed `virtualenv` before installing the Homebrew version of Python (and possibly even if you installed Python first), the virtual environments you create may use the OS X system version of Python. This is not cool because that version of Python is compiled without key features and libraries.
+
+To ensure you *always* are using your Homebrewed Python, always specify the `-p` flag when creating a virtual environment:
+
+    mkvirtualenv -p `which python` my_virtual_env_name
+
+This will make a virtual environment with the active Python version on your `PATH`.
 
 ## Chapter 3: Set up Node
 Finally, we'll install a tool called LESS that we use to write CSS, the language that styles websites. LESS is a built with Node, so we'll need to install that and NPM, Node's version of `pip` or Homebrew.
