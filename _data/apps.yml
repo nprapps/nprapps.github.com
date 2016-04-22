@@ -429,3 +429,9 @@
   image: "http://apps.npr.org/best-songs-2015/assets/img/facebook-share-15-2.jpg"
   url: http://apps.npr.org/best-songs-2015/
   github_url:
+- name: "Why America's Schools Have A Money Problem"
+  description: "Look up your school district in our embedded interactive graphic."
+  date: "April 18, 2016"
+  image: "http://www.npr.org/news/graphics/2016/04/school-funding/map-us.png"
+  url: http://www.npr.org/2016/04/18/474256366/why-americas-schools-have-a-money-problem
+  github_url:
