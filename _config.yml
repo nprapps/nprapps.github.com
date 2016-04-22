@@ -1,4 +1,2 @@
 highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: ["smart"]
+markdown: kramdown
