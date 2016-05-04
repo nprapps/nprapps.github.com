@@ -429,6 +429,12 @@
   image: "http://apps.npr.org/best-songs-2015/assets/img/facebook-share-15-2.jpg"
   url: http://apps.npr.org/best-songs-2015/
   github_url:
+- name: "Elections 2016"
+  description: "For every primary, caucus and convention, we’re here to help you get caught up and understand what matters this election season."
+  date: "Feb. 1, 2016"
+  image: "/img/apps/elections2016.png"
+  url: http://elections.npr.org/
+  github_url: https://github.com/nprapps/elections16
 - name: "Why America's Schools Have A Money Problem"
   description: "Look up your school district in our embedded interactive graphic."
   date: "April 18, 2016"
