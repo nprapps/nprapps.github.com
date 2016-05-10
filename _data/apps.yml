@@ -435,6 +435,12 @@
   image: "/img/apps/elections2016.png"
   url: http://elections.npr.org/
   github_url: https://github.com/nprapps/elections16
+- name: "Brussels Attacks: What Happened, In Photos And Maps"
+  description:
+  date: "March 22, 2016"
+  image: "/img/apps/brussels.png"
+  url: http://www.npr.org/2016/03/22/471423692/brussels-attacks-what-happened-in-photos-and-maps
+  github_url:
 - name: "Why America's Schools Have A Money Problem"
   description: "Look up your school district in our embedded interactive graphic."
   date: "April 18, 2016"
