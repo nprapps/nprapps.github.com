@@ -447,3 +447,9 @@
   image: "http://www.npr.org/news/graphics/2016/04/school-funding/map-us.png"
   url: http://www.npr.org/2016/04/18/474256366/why-americas-schools-have-a-money-problem
   github_url:
+- name: "Can India's Sacred But 'Dead' Yamuna River Be Saved?"
+  description: "The river enters Delhi relatively clean but by the time it flows out, it's a \"toxic cocktail of sewage, industrial waste and surface runoff,\" says an environmentalist. Urbanization is partly to blame."
+  date: "May 11, 2016"
+  image: "/img/apps/yamuna-big.jpg"
+  url: http://www.npr.org/2016/05/11/477415686/can-indias-sacred-but-dead-yamuna-river-be-saved
+  github_url:
