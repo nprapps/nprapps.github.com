@@ -399,12 +399,24 @@
   image: "http://apps.npr.org/lookatthis/posts/yemen/assets/final-edit/lead-art.jpg"
   url: http://apps.npr.org/lookatthis/posts/yemen/
   github_url: https://github.com/nprapps/lookatthis
+- name: "Ravages Of Heroin Addiction Haunt Friends, Families And Whole Towns"
+  description: "Deaths from heroin nearly tripled between 2010 and 2013, and demand for the drug isn't dropping. Towns across the U.S. are grappling with the deadly epidemic — including a once-idyllic town in Ohio."
+  date: "Aug. 23, 2015"
+  image: "https://media.npr.org/assets/img/2015/08/22/20150820_mcgarvey_marion_2967-edit_wide-4ffc735103a29407ff05d525c4f9e61431f90ed8.jpg?s=1400"
+  url: http://www.npr.org/2015/08/23/433575293/ravages-of-heroin-addiction-haunt-friends-families-and-whole-towns
+  github_url:
 - name: "Arab Art Redefined"
   description: "Sultan Sooud Al-Qassemi got big on Twitter during the Arab Spring. Now, his revolution is art."
   date: "Sep. 24, 2015"
   image: "http://apps.npr.org/lookatthis/posts/al-qassemi/assets/promo.jpg"
   url: http://apps.npr.org/lookatthis/posts/al-qassemi/
   github_url: https://github.com/nprapps/lookatthis
+- name: "Among The Lucky Few: Syrian Family Rebuilds In America's Heartland"
+  description: "Fewer than 2,000 Syrian refugees have been allowed to come to the U.S. The Al-Awad family in Toledo, Ohio, is among them. Local groups are helping them adjust to their new life in the U.S."
+  date: "Oct. 20, 2015"
+  image: "https://media.npr.org/assets/img/2015/10/20/toledo_101415_refugee_dg11_22690111-edit1_wide-873f5707962238cd1534545d93d383b46ac90c89.jpg?s=1400"
+  url: http://www.npr.org/2015/10/20/450221327/among-the-lucky-few-syrian-family-rebuilds-in-americas-heartland
+  github_url:
 - name: "earbud.fm"
   description: "Your friendly guide to great podcasts."
   date: "Nov. 3, 2015"
