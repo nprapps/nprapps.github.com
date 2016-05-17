@@ -31,7 +31,7 @@ For the purposes of this analysis, I am going to focus on times when we were bro
 ![Screenshots of the first two cards of our app during our live broadcast on Mega Tuesday, March 15, 2016.](/img/posts/elections16-3.png)
 <small>Screenshots of the first two cards of our app during our live broadcast on Mega Tuesday, March 15, 2016.</small>
 
-As of writing, NPR has broadcast 11 election night specials, and we have carried all of them inside of the app. **During times the broadcast was live, we served over 475,000 sessions, and over 100,000 of those sessions were listeners. That's good for 22.4% of live event sessions becoming listening sessions.** If we look at listen rates across npr.org or consider five minutes as a "view" on a Facebook or YouTube videos, that's a pretty good number. We're happy with that number.
+As of writing, NPR has broadcast 11 election night specials, and we have carried all of them inside of the app. During times the broadcast was live, we served over 475,000 sessions, and over 100,000 of those sessions were listeners. In other words, **22.4% of live event sessions became listening sessions.** If we look at listen rates across npr.org or consider five minutes as a "view" on a Facebook or YouTube videos, that's a pretty good number. We're happy with that number.
 
 But it is a sobering reality: even when we advertise our app as a listening experience (as we often did on social media) and autoplay the content, only 22% of our users stick around for more than five minutes. Of course, our election app is not _exclusively_ an audio app, and the other 78% of sessions still may have gotten what they needed out of the app, like a quick checkup on the results.
 
@@ -72,6 +72,8 @@ At the end of February, we added a new type of card to our app: a card that aske
         {}
     );
 </script>
+
+That being said, because we had far more non-listeners than listeners, we actually got more total clicks from non-listeners. This is worth taking into account.
 
 
 Finally, we know that our listeners are far more likely to be desktop users than non-listeners. **65% of our listeners were desktop users, compared to just 40% of non-listeners.**
