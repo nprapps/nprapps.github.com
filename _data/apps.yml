@@ -429,3 +429,27 @@
   image: "http://apps.npr.org/best-songs-2015/assets/img/facebook-share-15-2.jpg"
   url: http://apps.npr.org/best-songs-2015/
   github_url:
+- name: "Elections 2016"
+  description: "For every primary, caucus and convention, we’re here to help you get caught up and understand what matters this election season."
+  date: "Feb. 1, 2016"
+  image: "/img/apps/elections2016.png"
+  url: http://elections.npr.org/
+  github_url: https://github.com/nprapps/elections16
+- name: "Brussels Attacks: What Happened, In Photos And Maps"
+  description:
+  date: "March 22, 2016"
+  image: "/img/apps/brussels.png"
+  url: http://www.npr.org/2016/03/22/471423692/brussels-attacks-what-happened-in-photos-and-maps
+  github_url:
+- name: "Why America's Schools Have A Money Problem"
+  description: "Look up your school district in our embedded interactive graphic."
+  date: "April 18, 2016"
+  image: "http://www.npr.org/news/graphics/2016/04/school-funding/map-us.png"
+  url: http://www.npr.org/2016/04/18/474256366/why-americas-schools-have-a-money-problem
+  github_url:
+- name: "Can India's Sacred But 'Dead' Yamuna River Be Saved?"
+  description: "The river enters Delhi relatively clean but by the time it flows out, it's a \"toxic cocktail of sewage, industrial waste and surface runoff,\" says an environmentalist. Urbanization is partly to blame."
+  date: "May 11, 2016"
+  image: "/img/apps/yamuna-big.jpg"
+  url: http://www.npr.org/2016/05/11/477415686/can-indias-sacred-but-dead-yamuna-river-be-saved
+  github_url:

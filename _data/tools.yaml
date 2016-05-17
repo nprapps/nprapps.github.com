@@ -1,3 +1,14 @@
+- name: "Carebot"
+  description: "Meaningful analytics for journalism."
+  url: https://github.com/thecarebot/carebot
+  links:
+    -
+      title: "Why should I Carebot?"
+      url: http://thecarebot.github.io/Why-should-I-Carebot/
+    -
+      title: "Getting started with Carebot"
+      url: http://thecarebot.github.io/getting-started-with-Carebot/
+
 - name: "Elex"
   description: "A command-line tool to get election results from the Associated Press Election API v2.0. Elex is designed to be friendly, fast and agnostic to your language/database choices."
   url: http://elex.readthedocs.org/

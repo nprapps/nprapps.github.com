@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Baking Chart Data Into Your Page"
-description: "A new dailygraphics feature lets users embed JSON data from a Google Spreadsheet."
+description: "A new dailygraphics feature lets users embed JSON data from a Google Sheets."
 author: Alyson Hurt
 email: ahurt@npr.org
 twitter: alykat

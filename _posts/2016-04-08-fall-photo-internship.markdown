@@ -1,7 +1,6 @@
 ---
-layout: redirect
-redirect_url: /2016/04/08/fall-photo-internship.html
-title: "What makes a great photo editing intern (Apply now for Summer 2016!)"
+layout: post
+title: "What makes a great photo editing intern (Apply now for Fall 2016!)"
 description: "What we're looking for in a photo editing intern on the NPR Visuals team."
 
 author: Ariel Zambelich and Emily Bogle
@@ -16,7 +15,7 @@ This internship is an opportunity to learn more about the world of photo editing
 
 ## What you will be doing
 
-- *Editing:* You’ll be working closely with the Visuals Team’s daily news photo editors (Ariel and Emily) on fast-paced deadlines -- we’re talking anywhere from 15 minutes to publication, to short-term projects that are a week out. You’ll dig into news coverage and photo research, learning how to communicate about what makes a good image across a range of news topics, including international, national, technology, arts and more.
+- *Editing:* You’ll be working closely with the Visuals Team’s photo editors (Ariel and Emily) on fast-paced deadlines -- we’re talking anywhere from 15 minutes to publication, to short-term projects that are a week out. You’ll dig into news coverage and photo research, learning how to communicate about what makes a good image across a range of news topics, including international, national, technology, arts and more.
 
 - *Photography:* Depending on the news cycle, there may be opportunities to photograph DC-area assignments. This can mean you’d have one or two shoots in a week, or maybe just a couple shoots in a month. You’ll work closely with a radio or web reporter while out in the field, and a photo editor will go through your work and provide feedback for each assignment. There will also be a chance to work on portraiture and still lifes in our studio.
 
@@ -37,7 +36,7 @@ We also want folks who can tell us what they would like to accomplish during the
 
 ## So how do I apply?
 
-Does this sound like you? Read our [post about how to write a cover letter](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2639/summer-2016%3a-digital-news%2c-picture-editing-%26-visual-journalist/job?mobile=false&width=900&height=500&bga=true&needsRedirect=false&jan1offset=-300&jun1offset=-240)
+Does this sound like you? Read our [post about how to write a cover letter](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2758/fall-2016%3a-digital-news%2c-picture-editing-%26-visual-journalist/job)
 
 
-The deadline for applications is **January 3, 2016, 11:59pm EST**.
+The deadline for applications is **May 22, 2016, 11:59pm EST**.
