@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tracking Audio Listenership In Our Elections App The Right Way"
+title: "A Better Way To Track Listening"
 description: "Let's stop using vanity metrics to make us look better for advertisers and start really learning about our users."
 
 author: Tyler Fisher
@@ -20,7 +20,7 @@ For the entirety of the primary season, we have been running our elections app a
 
 A major component of our election coverage is audio-driven, whether through our live event coverage during primary nights or the NPR Politics Podcast in between events. Part of our decision to focus our app around audio stemmed from our newsroom putting a significant effort behind the audio coverage, but we also wanted to learn more about how our audience engages with audio on the internet. We treated our election app as a huge opportunity to do so.
 
-We wanted to be fair to ourselves and treat our audio online like we treat audio on the radio. That means placing much more difficult restrictions on what we call a "listener." In the calculations to follow, we treat listeners as those who listened to _more than five minutes_ of audio, which is how we count listeners in our radio ratings.
+We wanted to be fair to ourselves and treat our audio online like we treat audio on the radio. That means placing much more difficult restrictions on what we call a "listener." In the calculations to follow, we treat listeners as those who listened to _at least five minutes_ of audio, which is how we count listeners in our radio ratings.
 
 Given this calculation, just 10% of our total user base are what we would consider "listeners". That being said, we haven't had audio in the experience 24/7, and sometimes we haven't had audio during high-traffic primary events. 
 
@@ -31,9 +31,11 @@ For the purposes of this analysis, I am going to focus on times when we were bro
 ![Screenshots of the first two cards of our app during our live broadcast on Mega Tuesday, March 15, 2016.](/img/posts/elections16-3.png)
 <small>Screenshots of the first two cards of our app during our live broadcast on Mega Tuesday, March 15, 2016.</small>
 
-As of writing, NPR has broadcast 11 election night specials, and we have carried all of them inside of the app. During times the broadcast was live, we served over 475,000 sessions, and over 100,000 of those sessions were listeners. In other words, **22.4% of live event sessions became listening sessions.** If we look at listen rates across npr.org or consider five minutes as a "view" on a Facebook or YouTube videos, that's a pretty good number. We're happy with that number.
+As of writing, NPR has broadcast 11 election night specials, and we have carried all of them inside of the app. If a user arrived at the app, the special would autoplay upon swiping or clicking past the titlecard.
 
-But it is a sobering reality: even when we advertise our app as a listening experience (as we often did on social media) and autoplay the content, only 22% of our users stick around for more than five minutes. Of course, our election app is not _exclusively_ an audio app, and the other 78% of sessions still may have gotten what they needed out of the app, like a quick checkup on the results.
+During times the broadcast was live, we served over 475,000 sessions, and over 100,000 of those sessions were listeners. In other words, **22.4% of live event sessions became listening sessions by listening to at least five minutes of audio.** If we look at listen rates across npr.org or consider five minutes as a "view" on a Facebook or YouTube videos, that's a pretty good number. We're happy with that number.
+
+But it is a sobering reality: even when we advertise our app as a listening experience (as we often did on [social media](https://twitter.com/NPR/status/709912937931132928)) and autoplay the content, only 22% of our users stick around for more than five minutes. Of course, our election app is not _exclusively_ an audio app, and the other 78% of sessions still may have gotten what they needed out of the app, like a quick checkup on the results.
 
 On a given night, our live specials would run anywhere from one hour to four hours. I have data at the hourly level, which means I can analyze the performance of the special hour by hour. Aggregating all of our sessions into hourly blocks, it is clear that performance of our live specials degrades the longer we go on. **26% of our sessions that began in the first hour became listening sessions, while just 18% of the sessions that began in the fourth hour became listening sessions.** 
 
@@ -90,7 +92,7 @@ At the same time, we have a majority of users who are not listening to our audio
 
 We know that users engaged with our audio spend a lot more time in general on our app than users who do not. How can we take better advantage of the 44 minutes listeners spend on our app? Again, are there better ways to use that time to prompt them for donations? Can we surface more information in a compelling way to keep them better informed?
 
-We know that listeners are more likely to be desktop users, while nonlisteners are more likely to be mobile users. Knowing from the other data that listeners take more desirable actions, like clicking donate buttons, how can we make more of our mobile users listeners?
+We know that listeners are more likely to be desktop users, while nonlisteners are more likely to be mobile users. Knowing from the other data that listeners take more desirable actions, like clicking donate buttons, how can we convert more of our mobile users into listeners?
 
 ## Why definitions matter
 
