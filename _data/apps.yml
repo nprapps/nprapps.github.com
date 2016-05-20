@@ -462,6 +462,12 @@
 - name: "Can India's Sacred But 'Dead' Yamuna River Be Saved?"
   description: "The river enters Delhi relatively clean but by the time it flows out, it's a \"toxic cocktail of sewage, industrial waste and surface runoff,\" says an environmentalist. Urbanization is partly to blame."
   date: "May 11, 2016"
-  image: "/img/apps/yamuna-big.jpg"
+  image: "/img/apps/yamuna.jpg"
   url: http://www.npr.org/2016/05/11/477415686/can-indias-sacred-but-dead-yamuna-river-be-saved
+  github_url:
+- name: "In India's Sundarbans, People And Tigers Try To Coexist In A Shrinking Space"
+  description: "The vast patchwork of islands on a delta where three rivers meet is home to hundreds of tigers and 4 million people. As climate change squeezes the land they share, is increased conflict inevitable?"
+  date: "May 20, 2016"
+  image: "/img/apps/sunderbans.jpg"
+  url: http://www.npr.org/sections/parallels/2016/05/20/478387211/in-indias-sundarbans-people-and-tigers-try-to-coexist-in-a-shrinking-space
   github_url:
