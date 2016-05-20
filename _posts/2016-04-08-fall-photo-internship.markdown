@@ -39,4 +39,4 @@ We also want folks who can tell us what they would like to accomplish during the
 Does this sound like you? Read our [post about how to write a cover letter](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2758/fall-2016%3a-digital-news%2c-picture-editing-%26-visual-journalist/job)
 
 
-The deadline for applications is **May 22, 2016, 11:59pm EST**.
+The deadline for applications HAS BEEN EXTENDED to **May 29, 2016, 11:59pm EST**.

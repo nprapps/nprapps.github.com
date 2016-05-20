@@ -21,4 +21,4 @@ Does any of this sound like you? Please join our team! You'll learn a ton and it
 
 Read our [post about how to write a cover letter](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2757/fall-2016%3a-news-apps/job)
 
-The deadline for applications is **May 22, 2016, 11:59pm EST**.
+The deadline for applications HAS BEEN EXTENDED to **May 29, 2016, 11:59pm EST**.
