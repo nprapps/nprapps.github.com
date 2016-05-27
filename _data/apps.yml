@@ -321,6 +321,12 @@
   image: "http://apps.npr.org/lookatthis/posts/publichousing/assets/facebook-share.jpg"
   url: http://apps.npr.org/lookatthis/posts/publichousing/
   github_url: https://github.com/nprapps/lookatthis
+- name: "Injured Nurses"
+  description: "Nursing employees suffer 35,000 back and other injuries nearly every year. But many career-ending injuries could be prevented if hospitals brought in new technology."
+  date: Feb. 4, 2015
+  image: "http://media.npr.org/assets/img/2015/01/30/img_0435-1-_wide-72451817b8862e9e814c2530c3b2776c72500fbc-s400-c85.jpg"
+  url: http://www.npr.org/series/385540559/injured-nurses
+  github_url:
 - name: "Look At This: A Brother And Sister In Love"
   description: "While looking through old family photos as a kid, John Fugelsang discovered something strange about his mother. Hint: It had to do with being Catholic."
   date: "February 13, 2015"
@@ -375,6 +381,12 @@
   image: "http://apps.npr.org/grad-rates/assets/lead-art.jpg"
   url: http://apps.npr.org/grad-rates
   github_url: https://github.com/nprapps/grad-rates
+- name: "World War II Secret Mustard Gas Testing"
+  description: "An NPR investigation found the VA failed to keep its promise of benefits to thousands of exposed veterans. And revealed previously unknown U.S. military tests that singled out the men by race."
+  date: June 22, 2015
+  image: "http://media.npr.org/assets/img/2015/06/18/rollins-edwards-historical_wide-6d3c5d7153f4691294958680079f98f1a6989aee-s500-c85.jpg"
+  url: http://www.npr.org/series/417162462/world-war-ii-secret-mustard-gas-testing
+  github_url:
 - name: "Songs We Love 2015... So Far"
   description: "Put on your headphones and listen to 199 of NPR Music's favorite songs from 2015 (so far)."
   date: "June 30, 2015"
@@ -393,6 +405,12 @@
   image: "http://apps.npr.org/lookatthis/posts/album-art/assets/lead-art.jpg"
   url: http://apps.npr.org/lookatthis/posts/album-art/
   github_url: https://github.com/nprapps/lookatthis
+- name: "A Rarity Reclaimed: Stolen Stradivarius Recovered After 35 Years"
+  description: "For decades, virtuoso violinist Roman Totenberg played his prized Stradivarius around the world. Then one day in 1980 it was snatched. Gone. But in June, the FBI called his daughter with news."
+  date: Aug. 6, 2015
+  image: "https://media.npr.org/assets/img/2015/08/04/ames-stradivari---all-certificates-and-papers-16_wide-2f0087454988802c6860cddaca77137fe1917783.jpg?s=400"
+  url: http://www.npr.org/2015/08/06/427718240/a-rarity-reclaimed-stolen-stradivarius-recovered-after-35-years
+  github_url:
 - name: "The Unthinkable"
   description: "An ancient city plunges into darkness as a war on civilians rages."
   date: "Aug. 21, 2015"
@@ -407,10 +425,16 @@
   github_url:
 - name: "Arab Art Redefined"
   description: "Sultan Sooud Al-Qassemi got big on Twitter during the Arab Spring. Now, his revolution is art."
-  date: "Sep. 24, 2015"
+  date: "Sept. 24, 2015"
   image: "http://apps.npr.org/lookatthis/posts/al-qassemi/assets/promo.jpg"
   url: http://apps.npr.org/lookatthis/posts/al-qassemi/
   github_url: https://github.com/nprapps/lookatthis
+- name: "Why Nonstop Travel In Personal Pods Has Yet To Take Off"
+  description: "Personal rapid transit was supposed to be the future of public transport: lightweight pods on elevated tracks, on-demand destinations. But funding issues make cities reluctant to change course."
+  date: Sept. 24, 2015
+  image: "https://media.npr.org/assets/img/2015/09/16/ackermangruber_personaltransit_023-edit_wide-9be6746e89da0035130d7377963b4e1ea6e2579b.jpg?s=1400"
+  url: http://www.npr.org/2015/09/24/440859459/why-nonstop-travel-in-personal-pods-has-yet-to-take-off
+  github_url:
 - name: "Among The Lucky Few: Syrian Family Rebuilds In America's Heartland"
   description: "Fewer than 2,000 Syrian refugees have been allowed to come to the U.S. The Al-Awad family in Toledo, Ohio, is among them. Local groups are helping them adjust to their new life in the U.S."
   date: "Oct. 20, 2015"
@@ -447,17 +471,77 @@
   image: "/img/apps/elections2016.png"
   url: http://elections.npr.org/
   github_url: https://github.com/nprapps/elections16
+- name: "When Every Drop Of Water Could Be Poison: A Flint Mother's Story"
+  description: "For Flint resident Jeneyah McDonald, using bottled water for everything has become an onerous but necessary routine. Still, she worries about the effects that toxic tap water will have on her sons."
+  date: Feb. 8, 2016
+  image: "https://media.npr.org/assets/img/2016/02/08/npr_flint_52-edit_wide-1735810aa405cab3c979eafdaf1f63e6d01f0594.jpg?s=400"
+  url: http://www.npr.org/2016/02/08/465767796/when-every-drop-of-water-could-be-poison-a-flint-mothers-story
+  github_url:
+- name: "Hey, Sci-Fi And Comics Fans: It's Time To Embrace The Dark Side"
+  description: "Why fans have nothing to fear — and everything to gain — from diversity in science fiction and fantasy."
+  date: Feb. 22, 2016
+  image: "https://media.npr.org/assets/img/2016/02/18/npr-feb16-diversity-superheroes-final_wide-a1a53af69b1e3fa2ddbb10c698512e381ebb9de2.jpg?s=400"
+  url: http://www.npr.org/sections/codeswitch/2016/02/22/466144152/hey-sci-fi-and-comics-fans-it-s-time-to-embrace-the-dark-side
+  github_url:
+- name: "5 Years After Japan Disasters, 'Temporary' Housing Is Feeling Permanent"
+  description: "Deadlines to rehouse evacuees have come and gone. It's still not clear when they might go home, and if so, what would they return to?"
+  date: March 11, 2016
+  image: "https://media.npr.org/assets/img/2016/03/10/okhr_fukushima_npr_016_wide-1b37f7bcb2f6f641057070d299e88910f6b51b04.jpg?s=400"
+  url: http://www.npr.org/sections/parallels/2016/03/11/469857023/5-years-after-japan-disasters-temporary-housing-is-feeling-permanent
+  github_url:
+- name: "Why President Obama Picked The 'Only White Guy' On His Shortlist"
+  description: "In an interview with NPR, the president says Senate Republicans owe it to the Founding Fathers to give Judge Merrick Garland a Supreme Court confirmation vote."
+  date: March 18, 2016
+  image: "https://media.npr.org/assets/img/2016/03/18/obama-01_wide-bd5365f9065b0b462293e0eb36e0c3b80eca70ec.jpg?s=400"
+  url: http://www.npr.org/2016/03/18/470918125/obama-refusal-to-consider-nominee-damages-publics-faith-in-the-judiciary
+  github_url:
 - name: "Brussels Attacks: What Happened, In Photos And Maps"
   description:
   date: "March 22, 2016"
   image: "/img/apps/brussels.png"
   url: http://www.npr.org/2016/03/22/471423692/brussels-attacks-what-happened-in-photos-and-maps
   github_url:
+- name: "Welcome To Rent Court, Where Tenants Can Face A Tenuous Fate"
+  description: "The Landlord and Tenant Branch of Superior Court for the District of Columbia is where you can end up if you're poor, black and on the verge of being evicted."
+  date: March 28, 2016
+  image: "https://media.npr.org/assets/img/2016/03/16/courtroom_wide-8a052ecbcf5abaeecb31cd8c914e45566b2d5e0d.jpg?s=400"
+  url: http://www.npr.org/2016/03/28/470522433/welcome-to-rent-court-where-tenants-can-face-a-tenuous-fate
+  github_url:
+- name: "How Do We Get Our Drinking Water In The U.S.?"
+  description: "Clean, safe drinking water is essential to life. To get that water, however, requires a sludge of chemicals, countless testings — and different treatment processes depending on where you live."
+  date: April 14, 2016
+  image: "https://media.npr.org/assets/img/2016/04/11/watertreatmentexplainer_wide-5d084ff605c21cdd23661cc5d3fa3aa7433d0eef.png?s=400"
+  url: http://www.npr.org/2016/04/14/473806134/how-do-we-get-our-drinking-water-in-the-u-s
+  github_url:
 - name: "Why America's Schools Have A Money Problem"
   description: "Look up your school district in our embedded interactive graphic."
   date: "April 18, 2016"
   image: "http://www.npr.org/news/graphics/2016/04/school-funding/map-us.png"
   url: http://www.npr.org/2016/04/18/474256366/why-americas-schools-have-a-money-problem
+  github_url:
+- name: "For Oldest Armenians, A Glimpse Of A Homeland Lost But Not Forgotten"
+  description: "Based on the memories of Armenian centenarians who survived the 1915 genocide as children, Armenian-American photographer Diana Markosian traveled to Turkey to bring them images from their past."
+  date: April 23, 2016
+  image: "https://media.npr.org/assets/img/2016/04/22/movses-1915-01_wide-d738dd26887f54bac18e67d10e79fedda4b49ede.jpg?s=400"
+  url: http://www.npr.org/2016/04/23/473501069/for-oldest-armenians-a-glimpse-of-a-homeland-lost-but-not-forgotten
+  github_url:
+- name: "In 'Service,' A Celebrated Photographer Turns His Lens On U.S. Troops"
+  description: "Platon, best known for his portraits of leaders and celebrities, focuses on U.S. troops and their loved ones in his new book, Service. \"It's time to celebrate a new set of cultural heroes,\" he says."
+  date: April 24, 2016
+  image: "https://media.npr.org/assets/img/2016/04/21/section60-promo_wide-e79f78a3c8e9ef7cf7eddbe56e95d0926f61e0b1.jpg?s=400"
+  url: http://www.npr.org/2016/04/24/472702464/in-service-a-photographer-examines-the-flip-side-of-power
+  github_url:
+- name: "A Remote Town, A Closed-Off Courtroom, And A Father Facing Deportation"
+  description: "After conviction, noncitizens face deportation in a second system of justice that has different rules and fewer protections. NPR followed one man — and his family — through the process."
+  date: April 30, 2016
+  image: "https://media.npr.org/assets/img/2016/04/29/immigration-detention-center_wide-7025ca2a706832854c5188f7a35b4581fe1b32ad.jpg?s=400"
+  url: http://www.npr.org/2016/04/30/476064078/when-immigrants-commit-crimes-they-can-be-punished-twice
+  github_url:
+- name: "Missing: The Search For A Sister In China"
+  description: "Last summer, a Chinese-American woman contacted NPR's Frank Langfitt with an unusual request: to help find her troubled sister, who'd vanished in southwest China. A difficult journey followed."
+  date: March 4, 2016
+  image: "https://media.npr.org/assets/img/2016/02/01/npr---sisters_wide-824f69527f3bf826d0caccf0c3aaac11d2f6c94f.jpg?s=400"
+  url: http://www.npr.org/sections/parallels/2016/03/04/465127717/missing-the-search-for-a-sister-in-china
   github_url:
 - name: "Can India's Sacred But 'Dead' Yamuna River Be Saved?"
   description: "The river enters Delhi relatively clean but by the time it flows out, it's a \"toxic cocktail of sewage, industrial waste and surface runoff,\" says an environmentalist. Urbanization is partly to blame."
