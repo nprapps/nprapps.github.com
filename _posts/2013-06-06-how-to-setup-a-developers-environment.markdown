@@ -7,6 +7,10 @@ email: grich@npr.org
 twitter: gerald_arthur
 ---
 
+*Updated June 1, 2016*
+
+*Hi, [Juan Elosua](https://twitter.com/jjelosua) here, yesterday I joined NPR as a News App Developer within the Visuals team. After getting all set up with my new computer at NPR I have updated this post to reflect a change of python setup in our development environment. We will install and use a homebrewed version of python and not the system default python to get rid of some virtual environments issues.*
+
 *Updated April 18, 2016*
 
 *Hey, [David Eads](https://twitter.com/eads) coming at you. If you've used this guide before, check out the important note at the end of Chapter 2 about creating virtual environments with the correct Python version.*
@@ -24,6 +28,7 @@ I joined the News Apps team a week ago in their shiny new DC offices, and in-bet
 The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with OS X 10.9, or Mavericks, installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
 
 ## Chapter 0: Prerequisites
+
 ### Are you an administrator?
 We'll be installing a number of programs from the command line in this tutorial, so that means you must have administrative privileges. If you're not an admin, talk with your friendly IT Department.
 
@@ -50,7 +55,6 @@ If it doesn't install, or there isn't an update for Xcode to install the tools, 
 Search for "command line tools," and download the package appropriate to your version of OS X. Double click on the .dmg file in your downloads file, and proceed to install. In my case, I downloaded Command Line Tools (OS X Mavericks), which is highlighted in the screenshot above. 
 
 ## Chapter 1: Install Homebrew
-
 
 [Homebrew](http://brew.sh/) is like the Mac app store for programming tools. You can access Homebrew via the terminal, ([like all good things](http://www.amazon.com/Beginning-was-Command-Line-Neal-Stephenson/dp/0380815931)). Inspiration for this section comes from Kenneth Reitz's excellent [Python guide](http://docs.python-guide.org/en/latest/starting/install/osx/).
 
@@ -88,7 +92,7 @@ Once you've added the line of code, you can save the file by typing control + O.
 
 You'll only need to source the `bash_profile` since we're editing the file right now. It's the equivalent of quitting your terminal application and opening it up again, but `source` lets you soldier forward and setup Python.
 
-## Chapter 2: Install Virtualenv
+## Chapter 2: Install python && virtualenv
 
 Virtualenv isolates each of your Python projects in their own little sandboxes, keeping your installed software neat and tidy. Your Mac comes pre-packaged with the most stable version of Python, but you'll need to tell your `bash_profile` to use it first. Edit the file again with `nano` and add this line:
 
@@ -98,15 +102,15 @@ Update your session again
 
 	source ~/.bash_profile
 
-Next, you'll need to install `pip`. Like Homebrew, it's sort of an app store but for Python code.
+Next, install the latest stable homebrewed version of python2, we get pip for free with this installation...yay!!
 
-	sudo easy_install pip
+	brew install python
 
-We use `sudo` to install this software for everyone who might use your computer. `sudo` lets you install things as the admin. You will be prompted for your password.
+**Note**: `pip` like Homebrew, it's sort of an app store but for Python code.
 
 Next, we'll actually install `virtualenv`.
 
-	sudo pip install virtualenv virtualenvwrapper
+	pip install virtualenv virtualenvwrapper
 
 **Note**: `virtualenv` is the actual environment that you'll be using, while `virtualwrapper` helps you access the environment and its variables from your `PATH`.
 
@@ -142,12 +146,17 @@ To ensure you *always* are using your Homebrewed Python, always specify the `-p`
 
 This will make a virtual environment with the active Python version on your `PATH`.
 
-## Chapter 3: Set up Node
+## Chapter 3: Set up Node and install LESS
+
 Finally, we'll install a tool called LESS that we use to write CSS, the language that styles websites. LESS is a built with Node, so we'll need to install that and NPM, Node's version of `pip` or Homebrew.
 
 Install Node using Homebrew.
 
 	brew install node
+
+Next, let's install globally a node module for compiling LESS into CSS
+
+	npm install -g less 
 
 Then, add Node to your `~/.bash_profile` like you did for Homebrew and virtualwrapper. Copy and paste the following line below the previous two.
 
@@ -155,21 +164,21 @@ Then, add Node to your `~/.bash_profile` like you did for Homebrew and virtualwr
 
 Save and exit out of `nano` using control + O, enter, and then control + X. Then type `source ~/.bash_profile` one more time to update your session. After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
 
-### Chapter 4: Set up SSH for Github
+## Chapter 4: Set up SSH for Github
 
 Github has written a great guide for setting up SSH authentication for Github. You will want to do this so Github knows about your computer and will allow you to push to repositories you have access to.
 
 Read that tutorial [here](https://help.github.com/articles/generating-ssh-keys). Do **not** download the native app. Start at "Step 1: Check for SSH keys".
 
-### Appendix 1: Postgres and PostGIS
+## Appendix 1: Postgres and PostGIS
 We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data. We'll explain these tools a bit more as we install them.
 
-#### NumPy
+### NumPy
 First, we need to install a Python library called NumPy. We don't use NumPy directly, but PostGIS uses it for making geographic calculations. This may already be installed, but run this command just to double-check. You will be prompted for your password.
 
-    sudo pip install numpy
+    pip install numpy
 
-#### Postgres
+### Postgres
 Next up: the Postgres database server. Postgres is a useful tool for dealing with all kinds of data, not just geography, so we'll get it setup first then tweak it to be able to interpret geographic data. Postgres will take about 10 minutes to install.
 
 	brew install postgresql
@@ -195,7 +204,7 @@ Finally, let's start up the Postgres server.
 
 	pgup
 
-#### PostGIS
+### PostGIS
 These deceptively simple commands will install an awful lot of software. It's going to take some time, and your laptop fans will probably sound like a fighter jet taking off. Don't worry; it can take the heat.
 
 	brew install gdal --with-postgresql
@@ -206,10 +215,10 @@ Still hanging in there?
 
 Now you can create your first geographically-enabled database. For more information on how to do that postgis [tells you how to do this](http://postgis.net/docs/manual-2.0/postgis_installation.html#create_new_db_extensions).
 
-### Appendix 2: The Terminal
+## Appendix 2: The Terminal
 Since you're going to be working from the command line a lot, it's worth investing time to make your terminal something that's a little more easy on the eyes.
 
-#### iTerm2
+### iTerm2
 Download [iTerm2](http://www.iterm2.com/#/section/home). The built-in terminal application which comes with your Mac is fine, but iTerm2 is slicker and more configurable. One of the better features is splitting your terminal into different horizontal and vertical panes: one for an active pane, another for any files you might want to have open, and a third for a local server.
 
 #### Solarized
@@ -221,10 +230,10 @@ Now, inside iTerm2 go to iTerm > Preferences > Profiles and select "Default." Ch
 
 See? Much nicer.
 
-### Appendix 3: The Text Editor
+## Appendix 3: The Text Editor
 Since your code is stored entirely as text files on your computer, you'll want a nice text editor. Our instructions showed you how to use `nano`, a text editor that you'll find on almost every computer. However, there are at least two others that the team uses. Text editors are like the Microsoft Word of the programming world, except they come packed with all kinds of handy dandy features to make writing code a cinch.
 
-#### Sublime Text 2
+### Sublime Text 2
 If you're more comfortable with an editor that you can open up like Word, [Sublime Text 2](http://www.sublimetext.com/2) has a sweet graphical user interface and some [nice customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland).
 
 **Note**: In recent versions, installing Package Control (necessary for many customizations) assumes you have purchased Sublime Text, so consider getting a license first. Additionally, speed up your use by making Sublime Text your default editor from the command line. Here's [how](http://stackoverflow.com/a/16495202/4548251). And [another way](http://olivierlacan.com/posts/launch-sublime-text-2-from-the-command-line/).
