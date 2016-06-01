@@ -92,7 +92,7 @@ Thus, install the latest stable homebrewed version of Python. We get `pip` for f
 
 **Note**: `pip` like Homebrew, it's sort of an app store but for Python code.
 
-Next, we'll actually install `virtualenv`.
+Next, we'll install `virtualenv` and `virtualenvwrapper`. These tools help us isolate Python projects into their own little sandboxes, keeping your installed software neat and tidy.
 
 	pip install virtualenv virtualenvwrapper
 
