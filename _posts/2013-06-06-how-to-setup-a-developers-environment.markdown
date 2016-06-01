@@ -115,7 +115,6 @@ Save and exit out of `nano` using control + O, enter, and then control + X.
 It should look like this:
 
 	export PATH=/usr/local/bin:$PATH
-	export PATH=/usr/local/lib/python2.7/site-packages:$PATH
 	source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 To exit `less`, press "Q".
