@@ -11,21 +11,11 @@ twitter: gerald_arthur
 
 *Hi, [Juan Elosua](https://twitter.com/jjelosua) here, yesterday I joined NPR as a News App Developer within the Visuals team. After getting all set up with my new computer at NPR I have updated this post to reflect a change of python setup in our development environment. We will install and use a homebrewed version of python and not the system default python to get rid of some virtual environments issues.*
 
-*Updated April 18, 2016*
-
-*Hey, [David Eads](https://twitter.com/eads) coming at you. If you've used this guide before, check out the important note at the end of Chapter 2 about creating virtual environments with the correct Python version.*
-
-*Updated February 9, 2015*
-
-*Hi, [Livia Labate](https://twitter.com/livlab) here, [Knight-Mozilla Fellow](http://opennews.org/what/fellowships/) working with the Visuals team. These great instructions have been verified for OS X Yosemite and a few tips and clarifications added throughout.*
-
-*Updated June 12, 2014.*
-
-*Hey everyone, I'm [Tyler Fisher](https://twitter.com/tylrfishr), the Winter/Spring 2014 news apps intern. Today, I setup my work machine with OS X Mavericks and found some new wrinkles in the process, so I thought I would update this blog post to reflect the latest changes. [Shelly Tan](https://twitter.com/Tan_Shelly) and [Helga Salinas](https://twitter.com/helga_salinas) also contributed to this post.*
+*[David Eads](http://twitter.com/eads), [Livia Labate](http://twitter.com/livlab), [Tyler Fisher](http://twitter.com/tylrfishr), [Shelly Tan](http://twitter.com/Tan_Shelly) and [Helga Salinas](http://twitter.com/Helga_Salinas) have also conributed to this post.*
 
 I joined the News Apps team a week ago in their shiny new DC offices, and in-between eating awesome food and Tiny Desk concerts, we've been documenting the best way to get other journalists setup to build news apps like the pros.
 
-The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with OS X 10.9, or Mavericks, installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
+The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with OS X 10.10, or El Capitan, installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
 
 ## Chapter 0: Prerequisites
 
@@ -92,17 +82,11 @@ Once you've added the line of code, you can save the file by typing control + O.
 
 You'll only need to source the `bash_profile` since we're editing the file right now. It's the equivalent of quitting your terminal application and opening it up again, but `source` lets you soldier forward and setup Python.
 
-## Chapter 2: Install python && virtualenv
+## Chapter 2: Install Python && virtualenv
 
-Virtualenv isolates each of your Python projects in their own little sandboxes, keeping your installed software neat and tidy. Your Mac comes pre-packaged with the most stable version of Python, but you'll need to tell your `bash_profile` to use it first. Edit the file again with `nano` and add this line:
+OSX comes with a system version of Python, and for a long time, we used this version. However, as Apple continues to update its operating system, system Python has gotten harder and harder to use with modern tools. 
 
-	export PATH=/usr/local/lib/python2.7/site-packages:$PATH
-
-Update your session again
-
-	source ~/.bash_profile
-
-Next, install the latest stable homebrewed version of python2, we get pip for free with this installation...yay!!
+Thus, install the latest stable homebrewed version of Python. We get `pip` for free with this installation...yay!!
 
 	brew install python
 
