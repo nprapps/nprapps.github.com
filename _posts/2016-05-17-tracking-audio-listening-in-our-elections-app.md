@@ -102,4 +102,4 @@ The cynical way to interpret this is that timed media platforms are goosing thei
 
 With a tougher, better definition of a listener, we can learn more about our audience's needs and desires. Instead of learning how to hook someone to a page with a headline, or how to catch more people's eyes in a timeline of autoplaying videos, we will learn what keeps an audience engaged, what makes them share, what makes them learn.
 
-So get out in front of it and define what listenership or viewership means for you. Learn what resonates with your audience at a deeper level and optimize for that. I guarantee you will ask better questions of your content strategy and come up with better answers.
+So get out in front of it and define what listenership or viewership means for you. Learn what resonates with your audience at a deeper level and optimize for that. I guarantee you will ask better questions of your content strategy and will come up with better answers.
