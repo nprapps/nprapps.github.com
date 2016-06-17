@@ -14,13 +14,13 @@ The code for the Armslist scraper is [available on Github](https://github.com/np
 
 ## Can you scrape?
 
-Scraping is a complicated legal issue. Before you start scraping, make sure your scraping is acceptable. At minimum, check the terms of service and robots.txt of the site you'd like to scrape. And if you can talk with a lawyer, you should.
+Scraping is a complicated legal issue. Before you start, make sure your scraping is acceptable. At minimum, check the terms of service and robots.txt of the site you'd like to scrape. And if you can talk with a lawyer, you should.
 
 ## Data model classes
 
 The Armslist scraper encapsulates scraped data in model classes.
 
-Here's the basic idea. You provide the model class with all the HTML it should scrape. The class performs the scrape and stores each piece of data in an instance property. Then, you access the scraped attributes in your code via those instance properties. Look at this lightly modified example of the model class code from the Armslist scraper. 
+Here's the basic idea. You provide the model class with all the HTML it should scrape. The class performs the scrape and stores each piece of data in an instance property. Then, you access the scraped attributes in your code via those instance properties. Look at this lightly modified example of the model class code from the project.
 
 ```python
 class Listing:
@@ -62,7 +62,11 @@ class Listing:
             return price_string
 ```
 
-The model class is then used in a simple script which makes the actual HTTP request based on a URL provided as an argument and prints a single CSV line. Here’s a lightly modified version of the controller script:
+## Controller scripts
+
+The model class is then used in a simple script which makes the actual HTTP request based on a URL provided as an argument and prints a single CSV line.
+
+Here’s a lightly modified version of our controller script:
 
 ```python
 #!/usr/bin/env python
@@ -150,4 +154,4 @@ We do further post-processing for our analysis using shell scripts and PostgreSQ
 
 ## Props where they are due
 
-I learned many of these techniques -- particularly model classes and using GNU parallel -- from developer Norbert Winklareth while we were working on a Cook County Jail inmate scraper  in Chicago.
+I learned many of these techniques -- particularly model classes and using GNU parallel -- from developer [Norbert Winklareth](https://www.linkedin.com/in/norbertwinklareth) while we were working on a Cook County Jail inmate scraper in Chicago.
