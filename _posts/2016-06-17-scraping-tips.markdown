@@ -12,6 +12,10 @@ A recent NPR project that collects structured data about [gun sale listings from
 
 The code for the Armslist scraper is [available on Github](https://github.com/nprapps/armslist-scraper).
 
+## Can you scrape?
+
+Scraping is a complicated legal issue. Before you start scraping, make sure your scraping is acceptable. At minimum, check the terms of service and robots.txt of the site you'd like to scrape. And if you can talk with a lawyer, you should.
+
 ## Data model classes
 
 The Armslist scraper encapsulates scraped data in model classes.
