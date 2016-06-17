@@ -152,6 +152,6 @@ The full scraper actually carries out two operations:
 
 We do further post-processing for our analysis using shell scripts and PostgreSQL using a process similar to the one [described here](http://blog.apps.npr.org/2014/09/02/reusable-data-processing.html). If you’d like to check our work, take a look at the [armslist-analysis](https://github.com/nprapps/armslist-analysis) code repository.
 
-## Props where they are due
+## A quick shoutout
 
 I learned many of these techniques -- particularly model classes and using GNU parallel -- from developer [Norbert Winklareth](https://www.linkedin.com/in/norbertwinklareth) while we were working on a Cook County Jail inmate scraper in Chicago.
