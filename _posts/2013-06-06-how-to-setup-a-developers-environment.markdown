@@ -11,7 +11,7 @@ twitter: gerald_arthur
 
 *Hi, [Juan Elosua](https://twitter.com/jjelosua) here, yesterday I joined NPR as a News App Developer within the Visuals team. After getting all set up with my new computer at NPR I have updated this post to reflect a change of python setup in our development environment. We will install and use a homebrewed version of python and not the system default python to get rid of some virtual environments issues.*
 
-*[David Eads](http://twitter.com/eads), [Livia Labate](http://twitter.com/livlab), [Tyler Fisher](http://twitter.com/tylrfishr), [Shelly Tan](http://twitter.com/Tan_Shelly) and [Helga Salinas](http://twitter.com/Helga_Salinas) have also conributed to this post.*
+*[David Eads](http://twitter.com/eads), [Livia Labate](http://twitter.com/livlab), [Tyler Fisher](http://twitter.com/tylrfishr), [Shelly Tan](http://twitter.com/Tan_Shelly) and [Helga Salinas](http://twitter.com/Helga_Salinas) have also contributed to this post.*
 
 I joined the News Apps team a week ago in their shiny new DC offices, and in-between eating awesome food and Tiny Desk concerts, we've been documenting the best way to get other journalists setup to build news apps like the pros.
 
