@@ -534,24 +534,42 @@
 - name: "A Remote Town, A Closed-Off Courtroom, And A Father Facing Deportation"
   description: "After conviction, noncitizens face deportation in a second system of justice that has different rules and fewer protections. NPR followed one man — and his family — through the process."
   date: April 30, 2016
-  image: "https://media.npr.org/assets/img/2016/04/29/immigration-detention-center_wide-7025ca2a706832854c5188f7a35b4581fe1b32ad.jpg?s=400"
+  image: https://media.npr.org/assets/img/2016/04/29/immigration-detention-center_wide-7025ca2a706832854c5188f7a35b4581fe1b32ad.jpg?s=400
   url: http://www.npr.org/2016/04/30/476064078/when-immigrants-commit-crimes-they-can-be-punished-twice
   github_url:
 - name: "Missing: The Search For A Sister In China"
   description: "Last summer, a Chinese-American woman contacted NPR's Frank Langfitt with an unusual request: to help find her troubled sister, who'd vanished in southwest China. A difficult journey followed."
   date: March 4, 2016
-  image: "https://media.npr.org/assets/img/2016/02/01/npr---sisters_wide-824f69527f3bf826d0caccf0c3aaac11d2f6c94f.jpg?s=400"
+  image: https://media.npr.org/assets/img/2016/02/01/npr---sisters_wide-824f69527f3bf826d0caccf0c3aaac11d2f6c94f.jpg?s=400
   url: http://www.npr.org/sections/parallels/2016/03/04/465127717/missing-the-search-for-a-sister-in-china
+  github_url:
+- name: "Is There A Better Way To Pay For America's Schools?"
+  description: "There are huge gaps in school funding between affluent and property-poor districts. And, with evidence that money matters, especially for disadvantaged kids, something has to change."
+  date: "May 1, 2016"
+  image: "/img/apps/school-funding-ranges.png"
+  url: http://www.npr.org/2016/05/01/476224759/is-there-a-better-way-to-pay-for-americas-schools
   github_url:
 - name: "Can India's Sacred But 'Dead' Yamuna River Be Saved?"
   description: "The river enters Delhi relatively clean but by the time it flows out, it's a \"toxic cocktail of sewage, industrial waste and surface runoff,\" says an environmentalist. Urbanization is partly to blame."
   date: "May 11, 2016"
-  image: "/img/apps/yamuna.jpg"
+  image: http://media.npr.org/assets/img/2016/05/10/yamuna_042216_river_dpg-01_22846302edit_wide.jpg?s=1500
   url: http://www.npr.org/2016/05/11/477415686/can-indias-sacred-but-dead-yamuna-river-be-saved
+  github_url:
+- name: "India's Big Battle: Development Vs. Pollution"
+  description: "Indian cities are among the world's most polluted. And India is the third-largest emitter of carbon dioxide. If it finds a sustainable way to develop, it could be a template for the rest of the world."
+  date: "May 13, 2016"
+  image: "/img/apps/india-air-quality.png"
+  url: http://www.npr.org/2016/05/13/477930821/indias-big-battle-development-vs-pollution
   github_url:
 - name: "In India's Sundarbans, People And Tigers Try To Coexist In A Shrinking Space"
   description: "The vast patchwork of islands on a delta where three rivers meet is home to hundreds of tigers and 4 million people. As climate change squeezes the land they share, is increased conflict inevitable?"
   date: "May 20, 2016"
-  image: "/img/apps/sunderbans.jpg"
+  image: http://media.npr.org/assets/img/2016/05/19/sunderbans-01538edit_wide.jpg?s=1500
   url: http://www.npr.org/sections/parallels/2016/05/20/478387211/in-indias-sundarbans-people-and-tigers-try-to-coexist-in-a-shrinking-space
   github_url:
+- name: "Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away"
+  description: "The Armslist website, and others like it, are coming under increased scrutiny by law enforcement, gun control advocates and researchers as debate over access to these kinds of weapons heats up."
+  date: "June 17, 2016"
+  image: "/img/apps/armslist.png"
+  url: http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away
+  github_url: https://github.com/nprapps/armslist-scraper
