@@ -567,9 +567,45 @@
   image: http://media.npr.org/assets/img/2016/05/19/sunderbans-01538edit_wide.jpg?s=1500
   url: http://www.npr.org/sections/parallels/2016/05/20/478387211/in-indias-sundarbans-people-and-tigers-try-to-coexist-in-a-shrinking-space
   github_url:
+- name: "'A Fantasy Of A Fantasy': U.S. Fencer Jason Pryor On Reaching The Olympics"
+  description: "He never imagined he could make it to the Olympics, but 28-year-old fencer Jason Pryor will be competing at this summer's games in Rio de Janeiro. He's ranked No. 1 in the U.S. in men's epee fencing."
+  date: "June 14, 2016"
+  image: "/img/apps/olympics-fencing.jpg"
+  url: http://www.npr.org/sections/thetorch/2016/06/14/482055722/a-fantasy-of-a-fantasy-u-s-fencer-jason-pryor-on-reaching-the-olympics
+  github_url:
 - name: "Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away"
   description: "The Armslist website, and others like it, are coming under increased scrutiny by law enforcement, gun control advocates and researchers as debate over access to these kinds of weapons heats up."
   date: "June 17, 2016"
   image: "/img/apps/armslist.png"
   url: http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away
   github_url: https://github.com/nprapps/armslist-scraper
+- name: "Find Lead Pipes In Your Home"
+  description: "Do lead pipes bring water into your home? Find out in 10 minutes. All you’ll need is a key and a magnet."
+  date: "June 24, 2016"
+  image: "/img/apps/lead-pipes.jpg"
+  url: http://apps.npr.org/find-lead-pipes-in-your-home/
+  github_url: https://github.com/nprapps/leadpipes
+- name: "3 Hours In Orlando: Piecing Together An Attack And Its Aftermath"
+  description: "Thanks to police and FBI records and witness accounts, it's becoming clearer — if still impossible to comprehend — what transpired in Orlando in the early hours of June 12."
+  date: "June 26, 2016"
+  image: "/img/apps/orlando-shootings.jpg"
+  url: http://www.npr.org/2016/06/16/482322488/orlando-shooting-what-happened-update
+  github_url:
+- name: "A Gifted High Jumper Gets Set To Leap Onto The World Stage"
+  description: "Vashti Cunningham, 18, is on a roll. She set a world junior record and won the world indoor championship in March, while still in high school. She has now turned pro and has her eyes set on Rio."
+  date: "June 30, 2016"
+  image: "/img/apps/olympics-long-jump.jpg"
+  url: http://www.npr.org/sections/thetorch/2016/06/30/483838674/a-gifted-high-jumper-gets-set-to-leap-onto-the-world-stage
+  github_url:
+- name: "The 270 Project: Try To Predict Who Will Win The Election"
+  description: "Demographics give Clinton an edge. But Trump says he can break the traditional mold. An NPR analysis &mdash; and new demographic tool &mdash; lets you create your own path to victory for either candidate."
+  date: "June 30, 2016"
+  image: "/img/apps/election-simulator.png"
+  url: http://www.npr.org/2016/06/30/483687093/the-270-project-try-to-predict-who-will-win-the-election
+  github_url:
+- name: "The Driving Life And Death Of Philando Castile"
+  description: "Philando Castile spent his driving career trapped in a seemingly endless cycle of traffic stops, fines, court appearances, revocations and reinstatements, raising questions about bias, race and luck."
+  date: "July 15, 2016"
+  image: "/img/apps/philando-castile.png"
+  url: http://www.npr.org/sections/thetwo-way/2016/07/15/485835272/the-driving-life-and-death-of-philando-castile
+  github_url:
