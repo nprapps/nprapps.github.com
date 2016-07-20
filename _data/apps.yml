@@ -608,4 +608,9 @@
   date: "July 15, 2016"
   image: "/img/apps/philando-castile.png"
   url: http://www.npr.org/sections/thetwo-way/2016/07/15/485835272/the-driving-life-and-death-of-philando-castile
-  github_url:
+- name: "Standing At The Edge Of Geologic Time"
+  description: "Take a virtual reality tour and immerse yourself in the sights and sounds of Rocky Mountain National Park."
+  date: "July 20, 2016"
+  image: "/img/apps/geology.jpg"
+  url: http://apps.npr.org/rockymountain-vr
+  github_url: https://github.com/nprapps/rockymountain
