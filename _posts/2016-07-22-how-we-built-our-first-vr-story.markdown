@@ -1,0 +1,168 @@
+---
+layout: post
+title: "How we built a VR project that works outside the headset"
+description: "VR is new and weird and scary, especially on the web, but we did it and so can you!"
+
+author: Tyler Fisher
+email: tfisher@npr.org
+twitter: tylrfishr
+---
+
+Last Wednesday, the NPR Visuals Team published [our first story in virtual reality](http://apps.npr.org/rockymountain-vr). We traveled to Rocky Mountain National Park to make 360º images and binaural soundscapes. Later, we interviewed Eric Kirby from the Oregon State College of Earth, Ocean and Atmospheric Sciences about the geologic history of the area. We combined the assets we created at Rocky Mountain National Park with the interview to create a meditative experience that reflects on the history of the park.
+
+It was weird! Making a virtual reality project on the web presented a lot of new challenges for us that few outlets have explored. This blog post will explore some of the challenges and how we solved them.
+
+## Making the Web Experience
+
+We had three main goals when creating the web experience out of these assets:
+
+1. Make an immersive experience out of the 360º content we had created and the binaural audio we recorded.
+2. Ensure the experience worked across devices, from desktop to Cardboard.
+3. Do this on the web. We weren’t interested in Oculus or other things that required users to install software.
+
+Given these requirements, we had a few options. Google VR has created [VR View](https://developers.google.com/vr/concepts/vrview-web), an incredibly simple way of creating a 360º image viewer. The code is [all open source](https://github.com/google/vrview), and we could have modified the experience however we wanted, but the starting point was so opinionated that making an experience that integrated well with our audio and design style felt more onerous. But for just getting an image on the page, VR View is as simple as it gets.
+
+Boris Smus maintains the [WebVR Boilerplate](https://github.com/borismus/webvr-boilerplate), a starting point with Three.js that has been used by our friends at the [LA Times](http://graphics.latimes.com/mars-gale-crater-vr/) and [National Geographic](http://breakthrough.nationalgeographic.com/). It is a great starting point, and we would have used this, but we noticed a project based on Boris’s work called [A-frame](https://aframe.io/), spearheaded by Mozilla’s VR group.
+
+### An Introduction to A-frame
+
+A-frame’s key feature is its markup-based scene-building system. Instead of building your entire scene in JavaScript, A-frame gives you the ability to build scenes using custom HTML tags. This includes tags for projecting “skys”, which we used for our equirectangular images, as well as tags for creating animations. Because A-frame creates custom HTML tags for you, they are treated by the browser as DOM elements, making them manipulatable in JavaScript just like any other DOM element.
+
+A simple A-frame scene might look like this:
+
+    <a-scene>
+        <a-sky src="url/to/my/image.jpg">
+    </a-scene>
+
+This would build a VR scene that projects your equirectangular image across a 360º sphere. In three lines of markup, we have the basis of our app. 
+
+The `<a-sky>` tag demonstrates the basic functionality of A-frame. A-frame is based on the “[entity-component-system](https://en.wikipedia.org/wiki/Entity_component_system)” pattern. The structure of entity-component-system is worth reading in detail, but it basically works like this. 
+
+Entities are general objects that, by themselves, do nothing, like an empty `<div>`. These appear in A-frame as tags. Components define aspects of entities, such as their size, color, geometry or position. These appear in A-frame as attributes of those tags (perhaps confusingly, standard HTML attributes like `class` still work). Components can have multiple properties; for example, the camera component has a `fov` property which defines the field of view, an `active` property which defines whether or not the camera is active and more. Importantly, components are reusable — they do not rely on certain entities to work.
+
+A-frame provides one extra convenience layer: [primitives](https://aframe.io/docs/master/primitives/). Primitives look like entities, but are in fact an extension of the concept that make it easier to perform common tasks, like projecting a 360º image in a 3D scene. `<a-sky>` in the example above is a primitive.
+
+### Building multiple scenes
+
+Every aframe scene begins and ends with an `<a-scene>` tag, just like an HTML document starts and ends with an `<html>` tag. And just like a valid HTML document, you can only have one. When A-frame builds the scene, it puts everything inside the one scene. So how can you move between multiple scenes inside your ur-scene? You show and hide entities.
+
+A component available to all entities in A-frame is the visibility component. It works simply: add `visible: false` to any entity tag and the entity is no longer visible.
+
+Thus, the basic structure of our A-frame scene looked like this:
+
+    <a-scene>
+        <a-entity class="scene" id="name-of-scene">
+            <a-sky src="path/to/image1.jpg" visible="true">
+        </a-entity>
+        <a-entity class="scene" id="name-of-scene">
+            <a-sky src="path/to/image2.jpg" visible="false">
+        </a-entity>
+        <a-entity class="scene" id="name-of-scene">
+            <a-sky src="path/to/image3.jpg" visible="false">
+        </a-entity>
+        <a-entity class="scene" id="name-of-scene">
+            <a-sky src="path/to/image4.jpg" visible="false">
+        </a-entity>
+    </a-scene>
+
+We timed switching visible scenes with certain points in our audio file. By hooking into the HTML5 audio `timeupdate` event, we could know the current position of our audio at any time. We attached the time we wanted scenes to switch as data attributes on the scene entities. Again, A-frame entities are just DOM elements, so you can do anything with them that you can do to another DOM element.
+
+    <a-entity class="scene" id="name-of-scene" data-checkpoint="end-time-in-seconds">
+        <a-sky src="path/to/image1.jpg" visible="true">
+    </a-entity>
+    …
+
+Using the `timeupdate` event, we switched the visible scene once we past the end time of the currently visible scene. This is a technique we’ve used many times in the past and you can read more about [here](https://source.opennews.org/en-US/learning/audio-browser/#magic-timeupdatecode).
+
+### Animation
+
+Another core piece of A-frame is the ability to animate elements within a scene. We used A-frame’s animation engine to control the “hands-free” experience we offered on desktop. 
+
+To do this, we placed animations on A-frame’s camera. The camera itself is an entity within the scene. To animate an entity, you create the animations as tags that are children of the entity. For example:
+
+    <a-scene>
+        <a-entity camera drag-look-controls>
+            <a-animation attribute="rotation" duration="40000" from="10 -80 0" to="0 15 0"></a-animation>
+        </a-entity>
+    </a-scene>
+        
+
+This animation will rotate the camera in 40 seconds.
+
+You can also begin and end animations based on events. You pass the names of the events as attributes on the animation tag:
+
+    <a-animation attribute="rotation" duration="40000" from="10 -80 0" to="0 15 0" begin="enter-scene" end="cancel-animation"></a-animation>
+
+Then, in JavaScript, you can have the camera (or any entity) emit an event, which will either begin or end the animation.
+
+    var camera = document.querySelector('a-entity[camera]');
+    camera.emit('enter-scene');
+
+To make our guided experience work, we had an animation for each of our scenes. When we entered the scene at the correct place in the audio, we emitted the proper event that started the animation.
+
+### Putting It All Together
+
+To build our entire scene, we didn’t write out every piece of markup. Instead, we abstracted the creation of entities and animations to a couple spreadsheets. In the scene-building sheet, each row in the sheet was a scene in the story. A simplified version looks like this:
+
+| name |id  |image  |image_rotation  |field_of_view  |end_time  |
+|:-|:-|:-|:-|:-|:-|
+|Dream Lake  |dream-lake  |dl-615.jpg  |0 -250 0  |80  |29  |
+|Emerald Lake  |emerald-lake  |emerald-624.jpg  |0 -145 0  |80  |60  |
+
+Using Jinja templates and our [copytext](http://copytext.readthedocs.io/en/0.1.8/) library, we were able to loop through each row and build our scene. For example, the first row in our sheet would result in the following:
+
+    <a-entity class="scene" id="dream-lake" data-name="Dream Lake" data-checkpoint="29" data-fov="80" >
+        <a-entity class="sky" visible="false">
+            <a-sky src="dl-615.jpg" rotation="0 -250 0"></a-sky>
+        </a-entity>
+    </a-entity>
+
+In a separate spreadsheet, we built each animation we wanted for guided mode. Using the id of the scene, we could effectively join the two sheets together on the id. Here’s a sample of the animation spreadsheet:
+
+| id | attribute | duration | from_value | to_value |
+|:-|:-|:-|:-|:-|
+| dream-lake | rotation | 40000 | -10 80 0 | 0 15 0 |
+| dream-lake | camera.fov | 40000 | 110 | 80 |
+| emerald-lake | rotation | 30000 | -10 -30 0 | 10 0 0  |
+| emerald-lake | camera.fov | 34000 | 90 | 50 |
+
+Then, within the camera entity as demonstrated above, we can loop through this spreadsheet and build each animation. The first row of the spreadsheet would build this:
+
+    <a-entity camera drag-look-controls>
+        <a-animation attribute="rotation" dur="40000" from="-10 80 0" to="0 15 0" begin="enter-dream-lake" end="cancel" easing="linear"></a-animation>
+        …
+    </a-entity>
+
+Combining these two concepts, our A-frame scene looks like this in a Jinja template:
+    {% raw %}
+    <a-scene>
+        <a-entity camera drag-look-controls>
+            {% for row in COPY.vr_animations %}
+            <a-animation attribute="{{ row.attribute }}" dur="{{ row.duration }}" from="{{ row.from_value }}" to="{{ row.to_value }}" begin="enter-{{ row.id }}" end="cancel" easing="linear"></a-animation>
+            {% endfor %}
+        </a-entity>
+        {% for row in COPY.vr %}
+        <a-entity class="scene" id="{{ row.id }}" data-name="{{ row.name }}" data-checkpoint="{{ row.end_time }}" data-fov="{{ row.fov }}">
+            <a-entity class="sky" visible="false">
+                <a-sky src="{{ row.image }}" rotation="{{ row.image_rotation }}"></a-sky>
+            </a-entity>
+        </a-entity>
+        {% endfor %}
+    </a-scene>
+    {% endraw %}
+There are more things unique to our particular UI that I did not  include here for sake of simplicity, but you can see the complete HTML file [here](https://github.com/nprapps/rockymountain/blob/master/templates/vr.html).
+
+## Eight Miscellaneous Tips About Building In A-Frame
+
+There are lots of little things we encountered building a VR experience that didn’t fit in the explanation above but would be good to know.
+
+1. We used jPlayer to handle our audio experience. While A-frame provides a sound component, it had strange issues with playback, sometimes placing all the audio in one ear or the other. It was also more apparent with jPlayer how to provide a responsive UI for users to interact with the audio. Also, separating concerns between the playing audio file and the switching of scenes was easier using separate libraries.
+2. Three.js, which ultimately does all of the projection into 360º space, expects most assets to be sized to the power of two. That means the dimensions should always be a power of two. For example, our equirectangular images were sized to 4096x2048.
+3. A-frame has to be included on the page before the `<a-scene>` is invoked; otherwise, the tags will not be recognized. We included it in the `<head>`.
+4. Because A-frame has to be included early, it’s smart to use some [critical CSS](https://www.smashingmagazine.com/2015/08/understanding-critical-css/) to ensure something loads on your page in a timely manner. A-frame is a very large library. Our app-header.js file is 214 KB, most of which is A-frame.
+5. Ensure that users cannot enter the VR experience before all assets are loaded. This is as simple as disabling your UI until JavaScript’s native `load` event fires.
+6. Exiting VR mode on iOS and Android are totally different. On iOS, you rotate your device to portrait mode. On Android, you use the device’s native back button instead of rotating because Android goes into fullscreen mode. Make sure your instructions to the user are accurate for both types of device.
+7. Ultimately, A-frame renders your scene to a canvas element. You can do anything with that canvas element. We chose to fade the canvas to black and fade back up when switching scenes.
+8. To date, text in A-frame is hard. There are some plugins and extensions that provide the ability to write on your scene, but it is almost certainly easier at this point to make a transparent PNG and project it onto your scene.
+
+In the coming days, we will publish a couple more things about our project, including how we made our images and soundscapes and what we’ve learned from analytics about how people used our VR project. Stay tuned!
