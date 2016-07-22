@@ -138,6 +138,8 @@ Then, within the camera entity as demonstrated above, we can loop through this s
         …
     </a-entity>
 
+Take note of the begin attribute. By using the id of the scene, each scene's animation can begin independently. In our JavaScript, we would emit that event as soon as the scene switched.
+
 Combining these two concepts, our A-frame scene looks like this in a Jinja template:
     {% raw %}
     <a-scene>
