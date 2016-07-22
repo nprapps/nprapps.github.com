@@ -8,7 +8,7 @@ email: tfisher@npr.org
 twitter: tylrfishr
 ---
 
-Last Wednesday, the NPR Visuals Team published [our first story in virtual reality](http://apps.npr.org/rockymountain-vr). We traveled to Rocky Mountain National Park to make 360º images and binaural soundscapes. Later, we interviewed Eric Kirby from the Oregon State College of Earth, Ocean and Atmospheric Sciences about the geologic history of the area. We combined the assets we created at Rocky Mountain National Park with the interview to create a meditative experience that reflects on the history of the park.
+Last Wednesday, the NPR Visuals Team published [a story in virtual reality](http://apps.npr.org/rockymountain-vr). We traveled to Rocky Mountain National Park to make 360º images and binaural soundscapes. Later, we interviewed Eric Kirby, a geology professor from Oregon State University about the geologic history of the area. We combined the assets we created at Rocky Mountain National Park with the interview to create a meditative experience that reflects on the history of the park.
 
 It was weird! Making a virtual reality project on the web presented a lot of new challenges for us that few outlets have explored. This blog post will explore some of the challenges and how we solved them.
 
