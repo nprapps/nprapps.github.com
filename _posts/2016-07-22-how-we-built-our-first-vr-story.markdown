@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How we built a VR project that works outside the headset"
+title: "How we built a VR project using web technologies"
 description: "VR is new and weird and scary, especially on the web, but we did it and so can you!"
 
 author: Tyler Fisher
@@ -8,7 +8,7 @@ email: tfisher@npr.org
 twitter: tylrfishr
 ---
 
-Last Wednesday, the NPR Visuals Team published [a story in virtual reality](http://apps.npr.org/rockymountain-vr). We traveled to Rocky Mountain National Park to make 360º images and binaural soundscapes. Later, we interviewed Eric Kirby, a geology professor from Oregon State University about the geologic history of the area. We combined the assets we created at Rocky Mountain National Park with the interview to create a meditative experience that reflects on the history of the park.
+Last Wednesday, the NPR Visuals Team published [a virtual reality story on the web](http://apps.npr.org/rockymountain-vr). We traveled to Rocky Mountain National Park to make 360º images and binaural soundscapes. Later, we interviewed Eric Kirby, a geology professor from Oregon State University about the geologic history of the area. We combined the assets we created at Rocky Mountain National Park with the interview to create a meditative experience that reflects on the geologic history of the park.
 
 It was weird! Making a virtual reality project on the web presented a lot of new challenges for us that few outlets have explored. This blog post will explore some of the challenges and how we solved them.
 
@@ -28,7 +28,7 @@ Boris Smus maintains the [WebVR Boilerplate](https://github.com/borismus/webvr-b
 
 ### An Introduction to A-frame
 
-A-frame’s key feature is its markup-based scene-building system. Instead of building your entire scene in JavaScript, A-frame gives you the ability to build scenes using custom HTML tags. This includes tags for projecting “skys”, which we used for our equirectangular images, as well as tags for creating animations. Because A-frame creates custom HTML tags for you, they are treated by the browser as DOM elements, making them manipulatable in JavaScript just like any other DOM element.
+A-frame’s key feature is its markup-based scene-building system. Instead of building your entire scene in JavaScript, A-frame gives you the ability to build scenes using custom HTML tags. Because A-frame creates custom HTML tags for you, they are treated by the browser as DOM elements, making them manipulatable in JavaScript just like any other DOM element.
 
 A simple A-frame scene might look like this:
 
@@ -36,19 +36,21 @@ A simple A-frame scene might look like this:
         <a-sky src="url/to/my/image.jpg">
     </a-scene>
 
-This would build a VR scene that projects your equirectangular image across a 360º sphere. In three lines of markup, we have the basis of our app. 
+This would build a VR scene that projects an equirectangular image across a 360º sphere. In three lines of markup, we have the basis of our app. 
 
-The `<a-sky>` tag demonstrates the basic functionality of A-frame. A-frame is based on the “[entity-component-system](https://en.wikipedia.org/wiki/Entity_component_system)” pattern. The structure of entity-component-system is worth reading in detail, but it basically works like this. 
+The `<a-sky>` tag demonstrates the basic functionality of A-frame. A-frame is based on the “[entity-component-system](https://aframe.io/docs/master/core/)” pattern. The structure of entity-component-system is worth reading in detail, but it basically works like this. 
 
-Entities are general objects that, by themselves, do nothing, like an empty `<div>`. These appear in A-frame as tags. Components define aspects of entities, such as their size, color, geometry or position. These appear in A-frame as attributes of those tags (perhaps confusingly, standard HTML attributes like `class` still work). Components can have multiple properties; for example, the camera component has a `fov` property which defines the field of view, an `active` property which defines whether or not the camera is active and more. Importantly, components are reusable — they do not rely on certain entities to work.
+[Entities](https://aframe.io/docs/master/core/entity.html) are general objects that, by themselves, do nothing, like an empty `<div>`. These appear in A-frame as tags. [Components](https://aframe.io/docs/master/core/component.html) define aspects of entities, such as their size, color, geometry or position. These appear in A-frame as attributes of those tags (perhaps confusingly, standard HTML attributes like `class` still work). Components can have multiple properties; for example, the [camera component](https://aframe.io/docs/master/components/camera.html) has a `fov` property which defines the field of view, an `active` property which defines whether or not the camera is active and more. Importantly, components are reusable — they do not rely on certain entities to work.
 
-A-frame provides one extra convenience layer: [primitives](https://aframe.io/docs/master/primitives/). Primitives look like entities, but are in fact an extension of the concept that make it easier to perform common tasks, like projecting a 360º image in a 3D scene. `<a-sky>` in the example above is a primitive.
+A-frame provides one extra convenience layer: [primitives](https://aframe.io/docs/master/primitives/). Primitives look like entities, but are in fact an extension of entities that make it easier to perform common tasks, like projecting a 360º image in a 3D scene. [`<a-sky>`](https://aframe.io/docs/master/primitives/a-sky.html) in the example above is a primitive.
 
 ### Building multiple scenes
 
-Every aframe scene begins and ends with an `<a-scene>` tag, just like an HTML document starts and ends with an `<html>` tag. And just like a valid HTML document, you can only have one. When A-frame builds the scene, it puts everything inside the one scene. So how can you move between multiple scenes inside your ur-scene? You show and hide entities.
+In our story, we wanted to display multiple equirectangular images in a sequence tied to our audio story. A-frame poses a problem: you can only have one scene in A-frame. And when A-frame builds that scene, it renders everything at once. 
 
-A component available to all entities in A-frame is the visibility component. It works simply: add `visible: false` to any entity tag and the entity is no longer visible.
+Every A-frame document begins and ends with an `<a-scene>` tag, just like an HTML document starts and ends with an `<html>` tag. And just like a valid HTML document, you can only have one. So how can you move between multiple scenes inside your one scene? You show and hide entities.
+
+A component available to all entities in A-frame is the [visibility component](https://aframe.io/docs/master/components/visible.html). It works simply: add `visible: false` to any entity tag and the entity is no longer visible.
 
 Thus, the basic structure of our A-frame scene looked like this:
 
@@ -78,7 +80,7 @@ Using the `timeupdate` event, we switched the visible scene once we past the end
 
 ### Animation
 
-Another core piece of A-frame is the ability to animate elements within a scene. We used A-frame’s animation engine to control the “hands-free” experience we offered on desktop. 
+Another core piece of A-frame is the ability to animate elements within a scene. We used A-frame’s [animation engine](https://aframe.io/docs/master/core/animations.html) to control the “hands-free” experience we offered on desktop. 
 
 To do this, we placed animations on A-frame’s camera. The camera itself is an entity within the scene. To animate an entity, you create the animations as tags that are children of the entity. For example:
 
@@ -87,7 +89,6 @@ To do this, we placed animations on A-frame’s camera. The camera itself is an 
             <a-animation attribute="rotation" duration="40000" from="10 -80 0" to="0 15 0"></a-animation>
         </a-entity>
     </a-scene>
-        
 
 This animation will rotate the camera in 40 seconds.
 
@@ -103,6 +104,8 @@ Then, in JavaScript, you can have the camera (or any entity) emit an event, whic
 To make our guided experience work, we had an animation for each of our scenes. When we entered the scene at the correct place in the audio, we emitted the proper event that started the animation.
 
 ### Putting It All Together
+
+More detail about spreadsheet system
 
 To build our entire scene, we didn’t write out every piece of markup. Instead, we abstracted the creation of entities and animations to a couple spreadsheets. In the scene-building sheet, each row in the sheet was a scene in the story. A simplified version looks like this:
 
@@ -154,7 +157,7 @@ Combining these two concepts, our A-frame scene looks like this in a Jinja templ
     {% endraw %}
 There are more things unique to our particular UI that I did not  include here for sake of simplicity, but you can see the complete HTML file [here](https://github.com/nprapps/rockymountain/blob/master/templates/vr.html).
 
-## Eight Miscellaneous Tips About Building In A-Frame
+## Nine Miscellaneous Tips About Building In A-Frame
 
 There are lots of little things we encountered building a VR experience that didn’t fit in the explanation above but would be good to know.
 
@@ -166,5 +169,6 @@ There are lots of little things we encountered building a VR experience that did
 6. Exiting VR mode on iOS and Android are totally different. On iOS, you rotate your device to portrait mode. On Android, you use the device’s native back button instead of rotating because Android goes into fullscreen mode. Make sure your instructions to the user are accurate for both types of device.
 7. Ultimately, A-frame renders your scene to a canvas element. You can do anything with that canvas element. We chose to fade the canvas to black and fade back up when switching scenes.
 8. To date, text in A-frame is hard. There are some plugins and extensions that provide the ability to write on your scene, but it is almost certainly easier at this point to make a transparent PNG and project it onto your scene.
+9. A-frame ships with a controls component called "[look-controls](https://aframe.io/docs/master/components/look-controls.html)". We used a plugin called "[drag-look-controls](https://github.com/mayognaise/aframe-drag-look-controls-component/tree/master/dist)", which is largely the same, except it inverts the click-and-drag experience so that the photo moves in the direction you drag.
 
 In the coming days, we will publish a couple more things about our project, including how we made our images and soundscapes and what we’ve learned from analytics about how people used our VR project. Stay tuned!
