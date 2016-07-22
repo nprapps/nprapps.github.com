@@ -20,7 +20,9 @@ We had three main goals when creating the web experience out of these assets:
 2. Ensure the experience worked across devices, from desktop to Cardboard.
 3. Do this on the web. We weren’t interested in Oculus or other things that required users to install software.
 
-Given these requirements, we had a few options. Google VR has created [VR View](https://developers.google.com/vr/concepts/vrview-web), an incredibly simple way of creating a 360º image viewer. The code is [all open source](https://github.com/google/vrview), and we could have modified the experience however we wanted, but the starting point was so opinionated that making an experience that integrated well with our audio and design style felt more onerous. But for just getting an image on the page, VR View is as simple as it gets.
+Given these requirements, we wanted to work with [WebVR](https://webvr.info/). The experimental JavaScript API is basically not supported in any browsers yet, but work on making WebVR a reality is active, and a few projects have sprung up in an attempt to getting people working with WebVR today.
+
+Google VR has created [VR View](https://developers.google.com/vr/concepts/vrview-web), an incredibly simple way of creating a 360º image viewer. The code is [all open source](https://github.com/google/vrview), and we could have modified the experience however we wanted, but the starting point was so opinionated that making an experience that integrated well with our audio and design style felt more onerous. But for just getting an image on the page, VR View is as simple as it gets.
 
 Boris Smus maintains the [WebVR Boilerplate](https://github.com/borismus/webvr-boilerplate), a starting point with Three.js that has been used by our friends at the [LA Times](http://graphics.latimes.com/mars-gale-crater-vr/) and [National Geographic](http://breakthrough.nationalgeographic.com/). It is a great starting point, and we would have used this, but we noticed a project based on Boris’s work called [A-frame](https://aframe.io/), spearheaded by Mozilla’s VR group.
 
