@@ -105,9 +105,9 @@ To make our guided experience work, we had an animation for each of our scenes. 
 
 ### Putting It All Together
 
-More detail about spreadsheet system
+While it is great that A-frame is a markup-based system, having the team manage the entire experience by modifying markup would have been frustrating and difficult. So we turned to a system we have been using for years: [spreadsheet-driven templating](http://blog.apps.npr.org/2014/04/23/how-we-built-borderland-out-of-a-spreadsheet.html). Using a spreadsheet allowed us to put each entity in its own row. Then, columns corresponded to components on the entity or other data we needed to attach to the entity via data attributes.
 
-To build our entire scene, we didn’t write out every piece of markup. Instead, we abstracted the creation of entities and animations to a couple spreadsheets. In the scene-building sheet, each row in the sheet was a scene in the story. A simplified version looks like this:
+A simplified version of the spreadsheet looks like this:
 
 | name |id  |image  |image_rotation  |field_of_view  |end_time  |
 |:-|:-|:-|:-|:-|:-|
