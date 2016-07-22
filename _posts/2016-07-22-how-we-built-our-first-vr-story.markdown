@@ -8,6 +8,9 @@ email: tfisher@npr.org
 twitter: tylrfishr
 ---
 
+![A screenshot of [Standing At The Edge Of Geologic Time](http://apps.npr.org/rockymountain-vr) in virtual reality](/img/posts/vr-screenshot.jpg)
+<small>A screenshot of [Standing At The Edge Of Geologic Time](http://apps.npr.org/rockymountain-vr) in virtual reality.</small>
+
 Last Wednesday, the NPR Visuals Team published [a virtual reality story on the web](http://apps.npr.org/rockymountain-vr). We traveled to Rocky Mountain National Park to make 360º images and binaural soundscapes. Later, we interviewed Eric Kirby, a geology professor from Oregon State University about the geologic history of the area. We combined the assets we created at Rocky Mountain National Park with the interview to create a meditative experience that reflects on the geologic history of the park.
 
 It was weird! Making a virtual reality project on the web presented a lot of new challenges for us that few outlets have explored. This blog post will explore some of the challenges and how we solved them.
@@ -80,6 +83,7 @@ Using the `timeupdate` event, we switched the visible scene once we past the end
 
 ### Animation
 
+
 Another core piece of A-frame is the ability to animate elements within a scene. We used A-frame’s [animation engine](https://aframe.io/docs/master/core/animations.html) to control the “hands-free” experience we offered on desktop. 
 
 To do this, we placed animations on A-frame’s camera. The camera itself is an entity within the scene. To animate an entity, you create the animations as tags that are children of the entity. For example:
@@ -109,10 +113,7 @@ While it is great that A-frame is a markup-based system, having the team manage 
 
 A simplified version of the spreadsheet looks like this:
 
-| name |id  |image  |image_rotation  |field_of_view  |end_time  |
-|:-|:-|:-|:-|:-|:-|
-|Dream Lake  |dream-lake  |dl-615.jpg  |0 -250 0  |80  |29  |
-|Emerald Lake  |emerald-lake  |emerald-624.jpg  |0 -145 0  |80  |60  |
+<iframe src="https://docs.google.com/spreadsheets/d/1FhpapXzyA-fI509UOGObJcmNxs6fpktfTte7Tv_qo2c/pubhtml?gid=886459190&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="250px"></iframe>
 
 Using Jinja templates and our [copytext](http://copytext.readthedocs.io/en/0.1.8/) library, we were able to loop through each row and build our scene. For example, the first row in our sheet would result in the following:
 
@@ -124,12 +125,7 @@ Using Jinja templates and our [copytext](http://copytext.readthedocs.io/en/0.1.8
 
 In a separate spreadsheet, we built each animation we wanted for guided mode. Using the id of the scene, we could effectively join the two sheets together on the id. Here’s a sample of the animation spreadsheet:
 
-| id | attribute | duration | from_value | to_value |
-|:-|:-|:-|:-|:-|
-| dream-lake | rotation | 40000 | -10 80 0 | 0 15 0 |
-| dream-lake | camera.fov | 40000 | 110 | 80 |
-| emerald-lake | rotation | 30000 | -10 -30 0 | 10 0 0  |
-| emerald-lake | camera.fov | 34000 | 90 | 50 |
+<iframe src="https://docs.google.com/spreadsheets/d/1FhpapXzyA-fI509UOGObJcmNxs6fpktfTte7Tv_qo2c/pubhtml?gid=1405877034&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="550px"></iframe>
 
 Then, within the camera entity as demonstrated above, we can loop through this spreadsheet and build each animation. The first row of the spreadsheet would build this:
 
