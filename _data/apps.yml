@@ -288,8 +288,8 @@
 - name: "NPR Election Party"
   description: "Stream election results, data and news, NPR-style. Optimized for your TV, Chromecast or coffee table. #nprparty"
   date: "November 4, 2014"
-  image: "http://elections.npr.org/assets/facebook.jpg"
-  url: "http://elections.npr.org/"
+  image: "http://elections2014.npr.org/assets/facebook.jpg"
+  url: "http://elections2014.npr.org"
   github_url: https://github.com/nprapps/elections14
 - name: "A Photo I Love"
   description: "There's an interesting story behind this old photo. Photo editor Erin Mystkowski explains why she loves it."
