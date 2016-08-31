@@ -8,6 +8,9 @@ email: jim.hill@kunc.org
 twitter: ejimbo_com
 ---
 
+**Note: This post is out of date. NPR Visuals recommends using the new [pym-loader.js](http://blog.apps.npr.org/pym.js/#loader) to load iframed content on Core Publisher pages.**
+
+
 _Editor&rsquo;s Note: [Core Publisher](http://digitalservices.npr.org/topic/core-publisher) is a content management system that staff at many NPR member stations use to maintain their websites. This post is written for that audience, but may be useful for users of other CMSes._
 
 Over time, many member stations have created maps, graphics and other projects for their websites that were sized to fit Core Publisher&rsquo;s fixed-width layout.  But with the responsive mobile-only sites, and Core Publisher going to a fully responsive design, these elements either don&rsquo;t work or won&rsquo;t resize correctly to the screen.
