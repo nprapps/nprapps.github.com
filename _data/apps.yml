@@ -612,5 +612,23 @@
   description: "Take a virtual reality tour and immerse yourself in the sights and sounds of Rocky Mountain National Park."
   date: "July 20, 2016"
   image: "/img/apps/geology.jpg"
-  url: http://apps.npr.org/rockymountain-vr
+  url: http://apps.npr.org/rockymountain-vr/
   github_url: https://github.com/nprapps/rockymountain
+- name: "At The Portrait Gallery, Students Tell The Stories That Pictures Can't"
+  description: "Washington, D.C., teens get into the spirit of historical figures and tell visitors what the portraits miss. In one instance, a student imagines a private talk between Richard Nixon and his wife."
+  date: "Aug. 5, 2016"
+  image: "/img/apps/portrait-gallery.jpg"
+  url: http://www.npr.org/2016/08/05/488518797/at-the-portrait-gallery-students-tell-the-stories-that-pictures-cant
+  github_url:
+- name: "On A Mission To Race The Middle School Brain"
+  description: "How do you pedal a 200-pound pink brain — made of rubber, foam and steel — up 45-degree hills, through thick mud and water without breaking? These middle schoolers have eight months to figure it out. (Three-part series)"
+  date: "Aug. 16, 2016"
+  image: "/img/apps/kinetic.gif"
+  url: http://www.npr.org/sections/ed/2016/08/16/486091625/racing-the-middle-school-brain
+  github_url:
+- name: "A Silent Epidemic"
+  description: "Our public schools are struggling to handle millions of students with mental health problems. Here’s why."
+  date: "Sept. 7, 2016"
+  image: "/img/apps/mental-health.jpg"
+  url: http://apps.npr.org/mental-health/
+  github_url:
