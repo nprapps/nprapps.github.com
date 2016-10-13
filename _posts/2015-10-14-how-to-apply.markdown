@@ -26,16 +26,18 @@ There are also a few simple style tips you should keep in mind:
 * Use hyperlinks for any reference to online work. We're mostly reading your work on our computers, and being able to click a link saves a lot of time.
 * Export your resume, cover letter, and all other documents as PDF. PDF is more secure and portable than Microsoft Word files.
 
-## Other expectations
+## Portfolios
 
-* Photo internship candidates must have a portfolio.
-* Programming/design candidates with either projects on Github or a personal site are strongly preferred.
+* All candidates must have an online portfolio.
+* Programming candidates must have code on Github, and may use their Github projects as a portfolio.
+
+Portfolio projects and work samples should always include your role in the work if it was done on a team. When talking about your work, we want to hear about what was good but also about what you'd change.
 
 ## Selection process
 
 After you submit a resume and cover letter, our selection committee will read through all the applications. We’ll reduce the list to approximately 8-10 candidates by eliminating applications that don’t have a cover letter and resume or who clearly aren’t a good fit for the team.
 
-If you’re one of these candidates, two or three folks from the Visuals team will conduct a short Skype interview with you. Our interviews usually last 15 to 30 minutes, depending on the size of the applicant pool and our availability.
+If you’re one of these candidates, a few folks from the Visuals team will conduct a short Skype interview with you. Our interviews usually last 10 to 30 minutes, depending on the size of the applicant pool and our availability.
 
 You’ll get an email before your interview with outline of the questions you’ll be asked in the interview and also given the opportunity to ask any questions beforehand. The questions may vary a bit from interview to interview based on your professional experience, but we will be as consistent as possible.
 
@@ -57,8 +59,8 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-- [Photo editing](/2016/04/08/fall-photo-internship.html), Fall 2016 &mdash; due May 22, 2016
-- [Design and code](/2016/04/08/fall-2016-designer-developer-internship.html), Fall 2016 &mdash; due May 22, 2016
+- [Photo editing](/2016/10/12/winter-2017-photo-internship.html), Winter/spring 2017 &mdash; due October 23, 2016
+- [Design and code](/2016/10/12/winter-2017-designer-developer-internship.html), Winter/spring 2017 &mdash; due October 23, 2016
 
 Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info on dates, pay, etc.
 
