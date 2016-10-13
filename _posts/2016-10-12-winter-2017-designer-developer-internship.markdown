@@ -16,7 +16,7 @@ We've had journalists who are learning to code, programmers who are learning abo
 
 Does this sound like you? Please join our team! It isn't always easy, but it is very rewarding. You'll learn a ton and you'll have a lot of fun.
 
-The internship runs from January 9, 2017 to April 21, 2017. **Applications are due October 23, 2016 at 11:59pm eastern**.
+The internship runs from January 9, 2017 to April 21, 2017. **Applications are due Sunday, October 30, 2016 at 11:59pm eastern**.
 
 ## Here's how to apply
 
