@@ -20,6 +20,6 @@ The internship runs from January 9, 2017 to April 21, 2017. **Applications are d
 
 ## Here's how to apply
 
-Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2859/winter-spring-2017%3a-news-apps/job).
+Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2859/winter-spring-2017%3a-news-apps/job)
 
 *Into images? Check out our [photo editing internship](/2016/10/12/winter-2017-photo-internship.html).*
