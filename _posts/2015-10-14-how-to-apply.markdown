@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to apply to an internship at NPR Visuals"
-description: "Write a cover letter, make a portfolio, and learn about our interview process."
+description: "We want to see your best work. Here's what we expect from applicants and what applicants can expect from us."
 
 author: David Eads
 email: deads@npr.org
