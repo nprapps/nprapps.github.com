@@ -13,7 +13,7 @@ This is not your standard photo internship!
 
 This internship is an opportunity to learn more about the world of photo editing. Our goal isn’t to make you into a photo editor; we view this internship as a chance for you to **understand what it is like to be an editor and improve your visual literacy**, which can help you become a better photographer.
 
-The internship runs from January 9, 2017 to April 21, 2017. **Applications are due October 23, 2016 at 11:59pm eastern**.
+The internship runs from January 9, 2017 to April 21, 2017. **Applications are due Sunday, October 30, 2016 at 11:59pm eastern**.
 
 ## What you will be doing
 
