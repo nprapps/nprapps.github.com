@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Be our design/code/??? intern for fall 2016!"
+title: "Be our design/code/??? intern for winter/spring 2017!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you draw, design, or write code? We are looking for you."
 
 author: David Eads
@@ -10,7 +10,6 @@ twitter: eads
 
 
 [![Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away](/img/posts/armslist-map.png)](http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away)<small>Map by Visuals Team intern [Brittany Mayes](https://twitter.com/BritRenee_)</small>
-
 
 Are you data-curious, internet savvy, and interested in journalism? Do you draw, design, or write code? We are looking for you.
 
@@ -22,6 +21,6 @@ Into images instead? Check out our [photo editing internship](/2016/10/12/winter
 
 ## Here's how to apply
 
-Read our [post about how to write a cover letter](/2015/10/14/how-to-apply.html) and [apply to the internship](https://interns-npr.icims.com/jobs/2859/winter-spring-2017%3a-news-apps/job). 
+Read our [post about how to our application process works and what we expect](/2015/10/14/how-to-apply.html) and [apply to the internship](https://interns-npr.icims.com/jobs/2859/winter-spring-2017%3a-news-apps/job).
 
 The internship runs from January 9, 2017 to April 21, 2017. **Applications are due October 23, 2016 at 11:59pm eastern**.
