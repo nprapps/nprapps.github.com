@@ -14,12 +14,12 @@ Are you data-curious, internet savvy, and interested in journalism? Do you draw,
 
 We've had journalists who are learning to code, programmers who are learning about journalism, designers who love data graphics, designers who love UX, reporters who love data, and illustrators who make beautiful things.
 
-Does any of this sound like you? Please join our team! It isn't always easy, but it is very rewarding. You'll learn a ton and you'll have a lot of fun.
+Does this sound like you? Please join our team! It isn't always easy, but it is very rewarding. You'll learn a ton and you'll have a lot of fun.
 
 The internship runs from January 9, 2017 to April 21, 2017. **Applications are due October 23, 2016 at 11:59pm eastern**.
 
 ## Here's how to apply
 
-Read our [post about how to our application process works and what we expect](/2015/10/14/how-to-apply.html) and [apply to the internship](https://interns-npr.icims.com/jobs/2859/winter-spring-2017%3a-news-apps/job).
+Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2859/winter-spring-2017%3a-news-apps/job).
 
 *Into images? Check out our [photo editing internship](/2016/10/12/winter-2017-photo-internship.html).*
