@@ -38,5 +38,5 @@ We also want folks who can tell us what they would like to accomplish during the
 
 ## So how do I apply?
 
-Does this sound like you? Read our [post about how to write a cover letter](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2895/winter-spring-2017%3a-npr-music%2c-editorial-intern/job)
+Does this sound like you? Read our [post about how to write a cover letter](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2860/winter-spring-2017%3a-photo-editing-intern/job)
 
