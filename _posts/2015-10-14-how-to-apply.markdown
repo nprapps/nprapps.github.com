@@ -59,8 +59,8 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-- [Photo editing](/2016/10/12/winter-2017-photo-internship.html), Winter/spring 2017 &mdash; due October 23, 2016
-- [Design and code](/2016/10/12/winter-2017-designer-developer-internship.html), Winter/spring 2017 &mdash; due October 23, 2016
+- [Photo editing](/2016/10/12/winter-2017-photo-internship.html), Winter/Spring 2017 &mdash; due November 6, 2016
+- [Design and code](/2016/10/12/winter-2017-designer-developer-internship.html), Winter/Spring 2017 &mdash; due November 6, 2016
 
 Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info on dates, pay, etc.
 
