@@ -40,4 +40,4 @@ We also want folks who can tell us what they would like to accomplish during the
 
 Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2860/winter-spring-2017%3a-photo-editing-intern/job)
 
-*Into code, design, and data? Check out our [design/developement internship](/2016/10/12/winter-2017-designer-developer-internship.html).*
+*Into code, design, and data? Check out our [design/development internship](/2016/10/12/winter-2017-designer-developer-internship.html).*
