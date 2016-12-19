@@ -155,7 +155,7 @@ d$rank[d$rank=="Rank.5"]= 1
 
 Now we could try out different ranking methods, and different ways of aggregating these ranks. We quickly found that artists like Zayn who had campaigns on their behalf had huge spikes on certain days in terms of entries:
 
-![Zayn polls](/img/posts/allsongs-poll-zayn.png)<small>Zayn was pretty successful in our poll. Well, on some days at least.</small>
+![Zayn polls](/img/posts/allsongs-poll-zayn.png)<small>The table shows how often Zayn's "Mind of Mine" was mentioned on all days of the poll. He was really successful on the first and the the second-to-last day.</small>
 
 In contrast, artists like Bon Iver have a very consistent number of entries each day. We decided to favor these consistent entries. **Our final calculations gives back a rank of albums for each day and then sums up these daily rankings.**
 
@@ -183,7 +183,7 @@ After transforming the data back to a wide format and summing up the ranking for
 If you scroll down, you’ll see lots of “200” values. These are the rankings for the days on which this particular album didn’t get mentioned at all and is achieved with `d_wide[is.na(d_wide)] <- 200`:
 
 
-![Final ranking](/img/posts/allsongs-poll-empty-values.png)<small>We replaced empty values with a high number, so that they don’t show up at the top of the ranking</small>
+![Final ranking with empty values](/img/posts/allsongs-poll-empty-values.png)<small>We replaced empty values with a high number, so that they don’t show up at the top of the ranking</small>
 
 If we want to be more correct, we could get the max number of mentioned albums for each day, and then replace the n/a values with this max number. Since we only want to show the very top albums and they were mentioned at least once every day, we don’t need that method for our goal.
 
