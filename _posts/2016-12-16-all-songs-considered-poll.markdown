@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How We Cleaned Up And Ranked Our Listeners Favorite Albums of 2016"
+title: "How We Cleaned Up And Ranked Our Listeners' Favorite Albums of 2016"
 description: A messy process for messy data
 
 author: Lisa Charlotte Rost
