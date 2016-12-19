@@ -23,7 +23,7 @@ In addition to cleaning up the data to make it usable, we had to decide on a wei
 
 Since the whole project had a tight deadline, our process wasn't pretty, but we did it. Here’s how:
 
-## Step 1: Make things look the same that mean the same
+## Step 1: Combining Like Entries
 
 The poll asks listeners to type in the artist and album, separated with a comma. But humans are faulty creatures who make spelling mistakes, don’t obey the rules or don’t remember the name of an album correctly. This faultiness results in a nice compilation of a dozen different ways to write one and the same thing:
 
