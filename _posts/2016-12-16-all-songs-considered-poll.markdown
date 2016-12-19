@@ -55,7 +55,7 @@ bon iver. 22,a million
 
 To fix that mess, we used a combination of cluster analysis in [OpenRefine](http://openrefine.org/) and “Find and Replace” in Google Spreadsheet. 
 
-First, **OpenRefine**. To run the cluster analysis on just one column instead of five different ones, we needed to transform the data from a “wide” format into a “long” format. This can be easily achieved, e.g. with R: 
+First, **OpenRefine**. To run the cluster analysis on just one column instead of five different ones, we needed to transform the data from a [“wide” format into a “long” format](https://en.wikipedia.org/wiki/Wide_and_narrow_data). This can be easily achieved, e.g. with R: 
 
 ```
 library(reshape2)
@@ -64,7 +64,7 @@ d = melt(d,id.vars = c('Timestamp'))
 write.csv(d,”data_long.csv”)
 ```
 
-Then we imported the CSV into OpenRefine, selected our column and chose `Facet` > `Text Facet` and then `Cluster`.
+Then we imported the CSV into OpenRefine, selected our one column that states all artist-album entries and chose `Facet` > `Text Facet` and then `Cluster`.
 
 ![OpenRefine interface](/img/posts/allsongs-poll-openrefine.png)<small>Text Facet in OpenRefine</small>
 
@@ -148,7 +148,7 @@ Note here that we are giving the number one albums the _most_ points and the num
 
 With numerical rank values, we could try out different ranking methods and different ways of aggregating these ranks. We quickly found that artists like Zayn who had campaigns on their behalf had huge spikes on certain days in terms of entries:
 
-![Zayn polls](/img/posts/allsongs-poll-zayn.png)<small>The table shows how often Zayn's _Mind of Mine_ was mentioned on all days of the poll. He was really successful on the first and the the second-to-last day.</small>
+![Zayn polls](/img/posts/allsongs-poll-zayn.png)<small>The table shows how often Zayn's _Mind of Mine_ was mentioned on all days of the poll. He was really successful on the first and the second-to-last day.</small>
 
 In contrast, artists like Bon Iver have a very consistent number of entries each day. We decided to favor these consistent entries. Our final calculations gave back a rank of albums for each day and then summed these daily rankings.
 
