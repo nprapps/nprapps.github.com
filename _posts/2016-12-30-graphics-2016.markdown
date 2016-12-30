@@ -10,7 +10,7 @@ twitter: alykat
 
 Intro TKTKTK
 
-## Beyond The Ordinary Map
+## Election Results: Beyond The Ordinary Map
 
 One highlight this year: We experimented with a number of alternatives to the usual geographic map, from our [tile grid map template](http://blog.apps.npr.org/2015/05/11/hex-tile-maps.html) to cartograms to things that were not maps at all. People know the standard geographic map and how to find themselves in it, but sometimes that's not the best way to highlight a trend or represent a particular dataset. Consider these approaches to presenting election results:
 
@@ -27,19 +27,49 @@ A few days after the election, we took a look at [geographic distribution of the
     var pymParent = new pym.Parent(el.id, '//apps.npr.org/dailygraphics/graphics/elex-map-county-margins-20161110/child.html', {});
 </script>
 
-_**How We Made This:** TKTK pulled data down from the AP elections API via [Elex](http://elex.readthedocs.io/en/latest/) (paid API key required). Reprocessed it into something usable. Made the county maps using D3 and then screenshot them. TKTK_
+{: .how}
+**How We Made This:** TKTK pulled data down from the AP elections API via [Elex](http://elex.readthedocs.io/en/latest/) (paid API key required). Reprocessed it into something usable. Made the county maps using D3 and then screenshot them. TKTK
 
 This kind of results map isn't perfect, though: While it can convey explicitly geographic differences, it doesn't say anything about the number and distribution of votes cast. Major population centers are flattened out.
 
 ### The Electoral Cartogram
 
-TKTKTK
+The presidency is decided by the Electoral College result: Who wins each state, weighted by that state's representation in Congress. (Maine and Nebraska are exceptions to this.) On election night, then, while county results can give a clue to how the state will tilt, the key thing to watch is who wins each state. A standard state map, while familiar, is inappropriate for this purpose, since it doesn't convey the relative importance of each state. For example: Geographically, Montana is huge, dwarfing, say, Massachusetts. But Massachusetts is more populous, and, with 11 electoral votes to Montana's 3, should have more visual presence on the screen. For this reason, we created an [electoral cartogram](http://www.npr.org/2016/11/09/500716650/donald-trump-clinches-the-presidency-in-major-upset). Each state is represented as a square roughly in its expected geographic location, but sized according to its electoral heft.
 
-Related: Delegate maps
+<small>From: [Donald Trump Clinches The Presidency In Major Upset](http://www.npr.org/2016/11/09/500716650/donald-trump-clinches-the-presidency-in-major-upset) (Nov. 9, 2016)</small>
 
-### Categorical Analysis
+<div id="responsive-embed-map-election-results-standalone"></div>
+<script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var el = document.getElementById('responsive-embed-map-election-results-standalone');
+    var pymParent = new pym.Parent(el.id, '//apps.npr.org/elections16graphics/map-election-results-standalone/child.html', {});
+</script>
 
-In another post-election analysis, we evaluated the results based on a characteristic _other_ than geography: [the urban-rural divide](http://www.npr.org/2016/11/14/501737150/rural-voters-played-a-big-part-in-helping-trump-defeat-clinton).
+{: .how}
+**How We Made This:** We periodically downloaded results data from the AP elections API (paid subscription required) using [Elex](http://elex.readthedocs.io/en/latest/) and reprocessed it into a JSON file. The map was written in JavaScript, with D3. Code on Github: [Results processor](https://github.com/nprapps/elections16-general/), [Graphics](https://github.com/nprapps/elections16graphics)
+
+During primary season, we took a similar approach to presenting [delegate results](http://www.npr.org/2016/03/02/468641509/elections-2016-democratic-and-republican-delegate-tracker). Each state was worth a different number of delegates (corresponding roughly to its population). As an added wrinkle, most states were not winner-take-all: Multiple candidates could win delegates in a state, depending on party rules and their share of the vote. To address this, we made a cartogram for each major candidate (in addition to a bar chart with overall totals and a data table with state-by-state results).
+
+<small>From: [Elections 2016: Democratic And Republican Delegate Tracker](http://www.npr.org/2016/03/02/468641509/elections-2016-democratic-and-republican-delegate-tracker) (March 2, 2016)</small>
+
+![Map of Republican delegate results](/img/posts/gfx16-delegates.png)
+
+
+### Not A Map
+
+{: .half-image}
+![Table of Arizona presidential results by county](/img/posts/gfx16-county-results.png)
+
+Because a candidate's success in a given county can give clues to how that candidate will perform state-wide, we judged that it was important to include live county-level results with our election night coverage. However, since location alone isn't the most salient factor to consider about each county, we decided to display [county results in tabular form](http://www.npr.org/2016/11/08/501063960/arizona-2016-presidential-and-state-election-results), allowing users to compare (and sort) counties by additional demographic, economic and political factors.
+
+{: .how}
+**How We Made This:** Before the election, we downloaded county-level data from the Census Bureau and Bureau of Labor Statistics. On election night, we periodically downloaded results data from the AP elections API (paid subscription required) using [Elex](http://elex.readthedocs.io/en/latest/) and reprocessed it into a JSON file. The county results page checked for updated data every 10 seconds and refreshed the information on the page as necessary. Code on Github: [Results processor](https://github.com/nprapps/elections16-general/), [Graphics](https://github.com/nprapps/elections16graphics)
+
+We also displayed live presidential, Senate, House and ballot measure results in the form of a ["big board,"](http://www.npr.org/2016/11/08/499287941/2016-senate-race-election-results) with elections sorted by poll closing time.
+
+![Big Board of Senate results](/img/posts/gfx16-bigboard.png)
+
+In a post-election analysis, we evaluated county results based on a characteristic _other_ than geography: [the urban-rural divide](http://www.npr.org/2016/11/14/501737150/rural-voters-played-a-big-part-in-helping-trump-defeat-clinton).
 
 <small>From: [Rural Voters Played A Big Part In Helping Trump Defeat Clinton](http://www.npr.org/2016/11/14/501737150/rural-voters-played-a-big-part-in-helping-trump-defeat-clinton) (Nov. 14, 2016)</small>
 
@@ -50,37 +80,10 @@ In another post-election analysis, we evaluated the results based on a character
     var pymParent = new pym.Parent(el.id, '//apps.npr.org/dailygraphics/graphics/elex-rural-2016-20161110/child.html', {});
 </script>
 
-_**How We Made This:** TKTK pulled data down from the AP elections API via [Elex](http://elex.readthedocs.io/en/latest/) (paid API key required). Wrote code to categorize counties/results according to the [USDA Rural-Urban Continuum Codes](https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/). Used a stacked bar chart ([code](https://github.com/nprapps/graphics-archive/tree/master/2016/11/elex-rural-2016-20161110)) to render the results. TKTK_
+{: .how}
+**How We Made This:** We downloaded results data from the AP elections API (paid subscription required) using [Elex](http://elex.readthedocs.io/en/latest/). We wrote a Python script to categorize counties and their results according to the [USDA Rural-Urban Continuum Codes](https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/). And then we rendered our findings with a stacked bar chart using D3 ([code](https://github.com/nprapps/graphics-archive/tree/master/2016/11/elex-rural-2016-20161110)).
 
-### Tabular County Results
-
-TKTKTK
-
-
-
-
-## The 2016 Election
-
-### Primaries
-
-content TKTKTK delegate maps
-
-* Link
-* Code
-
-### Early Voting
-
-content TKTKTK
-
-* Link
-* Code
-
-### Election Night
-
-content TKTKTK
-
-* Link
-* Code
+--------
 
 ## School Funding
 
@@ -108,16 +111,9 @@ content TKTKTK
 * Link
 * Code
 
-## Air Quality In India
-
-content TKTKTK
-
-related: Seoul air quality
-
-* Link
-* Code
-
 ## Other Fun Ones
+
+## Air Quality In India
 
 ### Walruses?
 
@@ -126,3 +122,5 @@ related: Seoul air quality
 ### Middle Class / Middle Income
 
 ### Trump-Clinton gender gap
+
+### Early Voting

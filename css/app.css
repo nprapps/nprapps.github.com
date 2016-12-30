@@ -107,6 +107,11 @@ article img {
 .entry a { color: #6d8ac4;}
 .entry a:hover { color: #bccae5;}
 .entry section p { margin: 0 0 22px; }
+.entry section p.half-image {
+    width: 40%;
+    float: right;
+    margin-left: 22px;
+}
 .entry section { font-size: 16px; line-height: 1.5em; margin-top:44px;}
 .entry section img { display: block; margin: 0 0 22px;}
 .entry ul, .entry ol { margin: 0px 0px 22px 33px; }
@@ -136,6 +141,14 @@ article img {
     font-weight: bold;
 }
 .post-meta a { font-weight: 400; }
+
+.how {
+    padding: 20px;
+    font-size: 80%;
+    background-color: #eee;
+    line-height: 1.6;
+    clear: both;
+}
 
 
 /*
@@ -547,6 +560,15 @@ footer ul li {
     .things img { display:none; }
 }
 
+@media screen and (max-width:500px) {
+    .entry section p.half-image {
+        width: auto;
+        float: none;
+        margin-left: 0;
+    }
+}
+
+
 @media print {
     body { padding: 0 60px; }
     .container { width:100%; }
@@ -556,3 +578,4 @@ footer ul li {
     .entry section { font-size:12px; }
     #disqus_thread { display:none; }
 }
+s
