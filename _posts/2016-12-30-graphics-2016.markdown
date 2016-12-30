@@ -84,13 +84,19 @@ content TKTKTK
 
 ## School Funding
 
-content TKTKTK
+One of our biggest data-wrangling efforts this year was the [School Money series](http://www.npr.org/series/473636949/schoolmoney), a partnership between NPR Ed and Education Week that examined how districts around the nation pay for their schools. Since we were working with data from more than 13,000 school districts, we needed to present the data in ways that could show nationwide patterns as well as granular views, focused on a user's local school district.
+
+We created a national map of each district's spending that could search for and zoom to individual districts, paired with a histogram to show the distribution of spending across the U.S. We were able to re-use this base map to create small, static state maps. For a story on state disparities in funding, we plotted each school district's spending in a way that could show both disparity and distribution across all 50 states.
+
+![Map of school district spending per student](/img/posts/gfx16-school-funding.png) 
 
 * Link
 
 ## Mental Health In Schools
 
-content TKTKTK
+This piece on mental health in schools was calling out for a sequential visual explanation of the issue, but we didn't have a large data set or photography to aid in the storytelling. We went through several iterations of storyboards to lay out the problem of mental health care in schools and the proposed solutions, but the project didn't really come to life until illustrator LA Johnson stepped in.
+
+![Screenshots from A Silent Epidemic](/img/posts/gfx16-mental-health.png) 
 
 * Link
 * Code
