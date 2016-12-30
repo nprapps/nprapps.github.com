@@ -100,7 +100,20 @@ In a post-election analysis, we evaluated county results based on a characterist
 
 --------
 
-## Mental Health In Schools
+## Illustration Taking Center Stage
+
+We worked closely with [LA Johnson](https://twitter.com/thelajohnson),
+an illustrator and visual editor with NPR Ed, to create several projects
+that showcased illustration as the primary storytelling device.
+
+### A Great Teacher, Illustrated
+
+LA reported and illustrated this [fully responsive comic](http://www.npr.org/2016/03/09/469097318/a-great-teacher-illustrated) for NPR Ed's 50
+Great Teachers series.
+
+![A Great Teacher, Illustrated](/img/posts/gfx16-art-teacher.jpg)
+
+### Mental Health In Schools
 
 This piece on mental health in schools was calling out for a sequential visual explanation of the issue, but we didn't have a large data set or photography to aid in the storytelling. We went through several iterations of storyboards to lay out the problem of mental health care in schools and the proposed solutions, but the project didn't really come to life until illustrator [LA Johnson](https://twitter.com/thelajohnson) stepped in.
 
