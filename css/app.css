@@ -415,6 +415,14 @@ table tbody + tbody {
   border-top: 2px solid #dddddd;
 }
 
+table.project-grid img { margin-bottom: 6px; }
+table.project-grid td {
+    border-top: none;
+    font-size: 14px;
+    line-height: 1.8;
+}
+table.project-grid td:nth-child(1) { width: 30%; }
+
 /*styling to get books14 images side-by-side*/
 .wrapper-image{
     width:100%;

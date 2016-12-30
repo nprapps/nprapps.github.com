@@ -105,9 +105,14 @@ content TKTKTK
 * Link
 * Code
 
-## Other Fun Ones
+## Other Notable Projects
 
-## Air Quality In India
+{: .project-grid}
+| ![Air quality in New Delhi](/img/posts/gfx16-aqi.png) | [Air Quality Levels In New Delhi, January-April 2016](http://www.npr.org/2016/05/13/477930821/indias-big-battle-development-vs-pollution)<br />(May 13, 2016)<br />- [Code](https://github.com/nprapps/graphics-archive/tree/master/2016/05/india-air-quality-20160511) |
+| ![Affordable housing](/img/posts/gfx16-affordable-housing.png) | [In A High-Rent World, Affordable And Safe Housing Is Hard To Come By](http://www.npr.org/2016/03/30/471347547/in-a-high-rent-world-affordable-and-safe-housing-is-hard-to-come-by)<br />(March 30, 2016)<br />- [Code](https://github.com/nprapps/graphics-archive/tree/master/2016/03/affordable-housing-20160308) |
+| ![Vision screenings](/img/posts/gfx16-vision.png) | [You Can't Learn What You Can't See: Here's How Your State Screens For Vision Problems](http://www.npr.org/sections/ed/2016/04/04/472539699/you-cant-learn-what-you-cant-see-heres-how-your-state-screens-for-vision-problem)<br />(April 4, 2016)<br />- [Code](https://github.com/nprapps/graphics-archive/tree/master/2016/04/vision-testing-20160321) |
+| ![Trump assets](/img/posts/gfx16-trump-assets.png) | [Trump's Businesses And Potential Conflicts: Sorting It Out](http://www.npr.org/2016/12/05/503611249/trumps-businesses-and-potential-conflicts-sorting-it-out)<br />(Dec. 5, 2016) |
+
 
 ### Walruses?
 
