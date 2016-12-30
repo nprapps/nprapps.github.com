@@ -1,2 +1,44 @@
 highlighter: rouge
 markdown: kramdown
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://blog.apps.npr.org'
+  media: 'img'
+  ignore:
+    - app_yaml.py
+    - atom.xml
+    - CNAME
+    - index.html
+    - LICENSE
+    - README.md
+    - _layouts
+    - _incldues
+    - bootstrap
+    - css
+    - examples
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "author"
+        field:
+          element: "text"
+          label: "Author"
+          value: ""
+      - name: "email"
+        field:
+          element: "text"
+          label: "Email"
+          value: ""
+      - name: "twitter"
+        field:
+          element: "text"
+          label: "Twitter"
+          value: ""
