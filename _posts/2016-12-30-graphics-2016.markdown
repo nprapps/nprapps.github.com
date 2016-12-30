@@ -89,20 +89,23 @@ In a post-election analysis, we evaluated county results based on a characterist
 
 One of our biggest data-wrangling efforts this year was the [School Money series](http://www.npr.org/series/473636949/schoolmoney), a partnership between NPR Ed and Education Week that examined how districts around the nation pay for their schools. Since we were working with data from more than 13,000 school districts, we needed to present the data in ways that could show nationwide patterns as well as granular views, focused on a user's local school district.
 
-We created a national map of each district's spending that could search for and zoom to individual districts, paired with a histogram to show the distribution of spending across the U.S. We were able to re-use this base map to create small, static state maps. For a story on state disparities in funding, we plotted each school district's spending in a way that could show both disparity and distribution across all 50 states.
-
 ![Map of school district spending per student](/img/posts/gfx16-school-funding.png) 
 
-* Link
+We created a national map of each district's spending that could search for and zoom to individual districts, paired with a histogram to show the distribution of spending across the U.S. We were able to re-use this base map to create small, static state maps. For a story on state disparities in funding, we plotted each school district's spending in a way that could show both disparity and distribution across all 50 states.
+
+{: .how}
+**How We Made This:** We used R to parse and analyze data from Education Week, which we mapped using [Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/api/). Our R script included an export of school districts bucketed by spending, which formed the basis of our histogram drawn in D3 ([code](https://github.com/nprapps/graphics-archive/blob/master/2016/04/school-funding-map-20160408/)).
 
 ## Mental Health In Schools
 
-This piece on mental health in schools was calling out for a sequential visual explanation of the issue, but we didn't have a large data set or photography to aid in the storytelling. We went through several iterations of storyboards to lay out the problem of mental health care in schools and the proposed solutions, but the project didn't really come to life until illustrator LA Johnson stepped in.
+This piece on mental health in schools was calling out for a sequential visual explanation of the issue, but we didn't have a large data set or photography to aid in the storytelling. We went through several iterations of storyboards to lay out the problem of mental health care in schools and the proposed solutions, but the project didn't really come to life until illustrator [LA Johnson](https://twitter.com/thelajohnson) stepped in.
 
 ![Screenshots from A Silent Epidemic](/img/posts/gfx16-mental-health.png) 
 
-* Link
-* Code
+LA's artwork solidified the visual style of the piece and brought human faces to a sensitive subject. Her illustrations even formed the basis for our data visualizations, which used silhouettes of her characters as icons.
+
+{: .how}
+**How We Made This:** We used our [app template](https://github.com/nprapps/app-template) and [Look At This](https://github.com/nprapps/lookatthis) as the backbone for our sequential storytelling format. The visualizations are SVG icons rendered and animated by D3 ([code](https://github.com/nprapps/mental-health)).
 
 ## Philando Castile
 
