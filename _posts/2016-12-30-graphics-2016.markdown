@@ -1,0 +1,122 @@
+---
+layout: post
+title: "Some Of Our Favorite Graphics + Data Projects In 2016"
+description: TKTKTK
+
+author: Alyson Hurt
+email: ahurt@npr.org
+twitter: alykat
+---
+
+Intro TKTKTK
+
+## Beyond The Ordinary Map
+
+One highlight this year: We experimented with a number of alternatives to the usual geographic map, from our [tile grid map template](http://blog.apps.npr.org/2015/05/11/hex-tile-maps.html) to cartograms to things that were not maps at all. People know the standard geographic map and how to find themselves in it, but sometimes that's not the best way to highlight a trend or represent a particular dataset. Consider these approaches to presenting election results:
+
+### The County Map
+
+A few days after the election, we took a look at [geographic distribution of the vote](http://www.npr.org/2016/11/15/502032052/lots-of-people-voted-for-obama-and-trump-heres-where-in-3-charts). County-level results maps (versus state-level) can offer a more granular view of political divisions and similarities within states and regions. For added context, we made a similar map of the results from 2012, using the same scale. Animating between the two, the reader can see where support deepened or lessened for a given party.
+
+<small>From: [The Counties That Flipped From Obama To Trump, In 3 Charts](http://www.npr.org/2016/11/15/502032052/lots-of-people-voted-for-obama-and-trump-heres-where-in-3-charts) (Nov. 15, 2016)</small>
+
+<div id="responsive-embed-elex-map-county-margins-20161110"></div>
+<script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var el = document.getElementById('responsive-embed-elex-map-county-margins-20161110');
+    var pymParent = new pym.Parent(el.id, '//apps.npr.org/dailygraphics/graphics/elex-map-county-margins-20161110/child.html', {});
+</script>
+
+_**How We Made This:** TKTK pulled data down from the AP elections API via [Elex](http://elex.readthedocs.io/en/latest/) (paid API key required). Reprocessed it into something usable. Made the county maps using D3 and then screenshot them. TKTK_
+
+This kind of results map isn't perfect, though: While it can convey explicitly geographic differences, it doesn't say anything about the number and distribution of votes cast. Major population centers are flattened out.
+
+### The Electoral Cartogram
+
+TKTKTK
+
+Related: Delegate maps
+
+### Categorical Analysis
+
+In another post-election analysis, we evaluated the results based on a characteristic _other_ than geography: [the urban-rural divide](http://www.npr.org/2016/11/14/501737150/rural-voters-played-a-big-part-in-helping-trump-defeat-clinton).
+
+<small>From: [Rural Voters Played A Big Part In Helping Trump Defeat Clinton](http://www.npr.org/2016/11/14/501737150/rural-voters-played-a-big-part-in-helping-trump-defeat-clinton) (Nov. 14, 2016)</small>
+
+<div id="responsive-embed-elex-rural-2016-20161110"></div>
+<script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var el = document.getElementById('responsive-embed-elex-rural-2016-20161110');
+    var pymParent = new pym.Parent(el.id, '//apps.npr.org/dailygraphics/graphics/elex-rural-2016-20161110/child.html', {});
+</script>
+
+_**How We Made This:** TKTK pulled data down from the AP elections API via [Elex](http://elex.readthedocs.io/en/latest/) (paid API key required). Wrote code to categorize counties/results according to the [USDA Rural-Urban Continuum Codes](https://www.ers.usda.gov/data-products/rural-urban-continuum-codes/). Used a stacked bar chart ([code](https://github.com/nprapps/graphics-archive/tree/master/2016/11/elex-rural-2016-20161110)) to render the results. TKTK_
+
+### Tabular County Results
+
+TKTKTK
+
+
+
+
+## The 2016 Election
+
+### Primaries
+
+content TKTKTK delegate maps
+
+* Link
+* Code
+
+### Early Voting
+
+content TKTKTK
+
+* Link
+* Code
+
+### Election Night
+
+content TKTKTK
+
+* Link
+* Code
+
+## School Funding
+
+content TKTKTK
+
+* Link
+
+## Mental Health In Schools
+
+content TKTKTK
+
+* Link
+* Code
+
+## Philando Castile
+
+content TKTKTK
+
+* Link
+* Code
+
+## Air Quality In India
+
+content TKTKTK
+
+related: Seoul air quality
+
+* Link
+* Code
+
+## Other Fun Ones
+
+### Walruses?
+
+### Olympic Medal Wins
+
+### Middle Class / Middle Income
+
+### Trump-Clinton gender gap
