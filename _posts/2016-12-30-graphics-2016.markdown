@@ -105,8 +105,7 @@ that showcased illustration as the primary storytelling device.
 
 ### A Great Teacher, Illustrated
 
-LA reported and illustrated this [fully responsive comic](http://www.npr.org/2016/03/09/469097318/a-great-teacher-illustrated) for NPR Ed's 50
-Great Teachers series.
+LA reported and illustrated [this comic on an outstanding art teacher](http://www.npr.org/2016/03/09/469097318/a-great-teacher-illustrated) for NPR Ed's 50 Great Teachers series. To make it fully responsive, we designed the text to be readable at all screen sizes and even swapped out a few panels of the comic with versions specially sized for different breakpoints.
 
 ![A Great Teacher, Illustrated](/img/posts/gfx16-art-teacher.jpg)
 
