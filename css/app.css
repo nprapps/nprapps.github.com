@@ -418,10 +418,15 @@ table tbody + tbody {
 table.project-grid img { margin-bottom: 6px; }
 table.project-grid td {
     border-top: none;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.8;
 }
+table.project-grid td a { font-weight: normal; }
 table.project-grid td:nth-child(1) { width: 30%; }
+table.project-grid td a:first-child {
+    font-size: 14px;
+    font-weight: bold;
+}
 
 /*styling to get books14 images side-by-side*/
 .wrapper-image{
