@@ -61,7 +61,7 @@ The presidency is decided by the Electoral College result: Who wins each state, 
 </script>
 
 {: .how}
-**How We Made This:** We periodically downloaded results data from the AP elections API (paid subscription required) using [Elex](http://elex.readthedocs.io/en/latest/) and reprocessed it into a JSON file. The map was written in JavaScript, with D3. Code on Github: [Results processor](https://github.com/nprapps/elections16-general/), [Graphics](https://github.com/nprapps/elections16graphics)
+**How We Made This:** We periodically downloaded results data from the AP elections API (paid subscription required) using [Elex](http://elex.readthedocs.io/en/latest/) and reprocessed it into a JSON file. The map was written in JavaScript, with D3. Source on Github: [Results processor](https://github.com/nprapps/elections16-general/), [Graphics](https://github.com/nprapps/elections16graphics)
 
 During primary season, we took a similar approach to presenting [delegate results](http://www.npr.org/2016/03/02/468641509/elections-2016-democratic-and-republican-delegate-tracker). Each state was worth a different number of delegates (corresponding roughly to its population). As an added wrinkle, most states were not winner-take-all: Multiple candidates could win delegates in a state, depending on party rules and their share of the vote. To address this, we made a cartogram for each major candidate (in addition to a bar chart with overall totals and a data table with state-by-state results).
 
@@ -79,7 +79,7 @@ We also displayed live presidential, Senate, House and ballot measure results in
 ![Tabular results](/img/posts/gfx16-tabular-results.png)
 
 {: .how}
-**How We Made This:** Before the election, we downloaded county-level data from the Census Bureau and Bureau of Labor Statistics. On election night, we periodically downloaded results data from the AP elections API (paid subscription required) using [Elex](http://elex.readthedocs.io/en/latest/) and reprocessed it into a JSON file. The county results page checked for updated data every 10 seconds and refreshed the information on the page as necessary. Code on Github: [Results processor](https://github.com/nprapps/elections16-general/), [Graphics](https://github.com/nprapps/elections16graphics)
+**How We Made This:** Before the election, we downloaded county-level data from the Census Bureau and Bureau of Labor Statistics. On election night, we periodically downloaded results data from the AP elections API (paid subscription required) using [Elex](http://elex.readthedocs.io/en/latest/) and reprocessed it into a JSON file. The county results page checked for updated data every 10 seconds and refreshed the information on the page as necessary. Source on Github: [Results processor](https://github.com/nprapps/elections16-general/), [Graphics](https://github.com/nprapps/elections16graphics)
 
 In a post-election analysis, we evaluated county results based on a characteristic _other_ than geography: [the urban-rural divide](http://www.npr.org/2016/11/14/501737150/rural-voters-played-a-big-part-in-helping-trump-defeat-clinton).
 
@@ -118,16 +118,20 @@ This piece on mental health in schools was calling out for a sequential visual e
 LA's artwork solidified the visual style of the piece and brought human faces to a sensitive subject. Her illustrations even formed the basis for our data visualizations, which used silhouettes of her characters as icons.
 
 {: .how}
-**How We Made This:** We used our [app template](https://github.com/nprapps/app-template) and [Look At This](https://github.com/nprapps/lookatthis) as the backbone for our sequential storytelling format. The visualizations are SVG icons rendered and animated by D3 ([code](https://github.com/nprapps/mental-health)).
+**How We Made This:** We used our [app template](https://github.com/nprapps/app-template) and [Look At This](https://github.com/nprapps/lookatthis) as the backbone for our sequential storytelling format. The visualizations are SVG icons rendered and animated by D3. [Source on GitHub →](https://github.com/nprapps/mental-health)
 
 --------
 
-## Philando Castile
+## The Driving Life And Death Of Philando Castile
 
-content TKTKTK
+Castile was a black man shot and killed during a traffic stop in the summer of 2016. NPR reporters looked through years of court documents to build a timeline of Castile's interactions with the law during his life -- "a seemingly endless cycle of traffic stops, fines, court appearances, late fees, revocations and reinstatements" -- and look at broader issues around poverty, race and policing.
 
-* Link
-* Code
+<small>From: [The Driving Life And Death Of Philando Castile](http://www.npr.org/sections/thetwo-way/2016/07/15/485835272/the-driving-life-and-death-of-philando-castile) (July 15, 2016)</small>
+
+![The Driving Life And Death Of Philando Castile](/img/posts/gfx16-castile.png)
+
+{: .how}
+**How We Made This:** The data for the timeline and graphic were collected and analyzed using Google Spreadsheets. The graphic was rendered using D3. [Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/07/timeline-castile-overview-20160612)
 
 --------
 
@@ -138,6 +142,8 @@ content TKTKTK
 | ![Vision screenings](/img/posts/gfx16-vision.png) | [You Can't Learn What You Can't See: Here's How Your State Screens For Vision Problems](http://www.npr.org/sections/ed/2016/04/04/472539699/you-cant-learn-what-you-cant-see-heres-how-your-state-screens-for-vision-problem)<br />April 4, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/04/vision-testing-20160321) |
 | ![That Surgery Might Cost You A Lot Less In Another Town](/img/posts/gfx16-surgery-costs.png) | [That Surgery Might Cost You A Lot Less In Another Town](http://www.npr.org/sections/health-shots/2016/04/27/475880565/that-surgery-might-cost-you-a-lot-less-in-another-town)<br />April 27, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/04) |
 | ![Air quality in New Delhi](/img/posts/gfx16-aqi.png) | [Air Quality Levels In New Delhi, January-April 2016](http://www.npr.org/2016/05/13/477930821/indias-big-battle-development-vs-pollution)<br />May 13, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/05/india-air-quality-20160511) |
+| ![Firearm Listings By Major City, Region](/img/posts/gfx16-armslist.png) | [Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away](http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away)<br />June 17, 2016<br />[Blog post →](http://blog.apps.npr.org/2016/06/17/scraping-tips.html)<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/06/armslist-city-map-20160616) |
+| ![The 270 Project](/img/posts/gfx16-270project.png) | [The 270 Project: Try To Predict Who Will Win The Election](http://www.npr.org/2016/06/30/483687093/the-270-project-try-to-predict-who-will-win-the-election)<br />June 30, 2016 |
 | ![Early voting](/img/posts/gfx16-early-voting.png) | [A Complete Guide To Early And Absentee Voting](http://www.npr.org/2016/09/23/491999689/a-complete-guide-to-early-and-absentee-voting)<br />Sept. 23, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/09/early-voting-calendar-20160831) |
 | ![Trump assets](/img/posts/gfx16-trump-assets.png) | [Trump's Businesses And Potential Conflicts: Sorting It Out](http://www.npr.org/2016/12/05/503611249/trumps-businesses-and-potential-conflicts-sorting-it-out)<br />Dec. 5, 2016 |
 
