@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Some Of Our Favorite Graphics + Data Projects In 2016"
-description: TKTKTK
+description: We tackled a number of interesting data, visualization and information design challenges in 2016. Here are a few of our favorites, with background on some of the design and technical decisions that went into them.
 
 author: Alyson Hurt and Katie Park
 email: ahurt@npr.org
 twitter: nprviz
 ---
 
-Intro TKTKTK
+We tackled a number of interesting data, visualization and information design challenges in 2016. Here are a few of our favorites, with background on some of the design and technical decisions that went into them.
 
 --------
 
@@ -21,13 +21,13 @@ One of our biggest data-wrangling efforts this year was the [School Money series
 We created a national map of each district's spending that could search for and zoom to individual districts, paired with a histogram to show the distribution of spending across the U.S. We were able to re-use this base map to create small, static state maps. For a story on state disparities in funding, we plotted each school district's spending in a way that could show both disparity and distribution across all 50 states.
 
 {: .how}
-**How We Made This:** We used R to parse and analyze data from Education Week, which we mapped using [Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/api/). Our R script included an export of school districts bucketed by spending, which formed the basis of our histogram drawn in D3 ([code](https://github.com/nprapps/graphics-archive/blob/master/2016/04/school-funding-map-20160408/)). The dot plot, meanwhile, was drawn in R and then styled in Adobe Illustrator.
+**How We Made This:** For the map, we used R to parse and analyze data from Education Week, which we mapped using [Mapbox GL JS](https://www.mapbox.com/mapbox-gl-js/api/). We used Maxmind's [GeoIP2](https://www.maxmind.com/en/geoip-demo) service to auto-locate users' home states. Our R script included an export of school districts bucketed by spending, which formed the basis of our histogram drawn in D3 ([code](https://github.com/nprapps/graphics-archive/blob/master/2016/04/school-funding-map-20160408/)). The dot plot, meanwhile, was drawn in R and then styled in Adobe Illustrator.
 
 --------
 
-## Election Results: Beyond The Ordinary Map
+## Election Results: Maps And Beyond
 
-One highlight this year: We experimented with a number of alternatives to the usual geographic map, from our [tile grid map template](http://blog.apps.npr.org/2015/05/11/hex-tile-maps.html) to cartograms to things that were not maps at all. People know the standard geographic map and how to find themselves in it, but sometimes that's not the best way to highlight a trend or represent a particular dataset. Consider these approaches to presenting election results:
+People know the standard geographic map and how to find themselves in it, but sometimes that's not the best way to highlight a trend or represent a particular dataset. We continued experimenting with alternatives to the usual geographic map, from our [tile grid map template](http://blog.apps.npr.org/2015/05/11/hex-tile-maps.html) (introduced in 2015) to cartograms to things that were not maps at all.
 
 ### The County Map
 
@@ -49,7 +49,7 @@ This kind of results map isn't perfect, though: While it can convey explicitly g
 
 ### The Electoral Cartogram
 
-The presidency is decided by the Electoral College result: Who wins each state, weighted by that state's representation in Congress. (Maine and Nebraska are exceptions to this.) On election night, then, while county results can give a clue to how the state will tilt, the key thing to watch is who wins each state. A standard state map, while familiar, is inappropriate for this purpose, since it doesn't convey the relative importance of each state. For example: Geographically, Montana is huge, dwarfing, say, Massachusetts. But Massachusetts is more populous, and, with 11 electoral votes to Montana's 3, should have more visual presence on the screen. For this reason, we created an [electoral cartogram](http://www.npr.org/2016/11/09/500716650/donald-trump-clinches-the-presidency-in-major-upset). Each state is represented as a square roughly in its expected geographic location, but sized according to its electoral heft.
+The presidency is decided by the Electoral College result: Who wins each state, weighted by that state's representation in Congress. On election night, then, while county results can give a clue to how the state will tilt, the key thing to watch is who wins each state. A standard state map, while familiar, is inappropriate for this purpose: Geographic size has no relationship to a state's electoral value. (For example, Montana is huge, dwarfing, say, Massachusetts. But Massachusetts is more populous, and, with 11 electoral votes to Montana's 3, should have more visual presence on the screen.) For this reason, we created an [electoral cartogram](http://www.npr.org/2016/11/09/500716650/donald-trump-clinches-the-presidency-in-major-upset). Each state is represented as a square roughly in its expected geographic location, but sized according to its electoral heft.
 
 <small>From: [Donald Trump Clinches The Presidency In Major Upset](http://www.npr.org/2016/11/09/500716650/donald-trump-clinches-the-presidency-in-major-upset) (Nov. 9, 2016)</small>
 
@@ -63,7 +63,7 @@ The presidency is decided by the Electoral College result: Who wins each state, 
 {: .how}
 **How We Made This:** We periodically downloaded results data from the AP elections API (paid subscription required) using [Elex](http://elex.readthedocs.io/en/latest/) and reprocessed it into a JSON file. The map was written in JavaScript, with D3. Source on Github: [Results processor](https://github.com/nprapps/elections16-general/), [Graphics](https://github.com/nprapps/elections16graphics)
 
-During primary season, we took a similar approach to presenting [delegate results](http://www.npr.org/2016/03/02/468641509/elections-2016-democratic-and-republican-delegate-tracker). Each state was worth a different number of delegates (corresponding roughly to its population). As an added wrinkle, most states were not winner-take-all: Multiple candidates could win delegates in a state, depending on party rules and their share of the vote. To address this, we made a cartogram for each major candidate (in addition to a bar chart with overall totals and a data table with state-by-state results).
+During primary season, we took a similar approach in presenting [delegate results](http://www.npr.org/2016/03/02/468641509/elections-2016-democratic-and-republican-delegate-tracker). Each state was worth a different number of delegates (corresponding roughly to its population). As an added wrinkle, most states were not winner-take-all: Multiple candidates could win delegates in a state, depending on party rules and their share of the vote. To address this, we made a cartogram for each major candidate (in addition to a bar chart with overall totals and a data table with state-by-state results).
 
 <small>From: [Elections 2016: Democratic And Republican Delegate Tracker](http://www.npr.org/2016/03/02/468641509/elections-2016-democratic-and-republican-delegate-tracker) (March 2, 2016)</small>
 
@@ -72,9 +72,9 @@ During primary season, we took a similar approach to presenting [delegate result
 
 ### Not A Map
 
-Because a candidate's success in a given county can give clues to how that candidate will perform state-wide, we judged that it was important to include live county-level results with our election night coverage. However, since location alone isn't the most salient factor to consider about each county, we decided to display [county results in tabular form](http://www.npr.org/2016/11/08/501063960/arizona-2016-presidential-and-state-election-results), allowing users to compare (and sort) counties by additional demographic, economic and political factors.
+Because a candidate's success in a given county can give clues to how that candidate will perform state-wide, we judged that it was important to include live county-level results with our election night coverage. However, since location alone isn't the most relevant factor to consider about each county, we decided to display [county results in tabular form](http://www.npr.org/2016/11/08/501063960/arizona-2016-presidential-and-state-election-results), allowing users to compare (and sort) counties by additional demographic, economic and political factors.
 
-We also displayed live presidential, Senate, House and ballot measure results in the form of a ["big board,"](http://www.npr.org/2016/11/08/499287941/2016-senate-race-election-results) with elections sorted by poll closing time.
+We also displayed live presidential, Senate, House and ballot measure results in the form of a ["big board,"](http://www.npr.org/2016/11/08/499287941/2016-senate-race-election-results) with elections sorted by poll closing time so that users could follow along throughout the night.
 
 ![Tabular results](/img/posts/gfx16-tabular-results.png)
 
@@ -111,20 +111,18 @@ LA reported and illustrated [this comic on an outstanding art teacher](http://ww
 
 ### Mental Health In Schools
 
-This piece on mental health in schools was calling out for a sequential visual explanation of the issue, but we didn't have a large data set or photography to aid in the storytelling. We went through several iterations of storyboards to lay out the problem of mental health care in schools and the proposed solutions, but the project didn't really come to life until illustrator [LA Johnson](https://twitter.com/thelajohnson) stepped in.
+This piece on mental health in schools was calling out for a sequential visual explanation of the issue, but we didn't have a large data set or photography to aid in the storytelling. We went through several iterations of storyboards to lay out the problem of mental health care in schools and the proposed solutions. LA's artwork solidified the visual style of the piece and brought human faces to a sensitive subject. Her illustrations even formed the basis for our data visualizations, which used silhouettes of her characters as icons.
 
 ![Screenshots from A Silent Epidemic](/img/posts/gfx16-mental-health.png)
 
-LA's artwork solidified the visual style of the piece and brought human faces to a sensitive subject. Her illustrations even formed the basis for our data visualizations, which used silhouettes of her characters as icons.
-
 {: .how}
-**How We Made This:** We used our [app template](https://github.com/nprapps/app-template) and [Look At This](https://github.com/nprapps/lookatthis) as the backbone for our sequential storytelling format. The visualizations are SVG icons rendered and animated by D3. [Source on GitHub →](https://github.com/nprapps/mental-health)
+**How We Made This:** We used our [app template](https://github.com/nprapps/app-template) and previous work done for our [Look At This](https://github.com/nprapps/lookatthis) experimental storytelling series as the backbone for our sequential format. The visualizations are SVG icons rendered and animated with D3. [Source on GitHub →](https://github.com/nprapps/mental-health)
 
 --------
 
 ## The Driving Life And Death Of Philando Castile
 
-Castile was a black man shot and killed during a traffic stop in the summer of 2016. NPR reporters looked through years of court documents to build a timeline of Castile's interactions with the law during his life -- "a seemingly endless cycle of traffic stops, fines, court appearances, late fees, revocations and reinstatements" -- and look at broader issues around poverty, race and policing.
+Castile was a black man shot and killed during a traffic stop in the summer of 2016. NPR reporters looked through years of court documents to build a timeline of his interactions with the law during his life -- "a seemingly endless cycle of traffic stops, fines, court appearances, late fees, revocations and reinstatements" -- and look at broader issues around poverty, race and policing.
 
 <small>From: [The Driving Life And Death Of Philando Castile](http://www.npr.org/sections/thetwo-way/2016/07/15/485835272/the-driving-life-and-death-of-philando-castile) (July 15, 2016)</small>
 
@@ -139,17 +137,13 @@ Castile was a black man shot and killed during a traffic stop in the summer of 2
 
 {: .project-grid}
 | ![Affordable housing](/img/posts/gfx16-affordable-housing.png) | [In A High-Rent World, Affordable And Safe Housing Is Hard To Come By](http://www.npr.org/2016/03/30/471347547/in-a-high-rent-world-affordable-and-safe-housing-is-hard-to-come-by)<br />March 30, 2016<br />- [Code](https://github.com/nprapps/graphics-archive/tree/master/2016/03/affordable-housing-20160308) |
-| ![Vision screenings](/img/posts/gfx16-vision.png) | [You Can't Learn What You Can't See: Here's How Your State Screens For Vision Problems](http://www.npr.org/sections/ed/2016/04/04/472539699/you-cant-learn-what-you-cant-see-heres-how-your-state-screens-for-vision-problem)<br />April 4, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/04/vision-testing-20160321) |
 | ![That Surgery Might Cost You A Lot Less In Another Town](/img/posts/gfx16-surgery-costs.png) | [That Surgery Might Cost You A Lot Less In Another Town](http://www.npr.org/sections/health-shots/2016/04/27/475880565/that-surgery-might-cost-you-a-lot-less-in-another-town)<br />April 27, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/04) |
 | ![Air quality in New Delhi](/img/posts/gfx16-aqi.png) | [Air Quality Levels In New Delhi, January-April 2016](http://www.npr.org/2016/05/13/477930821/indias-big-battle-development-vs-pollution)<br />May 13, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/05/india-air-quality-20160511) |
+| ![Korea's Air Is Dirty, But It's Not All Close-Neighbor China's Fault](/img/posts/gfx16-seoul.png) | [Korea's Air Is Dirty, But It's Not All Close-Neighbor China's Fault Away](http://www.npr.org/sections/parallels/2016/06/03/478796463/koreas-air-is-dirty-but-its-not-all-close-neighbor-chinas-fault)<br />June 3, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/06/) |
 | ![Firearm Listings By Major City, Region](/img/posts/gfx16-armslist.png) | [Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away](http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away)<br />June 17, 2016<br />[Blog post →](http://blog.apps.npr.org/2016/06/17/scraping-tips.html)<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/06/armslist-city-map-20160616) |
+| ![Do you have lead pipes in your home?](/img/posts/gfx16-lead-pipes.png) | [Do you have lead pipes in your home?](https://apps.npr.org/find-lead-pipes-in-your-home/)<br />June 24, 2016<br />[Source on GitHub →](https://github.com/nprapps/leadpipes) |
 | ![The 270 Project](/img/posts/gfx16-270project.png) | [The 270 Project: Try To Predict Who Will Win The Election](http://www.npr.org/2016/06/30/483687093/the-270-project-try-to-predict-who-will-win-the-election)<br />June 30, 2016 |
 | ![Early voting](/img/posts/gfx16-early-voting.png) | [A Complete Guide To Early And Absentee Voting](http://www.npr.org/2016/09/23/491999689/a-complete-guide-to-early-and-absentee-voting)<br />Sept. 23, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/09/early-voting-calendar-20160831) |
+| ![From The Economy To Race, See Where The Candidates Stand On The Big Issues](/img/posts/gfx16-matrix.png) | [From The Economy To Race, See Where The Candidates Stand On The Big Issues](http://www.npr.org/2016/10/18/496926243/from-the-economy-to-race-see-where-the-candidates-stand-on-the-big-issues)<br />Oct. 18, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/10/) |
 | ![Trump assets](/img/posts/gfx16-trump-assets.png) | [Trump's Businesses And Potential Conflicts: Sorting It Out](http://www.npr.org/2016/12/05/503611249/trumps-businesses-and-potential-conflicts-sorting-it-out)<br />Dec. 5, 2016 |
-
-
-### Walruses?
-
-### Olympic Medal Wins
-
-### Middle Class / Middle Income
+| ![How The Donald Trump Cabinet Stacks Up, In 3 Charts](/img/posts/gfx16-cabinet.png) | [How The Donald Trump Cabinet Stacks Up, In 3 Charts](http://www.npr.org/2016/12/28/506299885/how-the-donald-trump-cabinet-stacks-up-in-3-charts)<br />Dec. 28, 2016 |
