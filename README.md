@@ -36,3 +36,21 @@ A couple options:
 * Tab-indent your code, and Markdown will recognize it as a code snippet. However, if that snippet includes ```{{ }}``` tags, wrap the block of code in ```{% raw %} {% endraw %}``` to escape it. ([Example](https://github.com/nprapps/nprapps.github.com/commit/5ead926c125807af9a41afce80baba0628bc2aa9#diff-f81649843a7256ddce49a0cb115a3a27))
 
 * Save your code snippet as a Gist on your GitHub account &mdash; for example, https://gist.github.com/alykat/8319004. Take the username and Gist ID in the URL and sub it into the script tag: ```<script src="https://gist.github.com/YOUR-USERNAME/GIST-ID.js"> </script>```
+
+### Internship posting workflow
+
+Make copies of the previous posts:
+
+```bash
+cp 2016-10-12-winter-2017-designer-developer-internship.markdown 2017-02-14-summer-2017-designer-developer-internship.markdown
+cp 2016-10-12-winter-2017-photo-internship.markdown 2017-02-14-summer-2017-photo-internship.markdown
+```
+
+Add redirects to old posts:
+
+
+
+
+Edit new posts.
+
+Update how to apply. 
