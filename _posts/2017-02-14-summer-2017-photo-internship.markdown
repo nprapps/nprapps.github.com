@@ -1,7 +1,6 @@
 ---
-layout: redirect
-redirect_url: /2017/02/14/summer-2017-photo-internship.html
-title: "What makes a great photo editing intern (Apply now for Winter/spring 2017!)"
+layout: post
+title: "What makes a great photo editing intern (Apply now for Summer 2017!)"
 description: "What we're looking for in a photo editing intern on the NPR Visuals team."
 
 author: Ariel Zambelich and Emily Bogle
@@ -14,7 +13,7 @@ This is not your standard photo internship!
 
 This internship is an opportunity to learn more about the world of photo editing. Our goal isn’t to make you into a photo editor; we view this internship as a chance for you to **understand what it is like to be an editor and improve your visual literacy**, which can help you become a better photographer.
 
-The internship runs from January 9, 2017 to April 21, 2017. **Applications are due Sunday, November 6, 2016 at 11:59pm eastern**.
+The internship runs from May 22, 2017 to August 11, 2017. **Applications are due Sunday, March 5, 2017 at 11:59pm eastern**.
 
 ## What you will be doing
 
@@ -39,6 +38,6 @@ We also want folks who can tell us what they would like to accomplish during the
 
 ## So how do I apply?
 
-Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2860/winter-spring-2017%3a-photo-editing-intern/job)
+Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2998/summer-2017%3a-photo-editing-intern/job)
 
-*Into code, design, and data? Check out our [design/development internship](/2016/10/12/winter-2017-designer-developer-internship.html).*
+*Into code, design, and data? Check out our [design/development internship](/2017/02/14/summer-2017-designer-developer-internship.html).*
