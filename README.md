@@ -46,11 +46,19 @@ cp 2016-10-12-winter-2017-designer-developer-internship.markdown 2017-02-14-summ
 cp 2016-10-12-winter-2017-photo-internship.markdown 2017-02-14-summer-2017-photo-internship.markdown
 ```
 
-Add redirects to old posts:
+Add redirects to old posts by changing front matter, e.g. in `_posts/2016-10-12-winter-designer-developer-internship.markdown`:
 
+```
+---
+layout: redirect
+redirect_url: /2017/02/14/summer-2017-designer-developer-internship.html
+title: "Be our design/code/??? intern for winter/spring 2017!"
 
+...
 
+---
+```
 
-Edit new posts.
+Edit the new posts with new art, new links between the two (it's cool if you forget, it just means more redirect responses), and correct NPR human resources job posting URL.
 
-Update how to apply. 
+Update `index.html`'s internship badge with latest links.
