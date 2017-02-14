@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Be our design/code/??? intern for winter/spring 2017!"
+title: "Be our design/code/??? intern for summer 2017!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you draw, design, or write code? We are looking for you."
 
 author: David Eads
