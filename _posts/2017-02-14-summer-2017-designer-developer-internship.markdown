@@ -16,7 +16,7 @@ We've had journalists who are learning to code, programmers who are learning abo
 
 Does this sound like you? Please join our team! It isn't always easy, but it is very rewarding. You'll learn a ton and you'll have a lot of fun.
 
-The internship runs from May 22, 2017 to August 11, 2017. **Applications are due Sunday, March 5, 2017 at 11:59pm eastern**.
+The paid internship runs from May 22, 2017 to August 11, 2017. **Applications are due Sunday, March 5, 2017 at 11:59pm eastern**.
 
 ## Here's how to apply
 
