@@ -567,6 +567,11 @@
   image: http://media.npr.org/assets/img/2016/05/19/sunderbans-01538edit_wide.jpg?s=1500
   url: http://www.npr.org/sections/parallels/2016/05/20/478387211/in-indias-sundarbans-people-and-tigers-try-to-coexist-in-a-shrinking-space
   github_url:
+- name: "Five Days And Five Nights With Doctors Without Borders"
+  description: "They're in a crowded refugee camp, running the only hospital in a war-torn corner of South Sudan."
+  date: "May 25, 2016"
+  image: "/img/apps/south-sudan.jpg"
+  url: http://www.npr.org/sections/goatsandsoda/2016/05/25/478251493/five-days-and-five-nights-with-doctors-without-borders
 - name: "'A Fantasy Of A Fantasy': U.S. Fencer Jason Pryor On Reaching The Olympics"
   description: "He never imagined he could make it to the Olympics, but 28-year-old fencer Jason Pryor will be competing at this summer's games in Rio de Janeiro. He's ranked No. 1 in the U.S. in men's epee fencing."
   date: "June 14, 2016"
@@ -614,6 +619,21 @@
   image: "/img/apps/geology.jpg"
   url: http://apps.npr.org/rockymountain-vr/
   github_url: https://github.com/nprapps/rockymountain
+- name: "True Believers, Protesters And Trump: Scenes From Cleveland"
+  description: "Calls to &quot;Make America Great Again&quot; rang through the Republican National Convention while anti-Donald Trump protesters tried to challenge the rhetoric. This is what it looked like."
+  date: "July 22, 2016"
+  image: "/img/apps/rnc-2016.jpg"
+  url: http://www.npr.org/2016/07/22/486992883/true-believers-protesters-and-trump-scenes-from-cleveland
+- name: "Cosplayers Use Costume To Unleash Their Superpowers"
+  description: "A shy woman becomes a brave warrior princess. A man calls on Captain America to help him lose 45 pounds. In costume role play they become part of a community where they can transform themselves."
+  date: "July 23, 2016"
+  image: "/img/apps/cosplay.jpg"
+  url: http://www.npr.org/sections/health-shots/2016/07/23/486769691/cosplayers-use-costume-to-unleash-their-superpowers
+- name: "Dissent, Drama And Unity At The Democratic Convention"
+  description: "Photographer Gabriella Demczuk explored the fractures in American politics, examining the Democratic Party's attempt to capitalize on the convention in Philadelphia to make itself &quot;stronger together.&quot;"
+  date: "July 29, 2016"
+  image: "/img/apps/dnc-2016.jpg"
+  url: http://www.npr.org/2016/07/29/487954029/photos-dissent-drama-and-unity-at-the-democratic-convention
 - name: "At The Portrait Gallery, Students Tell The Stories That Pictures Can't"
   description: "Washington, D.C., teens get into the spirit of historical figures and tell visitors what the portraits miss. In one instance, a student imagines a private talk between Richard Nixon and his wife."
   date: "Aug. 5, 2016"
@@ -632,3 +652,111 @@
   image: "/img/apps/mental-health.jpg"
   url: http://apps.npr.org/mental-health/
   github_url: https://github.com/nprapps/mental-health
+- name: "The Hopes (Security) And Fears (Bears) Of Syrian Refugees In New Jersey"
+  description: "Osama and Ghada and their four kids fled their homeland three years ago and recently reached the U.S. as part of the 11,000 Syrian refugees arriving this year. Every day brings new challenges."
+  date: "Sept. 17, 2016"
+  image: "/img/apps/syrian-refugees.jpg"
+  url: http://www.npr.org/sections/parallels/2016/09/17/494069828/the-hopes-security-and-fears-bears-of-syrian-refugees-in-new-jersey
+- name: "Fact Check And Full Transcript Of The Final 2016 Presidential Debate"
+  description: "Candidates Donald Trump and Hillary Clinton debated Wednesday night in Las Vegas — the final time before the November election. More than 20 journalists across NPR fact checked their comments."
+  date: "Oct. 19, 2016"
+  image: "/img/apps/debates-2016.png"
+  url: http://www.npr.org/2016/10/19/498293478/fact-check-trump-and-clinton-s-final-presidential-debate
+  github_url: https://github.com/nprapps/debates
+- name: "Election Night 2016"
+  description: "Easy-to-read top-level results, with minute detail at the state level for those who wanted it. Fully integrated with the rest of our coverage on npr.org and the radio."
+  date: "Nov. 8, 2016"
+  image: "/img/apps/wh-liveblog.jpg"
+  url: http://www.npr.org/2016/11/08/500927768/2016-presidential-election-results-for-each-state
+  github_url: https://github.com/nprapps/elections16graphics
+- name: "The Emotional Arc Of A Political Upset"
+  description: "Trump supporters in New York City were jubilant as results rolled in. Mere miles away, Clinton fans hugged one another and cried."
+  date: "Nov. 9, 2016"
+  image: "/img/apps/election-night-2016.jpg"
+  url: http://www.npr.org/2016/11/09/501384911/photos-the-emotional-arc-of-a-political-upset
+- name: "The Counties That Flipped From Obama To Trump, In 3 Charts"
+  description: "Many counties in Rust Belt states like Wisconsin, Iowa and Pennsylvania that had backed President Obama just four years ago were crucial to Donald Trump's victory."
+  date: "Nov. 15, 2016"
+  image: "/img/apps/election-flipped-2016.png"
+  url: http://www.npr.org/2016/11/15/502032052/lots-of-people-voted-for-obama-and-trump-heres-where-in-3-charts
+- name: "Trump's Businesses And Potential Conflicts: Sorting It Out"
+  description: "President-elect Trump has interests in hundreds of businesses. Many government agencies and policies could affect his profits. Here's a look at some of his businesses, and the possible conflicts."
+  date: "Dec. 5, 2016"
+  image: "/img/apps/trump-conflicts.png"
+  url: http://www.npr.org/2016/12/05/503611249/trumps-businesses-and-potential-conflicts-sorting-it-out
+- name: "The Best Music Of 2016"
+  description: "The NPR Music team ranked the 100 top songs and 50 best albums of the year."
+  date: "Dec. 5, 2016"
+  image: "/img/apps/best-music-2016.png"
+  url: http://apps.npr.org/best-music-2016/
+- name: "NPR's Book Concierge 2016"
+  description: "Visit the #bookconcierge, @NPRBooks' guide to 2016's great reads."
+  date: "Dec. 6, 2016"
+  image: "/img/apps/book-concierge-2016.jpg"
+  url: http://apps.npr.org/best-books-2016/
+- name: "In Their Own Words: The 'Water Protectors' Of Standing Rock"
+  description: "As winter settles in, the leader of the Standing Rock Sioux tribe has asked many of the pipeline protesters to head home. Here are the stories and portraits of some of those who joined the protests."
+  date: "Dec. 11, 2016"
+  image: "/img/apps/standing-rock.jpg"
+  url: http://www.npr.org/2016/12/11/505147166/in-their-own-words-the-water-protectors-of-standing-rock
+- name: "Months After Pulse Shooting: 'There Is A Wound On The Entire Community'"
+  description: "Six months ago a shooter opened fire in the Pulse nightclub in Orlando, killing 49 people and wounding 53 more. The tragedy spurred some to action while others struggle to understand why it happened."
+  date: "Dec. 13, 2016"
+  image: "/img/apps/pulse-revisit.jpg"
+  url: http://www.npr.org/2016/12/13/503867756/months-after-pulse-shooting-there-is-a-wound-on-the-entire-community
+- name: "NPR's Exit Interview With President Obama"
+  description: "In a wide-ranging interview, NPR's Steve Inskeep asks President Obama about Russian interference in the U.S. election, executive power, the future of the Democratic party and his future role."
+  date: "Dec. 19, 2016"
+  image: "/img/apps/obama-exit-interview.jpg"
+  url: http://www.npr.org/2016/12/19/504998487/transcript-and-video-nprs-exit-interview-with-president-obama
+- name: "You Say You're An American, But What If You Had To Prove It Or Be Deported?"
+  description: "It's illegal for immigration officials to detain U.S. citizens. But an NPR analysis of public records found that in an eight-year period, some 1,500 people who were held turned out to be Americans."
+  date: "Dec. 22, 2016"
+  image: "/img/apps/citizens-deported.jpg"
+  url: http://www.npr.org/sections/thetwo-way/2016/12/22/504031635/you-say-you-re-an-american-but-what-if-you-had-to-prove-it-or-be-deported
+  github: https://github.com/nprapps/sanctuary-cities
+- name: "Mobile Home Park Owners Can Spoil An Affordable American Dream"
+  description: "Water and sewage problems at an Idaho mobile home park illustrate how manufactured housing communities owned by outsiders are often kept in a state of disrepair."
+  date: "Dec. 26, 2016"
+  image: "/img/apps/mobile-home.jpg"
+  url: http://www.npr.org/2016/12/26/502590161/mobile-home-park-owners-can-spoil-an-affordable-american-dream
+- name: "When Residents Take Ownership, A Mobile Home Community Thrives"
+  description: "A neighborhood in Minnesota is proving that there's a potential solution to run-down mobile home parks: The residents banded together democratically and purchased their community."
+  date: "Dec. 27, 2016"
+  image: "/img/apps/mobile-home-2.jpg"
+  url: http://www.npr.org/2016/12/27/503052538/when-residents-take-ownership-a-mobile-home-community-thrives
+- name: "Live Coverage: Inauguration Day 2017"
+  description: "Follow our live blog for news of the day, photos and videos from the National Mall and for analysis on what the events mean for the world."
+  date: "Jan. 20, 2017"
+  image: "/img/apps/inauguration-2017.jpg"
+  url: http://www.npr.org/2017/01/20/509703637/live-coverage-donald-trumps-presidential-inauguration
+- name: "In Inaugural Address, Trump Decries 'Carnage' And Promises 'America First'"
+  description: "Donald Trump has completed an unlikely journey from real estate mogul to the 45th president of the United States."
+  date: "Jan. 20, 2017"
+  image: "/img/apps/inauguration-2017-photos.jpg"
+  url: http://www.npr.org/2017/01/20/510746700/donald-trump-sworn-in-as-the-45th-president-of-the-united-states
+- name: "President Trump's Tweets, Annotated"
+  description: "Trump pushes for policy changes, reacts to news and sets his agenda on Twitter. NPR provides analysis of key remarks from the president as they come."
+  date: "Jan. 27, 2017"
+  image: "/img/apps/trump-tweets.jpg"
+  url: http://www.npr.org/2017/01/27/511216062/president-trumps-tweets-annotated
+- name: "Where Does Your Member Of Congress Stand On Trump's Immigration Order?"
+  description: "NPR and dozens of member stations searched for public statements by all 536 members of Congress. Use our interactive tracker to see what your lawmakers have — or have not — said about the order. Built in collaboration with WNYC."
+  date: "Feb. 1, 2017"
+  image: "/img/apps/immigration-wnyc.jpg"
+  url: http://www.npr.org/2017/02/01/512860167/congress-tracker-trumps-refugee-and-immigration-executive-order
+- name: "You Could Pay Thousands Less For A Funeral Just By Crossing The Street"
+  description: "An NPR investigation finds the death care industry can often be confusing and unhelpful to consumers who must make high-priced decisions at a time of grief and financial stress."
+  date: "Feb. 7, 2017"
+  image: "/img/apps/deathcare.jpg"
+  url: http://www.npr.org/2017/02/07/504020003/a-funeral-may-cost-you-thousands-less-just-by-crossing-the-street
+- name: "Find Out What New Viruses Are Emerging In Your Backyard"
+  description: "Over the past 60 years, the number of new diseases cropping up in a decade has almost quadrupled. &quot;We're in a hyperinfectious world,&quot; says one scientist."
+  date: "Feb. 7, 2017"
+  image: "/img/apps/pandemics.jpg"
+  url: http://www.npr.org/sections/goatsandsoda/2017/02/07/512634375/map-find-out-what-new-viruses-are-emerging-in-your-backyard
+- name: "Trump Ethics Monitor: Has The President Kept His Promises?"
+  description: "Donald Trump and his team have committed to certain steps that touch on ethics and conflicts-of-interest concerns. We offer context and look for evidence to track progress of those promises."
+  date: "Feb. 17, 2017"
+  image: "/img/apps/trump-ethics.png"
+  url: http://www.npr.org/2017/02/17/513724796/trump-ethics-monitor-has-the-president-kept-his-promises

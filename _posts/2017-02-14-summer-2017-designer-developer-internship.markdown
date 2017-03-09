@@ -1,7 +1,6 @@
 ---
-layout: redirect
-redirect_url: /2017/02/14/summer-2017-designer-developer-internship.html
-title: "Be our design/code/??? intern for winter/spring 2017!"
+layout: post
+title: "Be our design/code/??? intern for summer 2017!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you draw, design, or write code? We are looking for you."
 
 author: David Eads
@@ -17,10 +16,10 @@ We've had journalists who are learning to code, programmers who are learning abo
 
 Does this sound like you? Please join our team! It isn't always easy, but it is very rewarding. You'll learn a ton and you'll have a lot of fun.
 
-The internship runs from January 9, 2017 to April 21, 2017. **Applications are due Sunday, November 6, 2016 at 11:59pm eastern**.
+The paid internship runs from May 22, 2017 to August 11, 2017. **Applications are due Sunday, March 5, 2017 at 11:59pm eastern**.
 
 ## Here's how to apply
 
-Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2859/winter-spring-2017%3a-news-apps/job)
+Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2979/summer-2017%3a-design-development-intern/job)
 
-*Into images? Check out our [photo editing internship](/2017/02/14/summer-2017-photo-internship.html).*
+*Into pictures? Check out our [photo editing internship](/2017/02/14/summer-2017-photo-internship.html).*
