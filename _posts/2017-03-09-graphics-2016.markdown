@@ -8,7 +8,17 @@ email: ahurt@npr.org
 twitter: nprviz
 ---
 
-We tackled a number of interesting data, visualization and information design challenges in 2016. Here are a few of our favorites, with background on some of the design and technical decisions that went into them.
+Recently, the Society for News Design recognized our team's work with seven awards of excellence in their annual <a href="http://www.snd.org/2017/02/final-results-best-of-digital-design-2016/">Best of Digital Design</a> competition. The projects honored included:
+
+| Features: Single-subject project | [A Silent Epidemic](http://apps.npr.org/mental-health/) |
+| Graphics: Breaking news | [The Driving Life And Death Of Philando Castile](http://www.npr.org/sections/thetwo-way/2016/07/15/485835272/the-driving-life-and-death-of-philando-castile) |
+| Graphics: Features and planned coverage | [Why America's Schools Have A Money Problem](http://www.npr.org/2016/04/18/474256366/why-americas-schools-have-a-money-problem) |
+| Special events: U.S. Elections | [NPR 2016 Election Coverage](http://www.npr.org/2016/11/08/500427835/live-blog-election-night-2016) |
+| Experimental Design | [Fact Checking The First Debate](http://www.npr.org/2016/09/26/495115346/fact-check-first-presidential-debate) |
+
+Our colleagues elsewhere at NPR were recognized for the [Tiny Desk Contest](http://tinydeskcontest.npr.org/)'s social media strategy and the [NPR.org media player](http://www.npr.org/sections/npr-extra/2016/03/29/472129006/new-audio-player-arrives-on-npr-org) product design.
+
+The awards seem like a good opportunity to look back at the interesting data, visualization and information design challenges we tackled in 2016. Here are a few of our favorites (the SND winners, plus a few others), with background on some of the design and technical decisions that went into them.
 
 --------
 
@@ -97,7 +107,7 @@ In a post-election analysis, we evaluated county results based on a characterist
 
 --------
 
-## Illustration Taking Center Stage
+## Illustration Takes Center Stage
 
 We worked closely with [LA Johnson](https://twitter.com/thelajohnson),
 an illustrator and visual editor with NPR Ed, to create several projects
@@ -109,7 +119,7 @@ LA reported and illustrated [this comic on an outstanding art teacher](http://ww
 
 ![A Great Teacher, Illustrated](/img/posts/gfx16-art-teacher.jpg)
 
-### Mental Health In Schools
+### A Silent Epidemic
 
 This piece on mental health in schools was calling out for a sequential visual explanation of the issue, but we didn't have a large data set or photography to aid in the storytelling. We went through several iterations of storyboards to lay out the problem of mental health care in schools and the proposed solutions. LA's artwork solidified the visual style of the piece and brought human faces to a sensitive subject. Her illustrations even formed the basis for our data visualizations, which used silhouettes of her characters as icons.
 
@@ -133,17 +143,36 @@ Castile was a black man shot and killed during a traffic stop in the summer of 2
 
 --------
 
+## Do You Have Lead Pipes In Your Home?
+
+![Do you have lead pipes in your home?](/img/posts/gfx16-lead-pipes.png)
+
+[Do you have lead pipes in your home?](https://apps.npr.org/find-lead-pipes-in-your-home/)
+June 24, 2016
+[Source on GitHub →](https://github.com/nprapps/leadpipes)
+
+
+--------
+
+## Early Voting
+
+![Early voting](/img/posts/gfx16-early-voting.png)
+
+[A Complete Guide To Early And Absentee Voting](http://www.npr.org/2016/09/23/491999689/a-complete-guide-to-early-and-absentee-voting)
+Sept. 23, 2016
+[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/09/early-voting-calendar-20160831) |
+
+--------
+
 ## Other Notable Projects
 
 {: .project-grid}
-| ![Affordable housing](/img/posts/gfx16-affordable-housing.png) | [In A High-Rent World, Affordable And Safe Housing Is Hard To Come By](http://www.npr.org/2016/03/30/471347547/in-a-high-rent-world-affordable-and-safe-housing-is-hard-to-come-by)<br />March 30, 2016<br />- [Code](https://github.com/nprapps/graphics-archive/tree/master/2016/03/affordable-housing-20160308) |
+| ![Affordable housing](/img/posts/gfx16-affordable-housing.png) | [In A High-Rent World, Affordable And Safe Housing Is Hard To Come By](http://www.npr.org/2016/03/30/471347547/in-a-high-rent-world-affordable-and-safe-housing-is-hard-to-come-by)<br />March 30, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/03/affordable-housing-20160308) |
 | ![That Surgery Might Cost You A Lot Less In Another Town](/img/posts/gfx16-surgery-costs.png) | [That Surgery Might Cost You A Lot Less In Another Town](http://www.npr.org/sections/health-shots/2016/04/27/475880565/that-surgery-might-cost-you-a-lot-less-in-another-town)<br />April 27, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/04) |
 | ![Air quality in New Delhi](/img/posts/gfx16-aqi.png) | [Air Quality Levels In New Delhi, January-April 2016](http://www.npr.org/2016/05/13/477930821/indias-big-battle-development-vs-pollution)<br />May 13, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/05/india-air-quality-20160511) |
 | ![Korea's Air Is Dirty, But It's Not All Close-Neighbor China's Fault](/img/posts/gfx16-seoul.png) | [Korea's Air Is Dirty, But It's Not All Close-Neighbor China's Fault Away](http://www.npr.org/sections/parallels/2016/06/03/478796463/koreas-air-is-dirty-but-its-not-all-close-neighbor-chinas-fault)<br />June 3, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/06/) |
 | ![Firearm Listings By Major City, Region](/img/posts/gfx16-armslist.png) | [Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away](http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away)<br />June 17, 2016<br />[Blog post →](http://blog.apps.npr.org/2016/06/17/scraping-tips.html)<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/06/armslist-city-map-20160616) |
-| ![Do you have lead pipes in your home?](/img/posts/gfx16-lead-pipes.png) | [Do you have lead pipes in your home?](https://apps.npr.org/find-lead-pipes-in-your-home/)<br />June 24, 2016<br />[Source on GitHub →](https://github.com/nprapps/leadpipes) |
-| ![The 270 Project](/img/posts/gfx16-270project.png) | [The 270 Project: Try To Predict Who Will Win The Election](http://www.npr.org/2016/06/30/483687093/the-270-project-try-to-predict-who-will-win-the-election)<br />June 30, 2016 |
-| ![Early voting](/img/posts/gfx16-early-voting.png) | [A Complete Guide To Early And Absentee Voting](http://www.npr.org/2016/09/23/491999689/a-complete-guide-to-early-and-absentee-voting)<br />Sept. 23, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/09/early-voting-calendar-20160831) |
+| ![The 270 Project](/img/posts/gfx16-270project.png) | [The 270 Project: Try To Predict Who Will Win The Election](http://www.npr.org/2016/06/30/483687093/the-270-project-try-to-predict-who-will-win-the-election)<br />June 30, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/06/trump270-simulator-20160622) |
 | ![From The Economy To Race, See Where The Candidates Stand On The Big Issues](/img/posts/gfx16-matrix.png) | [From The Economy To Race, See Where The Candidates Stand On The Big Issues](http://www.npr.org/2016/10/18/496926243/from-the-economy-to-race-see-where-the-candidates-stand-on-the-big-issues)<br />Oct. 18, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/10/) |
-| ![Trump assets](/img/posts/gfx16-trump-assets.png) | [Trump's Businesses And Potential Conflicts: Sorting It Out](http://www.npr.org/2016/12/05/503611249/trumps-businesses-and-potential-conflicts-sorting-it-out)<br />Dec. 5, 2016 |
-| ![How The Donald Trump Cabinet Stacks Up, In 3 Charts](/img/posts/gfx16-cabinet.png) | [How The Donald Trump Cabinet Stacks Up, In 3 Charts](http://www.npr.org/2016/12/28/506299885/how-the-donald-trump-cabinet-stacks-up-in-3-charts)<br />Dec. 28, 2016 |
+| ![Trump assets](/img/posts/gfx16-trump-assets.png) | [Trump's Businesses And Potential Conflicts: Sorting It Out](http://www.npr.org/2016/12/05/503611249/trumps-businesses-and-potential-conflicts-sorting-it-out)<br />Dec. 5, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/12/trump-conflicts-20161128) |
+| ![How The Donald Trump Cabinet Stacks Up, In 3 Charts](/img/posts/gfx16-cabinet.png) | [How The Donald Trump Cabinet Stacks Up, In 3 Charts](http://www.npr.org/2016/12/28/506299885/how-the-donald-trump-cabinet-stacks-up-in-3-charts)<br />Dec. 28, 2016<br />[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/12/cabinet-history-20161220) |
