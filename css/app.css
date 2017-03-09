@@ -573,6 +573,11 @@ footer ul li {
     .things img { display:none; }
 }
 
+@media screen and (min-width:501px) {
+    .post-media-left,
+    .post-media-right { width: 50%; }
+}
+
 @media screen and (max-width:500px) {
     .entry section p.half-image {
         width: auto;

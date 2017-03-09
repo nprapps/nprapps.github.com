@@ -121,7 +121,9 @@ LA reported and illustrated [this comic on an outstanding art teacher](http://ww
 
 ### A Silent Epidemic
 
-This piece on mental health in schools was calling out for a sequential visual explanation of the issue, but we didn't have a large data set or photography to aid in the storytelling. We went through several iterations of storyboards to lay out the problem of mental health care in schools and the proposed solutions. LA's artwork solidified the visual style of the piece and brought human faces to a sensitive subject. Her illustrations even formed the basis for our data visualizations, which used silhouettes of her characters as icons.
+NPR's Education team took an in-depth look at how public schools handle student mental health issues and how many schools struggle to support students, parents, teachers and staff. We worked with them on a piece that would convey the enormity of the challenge and strategies experts have identified to address it.
+
+This project called out for a sequential visual explanation of the issue, but we didn't have a large data set or photography to aid in the storytelling. We went through several iterations of storyboards to lay out the problem of mental health care in schools and the proposed solutions. LA's artwork solidified the visual style of the piece and brought human faces to a sensitive subject. Her illustrations even formed the basis for our data visualizations, which used silhouettes of her characters as icons.
 
 ![Screenshots from A Silent Epidemic](/img/posts/gfx16-mental-health.png)
 
@@ -132,11 +134,9 @@ This piece on mental health in schools was calling out for a sequential visual e
 
 ## The Driving Life And Death Of Philando Castile
 
-Castile was a black man shot and killed during a traffic stop in the summer of 2016. NPR reporters looked through years of court documents to build a timeline of his interactions with the law during his life -- "a seemingly endless cycle of traffic stops, fines, court appearances, late fees, revocations and reinstatements" -- and look at broader issues around poverty, race and policing.
+[Philando Castile](http://www.npr.org/sections/thetwo-way/2016/07/15/485835272/the-driving-life-and-death-of-philando-castile) was a black man shot and killed during a traffic stop in the summer of 2016. NPR reporters looked through years of court documents to build a timeline of his interactions with the law during his life -- "a seemingly endless cycle of traffic stops, fines, court appearances, late fees, revocations and reinstatements" -- and look at broader issues around poverty, race and policing.
 
-<small>From: [The Driving Life And Death Of Philando Castile](http://www.npr.org/sections/thetwo-way/2016/07/15/485835272/the-driving-life-and-death-of-philando-castile) (July 15, 2016)</small>
-
-![The Driving Life And Death Of Philando Castile](/img/posts/gfx16-castile.png)
+[![The Driving Life And Death Of Philando Castile](/img/posts/gfx16-castile.png)](http://www.npr.org/sections/thetwo-way/2016/07/15/485835272/the-driving-life-and-death-of-philando-castile)
 
 {: .how}
 **How We Made This:** The data for the timeline and graphic were collected and analyzed using Google Spreadsheets. The graphic was rendered using D3. [Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/07/timeline-castile-overview-20160612)
@@ -145,22 +145,24 @@ Castile was a black man shot and killed during a traffic stop in the summer of 2
 
 ## Do You Have Lead Pipes In Your Home?
 
-![Do you have lead pipes in your home?](/img/posts/gfx16-lead-pipes.png)
+{: .post-media-right}
+![Do you have lead pipes in your home?](/img/posts/gfx16-lead-pipes.jpg)
 
 [Do you have lead pipes in your home?](https://apps.npr.org/find-lead-pipes-in-your-home/)
-June 24, 2016
-[Source on GitHub →](https://github.com/nprapps/leadpipes)
 
+{: .how}
+**How We Made This:** [Source on GitHub →](https://github.com/nprapps/leadpipes)
 
 --------
 
 ## Early Voting
 
-![Early voting](/img/posts/gfx16-early-voting.png)
+In the months before the election, we worked with NPR's Washington Desk on an [early voting primer](http://www.npr.org/2016/09/23/491999689/a-complete-guide-to-early-and-absentee-voting) that offered both practical information for voters and context about how it works and how to interpret voting data. Design-wise, the voter guide drew from a [similar project](http://apps.npr.org/early-voting-2012/) from 2012. This version was built to be embedded in a story page, and we added localization: The lookup defaults to the user's home state (as best we can detect it).
 
-[A Complete Guide To Early And Absentee Voting](http://www.npr.org/2016/09/23/491999689/a-complete-guide-to-early-and-absentee-voting)
-Sept. 23, 2016
-[Source on GitHub →](https://github.com/nprapps/graphics-archive/tree/master/2016/09/early-voting-calendar-20160831) |
+[![Early voting](/img/posts/gfx16-early-voting.png)](http://www.npr.org/2016/09/23/491999689/a-complete-guide-to-early-and-absentee-voting)
+
+{: .how}
+**How We Made This:** We researched voting information for each state and logged everything in a Google Spreadsheet. The maps ([code](https://github.com/nprapps/graphics-archive/tree/master/2016/09/early-voting-states-20160831)) were built using the [state grid map template](https://github.com/nprapps/dailygraphics/tree/master/graphic_templates/state_grid_map) in our dailygraphics rig. For the state lookup ([code](https://github.com/nprapps/graphics-archive/tree/master/2016/09/early-voting-calendar-20160831)), we used Maxmind's [GeoIP2](https://www.maxmind.com/en/geoip-demo) service to auto-locate users' home states.
 
 --------
 
