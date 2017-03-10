@@ -145,13 +145,15 @@ This project called out for a sequential visual explanation of the issue, but we
 
 ## Do You Have Lead Pipes In Your Home?
 
+The public health crisis in Flint, Mich., over lead leaching into the city's water supply brought [increased attention to lead](http://www.npr.org/sections/health-shots/2016/08/12/483079525/where-lead-lurks-and-why-even-small-amounts-matter) in water systems around the country. There are simple ways homeowners can check whether their water lines are made of lead, but since everyone's home is different, we built this app in a real-life "Choose Your Own Adventure" style that walked users through the process step by step.
+
 {: .post-media-right}
 ![Do you have lead pipes in your home?](/img/posts/gfx16-lead-pipes.jpg)
 
 [Do you have lead pipes in your home?](https://apps.npr.org/find-lead-pipes-in-your-home/)
 
 {: .how}
-**How We Made This:** [Source on GitHub →](https://github.com/nprapps/leadpipes)
+**How We Made This:** Reporters and editors created a storyboard of the app's "choose your own adventure" pathways, then replicated each step in an individual Google doc. We adapted our app template to ingest those Google docs and serve them up as a page in the app. [Source on GitHub →](https://github.com/nprapps/leadpipes)
 
 --------
 
