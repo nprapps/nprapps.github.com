@@ -1,7 +1,6 @@
 ---
-layout: redirect
-redirect_url: /2017/06/28/fall-2017-photo-internship.html
-title: "What makes a great photo editing intern (Apply now for Summer 2017!)"
+layout: post
+title: "What makes a great photo editing intern (Apply now for Fall 2017!)"
 description: "What we're looking for in a photo editing intern on the NPR Visuals team."
 
 author: Ariel Zambelich and Emily Bogle
@@ -39,6 +38,6 @@ We also want folks who can tell us what they would like to accomplish during the
 
 ## So how do I apply?
 
-Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://interns-npr.icims.com/jobs/2998/summer-2017%3a-photo-editing-intern/job)
+Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=890ae82d-f8a7-446a-944a-f885b9d0d9c5)
 
 *Into code, design, and data? Check out our [design/development internship](/2017/02/14/summer-2017-designer-developer-internship.html).*
