@@ -735,7 +735,7 @@
   date: "Jan. 20, 2017"
   image: "/img/apps/inauguration-2017-photos.jpg"
   url: http://www.npr.org/2017/01/20/510746700/donald-trump-sworn-in-as-the-45th-president-of-the-united-states
-- name: "President Trump's Tweets, Annotated"
+- name: "President Trump's Tweets In His First 100 Days, Annotated"
   description: "Trump pushes for policy changes, reacts to news and sets his agenda on Twitter. NPR provides analysis of key remarks from the president as they come."
   date: "Jan. 27, 2017"
   image: "/img/apps/trump-tweets.jpg"
@@ -760,3 +760,64 @@
   date: "Feb. 17, 2017"
   image: "/img/apps/trump-ethics.png"
   url: http://www.npr.org/2017/02/17/513724796/trump-ethics-monitor-has-the-president-kept-his-promises
+- name: "Protesters Leave Dakota Access Pipeline Area; Some Stay And Are Arrested"
+  description: "The governor of North Dakota had set Wednesday as the evacuation deadline for the largest protest camp. The Trump administration is allowing the pipeline to be built, despite the protests."
+  date: "Feb. 22, 2017"
+  image: "/img/apps/dapl-photo.jpg"
+  url: http://www.npr.org/sections/thetwo-way/2017/02/22/516448749/protesters-leave-dakota-access-pipeline-area-some-stay-and-are-arrested
+- name: "English Language Learners: How Your State Is Doing"
+  description: "The number of English language learners in public schools is nearing 5 million. Many are struggling academically, despite well-intentioned efforts to help them learn English."
+  date: "Feb. 23, 2017"
+  image: "/img/apps/ell-charts.png"
+  url: http://www.npr.org/sections/ed/2017/02/23/512451228/5-million-english-language-learners-a-vast-pool-of-talent-at-risk
+- name: "Trump And CPAC: A Complicated Relationship No More"
+  description: "Conservatives embraced their new leader at their pre-eminent annual gathering. Meanwhile, Trump's team was quick to draw comparisons between the new president and CPAC's longtime hero, Ronald Reagan."
+  date: "Feb. 25, 2017"
+  image: "/img/apps/cpac-2017.jpg"
+  url: http://www.npr.org/2017/02/25/517003866/trump-and-cpac-a-complicated-relationship-no-more
+- name: "Trump's Address To Joint Session Of Congress, Annotated"
+  description: "The president shared his vision for the &quot;renewal of the American spirit&quot; on Tuesday night. Journalists across NPR annotated his remarks."
+  date: "Feb. 28, 2017"
+  image: "/img/apps/trump-annotation.jpg"
+  url: http://www.npr.org/2017/02/28/516717981/watch-live-trump-addresses-joint-session-of-congress
+- name: "How America's Idea Of Illegal Immigration Doesn't Always Match Reality"
+  description: "Border crossers, farm laborers, new arrivals from Mexico: There's no shortage of stereotypes about people living in the U.S. illegally. But the statistics tell a different story."
+  date: "March 8, 2017"
+  image: "/img/apps/immigration.png"
+  url: http://www.npr.org/sections/thetwo-way/2017/03/08/517561046/how-americas-idea-of-illegal-immigration-doesnt-always-match-reality
+- name: "Find Out Where Members Of Congress Stand On The Health Care Bill"
+  description: "NPR and dozens of member stations are searching for public statements on Twitter and Facebook, on lawmakers' websites and in interviews with public media or other news organizations."
+  date: "March 10, 2017"
+  image: "/img/apps/congress-ahca.jpg"
+  url: http://www.npr.org/2017/03/10/519629973/new-health-care-bill-find-out-where-your-member-of-congress-stands
+- name: "Health Care Plan Championed By Trump Hurts Counties That Voted For Him"
+  description: "Trump picked up big margins in small and rural counties. But those areas would take the biggest hit with tax credit changes, according to an NPR analysis of data from the Kaiser Family Foundation."
+  date: "March 22, 2017"
+  image: "/img/apps/trump-counties.png"
+  url: http://www.npr.org/2017/03/22/520317690/health-care-plan-championed-by-trump-hurts-counties-that-voted-for-him
+  github_url: https://github.com/nprapps/ahca
+- name: "BOTUS"
+  description: "Planet Money gets in on the future of investing with an automated stock-trading bot. It analyzes the twitter feed of President Donald Trump, then trades stocks with real money. Our money."
+  date: "April 7, 2017"
+  image: "/img/apps/botus.jpg"
+  url: http://www.npr.org/sections/money/2017/04/07/522897876/meet-botus-planet-money-s-stock-trading-twitter-bot
+- name: "Maps Show A Dramatic Rise In Health Insurance Coverage Under ACA"
+  description: "The overall increase in the number of Americans with health insurance draws attention to counties where the uninsured rate is still high, many of them in states that chose not to expand Medicaid."
+  date: "April 14, 2017"
+  image: "/img/apps/uninsured.jpg"
+  url: http://www.npr.org/sections/health-shots/2017/04/14/522956939/maps-show-a-dramatic-rise-health-in-insurance-coverage-under-aca
+- name: "In The Wake Of Prince's Death"
+  description: "A year ago today, fans made a pilgrimage to Paisley Park, the home of Prince. What they found there was a communal altar, separated from the building by about 100 feet."
+  date: "April 21, 2017"
+  image: "/img/apps/prince.jpg"
+  url: http://www.npr.org/2017/04/21/524881332/in-the-wake-of-princes-death
+- name: "Trump's 100-Day Plan, Annotated: Where His Promises Stand"
+  description: "As a candidate, Donald Trump laid out an agenda of what he hoped to accomplish in his first 100 days in office. As that mark approaches, NPR reporters assess where the president's promises stand."
+  date: "April 24, 2017"
+  image: "/img/apps/trump-100-days.jpg"
+  url: http://www.npr.org/2017/04/24/520159167/trumps-100-day-action-plan-annotated
+- name: "President Trump's First 100 Days, In Photos"
+  description: "As President Donald Trump crosses the 100-day marker this weekend, photographer Gabriella Demczuk explores some of the major events that have transpired in the White House and on Capitol Hill."
+  date: "April 30, 2017"
+  image: "/img/apps/trump-100-days-photos.jpg"
+  url: http://www.npr.org/2017/04/30/526095105/president-trumps-first-100-days-in-photos
