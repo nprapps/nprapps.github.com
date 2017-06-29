@@ -2,7 +2,6 @@
 layout: post
 title: "What makes a great photo editing intern (Apply now for Fall 2017!)"
 description: "What we're looking for in a photo editing intern on the NPR Visuals team."
-
 author: Ariel Zambelich and Emily Bogle
 email:
 twitter: nprviz
@@ -13,15 +12,15 @@ This is not your standard photo internship!
 
 This internship is an opportunity to learn more about the world of photo editing. Our goal isn’t to make you into a photo editor; we view this internship as a chance for you to **understand what it is like to be an editor and improve your visual literacy**, which can help you become a better photographer.
 
-The paid internship runs from May 22, 2017 to August 11, 2017. **Applications are due Sunday, March 5, 2017 at 11:59pm eastern**.
+The paid internship runs from September 11, 2017 to December 8, 2017. **Applications are due Sunday, July 16, 2017 at 11:59pm eastern**.
 
 ## What you will be doing
 
-- *Editing:* You’ll be working closely with the Visuals Team’s photo editors (Ariel and Emily) on fast-paced deadlines -- we’re talking anywhere from 15 minutes to publication, to short-term projects that are a week out. You’ll dig into news coverage and photo research, learning how to communicate about what makes a good image across a range of news topics, including international, national, technology, arts and more.
+* **Editing:** You’ll be working closely with the Visuals Team’s photo editors (Ariel and Emily) on fast-paced deadlines -- we’re talking anywhere from 15 minutes to publication, to short-term projects that are a week out. You’ll dig into news coverage and photo research, learning how to communicate about what makes a good image across a range of news topics, including international, national, technology, arts and more.
 
-- *Photography:* Depending on the news cycle, there may be opportunities to photograph DC-area assignments. This can mean you’d have one or two shoots in a week, or maybe just a couple shoots in a month. You’ll work closely with a radio or web reporter while out in the field, and a photo editor will go through your work and provide feedback for each assignment. There will also be a chance to work on portraiture and still lifes in our studio.
+* **Photography:** Depending on the news cycle, there may be opportunities to photograph DC-area assignments. This can mean you’d have one or two shoots in a week, or maybe just a couple shoots in a month. You’ll work closely with a radio or web reporter while out in the field, and a photo editor will go through your work and provide feedback for each assignment. There will also be a chance to work on portraiture and still lifes in our studio.
 
-- We also encourage each intern to create a self-directed project to work on throughout the semester. It can be an [Instagram series](https://www.instagram.com/p/7-IKSkuIx5/), [video](http://www.npr.org/event/music/187282451/ok-go-a-tiny-desk-concert-in-223-takes), [photo essay](http://www.npr.org/sections/parallels/2014/08/16/340412191/whos-a-citizen-the-question-dividing-the-island-of-hispaniola), [text story](http://www.npr.org/sections/alltechconsidered/2014/11/19/365220051/marine-corps-finds-it-tough-to-shut-down-sexist-facebook-groups) or anything in-between. You can work [independently](http://www.npr.org/sections/codeswitch/2014/01/23/211657513/what-sami-discovered-on-the-way-to-becoming-a-man-of-color) or with [another intern](http://www.npr.org/sections/thesalt/2015/08/10/426741473/healthy-eaters-strong-minds-what-school-gardens-teach-kids) or [reporter](http://www.npr.org/2013/06/23/189202775/same-sex-couple-seeks-immigration-relief-from-high-court).
+* We also encourage each intern to create a self-directed project to work on throughout the semester. It can be an [Instagram series](https://www.instagram.com/p/7-IKSkuIx5/), [video](http://www.npr.org/event/music/187282451/ok-go-a-tiny-desk-concert-in-223-takes), [photo essay](http://www.npr.org/sections/parallels/2014/08/16/340412191/whos-a-citizen-the-question-dividing-the-island-of-hispaniola), [text story](http://www.npr.org/sections/alltechconsidered/2014/11/19/365220051/marine-corps-finds-it-tough-to-shut-down-sexist-facebook-groups) or anything in-between. You can work [independently](http://www.npr.org/sections/codeswitch/2014/01/23/211657513/what-sami-discovered-on-the-way-to-becoming-a-man-of-color) or with [another intern](http://www.npr.org/sections/thesalt/2015/08/10/426741473/healthy-eaters-strong-minds-what-school-gardens-teach-kids) or [reporter](http://www.npr.org/2013/06/23/189202775/same-sex-couple-seeks-immigration-relief-from-high-court).
 
 You will be part of NPR’s intern program, which includes 40-50 interns each semester, across different departments. There will be coordinated training and intern-focused programming throughout the semester, which includes meeting NPR radio hosts, career development and other opportunities. As an intern, you will be treated as a member of the team. Many NPR employees are former interns and they’re always willing to help current interns.
 
@@ -40,4 +39,4 @@ We also want folks who can tell us what they would like to accomplish during the
 
 Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=890ae82d-f8a7-446a-944a-f885b9d0d9c5)
 
-*Into code, design, and data? Check out our [design/development internship](/2017/02/14/summer-2017-designer-developer-internship.html).*
+*Into code, design, and data? Check out our [design/development internship](/2017/06/29/fall-2017-designer-developer-internship.html).*
