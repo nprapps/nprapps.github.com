@@ -821,3 +821,79 @@
   date: "April 30, 2017"
   image: "/img/apps/trump-100-days-photos.jpg"
   url: http://www.npr.org/2017/04/30/526095105/president-trumps-first-100-days-in-photos
+- name: "Affordable Housing Program Costs More, Shelters Fewer"
+  description: "The low-income housing tax credit program gave way to a booming $8 billion private industry, but as tax credits for companies increased, the number of housing units being built for the poor fell."
+  date: "May 9, 2017"
+  image: "/img/apps/lihtc.jpg"
+  url: http://www.npr.org/2017/05/09/527046451/affordable-housing-program-costs-more-shelters-less
+- name: "Section 8 Vouchers Help The Poor — But Only If Housing Is Available"
+  description: "In Dallas and other tight rental markets, Section 8 voucher holders can't find the homes they need, while developers face resistance from wealthier neighborhoods when trying to build new housing."
+  date: "May 10, 2017"
+  image: "/img/apps/section8.jpg"
+  url: http://www.npr.org/2017/05/10/527660512/section-8-vouchers-help-the-poor-but-only-if-housing-is-available
+- name: "The Promise And Peril Of School Vouchers"
+  description: "Indiana's private school voucher program is the largest of its kind in the U.S. Whether it's &quot;social justice&quot; or &quot;an assault&quot; on public schools depends on whom you ask."
+  date: "May 12, 2017"
+  image: "/img/apps/vouchers.png"
+  url: http://www.npr.org/sections/ed/2017/05/12/520111511/the-promise-and-peril-of-school-vouchers
+  github_url: https://github.com/nprapps/school-choice/blob/master/special_education.ipynb
+- name: "From The Big Top Into The Big World: A Ringling Ringmaster's Final Bow"
+  description: "Johnathan Lee Iverson, the first African-American ringmaster of &quot;The Greatest Show on Earth,&quot; helms the famed Ringling Bros. and Barnum &amp; Bailey Circus for its last performance this Sunday."
+  date: "May 19, 2017"
+  image: "/img/apps/circus-marian.jpg"
+  url: http://www.npr.org/2017/05/19/528672217/from-the-big-top-into-the-big-world-a-ringling-ringmasters-final-bow
+- name: "'A Kingdom On Wheels': The Hidden World That Made The Circus Happen"
+  description: "Awe-inspiring feats of logistics. Incredible strength of community. As the &quot;Greatest Show on Earth&quot; plays its final act, the cast and crew are saying goodbye to more than just a livelihood."
+  date: "May 20, 2017"
+  image: "/img/apps/circus-claire.jpg"
+  url: http://www.npr.org/sections/thetwo-way/2017/05/20/528778286/a-kingdom-on-wheels-the-hidden-world-that-made-the-circus-happen
+- name: "Ramen Rock: These Japanese Punk Legends Sing About Food"
+  description: "For over 35 years, the all-female Shonen Knife has been serving up catchy punk titles like &quot;Wasabi,&quot; &quot;Hot Chocolate&quot; and &quot;Sushi Bar.&quot; But don't mistake them for bubblegum pop. These ladies are legit."
+  date: "May 25, 2017"
+  image: "/img/apps/shonen-knife.jpg"
+  url: http://www.npr.org/sections/thesalt/2017/05/25/529563157/ramen-rock-these-japanese-punk-legends-sing-about-food
+- name: "Refugees In Their Own Country"
+  description: "Most people uprooted by war haven't crossed international borders to reach safety. They fled for their lives, but they don't count as refugees. They are the displaced. And all they want is to go home."
+  date: "May 31, 2017"
+  image: "/img/apps/georgia-irakli.jpg"
+  url: https://apps.npr.org/idp-georgia/
+- name: "There May Not Be Flying, But Quidditch Still Creates Magic"
+  description: "Quidditch leapt from the screen to real-life muggle fields in 2005. Now, it's grown big enough to have a major league, and the intensity and athleticism involved is anything but fictional."
+  date: "June 3, 2017"
+  image: "/img/apps/quidditch.jpg"
+  url: http://www.npr.org/2017/06/03/531044118/there-may-not-be-flying-but-quidditch-still-creates-magic
+- name: "Learn More About The Trump-Russia Imbroglio"
+  description: "Russia interfered in the 2016 election to hurt Hillary Clinton, the U.S. intelligence community says. The story has raised many big questions — here, we try to make it all a little clearer."
+  date: "June 2, 2017"
+  image: "/img/apps/russia-cards.png"
+  url: http://www.npr.org/2017/06/02/526417478/the-trump-russia-comey-imbroglio-it-s-complicated
+- name: "Most Mass Shootings Are Smaller, Domestic Tragedies"
+  description: "The vast majority of gun deaths in America are either suicides or one-on-one shootings."
+  date: "June 5, 2017"
+  image: "/img/apps/mass-shootings.png"
+  url: http://www.npr.org/2017/06/05/530519844/most-mass-shootings-are-smaller-domestic-tragedies
+- name: "Not A Random Attack: New Details Emerge From Investigation Of Slain NPR Journalists"
+  description: "Journalists David Gilkey and Zabihullah Tamanna were killed in Afghanistan last year on a reporting trip. Our investigation found that the story of their deaths is not what we originally reported."
+  date: "June 9, 2017"
+  image: "/img/apps/afghanistan.jpg"
+  url: http://www.npr.org/2017/06/09/531562283/not-a-random-attack-new-details-emerge-from-investigation-of-slain-npr-journalists
+- name: "The Investor Who Took On Uber, And Silicon Valley"
+  description: "In Silicon Valley, you're supposed to build businesses unapologetically. You're not supposed to speak out against injustice. Freada Kapor Klein breaks those rules."
+  date: "June 15, 2017"
+  image: "/img/apps/uber.jpg"
+  url: http://www.npr.org/sections/alltechconsidered/2017/06/15/532973451/the-investor-who-took-on-uber-and-silicon-valley
+- name: "People Of Coal-Rich Northern Cheyenne Torn Between Jobs And Sacred Culture"
+  description: "Despite high unemployment and poverty, the tribe has never touched the billions of tons of coal underneath its land. But new opportunities from the Trump administration could change that."
+  date: "June 25, 2017"
+  image: "/img/apps/cheyenne.jpg"
+  url: http://www.npr.org/2017/06/25/533982860/people-of-coal-rich-northern-cheyenne-torn-between-jobs-and-sacred-culture
+- name: "CBO Weighs Who Wins, Who Loses With Senate Health Care Bill"
+  description: "The Congressional Budget Office estimates that 22 million people would lose coverage with the Senate bill. That includes 15 million people on Medicaid, and others who could no longer afford insurance."
+  date: "June 27, 2017"
+  image: "/img/apps/bcra.png"
+  url: http://www.npr.org/sections/health-shots/2017/06/27/534465505/chart-cbo-weighs-who-wins-who-loses-with-senate-health-care-bill
+- name: "I Am Learning Inglés: A Dual-Language Comic"
+  description: "In a dual-language classroom, sometimes you're the student and sometimes you're the teacher. Here's what it's like for 6-year-old Merari."
+  date: "June 28, 2017"
+  image: "/img/apps/ell-comic.jpg"
+  url: http://www.npr.org/sections/ed/2017/06/28/534396017/i-am-learning-ingl-s-a-dual-language-comic
