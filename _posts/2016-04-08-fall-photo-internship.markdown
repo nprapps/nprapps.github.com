@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /2017/06/29/fall-2017-photo-internship.html
 title: "What makes a great photo editing intern (Apply now for Fall 2016!)"
 description: "What we're looking for in a photo editing intern on the NPR Visuals team."
 
