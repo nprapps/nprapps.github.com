@@ -17,7 +17,7 @@ Here are a few projects our recent interns have worked on:
 
 | [![NPR's Book Concierge 2016](/img/posts/intern-book-concierge.jpg)](http://apps.npr.org/best-books-2016/) | [Clinton King](https://twitter.com/clintonjking)<br>(Developer, Fall 2016) |
 | [![Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away](/img/posts/intern-armslist.png)](http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away) | [Brittany Mayes](https://twitter.com/BritRenee_)<br>(Developer, Summer 2016) |
-| [![You Say You're An American, But What If You Had To Prove It Or Be Deported?](/img/posts/intern-zyma.jpg)](http://www.npr.org/sections/thetwo-way/2016/12/22/504031635/you-say-you-re-an-american-but-what-if-you-had-to-prove-it-or-be-deported) | [Zyma Islam](https://twitter.com/BritRenee_)<br>(Data reporter/developer, Spring 2016) |
+| [![You Say You're An American, But What If You Had To Prove It Or Be Deported?](/img/posts/intern-zyma.jpg)](http://www.npr.org/sections/thetwo-way/2016/12/22/504031635/you-say-you-re-an-american-but-what-if-you-had-to-prove-it-or-be-deported) | [Zyma Islam](https://twitter.com/zymaislam)<br>(Data reporter/developer, Spring 2016) |
 | [![Using Technology To Keep Carbon Emissions In Check](/img/posts/intern-annette.jpg)](http://www.npr.org/sections/alltechconsidered/2016/01/04/461517606/using-technology-to-keep-carbon-emissions-in-check) | [Annette Elizabeth Allen](https://twitter.com/anntheeli)<br>(Illustrator, Fall 2015) |
 
 
