@@ -23,6 +23,10 @@ Here are a few projects our recent interns have worked on:
 
 The paid internship runs from September 11, 2017 to December 8, 2017. **Applications are due Sunday, July 16, 2017 at 11:59pm eastern**.
 
+## Who's Eligible
+
+To be eligible for an internship with NPR, you must be a student (undergraduate or graduate) or a person who has graduated no more than 12 months prior to the start of the internship period. You must also be authorized to work in the United States. 
+
 ## Here's how to apply
 
 Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=6b1c52b1-f98b-4a2d-be83-c6554fcce2a1)
