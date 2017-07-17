@@ -13,7 +13,7 @@ Here’s how.
 
 ## Who's Eligible
 
-To be eligible for an internship with NPR, you must be a student (undergraduate or graduate) or a person who has graduated no more than 12 months prior to the start of the internship period. You must also be authorized to work in the United States. 
+To be eligible for an internship with NPR, you must be a student (undergraduate or graduate) or a person who has graduated no more than 12 months prior to the start of the internship period. You must also be authorized to work in the United States.
 
 ## Cover letters
 
@@ -63,8 +63,8 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-- [Photo editing](/2017/06/29/fall-2017-photo-internship.html), Fall 2017 &mdash; due July 16, 2017
-- [Design and code](/2017/06/29/fall-2017-designer-developer-internship.html), Fall 2017 &mdash; due July 16, 2017
+- ~~[Photo editing](/2017/06/29/fall-2017-photo-internship.html), Fall 2017 &mdash; due July 16, 2017~~
+- [Design and code](/2017/06/29/fall-2017-designer-developer-internship.html), Fall 2017 &mdash; due July 23, 2017 (New deadline!)
 
 Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info on dates, pay, etc.
 

@@ -21,11 +21,11 @@ Here are a few projects our recent interns have worked on:
 | [![Using Technology To Keep Carbon Emissions In Check](/img/posts/intern-annette.jpg)](http://www.npr.org/sections/alltechconsidered/2016/01/04/461517606/using-technology-to-keep-carbon-emissions-in-check) | [Annette Elizabeth Allen](https://twitter.com/anntheeli)<br>(Illustrator, Fall 2015) |
 
 
-The paid internship runs from September 11, 2017 to December 8, 2017. **Applications are due Sunday, July 16, 2017 at 11:59pm eastern**.
+The paid internship runs from September 11, 2017 to December 8, 2017. **The application deadline has been extended. Applications are now due Sunday, July 23, 2017 at 11:59pm eastern**.
 
 ## Who's Eligible
 
-To be eligible for an internship with NPR, you must be a student (undergraduate or graduate) or a person who has graduated no more than 12 months prior to the start of the internship period. You must also be authorized to work in the United States. 
+To be eligible for an internship with NPR, you must be a student (undergraduate or graduate) or a person who has graduated no more than 12 months prior to the start of the internship period. You must also be authorized to work in the United States.
 
 ## Here's how to apply
 
