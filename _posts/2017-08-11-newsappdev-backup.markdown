@@ -50,7 +50,6 @@ You are a team player open to collaboration in an open environment.
 
 * SSH, Slack bots, etc.
 
-
 ## Priorities
 
 1. Backend & Sysadmin
@@ -60,7 +59,7 @@ You are a team player open to collaboration in an open environment.
 
 Here are some examples of projects you'll be able to contribute to:
 
-| [![Annotations](/img/posts/annotations.png)](http://www.npr.org/2017/06/07/531643428/comey-opening-statement-for-senate-intelligence-hearing-annotated) | Our annotations rig. |
+| [![Annotations](/img/posts/annotations.jpg)](http://www.npr.org/2017/06/07/531643428/comey-opening-statement-for-senate-intelligence-hearing-annotated) | Our annotations rig. |
 | [![NPR's Book Concierge 2016](/img/posts/intern-book-concierge.jpg)](http://apps.npr.org/best-books-2016/) | Best books of 2016 |
 | [![Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away](/img/posts/intern-armslist.png)](http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away) | Armlist project |
 
