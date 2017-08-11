@@ -19,7 +19,7 @@ The ideal candidate would be able to work at NPR headquarters in Washington, D.C
 
 **You consider yourself a problem solver.** You can face unknown issues in unknown projects methodically, debugging until finding the cause of the issue and thinking and implementing the best possible solution once diagnosed.
 
-**You are a team player open to collaboration in an open environment.**
+**You are a team player willing to collaborate in an open environment.**
 
 ## Technical skills
 
@@ -48,9 +48,9 @@ We’re a small group of photographers, videographers, photo editors, developers
 
 Here are some examples of projects you'll be able to contribute to:
 
-| [![Annotations](/img/posts/annotations.jpg)](http://www.npr.org/2017/06/07/531643428/comey-opening-statement-for-senate-intelligence-hearing-annotated) | Fact Check Annotation Rig |
-| [![NPR's Book Concierge 2016](/img/posts/intern-book-concierge.jpg)](http://apps.npr.org/best-books-2016/) | NPR’s Book Concierge: Our Guide To 2016’s Great Reads |
-| [![Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away](/img/posts/intern-armslist.png)](http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away) | "Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away" |
+| [![Annotations](/img/posts/annotations.jpg)](http://www.npr.org/2017/06/07/531643428/comey-opening-statement-for-senate-intelligence-hearing-annotated) | **Our Annotations Rig** <br /> - [More about this project](https://source.opennews.org/articles/how-npr-transcribes-and-fact-checks-debates-live/) <br/> - [Code on github](https://github.com/nprapps/anno-docs) |
+| [![NPR's Book Concierge 2016](/img/posts/intern-book-concierge.jpg)](http://apps.npr.org/best-books-2016/) | **NPR’s Book Concierge** <br /> [Code on github](https://github.com/nprapps/books16) |
+| [![Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away](/img/posts/intern-armslist.png)](http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away) | **Data Analysis And Visualization** <br /> [Code on github](https://github.com/nprapps/dailygraphics) |
 
 <!-- link to the repos (and src post) in each example, last one — link to dg rig and say "data analysis and visualization" -->
 
