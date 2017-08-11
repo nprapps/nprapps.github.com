@@ -56,9 +56,7 @@ You are a team player open to collaboration in an open environment.
 1. Backend & Sysadmin
 2. Frontend architecture
 
-## How to apply
-
-If the above description suits you and you are excited with the idea of being able to join such a talented group of people, please reach out to us through [nprapps@npr.org](mailto:nprapps@npr.org), providing a bit of your background, resume, github profile and a cover letter describing why we would like to join the team for this opportunity.
+## What kind of work I'll be doing?
 
 Here are some examples of projects you'll be able to contribute to:
 
@@ -67,3 +65,7 @@ Here are some examples of projects you'll be able to contribute to:
 | [![Semi-Automatic Weapons Without A Background Check Can Be Just A Click Away](/img/posts/intern-armslist.png)](http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away) | Armlist project |
 
 Check out our [github account](https://github.com/nprapps/) to check the full variety of projects we work on, excited? We are looking for you.
+
+## How to apply
+
+If the above description suits you and you are excited with the idea of being able to join such a talented group of people, please reach out to us through [nprapps@npr.org](mailto:nprapps@npr.org), providing a bit of your background, resume, github profile and a cover letter describing why we would like to join the team for this opportunity.
