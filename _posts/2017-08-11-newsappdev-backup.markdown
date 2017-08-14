@@ -9,7 +9,7 @@ twitter: nprviz
 
 NPR Visuals is looking for a contract news apps developer to join our team between early-mid September 2017 and early-mid December 2017, for a total of three months.
 
-The ideal candidate would be able to work at NPR headquarters in Washington, D.C. However, we will consider remote work.
+The ideal candidate would be able to work at NPR headquarters in Washington, D.C.
 
 ## Profile
 
