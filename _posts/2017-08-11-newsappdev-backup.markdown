@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "We're looking for a contract news apps developer"
-description: "Interested in a temporary news apps developer gig with one of the best teams in the industry? If you are, we're looking for you."
+description: "Interested in a temporary news apps developer gig with one of the best teams in the industry? We're looking for you."
 author: Juan Elosua
 email: nprapps@npr.org
 twitter: nprviz
