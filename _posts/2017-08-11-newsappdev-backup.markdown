@@ -5,6 +5,7 @@ description: "Interested in a temporary news apps developer gig with one of the 
 author: Juan Elosua
 email: nprapps@npr.org
 twitter: nprviz
+image: /img/nprviz-logo.png
 ---
 
 NPR Visuals is looking for a contract news apps developer to join our team between early-mid September 2017 and early-mid December 2017, for a total of three months. **Applications are due Thursday, August 31.**
