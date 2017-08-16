@@ -7,7 +7,7 @@ email: nprapps@npr.org
 twitter: nprviz
 ---
 
-NPR Visuals is looking for a contract news apps developer to join our team between early-mid September 2017 and early-mid December 2017, for a total of three months.
+NPR Visuals is looking for a contract news apps developer to join our team between early-mid September 2017 and early-mid December 2017, for a total of three months. **Applications are due Thursday, August 31.**
 
 The ideal candidate would be able to work at NPR headquarters in Washington, D.C.
 
@@ -58,4 +58,4 @@ Check out our [github account](https://github.com/nprapps/) to see more of the p
 
 ## How to apply
 
-If this sounds exciting to you, please email [nprapps@npr.org](mailto:nprapps@npr.org) and include your resume, cover letter and GitHub profile.
+If this sounds exciting to you, please email [nprapps@npr.org](mailto:nprapps@npr.org) and include your resume, cover letter and GitHub profile. **Applications are due Thursday, August 31, 2017.**
