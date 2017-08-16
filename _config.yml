@@ -3,6 +3,7 @@ markdown: kramdown
 prose:
   rooturl: '_posts'
   siteurl: 'http://blog.apps.npr.org'
+  og_image: '/img/nprviz-logo.png'
   media: 'img'
   ignore:
     - app_yaml.py

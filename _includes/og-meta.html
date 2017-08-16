@@ -7,8 +7,10 @@
 {% if page.description %}
   <meta content="{{ page.description }}" property="og:description">
 {% endif %}
-{% if page.image %}
-  <meta content="{{ site.prose.siteurl }}{{ page.image }}" property="og:image">
+{% if page.og_image %}
+  <meta content="{{ site.prose.siteurl }}{{ page.og_image }}" property="og:image">
+{% else %}
+  <meta content="{{ site.prose.siteurl }}{{ site.prose.og_image }}" property="og:image">
 {% endif %}
 {% if page.url %}
   <meta content="{{ site.prose.siteurl }}{{ page.url }}" property="og:url">
