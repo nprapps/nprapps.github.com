@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "We're looking for a contract news apps developer"
+title: "Not longer available &mdash; We're looking for a contract news apps developer"
 description: "Interested in a temporary news apps developer gig with one of the best teams in the industry? We're looking for you."
 author: Juan Elosua
 email: nprapps@npr.org
 twitter: nprviz
 ---
+
+## This position is not longer available
 
 NPR Visuals is looking for a contract news apps developer to join our team between early-mid September 2017 and early-mid December 2017, for a total of three months. **Applications are due Thursday, August 31.**
 
