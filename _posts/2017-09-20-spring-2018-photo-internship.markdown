@@ -1,9 +1,8 @@
 ---
-layout: redirect
-redirect_url: /2017/09/20/spring-2018-photo-internship.html
-title: "What makes a great photo editing intern (Apply now for Fall 2017!)"
+layout: post
+title: "What makes a great photo editing intern (Apply now for Spring 2018!)"
 description: "What we're looking for in a photo editing intern on the NPR Visuals team."
-author: Ariel Zambelich and Emily Bogle
+author: Emily Bogle
 email:
 twitter: nprviz
 ---
@@ -13,7 +12,7 @@ This is not your standard photo internship!
 
 This internship is an opportunity to learn more about the world of photo editing. Our goal isn’t to make you into a photo editor; we view this internship as a chance for you to **understand what it is like to be an editor and improve your visual literacy**, which can help you become a better photographer.
 
-The paid internship runs from September 11, 2017 to December 8, 2017. **Applications are due Sunday, July 16, 2017 at 11:59pm eastern**.
+The paid internship runs from January 8, 2018 to April 20, 2018. **Applications are due Sunday, October 8th at 11:59pm eastern**.
 
 ## What you will be doing
 
@@ -38,6 +37,7 @@ We also want folks who can tell us what they would like to accomplish during the
 
 ## So how do I apply?
 
-Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=890ae82d-f8a7-446a-944a-f885b9d0d9c5)
+Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then apply now!
+<!-- [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=890ae82d-f8a7-446a-944a-f885b9d0d9c5) -->
 
-*Into code, design, and data? Check out our [design/development internship](/2017/06/29/fall-2017-designer-developer-internship.html).*
+*Into code, design, and data? Check out our [design/development internship](/2017/09/20/spring-2018-designer-developer-internship.html).*
