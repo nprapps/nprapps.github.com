@@ -23,7 +23,7 @@ Here are a few projects our recent interns have worked on:
 | [![Using Technology To Keep Carbon Emissions In Check](/img/posts/intern-annette.jpg)](http://www.npr.org/sections/alltechconsidered/2016/01/04/461517606/using-technology-to-keep-carbon-emissions-in-check) | [Annette Elizabeth Allen](https://twitter.com/anntheeli)<br>(Illustrator, Fall 2015) |
 
 
-The paid internship runs from January 8, 2018 to April 20, 2018. **Applications are due Sunday, October 8th at 11:59pm eastern**.
+The paid internship runs from January 8, 2018 to April 20, 2018. **Application deadline extended! Applications are due Sunday, October 15th at 11:59pm eastern**.
 
 ## Who's Eligible
 
