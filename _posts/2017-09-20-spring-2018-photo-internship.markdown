@@ -16,7 +16,7 @@ The paid internship runs from January 8, 2018 to April 20, 2018. **Application d
 
 ## What you will be doing
 
-* **Editing:** You’ll be working closely with the Visuals Team’s photo editors (Ariel and Emily) on fast-paced deadlines -- we’re talking anywhere from 15 minutes to publication, to short-term projects that are a week out. You’ll dig into news coverage and photo research, learning how to communicate about what makes a good image across a range of news topics, including international, national, technology, arts and more.
+* **Editing:** You’ll be working closely with the Visuals Team’s photo editors (Nicole and Emily) on fast-paced deadlines -- we’re talking anywhere from 15 minutes to publication, to short-term projects that are a week out. You’ll dig into news coverage and photo research, learning how to communicate about what makes a good image across a range of news topics, including international, national, technology, arts and more.
 
 * **Photography:** Depending on the news cycle, there may be opportunities to photograph DC-area assignments. This can mean you’d have one or two shoots in a week, or maybe just a couple shoots in a month. You’ll work closely with a radio or web reporter while out in the field, and a photo editor will go through your work and provide feedback for each assignment. There will also be a chance to work on portraiture and still lifes in our studio.
 
