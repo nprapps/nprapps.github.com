@@ -63,8 +63,8 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-- ~~[Photo editing](/2017/06/29/fall-2017-photo-internship.html), Fall 2017 &mdash; due July 16, 2017~~
-- [Design and code](/2017/06/29/fall-2017-designer-developer-internship.html), Fall 2017 &mdash; due July 23, 2017 (New deadline!)
+- [Photo editing](/2017/09/20/spring-2018-photo-internship.html), Fall 2017 &mdash; due October 15, 2017
+- [Design and code](/2017/09/20/spring-2018-designer-developer-internship.html), Fall 2017 &mdash; due October 15, 2017
 
 Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info on dates, pay, etc.
 
