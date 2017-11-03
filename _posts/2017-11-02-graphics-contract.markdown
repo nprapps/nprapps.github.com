@@ -19,7 +19,7 @@ Why a graphics editor OR a news apps developer? On our team, there is some overl
 
 **You are a team player.** You’re willing to collaborate in an open environment, working with people across the newsroom with a variety of skillsets and areas of expertise. You can explain and defend your ideas, and you are open to critique and alternative approaches. When offering feedback to colleagues, you can articulate story, design and code suggestions in a helpful and supportive way.
 
-**You have a diverse skillset.** We build almost all of our graphics responsively, in code (HTML/CSS/JS/D3) rather than as static images, and the ideal candidate will be strong with those core technical skills. You might also have expertise in areas like user experience design, data analysis, cartography or working with AP election results.
+**You have a diverse skillset.** We build almost all of our graphics responsively, in code (HTML/CSS/JS/D3) rather than as static images, and the ideal candidate (particularly for a graphics editor role) will be strong with those core technical skills. You might also have expertise in areas like user experience design, data analysis, cartography or working with AP election results.
 
 **You can produce quality work on deadline.** We turn around projects on time scales that run from a couple hours to a couple weeks or a couple months. You need to be able to assess what approaches will best serve a given story, what work realistically can be executed in the time available and then execute that work on time.
 
