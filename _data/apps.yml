@@ -469,7 +469,7 @@
   description: "For every primary, caucus and convention, we’re here to help you get caught up and understand what matters this election season."
   date: "Feb. 1, 2016"
   image: "/img/apps/elections2016.png"
-  url: http://elections.npr.org/
+  url: http://elections2016.npr.org.s3-website-us-east-1.amazonaws.com/
   github_url: https://github.com/nprapps/elections16
 - name: "When Every Drop Of Water Could Be Poison: A Flint Mother's Story"
   description: "For Flint resident Jeneyah McDonald, using bottled water for everything has become an onerous but necessary routine. Still, she worries about the effects that toxic tap water will have on her sons."
