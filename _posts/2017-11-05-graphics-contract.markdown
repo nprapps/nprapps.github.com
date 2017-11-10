@@ -21,9 +21,9 @@ Why a graphics editor OR a news apps developer? On our team, there is some overl
 
 **You have a diverse skillset.**
 
-- _For the graphics editor role,_ the ideal candidate will be strong with [HTML/CSS/JS/D3](https://github.com/nprapps/dailygraphics) and thoughtful about how a project might work from mobile to desktop.
+- For the **graphics editor** role, the ideal candidate will be strong with [HTML/CSS/JS/D3](https://github.com/nprapps/dailygraphics) and thoughtful about how a project might work from mobile to desktop.
 
-- _For the news apps developer role,_ the ideal candidate will be skilled in backend technologies (including Python, Flask, Django, Fabric and Postgresql) and sysadmin work with AWS (including EC2, S3, Cloudfront, Lambda and IAM management).
+- For the **news apps developer** role, the ideal candidate will be skilled in backend technologies (including Python, Flask, Django, Fabric and Postgresql) and sysadmin work with AWS (including EC2, S3, Cloudfront, Lambda and IAM management).
 
 - You might also have expertise in areas like user experience design, data analysis, cartography or working with AP election results.
 
