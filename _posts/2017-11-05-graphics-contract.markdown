@@ -15,11 +15,14 @@ Why a graphics editor OR a news apps developer? On our team, there is some overl
 
 ## What We're Looking For
 
-**You have strong news judgement and a sense for what makes a good visual story that serves the audience.** Moreover, you pay close attention to detail and understand the importance of nuance, precision and ethics.
+**You have strong news judgement and a sense for what makes a good visual story that serves the audience.** Moreover, you pay close attention to detail and understand the importance of nuance, precision and ethics. The ideal candidate will have experience working in a newsroom.
 
 **You are a team player.** You’re willing to collaborate in an open environment, working with people across the newsroom with a variety of skillsets and areas of expertise. You can explain and defend your ideas, and you are open to critique and alternative approaches. When offering feedback to colleagues, you can articulate story, design and code suggestions in a helpful and supportive way.
 
-**You have a diverse skillset.** For the graphics editor role, the ideal candidate will be strong with [HTML/CSS/JS/D3](https://github.com/nprapps/dailygraphics) and thoughtful about how a project might work from mobile to desktop. For the news apps developer role, the ideal candidate will be skilled in backend technologies (including Python, Flask, Django, Fabric and Postgresql) and sysadmin work with AWS (including EC2, S3, Cloudfront, Lambda and IAM management). You might also have expertise in areas like user experience design, data analysis, cartography or working with AP election results.
+**You have a diverse skillset.**<br />
+- _For the graphics editor role,_ the ideal candidate will be strong with [HTML/CSS/JS/D3](https://github.com/nprapps/dailygraphics) and thoughtful about how a project might work from mobile to desktop.<br />
+- _For the news apps developer role,_ the ideal candidate will be skilled in backend technologies (including Python, Flask, Django, Fabric and Postgresql) and sysadmin work with AWS (including EC2, S3, Cloudfront, Lambda and IAM management).<br />
+- You might also have expertise in areas like user experience design, data analysis, cartography or working with AP election results.
 
 **You can produce quality work on deadline.** We turn around projects on time scales that run from a couple hours to a couple weeks or a couple months. You need to be able to assess what approaches will best serve a given story, what work realistically can be executed in the time available and then execute that work on time.
 
