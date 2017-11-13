@@ -897,3 +897,183 @@
   date: "June 28, 2017"
   image: "/img/apps/ell-comic.jpg"
   url: http://www.npr.org/sections/ed/2017/06/28/534396017/i-am-learning-ingl-s-a-dual-language-comic
+- name: "Official White House Twitter Accounts Stay On Message While Trump Strays"
+  description: "The Trump administration has been remarkably on-message on social media over the past week — that is, if you only look at official Twitter accounts, rather than the president's personal feed."
+  date: "July 4, 2017"
+  image: "/img/apps/white-house-tweets.png"
+  url: https://www.npr.org/2017/07/04/535420301/official-white-house-twitter-accounts-stay-on-message-while-trump-strays
+- name: "FAQ: How Would The Republican Health Care Bills Affect You?"
+  description: "The bills under consideration in Congress would make big changes in health care coverage and costs for millions of people. Our searchable FAQ provides answers to key questions on where, how and why."
+  date: "July 10, 2017"
+  image: "/img/apps/ahca-faq.png"
+  url: https://www.npr.org/sections/health-shots/2017/07/10/535851043/faq-how-would-the-republican-health-care-bills-affect-you
+- name: "Let's Get Graphic: 100 Favorite Comics And Graphic Novels"
+  description: "We asked readers to name their favorite comics and graphic novels, and we got thousands of answers. Now, with the help of our expert panel, we've curated a list to keep you flipping pages all summer."
+  date: "July 12, 2017"
+  image: "/img/apps/books-comics.jpeg"
+  url: https://www.npr.org/2017/07/12/533862948/lets-get-graphic-100-favorite-comics-and-graphic-novels
+- name: "Natural Gas Building Boom Fuels Climate Worries, Enrages Landowners"
+  description: "Companies are asking the Federal Energy Regulatory Commission to approve thousands of miles of pipelines from Appalachia. It's an agency that almost never says no."
+  date: "July 17, 2017"
+  image: "/img/apps/pipeline-map.png"
+  url: https://www.npr.org/2017/07/17/536708576/natural-gas-building-boom-fuels-climate-worries-enrages-landowners
+- name: "New Report Shows 64 Of 195 Countries Aren't Meeting A Basic Vaccination Target"
+  description: "The goal is to reach 90 percent of children with the DTP vaccination — a child's first scheduled immunization. Some countries are barely at 50 percent."
+  date: "July 25, 2017"
+  image: "/img/apps/vaccine-map.jpg"
+  url: https://www.npr.org/sections/goatsandsoda/2017/07/25/538539473/new-report-shows-64-of-195-countries-arent-meeting-basic-vaccination-target
+- name: "Mapping Coastal Flood Risk Lags Behind Sea Level Rise"
+  description: "Federal maps help determine who on the coast must buy flood insurance, but many don't include the latest data. Maryland is now making its own flood maps, so homeowners can see if they're at risk."
+  date: "July 27, 2017"
+  image: "/img/apps/fema-flood.png"
+  url: https://www.npr.org/2017/07/27/539506529/mapping-coastal-flood-risk-lags-behind-sea-level-rise
+- name: "Bridging The Familiar And Unfamiliar Around The World, In 'Rough Translation'"
+  description: "The Rough Translation podcast explores how ideas we wrestle with in the U.S. are being discussed in the rest of the world."
+  date: "August 14, 2017"
+  image: "/img/apps/rough-translation.jpg"
+  url: https://www.npr.org/sections/parallels/2017/08/14/542661696/bridging-the-familiar-and-unfamiliar-around-the-world-in-rough-translation
+- name: "Between Swimming And S'mores, Young Muslim Campers Learn To Cope With Rising Hate"
+  description: "The 55-year-old Muslim Youth Camp is taking on new meaning as a temporary respite for today's new generation in the current political climate."
+  date: "August 17, 2017"
+  image: "/img/apps/muslim-youth-camp.jpg"
+  url: https://www.npr.org/2017/08/17/544145281/between-swimming-and-smores-young-muslim-campers-learn-to-cope-with-rising-hosti
+- name: "Live Coverage: Follow The Solar Eclipse"
+  description: "A total solar eclipse made its way from Oregon to South Carolina. Fourteen states were in the path of total darkness. See highlights from the astronomical phenomenon’s journey across America below."
+  date: "August 21, 2017"
+  image: "/img/apps/eclipse.png"
+  url: https://www.npr.org/sections/thetwo-way/2017/08/21/544239796/live-coverage-follow-the-solar-eclipse
+- name: "5 Deaths In Houston Blamed On Harvey; Other Deaths Being Investigated"
+  description: "The Gulf Coast of Texas has seen record rainfall as a result of Tropical Storm Harvey, which made landfall as a Category 4 hurricane late Friday. By the time the storm moves out, some parts of the region may see up to 50 inches of rain."
+  date: "August 29, 2017"
+  image: "/img/apps/harvey-precipitation.png"
+  url: https://www.npr.org/sections/thetwo-way/2017/08/29/547006980/water-tops-houston-dams-spillway-as-harvey-drifts-toward-louisiana
+- name: "At Al-Salam Mosque In Houston, All Are Welcome"
+  description: "Some people seeking safety from the flooding caused by Harvey were able to find refuge at Al-Salam mosque in northwest Houston."
+  date: "August 31, 2017"
+  image: "/img/apps/harvey-mosque.jpg"
+  url: https://www.npr.org/2017/08/31/547586512/at-al-salam-mosque-in-houston-all-are-welcome
+- name: "In Houston, Floods Push Impoverished Residents Into Crisis"
+  description: "For a lot of families, the flood damage and lost wages are the difference between getting by and wondering how they'll make ends meet."
+  date: "August 31, 2017"
+  image: "/img/apps/harvey-crisis.jpg"
+  url: https://www.npr.org/sections/thetwo-way/2017/08/31/547505976/in-houston-floods-push-impoverished-residents-into-crisis
+- name: "They Built Their Own Boating 'Shangri-La.' Preserving It May Be Just As Hard"
+  description: "Born out of necessity during segregation, Seafarers Yacht Club is one of the country's oldest black boating clubs. Over 70 years after its founding, the club's members must decide how to move forward."
+  date: "September 1, 2017"
+  image: "/img/apps/seafarers.jpg"
+  url: https://www.npr.org/sections/codeswitch/2017/09/01/543411917/they-built-their-own-boating-shangri-la-preserving-it-may-be-just-as-hard
+- name: "Before And After: Dramatic Satellite Photos Show Texas Towns Underwater"
+  description: "Satellite imagery captured on Wednesday shows what Harvey wrought: flooding on an almost unfathomable scale, submerging entire cities."
+  date: "September 1, 2017"
+  image: "/img/apps/harvey-before-after.png"
+  url: https://www.npr.org/sections/thetwo-way/2017/09/01/547688960/before-and-after-dramatic-satellite-photos-show-texas-towns-underwater
+- name: "Early Data From Harvey Shows Epic Flooding"
+  description: "Even tGovernment flood maps may need to be redrawn following Harvey. That, in turn, could have implications for insurers."
+  date: "September 1, 2017"
+  image: "/img/apps/harvey-flood-data.png"
+  url: https://www.npr.org/sections/thetwo-way/2017/09/01/547992600/early-data-from-harvey-shows-epic-flooding
+- name: "Harvey's Devastation Hits Home As Residents Return To Flooded Neighborhoods"
+  description: "Flooding from Hurricane Harvey has been widespread across Houston, Texas, and surrounding areas. While the storm has dissipated, water remains in many homes."
+  date: "September 3, 2017"
+  image: "/img/apps/harvey-residents-return.jpg"
+  url: https://www.npr.org/2017/09/03/548105631/harvey-s-devastation-hits-home-as-residents-return-to-flooded-neighborhoods
+- name: "Coastal Vietnamese Community Leans On Faith, And Each Other, To Rebuild After Harvey"
+  description: "Of all the churches on the Texas coast battered by Hurricane Harvey, one of the hardest hit is St. Peter Catholic Church in Rockport. As it happens, St. Peter is the heart and soul of Aransas County's large Vietnamese population."
+  date: "September 9, 2017"
+  image: "/img/apps/harvey-vietnamese-community.jpg"
+  url: https://www.npr.org/2017/09/09/549426420/coastal-vietnamese-community-leans-on-faith-and-each-other-to-rebuild-after-harv
+- name: "As Irma Approaches Miami, Twin Brothers Serve Up Last-Minute Coffee And Croissants"
+  description: "A café in Miami remained open on Saturday as customers prepared for the weather. The owners are praying for the best as this is the strongest storm they've seen in the two decades they've lived here."
+  date: "September 9, 2017"
+  image: "/img/apps/irma-twins.jpg"
+  url: https://www.npr.org/2017/09/09/549808792/french-brothers-serve-croissants-and-coffee-ahead-of-hurricane-irma
+- name: "The Most Popular High School Plays And Musicals"
+  description: "<em>The Wizard of Oz</em> is in and <em>Mary Poppins</em> is out<em>,</em> that's according to <em>Dramatics </em>magazine's high school theater rankings for 2016-2017. The magazine has been publishing its list since 1938."
+  date: "September 15, 2017"
+  image: "/img/apps/high-school-musicals.png"
+  url: https://www.npr.org/sections/ed/2016/09/29/427138970/the-most-popular-high-school-plays-and-musicals
+- name: "One Week After Irma, Floridians Pick Up The Pieces"
+  description: "It's been one week since Hurricane Irma hit Southwestern Florida. Residents in Collier County, where the storm made landfall after the Florida keys, are in the early stages of the recovery process."
+  date: "September 17, 2017"
+  image: "/img/apps/irma-week-later.jpg"
+  url: https://www.npr.org/2017/09/17/551494408/one-week-after-irma-floridians-pick-up-the-pieces
+- name: "Graham-Cassidy Health Bill Would Shift Funds From States That Expanded Medicaid"
+  description: "Senate Republicans' latest plan to overhaul the U.S. health care system ends with a massive shift of federal money from states that expanded Medicaid — and are largely dominated by Democrats — to those that refused to expand."
+  date: "September 21, 2017"
+  image: "/img/apps/graham-cassidy-bill.png"
+  url: https://www.npr.org/sections/health-shots/2017/09/21/552561822/graham-cassidy-health-bill-would-take-funds-from-states-that-expanded-medicaid
+- name: "Views From: Warped Tour's 23rd Year"
+  description: "Illustrator and reporter Chelsea Beck ventured to Merriweather Post Pavilion for a festival older than many of its attendees — of course there were fidget spinners."
+  date: "September 22, 2017"
+  image: "/img/apps/warped-tour.jpg"
+  url: https://www.npr.org/2017/09/22/552581042/views-from-warped-tours-23rd-year
+- name: "'You Have To Try': Puerto Ricans, Without Power, Find Ways Forward"
+  description: "Hurricane Maria knocked out power across the entire island, and many areas lack running water. Doing laundry, turning on the lights, eating dinner: Everyday life has become a constant challenge."
+  date: "September 25, 2017"
+  image: "/img/apps/maria-way-forward.jpg"
+  url: https://www.npr.org/sections/thetwo-way/2017/09/25/553553882/you-have-to-try-puerto-ricans-without-power-find-ways-forward
+- name: "With Bottles And Buckets, Puerto Ricans Seek The Water To Survive"
+  description: "The damage left by Hurricane Maria has disabled running water for many in Puerto Rico. People are driving to mountain springs to fill empty soda bottles and heading to rivers to do their laundry."
+  date: "September 27, 2017"
+  image: "/img/apps/maria-water.jpg"
+  url: https://www.npr.org/sections/thetwo-way/2017/09/27/553898689/with-bottles-and-buckets-puerto-ricans-seek-the-water-to-survive
+- name: "112 Degrees With No Water: Puerto Rican Hospitals Battle Life And Death Daily"
+  description: "Every day across Puerto Rico, with its shattered power grid, hospitals are waging a life-and-death battle to keep their patients from getting sicker in the tropical heat."
+  date: "October 5, 2017"
+  image: "/img/apps/maria-hospital.jpg"
+  url: https://www.npr.org/2017/10/05/555796327/following-disaster-teams-in-puerto-rico
+- name: "80 Years On, Dominicans And Haitians Revisit Painful Memories Of Parsley Massacre"
+  description: "This week marks the anniversary of the 1937 massacre, in which Dominican soldiers targeted Haitians living near the Dominican-Haitian border. A team from NPR's Latino USA gathered survivors' memories."
+  date: "October 10, 2017"
+  image: "/img/apps/haiti-massacre.jpg"
+  url: https://www.npr.org/sections/parallels/2017/10/07/555871670/80-years-on-dominicans-and-haitians-revisit-painful-memories-of-parsley-massacre
+- name: "What's Next For The Iran Nuclear Deal If President Trump Refuses To Recertify It?"
+  description: "Congress requires the president to re-evaluate — or certify — the deal every 90 days. The next deadline for him to do so is Oct. 15."
+  date: "October 12, 2017"
+  image: "/img/apps/iran-nuclear-deal.png"
+  url: https://www.npr.org/sections/parallels/2017/10/12/557178036/whats-next-for-the-iran-nuclear-deal-if-president-trump-refuses-to-recertify-it
+- name: "A Home To Big Cats And Raccoons Recovers After Hurricane Irma"
+  description: "After last month's hurricane, a Florida animal preserve that is home to more than 100 domestic and exotic animals is working on repairs. The owners are still &quot;bouncing back.&quot;"
+  date: "October 14, 2017"
+  image: "/img/apps/irma-cats.jpg"
+  url: https://www.npr.org/2017/10/14/557415870/a-home-to-big-cats-and-raccoons-recovers-after-hurricane-irma
+- name: "Two Years After A Violent Altercation At A S.C. High School, Has Anything Changed?"
+  description: "A video of a school resource officer throwing a student sparked a national debate about race, discipline and the role of law enforcement in schools."
+  date: "October 24, 2017"
+  image: "/img/apps/school-police.png"
+  url: https://www.npr.org/sections/ed/2017/10/07/548510200/what-s-changed-in-south-carolina-schools-since-violent-student-arrest
+- name: "How Black Americans See Discrimination"
+  description: "A new survey from NPR shows that black people often feel differently about discrimination depending on their gender, how old they are, how much they earn and whether they live in cities or suburbs."
+  date: "October 25, 2017"
+  image: "/img/apps/you-drag-it.png"
+  url: https://www.npr.org/sections/codeswitch/2017/10/25/559015355/how-black-americans-see-discrimination
+- name: "A Weekend With 7 Vendors Of San Juan, Illustrated"
+  description: "After Hurricane Maria, a skeleton crew of artisans and sellers keeps showing up in the city. They're driven by force of habit, tradition and a sliver of hope that things will return to normal."
+  date: "October 27, 2017"
+  image: "/img/apps/san-juan-vendors.jpg"
+  url: https://www.npr.org/2017/10/27/560179644/a-weekend-with-7-vendors-of-san-juan-illustrated
+- name: "A Sergeant's Mission To Return Home To Puerto Rico"
+  description: "Six days after Hurricane Maria, Sgt. 1st Class Antonio Santini caught a Boeing C-17 headed for San Juan. Bringing food, water and information to desperate residents was &quot;deeply personal&quot; for him."
+  date: "October 30, 2017"
+  image: "/img/apps/maria-sergeant.jpg"
+  url: https://www.npr.org/2017/10/30/559069878/a-sergeants-mission-to-return-home-to-puerto-rico
+- name: "A Tranquil Ferry Between Indonesian Islands"
+  description: "The public ferry system is a key link for a diverse nation spanning some 17,000 islands. &quot;We serve all the people,&quot; says the captain of a ferry linking majority-Hindu Bali with majority-Muslim Lombok."
+  date: "October 31, 2017"
+  image: "/img/apps/indonesia-ferry.jpg"
+  url: https://www.npr.org/sections/parallels/2017/10/31/558367028/photos-a-tranquil-ferry-between-indonesian-islands
+- name: "The Pigeon Racers Of Indonesia"
+  description: "Racing requires a pair of pigeons. The male is the racer, and he flies back to the female during the race. But some Indonesian men love this sport so much, it's been blamed for a rise in divorce."
+  date: "November 3, 2017"
+  image: "/img/apps/indonesia-pigeons.jpg"
+  url: https://www.npr.org/sections/parallels/2017/11/03/561560174/the-pigeon-racers-of-indonesia
+- name: "Indonesia's Youth Share Thoughts On Religion, Identity And Dreams"
+  description: "We asked young people about how they view their identity, what role religion plays in their lives, what they hope for the future, and what they believe unifies this sprawling, pluralistic democracy."
+  date: "November 4, 2017"
+  image: "/img/apps/indonesia-youth.jpg"
+  url: https://www.npr.org/sections/codeswitch/2017/11/04/560934698/indonesias-youth-share-thoughts-on-religion-identity-and-dreams
+- name: "6 Women Veterans Recall Their Military Service: 'It Was Just The Thing To Do'"
+  description: "There are more than 21 million military veterans in the country, according to a 2016 report from the Department of Veterans Affairs. About 2 million of those are women."
+  date: "November 11, 2017"
+  image: "/img/apps/women-veterans.jpg"
+  url: https://www.npr.org/2017/11/11/563064990/6-women-veterans-recall-their-military-service-it-was-just-the-thing-to-do
