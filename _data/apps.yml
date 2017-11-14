@@ -942,6 +942,11 @@
   date: "August 21, 2017"
   image: "/img/apps/eclipse.png"
   url: https://www.npr.org/sections/thetwo-way/2017/08/21/544239796/live-coverage-follow-the-solar-eclipse
+- name: "Full Text And Analysis: Trump's Address On Afghanistan, Plans For U.S. Engagement"
+  description: "President Trump addressed the nation Monday night on U.S. engagement and &quot;the path forward&quot; in Afghanistan and South Asia."
+  date: "August 21, 2017"
+  image: "/img/apps/trump-tweets.jpg"
+  url: https://www.npr.org/2017/08/21/545038935/watch-live-trump-s-address-on-afghanistan-next-steps-for-u-s-engagement?utm_source=twitter.com&utm_medium=social&utm_campaign=npr&utm_term=nprnews&utm_content=20170821
 - name: "5 Deaths In Houston Blamed On Harvey; Other Deaths Being Investigated"
   description: "The Gulf Coast of Texas has seen record rainfall as a result of Tropical Storm Harvey, which made landfall as a Category 4 hurricane late Friday. By the time the storm moves out, some parts of the region may see up to 50 inches of rain."
   date: "August 29, 2017"
