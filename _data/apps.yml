@@ -399,6 +399,11 @@
   image: "http://apps.npr.org/lookatthis/posts/afghan-teens/assets/grid.jpg"
   url: http://apps.npr.org/lookatthis/posts/afghan-teens/
   github_url: https://github.com/nprapps/lookatthis
+- name: "The Most Popular High School Plays And Musicals"
+  description: "<em>The Wizard of Oz</em> is in and <em>Mary Poppins</em> is out<em>,</em> that's according to <em>Dramatics </em>magazine's high school theater rankings for 2016-2017. The magazine has been publishing its list since 1938."
+  date: "July 30, 2015"
+  image: "/img/apps/high-school-musicals.png"
+  url: https://www.npr.org/sections/ed/2016/09/29/427138970/the-most-popular-high-school-plays-and-musicals
 - name: "What Does Music Look Like?"
   description: "When Denise Burt started designing classical music album covers, she knew nothing about the music. And that might have been to her advantage."
   date: "July 28, 2015"
@@ -907,11 +912,11 @@
   date: "July 10, 2017"
   image: "/img/apps/ahca-faq.png"
   url: https://www.npr.org/sections/health-shots/2017/07/10/535851043/faq-how-would-the-republican-health-care-bills-affect-you
-- name: "Let's Get Graphic: 100 Favorite Comics And Graphic Novels"
-  description: "We asked readers to name their favorite comics and graphic novels, and we got thousands of answers. Now, with the help of our expert panel, we've curated a list to keep you flipping pages all summer."
-  date: "July 12, 2017"
-  image: "/img/apps/books-comics.jpeg"
-  url: https://www.npr.org/2017/07/12/533862948/lets-get-graphic-100-favorite-comics-and-graphic-novels
+- name: "Web Comic: A Scientist Runs For His Life And Finds His Dream"
+  description: "It was a life-and-death journey out of Aleppo. Nedal Said could never have imagined how it would end."
+  date: "July 11, 2017"
+  image: "/img/apps/comic-aleppo-scientist.png"
+  url: https://www.npr.org/sections/goatsandsoda/2017/07/11/526777542/web-comic-the-scientist-who-escaped-aleppo
 - name: "Natural Gas Building Boom Fuels Climate Worries, Enrages Landowners"
   description: "Companies are asking the Federal Energy Regulatory Commission to approve thousands of miles of pipelines from Appalachia. It's an agency that almost never says no."
   date: "July 17, 2017"
@@ -927,11 +932,6 @@
   date: "July 27, 2017"
   image: "/img/apps/fema-flood.png"
   url: https://www.npr.org/2017/07/27/539506529/mapping-coastal-flood-risk-lags-behind-sea-level-rise
-- name: "Bridging The Familiar And Unfamiliar Around The World, In 'Rough Translation'"
-  description: "The Rough Translation podcast explores how ideas we wrestle with in the U.S. are being discussed in the rest of the world."
-  date: "August 14, 2017"
-  image: "/img/apps/rough-translation.jpg"
-  url: https://www.npr.org/sections/parallels/2017/08/14/542661696/bridging-the-familiar-and-unfamiliar-around-the-world-in-rough-translation
 - name: "Between Swimming And S'mores, Young Muslim Campers Learn To Cope With Rising Hate"
   description: "The 55-year-old Muslim Youth Camp is taking on new meaning as a temporary respite for today's new generation in the current political climate."
   date: "August 17, 2017"
@@ -947,6 +947,11 @@
   date: "August 21, 2017"
   image: "/img/apps/trump-tweets.jpg"
   url: https://www.npr.org/2017/08/21/545038935/watch-live-trump-s-address-on-afghanistan-next-steps-for-u-s-engagement?utm_source=twitter.com&utm_medium=social&utm_campaign=npr&utm_term=nprnews&utm_content=20170821
+- name: "Estoy Aprendiendo English: Una Historieta En Dos Idiomas"
+  description: "En un salón de dos lenguas, a veces eres el estudiante y algunas veces eres el maestro. Esto es lo que es para Merari de seis años de edad."
+  date: "August 27, 2017"
+  image: "/img/apps/ell-comic-spanish.png"
+  url: https://www.npr.org/sections/ed/2017/08/27/544423483/estoy-aprendiendo-english-una-historieta-en-dos-idiomas
 - name: "5 Deaths In Houston Blamed On Harvey; Other Deaths Being Investigated"
   description: "The Gulf Coast of Texas has seen record rainfall as a result of Tropical Storm Harvey, which made landfall as a Category 4 hurricane late Friday. By the time the storm moves out, some parts of the region may see up to 50 inches of rain."
   date: "August 29, 2017"
@@ -992,11 +997,11 @@
   date: "September 9, 2017"
   image: "/img/apps/irma-twins.jpg"
   url: https://www.npr.org/2017/09/09/549808792/french-brothers-serve-croissants-and-coffee-ahead-of-hurricane-irma
-- name: "The Most Popular High School Plays And Musicals"
-  description: "<em>The Wizard of Oz</em> is in and <em>Mary Poppins</em> is out<em>,</em> that's according to <em>Dramatics </em>magazine's high school theater rankings for 2016-2017. The magazine has been publishing its list since 1938."
-  date: "September 15, 2017"
-  image: "/img/apps/high-school-musicals.png"
-  url: https://www.npr.org/sections/ed/2016/09/29/427138970/the-most-popular-high-school-plays-and-musicals
+- name: "Before And After: Satellite Images Show Irma's Caribbean Destruction"
+  description: "With communications still sketchy on many Caribbean islands smashed by Hurricane Irma, it requires a view from space to take in the magnitude of the destruction from one of the most powerful storms to form in the Atlantic."
+  date: "September 12, 2017"
+  image: "/img/apps/irma-before-after.png"
+  url: https://www.npr.org/sections/thetwo-way/2017/09/12/550424499/before-and-after-satellite-images-show-irmas-caribbean-destruction
 - name: "One Week After Irma, Floridians Pick Up The Pieces"
   description: "It's been one week since Hurricane Irma hit Southwestern Florida. Residents in Collier County, where the storm made landfall after the Florida keys, are in the early stages of the recovery process."
   date: "September 17, 2017"
@@ -1037,6 +1042,11 @@
   date: "October 12, 2017"
   image: "/img/apps/iran-nuclear-deal.png"
   url: https://www.npr.org/sections/parallels/2017/10/12/557178036/whats-next-for-the-iran-nuclear-deal-if-president-trump-refuses-to-recertify-it
+- name: "Views From: The 'No Rubbish' Rock In Japan Festival"
+  description: "Illustrator Sayori Wada gives us a visual guide through her experience at Rock In Japan, one of the country's largest music festivals."
+  date: "October 13, 2017"
+  image: "/img/apps/music-festival-japan.png"
+  url: https://www.npr.org/sections/therecord/2017/10/13/554024950/views-from-the-no-rubbish-rock-in-japan-festival
 - name: "A Home To Big Cats And Raccoons Recovers After Hurricane Irma"
   description: "After last month's hurricane, a Florida animal preserve that is home to more than 100 domestic and exotic animals is working on repairs. The owners are still &quot;bouncing back.&quot;"
   date: "October 14, 2017"
@@ -1052,11 +1062,6 @@
   date: "October 25, 2017"
   image: "/img/apps/you-drag-it.png"
   url: https://www.npr.org/sections/codeswitch/2017/10/25/559015355/how-black-americans-see-discrimination
-- name: "A Weekend With 7 Vendors Of San Juan, Illustrated"
-  description: "After Hurricane Maria, a skeleton crew of artisans and sellers keeps showing up in the city. They're driven by force of habit, tradition and a sliver of hope that things will return to normal."
-  date: "October 27, 2017"
-  image: "/img/apps/san-juan-vendors.jpg"
-  url: https://www.npr.org/2017/10/27/560179644/a-weekend-with-7-vendors-of-san-juan-illustrated
 - name: "A Sergeant's Mission To Return Home To Puerto Rico"
   description: "Six days after Hurricane Maria, Sgt. 1st Class Antonio Santini caught a Boeing C-17 headed for San Juan. Bringing food, water and information to desperate residents was &quot;deeply personal&quot; for him."
   date: "October 30, 2017"
@@ -1067,6 +1072,11 @@
   date: "October 31, 2017"
   image: "/img/apps/indonesia-ferry.jpg"
   url: https://www.npr.org/sections/parallels/2017/10/31/558367028/photos-a-tranquil-ferry-between-indonesian-islands
+- name: "CHART: How The Republican Tax Overhaul Would Affect You"
+  description: "If you itemize, a new, higher standard deduction might make doing your taxes easier. If you run a &quot;pass through&quot; business, your life might be about to get more complicated."
+  date: "November 2, 2017"
+  image: "/img/apps/tax-law-comparison.png"
+  url: https://www.npr.org/2017/11/02/561639579/chart-how-the-tax-overhaul-would-affect-you
 - name: "The Pigeon Racers Of Indonesia"
   description: "Racing requires a pair of pigeons. The male is the racer, and he flies back to the female during the race. But some Indonesian men love this sport so much, it's been blamed for a rise in divorce."
   date: "November 3, 2017"
@@ -1077,6 +1087,16 @@
   date: "November 4, 2017"
   image: "/img/apps/indonesia-youth.jpg"
   url: https://www.npr.org/sections/codeswitch/2017/11/04/560934698/indonesias-youth-share-thoughts-on-religion-identity-and-dreams
+- name: "There's An Immigration Gap In How Latinos Perceive Discrimination"
+  description: "A new survey found that Latinos born in the U.S. tend to see racial or ethnic discrimination differently than Latinos who came to the country."
+  date: "November 5, 2017"
+  image: "/img/apps/latinos-you-drag-it.png"
+  url: https://www.npr.org/sections/codeswitch/2017/11/05/561876519/theres-an-immigration-gap-in-how-latinos-perceive-discrimination
+- name: "Trump's 2016 Victory Speech, Annotated 1 Year Later"
+  description: "Much has changed in the year since Donald Trump gave his election night victory speech. Journalists across the NPR newsroom have annotated his remarks in retrospect, providing context and analysis to his policy promises and noting who, among the people he thanked, is still in the inner circle."
+  date: "November 7, 2017"
+  image: "/img/apps/trump-annot-one-year.png"
+  url: https://www.npr.org/2017/11/07/561597910/trumps-2016-victory-speech-annotated-1-year-later
 - name: "6 Women Veterans Recall Their Military Service: 'It Was Just The Thing To Do'"
   description: "There are more than 21 million military veterans in the country, according to a 2016 report from the Department of Veterans Affairs. About 2 million of those are women."
   date: "November 11, 2017"
