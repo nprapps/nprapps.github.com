@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "We're Looking For A Graphics Editor Or News Apps Developer (Contract)"
+title: "No longer available &mdash; We're Looking For A Graphics Editor Or News Apps Developer (Contract)"
 description: "NPR Visuals is looking for a graphics editor or news apps developer to join our team in Washington, D.C., between December 2017 and April 2018."
 author: Alyson Hurt
 email: nprapps@npr.org
 twitter: nprviz
 ---
+
+## This position is no longer available.
 
 NPR Visuals is looking for a contract graphics editor or news apps developer to join our team in Washington, D.C., between December 2017 and April 2018, for a total of four to five months. (There is some flexibility with the start date.) **Apply by Friday, Nov. 17.**
 
