@@ -7,7 +7,7 @@ email: nprapps@npr.org
 twitter: nprviz
 ---
 
-## This position is no longer available.
+## The application deadline for this position has&nbsp;passed.
 
 NPR Visuals is looking for a contract graphics editor or news apps developer to join our team in Washington, D.C., between December 2017 and April 2018, for a total of four to five months. (There is some flexibility with the start date.) **Apply by Friday, Nov. 17.**
 
