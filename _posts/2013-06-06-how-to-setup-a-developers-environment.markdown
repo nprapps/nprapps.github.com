@@ -46,7 +46,7 @@ Search for "command line tools," and download the package appropriate to your ve
 
 **Note**: If you ever run into some variation of a 'user does not have permission' error when running a command in the terminal, prefix the command with `sudo`. For example, the above command would be run as:
 
-  sudo xcode-select --install
+	sudo xcode-select --install
 
 After you enter in your administrator password, these installations should proceed as normal. You shouldn't have to encounter this problem much in the following steps, but it's good to know just in case.
 
@@ -130,18 +130,18 @@ Save and exit out of `nano` using control + O, enter, and then control + X.
 
 It should look like this:
 
-  export PATH=/usr/local/bin:$PATH
-  source /usr/local/bin/virtualenvwrapper_lazy.sh
+	export PATH=/usr/local/bin:$PATH
+	source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 To exit `less`, press "Q".
 
 If you want to test that `virtualenv` is properly working, run:
 
-  mkvirtualenv my_virtual_env_name
+	mkvirtualenv my_virtual_env_name
 
 After making a few python executables, this should create a new virtual environment for you. If you're in a virtual environment, you should see `(my_virtual_env_name)` inserted before each line in the terminal. Then, to exit out of the virtual environment, run:
 
-  deactivate
+	deactivate
 
 ### A note about virtual environments
 
@@ -179,18 +179,18 @@ Read that tutorial [here](https://help.github.com/articles/generating-ssh-keys).
 
 It's nice to have your name and email show up correctly in the commit log. To make sure this information is correct, run:
 
-  git config --global user.email "$YOUR_EMAIL@npr.org"
-  git config --global user.name "$YOUR_NAME"
+	git config --global user.email "$YOUR_EMAIL@npr.org"
+	git config --global user.name "$YOUR_NAME"
 
 ### Optional: set up bash completion
 
 I like to be able to tab-complete my branch names when doing `git checkout`.  The easiest way I found to do this is to install Homebrew's git instead of the default OSX one, as well as the bash completion package:
 
-  brew install git bash-completion
+	brew install git bash-completion
 
 Then add a line like this to your `~/.bash_profile`:
 
-  [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+	[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 ## Appendix 1: Postgres and PostGIS
 We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data. We'll explain these tools a bit more as we install them.
@@ -271,7 +271,7 @@ Personally, I prefer vim &mdash; a terminal based editor that requires you to ty
 
 A version of vim is already on your computer, but I prefer to install it using Homebrew to get a more up-to-date version. You can do this by running
 
-  brew install vim
+	brew install vim
 
 You can add all kinds of features by installing plugins, but our teammate Chris recommends [nerdtree](https://github.com/scrooloose/nerdtree) and [surround](https://github.com/tpope/vim-surround). Here are [some videos](http://net.tutsplus.com/sessions/vim-essential-plugins/) to help make vim and those particular add-ons.
 i
@@ -286,11 +286,11 @@ Regardless of which editor you prefer, you should set the default editor used by
 
 You can do this with this command:
 
-  git config --global core.editor $PATH\_TO\_EDITOR
+	git config --global core.editor $PATH\_TO\_EDITOR
 
 I used the `which` command to easily find the path to `vim`:
 
-  git config --global core.editor $(which vim)
+	git config --global core.editor $(which vim)
 
 
 ## Conclusion
