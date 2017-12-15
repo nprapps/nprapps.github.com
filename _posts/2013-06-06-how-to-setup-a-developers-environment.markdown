@@ -135,13 +135,15 @@ It should look like this:
 
 To exit `less`, press "Q".
 
-If you want to test that `virtualenv` is properly working, run:
+To check if `virtualenv` is properly working, you can create a virtual environment to test it by running:
 
 	mkvirtualenv my_virtual_env_name
 
 After making a few python executables, this should create a new virtual environment for you. If you're in a virtual environment, you should see `(my_virtual_env_name)` inserted before each line in the terminal. Then, to exit out of the virtual environment, run:
 
 	deactivate
+
+This will deactivate but not delete the test virtual environment. To delete the virtual environment, use `rmvirtualenv my_virtual_env_name`.
 
 ### A note about virtual environments
 
@@ -165,7 +167,7 @@ Next, let's install globally a node module for compiling LESS into CSS
 
 	npm install -g less
 
-After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR news apps team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
+After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR Visuals team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
 
 ## Chapter 4: Configure git
 
@@ -257,7 +259,7 @@ Since your code is stored entirely as text files on your computer, you'll want a
 
 ### Atom
 
-While I prefer vim (see below) as my editor of choice, many people prefer an editor that is less dependent on memorizing keystrokes and has a user interface that you can interact with using your mouse or trackpad. If this is you, [Atom](https://atom.io/) is a good choice because it's free, intuitive to use with its defaults yet highly customizeable.
+While I prefer vim (see below) as my editor of choice, many people prefer an editor that is less dependent on memorizing keystrokes and has a user interface that you can interact with using your mouse or trackpad. If this is you, [Atom](https://atom.io/) is a good choice because it's free and intuitive to use with its defaults, yet highly customizable.
 
 I have this installed on my system in case I'm pairing with someone who's not familiar with vim.
 
