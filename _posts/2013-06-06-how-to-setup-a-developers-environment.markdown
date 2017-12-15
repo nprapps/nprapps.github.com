@@ -7,7 +7,7 @@ email: grich@npr.org
 twitter: gerald_arthur
 ---
 
-*Updated December 8, 2017*
+*Updated December 15, 2017*
 
 *Hi! I'm [Geoff Hing](https://twitter.com/geoffhing), a news applications developer who was filling in for [Juan Elosua](https://twitter.com/jjelosua) while he was on family leave welcoming his child into the world. [Matthew Zhang](https://twitter.com/_mazhang) started as the team's intern around the same time, and as we wrap up our time out NPR, we're also adding a few notes about how we've set up our development environments. This guide helps you get a solid Python environment set up, which we use for daily graphics, data analysis and application development.*
 
