@@ -18,7 +18,7 @@ Our main goals this year were:
 
 1. Improve the submission form to start with a cleaner dataset.
 2. Use a more programmatic approach to cluster similar entries for artist/album pairs.
-3. Use `make` to tie together our data processing pipeline. We were inspired by the awesome explanations of the use of Makefiles for data processing by [Datamade](https://github.com/datamade/data-making-guidelines)
+3. Use `make` to tie together our data processing pipeline. We were inspired by the awesome explanations of the use of Makefiles for data processing by [Datamade](https://github.com/datamade/data-making-guidelines).
 4. Reuse ranking strategy from the previous year.
 
 Let's dive into each of those goals and how we tackled them.
