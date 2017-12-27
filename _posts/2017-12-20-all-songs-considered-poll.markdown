@@ -25,17 +25,17 @@ Let's dive into each of those goals and how we tackled them.
 
 ## Form improvements
 
-Our first question was "is there a way to improve the audience submission Google form to provide cleaner initial results?" In previous years we had asked our audience to add a comma-separated artist and album pair, but that rule was not always followed (surprise!! Welcome to the world of free text fields).
+Our first question was "is there a way to improve the audience submission Google form to provide cleaner initial results?" In previous years we had asked our audience to add a comma-separated artist and album pair, but that rule was not always followed. Surprise!! Welcome to the world of free text fields.
 
 This year we decided to split album and artist into separate inputs grouped under a common heading.
 
 ![2017 Form](/img/posts/2017-12-20-all-songs-considered-poll/form.png)<small>2017 form</small>
 
-Looking back to that decision, it was really useful to have a better starting point for our cleanup process.
+Looking back to that decision, it was useful to have a better starting point for our cleanup process.
 
 ## Clustering similar artist/album entries
 
-Members of our team had already tried out [dedupe](https://github.com/dedupeio/dedupe) in other projects and we thought this data cleaning task was well suited for that tool. We want to identify and group together similar artist/album pairs in order to be able to correctly rank them later.
+Members of our team had already tried out [dedupe](https://github.com/dedupeio/dedupe) in other projects and we thought this data cleaning task was well suited for that tool. We want to identify and group together similar artist/album pairs in order to correctly rank them later.
 
 We finally used [csvdedupe](https://github.com/dedupeio/csvdedupe), a command line tool for deduplicating CSV files, that takes a messy input file or data piped from standard input and identifies duplicates.
 
@@ -51,9 +51,9 @@ In order to use `csvdedupe` effectively, we first needed to change the format of
 
 ![Input data normalized](/img/posts/2017-12-20-all-songs-considered-poll/normalized.png)<small>One artist/album pair per row</small>
 
-As you can see in that image, we have assigned points to each album/artist pair depending on the position in the Google form. We wanted a point schema that would always rank two votes for an artist/album pair higher than a single vote, regardless of the single vote's position.
+As you can see in the above CSV output, we have assigned points to each album/artist pair depending on the position in the Google form. We wanted a point schema that would always rank two votes for an artist/album pair higher than a single vote, regardless of the single vote's position.
 
-So in order to comply with the above rule we have assigned points like this:
+So in order to comply with the above rule, we have assigned points like this:
 
 * 15 points to album/artist #1
 * 14 points to album/artist #2
@@ -77,7 +77,7 @@ For this we used [OpenRefine](http://openrefine.org/). With its visual faceting 
 
 ## Using makefiles for our data processing pipeline
 
-As Mike Bostock, the creator of [D3.js](https://d3js.org/) states in [this article](https://bost.ocks.org/mike/make/) - "Makefiles are machine-readable documentation that make your workflow reproducible".
+As Mike Bostock, the creator of [D3.js](https://d3js.org/), states in [this article](https://bost.ocks.org/mike/make/) - "Makefiles are machine-readable documentation that make your workflow reproducible".
 
 It takes a while to adapt yourself to the syntax of a makefile, but once you start to get familiar with it, you start to move more quickly and at the end you will have a reproducible data pipeline. Your teammates or your future self will be really happy that you spent the time to document the process in a makefile when they need to reproduce the workflow on a tight deadline.
 
@@ -90,9 +90,9 @@ targetfile: sourcefile(s)
     command(s)
 ```
 
-* targetfile is the file you want to generate
-* sourcefile(s) are the file(s) it depends on
-* command(s) is what you need to run in a shell to generate the target file.
+* `targetfile` is the file you want to generate.
+* `sourcefile(s)` are the file(s) it depends on.
+* `command(s)` is what you need to run in a shell to generate the target file.
 
 You can then chain these rules, making the next rule's sourcefile the targetfile of a previous rule. In that way you generate a pipeline through which your data flows.
 
@@ -120,7 +120,7 @@ $(OUTPUT_DATA_DIR):
 ...
 ```
 
-At first looking at the rules can be overwhelming but let us walk you through what they actually do. Trust me, in no time you'll fall in love with the approach.
+At first, looking at the rules can be overwhelming, but let us walk you through what they actually do. Trust me, in no time you'll fall in love with the approach.
 
 ### Defining variables
 
@@ -141,25 +141,25 @@ In our example we are using `$<` as the input to a given command and `$@` as the
 
 We run `make clean_dedupe` to execute our cleaning and dedupe pipeline.
 
-You can see that is one of our `targetfiles` in the Makefile, but it has a dependency on a file in the filesystem. If that file does not exist or it needs to be regenerated since something higher up on the chain has changed, `make` will search for other rules to generate that dependency file.
+You can see that is one of our `targetfiles` in the Makefile, but it has a dependency on a file in the filesystem. If the dependency of the specified target does not exist or needs to be regenerated since one of its dependencies has changed, `make` will also build those dependencies.
 
-`make` will find another rule whose targetfile is precisely the filename in the previous rule and will in turn search for any dependencies it needs to build in order to be able to generate the target.
+`make` will find another rule whose targetfile matches the filename in the previous rule and will, in turn, search for any dependencies it needs to build in order to generate the target.
 
-Do you start to see the chain behavior?
+Can you start to see the chain behavior?
 
 ### Understanding the make recipes
 
 The example makefile shown above could be translated to the following initial execution:
 
 1. `cat data/2017_responses.csv | ./scripts/clean_ballot_stuffing.py | ./scripts/transform_form_responses.py > output/2017_responses_normalized.csv`
-    * Start with the raw form responses
-    * Use a python script to remove duplicate entries in a given time window
-    * Then use another python script to transform the responses into one artist/album pair per row and assign points to each entry accordingly.
+    * Start with the raw form responses.
+    * Use a Python script to remove duplicate entries in a given time window.
+    * Use another Python script to transform the responses into one artist/album pair per row and assign points to each entry.
 
 2. `./scripts/dedupe.sh output/2017_responses_normalized.csv > output/2017_responses_deduped.csv`
 
     * Train `csvdedupe` and then apply the machine learned algorithm to cluster similar entries together.
-    * Dump the output to a csv file named `output/2017_responses_deduped.csv`
+    * Dump the output to a CSV file named `output/2017_responses_deduped.csv`.
 
 ![Dedupe output](/img/posts/2017-12-20-all-songs-considered-poll/dedupe-output.png)<small>Dedupe output with Cluster IDs</small>
 
