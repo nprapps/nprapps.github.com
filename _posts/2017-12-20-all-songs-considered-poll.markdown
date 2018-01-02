@@ -25,13 +25,15 @@ Let's dive into each of those goals and how we tackled them.
 
 ## Form improvements
 
-Our first question was "is there a way to improve the audience submission Google form to provide cleaner initial results?" In previous years we had asked our audience to add a comma-separated artist and album pair, but that rule was not always followed. Surprise!! Welcome to the world of free text fields.
+Our first question was "is there a way to improve the audience submission Google form to provide cleaner initial results?" In previous years we had asked our audience to add a comma-separated artist and album pair, but that rule was not always followed. Surprise! Welcome to the world of free text fields.
 
-This year we decided to split album and artist into separate inputs grouped under a common heading.
+This year we made two major changes. First, we decided to split album and artist into separate inputs grouped under a common heading. Second, we made the #1 album and artist fields required.
 
 ![2017 Form](/img/posts/2017-12-20-all-songs-considered-poll/form.png)<small>2017 form</small>
 
-Looking back to that decision, it was useful to have a better starting point for our cleanup process.
+Looking back to that decision, it made a huge difference in the cleanliness of the original dataset. The separation of album and artist gave us a consistent data format and the required fields eliminated completely empty rows. It was useful to have a better starting point for our cleanup process.
+
+![Original form response file](/img/posts/2017-12-20-all-songs-considered-poll/original-data.png)<small>Original export of the 2017 form</small>
 
 ## Clustering similar artist/album entries
 
