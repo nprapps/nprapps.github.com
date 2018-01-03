@@ -8,18 +8,20 @@ email: lrost@npr.org
 twitter: lisacrost
 ---
 
+**There's a new blog post describing the 2017 process [here](http://blog.apps.npr.org/2017/12/20/all-songs-considered-poll.html)**
+
 ![Header of All Songs Considered article](/img/posts/allsongs-poll-header.png)<small>All Songs Considered asks listeners for their favorite albums of 2016</small>
 
 
-At the beginning of December 2016, All Songs Considered followed a nice tradition and [asked listeners for their favorite albums of 2016](http://www.npr.org/sections/allsongs/2016/12/05/504404659/vote-for-your-favorite-albums-of-2016). Users could enter up to five different albums in a Google form, ranked according to their preferences. The poll was open for eight days and resulted in more than 4,500 entries. 
+At the beginning of December 2016, All Songs Considered followed a nice tradition and [asked listeners for their favorite albums of 2016](http://www.npr.org/sections/allsongs/2016/12/05/504404659/vote-for-your-favorite-albums-of-2016). Users could enter up to five different albums in a Google form, ranked according to their preferences. The poll was open for eight days and resulted in more than 4,500 entries.
 
 In the end, the All Songs Considered team wanted a ranked list of the best albums. Sounds easy, right?
 
-But data is always messy and there are a few problems to solve with this dataset. First, there were some obviously not-so-awesome things going on with the Google spreadsheet that gathers the results: 
+But data is always messy and there are a few problems to solve with this dataset. First, there were some obviously not-so-awesome things going on with the Google spreadsheet that gathers the results:
 
 ![Header of All Songs Considered article](/img/posts/allsongs-poll-messy-data.png)<small>Different spelling, empty rows, multiple entries by one person: Ugh</small>
 
-In addition to cleaning up the data to make it usable, we had to decide on a weighting algorithm for the five different ranks and calculate it. 
+In addition to cleaning up the data to make it usable, we had to decide on a weighting algorithm for the five different ranks and calculate it.
 
 Since the whole project had a tight deadline, our process wasn't pretty, but we did it. Here’s how:
 
@@ -36,7 +38,7 @@ BON IVER-22 A MILLION
 Bon Iver
 bon iver, "22, a million"
 Bon Iver, 22/10
-Bon Iver, 20 a Million 
+Bon Iver, 20 a Million
 Bon Iver 22
 bon iver, 22 a million
 Bon Iver, 22, A Million
@@ -45,17 +47,17 @@ BonIver, 22 a million
 Bon Iver, 33 a million
 Bon Iver, 22 million
 Bon Iver,22,a Million
-22, A Million 
-Bon Iver: 22, A million 
+22, A Million
+Bon Iver: 22, A million
 bon iver. 22,a million
 …
 ```
 
-…and that’s still a relatively easy album name. I rely on your imagination to think of all the possible ways to spell “A Tribe Called Quest, We Got It from Here... Thank You 4 Your Service”. 
+…and that’s still a relatively easy album name. I rely on your imagination to think of all the possible ways to spell “A Tribe Called Quest, We Got It from Here... Thank You 4 Your Service”.
 
-To fix that mess, we used a combination of cluster analysis in [OpenRefine](http://openrefine.org/) and “Find and Replace” in Google Spreadsheet. 
+To fix that mess, we used a combination of cluster analysis in [OpenRefine](http://openrefine.org/) and “Find and Replace” in Google Spreadsheet.
 
-First, **OpenRefine**. To run the cluster analysis on just one column instead of five different ones, we needed to transform the data from a [“wide” format into a “long” format](https://en.wikipedia.org/wiki/Wide_and_narrow_data). This can be easily achieved, e.g. with R: 
+First, **OpenRefine**. To run the cluster analysis on just one column instead of five different ones, we needed to transform the data from a [“wide” format into a “long” format](https://en.wikipedia.org/wiki/Wide_and_narrow_data). This can be easily achieved, e.g. with R:
 
 ```
 library(reshape2)
@@ -72,7 +74,7 @@ So what is cluster analysis? Basically, OpenRefine can run different algorithms 
 
 ![OpenRefine interface](/img/posts/allsongs-poll-openrefine-cluster.png)<small>Clustering in OpenRefine</small>
 
-OpenRefine then lets us select and merge similar entries and give them all a new name. 
+OpenRefine then lets us select and merge similar entries and give them all a new name.
 
 After successfully running through lots of different cluster methods, our data was approximately 95 percent clean. Our Bon Iver entries looked like this:
 
@@ -84,15 +86,15 @@ Bon Iver, 22, A Million
 Bon Iver
 Bon Iver, 22, A Million
 Bon Iver, 22, A Million
-22, A Million 
+22, A Million
 Bon Iver, 22, A Million
 Bon Iver, 22, A Million
 …
 ```
 
-So much better! But OpenRefine doesn’t take care of the cases in which **only** the album or artist is mentioned. So we imported the data **back into Google Spreadsheet** and took care of that by hand – with a combination of “Find and Replace” and sorting the list alphabetically (which places all the `Bon Iver`’s before `Bon Iver, 22, A Million`). 
+So much better! But OpenRefine doesn’t take care of the cases in which **only** the album or artist is mentioned. So we imported the data **back into Google Spreadsheet** and took care of that by hand – with a combination of “Find and Replace” and sorting the list alphabetically (which places all the `Bon Iver`’s before `Bon Iver, 22, A Million`).
 
-## Step 2: Roughly clean up with a Python script 
+## Step 2: Roughly clean up with a Python script
 
 Once we made sure that the albums were written in the same way, they were countable. But we still needed to only count the entries that are from individual listeners who don’t abuse the poll. To do so, we ran the cleaned data through a Python script. The Pandas library is a great choice for our first easy task, **dropping the empty rows**:
 
@@ -122,19 +124,19 @@ except StopIteration:
 return all(first == rest for rest in iterator)
 ```
 
-That whole process removed 1200 empty or duplicate rows and brought the CSV from 4,500 entries down to 3,300 entries. 
+That whole process removed 1200 empty or duplicate rows and brought the CSV from 4,500 entries down to 3,300 entries.
 
-## Step 3: Weight and rank with an R script 
+## Step 3: Weight and rank with an R script
 
-Wooooooohoo! We went from messy, human-made data to clean, machine-readable data! Next, we did the actual calculations that got us to a ranked list of the top albums. 
+Wooooooohoo! We went from messy, human-made data to clean, machine-readable data! Next, we did the actual calculations that got us to a ranked list of the top albums.
 
-To spice things up a little bit (or maybe because we have people with different favorite tools on the team), we did this part of the process not with Python, but with R. 
+To spice things up a little bit (or maybe because we have people with different favorite tools on the team), we did this part of the process not with Python, but with R.
 
 After converting the data back into a long format, it looks like this:
 
 ![data in R](/img/posts/allsongs-poll-R.png)<small>Data with ranks in long format</small>
 
-Next, we gave each album a ranking value. To do so, we just replaced the rank columns with ranking values: 
+Next, we gave each album a ranking value. To do so, we just replaced the rank columns with ranking values:
 
 ```
 d$rank[d$rank=="Rank.1"]= 5
@@ -152,10 +154,10 @@ With numerical rank values, we could try out different ranking methods and diffe
 
 In contrast, artists like Bon Iver have a very consistent number of entries each day. We decided to favor these consistent entries. Our final calculations gave back a rank of albums for each day and then summed these daily rankings.
 
-To do so, we reduced the `Timestamp` column to the month and day with `d$Timestamp = substr(d$Timestamp,1,5)`, which removes all characters after the first 5 characters. Then we used the [dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) library to sum up the rankings to calculate points for each album on each day: 
+To do so, we reduced the `Timestamp` column to the month and day with `d$Timestamp = substr(d$Timestamp,1,5)`, which removes all characters after the first 5 characters. Then we used the [dplyr](https://cran.rstudio.com/web/packages/dplyr/vignettes/introduction.html) library to sum up the rankings to calculate points for each album on each day:
 
 ```
-d = d %>% 
+d = d %>%
   group_by(Timestamp,album) %>%
   summarise(points = sum(rank))
 ```
@@ -163,13 +165,13 @@ d = d %>%
 After getting rid of the `n/a` values, we sorted the albums by these points and give it a rank number. Meaning, the album with the most points per day gets the rank “1”, the album with the second most points per day gets the rank “2” etc:
 
 ```
-d = d %>% 
+d = d %>%
   arrange(Timestamp, -points, album) %>%
   group_by(Timestamp) %>%
   mutate(rank=row_number())
 ```
 
-After transforming the data back to a wide format and summing up the ranking for each day, we arrive at the final ranking: 
+After transforming the data back to a wide format and summing up the ranking for each day, we arrive at the final ranking:
 
 ![Final ranking](/img/posts/allsongs-poll-final-list.png)<small>The final ranking: the sum of the rankings for each day.</small>
 
@@ -182,8 +184,8 @@ If we wanted to be more correct, we could get the max number of mentioned albums
 
 We made it! To recap this complicated process, let’s look at the steps again:
 
-1. To unify the spelling of these albums, we ran some cluster analysis in OpenRefine and cleaned up the data in Google spreadsheet 
+1. To unify the spelling of these albums, we ran some cluster analysis in OpenRefine and cleaned up the data in Google spreadsheet
 2. Then we wrote a Python script to remove duplicate rows/cells and empty rows
-3. At the end, we calculated the ranking for each album per day and summed them up with an R script 
+3. At the end, we calculated the ranking for each album per day and summed them up with an R script
 
-The final ranking is also [published on All Songs Considered](http://www.npr.org/sections/allsongs/2016/12/15/505398527/poll-results-all-songs-considered-listeners-favorite-100-albums-of-2016). Next time we’ll do an autocomplete survey, yeah? 
+The final ranking is also [published on All Songs Considered](http://www.npr.org/sections/allsongs/2016/12/15/505398527/poll-results-all-songs-considered-listeners-favorite-100-albums-of-2016). Next time we’ll do an autocomplete survey, yeah?
