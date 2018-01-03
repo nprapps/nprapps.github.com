@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How we approached data cleaning for Our Listeners' Favorite Albums of 2017"
+title: "How We Approached Data Cleaning for Our Listeners' Favorite Albums of 2017"
 description: Using Makefiles to make reproducible data pipelines
 
 author: Juan Elosua and Brittany Mayes
