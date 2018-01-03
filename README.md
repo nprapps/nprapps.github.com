@@ -5,9 +5,20 @@ Copyright 2013-17 NPR.  All rights reserved.  No part of these materials may be 
 nprapps.github.com
 ==================
 
+### Assumptions
+
+* Ruby 2.1.0 or higher
+* [Bundler](http://bundler.io/). If you don't have this, you can install it with `gem install bundler`.
+
 ### Getting Started
 
-Matt Stiles wrote a helpful post explaining [how to get set up](http://blog.apps.npr.org/2012/11/08/npr-news-apps-blog.html).
+This blog uses a static site generator called [Jekyll](https://jekyllrb.com/) to convert Markdown files into HTML.
+
+To install Jekyll run:
+
+```
+bundle install
+```
 
 Once you have Jekyll installed, run this command to start up the development server and have it automatically regenerate files:
 
@@ -20,6 +31,8 @@ You can see it in your browser here:
 ```
 http://localhost:4000
 ```
+
+Matt Stiles wrote a [helpful post](http://blog.apps.012/11/08/npr-news-apps-blog.html) that explains a bit more about how to Jekyll builds this site.
 
 ### Things To Know
 
