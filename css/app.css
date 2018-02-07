@@ -110,7 +110,7 @@ article img {
 .entry section { font-size: 16px; line-height: 1.5em; margin-top:44px;}
 .entry section img { display: block; margin: 0 0 22px;}
 .entry ul, .entry ol { margin: 0px 0px 22px 33px; }
-.entry ul li { list-style: square; }
+.entry ul li { list-style: square; line-height: 1.5em; }
 .entry ul ul, .entry ol ol { margin-bottom: 0; }
 .entry .caption { line-height: 1.1; }
 .entry ol li { line-height: 1.5em; }

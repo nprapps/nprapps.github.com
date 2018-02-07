@@ -1,8 +1,8 @@
 ---
-layout: redirect
-redirect_url: /2018/02/07/summer-2018-designer-developer-internship.html
+layout: post
+title: "Be our design/code/?? intern for summer 2018!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you draw, design, or write code? We are looking for you."
-author: Alyson Hurt and Brittany Mayes
+author: Juan Elosua and Brittany Mayes
 email: nprapps@npr.org
 twitter: nprviz
 ---
@@ -15,6 +15,7 @@ Does this sound like you? Please join our team! It isn't always easy, but it is 
 
 Here are a few projects our recent interns have worked on:
 
+| [![The Pigeon Racers Of Indonesia](/img/posts/intern-app-hoversound.jpg)](https://www.npr.org/sections/parallels/2017/11/03/561560174/the-pigeon-racers-of-indonesia) | [Matthew Zhang](https://twitter.com/_mazhang)<br>(Developer, Fall 2017) |
 | [![Natural Gas Building Boom Fuels Climate Worries, Enrages Landowners](/img/posts/intern-app-pipeline.png)](http://www.npr.org/2017/07/17/536708576/natural-gas-building-boom-fuels-climate-worries-enrages-landowners) | [Leanne Abraham](https://twitter.com/LeanneFaybraham)<br>(Cartographer, Summer 2017) |
 | [![Find Out What New Viruses Are Emerging In Your Backyard](/img/posts/intern-pandemics.jpg)](http://www.npr.org/sections/goatsandsoda/2017/02/07/512634375/map-find-out-what-new-viruses-are-emerging-in-your-backyard) | [Eunice Esomonu](https://twitter.com/3u_nice)<br>(Designer, Spring 2017) |
 | [![NPR's Book Concierge 2016](/img/posts/intern-book-concierge.jpg)](http://apps.npr.org/best-books-2016/) | [Clinton King](https://twitter.com/clintonjking)<br>(Developer, Fall 2016) |
@@ -23,7 +24,7 @@ Here are a few projects our recent interns have worked on:
 | [![Using Technology To Keep Carbon Emissions In Check](/img/posts/intern-annette.jpg)](http://www.npr.org/sections/alltechconsidered/2016/01/04/461517606/using-technology-to-keep-carbon-emissions-in-check) | [Annette Elizabeth Allen](https://twitter.com/anntheeli)<br>(Illustrator, Fall 2015) |
 
 
-The paid internship runs from January 8, 2018 to April 20, 2018. **Application deadline extended! Applications are due Sunday, October 15th at 11:59pm eastern**.
+The paid internship runs from May 21, 2018 to August 10, 2018. **Applications are due Sunday, March 4th at 11:59pm eastern**.
 
 ## Who's Eligible
 
@@ -31,6 +32,4 @@ To be eligible for an internship with NPR, you must be a student (undergraduate 
 
 ## Here's how to apply
 
-Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=c4c709ff-c21f-4561-9e6f-d5c030110aed)
-
-*Into pictures? Check out our [photo editing internship](/2017/09/20/spring-2018-photo-internship.html).*
+Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=d0df3bb6-84b8-4c3a-a4f2-f62f067a2b7e)
