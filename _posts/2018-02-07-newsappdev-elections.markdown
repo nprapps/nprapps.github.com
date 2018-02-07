@@ -11,9 +11,11 @@ twitter: nprviz
 
 A thriving, mission-driven multimedia organization, NPR produces award-winning news, information, and music programming in partnership with hundreds of independent public radio stations across the nation. NPR listeners value information, creativity, curiosity, and social responsibility – our employees do too. We are innovators and leaders in diverse fields, from journalism and digital media to product design and software engineering. Every day our employees and member stations touch the lives of millions worldwide.
 
-NPR Visuals is looking for a civic-minded contract developer to join our news applications team to help cover the 2018 midterm elections. You will write software that matters, in close collaboration with the fantastic reporters and editors in our newsroom.
+NPR Visuals is looking for a civic-minded contract developer to join our news applications team **for three to four months** to help cover the 2018 midterm elections. You will write software that matters, in close collaboration with the fantastic reporters and editors in our newsroom.
 
 Our team is composed of developers, designers, photo and video journalists. You will have to work quickly in a dynamic environment. Making software on deadlines is difficult -- there's no room for cruft and little margin for error. You will encounter new problems everyday and will wear many hats, as a data wrangler, web developer, cartographer, sysadmin, etc. We are always open to new tools and to teammates who bring experience with different technologies and disciplines.
+
+**The ideal candidate would be able to work at NPR headquarters in Washington, D.C., starting in March 2018.**
 
 ## What we are looking for:
 
