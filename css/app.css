@@ -200,6 +200,8 @@ article img {
     margin: 0 5px 0 15px;
 }
 #header .job strong { margin-left: 0; }
+
+
 #header a { color: #color: #fff;; }
 #header em {
     font-style: normal;
@@ -208,6 +210,23 @@ article img {
 #header a {
     font-weight: 700;
     color: #fff;
+}
+
+.important-message {
+    display: inline-block;
+    margin: 0 auto 33px;
+    background-color: #ff3401;
+    color: white;
+}
+
+.important-message a {
+    margin: 15px;
+    display: block;
+    color: white;
+}
+
+.important-message a:hover {
+    color: #f7d8d0;
 }
 
 #homepage p.more a, .footer-section p.more a {
