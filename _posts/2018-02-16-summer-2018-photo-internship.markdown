@@ -1,7 +1,6 @@
 ---
-layout: redirect
-redirect_url: /2018/02/16/summer-2018-photo-internship.html
-title: "What makes a great photo editing intern (Apply now for Spring 2018!)"
+layout: post
+title: "What makes a great photo editing intern (Apply now for summer 2018!)"
 description: "What we're looking for in a photo editing intern on the NPR Visuals team."
 author: Emily Bogle
 email:
@@ -38,6 +37,6 @@ We also want folks who can tell us what they would like to accomplish during the
 
 ## So how do I apply?
 
-Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=cedf965b-cc9a-4f43-8c84-42bcf9b072a9)
+Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=cf4ef44b-6d6f-4608-834c-df6fd657c341)
 
-*Into code, design, and data? Check out our [design/development internship](/2017/09/20/spring-2018-designer-developer-internship.html).*
+*Into code, design, and data? Check out our [design/development internship](/2018/02/07/summer-2018-designer-developer-internship.html).*
