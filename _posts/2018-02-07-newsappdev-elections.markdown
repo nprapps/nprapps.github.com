@@ -7,6 +7,8 @@ email: nprapps@npr.org
 twitter: nprviz
 ---
 
+**The application deadline has been extended. Applications are now due Sunday, March 11, 2018 at 11:59pm eastern**.
+
 ## Overview
 
 A thriving, mission-driven multimedia organization, NPR produces award-winning news, information, and music programming in partnership with hundreds of independent public radio stations across the nation. NPR listeners value information, creativity, curiosity, and social responsibility – our employees do too. We are innovators and leaders in diverse fields, from journalism and digital media to product design and software engineering. Every day our employees and member stations touch the lives of millions worldwide.
@@ -49,4 +51,4 @@ Our team is composed of developers, designers, photo and video journalists. You 
 
 ## How to apply
 
-Does this sound like you?, please email [nprapps@npr.org](mailto:nprapps@npr.org) and include your resume, cover letter and GitHub profile. **Applications are due Friday, February 23, 2018.**
+Does this sound like you?, please email [nprapps@npr.org](mailto:nprapps@npr.org) and include your resume, cover letter and GitHub profile. Applications are due Friday, February 23, 2018. **The application deadline has been extended. Applications are now due Sunday, March 11, 2018 at 11:59pm eastern**.
