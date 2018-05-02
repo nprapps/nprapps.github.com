@@ -57,4 +57,4 @@ Check out our [github account](https://github.com/nprapps/) and [team blog](http
 
 ## How to apply
 
-If this sounds exciting to you, please email [nprapps@npr.org](mailto:nprapps@npr.org) and include your resume, cover letter, GitHub profile and links to a few projects you're especially proud of. **Apply by Friday, Nov. 17.**
+<s>If this sounds exciting to you, please email nprapps@npr.org and include your resume, cover letter, GitHub profile and links to a few projects you're especially proud of. Apply by Friday, Nov. 17.</s> _This position has been filled._

@@ -1,11 +1,13 @@
 ---
 layout: post
-title: "Contract News Apps Developer"
+title: "No longer available &mdash; Contract News Apps Developer"
 description: "Interested in a temporary news apps developer gig with one of the best teams in the industry? We're looking for you."
 author: Juan Elosua
 email: nprapps@npr.org
 twitter: nprviz
 ---
+
+## The application deadline for this position has&nbsp;passed.
 
 ## Overview
 
@@ -47,4 +49,4 @@ Our team is composed of developers, designers, photo and video journalists. You 
 
 ## How to apply
 
-Does this sound like you? Please email [nprapps@npr.org](mailto:nprapps@npr.org) and include your resume, cover letter and GitHub profile.
+<s>Does this sound like you? Please email nprapps@npr.org and include your resume, cover letter and GitHub profile.</s> _This position has been filled._
