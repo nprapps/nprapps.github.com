@@ -47,8 +47,6 @@ You’ll get an email before your interview with outline of the questions you’
 
 If you make it to the interview round, we'll collect references if you haven't uploaded them already. Then we’ll call your references and conduct some follow-up via email, possibly asking one or two more substantial, interview-style questions. Email communication is crucial in our workplace, and gives us an opportunity to see how you communicate in writing. We expect that answers are prompt, succinct, and clear.
 
-We’ll follow up with all of our finalists with some constructive criticism about their application and interview. While we can't promise to follow up with all applicants who meet the basic requirements, we will try to provide feedback to everyone who applies.
-
 ## Who we are
 
 We’re a small group of photographers, videographers, photo editors, developers and designers in the NPR newsroom who make visual journalism. (Yeah, NPR is a radio thing, and yeah, it's weird sometimes.) Check out our [latest stuff](https://twitter.com/nprviz)!
@@ -63,9 +61,9 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-- ~~[Photo editing](/2017/09/20/spring-2018-photo-internship.html), Winter/spring 2017 &mdash; due October 15, 2017~~
-- ~~[Design and code](/2017/09/20/spring-2018-designer-developer-internship.html), Winter/spring 2017 &mdash; due October 15, 2017~~
+Our paid Fall 2018 internship program runs from Sept. 10, 2018 to Dec. 14, 2018. **Applications are due Sunday, July 8 at 11:59pm ET.** Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info on dates, pay, etc.
 
-Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info on dates, pay, etc.
+- [Photo editing](/2018/06/19/fall-2018-photo-internship.html)
+- [Design and code](/2018/06/19/fall-2018-designer-developer-internship.html)
 
 We hope to hear from you!
