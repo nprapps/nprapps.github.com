@@ -411,13 +411,8 @@ table td {
   border-top: 1px solid #dddddd;
 }
 
-table th {
-  font-weight: bold;
-}
-
-table thead th {
-  vertical-align: bottom;
-}
+table thead th { vertical-align: bottom; }
+table th { font-weight: bold; }
 
 table caption + thead tr:first-child th,
 table caption + thead tr:first-child td,
@@ -430,6 +425,11 @@ table thead:first-child tr:first-child td {
 
 table tbody + tbody {
   border-top: 2px solid #dddddd;
+}
+
+table.intern-projects td {
+    line-height: 1.4;
+    width: 50%;
 }
 
 /*styling to get books14 images side-by-side*/
