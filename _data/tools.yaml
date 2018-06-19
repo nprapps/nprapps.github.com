@@ -20,6 +20,8 @@
 - name: "Pym.js"
   description: "A JavaScript library for responsive iframes."
   url: http://blog.apps.npr.org/pym.js/
+  alert: Important security update
+  alert_url: /2018/02/15/pym-security-vulnerability.html
   links:
     -
       title: "Introducing Pym.js"
