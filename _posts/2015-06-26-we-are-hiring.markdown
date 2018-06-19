@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "We're hiring a designer!"
 description: "Love to design and code? We've got a job for you."
 author: Brian Boyer

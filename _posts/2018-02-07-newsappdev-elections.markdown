@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "No longer available &mdash; Contract News Apps Developer"
 description: "Interested in a temporary news apps developer gig with one of the best teams in the industry? We're looking for you."
 author: Juan Elosua

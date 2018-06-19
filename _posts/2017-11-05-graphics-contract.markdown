@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "No longer available &mdash; We're Looking For A Graphics Editor Or News Apps Developer (Contract)"
 description: "NPR Visuals is looking for a graphics editor or news apps developer to join our team in Washington, D.C., between December 2017 and April 2018."
 author: Alyson Hurt

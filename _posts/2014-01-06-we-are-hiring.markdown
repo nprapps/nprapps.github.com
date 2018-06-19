@@ -1,10 +1,12 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "We're hiring a web developer"
 description: "Love to code? Want to use your skills to make the world a better place? We've got a job for you."
 author: Brian Boyer
 email: bboyer@npr.org
-twitter: brianboyer 
+twitter: brianboyer
 ---
 
 Love to code?

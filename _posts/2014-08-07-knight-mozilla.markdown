@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "Work In Public! (Or, why you really should consider being NPR's Knight-Mozilla fellow!)"
 description: "This is gonna be fun."
 

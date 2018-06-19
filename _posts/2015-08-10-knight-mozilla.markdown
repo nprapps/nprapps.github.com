@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "It's time for you to discover your mission."
 description: "Join our team next year through the Knight-Mozilla fellowships."
 

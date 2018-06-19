@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "We're hiring a developer!"
 description: "Want to work fast, on fascinating projects? We've got a job for you."
 author: Brian Boyer
