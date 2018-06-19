@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "We're looking for teammates!"
 description: "Do you want to make the world a better place? Are you a designer or developer or designer-developer or ux-ui or hacker-journalist? (We love hyphens!) Well, have we got a job for you."
 author: Brian Boyer

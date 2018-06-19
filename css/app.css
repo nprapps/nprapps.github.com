@@ -6,14 +6,15 @@ body {
     line-height: 1.6;
 }
 
+h1, h2, h3 {
+    line-height: 1.4;
+}
+
 h1 {
-    margin-bottom: 10px;
     font-size: 32px;
+    margin-bottom: 10px;
 }
-h2 {
-    line-height:1.2em;
-    margin-bottom: 22px;
-}
+h2 { margin-bottom: 22px; }
 h3 { margin-bottom: 10px; }
 
 hr { margin: 33px 0; }
@@ -116,6 +117,10 @@ article img {
 .entry ol li { line-height: 1.5em; }
 .entry ol li { margin: 0 0 11px; }
 
+.entry .alert {
+
+}
+
 .post-meta {
     color:#666;
     font-size: 12px;
@@ -156,11 +161,13 @@ article img {
     font-weight: 400;
     margin: 0 0 22px 0;
 }
-#homepage h2 a, .footer-section h2 a {
+#homepage h2 a,
+.footer-section h2 a {
     color: #333;
     font-weight: 400;
 }
-#homepage h2 a:hover, .footer-section h2 a:hover { color: #787878; }
+#homepage h2 a:hover,
+.footer-section h2 a:hover { color: #787878; }
 
 
 /* hp header */
@@ -181,9 +188,10 @@ article img {
     color: #fff;
 }
 #header h2 {
-    margin: 0 0 11px 0;
     color: #ccc;
     font-size: 18px;
+    line-height: 1.4;
+    margin: 0 0 33px 0;
 }
 #header p {
     font-size: 12px;
@@ -201,32 +209,35 @@ article img {
 }
 #header .job strong { margin-left: 0; }
 
-
-#header a { color: #color: #fff;; }
 #header em {
     font-style: normal;
     margin-left: 3px;
 }
+
+#homepage #header a,
 #header a {
     font-weight: 700;
     color: #fff;
 }
+#homepage #header a:hover,
+#header a:hover {
+    color: #ccc;
+}
 
 .important-message {
+    color: white;
     display: inline-block;
-    margin: 0 auto 33px;
+    font-size: 12px;
+    margin: 11px 0 11px 0;
+}
+.important-message a {
     background-color: #ff3401;
     color: white;
-}
-
-.important-message a {
-    margin: 15px;
     display: block;
-    color: white;
+    padding: 3px 10px;
 }
-
 .important-message a:hover {
-    color: #f7d8d0;
+    background-color: rgba(255,52,1,.5);
 }
 
 #homepage p.more a, .footer-section p.more a {
@@ -400,13 +411,8 @@ table td {
   border-top: 1px solid #dddddd;
 }
 
-table th {
-  font-weight: bold;
-}
-
-table thead th {
-  vertical-align: bottom;
-}
+table thead th { vertical-align: bottom; }
+table th { font-weight: bold; }
 
 table caption + thead tr:first-child th,
 table caption + thead tr:first-child td,
@@ -419,6 +425,11 @@ table thead:first-child tr:first-child td {
 
 table tbody + tbody {
   border-top: 2px solid #dddddd;
+}
+
+table.intern-projects td {
+    line-height: 1.4;
+    width: 50%;
 }
 
 /*styling to get books14 images side-by-side*/

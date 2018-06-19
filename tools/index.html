@@ -32,6 +32,11 @@ title: 'Tools you can use'
                     </header>
                     {% comment %}<a href="{{ tool.url }}"><img src="{{ tool.image }}"/></a>{% endcomment %}
                     <section class="entry">{{ tool.description }}</section>
+
+                    {% if tool.alert != null %}
+                    <p class="important-message"><a href="{{ tool.alert_url }}">{{ tool.alert }}</a></p>
+                    {% endif %}
+
                     <div class="post-meta">
                         {% if tool.links != null %}
                         <ul>

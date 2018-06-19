@@ -8,22 +8,22 @@ layout: base
             <div class="row">
                 <div class="span12">
                     <h1><img src="/img/nprlogo.gif" alt="NPR" /> visuals team</h1>
-                    <h2>We are a team of photographers, coders and designers in the NPR&nbsp;newsroom.</h2>
-                    <p class="manifesto">
+                    <h2>We are a <a href="https://twitter.com/nprviz/lists/the-team/members" target="_blank">team</a> of photographers, coders and designers in the NPR&nbsp;newsroom.</h2>
+                    <!-- <p class="manifesto">
                         <a href="https://twitter.com/nprviz/lists/the-team/members">Who We Are</a>
-                        <!-- <a href="/2014/06/04/how-we-work.html">How We Work</a> -->
-                    </p>
+                        <a href="/2014/06/04/how-we-work.html">How We Work</a>
+                    </p> -->
                     <p class="jobs">
                         <span class="job">
                             <strong>Join Our Team!</strong>
                             <a href="/2018/03/23/developer-job.html">News Apps Developer</a>
                         </span>
-                        <!-- <span class="internship">
-                            <strong>Summer 2018 Internships:</strong>
-                            <a href="/2018/02/07/summer-2018-designer-developer-internship.html">Design/Code/???</a>
+                        <span class="internship">
+                            <strong>Fall 2018 Internships:</strong>
+                            <a href="/2018/06/19/fall-2018-designer-developer-internship">Design/Code/???</a>
                             |
-                            <a href="/2018/02/16/summer-2018-photo-internship.html">Photo Editing</a>
-                        </span> -->
+                            <a href="/2018/06/19/fall-2018-photo-internship.html">Photo Editing</a>
+                        </span>
                     </p>
                 </div>
             </div>
@@ -32,13 +32,6 @@ layout: base
 
     <section id="work">
         <div class="container fluid">
-            <div class="row">
-                <p class="important-message">
-                    <a href="/2018/02/15/pym-security-vulnerability.html">
-                        Attention Pym users: Important security update
-                    </a>
-                </p>
-            </div>
             <div class="row">
                 <div class="span12">
                     <h2><a href="/work/">Recent Work</a></h2>
@@ -98,6 +91,10 @@ layout: base
                             {% endif %}
                         </h3>
                         <p class="entry">{{ tool.description }}</p>
+
+                        {% if tool.alert != null %}
+                        <p class="important-message"><a href="{{ tool.alert_url }}">{{ tool.alert }}</a></p>
+                        {% endif %}
                     </article>
                 </div>
                 {% endfor %}

@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "We're looking for a developer to help us build Carebot"
 description: "Want to work fast, on fascinating projects? We've got a job for you."
 author: Brian Boyer

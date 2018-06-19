@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "We're hiring a picture editor"
 description: "Love photography? Obsessed with the web? We've got a job for you."
 author: Brian Boyer
