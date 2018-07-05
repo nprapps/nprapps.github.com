@@ -25,7 +25,7 @@ Here are a few projects our recent interns have worked on:
 | [![You Say You're An American, But What If You Had To Prove It Or Be Deported?](/img/posts/intern-zyma.jpg)](http://www.npr.org/sections/thetwo-way/2016/12/22/504031635/you-say-you-re-an-american-but-what-if-you-had-to-prove-it-or-be-deported) | [Zyma Islam](https://twitter.com/zymaislam)<br>(Data reporter/developer, Spring 2016) |
 | [![Using Technology To Keep Carbon Emissions In Check](/img/posts/intern-annette.jpg)](http://www.npr.org/sections/alltechconsidered/2016/01/04/461517606/using-technology-to-keep-carbon-emissions-in-check) | [Annette Elizabeth Allen](https://twitter.com/anntheeli)<br>(Illustrator, Fall 2015) |
 
-The paid internship runs from Sept. 10, 2018 to Dec. 14, 2018. **Applications are due Sunday, July 8 at 11:59pm ET.**
+The paid internship runs from Sept. 10, 2018 to Dec. 14, 2018. **Applications are due Sunday, July 15 at 11:59pm ET.**
 
 ## Who's Eligible
 

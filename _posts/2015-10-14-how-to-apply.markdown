@@ -61,7 +61,7 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-Our paid Fall 2018 internship program runs from Sept. 10, 2018 to Dec. 14, 2018. **Applications are due Sunday, July 8 at 11:59pm ET.** Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info on dates, pay, etc.
+Our paid Fall 2018 internship program runs from Sept. 10, 2018 to Dec. 14, 2018. **Applications are due Sunday, July 15 at 11:59pm ET.** Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info on dates, pay, etc.
 
 - [Photo editing](/2018/06/19/fall-2018-photo-internship.html)
 - [Design and code](/2018/06/19/fall-2018-designer-developer-internship.html)
