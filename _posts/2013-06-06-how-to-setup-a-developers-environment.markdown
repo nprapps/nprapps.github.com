@@ -11,11 +11,11 @@ twitter: gerald_arthur
 
 *Hi! I'm [Geoff Hing](https://twitter.com/geoffhing), a news applications developer who was filling in for [Juan Elosua](https://twitter.com/jjelosua) while he was on family leave welcoming his child into the world. [Matthew Zhang](https://twitter.com/_mazhang) started as the team's intern around the same time, and as we wrap up our time out NPR, we're also adding a few notes about how we've set up our development environments. This guide helps you get a solid Python environment set up, which we use for daily graphics, data analysis and application development.*
 
-*[David Eads](http://twitter.com/eads), [Livia Labate](http://twitter.com/livlab), [Tyler Fisher](http://twitter.com/tylrfishr), [Shelly Tan](http://twitter.com/Tan_Shelly), [Helga Salinas](http://twitter.com/Helga_Salinas) and [Juan Elosua](https://twitter.com/jjelosua) have also contributed to this post.*
+*[David Eads](http://twitter.com/eads), [Livia Labate](http://twitter.com/livlab), [Tyler Fisher](http://twitter.com/tylrfishr), [Shelly Tan](http://twitter.com/Tan_Shelly), [Helga Salinas](http://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua) and [Miles Watkins](https://github.com/mileswwatkins) have also contributed to this post.*
 
 I joined the News Apps team a week ago in their shiny new DC offices, and in-between eating awesome food and Tiny Desk concerts, we've been documenting the best way to get other journalists setup to build news apps like the pros.
 
-The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with OS X 10.12, or Sierra, installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
+The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with macOS 10.12, or Sierra, installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
 
 ## Chapter 0: Prerequisites
 
@@ -30,7 +30,7 @@ Click on the Apple menu > System Preferences > Users & Groups and check your sta
 Go to the App Store and go to the updates tab. If there are system updates, install and reboot until there is nothing left to update.
 
 ### Install command line tools
-With the release of OS X 10.9, Apple decoupled its command line tools necessary for compiling some of the tools we use from Xcode, Apple's proprietary development suite.
+With the release of macOS 10.9, Apple decoupled its command line tools necessary for compiling some of the tools we use from Xcode, Apple's proprietary development suite.
 
 All Macs come with an app called "Terminal." You can find it under Applications > Utilities. Double click to open that bad boy up, and run this command:
 
@@ -40,9 +40,9 @@ Your laptop should prompt you to install the command line tools. Install the too
 
 If it doesn't install, or there isn't an update for Xcode to install the tools, you'll have to download the command line tools from [developer.apple.com/downloads/index.action](http://developer.apple.com/downloads/index.action). You have to register, or you can log in with your Apple ID.
 
-![In my case, it was Command Line Tools (OS X Mavericks).](/img/posts/download_clt.png)
+![In my case, it was Command Line Tools (macOS Mavericks).](/img/posts/download_clt.png)
 
-Search for "command line tools," and download the package appropriate to your version of OS X. Double click on the .dmg file in your downloads file, and proceed to install. In my case, I downloaded Command Line Tools (OS X Mavericks), which is highlighted in the screenshot above.
+Search for "command line tools," and download the package appropriate to your version of macOS. Double click on the .dmg file in your downloads file, and proceed to install. In my case, I downloaded Command Line Tools (macOS Mavericks), which is highlighted in the screenshot above.
 
 **Note**: If you ever run into some variation of a 'user does not have permission' error when running a command in the terminal, prefix the command with `sudo`. For example, the above command would be run as:
 
@@ -88,31 +88,31 @@ Once you've added the line of code, you can save the file by typing control + O.
 
 You'll only need to source the `bash_profile` since we're editing the file right now. It's the equivalent of quitting your terminal application and opening it up again, but `source` lets you soldier forward and setup Python.
 
-## Chapter 2: Install Python && virtualenv
+## Chapter 2: Install Python 2 and virtualenv
 
-OSX comes with a system version of Python, and for a long time, we used this version. However, as Apple continues to update its operating system, system Python has gotten harder and harder to use with modern tools.
+macOS comes with a system version of Python, and for a long time, we used this version. However, modifying the system Python is inadvisable; user alterations or installations may cause core macOS components to break, and macOS system updates may cause user projects to break.
 
-Thus, install the latest stable homebrewed version of Python. We get `pip` for free with this installation...yay!!
+Thus, install the latest stable homebrewed version of Python. Most of our team's projects use Python 2, so we'll install that version instead of Python 3; following from this, we'll use the `python2` and `pip2` commands to invoke those tools in the terminal.
 
-	brew install python
+	brew install python2
 
-You may have to update your `PATH` environment variable to tell your system to prefer the version of Python you just installed over the system version. The output of `brew install python` should include some text like this:
+You may have to update your `PATH` environment variable to tell your system to prefer the version of Python you just installed over the system version. The output of `brew install python2` should include some text like this:
 
 > This formula installs a python2 executable to /usr/local/bin.
 > If you wish to have this formula's python executable in your PATH then add
 > the following to ~/.bash_profile:
->  export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+> `export PATH="/usr/local/opt/python/libexec/bin:$PATH"`
 
 I updated my path in `~/.bash_profile` so that `/usr/local/opt/python/libexec/bin` was at the beginning of the path list and then made my current shell use the updated path by running `source ~/.bash_profile`.
 
 
-**Note**: `pip` like Homebrew, it's sort of an app store but for Python code.
+**Note**: `pip2` is like Homebrew: it's sort of an app store but for [Python code](https://pypi.org/).
 
 Next, we'll install `virtualenv` and `virtualenvwrapper`. These tools help us isolate Python projects into their own little sandboxes, keeping your installed software neat and tidy.
 
-	pip install virtualenv virtualenvwrapper
+	pip2 install virtualenv virtualenvwrapper
 
-**Note**: `virtualenv` is the actual environment that you'll be using, while `virtualwrapper` helps you access the environment and its variables from your `PATH`.
+**Note**: `virtualenv` creates the actual environment that you'll be using, while `virtualwrapper` makes the interface to these virtual environments even simpler.
 
 Edit your `~/.bash_profile` file again,
 
@@ -147,17 +147,17 @@ This will deactivate but not delete the test virtual environment. To delete the 
 
 ### A note about virtual environments
 
-*April 18, 2016*: We recently learned that if you installed `virtualenv` before installing the Homebrew version of Python (and possibly even if you installed Python first), the virtual environments you create will use the OS X system version of Python. This is not cool because that version of Python is compiled without key features and libraries.
+*April 18, 2016*: We recently learned that if you installed `virtualenv` before installing the Homebrew version of Python (and possibly even if you installed Python first), the virtual environments you create will use the macOS system version of Python. This is not cool because that version of Python is compiled without key features and libraries.
 
-To ensure you *always* are using your Homebrewed Python, always specify the `-p` flag when creating a virtual environment:
+To ensure you *always* are using your Homebrewed Python, always specify the `--python` flag when creating a virtual environment:
 
-    mkvirtualenv -p `which python` my_virtual_env_name
+    mkvirtualenv --python "$(which python2)" my_virtual_env_name
 
 This will make a virtual environment with the active Python version on your `PATH`.
 
 ## Chapter 3: Set up Node and install LESS
 
-Finally, we'll install a tool called LESS that we use to write CSS, the language that styles websites. LESS is a built with Node, so we'll need to install that and NPM, Node's version of `pip` or Homebrew.
+Finally, we'll install a tool called LESS that we use to write CSS, the language that styles websites. LESS is a built with Node, so we'll need to install that and NPM, Node's version of `pip2` or Homebrew.
 
 Install Node using Homebrew.
 
@@ -165,7 +165,7 @@ Install Node using Homebrew.
 
 Next, let's install globally a node module for compiling LESS into CSS
 
-	npm install -g less
+	npm install --global less
 
 After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR Visuals team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
 
@@ -186,7 +186,7 @@ It's nice to have your name and email show up correctly in the commit log. To ma
 
 ### Optional: set up bash completion
 
-I like to be able to tab-complete my branch names when doing `git checkout`.  The easiest way I found to do this is to install Homebrew's git instead of the default OSX one, as well as the bash completion package:
+I like to be able to tab-complete my branch names when doing `git checkout`.  The easiest way I found to do this is to install Homebrew's git instead of the default macOS one, as well as the bash completion package:
 
 	brew install git bash-completion
 
@@ -195,49 +195,11 @@ Then add a line like this to your `~/.bash_profile`:
 	[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 ## Appendix 1: Postgres and PostGIS
-We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data. We'll explain these tools a bit more as we install them.
+We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data.
 
-### NumPy
-First, we need to install a Python library called NumPy. We don't use NumPy directly, but PostGIS uses it for making geographic calculations. This may already be installed, but run this command just to double-check. You will be prompted for your password.
+While you can install Postgres using Homebrew, the easiest way to manage Postgres on your Mac is with Postgres.app. This application provides a very basic GUI around the database, and sits in your menu bar to show whether the database is running. It also comes with useful extensions baked in, including PostGIS.
 
-    pip install numpy
-
-### Postgres
-Next up: the Postgres database server. Postgres is a useful tool for dealing with all kinds of data, not just geography, so we'll get it setup first then tweak it to be able to interpret geographic data. Postgres will take about 10 minutes to install.
-
-	brew install postgresql
-
-Edit your `~/.bash_profile` to add a pair of commands for starting and stopping your Postgres database server. `pgup` will start the server; `pgdown` will stop it. FYI You'll rarely ever need to `pgdown`, but we've include the command just in case.
-
-	nano -w ~/.bash_profile
-
-Add these two lines:
-
-	alias pgdown='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-	alias pgup='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-
-Save and exit out of `nano` using control + O, enter, and then control + X, and update your session one more time,
-
-	source ~/.bash_profile
-
-and let's initialize your Postgres server. We only need to do this once after installing it.
-
-	initdb /usr/local/var/postgres/ -E utf-8
-
-Finally, let's start up the Postgres server.
-
-	pgup
-
-### PostGIS
-These deceptively simple commands will install an awful lot of software. It's going to take some time, and your laptop fans will probably sound like a fighter jet taking off. Don't worry; it can take the heat.
-
-	brew install gdal --with-postgresql
-
-Still hanging in there?
-
-	brew install postgis
-
-Now you can create your first geographically-enabled database. For more information on how to do that postgis [tells you how to do this](http://postgis.net/docs/manual-2.0/postgis_installation.html#create_new_db_extensions).
+[Download and install Postgres.app from its website.](https://postgresapp.com/)
 
 ## Appendix 2: The Terminal
 Since you're going to be working from the command line a lot, it's worth investing time to make your terminal something that's a little more easy on the eyes.
@@ -263,10 +225,10 @@ While I prefer vim (see below) as my editor of choice, many people prefer an edi
 
 I have this installed on my system in case I'm pairing with someone who's not familiar with vim.
 
-### Sublime Text 2
-[Sublime Text 2](http://www.sublimetext.com/2) is another GUI-based editor with a nice interface and some [customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland).
+### Sublime Text
+[Sublime Text](https://www.sublimetext.com) is another GUI-based editor with a nice interface and some [customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland).
 
-**Note**: In recent versions, installing Package Control (necessary for many customizations) assumes you have purchased Sublime Text, so consider getting a license first. Additionally, speed up your use by making Sublime Text your default editor from the command line. Here's [how](http://stackoverflow.com/a/16495202/4548251). And [another way](http://olivierlacan.com/posts/launch-sublime-text-2-from-the-command-line/).
+**Note**: Speed up your use by making Sublime Text your default editor from the command line. Here's [how](http://stackoverflow.com/a/16495202/4548251). And [another way](http://olivierlacan.com/posts/launch-sublime-text-2-from-the-command-line/).
 
 ### Vim
 Personally, I prefer vim &mdash; a terminal based editor that requires you to type rather than point-and-click to work on files. I learned this editor at one of my first jobs when the sysadmin pointed out that it was good to know vi (vim stands for "vi improved") because it was likely to be available on any Linux server to which you may find yourself connecting. There's a lot of little keyboard shortcuts you'll need to get comfy with before you can just dive-in. Here's a resource to become more acquainted with vim: [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki).
