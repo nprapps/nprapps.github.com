@@ -1,13 +1,13 @@
 ---
 layout: post
-title: "We're Looking For A Graphics Editor (Contract)"
-description: "NPR Visuals is looking for a graphics editor to join our team in Washington, D.C."
+title: "We're Looking For A News Apps Designer (Contract)"
+description: "NPR Visuals is looking for a news apps designer to join our team in Washington, D.C."
 author: Constance Miller
 email: nprapps@npr.org
 twitter: nprviz
 ---
 
-NPR Visuals is looking for a graphics editor to join our team in Washington, D.C., on a contract basis. The length of the contract term is flexible — ideally starting as soon as possible and going through the end of 2018. We prefer a candidate who will work in our Washington, D.C., office, but we will consider remote work arrangements. **Apply by Friday, Sept. 14.**
+NPR Visuals is looking for a news apps designer to join our team in Washington, D.C., on a contract basis. The length of the contract term is flexible — ideally starting as soon as possible and going through the end of 2018. We prefer a candidate who will work in our Washington, D.C., office, but we will consider remote work arrangements. **Apply by Friday, Sept. 14.**
 
 ----------
 
@@ -26,8 +26,6 @@ You will work on information graphics, data visualizations and special story pre
 **You have a diverse skillset.** In addition to the core skills required to do your job, you might also have expertise in areas like user experience design, data analysis, cartography or working with AP election results.
 
 **You can produce quality work on deadline.** We turn around projects on time scales that run from a couple hours to a couple weeks to a couple months. You need to be able to assess what approaches will best serve a given story, what work realistically can be executed in the time available and then execute that work on time.
-
-**You are able to start mid-to-long term projects from the MVP phase and follow through to the completed, released project.** A news apps developer might focus on the architecture of the project, developing the backend side of it and collaborating on frontend tasks as needed. A graphics editor would focus more on frontend design and interactivity.
 
 **You consider yourself a problem solver.** You can dive into existing projects to provide maintenance and support. You can face unknown issues in unknown projects methodically, debugging until you find the cause of the issue, and implementing the best possible solution once diagnosed.
 
@@ -55,7 +53,7 @@ Check out our [github account](https://github.com/nprapps/) and [team blog](http
 
 ## How to apply
 
-If this sounds exciting to you, please email <a href="mailto:nprapps@npr.org?subject=Graphics%20Editor%20Contract%20Job">nprapps@npr.org</a> and include your resume, cover letter, GitHub profile and links to a few projects you're especially proud of. (If sharing via GitHub is not an option for you, please provide us another way to evaluate your technical skills. This might entail sharing a side project or submitting a code sample in a different form.) **Apply by Friday, Sept. 14.**
+If this sounds exciting to you, please email <a href="mailto:nprapps@npr.org?subject=News%20Apps%20Designer%20Contract%20Job">nprapps@npr.org</a> and include your resume, cover letter, GitHub profile and links to a few projects you're especially proud of. (If sharing via GitHub is not an option for you, please provide us another way to evaluate your technical skills. This might entail sharing a side project or submitting a code sample in a different form.) **Apply by Friday, Sept. 14.**
 
 ---------
 
