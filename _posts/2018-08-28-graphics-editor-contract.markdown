@@ -39,13 +39,11 @@ Projects you might contribute to include:
 
 * Short-turnaround charts and other data visualizations based on the news of the day
 
-* Coverage of the 2018 midterm election results
+* Coverage of the 2018 midterm election
 
 * Visual presentations of longer-form storytelling
 
-* Data analysis and reporting
-
-* [Our fact check/annotations rig](https://source.opennews.org/articles/how-npr-transcribes-and-fact-checks-debates-live/)
+* Data analysis
 
 Check out our [github account](https://github.com/nprapps/) and [team blog](http://blog.apps.npr.org) to see more of the projects we work on.
 
