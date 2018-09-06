@@ -13,7 +13,7 @@ NPR Visuals is looking for a news apps designer to join our team in Washington, 
 
 ## What You Will Do
 
-You will work on information graphics, data visualizations and special story presentations, working in close collaboration with reporters and editors in our newsroom. The ideal candidate will have strong, demonstrable experience using [HTML, CSS, front-end JS, and D3.js](https://github.com/nprapps/dailygraphics) to build visual representations of data and thoughtfulness about how a project might work on both mobile and desktop.
+You will work on information graphics, data visualizations and special story presentations, working in close collaboration with reporters and editors in our newsroom. The ideal candidate will have strong, demonstrable experience using [HTML, CSS, front-end JS, and D3.js](https://github.com/nprapps/dailygraphics) to build visual representations of data that work well on both desktop and mobile.
 
 ----------
 
