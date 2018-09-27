@@ -46,4 +46,4 @@ Our team is composed of developers, designers, photo and video journalists. You 
 
 ## How to apply
 
-Does this sound like you? If so, we'd like to hear from you. Apply [now](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=91237b23-2bdc-4aa2-8b1f-28a7461dfdcf)! **All applications must include a resume, cover letter and Github profile to be considered.**
+Does this sound like you? If so, we'd like to hear from you. [Apply now](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=8cd95bf6-4401-4a3d-bf33-c19acf77e2bd)! **All applications must include a resume, cover letter and Github profile to be considered.** (If sharing via GitHub is not an option for you, please provide us another way to evaluate your technical skills. This might entail sharing a side project or submitting a code sample in a different form.)
