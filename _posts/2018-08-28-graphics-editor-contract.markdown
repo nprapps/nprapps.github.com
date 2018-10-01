@@ -1,6 +1,9 @@
 ---
+layout: redirect
+redirect_url: /
+
 layout: post
-title: "We're Looking For A News Apps Designer (Contract)"
+title: "No Longer Available &mdash; We're Looking For A News Apps Designer (Contract)"
 description: "NPR Visuals is looking for a news apps designer to join our team in Washington, D.C."
 author: Constance Miller
 email: nprapps@npr.org
