@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /2018/10/09/spring-2019-designer-developer-internship.html
+
 title: "Be our design/code/?? intern for fall 2018!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you draw, design, or write code? We are looking for you."
 author: Alyson Hurt

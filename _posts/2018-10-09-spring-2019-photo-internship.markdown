@@ -1,8 +1,6 @@
 ---
-layout: redirect
-redirect_url: /2018/10/09/spring-2019-photo-internship.html
-
-title: "What makes a great photo editing intern (Apply now for fall 2018!)"
+layout: post
+title: "What makes a great photo editing intern (Apply now for Spring 2019!)"
 description: "What we're looking for in a photo editing intern on the NPR Visuals team."
 author: Emily Bogle
 email:
@@ -14,7 +12,7 @@ This is not your standard photo internship!
 
 This internship is an opportunity to learn more about the world of photo editing. Our goal isn’t to make you into a photo editor; we view this internship as a chance for you to **understand what it is like to be an editor and improve your visual literacy**, which can help you become a better photographer.
 
-The paid internship runs from Sept. 10, 2018 to Dec. 14, 2018. **Applications are due Sunday, July 15 at 11:59pm ET.**
+The paid internship runs from Jan. 7, 2019, to April 19, 2019. **Applications are due Monday, Oct. 29 at 12 a.m. ET.**
 
 ## What you will be doing
 
@@ -39,6 +37,6 @@ We also want folks who can tell us what they would like to accomplish during the
 
 ## So how do I apply?
 
-Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=4b6e6f4b-3fa9-4d5c-b7af-b43b35c57fae)
+Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=32bb33ca-284f-4fb4-9075-e6fc4eaed13c)
 
-*Into code, design, and data? Check out our [design/development internship](/2018/02/07/summer-2018-designer-developer-internship.html).*
+*Into code, design, and data? Check out our [design/development internship](/2018/10/09/spring-2019-designer-developer-internship.html).*

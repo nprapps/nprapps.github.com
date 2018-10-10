@@ -429,7 +429,17 @@ table tbody + tbody {
 
 table.intern-projects td {
     line-height: 1.4;
-    width: 50%;
+}
+table.intern-projects td:first-child {
+    max-width: 180px;
+    padding-left: 0;
+}
+table.intern-projects td:last-child {
+    padding-left: 20px;
+}
+table.intern-projects img {
+    border: 1px solid #eee;
+    padding: 5px;
 }
 
 /*styling to get books14 images side-by-side*/
