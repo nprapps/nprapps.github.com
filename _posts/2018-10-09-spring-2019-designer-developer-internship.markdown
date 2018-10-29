@@ -13,7 +13,7 @@ We've had journalists who are learning to code, programmers who are learning abo
 
 Does this sound like you? Apply to join our team! It isn't always easy, but it is very rewarding. You'll learn a ton and you'll have a lot of fun.
 
-Our paid internship runs from Jan. 7, 2019, to April 19, 2019. **Applications are due Monday, Oct. 29 at 12 a.m. ET.**
+Our paid internship runs from Jan. 7, 2019, to April 19, 2019. **DEADLINE EXTENDED: Applications are due Monday, Nov. 5 at 12 a.m. ET.**
 
 Here are a few projects our recent interns have worked on:
 

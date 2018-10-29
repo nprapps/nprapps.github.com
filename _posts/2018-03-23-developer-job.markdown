@@ -1,6 +1,8 @@
 ---
-layout: post
-title: "We're hiring a news apps developer!"
+layout: redirect
+redirect_url: /
+
+title: "No Longer Available: We're hiring a news apps developer!"
 description: "Interested in working on software that matters? We're looking for you."
 author: Brittany Mayes
 email: nprapps@npr.org
