@@ -88,6 +88,6 @@ Our new team developer Thomas Wilburn told me that we could have used PostGIS, w
 
 Once I had all the data, I opened up a d3.js-based U.S. map template that my colleague Alyson Hurt developed. I passed the data to Javascript to color each congressional district based on its `GEOID` and the count of locations inside in it. 
 
-The graphic you see repeated 11 times on the story page is actually the same static file iFramed in each time, but with an added parameter of `chartdata=XYZ`. The Javascript reads that parameter then displays the appropriate data.
+The graphic you see repeated 11 times on the story page is actually the same static file iFramed in each time, but with an added parameter of `chartdata=XYZ`. The Javascript reads that parameter then displays the appropriate data. That code is available [here](https://github.com/nprapps/graphics-archive/tree/master/2018/11/district-indicators-20181031).
 
 Complete data (excluding the Brewers Association's proprietary they gave us to use for this piece) is available [here](https://github.com/nprapps/open-data/tree/master/district-portrait).
