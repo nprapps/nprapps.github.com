@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Blue and Red America: How We Built It"
-description: Some QGIS, some Python and a whole lot of Shapefiles
+description: Some QGIS, some Python and a whole lot of shapefiles
 
 author: Sean McMinn
 email: smcminn@npr.org
@@ -21,15 +21,15 @@ twitter: shmcminn
 
 -----------------------------------------------
 
-Fast forward a few weeks, and we've published a series of maps with the headline "[What Do Blue And Red America Have In Common? Craft Breweries — And More](https://www.npr.org/2018/11/09/664377885/what-do-blue-and-red-america-have-in-common-craft-breweries-and-more)". 
+Fast forward a few weeks, and we've published a series of maps with the headline "[What Do Blue And Red America Have In Common? Craft Breweries — And More](https://www.npr.org/2018/11/09/664377885/what-do-blue-and-red-america-have-in-common-craft-breweries-and-more)".
 
 <img src="/img/posts/2018-11-19-elex-18-districts/starbucks.png" alt="starbucks map" width="400"/>
 
-Everyone talks about how divided the country is, especially after elections, so I thought it would be interesting to show what kinds of things Americans have in common, as well as what we don’t. I think we were all surprised that small breweries were almost as common in red districts as they were in blue ones, and I personally wasn’t expecting the gap in farming districts to be quite as big as it was. 
+Everyone talks about how divided the country is, especially after elections, so I thought it would be interesting to show what kinds of things Americans have in common, as well as what we don’t. I think we were all surprised that small breweries were almost as common in red districts as they were in blue ones, and I personally wasn’t expecting the gap in farming districts to be quite as big as it was.
 
 <img src="/img/posts/2018-11-19-elex-18-districts/farms.png" alt="farms map" width="400"/>
 
-This was my first map-heavy project for NPR, and my first time doing shapefile analysis on congressional districts. Though it involved at least a dozen data sources, it wasn't really as hard as it might sound. 
+This was my first map-heavy project for NPR, and my first time doing shapefile analysis on congressional districts. Though it involved at least a dozen data sources, it wasn't really as hard as it might sound.
 
 ### Step 1: Figure out what what's worth mapping
 
@@ -45,7 +45,7 @@ For each of those, I did some variation of Googling "X locations in United State
 
 What was important during this process was getting the precise latitude and longitude for each location we would be including. Since most data sources don't group their records by congressional district, (shoutout to USDA, which [actually does](https://www.nass.usda.gov/Publications/AgCensus/2012/Online_Resources/Congressional_District_Profiles/index.php!)) we would need to do our own analysis of which congressional district they fall in.
 
-That congressional district boundary data is provided as a shapefile from the [Census Bureau](https://www.census.gov/geo/maps-data/data/cbf/cbf_cds.html), and is updated with the most recent redistricted boundaries in Pennsylvania. 
+That congressional district boundary data is provided as a shapefile from the [Census Bureau](https://www.census.gov/geo/maps-data/data/cbf/cbf_cds.html), and is updated with the most recent redistricted boundaries in Pennsylvania.
 
 ### Step 3: Load the data with the most recent congressional district maps
 
@@ -60,7 +60,7 @@ To analyze which districts the locations fall in, I used open-source software ca
 3. In the `Vector` menu, select `Analysis Tools => Count points in polygon`.
     * For the `polygon` option, use the congressional districts shapefile layer.
     * For the `points` option, use the location layer with data points you want to analyze
-    * NOTE: If the two coordinate systems do not align, hit `Close` and reproject the points location layer by right-clicking on it in the Layers Panel and selecting `Set Layer CRS`. Then choose the same `CRS` as the congressional district layer. 
+    * NOTE: If the two coordinate systems do not align, hit `Close` and reproject the points location layer by right-clicking on it in the Layers Panel and selecting `Set Layer CRS`. Then choose the same `CRS` as the congressional district layer.
     * Change the `Count field name` to something descriptive, such as `NUMPOINTSstarbucks`.
     * Click `Run`.
 
@@ -78,7 +78,7 @@ I put each of those new files in a folder and ran a [Python script](https://gith
 
 ### What I could have done differently
 
-Though this whole process wasn’t really that hard, it did involve a lot of steps. That means there was more room for error — whoops, didn’t really mean to click that `Delete` button — and less of an automated process to follow for next time we want to do something like this. 
+Though this whole process wasn’t really that hard, it did involve a lot of steps. That means there was more room for error — whoops, didn’t really mean to click that `Delete` button — and less of an automated process to follow for next time we want to do something like this.
 
 Our new team developer Thomas Wilburn told me that we could have used PostGIS, which I’ve never touched before, to script much of this process. If we didn’t want to add another tool, we could have probably used QGIS to merge the winners for each district with the district location information, cutting the extra Python script out of the process.
 
@@ -86,7 +86,7 @@ Our new team developer Thomas Wilburn told me that we could have used PostGIS, w
 -------------------
 
 
-Once I had all the data, I opened up a d3.js-based U.S. map template that my colleague Alyson Hurt developed. I passed the data to Javascript to color each congressional district based on its `GEOID` and the count of locations inside in it. 
+Once I had all the data, I opened up a d3.js-based U.S. map template that my colleague Alyson Hurt developed. I passed the data to Javascript to color each congressional district based on its `GEOID` and the count of locations inside in it.
 
 The graphic you see repeated 11 times on the story page is actually the same static file iFramed in each time, but with an added parameter of `chartdata=XYZ`. The Javascript reads that parameter then displays the appropriate data. That code is available [here](https://github.com/nprapps/graphics-archive/tree/master/2018/11/district-indicators-20181031).
 
