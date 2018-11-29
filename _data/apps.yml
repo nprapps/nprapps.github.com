@@ -1102,3 +1102,8 @@
   date: "November 11, 2017"
   image: "/img/apps/women-veterans.jpg"
   url: https://www.npr.org/2017/11/11/563064990/6-women-veterans-recall-their-military-service-it-was-just-the-thing-to-do
+- name: "NPR's Book Concierge"
+  description: "NPR's Book Concierge is your guide to 2018's best reads. Use our tags to filter books and find the perfect read for yourself or someone you love."
+  date: "Nov. 27, 2018"
+  image: "/img/books18.jpg"
+  url: http://apps.npr.org/best-books-2018/
