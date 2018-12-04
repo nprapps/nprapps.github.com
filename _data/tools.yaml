@@ -1,13 +1,10 @@
-- name: "Carebot"
-  description: "Meaningful analytics for journalism."
-  url: https://github.com/thecarebot/carebot
+- name: "Hypothesis-Driven Design Guide"
+  description: "A guide to taking a user-centered and evidence-based approach to the planning and design of editorial projects"
+  url: http://n.pr/hdd
   links:
     -
-      title: "Why should I Carebot?"
-      url: http://thecarebot.github.io/Why-should-I-Carebot/
-    -
-      title: "Getting started with Carebot"
-      url: http://thecarebot.github.io/getting-started-with-Carebot/
+      title: "Take our playbook: NPR's guide to building immersive storytelling projects"
+      url: https://training.npr.org/digital/take-our-playbook-nprs-guide-to-building-immersive-storytelling-projects/
 
 - name: "Elex"
   description: "A command-line tool to get election results from the Associated Press Election API v2.0. Elex is designed to be friendly, fast and agnostic to your language/database choices."
@@ -58,6 +55,17 @@
     -
       title: "Baking Chart Data Into Your Page"
       url: /2015/01/28/dailygraphics-json.html
+
+- name: "Carebot"
+  description: "Meaningful analytics for journalism."
+  url: https://github.com/thecarebot/carebot
+  links:
+    -
+      title: "Why should I Carebot?"
+      url: http://thecarebot.github.io/Why-should-I-Carebot/
+    -
+      title: "Getting started with Carebot"
+      url: http://thecarebot.github.io/getting-started-with-Carebot/
 
 - name: "Lunchbox"
   description: "A suite of tools to create images for social media sharing."
