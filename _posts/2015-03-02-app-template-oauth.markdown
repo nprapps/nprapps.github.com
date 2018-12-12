@@ -12,6 +12,8 @@ twitter: nprviz
 
 *Most App Template developers only need to consult the [Configuring your system](#configure) and [Authenticating](#authenticate) sections of this post, provided someone on your team has gone through the process of creating a Google API application and given you credentials.*
 
+*Updated December 12, 2018 by [Thomas Wilburn](https://twitter.com/thomaswilburn) to match Google API Console changes.*
+
 ## Why OAuth?
 
 Prior to this change, the App Template accessed Google spreadsheets with a user account and password. These account details were accessed from environment variables stored in [cleartext](http://en.wikipedia.org/wiki/Plaintext). Storing a password in cleartext is a bad security practice, and the method led to other dubious practices like sharing credentials for a common Google account.
@@ -24,35 +26,39 @@ There are many advantages to this approach. These access tokens can be revoked o
 
 To use the new OAuth feature of the App Template, you will need to create a Google API project and generate credentials. Typically, you’ll only need to do this once for your entire organization.
 
-Visit the [Google Developer’s Console](https://console.developers.google.com/) and click “Create Project”.
+Visit the [Google Developer’s Console](https://console.developers.google.com/). If you've used this before, you can use the project dropdown to create a new project--otherwise, it will prompt you to create your first project.
 
-<img src="/img/posts/oauth-create-project.png"/>
+<img src="/img/posts/oauth-create-project.png">
 
 Give the project a name for the API dashboard and wait for the project to be created:
 
-<img src="/img/posts/oauth-spin-spin-spin.png"/>
+<img src="/img/posts/oauth-spin-spin-spin.png">
 
-Give the project a name again (oh, technology!) by clicking “Consent screen” in the left hand toolbar:
+Once inside, you'll need to create the credentials, via the top console menu.
 
-<img src="/img/posts/oauth-consent-screen.png"/>
+<img src="/img/posts/oauth-credentials-menu.png">
 
-Enable the Drive API by clicking “APIs” in the left hand toolbar, searching for “Drive” and enabling the Drive API:
+Before you can create OAuth credentials, you have to set up the project name for the login screen (even though you've already provided a name):
 
-<img src="/img/posts/oauth-api-screen.png"/>
+<img src="/img/posts/oauth-consent-screen.png">
 
-You can optionally disable the default APIs if you’d like.
+Once that's done, you can add the API.
 
-Finally, create client credentials by clicking “Credentials” in the left hand toolbar and then clicking “Create New Client ID”:
+Enable the Drive API by clicking "Dashboard" in the left hand toolbar, and clicking the "Enable APIs and Services" button. Drive is often one of the "featured" APIs, but if not you can search for it.
 
-<img src="/img/posts/oauth-client-id-create.png"/>
+<img src="/img/posts/oauth-api-screen.png">
+
+Finally, go back to the Credentials section of the top menu and click “Create credentials”. From the drop-down, select "OAuth client ID".
+
+<img src="/img/posts/oauth-create-credentials-panel.png">
 
 Make sure “Web application” is selected. Set the Javascript origins to “http://localhost:8000”, “http://127.0.0.1:8000”, "http://localhost:8888" and "http://127.0.0.1:8888". Set the Authorized Redirect URIs to “http://localhost:8000/authenticate/”, “http://127.0.0.1:8000/authenticate/”, "http://localhost:8888/authenticate/" and "http://127.0.0.1:8888".
 
-<img src="/img/posts/oauth-create-details.png"/>
+<img src="/img/posts/oauth-create-details.png">
 
 Now you have some credentials:
 
-<img src="/img/posts/oauth-get-creds.png"/>
+<img src="/img/posts/oauth-get-creds.png">
 
 <a name="configure"></a>
 ## Configuring your system
@@ -74,19 +80,19 @@ As you can see above, you also need to set a random string to act as cryptograph
 
 Now, run `fab app` in your App Template project and go to [localhost:8000](http://localhost:8000) in your web browser. You’ll be asked to allow the application to access Google Drive on behalf of your account:
 
-<img src="/img/posts/oauth-process-start.png"/>
+<img src="/img/posts/oauth-process-start.png">
 
 If you use multiple Google accounts, you might need to pick one:
 
-<img src="/img/posts/oauth-pick-an-account.png"/>
+<img src="/img/posts/oauth-pick-an-account.png">
 
 Google would like you to know what you’re getting into:
 
-<img src="/img/posts/oauth-allow-access.png"/>
+<img src="/img/posts/oauth-allow-access.png">
 
 That’s it. You’re good to go!
 
-<img src="/img/posts/oauth-success.png"/>
+<img src="/img/posts/oauth-success.png">
 
 ## Bonus: Automatically reloading the spreadsheet
 
