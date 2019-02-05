@@ -1,8 +1,6 @@
 ---
-layout: redirect
-redirect_url: /2019/02/05/summer-2019-designer-developer-internship.html
-
-title: "Be our design/dev intern for spring 2019!"
+layout: post
+title: "Be our design/dev intern for summer 2019!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you draw, design, or write code? We are looking for you."
 author: Alyson Hurt
 email: nprapps@npr.org
@@ -15,7 +13,7 @@ We've had journalists who are learning to code, programmers who are learning abo
 
 Does this sound like you? Apply to join our team! It isn't always easy, but it is very rewarding. You'll learn a ton and you'll have a lot of fun.
 
-Our paid internship runs from Jan. 7, 2019, to April 19, 2019. **DEADLINE EXTENDED: Applications are due Monday, Nov. 5 at 12 a.m. ET.**
+Our paid internship runs from May 20 to Aug. 9. **Applications are due Monday, March 4 at 5 p.m. ET.**
 
 Here are a few projects our recent interns have worked on:
 
@@ -34,6 +32,6 @@ To be eligible for an internship with NPR, you must be a student (undergraduate 
 
 ## Here's how to apply
 
-Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then ~~[apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/af823b19-a43b-4cda-b6c2-c06508d84cf6/OpportunityDetail?opportunityId=f4d8ea0d-9988-40b5-9efe-e32694cfa920)~~ _The application deadline for this internship has passed._
+Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=1c8a60c1-d6e9-4bfe-8e7f-6830ae9692f3)
 
-*Into photography? Check out our [photo editing internship](/2018/10/09/spring-2019-photo-internship.html).*
+*Into photography? Check out our [photo editing internship](/2019/02/05/summer-2019-photo-internship.html).*
