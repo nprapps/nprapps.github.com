@@ -7,7 +7,7 @@ author: David Eads
 email: deads@npr.org
 twitter: eads
 ---
-_(This post was edited in October 2018.)_
+_(This post was edited in Feb. 2019.)_
 
 We want to see your best work.
 
@@ -63,9 +63,9 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-Our paid Spring 2019 internship program runs from Jan. 7, 2019, to April 19, 2019. **Applications are due Monday, Oct. 29 at 12 a.m. ET.** Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for much more info on dates, pay, etc.
+Our paid Summer 2019 internship program runs from May 20 to Aug. 9. **Applications are due Monday, March 4 at 5 p.m. ET.** Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for info on dates, pay, etc.
 
-- ~~[Photo editing](/2018/10/09/spring-2019-photo-internship.html)~~ _The application deadline for this internship has passed._
-- [Design and code](/2018/10/09/spring-2019-designer-developer-internship.html)
+- [Photo editing](/2019/02/05/summer-2019-photo-internship.html)
+- [Design and code](/2019/02/05/summer-2019-designer-developer-internship.html)
 
 We hope to hear from you!

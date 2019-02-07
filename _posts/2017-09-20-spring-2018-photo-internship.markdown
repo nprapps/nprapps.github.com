@@ -1,6 +1,7 @@
 ---
 layout: redirect
-redirect_url: /2018/02/16/summer-2018-photo-internship.html
+redirect_url: /2019/02/05/summer-2019-photo-internship.html
+
 title: "What makes a great photo editing intern (Apply now for Spring 2018!)"
 description: "What we're looking for in a photo editing intern on the NPR Visuals team."
 author: Emily Bogle

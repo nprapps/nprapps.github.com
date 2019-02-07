@@ -1,9 +1,9 @@
 ---
 layout: redirect
-redirect_url: /2016/04/08/fall-2016-designer-developer-internship.html
+redirect_url: /2019/02/05/summer-2019-designer-developer-internship.html
+
 title: "Be our design/code/??? intern for summer 2016!"
 description: "Hey! You! With the weird talent!"
-
 author: David Eads
 email: deads@npr.org
 twitter: eads

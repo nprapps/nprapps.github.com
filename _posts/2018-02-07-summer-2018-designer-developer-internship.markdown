@@ -1,6 +1,7 @@
 ---
 layout: redirect
-redirect_url: /2018/06/19/fall-2018-designer-developer-internship.html
+redirect_url: /2019/02/05/summer-2019-designer-developer-internship.html
+
 title: "Be our design/code/?? intern for summer 2018!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you draw, design, or write code? We are looking for you."
 author: Juan Elosua and Brittany Mayes
