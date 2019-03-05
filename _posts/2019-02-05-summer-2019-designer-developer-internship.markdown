@@ -32,6 +32,6 @@ To be eligible for an internship with NPR, you must be a student (undergraduate 
 
 ## Here's how to apply
 
-Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now!](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=1c8a60c1-d6e9-4bfe-8e7f-6830ae9692f3)
+Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then ~~apply now!~~. **The application deadline has passed.**
 
 *Into photography? Check out our [photo editing internship](/2019/02/05/summer-2019-photo-internship.html).*

@@ -65,7 +65,7 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 Our paid Summer 2019 internship program runs from May 20 to Aug. 9. **Applications are due Monday, March 4 at 5 p.m. ET.** Check out [our careers site](http://www.npr.org/about-npr/181881227/internships-at-npr) for info on dates, pay, etc.
 
-- [Photo editing](/2019/02/05/summer-2019-photo-internship.html)
-- [Design and code](/2019/02/05/summer-2019-designer-developer-internship.html)
+- ~~Photo editing~~ **The application deadline has passed.**
+- ~~Design and code~~  **The application deadline has passed.**
 
 We hope to hear from you!
