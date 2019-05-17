@@ -1106,4 +1106,9 @@
   description: "NPR's Book Concierge is your guide to 2018's best reads. Use our tags to filter books and find the perfect read for yourself or someone you love."
   date: "Nov. 27, 2018"
   image: "/img/books18.jpg"
-  url: http://apps.npr.org/best-books-2018/
+  url: https://apps.npr.org/best-books-2018/
+- name: "White Lies"
+  description: "A visual introduction to NPR's investigative podcast about the death of Jim Reeb in 1965."
+  date: "May 14, 2019"
+  image: "/img/whitelies.jpg"
+  url: https://apps.npr.org/white-lies/

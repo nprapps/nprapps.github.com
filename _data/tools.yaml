@@ -33,6 +33,18 @@
       title: "The Pympocalypse"
       url: /2015/10/30/pympocalypse.html
 
+- name: "Interactive Template"
+  url: "https://github.com/nprapps/interactive-template"
+  description: "A modern site generator with live reload and support for loading data from ArchieML, Google Docs/Sheets, CSV, JSON, and more"
+
+- name: "Dailygraphics Next"
+  url: https://github.com/nprapps/dailygraphics-next
+  description: "The successor to Dailygraphics, rewritten for modern development"
+  links:
+    -
+      title: "Dailygraphics: Updates And Upgrades For 2019 And Beyond"
+      url: "http://localhost:4000/2019/01/04/dailygraphics-update-and-next.html"
+
 - name: "Dailygraphics"
   url: https://github.com/nprapps/dailygraphics
   description: "A framework for creating and deploying responsive graphics suitable for publishing inside a CMS with pym.js. It includes d3.js templates for many different types of charts."
