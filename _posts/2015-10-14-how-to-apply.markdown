@@ -63,7 +63,7 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-Our paid Fall 2019 internship program runs from Sept. 9 to Dec. 13. **Applications are due Friday, July 12 at 5 p.m. ET.** Check out [our careers site](https://www.npr.org/about-npr/181881227/internships-at-npr/) for info on dates, pay, etc.
+Our paid Fall 2019 internship program runs from Sept. 9 to Dec. 13. **DEADLINE EXTENDED: Applications are due Friday, July 19 at 5 p.m. ET.** Check out [our careers site](https://www.npr.org/about-npr/181881227/internships-at-npr/) for info on dates, pay, etc.
 
 - [Photo editing](/2019/06/14/fall-2019-photo-internship.html)
 - [Design and code](/2019/06/14/fall-2019-designer-developer-internship.html)

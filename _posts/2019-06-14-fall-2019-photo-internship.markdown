@@ -12,7 +12,7 @@ This is not your standard photo internship!
 
 This internship is an opportunity to learn more about the world of photo editing. Our goal isn’t to make you into a photo editor; we view this internship as a chance for you to **understand what it is like to be an editor and improve your visual literacy**, which can help you become a better photographer.
 
-Our paid internship runs from Sept. 9 to Dec. 13. **Applications are due Friday, July 12 at 5 p.m. ET.**
+Our paid internship runs from Sept. 9 to Dec. 13. **DEADLINE EXTENDED: Applications are due Friday, July 19 at 5 p.m. ET.**
 
 ## What you will be doing
 

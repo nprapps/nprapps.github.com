@@ -13,7 +13,7 @@ We've had journalists who are learning to code, programmers who are learning abo
 
 Does this sound like you? Apply to join our team! It isn't always easy, but it is very rewarding. You'll learn a ton and you'll have a lot of fun.
 
-Our paid internship runs from Sept. 9 to Dec. 13. **Applications are due Friday, July 12 at 5 p.m. ET.**
+Our paid internship runs from Sept. 9 to Dec. 13. **DEADLINE EXTENDED: Applications are due Friday, July 19 at 5 p.m. ET.**
 
 Here are a few projects our recent interns have worked on:
 
