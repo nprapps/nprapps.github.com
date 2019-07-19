@@ -25,6 +25,8 @@ You have strong news judgement and a sense for what makes a good visual story th
 
 You are a team player. You’re willing to collaborate in an open environment, working with people across the newsroom with a variety of skillsets and areas of expertise. You can explain and defend your ideas, and you are open to critique and alternative approaches. When offering feedback to colleagues, you can articulate story, design and code suggestions in a helpful and supportive way.
 
+In addition to the core skills required to do your job, you might also have expertise in areas like user experience design, data analysis, cartography or working with AP election results.
+
 You can produce quality work on deadline. We turn around projects on time scales that run from a couple hours to a couple weeks to a couple months. You need to be able to assess what approaches will best serve a given story, what work realistically can be executed in the time available and then execute that work on time.
 
 You consider yourself a problem solver. You can dive into existing projects to provide maintenance and support. You can face unknown issues in unknown projects methodically, debugging until you find the cause of the issue, and implementing the best possible solution once diagnosed. You’re also great at documentation, whether it’s new work or modifications to existing.
@@ -33,7 +35,7 @@ You bring a critical and individual perspective to the team. NPR Visuals is comm
 
 ## About the team
 
-We’re a small group of designers, developers, photographers, videographers, animators and photo editors, developers and designers in the NPR newsroom who make visual journalism. Check out our [github account](https://github.com/nprapps) and [team blog](https://blog.apps.npr.org/) to see more of the projects we work on.
+We’re a small group of designers, developers, photographers, videographers, animators and photo editors, developers and designers in the NPR newsroom who make visual journalism. Check out our [Github account](https://github.com/nprapps) and [team blog](https://blog.apps.npr.org/) to see more of the projects we work on.
 
 ## How to apply
 
