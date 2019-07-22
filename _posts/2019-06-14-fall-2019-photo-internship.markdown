@@ -37,6 +37,6 @@ We also want folks who can tell us what they would like to accomplish during the
 
 ## So how do I apply?
 
-Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=2aeed2b5-75c4-4a10-95cb-5cf7e4435c91)!
+Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then ~~apply now!~~ _(The Fall 2019 application period has ended.)_
 
 *Into code, design, and data? Check out our [design/development internship](/2019/06/14/fall-2019-designer-developer-internship.html).*
