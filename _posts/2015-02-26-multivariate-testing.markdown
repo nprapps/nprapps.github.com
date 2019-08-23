@@ -8,7 +8,7 @@ email: visuals@npr.org
 twitter: nprviz
 ---
 
-[Multivariate and AB testing](http://en.wikipedia.org/wiki/A/B_testing) are generally used to iterate on products over time. But what do you do when your product is always different, like the visual stories we tell? 
+[Multivariate and AB testing](http://en.wikipedia.org/wiki/A/B_testing) are generally used to iterate on products over time. But what do you do when your product is always different, like the visual stories we tell?
 
 For the past year, NPR Visuals has been iterating on a story format for picture stories that works like a slideshow, presenting full-width cards with photos, text and any other HTML elements. We have made various tweaks to the presentation, but since each story is substantially different, it's hard to know definitively what works.
 
@@ -16,7 +16,7 @@ With three stories approaching launch in the middle of February (["A Brother And
 
 To find out, we conducted live experiments using multivariate testing, a research method that allows us to show users slightly different versions of the same page and assess which version people respond to more positively.
 
-In multivariate testing, you determine a control scenario (something you already know) and form a hypothesis that a variation of that scenario would perform better than the control. 
+In multivariate testing, you determine a control scenario (something you already know) and form a hypothesis that a variation of that scenario would perform better than the control.
 
 (**Note**: You will see the term multivariate testing, A/B testing or split testing to discuss experiments like this. While there is a technical difference between the implementation of these various methods, they all seek to accomplish the same thing so we are not going to worry too much about accuracy of the label for the purposes of discussing what we learned.)
 
@@ -37,22 +37,22 @@ In this blog post, we will show the results, how we determined them and what we 
 
 ## Process
 
-When a user reached the conclusion slide, we sent an event to Google Analytics to log which set of tests ran. 
+When a user reached the conclusion slide, we sent an event to Google Analytics to log which set of tests ran.
 
-We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the subsequent actions (support link, each of the follow links, and the feedback email link). 
+We also tracked clicks on the "Yes" and "No" buttons of the Care Question, and clicks on the subsequent actions (support link, each of the follow links, and the feedback email link).
 
 <img src="/img/mvt-care-question.png" alt="Example Care Question" />
 <p><small>The Care Question used in A Brother And Sister In Love</small></p>
 
-Determining whether the results were statistically significant required some pretty complex calculations, which you can read about [here](http://20bits.com/article/statistical-analysis-and-ab-testing). Luckily, Hubspot provides a [simple-to-use calculator](http://www.hubspot.com/ab-test-calculator) to determine the statistical significance of your results. 
+Determining whether the results were statistically significant required some pretty complex calculations, which you can read about [here](http://20bits.com/article/statistical-analysis-and-ab-testing). Luckily, Hubspot provides a [simple-to-use calculator](http://www.hubspot.com/ab-test-calculator) to determine the statistical significance of your results.
 
 Significance is determined by the confidence interval, or how confident you can be that your numbers are not determined simply by randomness. Usually, a 95% confidence interval or greater is high enough to draw a conclusion. Using the calculator, we determined whether the _difference in conversion rates_ (where conversion rate is defined as clicks over the number of times a particular test was run) was statistically significant.
 
 ## "A Brother And Sister In Love"
 
-The test for ["A Brother And Sister In Love"](http://apps.npr.org/lookatthis/posts/lovestory/) was actually two separate A/B tests at the same time: whether a user was prompted to follow Look At This on social media or support NPR by donating. For each scenario, users were prompted with the Care Question or not. The Care Question was "Did you love this story?"
+The test for ["A Brother And Sister In Love"](https://apps.npr.org/lookatthis/posts/lovestory/) was actually two separate A/B tests at the same time: whether a user was prompted to follow Look At This on social media or support NPR by donating. For each scenario, users were prompted with the Care Question or not. The Care Question was "Did you love this story?"
 
-This breaks down into two tests, a "follow test" and a "support test", with a control and variation scenario for each: 
+This breaks down into two tests, a "follow test" and a "support test", with a control and variation scenario for each:
 
 ### Follow test, control
 ![The follow prompt, no question beforehand](/img/posts/mvt-lovestory-follow.png)
@@ -73,11 +73,11 @@ Finally, if a user clicked no, we provided a prompt to email us feedback.
 
 <div id="responsive-embed-mvt-lovestory">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
+<script src="https://apps.npr.org/dailygraphics/graphics/mvt-lovestory/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-lovestory',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-lovestory/child.html',
+        'https://apps.npr.org/dailygraphics/graphics/mvt-lovestory/child.html',
         {}
     );
 </script>
@@ -86,7 +86,7 @@ We were able to determine with 99.90% confidence that prompting a user with a qu
 
 ## "Life After Death"
 
-One week later, after we had seen the preliminary results of our test from "A Brother And Sister In Love", we ran another test on ["Life After Death"](apps.npr.org/life-after-death). This was not a story associated with Look At This, and there was not an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
+One week later, after we had seen the preliminary results of our test from "A Brother And Sister In Love", we ran another test on ["Life After Death"](https://apps.npr.org/life-after-death). This was not a story associated with Look At This, and there was not an equivalent NPR property to follow, so we decided to hone our test on converting users to the donate page.
 
 ![An example of one of our question variations](/img/mvt-life-after-death-question-A.png)
 
@@ -101,11 +101,11 @@ For this test, we tested each question against the control scenario -- presentin
 
 <div id="responsive-embed-mvt-liberia">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
+<script src="https://apps.npr.org/dailygraphics/graphics/mvt-liberia/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-liberia',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-liberia/child.html',
+        'https://apps.npr.org/dailygraphics/graphics/mvt-liberia/child.html',
         {}
     );
 </script>
@@ -122,17 +122,17 @@ We left the same Care Question, "Did you love this story?", and maintained our L
 
 <div id="responsive-embed-mvt-harris">
 </div>
-<script src="http://apps.npr.org/dailygraphics/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
+<script src="https://apps.npr.org/dailygraphics/graphics/mvt-harris/js/lib/pym.js" type="text/javascript"></script>
 <script type="text/javascript">
 
     var pymParent = new pym.Parent(
         'responsive-embed-mvt-harris',
-        'http://apps.npr.org/dailygraphics/graphics/mvt-harris/child.html',
+        'https://apps.npr.org/dailygraphics/graphics/mvt-harris/child.html',
         {}
     );
 </script>
 
-Once again, we determined that giving users a question before a prompt to take action is a more successful path to conversion (1.7 times better for the Follow action and 13.5 times for the Support action). 
+Once again, we determined that giving users a question before a prompt to take action is a more successful path to conversion (1.7 times better for the Follow action and 13.5 times for the Support action).
 
 ## Lessons Learned
 
@@ -146,12 +146,12 @@ We learned a lot in a short amount of time: some things about the stories themse
 
 * Given the nature of the traffic for our stories (2-4 days of high volume followed by a long tail of decreased traffic), we need to make sure statistical significance is achieved within the first few days, as running a test for a longer period of time doesn't add much at all.
 
-* Calculating the right sample size for a test is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect (since it varies from story to story), so we found we don't need to do that at all. Instead, we can simply expose the entire audience for a story to the test we run and make the most of it as soon as possible. 
+* Calculating the right sample size for a test is always a concern and particularly difficult when you don't have a reliable cadance for what traffic to expect (since it varies from story to story), so we found we don't need to do that at all. Instead, we can simply expose the entire audience for a story to the test we run and make the most of it as soon as possible.
 
-* We made several mistakes while analyzing the data simply because this is not something we do every day. Having multiple people look at the analysis as it was happening, helped us both correct errors and get a better understanding of how to make sense of the numbers. 
+* We made several mistakes while analyzing the data simply because this is not something we do every day. Having multiple people look at the analysis as it was happening, helped us both correct errors and get a better understanding of how to make sense of the numbers.
 
-* Google Analytics automatically samples your default reports if your organization's overall sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture of your audience, so request an unsampled report (available from [GA Premium](https://www.google.com/analytics/premium/) only) so you can ensure your test is valid and reliable. 
+* Google Analytics automatically samples your default reports if your organization's overall sessions exceed 500,000. To analyze tests like these you will want to make sure you have a full picture of your audience, so request an unsampled report (available from [GA Premium](https://www.google.com/analytics/premium/) only) so you can ensure your test is valid and reliable.
 
-* Also, with Google Analytics dropping [support for custom variables](http://developers.google.com/analytics/devguides/collection/upgrade/faq#custom-vars), use distinct events to identify the variations of your test instead.
+* Also, with Google Analytics dropping [support for custom variables](https://developers.google.com/analytics/devguides/collection/upgrade/faq#custom-vars), use distinct events to identify the variations of your test instead.
 
 
