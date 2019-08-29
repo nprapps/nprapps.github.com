@@ -1117,3 +1117,8 @@
   date: "Aug. 5, 2019"
   image: "/img/mongolia.jpg"
   url: https://apps.npr.org/mongolia/
+- name: "Plastics: What's Recyclable, What Becomes Trash — And Why"
+  description: "Knowing what to recycle is confusing. Here's a look at the process, from store to recycling facility."
+  date: "Aug. 21, 2019"
+  image: "/img/plastics.jpg"
+  url: https://apps.npr.org/plastics-recycling/
