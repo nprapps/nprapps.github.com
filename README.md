@@ -9,10 +9,17 @@ nprapps.github.com
 
 Matt Stiles wrote a helpful post explaining [how to get set up](http://blog.apps.npr.org/2012/11/08/npr-news-apps-blog.html).
 
-Once you have Jekyll installed, run this command to start up the development server and have it automatically regenerate files:
+Once you have Jekyll installed, run this to install dependencies:
+ 
 
 ```
-jekyll serve --watch
+$ bundle update --bundler
+```
+
+Then run this to set up the development server and have it automatically regenerate files::
+
+```
+$ bundle exec jekyll serve --watch
 ```
 
 You can see it in your browser here:
