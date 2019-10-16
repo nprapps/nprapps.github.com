@@ -1,8 +1,6 @@
 ---
-layout: redirect
-redirect_url: /2019/10/15/winter-2020-designer-developer-internship.html
-
-title: "Be our design/dev intern for fall 2019!"
+layout: post
+title: "Be our design/dev intern for winter/spring 2020!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you design or write code? We are looking for you."
 author: Alyson Hurt
 email: nprapps@npr.org
@@ -15,11 +13,12 @@ We've had journalists who are learning to code, programmers who are learning abo
 
 Does this sound like you? Apply to join our team! It isn't always easy, but it is very rewarding. You'll learn a ton and you'll have a lot of fun.
 
-Our paid internship runs from Sept. 9 to Dec. 13. **DEADLINE EXTENDED: Applications are due Friday, July 19 at 5 p.m. ET.**
+Our paid internship runs from Jan. 13 to April 17. **Applications are due Monday, Nov. 4 at 5 p.m. ET.**
 
 Here are a few projects our recent interns have worked on:
 
 {:.intern-projects}
+| [![Mongolia: Losing The Eternal Blue Sky](/img/mongolia.jpg)](https://apps.npr.org/mongolia/) | [Nick Underwood](https://twitter.com/mulletmapping)<br>(Summer 2019) |
 | [![China Unbound: What An Emboldened China Means For The World](/img/posts/intern-china.png)](https://www.npr.org/2018/10/02/653312942/china-unbound-what-an-emboldened-china-means-for-the-world) | [Vanessa Qian](https://twitter.com/qian_v)<br>(Summer 2018) |
 | [![The Business Of Being Cardi B](/img/intern-app-charti-b.png)](https://www.npr.org/sections/therecord/2018/04/05/599592959/the-business-of-being-cardi-b) | [Jasmine Mithani](https://twitter.com/jazzmyth)<br>(Spring 2018) |
 | [![The Pigeon Racers Of Indonesia](/img/posts/intern-app-hoversound.jpg)](https://www.npr.org/sections/parallels/2017/11/03/561560174/the-pigeon-racers-of-indonesia) | [Matthew Zhang](https://twitter.com/_mazhang)<br>(Fall 2017) |
@@ -34,6 +33,6 @@ To be eligible for an internship with NPR, you must be a student (undergraduate 
 
 ## Here's how to apply
 
-Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then ~~apply now!~~ _(The Fall 2019 application period has ended.)_
+Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=3ce99e5e-b683-4510-8e6a-fc54ba7459b0)!
 
-*Into photography? Check out our [photo editing internship](/2019/06/14/fall-2019-photo-internship.html).*
+*Into photography? Check out our [photo editing internship](/2010/10/15/winter-2020-photo-internship.html).*

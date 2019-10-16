@@ -1,8 +1,6 @@
 ---
-layout: redirect
-redirect_url: /2019/10/15/winter-2020-photo-internship.html
-
-title: "What makes a great photo editing intern (Apply now for Fall 2019!)"
+layout: post
+title: "What makes a great photo editing intern (Apply now for Winter/Spring 2020!)"
 description: "What we're looking for in a photo editing intern on the NPR Visuals team."
 author: Emily Bogle
 email:
@@ -14,7 +12,7 @@ This is not your standard photo internship!
 
 This internship is an opportunity to learn more about the world of photo editing. Our goal isn’t to make you into a photo editor; we view this internship as a chance for you to **understand what it is like to be an editor and improve your visual literacy**, which can help you become a better photographer.
 
-Our paid internship runs from Sept. 9 to Dec. 13. **DEADLINE EXTENDED: Applications are due Friday, July 19 at 5 p.m. ET.**
+Our paid internship runs from Jan. 13 to April 17. **Applications are due Monday, Nov. 4 at 5 p.m. ET.**
 
 ## What you will be doing
 
@@ -22,7 +20,7 @@ Our paid internship runs from Sept. 9 to Dec. 13. **DEADLINE EXTENDED: Applicati
 
 * **Photography:** Depending on the news cycle, there may be opportunities to photograph DC-area assignments. This can mean you’d have one or two shoots in a week, or maybe just a couple shoots in a month. You’ll work closely with a radio or web reporter while out in the field, and a photo editor will go through your work and provide feedback for each assignment. There will also be a chance to work on portraiture and still lifes in our studio.
 
-* We also encourage each intern to create a self-directed project to work on throughout the semester. It can be an [Instagram series](https://www.instagram.com/p/7-IKSkuIx5/), [video](http://www.npr.org/event/music/187282451/ok-go-a-tiny-desk-concert-in-223-takes), [photo essay](http://www.npr.org/sections/parallels/2014/08/16/340412191/whos-a-citizen-the-question-dividing-the-island-of-hispaniola), [text story](http://www.npr.org/sections/alltechconsidered/2014/11/19/365220051/marine-corps-finds-it-tough-to-shut-down-sexist-facebook-groups) or anything in-between. You can work [independently](http://www.npr.org/sections/codeswitch/2014/01/23/211657513/what-sami-discovered-on-the-way-to-becoming-a-man-of-color) or with [another intern](http://www.npr.org/sections/thesalt/2015/08/10/426741473/healthy-eaters-strong-minds-what-school-gardens-teach-kids) or [reporter](http://www.npr.org/2013/06/23/189202775/same-sex-couple-seeks-immigration-relief-from-high-court).
+* We also encourage each intern to create a self-directed project to work on throughout the semester. It can be an [Instagram Story](https://www.instagram.com/stories/highlights/18100985839046937/), [video](https://www.npr.org/2013/04/12/176913038/short-and-sweet-celebrating-d-c-s-cherry-blossoms-with-haiku), [photo essay](https://www.npr.org/2016/08/05/488518797/at-the-portrait-gallery-students-tell-the-stories-that-pictures-cant), [picture show story](https://www.npr.org/sections/pictureshow/2019/08/18/736843955/finding-identity-without-gender-a-queer-photographers-journey) or anything in-between. You can work [independently](https://www.npr.org/2019/08/11/747018934/wushu-coaches-help-chinese-students-master-literacy-and-become-a-better-person) or with [another intern](https://www.npr.org/2017/11/11/563064990/6-women-veterans-recall-their-military-service-it-was-just-the-thing-to-do) or [reporter](https://www.npr.org/2019/10/06/765716441/the-lasting-legacy-of-bob-ross-and-his-colorful-world-of-happy-accidents).
 
 You will be part of NPR’s intern program, which includes 40-50 interns each semester, across different departments. There will be coordinated training and intern-focused programming throughout the semester, which includes meeting NPR radio hosts, career development and other opportunities. As an intern, you will be treated as a member of the team. Many NPR employees are former interns and they’re always willing to help current interns.
 
@@ -39,6 +37,6 @@ We also want folks who can tell us what they would like to accomplish during the
 
 ## So how do I apply?
 
-Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then ~~apply now!~~ _(The Fall 2019 application period has ended.)_
+Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=34fb5644-25f1-44a3-9b6e-53a788a6ecf5)!
 
-*Into code, design, and data? Check out our [design/development internship](/2019/06/14/fall-2019-designer-developer-internship.html).*
+*Into code, design, and data? Check out our [design/development internship](/2019/10/15/winter-2020-designer-developer-internship.html).*
