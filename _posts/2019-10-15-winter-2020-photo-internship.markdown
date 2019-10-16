@@ -39,4 +39,4 @@ We also want folks who can tell us what they would like to accomplish during the
 
 Does this sound like you? Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=34fb5644-25f1-44a3-9b6e-53a788a6ecf5)!
 
-*Into code, design, and data? Check out our [design/development internship](/2019/06/14/fall-2019-designer-developer-internship.html).*
+*Into code, design, and data? Check out our [design/development internship](/2019/10/15/winter-2020-designer-developer-internship.html).*
