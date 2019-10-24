@@ -39,4 +39,4 @@ We’re a small group of designers, developers, photographers, videographers, an
 
 ## How to apply
 
-**If this sounds exciting to you, please email [nprapps@npr.org](mailto:nprapps@npr.org) and include your resume, cover letter, GitHub profile and links to a few projects you're especially proud of.** (If sharing via GitHub is not an option for you, please provide us another way to evaluate your technical skills. This might entail sharing a side project or submitting a code sample in a different form.) **Apply by August 1, 2019.**
+**If this sounds exciting to you, please email [nprapps@npr.org](mailto:nprapps@npr.org) and include your resume, cover letter, GitHub profile and links to a few projects you're especially proud of.** (If sharing via GitHub is not an option for you, please provide us another way to evaluate your technical skills. This might entail sharing a side project or submitting a code sample in a different form.)
