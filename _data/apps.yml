@@ -1122,3 +1122,8 @@
   date: "Aug. 21, 2019"
   image: "/img/plastics.jpg"
   url: https://apps.npr.org/plastics-recycling/
+- name: "After The Water"
+  description: "When a flash flood ripped through Old Ellicott City in Maryland, residents thought it was a freak occurrence. Instead, it was a hint about the future. And adapting to that future has been painful."
+  date: "Nov. 7, 2019"
+  image: "/img/ellicott.jpg"
+  url: https://apps.npr.org/ellicott-city/
