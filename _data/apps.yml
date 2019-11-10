@@ -1112,6 +1112,8 @@
   date: "May 14, 2019"
   image: "/img/whitelies.jpg"
   url: https://apps.npr.org/white-lies/
+  blog_title: "How We Built White Lies"
+  blog_url: http://blog.apps.npr.org/2019/05/17/white-lies.html
 - name: "Losing The Eternal Blue Sky"
   description: "Meet a changing Mongolia. Rivers are dry. Pastureland is giving way to mines. And wintertime smog obscures the famed blue sky. How did the country get here? It’s a story of internal migration and economic transformation in an era of climate change."
   date: "Aug. 5, 2019"
@@ -1122,6 +1124,13 @@
   date: "Aug. 21, 2019"
   image: "/img/plastics.jpg"
   url: https://apps.npr.org/plastics-recycling/
+- name: "As Rising Heat Bakes U.S. Cities, The Poor Often Feel It Most"
+  description: "Hotter neighborhoods tend to be poorer in dozens of major U.S. cities. That extra heat can have serious health effects for those living there."
+  date: "Sept. 3, 2019"
+  image: "/img/apps/heat-poverty.jpg"
+  url: https://www.npr.org/2019/09/03/754044732/as-rising-heat-bakes-u-s-cities-the-poor-often-feel-it-most
+  blog_title: "How We Did It: Heat And Income In U.S. Cities"
+  blog_url: http://blog.apps.npr.org/2019/09/27/heat-income.html
 - name: "The Whistleblower Complaint Has Largely Been Corroborated. Here's How."
   description: "Read an annotation of the complaint that set off the formal impeachment inquiry in the House of Representatives, with references to congressional testimony, public statements and news reports."
   date: "Nov. 9, 2019"

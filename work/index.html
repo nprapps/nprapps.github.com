@@ -37,6 +37,9 @@ title: 'Our work'
                             {% if app.github_url != null %}
                             <li><a href="{{ app.github_url }}">Source on GitHub &#8594;</a></li>
                             {% endif %}
+                            {% if app.blog_url != null %}
+                            <li>Blog post: <a href="{{ app.blog_url }}">{{ app.blog_title }}</a></li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>
