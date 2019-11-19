@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Flow Control: Building Accessible Video for 'After the Water'"
+title: "Flow Control: Building Accessible Video for &lsquo;After the Water&rsquo;"
 description: "Here's how we designed large-format video that works for all users"
 author: Thomas Wilburn
 email: twilburn@npr.org
