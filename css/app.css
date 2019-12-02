@@ -121,6 +121,13 @@ article img {
 
 }
 
+/* whale map comic styles */
+article img[src*="2019-11-25-whale-maps-comic"] {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+}
+
 .post-meta {
     color:#666;
     font-size: 12px;
