@@ -12,9 +12,9 @@ twitter: thomaswilburn
 > "Outside of a dog, a book is man's best friend. Inside of a dog, it's too dark to read."
 > -- Groucho Marx
 
-In 2013, NPR Books and the Visuals team published [the first Book Concierge](https://blog.apps.npr.org/2013/12/10/the-book-concierge.html) as a way for listeners to find all of NPR's favorite titles for the year in one place. Every year since then, we've published another set of 300 to 400 books, each as its own separate page. That's great if you live in the moment — but what if you want to leisurely flip through recommendations from every year in one easy place?
+In 2013, NPR Books and the Visuals team published [the first Book Concierge](https://blog.apps.npr.org/2013/12/10/the-book-concierge.html) as a way for listeners to find all of NPR's favorite titles for the year in one place. Every year since then, we've published another set of 300 to 400 books, each as its own separate page. That's great if you live in the moment — but what if you want to leisurely flip through recommendations from the past and present in one easy place?
 
-For this year’s iteration of the [Book Concierge](http://apps.npr.org/best-books/), we've rewritten the project from the ground up to include *every* book recommendation from its seven-year history (and more, going forward). It's now built on our [interactive template](https://github.com/nprapps/interactive-template), and as always we've open-sourced the [core application code](https://github.com/nprapps/book-concierge). Here's a quick tour of the work we did to modernize the app, from data to front-end and more.
+For this iteration of the [Book Concierge](http://apps.npr.org/best-books/), we've rewritten the project from the ground up to include *every* book recommendation from its seven-year history (and more, going forward). It's now built on our [interactive template](https://github.com/nprapps/interactive-template), and as always we've open-sourced the [core application code](https://github.com/nprapps/book-concierge). Here's a quick tour of the work we did to modernize the app, from data to front-end and more.
 
 ## Stocking the shelves
 
