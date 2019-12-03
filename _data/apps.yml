@@ -1145,3 +1145,6 @@
   description: The Book Concierge is back with 350+ great reads, hand-picked by NPR staff and trusted critics.
   date: Dec. 3, 2019
   image: "/img/book-concierge-2019.jpg"
+  url: https://apps.npr.org/best-books/
+  blog_title: "Outside of a Dog: Rebuilding the NPR Book Concierge"
+  blog_url: https://blog.apps.npr.org/2019/12/03/book-concierge.html
