@@ -41,7 +41,7 @@ I created the maps using [QGIS](https://www.qgis.org/en/site/), then styled and 
 
 ## Takeaways
 
-If I had to make a similar animated map again, I would definitely find a way to automate the process to make the edit process less painful. Every time I got an edit, I had to tweak all the individual Illustrator map layers, reexport them to Photoshopand, finally, reexport the animated GIF. In the timeframe I had, I wanted to work with the skills and tools I found familiar, but this workflow is unsustainable long-term. Other challenges with this workflow included:
+If I had to make a similar animated map again, I would definitely find a way to automate the process to make the edit process less painful. Every time I got an edit, I had to tweak all the individual Illustrator map layers, reexport them to Photoshop and, finally, reexport the animated GIF. In the timeframe I had, I wanted to work with the skills and tools I found familiar, but this workflow is unsustainable long-term. Other challenges with this workflow included:
 
 * The GIF had small but definite jitters from manually aligning the layers in Photoshop.
 

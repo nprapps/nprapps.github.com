@@ -123,7 +123,7 @@ article img {
 
 /* whale map comic styles */
 article img[src*="2020-01-14-whale-maps-comic"] {
-  width: 85%;
+  width: 80%;
   height: auto;
   margin: 0 auto;
 }
