@@ -43,7 +43,7 @@
   links:
     -
       title: "Dailygraphics: Updates And Upgrades For 2019 And Beyond"
-      url: "http://localhost:4000/2019/01/04/dailygraphics-update-and-next.html"
+      url: "/2019/01/04/dailygraphics-update-and-next.html"
 
 - name: "Dailygraphics"
   url: https://github.com/nprapps/dailygraphics
