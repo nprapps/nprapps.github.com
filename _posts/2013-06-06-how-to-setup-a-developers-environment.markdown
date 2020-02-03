@@ -157,15 +157,19 @@ This will make a virtual environment with the active Python version on your `PAT
 
 ## Chapter 3: Set up Node and install LESS
 
-Finally, we'll install a tool called LESS that we use to write CSS, the language that styles websites. LESS is a built with Node, so we'll need to install that and NPM, Node's version of `pip2` or Homebrew.
+Many of our tools require Node, which runs JavaScript on the desktop or server. For example, our older projects compile CSS from a dialect called LESS, and our newer projects are built entirely on top of Node. The best way to install Node is using `nvm`, which lets you easily upgrade and switch between Node versions.
 
-Install Node using Homebrew.
+Install `nvm` with this line. It will ask you to update your Bash config, or close and re-open your terminal after it completes.
 
-	brew install node
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
 
-Next, let's install globally a node module for compiling LESS into CSS
+Once that's done, you can actually use `nvm` to install Node:
 
-	npm install --global less
+	nvm install stable
+
+You may want to install a couple of helper libraries for working with our projects. The `-g` flag means that they're globally installed, so that they become available as command-line executables:
+
+	npm install -g less grunt-cli grunt-init prettier
 
 After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR Visuals team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
 
@@ -175,7 +179,7 @@ After that, you can treat yourself to a cup of coffee because you now have the b
 
 Github has written a great guide for setting up SSH authentication for Github. You will want to do this so Github knows about your computer and will allow you to push to repositories you have access to.
 
-Read that tutorial [here](https://help.github.com/articles/generating-ssh-keys). Do **not** download the native app. Start at "Step 1: Check for SSH keys".
+Read that tutorial [here](https://help.github.com/articles/generating-ssh-keys). Start at "Step 1: Check for SSH keys".
 
 ### Configure the default identity
 
@@ -183,6 +187,8 @@ It's nice to have your name and email show up correctly in the commit log. To ma
 
 	git config --global user.email "$YOUR_EMAIL@npr.org"
 	git config --global user.name "$YOUR_NAME"
+
+You can also use the [GitHub Desktop](https://desktop.github.com) app to manage your repositories, since it will make it easier to check diffs or browse through repo history.
 
 ### Optional: set up bash completion
 
