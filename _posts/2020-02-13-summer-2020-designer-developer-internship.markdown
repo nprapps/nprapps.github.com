@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Be our design/dev intern for winter/spring 2020!"
+title: "Be our design/dev intern for Summer 2020!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you design or write code? We are looking for you."
 author: Alyson Hurt
 email: nprapps@npr.org
