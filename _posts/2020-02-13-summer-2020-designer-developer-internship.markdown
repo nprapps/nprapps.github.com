@@ -1,7 +1,5 @@
 ---
-layout: redirect
-redirect_url: /2020/02/13/summer-2020-designer-developer-internship.html
-
+layout: post
 title: "Be our design/dev intern for winter/spring 2020!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you design or write code? We are looking for you."
 author: Alyson Hurt
@@ -15,7 +13,7 @@ We've had journalists who are learning to code, programmers who are learning abo
 
 Does this sound like you? Apply to join our team! It isn't always easy, but it is very rewarding. You'll learn a ton and you'll have a lot of fun.
 
-Our paid internship runs from Jan. 13 to April 17. **Applications are due Monday, Nov. 4 at 5 p.m. ET.**
+Our paid internship runs from June 1 to Aug. 21. **Applications are due Monday, Mar. 9 at 5 p.m. ET.**
 
 Here are a few projects our recent interns have worked on:
 
@@ -35,6 +33,6 @@ To be eligible for an internship with NPR, you must be a student (undergraduate 
 
 ## Here's how to apply
 
-Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=3ce99e5e-b683-4510-8e6a-fc54ba7459b0)!
+Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=a4fff6b3-5d71-465c-acf2-ba9bf187a9c5)!
 
-*Into photography? Check out our [photo editing internship](/2010/10/15/winter-2020-photo-internship.html).*
+*Into photography? Check out our [photo editing internship](/2020/02/13/summer-2020-photo-internship.html).*
