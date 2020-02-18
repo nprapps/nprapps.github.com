@@ -18,6 +18,7 @@ Our paid internship runs from June 1 to Aug. 21. **Applications are due Monday, 
 Here are a few projects our recent interns have worked on:
 
 {:.intern-projects}
+| [![The Gulf Of Maine Is Warming, And Its Whales Are Disappearing](/img/whale-map.jpg)](https://blog.apps.npr.org/2020/01/14/whale-maps-comic.html) | [Connie Jin](https://twitter.com/connjie)<br>(Fall 2019) |
 | [![Mongolia: Losing The Eternal Blue Sky](/img/mongolia.jpg)](https://apps.npr.org/mongolia/) | [Nick Underwood](https://twitter.com/mulletmapping)<br>(Summer 2019) |
 | [![China Unbound: What An Emboldened China Means For The World](/img/posts/intern-china.png)](https://www.npr.org/2018/10/02/653312942/china-unbound-what-an-emboldened-china-means-for-the-world) | [Vanessa Qian](https://twitter.com/qian_v)<br>(Summer 2018) |
 | [![The Business Of Being Cardi B](/img/intern-app-charti-b.png)](https://www.npr.org/sections/therecord/2018/04/05/599592959/the-business-of-being-cardi-b) | [Jasmine Mithani](https://twitter.com/jazzmyth)<br>(Spring 2018) |
