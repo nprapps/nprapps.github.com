@@ -1,9 +1,6 @@
 ---
-layout: redirect
-redirect_url: /2019/06/15/fall-2020-designer-developer-internship.html
-
 layout: post
-title: "Be our design/dev intern for Summer 2020!"
+title: "Be our design/dev intern for Fall 2020!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you design or write code? We are looking for you."
 author: Alyson Hurt
 email: nprapps@npr.org
@@ -16,11 +13,12 @@ We've had journalists who are learning to code, programmers who are learning abo
 
 Does this sound like you? Apply to join our team! It isn't always easy, but it is very rewarding. You'll learn a ton and you'll have a lot of fun.
 
-Our paid internship runs from June 1 to Aug. 21. **Applications are due Monday, Mar. 9 at 5 p.m. ET.**
+Our paid fall internship is fully remote runs from Sept. 8 to Dec. 11. **Applications are due Monday, July 13 at 5 p.m. ET.**
 
 Here are a few projects our recent interns have worked on:
 
 {:.intern-projects}
+| [![Tracking The Pandemic: Are Coronavirus Cases Rising Or Falling In Your State?](/img/posts/intern-stephanie.png)](https://www.npr.org/sections/health-shots/2020/03/16/816707182/map-tracking-the-spread-of-the-coronavirus-in-the-u-s) | [Stephanie Adeline](https://twitter.com/stephadeline)<br>(Spring 2020) |
 | [![The Gulf Of Maine Is Warming, And Its Whales Are Disappearing](/img/whale-map.jpg)](https://blog.apps.npr.org/2020/01/14/whale-maps-comic.html) | [Connie Jin](https://twitter.com/connjie)<br>(Fall 2019) |
 | [![Mongolia: Losing The Eternal Blue Sky](/img/mongolia.jpg)](https://apps.npr.org/mongolia/) | [Nick Underwood](https://twitter.com/mulletmapping)<br>(Summer 2019) |
 | [![China Unbound: What An Emboldened China Means For The World](/img/posts/intern-china.png)](https://www.npr.org/2018/10/02/653312942/china-unbound-what-an-emboldened-china-means-for-the-world) | [Vanessa Qian](https://twitter.com/qian_v)<br>(Summer 2018) |
@@ -37,6 +35,6 @@ To be eligible for an internship with NPR, you must be a student (undergraduate 
 
 ## Here's how to apply
 
-Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=a4fff6b3-5d71-465c-acf2-ba9bf187a9c5)!
+Read about [our expectations and selection process](/2015/10/14/how-to-apply.html) and then [apply now](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=3443dd06-1103-4496-bf8b-3721434afd65)!
 
-*Into photography? Check out our [photo editing internship](/2020/02/13/summer-2020-photo-internship.html).*
+*Into illustration? Check out our [illustration internship](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=c24d4e03-53f4-4007-a0fc-37d2feb07dc0).*
