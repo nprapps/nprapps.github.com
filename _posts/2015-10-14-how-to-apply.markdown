@@ -7,7 +7,7 @@ author: David Eads
 email: deads@npr.org
 twitter: eads
 ---
-_(This post was edited in October 2019.)_
+_(This post was edited in June 2020.)_
 
 We want to see your best work.
 
@@ -63,9 +63,9 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-Our paid Winter/Spring 2020 internship program runs from Jan. 13 to April 17.  Check out [our careers site](https://www.npr.org/about-npr/181881227/internships-at-npr/) for info on dates, pay, etc.
+Our paid Fall 2020 internship program is fully remote and runs from Sept. 8 to Dec. 11.  Check out [our careers site](https://www.npr.org/about-npr/181881227/internships-at-npr/) for info on dates, pay, etc.
 
-- [Photo editing](/2019/10/15/winter-2020-photo-internship.html)
-- [Design and code](/2019/10/15/winter-2020-designer-developer-internship.html)
+- [Design and code](/2020/06/15/fall-2020-designer-developer-internship.html)
+- [Illustration](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=c24d4e03-53f4-4007-a0fc-37d2feb07dc0)
 
 We hope to hear from you!
