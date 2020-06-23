@@ -1,6 +1,6 @@
 ---
 layout: redirect
-redirect_url: /2019/02/05/summer-2019-designer-developer-internship.html
+redirect_url: /2020/06/15/fall-2020-designer-developer-internship.html
 
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you draw, design, or write code? We are looking for you."
 author: Alyson Hurt and Brittany Mayes
