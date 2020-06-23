@@ -1,6 +1,6 @@
 ---
 layout: redirect
-redirect_url: /2019/06/15/fall-2020-designer-developer-internship.html
+redirect_url: /2020/06/15/fall-2020-designer-developer-internship.html
 
 title: "Be our design/dev intern for Summer 2020!"
 description: "Are you data-curious, internet savvy, and interested in journalism? Do you design or write code? We are looking for you."
