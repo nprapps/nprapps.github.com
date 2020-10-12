@@ -63,9 +63,9 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-Our paid Fall 2020 internship program is fully remote and runs from Sept. 8 to Dec. 11.  Check out [our careers site](https://www.npr.org/about-npr/181881227/internships-at-npr/) for info on dates, pay, etc.
+Our paid winter/spring 20201 internship program is fully remote and runs from Jan. 11 to April 16.  Check out [our careers site](https://www.npr.org/about-npr/181881227/internships-at-npr/) for more information.
 
 - [Design and code](/2020/06/15/fall-2020-designer-developer-internship.html)
-- [Illustration](https://recruiting.ultipro.com/NAT1011NATPR/JobBoard/fc254a05-d68e-44c0-a2ba-267380d146ba/OpportunityDetail?opportunityId=c24d4e03-53f4-4007-a0fc-37d2feb07dc0)
+- [Photo editing](/2020/10/13/winter-2021-photo-internship.html)
 
 We hope to hear from you!
