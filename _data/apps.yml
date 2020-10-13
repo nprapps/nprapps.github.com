@@ -298,7 +298,7 @@
   url: http://apps.npr.org/lookatthis/posts/mystkowski-loves/
   github_url: https://github.com/nprapps/lookatthis
 - name: "NPR's Book Concierge"
-  description: "Visit the #bookconcierge, NPR’s guide to 2014's great reads. http://apps.npr.org/best-books-2014/"
+  description: "Visit the #bookconcierge, NPR’s guide to 2014's great reads."
   date: "December 3, 2014"
   image: "http://apps.npr.org/best-books-2014/assets/img/covers.jpg"
   url: http://apps.npr.org/best-books-2014/
@@ -1148,8 +1148,173 @@
   url: https://apps.npr.org/best-books/
   blog_title: "Outside of a Dog: Rebuilding the NPR Book Concierge"
   blog_url: https://blog.apps.npr.org/2019/12/03/book-concierge.html
+- name: How The Senate Impeachment Trial Works
+  description: Now that the House has impeached President Trump, the process shifts to the Senate, which will vote on whether to convict him. Here is your guide to the steps and the people that matter.
+  date: Dec. 31, 2019
+  image: "https://media.npr.org/assets/img/2019/12/30/trial-promo_large_wide-04971fdba68c3a1d00695c9028e961884b5e461e.jpg?s=800"
+  url: https://www.npr.org/2019/12/31/787235305/how-a-senate-impeachment-trial-could-work
+- name: "'Your Body Being Used': Where Prisoners Who Can't Vote Fill Voting Districts"
+  description: The U.S. census counts incarcerated people as residents of  where they are imprisoned. In many prison towns, that has led to voting districts made up primarily of prisoners who can't vote.
+  date: Dec. 31, 2019
+  image: "https://media.npr.org/assets/img/2019/12/24/4-18-19_wauponcorrectionalinstitution2031_wide-s1200.jpg"
+  url: https://www.npr.org/2019/12/31/787235305/how-a-senate-impeachment-trial-could-work
 - name: "Iowa Caucuses 2020: Live Results And Analysis"
   description: Follow NPR's live coverage, including results and analysis, of the Iowa caucuses, the first contest of the 2020 presidential election.
   date: Feb. 3, 2020
   image: "https://media.npr.org/assets/liveblog/20200203-iowa/Iowa_LiveBlog_WEB-s1200.jpg"
   url: https://apps.npr.org/liveblogs/20200203-iowa/
+  blog_title: "Custom elements in NPR's primary coverage"
+  blog_url: https://blog.apps.npr.org/2020/03/16/custom-elements-primaries.html
+- name: "How Many Delegates Do The 2020 Democratic Presidential Candidates Have?"
+  description: A candidate needs 1,991 delegates to become the Democratic Party's presidential nominee. Even after effectively securing the nomination in March, Joe Biden has spent months reaching the benchmark.
+  date: Feb. 11, 2020
+  image: "https://media.npr.org/assets/img/2020/03/02/delegate_tracker_graphic_artboard-1_wide-28bbd782d83d9da91b2828fa30e7ec5b58337445.jpg?s=800"
+  url: https://www.npr.org/2020/02/10/799979293/how-many-delegates-do-the-2020-presidential-democratic-candidates-have
+- name: "Super Tuesday 2020: Live Results And Analysis"
+  description: Fourteen states are voting in the 2020 Democratic presidential primary Tuesday, including delegate-rich California and Texas. Follow live coverage.
+  date: March. 3, 2020
+  image: "https://media.npr.org/assets/liveblog/20200303-super-tuesday/SuperTues_LiveBlog_WEB_new2-s1200.jpg"
+  url: https://apps.npr.org/liveblogs/20200303-super-tuesday/
+- name: "Coronavirus Maps: How Severe Is Your State's Outbreak?"
+  description: View NPR's maps and graphics to see where COVID-19 is hitting hardest in the U.S., which state outbreaks are growing and which are leveling off.
+  date: March 16, 2020
+  image: "https://media.npr.org/assets/img/2020/10/05/seamus-coronavirus-d3-us-map-20200312_wide-c810dfe6537c8b8b86280d34142743d3aaf5f711.png?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/09/01/816707182/map-tracking-the-spread-of-the-coronavirus-in-the-u-s
+- name: "Coronavirus World Map: Tracking The Spread Of The Outbreak"
+  description: A map and charts of confirmed COVID-19 cases and deaths around the world. The respiratory disease has spread rapidly across six continents and has killed at least 1 million globally.
+  date: March 30, 2020
+  image: "https://media.npr.org/assets/img/2020/10/05/seamus-coronavirus-d3-world-map-20200323_wide.png?s=800"
+  url: https://www.npr.org/sections/goatsandsoda/2020/03/30/822491838/coronavirus-world-map-tracking-the-spread-of-the-outbreak
+- name: "Coronavirus State-By-State Projections: When Will Each State Peak?"
+  description: Wondering how bad the coronavirus crisis is going to get where you live? New modeling offers state-by-state projections.
+  date: April 7, 2020
+  image: "https://media.npr.org/assets/img/2020/04/08/screen-shot-2020-04-08-at-3.09.17-pm_wide.png?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/04/07/825479416/new-yorks-coronavirus-deaths-may-level-off-soon-when-might-your-state-s-peak
+- name: "How The Coronavirus Has Affected Individual Members Of Congress"
+  description: Congress saw its first two members enter self-quarantine on March 8. Later that month, seven members tested positive or were presumed so and dozens more were quarantined. The ranks have since grown.
+  date: April 15, 2020
+  image: "https://media.npr.org/assets/img/2020/04/14/gettyimages-1209799486_wide-e0956a75eef4a7c0482550218fbe4670e8035eff.jpg?s=800"
+  url: https://www.npr.org/2020/04/15/833692377/how-the-coronavirus-has-affected-individual-members-of-congress
+- name: "Timeline: What Trump Has Said And Done About The Coronavirus"
+  description: President Trump has delivered an ever-evolving message to the American public about the coronavirus pandemic. We compare Trump's remarks and actions to his administration's.
+  date: April 21, 2020
+  image: "https://media.npr.org/assets/img/2020/04/20/trump_v_gov_11_wide-e25bc45f41cafb37b60007c5126c219c14ceac0e.jpg?s=800"
+  url: https://www.npr.org/2020/04/21/837348551/timeline-what-trump-has-said-and-done-about-the-coronavirus
+- name: "Why The Warning That Coronavirus Was On The Move In U.S. Cities Came So Late"
+  description: U.S. health officials said equipping six cities with extra testing would pick up under-the-radar viral spread. But an NPR investigation finds conflicts and shortages caused painful delays.
+  date: April 24, 2020
+  image: "https://media.npr.org/assets/img/2020/04/23/gettyimages-1205157092_wide.jpg?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/04/24/842025982/why-the-warning-that-coronavirus-was-on-the-move-in-u-s-cities-came-so-late
+- name: "We Asked All 50 States About Their Contact Tracing Capacity. Here's What We Learned"
+  description: To safely reopen without risking new COVID-19 outbreaks, states need staff to do the crucial work of contact tracing. Public health agencies report they have aggressive plans to grow their workforce.
+  date: April 28, 2020
+  image: "https://media.npr.org/assets/img/2020/05/07/inkedcapture_li_wide.jpg?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/04/28/846736937/we-asked-all-50-states-about-their-contact-tracing-capacity-heres-what-we-learne
+- name: "U.S. Coronavirus Testing Still Falls Short. How's Your State Doing?"
+  description: New estimates say the U.S. needs to triple its testing. But how much testing does each state need? Here's how states compare to each other, and to targets experts say they should hit.
+  date: May 7, 2020
+  image: "https://media.npr.org/assets/img/2020/05/06/seamus-covid-testing-states-20200429_wide.png?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/05/07/851610771/u-s-coronavirus-testing-still-falls-short-hows-your-state-doing
+- name: "One For The History Books: 14.7% Unemployment, 20.5 Million Jobs Wiped Away"
+  description: U.S. employers shed a record number of jobs in April, as the unemployment rate climbed to the highest since the Great Depression. The coronavirus crisis has locked down much of the economy.
+  date: May 8, 2020
+  image: "https://media.npr.org/assets/img/2020/05/08/seamus-unemployment-20200507_wide.png?s=800"
+  url: https://www.npr.org/sections/coronavirus-live-updates/2020/05/08/852430930/one-for-the-history-books-14-7-unemployment-20-5-million-jobs-wiped-away
+- name: "Here's How Much Congress Has Approved For Coronavirus Relief So Far And What It's For"
+  description: There have been four separate measures over the last two months, including payments to individuals, tax breaks for businesses, and funds for public health and state and local governments.
+  date: May 15, 2020
+  image: "https://media.npr.org/assets/img/2020/05/15/screen-shot-2020-05-15-at-12.22.55-pm_wide.png?s=800"
+  url: https://www.npr.org/2020/05/15/854774681/congress-has-approved-3-trillion-for-coronavirus-relief-so-far-heres-a-breakdown
+- name: "Traffic Is Way Down Because Of Lockdown, But Air Pollution? Not So Much"
+  description: Car traffic took a big dip beginning in late March, and headlines celebrated clean air around the U.S. But an NPR analysis of EPA data tells a more troubling story.
+  date: May 19, 2020
+  image: "https://media.npr.org/assets/img/2020/05/18/pollution-promo_wide.png?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/05/19/854760999/traffic-is-way-down-due-to-lockdowns-but-air-pollution-not-so-much
+- name: "Money Tracker: How Much Trump And Biden Have Raised In The 2020 Election"
+  description: "See the latest campaign finance figures for President Trump and his challenger, former Vice President Joe Biden."
+  date: May 20, 2020
+  image: "https://media.npr.org/assets/img/2020/05/20/campaign_finance_tracker_graphic_wide-30e034e796c93400a469dc2bdb6c93ed3af97a4a.jpg?s=800"
+  url: https://www.npr.org/2020/05/20/858347477/money-tracker-how-much-trump-and-biden-have-raised-in-the-2020-election
+- name: "In Large Texas Cities, Access To Coronavirus Testing May Depend On Where You Live"
+  description: "An NPR investigation shows that black and Latino neighborhoods in four large Texas cities have fewer coronavirus testing sites, leaving communities blind to potential COVID-19 outbreaks."
+  date: May 27, 2020
+  image: "https://media.npr.org/assets/img/2020/05/26/screen-shot-2020-05-26-at-9.13.43-pm_wide.png?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/05/27/862215848/across-texas-black-and-hispanic-neighborhoods-have-fewer-coronavirus-testing-sit
+- name: "What Do Coronavirus Racial Disparities Look Like State By State?"
+  description: "NPR's analysis shows just how stark the impact has been on African-Americans and Latinos. Experts say the pandemic will go on — for everyone — unless we direct resources where they're most needed."
+  date: May 30, 2020
+  image: "https://media.npr.org/assets/img/2020/05/30/racial-disparities-promo3_wide.png?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/05/30/865413079/what-do-coronavirus-racial-disparities-look-like-state-by-state
+- name: "From Rent Freezes To Liquor Buybacks: How States Are Helping People Cope"
+  description: "With limited resources themselves, states are having to get creative helping residents deal with the COVID-19 economic slowdown. But how much help you can get depends on where you live."
+  date: June 10, 2020
+  image: "https://media.npr.org/assets/img/2020/06/03/ap_20094696094886-edit_wide.jpg?s=800"
+  url: https://www.npr.org/2020/06/10/868082337/from-rent-freezes-to-liquor-buybacks-how-states-are-helping-people-cope
+- name: "Minneapolis Has A Bold Plan To Tackle Racial Inequity. Now It Has To Follow Through"
+  description: "Racial discrimination shaped the map of Minneapolis. Community groups are calling on the city to follow through on a new land use plan designed to address housing disparities and climate change."
+  date: June 18, 2020
+  image: "https://media.npr.org/assets/img/2020/06/18/minneapolis-promo_wide.png?s=800"
+  url: https://www.npr.org/2020/06/18/877460056/minneapolis-has-a-bold-plan-to-tackle-racial-inequity-now-it-has-to-follow-throu
+- name: "As Coronavirus Surges, How Much Testing Does Your State Need To Subdue The Virus?"
+  description: "A new NPR/Harvard analysis finds most states' testing efforts still fall far short of what's needed to beat back the pandemic. Find out how your state is doing."
+  date: June 30, 2020
+  image: "https://media.npr.org/assets/img/2020/06/30/seamus-covid-testing-states-20200625_wide.png?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/06/30/883703403/as-coronavirus-surges-how-much-testing-does-your-state-need-to-subdue-the-virus
+- name: "Whales Get A Break As Pandemic Creates Quieter Oceans"
+  description: "A drop in shipping traffic is reducing underwater noise, so scientists are listening for how whales and other marine life are responding."
+  date: July 20, 2020
+  image: "https://media.npr.org/assets/img/2020/07/16/gbnp-cmg-20180920-1-187_wide.jpg?s=800"
+  url: https://www.npr.org/2020/07/20/891854646/whales-get-a-break-as-pandemic-creates-quieter-oceans
+- name: "States Are Broke And Many Are Eyeing Massive Cuts. Here's How Yours Is Doing"
+  description: "Some states face record-breaking deficits because of the coronavirus pandemic. We asked local reporters across the country to tell us what could be on the chopping block in your state."
+  date: Aug. 3, 2020
+  image: "https://media.npr.org/assets/img/2020/08/02/state-budgets-promo_wide.png?s=800"
+  url: https://www.npr.org/2020/08/03/893190275/states-are-broke-and-many-are-eyeing-massive-cuts-heres-how-yours-is-doing
+- name: "Democratic National Convention 2020"
+  date: Aug. 17, 2020
+  image: "https://media.npr.org/assets/img/2020/08/12/dnc-live-blog_wide.jpg"
+  url: https://apps.npr.org/liveblogs/20200817-dnc/
+- name: "Republican National Convention 2020"
+  date: Aug. 24, 2020
+  image: "https://media.npr.org/assets/img/2020/08/21/rnc_convention_liveblog_web-1-_wide.jpg"
+  url: https://apps.npr.org/liveblogs/20200824-rnc/
+- name: "The Ghost Towns Behind The Gates"
+  description: "Fukushima was forever changed by one of the world’s biggest nuclear disasters nearly a decade ago. But what does recovery really mean?"
+  date: Sept. 8, 2020
+  image: "https://media.npr.org/assets/img/2020/08/27/_dsc3493-edit_wide-35a415f16f6c1b8554f43b18fd2a66251e2cf6f2-s1200.jpg"
+  url: https://apps.npr.org/fukushima/
+- name: "Mail-In Voting Rules By State — And The Deadlines You Need"
+  description: "In response to the coronavirus pandemic, dozens of states have modified their rules for absentee voting in November's elections."
+  date: Sept. 14, 2020
+  image: "https://media.npr.org/assets/img/2020/09/12/seamus-voting-laws-20200831_wide.png?s=800"
+  url: https://www.npr.org/2020/09/14/909338758/map-mail-in-voting-rules-by-state
+- name: "Gasping For Air: Autopsies Reveal Troubling Effects Of Lethal Injection"
+  description: "For decades, states have claimed that lethal injection is quick, peaceful and painless. An NPR investigation — and legal battles across the country — tell a different story."
+  date: Sept. 21, 2020
+  image: "https://media.npr.org/assets/img/2020/09/08/lethal-injection-1_wide.jpg?s=800"
+  url: https://www.npr.org/2020/09/21/793177589/gasping-for-air-autopsies-reveal-troubling-effects-of-lethal-injection
+- name: "America's 200,000 COVID-19 Deaths: Small Cities And Towns Bear A Growing Share"
+  description: "Early in the pandemic, most deaths occurred in large cities. But now, as COVID-19 spreads across the U.S., smaller communities are suffering many losses as well."
+  date: Sept. 22, 2020
+  image: "https://media.npr.org/assets/img/2020/09/21/screen-shot-2020-09-21-at-6.06.19-pm_wide.png?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/09/22/914578634/americas-200-000-covid-19-deaths-small-cities-and-towns-bear-a-growing-share
+- name: "1 In 7 Americans Have Experienced Dangerous Air Quality Due To Wildfires This Year"
+  description: "Parts of the West Coast experienced very unhealthy or hazardous air from wildfires for the first time ever recorded. Millions endured that smoke for twice as long as the recent average."
+  date: Sept. 23, 2020
+  image: "https://media.npr.org/assets/img/2020/09/22/sat-county1_wide.png?s=800"
+  url: https://www.npr.org/2020/09/23/915723316/1-in-7-americans-have-experienced-dangerous-air-quality-due-to-wildfires-this-ye
+- name: "As Pandemic Deaths Add Up, Racial Disparities Persist — And In Some Cases Worsen"
+  description: "With more complete racial data for COVID-19 available, the trends are impossible to ignore: Minorities are getting sick and dying at disproportionate rates. Here's a state-by-state analysis."
+  date: Sept. 23, 2020
+  image: "https://media.npr.org/assets/img/2020/09/23/race-disparities-promo-sept1_wide.png?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/09/23/914427907/as-pandemic-deaths-add-up-racial-disparities-persist-and-in-some-cases-worsen
+- name: "Can The U.S. Use Its Growing Supply Of Rapid Tests To Stop The Virus?"
+  description: "Some public health experts hope the growing availability of faster, cheaper tests could lead to a new strategy of widespread testing — one that could finally get the pandemic under control."
+  date: Oct. 1, 2020
+  image: "https://media.npr.org/assets/img/2020/09/30/gettyimages-1269132586_wide.jpg?s=800"
+  url: https://www.npr.org/sections/health-shots/2020/10/01/915793729/can-the-u-s-use-its-growing-supply-of-rapid-tests-to-stop-the-virus
+- name: "Portraits Of Resilience: How 19 Women Around The Globe Face The Pandemic"
+  description: "Women often bear a heavier burden at times of crisis. They take care of the kids, the house, the survival of families. NPR photographed and interviewed 19 women over 3 weeks. Here are their stories."
+  date: Oct. 9, 2020
+  image: "https://media.npr.org/assets/img/2020/10/09/grid_photos_wide.png?s=1200"
+  url: https://www.npr.org/sections/goatsandsoda/2020/10/09/918815890/portraits-of-resilience-how-19-women-around-the-globe-face-the-pandemic
