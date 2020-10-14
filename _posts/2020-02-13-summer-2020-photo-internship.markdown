@@ -1,6 +1,6 @@
 ---
 layout: redirect
-redirect_url: /2020/10/13/winter-2021-photo-internship.html
+redirect_url: /2020/10/14/winter-2021-internships.html
 
 title: "What makes a great photo editing intern (Apply now for Summer 2020!)"
 description: "What we're looking for in a photo editing intern on the NPR Visuals team."
