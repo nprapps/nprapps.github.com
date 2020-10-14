@@ -2,7 +2,7 @@
 layout: post
 title: "Photo, Video, Design and Code: Apply for Winter/Spring 2021 Internships in the NPR Newsroom"
 description: "NPR's winter/spring internship program includes several visually-oriented newsroom jobs, working for the Visuals, News Apps and Science teams. Come join us!"
-author: Alyson Hurt and Emily Bogle
+author: Emily Bogle, Alyson Hurt, Becky Letttenberger and Nicole Werbeck
 email:
 twitter: nprviz
 ---
