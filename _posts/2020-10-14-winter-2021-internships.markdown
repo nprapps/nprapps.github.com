@@ -36,7 +36,7 @@ This internship is an opportunity to learn more about the world of photo editing
 
 * **Editing:** You’ll be working closely with the Visuals Team’s photo editors on fast-paced deadlines -- we’re talking anywhere from 15 minutes to publication, to short-term projects that are a week out. You’ll dig into news coverage and photo research, learning how to communicate about what makes a good image across a range of news topics, including international, national, technology, arts and more.
 
-* **Photography:** Depending on the news cycle, there may be opportunities to photograph DC-area assignments. You’ll work closely with a radio or web reporter while out in the field, and a photo editor will go through your work and provide feedback for each assignment.
+* **Photography:** Depending on the news cycle, there may be opportunities to photograph assignments. You’ll work closely with a radio or web reporter while out in the field, and a photo editor will go through your work and provide feedback for each assignment.
 
 * We also encourage each intern to create a self-directed project to work on throughout the semester.
 
