@@ -63,6 +63,6 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-Our paid winter/spring 20201 internship program is fully remote and runs from Jan. 11 to April 16.  Check out [our careers site](https://www.npr.org/about-npr/181881227/internships-at-npr/) for more information. [Here are the internships available this term.](/2020/10/14/winter-2021-internships.html)
+Our paid winter/spring 2021 internship program is fully remote and runs from Jan. 11 to April 16.  Check out [our careers site](https://www.npr.org/about-npr/181881227/internships-at-npr/) for more information. [Here are the internships available this term.](/2020/10/14/winter-2021-internships.html)
 
 We hope to hear from you!
