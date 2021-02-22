@@ -3,7 +3,7 @@ layout: default
 ---
 <div id="blog">
     <header>
-        <h2>Visuals Team Blog</h2>
+        <h2>Visuals Blog</h2>
     </header>
 
     {% for post in site.posts %}
@@ -26,7 +26,12 @@ layout: default
                 </section>
                    <div class="post-meta">
                     <ul>
-                        <li>by <a href="http://twitter.com/{{ post.twitter }}">{{ post.author }}</a>, {{ post.date | date: "%B %d, %Y" }}</li>
+                        <li>
+                          {% if post.author %}
+                            by <a href="http://twitter.com/{{ post.twitter }}">{{ post.author }}</a>,
+                          {% endif %}
+                          {{ post.date | date: "%B %d, %Y" }}
+                        </li>
                     </ul>
                 </div>
             </article>
