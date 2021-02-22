@@ -1318,3 +1318,91 @@
   date: Oct. 9, 2020
   image: "https://media.npr.org/assets/img/2020/10/09/grid_photos_wide.png?s=1200"
   url: https://www.npr.org/sections/goatsandsoda/2020/10/09/918815890/portraits-of-resilience-how-19-women-around-the-globe-face-the-pandemic
+- name: "2020 Election Results Live"
+  description: "View interactive maps and live results for the 2020 U.S. election."
+  date: Nov. 3, 2020
+  image: "https://apps.npr.org/elections20-interactive/assets/social.jpg"
+  url: https://apps.npr.org/elections20-interactive/
+  blog_title: "How We Did It: The 2020 General Election Rig"
+  blog_url: /2020/12/30/elections-platform-rewrite.html
+  github_url: https://github.com/nprapps/elections20-interactive
+- name: "Many Places Hard Hit By COVID-19 Leaned More Toward Trump In 2020 Than 2016"
+  description: "An NPR analysis shows that the majority of counties with the highest COVID-19 death rates showed stronger support for Trump in 2020 than they did four years ago."
+  date: Nov. 6, 2020
+  image: "https://media.npr.org/assets/img/2020/11/05/screen-shot-2020-11-05-at-6.41.23-pm_wide.png?s=1200"
+  url: https://www.npr.org/sections/health-shots/2020/11/06/930897912/many-places-hard-hit-by-covid-19-leaned-more-toward-trump-in-2020-than-2016
+- name: "COVID-19 Hospitalizations Hit Record Highs. Where Are Hospitals Reaching Capacity?"
+  description: "An NPR analysis shows that the majority of counties with the highest COVID-19 death rates showed stronger support for Trump in 2020 than they did four years ago."
+  date: Nov. 10, 2020
+  image: "https://media.npr.org/assets/img/2020/11/10/gettyimages-1226434048_wide.jpg?s=1200"
+  url: https://www.npr.org/sections/health-shots/2020/11/10/933253317/covid-19-hospitalizations-are-surging-where-are-hospitals-reaching-capacity
+- name: "Philadelphia's Suburbs Helped Deliver Crucial Pennsylvania For Biden"
+  description: "In the four suburban counties that ring Philadelphia, Joe Biden topped President Trump by more than 280,000 votes."
+  date: Nov. 13, 2020
+  image: "https://media.npr.org/assets/img/2020/11/13/pa-swing-promo1_wide.png?s=1200"
+  url: https://www.npr.org/2020/11/13/934372249/philadelphias-suburbs-helped-deliver-crucial-pennsylvania-for-biden
+- name: "Biden Administration: Here Are His Cabinet Members And Key Advisers"
+  description: "President Biden's aides are beginning to put policy into action, while the U.S. Senate is taking up his nominees."
+  date: Nov. 17, 2020
+  image: "https://media.npr.org/assets/img/2020/11/12/6_wide.jpg?s=1200"
+  url: https://www.npr.org/2020/11/17/933848488/biden-administration-heres-who-has-been-nominated
+- name: "How Biden Won: Ramping Up The Base And Expanding Margins In The Suburbs"
+  description: "Remarkably few counties shifted in the 2020 election, which saw sky-high turnout. The president's base voted in big numbers in rural areas, but Biden's gains in the suburbs propelled him to victory."
+  date: Nov. 18, 2020
+  image: "https://media.npr.org/assets/img/2020/11/17/screen-shot-2020-11-17-at-11.35.01-am_wide.png?s=1200"
+  url: https://www.npr.org/2020/11/17/933848488/biden-administration-heres-who-has-been-nominated
+- name: "Many Hospitals Are Still Overwhelmed By COVID-19 Patients. Is Yours?"
+  description: "COVID-19 hospitalizations continue to strain U.S. hospitals. NPR built a tool to explore trends around the country. Look up your local hospital to see how it's faring."
+  date: Dec. 9, 2020
+  image: "https://media.npr.org/assets/img/2021/02/09/seamus-covid-hosp-county-graphic-20201207_wide.png?s=1200"
+  url: https://www.npr.org/sections/health-shots/2020/12/09/944379919/new-data-reveal-which-hospitals-are-dangerously-full-is-yours
+- name: "CDC Warns New U.K. Coronavirus Variant Is Spreading Fast In The U.S."
+  description: "It appears to be 50% more infectious, and researchers predict the new coronavirus variant could start to dominate in the U.S. by March. The time to prepare is now, they say."
+  date: Jan. 13, 2021
+  image: "https://media.npr.org/assets/img/2021/01/13/gettyimages-1230361811_wide.jpg?s=1200"
+  url: https://www.npr.org/sections/health-shots/2021/01/13/956504515/u-k-variant-could-drive-a-new-surge-in-the-u-s-experts-warn
+- name: "How Is The COVID-19 Vaccination Campaign Going In Your State?"
+  description: "The U.S. is engaged in a massive effort to vaccinate the bulk of its population against COVID-19. But some states are working faster than others. See how yours is faring."
+  date: Jan. 28, 2021
+  image: "https://media.npr.org/assets/img/2021/02/21/screen-shot-2021-02-21-at-7.57.11-am_wide.png?s=1200"
+  url: https://www.npr.org/sections/health-shots/2021/01/28/960901166/how-is-the-covid-19-vaccination-campaign-going-in-your-state
+- name: "Across The South COVID-19 Vaccine Sites Missing From Black And Hispanic Neighborhoods"
+  description: "An NPR analysis of COVID-19 vaccination sites in major cities across the Southern U.S. reveals a racial disparity, with most sites located in whiter neighborhoods."
+  date: Feb. 5, 2021
+  image: "https://media.npr.org/assets/img/2021/02/05/screen-shot-2021-02-04-at-6.45.35-pm1_wide.png?s=1200"
+  url: https://www.npr.org/2021/02/05/962946721/across-the-south-covid-19-vaccine-sites-missing-from-black-and-hispanic-neighbor
+- name: "Biden Pledged Historic Cabinet Diversity. Here's How His Nominees Stack Up"
+  description: "President Joe Biden's core group of advisers is more racially diverse and has more women than those of former Presidents Donald Trump or Barack Obama. See a list of the picks and their experience."
+  date: Feb. 5, 2021
+  image: "https://media.npr.org/assets/img/2021/02/06/seamus-biden-cabinet-breakdown-20201221_wide.png?s=1200"
+  url: https://www.npr.org/sections/president-biden-takes-office/2021/02/05/963837953/biden-pledged-historic-cabinet-diversity-heres-how-his-nominees-stack-up
+- name: "Why The Pandemic Is 10 Times Worse Than You Think"
+  description: "Not everyone gets tested. A new model estimates how many infections are missed because of this and how many people are actively shedding the virus. The results lend urgency to the vaccine race."
+  date: Feb. 6, 2021
+  image: "https://media.npr.org/assets/img/2021/02/05/screen-shot-2021-02-05-at-2.00.26-pm_wide.png?s=1200"
+  url: https://www.npr.org/sections/health-shots/2021/02/06/964527835/why-the-pandemic-is-10-times-worse-than-you-think
+- name: "Here's What You Need To Know About The Senate Impeachment Trial"
+  description: "The Senate trial began Tuesday on one article the House approved, charging former President Donald Trump with incitement of insurrection for the Capitol riot. Most senators want a short trial."
+  date: Feb. 8, 2021
+  image: "https://media.npr.org/assets/img/2021/02/09/screen-shot-2021-02-09-at-2.50.58-pm_wide.png?s=1200"
+  url: https://www.npr.org/sections/trump-impeachment-trial-live-updates/2021/02/08/964126236/heres-what-you-need-to-know-about-the-senate-impeachment-trial
+- name: "The Capitol Siege: The Arrested And Their Stories"
+  description: "More than 250 people have been charged in the Jan. 6 Capitol riot. NPR is looking at the cases. Each provides clues to questions surrounding the attack: Who joined the mob? What did they do? And why?"
+  date: Feb. 9, 2021
+  image: "https://media.npr.org/assets/img/2021/02/10/insurrection-database_wide.jpg?s=1200"
+  url: https://www.npr.org/2021/02/09/965472049/the-capitol-siege-the-arrested-and-their-stories
+- name: "How To Sign Up For A COVID-19 Vaccine In Your State"
+  description: "Use NPR's tool to find out where to start when it's your turn to get the COVID-19 vaccine. Plus, helpful advice about how to navigate the system."
+  date: Feb. 18, 2021
+  image: "https://media.npr.org/assets/img/2021/02/17/vaccine-distribution-01_wide.jpg?s=1200"
+  url: https://www.npr.org/sections/health-shots/2021/02/18/967448680/how-to-sign-up-for-a-covid-19-vaccine-in-your-state
+- name: "How Herd Immunity Works — And What Stands In Its Way"
+  description: "Scientists say the pandemic will only end in the U.S. when we achieve what's called herd immunity. Play with our simulations to see how immunity can stop an outbreak in its tracks."
+  date: Feb. 18, 2021
+  image: "https://media.npr.org/assets/img/2021/02/17/herd-promo_wide.png?s=1200"
+  url: https://www.npr.org/sections/health-shots/2021/02/18/967462483/how-herd-immunity-works-and-what-stands-in-its-way
+- name: "A Looming Disaster: New Data Reveal Where Flood Damage Is An Existential Threat"
+  description: "More than 4 million homes face financial losses from flooding. Communities where flood insurance is already unaffordable are facing potentially catastrophic damage. "
+  date: Feb. 22, 2021
+  image: "https://media.npr.org/assets/img/2021/02/18/park_dip_wide.jpg?s=1200"
+  url: https://www.npr.org/2021/02/22/966428165/a-looming-disaster-new-data-reveal-where-flood-damage-is-an-existential-threat
