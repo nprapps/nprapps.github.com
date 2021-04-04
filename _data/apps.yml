@@ -1407,7 +1407,12 @@
   image: "https://media.npr.org/assets/img/2021/02/17/herd-promo_wide.png?s=1200"
   url: https://www.npr.org/sections/health-shots/2021/02/18/967462483/how-herd-immunity-works-and-what-stands-in-its-way
 - name: "A Looming Disaster: New Data Reveal Where Flood Damage Is An Existential Threat"
-  description: "More than 4 million homes face financial losses from flooding. Communities where flood insurance is already unaffordable are facing potentially catastrophic damage. "
+  description: "More than 4 million homes face financial losses from flooding. Communities where flood insurance is already unaffordable are facing potentially catastrophic damage."
   date: Feb. 22, 2021
   image: "https://media.npr.org/assets/img/2021/02/18/park_dip_wide.jpg?s=1200"
   url: https://www.npr.org/2021/02/22/966428165/a-looming-disaster-new-data-reveal-where-flood-damage-is-an-existential-threat
+- name: "Enduring Loss"
+  description: "Grandma, Pop Pop, Butterfly, Coach, Tio, Bubbles -- more than 550,000 people in all have died of COVID-19 in the United States. As the U.S. death rate declines and the rising pace of vaccinations offers hope of a post-pandemic life, we continue to remember those we’ve lost."
+  date: April 3, 2021
+  image: "https://apps.npr.org/memorial-interactive/assets/promo.png"
+  url: https://apps.npr.org/memorial-interactive/
