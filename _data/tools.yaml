@@ -1,6 +1,6 @@
 - name: "Dailygraphics Next"
   url: https://github.com/nprapps/dailygraphics-next
-  description: "The successor to Dailygraphics, rewritten for modern development"
+  description: "One-stop tooling for creating responsive news graphics from a range of D3-based templates"
   links:
     -
       title: "Dailygraphics: Updates And Upgrades For 2019 And Beyond"
