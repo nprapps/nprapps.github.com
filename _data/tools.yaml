@@ -1,10 +1,18 @@
-- name: "Hypothesis-Driven Design Guide"
-  description: "Taking a user-centered and evidence-based approach to the planning and design of editorial projects"
-  url: http://n.pr/hdd
+- name: "Dailygraphics Next"
+  url: https://github.com/nprapps/dailygraphics-next
+  description: "The successor to Dailygraphics, rewritten for modern development"
   links:
     -
-      title: "Take our playbook: NPR's guide to building immersive storytelling projects"
-      url: https://training.npr.org/digital/take-our-playbook-nprs-guide-to-building-immersive-storytelling-projects/
+      title: "Dailygraphics: Updates And Upgrades For 2019 And Beyond"
+      url: "/2019/01/04/dailygraphics-update-and-next.html"
+
+- name: "Sidechain"
+  description: "Responsive iframes for modern browsers"
+  url: https://github.com/nprapps/sidechain
+
+- name: "Interactive Template"
+  url: "https://github.com/nprapps/interactive-template"
+  description: "A modern site generator with live reload and support for loading data from ArchieML, Google Docs/Sheets, CSV, JSON, and more"
 
 - name: "Elex"
   description: "A command-line tool to get election results from the Associated Press Election API v2.0. Elex is designed to be friendly, fast and agnostic to your language/database choices."
@@ -16,7 +24,7 @@
 
 - name: "Pym.js"
   description: "A JavaScript library for responsive iframes."
-  url: http://blog.apps.npr.org/pym.js/
+  url: https://blog.apps.npr.org/pym.js/
   alert: Important security update
   alert_url: /2018/02/15/pym-security-vulnerability.html
   links:
@@ -33,18 +41,14 @@
       title: "The Pympocalypse"
       url: /2015/10/30/pympocalypse.html
 
-- name: "Interactive Template"
-  url: "https://github.com/nprapps/interactive-template"
-  description: "A modern site generator with live reload and support for loading data from ArchieML, Google Docs/Sheets, CSV, JSON, and more"
-
-- name: "Dailygraphics Next"
-  url: https://github.com/nprapps/dailygraphics-next
-  description: "The successor to Dailygraphics, rewritten for modern development"
+- name: "Hypothesis-Driven Design Guide"
+  description: "Taking a user-centered and evidence-based approach to the planning and design of editorial projects"
+  url: http://n.pr/hdd
   links:
     -
-      title: "Dailygraphics: Updates And Upgrades For 2019 And Beyond"
-      url: "/2019/01/04/dailygraphics-update-and-next.html"
-
+      title: "Take our playbook: NPR's guide to building immersive storytelling projects"
+      url: https://training.npr.org/digital/take-our-playbook-nprs-guide-to-building-immersive-storytelling-projects/
+    
 - name: "Dailygraphics"
   url: https://github.com/nprapps/dailygraphics
   description: "A framework for creating and deploying responsive graphics suitable for publishing inside a CMS with pym.js. It includes d3.js templates for many different types of charts."
