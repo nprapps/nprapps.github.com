@@ -1416,3 +1416,9 @@
   date: April 3, 2021
   image: "https://apps.npr.org/memorial-interactive/assets/promo.png"
   url: https://apps.npr.org/memorial-interactive/
+- name: "NPR's Joy Generator"
+  description: "Feeling blah? We've got ideas you can try out right now."
+  date: June 29, 2021
+  image: "https://apps.npr.org/joy-generator/assets/synced/social/promo-pics-visualizer-1.jpg"
+  url: https://apps.npr.org/joy-generator/
+  github_url: https://github.com/nprapps/science-of-joy
