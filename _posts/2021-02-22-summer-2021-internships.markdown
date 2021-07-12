@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /2021/07/12/winter-2021-internships.html
+
 title: "Photo and Video: Apply for Summer 2021 Internships at NPR"
 description: "NPR's summer internship program includes several visually-oriented newsroom jobs, working for the Visuals and Science teams. Come join us!"
 ---
