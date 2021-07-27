@@ -1422,3 +1422,8 @@
   image: "https://apps.npr.org/joy-generator/assets/synced/social/promo-pics-visualizer-1.jpg"
   url: https://apps.npr.org/joy-generator/
   github_url: https://github.com/nprapps/science-of-joy
+- name: "Who Will Pay To Protect Tech Giants From Rising Seas?"
+  description: "Coastal cities need billions of dollars to build defenses against sea level rise. Tensions are growing over where that funding will come from: taxpayers or private companies with waterfront property?"
+  date: July 27, 2021
+  image: "https://apps.npr.org/sea-level-rise-silicon-valley/assets/synced/images/EPA_image_selects_websize-6.jpg"
+  url: https://apps.npr.org/sea-level-rise-silicon-valley/
