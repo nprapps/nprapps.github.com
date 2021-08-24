@@ -1416,14 +1416,59 @@
   date: April 3, 2021
   image: "https://apps.npr.org/memorial-interactive/assets/promo.png"
   url: https://apps.npr.org/memorial-interactive/
+- name: "Comic: For My Job, I Check Death Tolls From COVID. Why Am I Numb To The Numbers?"
+  description: "Each week I check the latest deaths from COVID-19 for NPR. After a while, I didn't feel any sorrow at the numbers. I just felt numb. I wanted to understand why — and how to overcome that numbness."
+  date: April 25, 2021
+  image: "https://media.npr.org/assets/img/2021/04/26/numbness-promo-2_wide.png?s=1400"
+  url: https://www.npr.org/sections/goatsandsoda/2021/04/25/987208356/comic-how-i-cope-with-pandemic-numbness
+- name: "Here's How The 1st 2020 Census Results Changed Electoral College, House Seats"
+  description: "Based on population shifts recorded by the 2020 census, Texas, Florida and North Carolina are among the states gaining representation, while California, New York and Pennsylvania are losing influence."
+  date: April 26, 2021
+  image: "https://media.npr.org/assets/img/2021/04/26/census_cartogram_promo_legend_wide.png?s=1400"
+  url: https://www.npr.org/2021/04/26/983082132/census-to-release-1st-results-that-shift-electoral-college-house-seats
+- name: "Black Americans And The Racist Architecture Of Homeownership"
+  description: "Owning a home is a part of the American dream. It's also the key to building intergenerational wealth. But Black Americans continue to face discrimination in housing, including through higher costs."
+  date: May 8, 2021
+  image: "https://media.npr.org/assets/img/2021/05/07/npr_blockbusting_016_wide.jpg?s=1400"
+  url: https://www.npr.org/sections/codeswitch/2021/05/08/991535564/black-americans-and-the-racist-architecture-of-homeownership
+- name: "6 Charts That Dismantle The Trope Of Asian Americans As A Model Minority"
+  description: "For years, the myth about Asian Americans and their perceived collective success has been used as a racial wedge. Here's a look at some common misconceptions driven by the &quot;model minority&quot; myth."
+  date: May 25, 2021
+  image: "https://media.npr.org/assets/img/2021/05/24/fullsizeoutput_f5_wide.jpeg?s=1400"
+  url: https://www.npr.org/2021/05/25/999874296/6-charts-that-dismantle-the-trope-of-asian-americans-as-a-model-minority
+- name: "Where We Come From"
+  description: "Where are you really from? It's a question that immigrant communities of color across generations are often asked. In this series, we answer that question on our own terms, one conversation at a time."
+  date: June 1, 2021
+  image: "https://media.npr.org/assets/img/2021/06/01/wwcf_wide.jpg?s=1400"
+  url: https://www.npr.org/2021/06/01/996412589/where-we-come-from
 - name: "NPR's Joy Generator"
   description: "Feeling blah? We've got ideas you can try out right now."
   date: June 29, 2021
   image: "https://apps.npr.org/joy-generator/assets/synced/social/promo-pics-visualizer-1.jpg"
   url: https://apps.npr.org/joy-generator/
   github_url: https://github.com/nprapps/science-of-joy
+- name: "As Western Wildfires Worsen, FEMA Is Denying Most People Who Ask For Help"
+  description: "An investigation into FEMA claims after 2020's historic wildfires in Oregon and California reveals wide fluctuations in approval rates and denials of people who met aid criteria."
+  date: July 1, 2021
+  image: "https://media.npr.org/assets/img/2021/06/30/20210630-2021-06-30-fema-millcreek-krossow-3388-edit_wide.jpg?s=1400"
+  url: https://www.npr.org/2021/07/01/1010897265/as-western-wildfires-worsen-fema-is-denying-most-people-who-ask-for-help
+- name: "Where Are The Newest COVID Hot Spots? Mostly Places With Low Vaccination Rates"
+  description: "As the delta variant takes over in the U.S., new, localized outbreaks are emerging. Those surges are likely driven by pockets of dangerously low vaccination rates."
+  date: July 9, 2021
+  image: "https://media.npr.org/assets/img/2021/07/09/seamus-covid-county-hotspot-20210707_wide.png?s=1200"
+  url: https://www.npr.org/sections/health-shots/2021/07/09/1014512213/covid-is-surging-in-new-hotspots-driven-by-low-vaccination-rates
 - name: "Who Will Pay To Protect Tech Giants From Rising Seas?"
   description: "Coastal cities need billions of dollars to build defenses against sea level rise. Tensions are growing over where that funding will come from: taxpayers or private companies with waterfront property?"
   date: July 27, 2021
   image: "https://media.npr.org/assets/img/2021/07/27/sea-level-rise-sunnyvale_wide-s1200-c85.jpg"
   url: https://apps.npr.org/sea-level-rise-silicon-valley/
+- name: "Do You Need To Wear A Mask Indoors Where You Live? Check This Map"
+  description: "The CDC wants vaccinated people to wear masks indoors if the coronavirus is spreading widely where they live. Find out the level of virus transmission in your county."
+  date: July 28, 2021
+  image: "https://media.npr.org/assets/img/2021/08/20/screen-shot-2021-08-20-at-2.42.53-pm_wide-s1200.png"
+  url: https://www.npr.org/sections/health-shots/2021/07/28/1021795290/cdc-mask-guidelines-indoors-vaccinated-by-county-covid-spread
+- name: "United States of Wildfire"
+  description: "There’s a forgotten history that should serve as a warning — wildfire isn’t unique to the West. Now the warming climate is increasing the risk of major wildfires across America. And more people are moving to fire-prone areas without realizing the danger."
+  date: Aug. 10, 2021
+  image: "https://apps.npr.org/us-wildfires-impact-environment-climate-change/assets/synced/images/map5-1000-7-social.jpg"
+  url: https://apps.npr.org/us-wildfires-impact-environment-climate-change/
