@@ -7,11 +7,9 @@ email: grich@npr.org
 twitter: gerald_arthur
 ---
 
-*Updated December 15, 2017*
+*Updated August 24, 2020*
 
-*Hi! I'm [Geoff Hing](https://twitter.com/geoffhing), a news applications developer who was filling in for [Juan Elosua](https://twitter.com/jjelosua) while he was on family leave welcoming his child into the world. [Matthew Zhang](https://twitter.com/_mazhang) started as the team's intern around the same time, and as we wrap up our time out NPR, we're also adding a few notes about how we've set up our development environments. This guide helps you get a solid Python environment set up, which we use for daily graphics, data analysis and application development.*
-
-*[David Eads](http://twitter.com/eads), [Livia Labate](http://twitter.com/livlab), [Tyler Fisher](http://twitter.com/tylrfishr), [Shelly Tan](http://twitter.com/Tan_Shelly), [Helga Salinas](http://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua) and [Miles Watkins](https://github.com/mileswwatkins) have also contributed to this post.*
+*[Geoff Hing](https://twitter.com/geoffhing), [David Eads](https://twitter.com/eads), [Livia Labate](https://twitter.com/livlab), [Tyler Fisher](https://twitter.com/tylrfishr), [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua), [Miles Watkins](https://github.com/mileswwatkins), and [Thomas Wilburn](https://twitter.com/thomaswilburn) have also contributed to this post.*
 
 I joined the News Apps team a week ago in their shiny new DC offices, and in-between eating awesome food and Tiny Desk concerts, we've been documenting the best way to get other journalists setup to build news apps like the pros.
 
@@ -70,13 +68,13 @@ If anything isn't working properly, follow their instructions to get things work
 
 **Note**: If there are two lines inside any of the code blocks in this article, paste them separately and hit enter after each of them.
 
-Next you'll need to go in and edit  `~/.bash_profile` to ensures you can use what you've just downloaded. `bash_profile` acts like a configuration file for your terminal.
+Next you'll need to go in and edit  `~/.zshrc` to ensures you can use what you've just downloaded. `.zshrc` acts like a configuration file for your terminal.
 
 **Note**: There are many editors available on your computer. You can use a pretty graphical editor like [SublimeText2](http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1.dmg) or you can use one built-in to your terminal, like [`vim`](http://www.vim.org/docs.php) or [`nano`](http://www.nano-editor.org/dist/v2.2/nano.html). We'll be using `nano` for this tutorial just to keep things simple.
 
-Open your `bash_profile` with the following command.
+Open your `.zshrc` with the following command.
 
-	nano ~/.bash_profile
+	nano ~/.zshrc
 
 Then copy and paste this line of code at the very top. This lets Homebrew handle updating and maintaining the code we'll be installing.
 
@@ -84,9 +82,11 @@ Then copy and paste this line of code at the very top. This lets Homebrew handle
 
 Once you've added the line of code, you can save the file by typing control + O. Doing so lets you adjust the file name. Just leave it as is, then hit enter to save. Hit control + X to exit. You'll find yourself back at the command line and needing to update your terminal session like so. Copy and paste the next line of code into your terminal and hit enter.
 
-	source ~/.bash_profile
+	source ~/.zshrc
 
-You'll only need to source the `bash_profile` since we're editing the file right now. It's the equivalent of quitting your terminal application and opening it up again, but `source` lets you soldier forward and setup Python.
+You'll only need to source the `.zshrc` since we're editing the file right now. It's the equivalent of quitting your terminal application and opening it up again, but `source` lets you soldier forward and setup Python.
+
+**Note:** On older MacOS systems, the shell was `bash`, but MacOS changed it to `zsh` in v10.15 (Catalina). If you're using an older OS, instead of editing `~/.zshrc`, you'll want to `nano ~/.bash_profile`.
 
 ## Chapter 2: Install Python 2 and virtualenv
 
@@ -100,10 +100,10 @@ You may have to update your `PATH` environment variable to tell your system to p
 
 > This formula installs a python2 executable to /usr/local/bin.
 > If you wish to have this formula's python executable in your PATH then add
-> the following to ~/.bash_profile:
+> the following to ~/.zshrc:
 > `export PATH="/usr/local/opt/python/libexec/bin:$PATH"`
 
-I updated my path in `~/.bash_profile` so that `/usr/local/opt/python/libexec/bin` was at the beginning of the path list and then made my current shell use the updated path by running `source ~/.bash_profile`.
+I updated my path in `~/.zshrc` so that `/usr/local/opt/python/libexec/bin` was at the beginning of the path list and then made my current shell use the updated path by running `source ~/.zshrc`.
 
 
 **Note**: `pip2` is like Homebrew: it's sort of an app store but for [Python code](https://pypi.org/).
@@ -114,9 +114,9 @@ Next, we'll install `virtualenv` and `virtualenvwrapper`. These tools help us is
 
 **Note**: `virtualenv` creates the actual environment that you'll be using, while `virtualwrapper` makes the interface to these virtual environments even simpler.
 
-Edit your `~/.bash_profile` file again,
+Edit your `~/.zshrc` file again,
 
-	nano ~/.bash_profile
+	nano ~/.zshrc
 
 and add this line below the line you just added:
 
@@ -124,9 +124,9 @@ and add this line below the line you just added:
 
 Save and exit out of `nano` using control + O, enter, and then control + X.
 
-**Sanity Check**: Double check your `~/.bash_profile` file, and make sure you've properly saved your `PATH` variables.
+**Sanity Check**: Double check your `~/.zshrc` file, and make sure you've properly saved your `PATH` variables.
 
-	less ~/.bash_profile
+	less ~/.zshrc
 
 It should look like this:
 
@@ -159,9 +159,9 @@ This will make a virtual environment with the active Python version on your `PAT
 
 Many of our tools require Node, which runs JavaScript on the desktop or server. For example, our older projects compile CSS from a dialect called LESS, and our newer projects are built entirely on top of Node. The best way to install Node is using `nvm`, which lets you easily upgrade and switch between Node versions.
 
-Install `nvm` with this line. It will ask you to update your Bash config, or close and re-open your terminal after it completes.
+Install `nvm` with this line. It will ask you to update your shell config, or close and re-open your terminal after it completes.
 
-	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 Once that's done, you can actually use `nvm` to install Node:
 
@@ -189,16 +189,6 @@ It's nice to have your name and email show up correctly in the commit log. To ma
 	git config --global user.name "$YOUR_NAME"
 
 You can also use the [GitHub Desktop](https://desktop.github.com) app to manage your repositories, since it will make it easier to check diffs or browse through repo history.
-
-### Optional: set up bash completion
-
-I like to be able to tab-complete my branch names when doing `git checkout`.  The easiest way I found to do this is to install Homebrew's git instead of the default macOS one, as well as the bash completion package:
-
-	brew install git bash-completion
-
-Then add a line like this to your `~/.bash_profile`:
-
-	[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 ## Appendix 1: Postgres and PostGIS
 We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data.
