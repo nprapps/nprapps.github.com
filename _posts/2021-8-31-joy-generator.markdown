@@ -58,17 +58,17 @@ Although it presents as a single-page application, similar to the "stories" that
 
 While this <a href="https://blog.apps.npr.org/2020/03/16/custom-elements-primaries.html">isn't the first time</a> that we've used web components in a big project, it is the first time we used the shadow DOM extensively. Essentially, this is an API that lets you create a private section of the page inside an element that's isolated from styles and JavaScript outside, similar to the way a `<video>` tag's internal structure is hidden away. 
 
-Where this becomes really powerful and interesting is when you add <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot">`&lt;slot&gt;`</a>, a new tag that "re-parents" an element's children into a specific part of the shadow tree, but still leaves them in the "light" DOM for styling and access. For example, our custom `&lt;state-check&gt;` component uses a slot to let us easily set the label for a "smart" options checkbox, just by writing the contents like we would any other HTML tag. Here, we've created a `&lt;state-check&gt;` with the contents "Autoplay video" inside.
+Where this becomes really powerful and interesting is when you add <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/slot">`<slot>`</a>, a new tag that "re-parents" an element's children into a specific part of the shadow tree, but still leaves them in the "light" DOM for styling and access. For example, our custom `<state-check>` component uses a slot to let us easily set the label for a "smart" options checkbox, just by writing the contents like we would any other HTML tag. Here, we've created a `<state-check>` with the contents "Autoplay video" inside.
 
 ![screenshot](/img/posts/2021-8-31-joy-generator/state-check-1.jpg)
-<small>A `&lt;state-check&gt;` seen from the outside.</small>
+<small>A `<state-check>` seen from the outside.</small>
 
-Inside the `&lt;state-check&gt;`, the markup is actually much more complicated than it appears from outside, but our label text is "revealed" in the slot at the correct location.
+Inside the `<state-check>`, the markup is actually much more complicated than it appears from outside, but our label text is "revealed" in the slot at the correct location.
 
 ![screenshot](/img/posts/2021-8-31-joy-generator/state-check-2.jpg)
-<small>The same `&lt;state-check&gt;` with its shadow root open to reveal the slot for the label contents ("#text reveal" is replaced with "Autoplay video" for the user).</small>
+<small>The same `<state-check>` with its shadow root open to reveal the slot for the label contents ("#text reveal" is replaced with "Autoplay video" for the user).</small>
 
-As far as our CSS is concerned, the contents of these labels are still just child elements inside of `&lt;state-check&gt;`, and they can be styled using our regular <a href="https://less-css.org">Less</a> variables and macros. Almost every component in the Joy Generator uses slots to wrap content this way, including the <a href="https://github.com/nprapps/science-of-joy/blob/master/src/js/web-story/web-story.js">`<web-story>` component that contains each chapter</a> and controls its pagination and flow.
+As far as our CSS is concerned, the contents of these labels are still just child elements inside of `<state-check>`, and they can be styled using our regular <a href="https://less-css.org">Less</a> variables and macros. Almost every component in the Joy Generator uses slots to wrap content this way, including the <a href="https://github.com/nprapps/science-of-joy/blob/master/src/js/web-story/web-story.js">`<web-story>` component that contains each chapter</a> and controls its pagination and flow.
 
 A good rule of thumb in this architecture is to use the shadow DOM when necessary, but no more. As much as possible, we kept styling for content in the light DOM, and only used the shadow for the interactive parts of a component that it generates for itself. We used CSS custom properties to export our Less values, treating the latter as the source of truth for colors and layout.
 
