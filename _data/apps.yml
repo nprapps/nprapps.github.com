@@ -1447,6 +1447,8 @@
   image: "https://apps.npr.org/joy-generator/assets/synced/social/promo-pics-visualizer-1.jpg"
   url: https://apps.npr.org/joy-generator/
   github_url: https://github.com/nprapps/science-of-joy
+  blog_title: "The Science of the Science of Joy"
+  blog_url: /2021/08/31/joy-generator.html
 - name: "As Western Wildfires Worsen, FEMA Is Denying Most People Who Ask For Help"
   description: "An investigation into FEMA claims after 2020's historic wildfires in Oregon and California reveals wide fluctuations in approval rates and denials of people who met aid criteria."
   date: July 1, 2021
