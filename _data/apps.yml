@@ -1464,6 +1464,7 @@
   date: July 27, 2021
   image: "https://media.npr.org/assets/img/2021/07/27/sea-level-rise-sunnyvale_wide-s1200-c85.jpg"
   url: https://apps.npr.org/sea-level-rise-silicon-valley/
+  github_url: https://github.com/nprapps/sea-level-scroll
 - name: "Do You Need To Wear A Mask Indoors Where You Live? Check This Map"
   description: "The CDC wants vaccinated people to wear masks indoors if the coronavirus is spreading widely where they live. Find out the level of virus transmission in your county."
   date: July 28, 2021
@@ -1474,3 +1475,4 @@
   date: Aug. 10, 2021
   image: "https://apps.npr.org/us-wildfires-impact-environment-climate-change/assets/synced/images/map5-1000-7-social.jpg"
   url: https://apps.npr.org/us-wildfires-impact-environment-climate-change/
+  github_url: https://github.com/nprapps/wildfire-scroll
