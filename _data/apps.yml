@@ -1476,3 +1476,13 @@
   image: "https://apps.npr.org/us-wildfires-impact-environment-climate-change/assets/synced/images/map5-1000-7-social.jpg"
   url: https://apps.npr.org/us-wildfires-impact-environment-climate-change/
   github_url: https://github.com/nprapps/wildfire-scroll
+- name: "Gov. Newsom Keeps His Seat As A Majority Of California Voters Reject The Recall"
+  description: "According to the AP, voters have decided not to recall California Democratic Gov. Gavin Newsom. He will remain the leader of the country's most populous state until at least 2023."
+  date: Sept. 14, 2021
+  image: "./img/posts/2021-09-14-ca-recall.png"
+  url: https://www.npr.org/2021/09/15/1035011524/tv-movie-guide-what-to-watch
+- name: "New Movies And TV Shows To Watch At Home This Fall"
+  description: "Our critics collected the most anticipated TV shows and movies coming to your screens over the next few months, and with our new tool you can search by release date, genre and where you can watch it."
+  date: Sept. 15, 2021
+  image: "https://media.npr.org/assets/img/2021/09/13/fall-preview-21_wide-6112ef993bd6566f3400b658f5ce638a94fce265-s1000-c85.jpg"
+  url: https://www.npr.org/2021/09/15/1035011524/tv-movie-guide-what-to-watch
