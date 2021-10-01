@@ -1476,6 +1476,8 @@
   image: "https://apps.npr.org/us-wildfires-impact-environment-climate-change/assets/synced/images/map5-1000-7-social.jpg"
   url: https://apps.npr.org/us-wildfires-impact-environment-climate-change/
   github_url: https://github.com/nprapps/wildfire-scroll
+  blog_title: "Building A Beautiful And Clear Map From Massive, Complex Data"
+  blog_url: /2021/10/01/wildfire-map.html
 - name: "Gov. Newsom Keeps His Seat As A Majority Of California Voters Reject The Recall"
   description: "According to the AP, voters have decided not to recall California Democratic Gov. Gavin Newsom. He will remain the leader of the country's most populous state until at least 2023.local"
   date: Sept. 14, 2021
