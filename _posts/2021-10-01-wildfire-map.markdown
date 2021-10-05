@@ -26,7 +26,7 @@ And as always…
   - clear without being sensationalized AND
   - divergent in color while also being accessible?
 
-In cartography, there are always multiple ways to approach a problem, so if there are skills, tricks, or methods that I overlooked, please let me know.
+In cartography, there are always multiple ways to approach a problem, so if there are skills, tricks, or methods that I overlooked, please let me know by replying to <a href="https://twitter.com/DanielPWWood/status/1445083898044682242">this tweet</a>.
 
 ## Step 0: Get the data
 
