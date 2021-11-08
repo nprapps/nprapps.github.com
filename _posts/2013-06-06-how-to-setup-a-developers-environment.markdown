@@ -7,20 +7,18 @@ email: grich@npr.org
 twitter: gerald_arthur
 ---
 
-*Updated December 15, 2017*
+After 8 years, and countless revisions, we're finally reposting our step by step guide to setting up your machine the way we do at NPR Apps. Like the [classic version](https://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html), first authored in 2013 by [Gerald Rich](https://twitter.com/newsroomdev), this will be a living document, repeatedly updated as systems and software update. 
 
-*Hi! I'm [Geoff Hing](https://twitter.com/geoffhing), a news applications developer who was filling in for [Juan Elosua](https://twitter.com/jjelosua) while he was on family leave welcoming his child into the world. [Matthew Zhang](https://twitter.com/_mazhang) started as the team's intern around the same time, and as we wrap up our time out NPR, we're also adding a few notes about how we've set up our development environments. This guide helps you get a solid Python environment set up, which we use for daily graphics, data analysis and application development.*
+[Geoff Hing](https://twitter.com/geoffhing), [David Eads](https://twitter.com/eads), [Livia Labate](https://twitter.com/livlab), [Tyler Fisher](https://twitter.com/tylrfishr), [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua), [Miles Watkins](https://github.com/mileswwatkins) and [Thomas Wilburn](https://twitter.com/thomaswilburn) have also contributed to this post.
 
-*[David Eads](http://twitter.com/eads), [Livia Labate](http://twitter.com/livlab), [Tyler Fisher](http://twitter.com/tylrfishr), [Shelly Tan](http://twitter.com/Tan_Shelly), [Helga Salinas](http://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua) and [Miles Watkins](https://github.com/mileswwatkins) have also contributed to this post.*
-
-I joined the News Apps team a week ago in their shiny new DC offices, and in-between eating awesome food and Tiny Desk concerts, we've been documenting the best way to get other journalists setup to build news apps like the pros.
-
-The following steps will help you convert your laptop to hacktop, assuming you're working on a new Mac with macOS 10.12, or Sierra, installed. Each Mac operating system is a little different, so we're starting from scratch with the latest OS.
+The following steps assume you're working on a new Mac with macOS Catalina 10.15 or more recent. These directions should generally be applicable for anything more recent than Catalina as well. 
 
 ## Chapter 0: Prerequisites
 
 ### Are you an administrator?
 We'll be installing a number of programs from the command line in this tutorial, so that means you must have administrative privileges. If you're not an admin, talk with your friendly IT Department.
+
+**tktk update this section with my own screenshot**
 
 Click on the Apple menu > System Preferences > Users & Groups and check your status against this handy screenshot.
 
@@ -30,9 +28,9 @@ Click on the Apple menu > System Preferences > Users & Groups and check your sta
 Go to the App Store and go to the updates tab. If there are system updates, install and reboot until there is nothing left to update.
 
 ### Install command line tools
-With the release of macOS 10.9, Apple decoupled its command line tools necessary for compiling some of the tools we use from Xcode, Apple's proprietary development suite.
+The command line tools from Apple provide a *crucial* suite of tools you'll need to use version control (git) and Python. The main commands you may come across that come from command line tools are `git`, `make`, `clang`, and `gcc`.
 
-All Macs come with an app called "Terminal." You can find it under Applications > Utilities. Double click to open that bad boy up, and run this command:
+All Macs come with an app called "Terminal." You can find it under Applications > Utilities. Double click to open that bad boy up, (or hit `cmd-space` and type "terminal"). Once it's booted, run this command:
 
 	xcode-select --install
 
@@ -70,13 +68,13 @@ If anything isn't working properly, follow their instructions to get things work
 
 **Note**: If there are two lines inside any of the code blocks in this article, paste them separately and hit enter after each of them.
 
-Next you'll need to go in and edit  `~/.bash_profile` to ensures you can use what you've just downloaded. `bash_profile` acts like a configuration file for your terminal.
+Next you'll need to go in and edit  `~/.zshrc` to ensures you can use what you've just downloaded. `.zshrc` acts like a configuration file for your terminal.
 
-**Note**: There are many editors available on your computer. You can use a pretty graphical editor like [SublimeText2](http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%202.0.1.dmg) or you can use one built-in to your terminal, like [`vim`](http://www.vim.org/docs.php) or [`nano`](http://www.nano-editor.org/dist/v2.2/nano.html). We'll be using `nano` for this tutorial just to keep things simple.
+**Note**: There are many editors available on your computer. You can use a pretty graphical editor like [Sublime Text](https://www.sublimetext.com/) or you can use one built-in to your terminal, like [`vim`](http://www.vim.org/docs.php) or [`nano`](http://www.nano-editor.org/dist/v2.2/nano.html). We'll be using `nano` for this tutorial just to keep things simple. If you'd rather edit in Sublime Text like I often do, go to the [appendix](#appendix-2-supe-up-your-terminal-game) to learn how to open a file with the `edit FILE_NAME` command. 
 
-Open your `bash_profile` with the following command.
+Open your `.zshrc` with the following command.
 
-	nano ~/.bash_profile
+	nano ~/.zshrc
 
 Then copy and paste this line of code at the very top. This lets Homebrew handle updating and maintaining the code we'll be installing.
 
@@ -84,15 +82,131 @@ Then copy and paste this line of code at the very top. This lets Homebrew handle
 
 Once you've added the line of code, you can save the file by typing control + O. Doing so lets you adjust the file name. Just leave it as is, then hit enter to save. Hit control + X to exit. You'll find yourself back at the command line and needing to update your terminal session like so. Copy and paste the next line of code into your terminal and hit enter.
 
-	source ~/.bash_profile
+	source ~/.zshrc
 
-You'll only need to source the `bash_profile` since we're editing the file right now. It's the equivalent of quitting your terminal application and opening it up again, but `source` lets you soldier forward and setup Python.
+You'll only need to source the `.zshrc` since we're editing the file right now. It's the equivalent of quitting your terminal application and opening it up again, but `source` lets you soldier forward and setup Python.
 
-## Chapter 2: Install Python 2 and virtualenv
+**Note:** On older MacOS systems, the shell was `bash`, but MacOS changed it to `zsh` in v10.15 (Catalina). If you're using an older OS, instead of editing `~/.zshrc`, you'll want to `nano ~/.bash_profile`.
 
-macOS comes with a system version of Python, and for a long time, we used this version. However, modifying the system Python is inadvisable; user alterations or installations may cause core macOS components to break, and macOS system updates may cause user projects to break.
+## Chapter 2: Installing Python and Virtual environments.
 
-Thus, install the latest stable homebrewed version of Python. Most of our team's projects use Python 2, so we'll install that version instead of Python 3; following from this, we'll use the `python2` and `pip2` commands to invoke those tools in the terminal.
+Python is notoriously tricky to install and manage on your machine. XKCD did it justice with this cartoon...
+
+[![](https://imgs.xkcd.com/comics/python_environment.png)](https://xkcd.com/1987/)
+
+macOS comes with a system version of Python, and for a long time, we used this version. However, modifying the system Python is **a bad idea**; user alterations or installations may cause core macOS components to break, and macOS system updates may cause user projects to break.
+
+Thus, we need to utilize virtual environments to select our python versions, and allow easy swapping between environments, and tidy maintenance of dependencies and packages. Historically, many of our team's projects used **Python 2.7.x**, and you are likely to need it at access legacy tools. Modern tools and documentation tends to use **Python 3**, so it will be good to have that handy as well. 
+
+I used [this](https://opensource.com/article/19/6/python-virtual-environments-mac) tutorial and [this](https://opensource.com/article/19/6/python-virtual-environments-mac) and a lot of googling for getting `pyenv` and `virtualenvwrapper` running on my machine. Note that you probably need to change any references of `.bash_profile` to `.zshrc` if you're using macOS Catalina or more recent.
+
+Here are the precise steps I used. **Hold onto your butts...**
+
+### Install pyenv and python 3
+
+First we will install [pyenv](https://github.com/pyenv/pyenv#command-reference) which will allow us to swap between python versions in a tidy way. Run:
+
+	brew install pyenv pyenv-virtualenv pyenv-virtualenvwrapper
+
+Next you'll want to add the following lines to .zshrc so pyenv will run whenever you open a terminal window.
+```bash	
+# put in your .zshrc or .bash_profile file
+if command -v pyenv 1>/dev/null 2>&1; then
+	eval "$(pyenv init -)"
+	eval "$(pyenv virtualenv-init -)"
+fi
+```
+
+To get this to work, run `source ~/.zshrc` or restart your terminal application. 
+
+Next we'll brew install a few things that pyenv needs to run. 
+
+	brew install openssl readline sqlite3 xz zlib
+
+Then, run these exports in your terminal window to make sure the next couple steps work correctly. Run each sequentially in terminal:
+
+**tktk look through command line history to copy other similar flag commands I used, in case the next person needs those specialized commands.**
+
+**tktk also referenced these issues, https://github.com/pyenv/pyenv/issues/1643 and https://github.com/pyenv/pyenv/issues/1738**
+
+```bash
+export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include"
+```
+
+Next we'll install a version of Python to use by default. 
+
+```bash
+# download some version of 3.7.x or later. Whatever works ¯\_(ツ)_/¯
+pyenv install 3.9.1
+```
+*Note, running this command on 3.7.3, 3.8.1 and 2.7.1 threw errors for me. 3.9.1 worked, not sure why! If you hit errors, try installing different nearby versions. For our purposes 3.7.x is as good as 3.8.x or 3.9.x. And for older versions, 2.7.1 is as good as 2.7.16.*
+
+This will take a second. When that's complete, you can see the Python versions stored by pyenv by running:
+
+	pyenv versions
+
+After running this, the options available to me are "system" (which is 2.7.1 in my case) and 3.9.1. Let's update the global python environment to 3.9.1 by running
+
+```bash 
+pyenv global 3.9.1
+```
+
+You can always change back! 
+
+At this time, also install a version of Python 2.7.x. I used 2.7.16, because 2.7.1 didn't compile. 
+```bash 	
+# download some version of 2.7.x. Whatever works ¯\_(ツ)_/¯
+pyenv install 2.7.16
+```
+
+Now when you run `pyenv versions` you should see something that looks like the following:
+
+```bash
+  system
+  2.7.16
+* 3.9.1 (set by /Users/dwood/.python-version)
+```
+**tktk figure out what the difference between `pyenv global` and `pyenv local` are...not making sense at the moment**
+
+To run  command with your set version of python, don't just run `python FILE.py`. This will simply use your system version of Python. Instead, you run 
+
+`pyenv exec FILE.py`
+
+
+
+
+### Install virtual environments
+
+We've already installed `pyenv-virtualenv` and `pyenv-virtualenvwrapper`, two plugins for `pyenv` that give you access to the traditional commands that come with `virtualenv` and `virtualenvwrapper`. 
+
+These tools give you the ability to create virtual environments where you can tidily and separately store requirements for various Python projects, using whatever Python may be required by that project. 
+
+Practically speaking, these plugins give you access to the `mkvirtualenv`, `rmvirtualenv`, `lssitepackages` and `workon` commands, among others.
+
+**tktk find a list of commands now available** 
+
+Add the following line to your .zshrc
+
+	pyenv virtualenvwrapper
+
+This should give you access to the commands listed above, and others. 
+
+**TKTK section on how to create a virtual environment**
+
+To check if `virtualenv` is properly working, you can create a virtual environment to test it by running:
+
+	mkvirtualenv my_virtual_env_name
+
+After making a few python executables, this should create a new virtual environment for you. If you're in a virtual environment, you should see `(my_virtual_env_name)` inserted before each line in the terminal. Then, to exit out of the virtual environment, run:
+
+	deactivate
+
+This will deactivate but not delete the test virtual environment. To delete the virtual environment, use `rmvirtualenv my_virtual_env_name`. 
+
+
+<!-- 
+so we'll install that version instead of Python 3; following from this, we'll use the `python2` and `pip2` commands to invoke those tools in the terminal.
 
 	brew install python2
 
@@ -100,10 +214,10 @@ You may have to update your `PATH` environment variable to tell your system to p
 
 > This formula installs a python2 executable to /usr/local/bin.
 > If you wish to have this formula's python executable in your PATH then add
-> the following to ~/.bash_profile:
+> the following to ~/.zshrc:
 > `export PATH="/usr/local/opt/python/libexec/bin:$PATH"`
 
-I updated my path in `~/.bash_profile` so that `/usr/local/opt/python/libexec/bin` was at the beginning of the path list and then made my current shell use the updated path by running `source ~/.bash_profile`.
+I updated my path in `~/.zshrc` so that `/usr/local/opt/python/libexec/bin` was at the beginning of the path list and then made my current shell use the updated path by running `source ~/.zshrc`.
 
 
 **Note**: `pip2` is like Homebrew: it's sort of an app store but for [Python code](https://pypi.org/).
@@ -114,9 +228,9 @@ Next, we'll install `virtualenv` and `virtualenvwrapper`. These tools help us is
 
 **Note**: `virtualenv` creates the actual environment that you'll be using, while `virtualwrapper` makes the interface to these virtual environments even simpler.
 
-Edit your `~/.bash_profile` file again,
+Edit your `~/.zshrc` file again,
 
-	nano ~/.bash_profile
+	nano ~/.zshrc
 
 and add this line below the line you just added:
 
@@ -124,9 +238,9 @@ and add this line below the line you just added:
 
 Save and exit out of `nano` using control + O, enter, and then control + X.
 
-**Sanity Check**: Double check your `~/.bash_profile` file, and make sure you've properly saved your `PATH` variables.
+**Sanity Check**: Double check your `~/.zshrc` file, and make sure you've properly saved your `PATH` variables.
 
-	less ~/.bash_profile
+	less ~/.zshrc
 
 It should look like this:
 
@@ -143,7 +257,7 @@ After making a few python executables, this should create a new virtual environm
 
 	deactivate
 
-This will deactivate but not delete the test virtual environment. To delete the virtual environment, use `rmvirtualenv my_virtual_env_name`.
+This will deactivate but not delete the test virtual environment. To delete the virtual environment, use `rmvirtualenv my_virtual_env_name`. -->
 
 ### A note about virtual environments
 
@@ -159,9 +273,9 @@ This will make a virtual environment with the active Python version on your `PAT
 
 Many of our tools require Node, which runs JavaScript on the desktop or server. For example, our older projects compile CSS from a dialect called LESS, and our newer projects are built entirely on top of Node. The best way to install Node is using `nvm`, which lets you easily upgrade and switch between Node versions.
 
-Install `nvm` with this line. It will ask you to update your Bash config, or close and re-open your terminal after it completes.
+Install `nvm` with this line. It will ask you to update your shell config, or close and re-open your terminal after it completes.
 
-	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.2/install.sh | bash
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
 
 Once that's done, you can actually use `nvm` to install Node:
 
@@ -190,39 +304,7 @@ It's nice to have your name and email show up correctly in the commit log. To ma
 
 You can also use the [GitHub Desktop](https://desktop.github.com) app to manage your repositories, since it will make it easier to check diffs or browse through repo history.
 
-### Optional: set up bash completion
-
-I like to be able to tab-complete my branch names when doing `git checkout`.  The easiest way I found to do this is to install Homebrew's git instead of the default macOS one, as well as the bash completion package:
-
-	brew install git bash-completion
-
-Then add a line like this to your `~/.bash_profile`:
-
-	[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
-
-## Appendix 1: Postgres and PostGIS
-We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data.
-
-While you can install Postgres using Homebrew, the easiest way to manage Postgres on your Mac is with Postgres.app. This application provides a very basic GUI around the database, and sits in your menu bar to show whether the database is running. It also comes with useful extensions baked in, including PostGIS.
-
-[Download and install Postgres.app from its website.](https://postgresapp.com/)
-
-## Appendix 2: The Terminal
-Since you're going to be working from the command line a lot, it's worth investing time to make your terminal something that's a little more easy on the eyes.
-
-### iTerm2
-Download [iTerm2](http://www.iterm2.com/#/section/home). The built-in terminal application which comes with your Mac is fine, but iTerm2 is slicker and more configurable. One of the better features is splitting your terminal into different horizontal and vertical panes: one for an active pane, another for any files you might want to have open, and a third for a local server.
-
-#### Solarized
-[Solarized](http://ethanschoonover.com/solarized/files/solarized.zip) is a set of nice, readable colors. Unzip the `solarized.zip` file.
-
-Now, inside iTerm2 go to iTerm > Preferences > Profiles and select "Default." Choose "Colors" and find the "Color Presets…" button in the lower-right-hand corner of the window. Select "Import" and navigate to `solarized/iterm2-colors-solarized/` and double-click on `Solarized Dark.itermcolors`. After it's been imported, you can find "Solarized Dark" on the "Load Presets" list. Click and select "Solarized Dark" to change the colors appropriately.
-
-![You can edit your theme from the Preferences menu](/img/posts/a2_solarized.png)
-
-See? Much nicer.
-
-## Appendix 3: The Text Editor
+## Appendix 1: The Text Editor
 Since your code is stored entirely as text files on your computer, you'll want a nice text editor. Our instructions showed you how to use `nano`, a text editor that you'll find on almost every computer. However, there are at least two others that the team uses. Text editors are like the Microsoft Word of the programming world, except they come packed with all kinds of handy dandy features to make writing code a cinch.
 
 ### Atom
@@ -261,6 +343,50 @@ You can do this with this command:
 I used the `which` command to easily find the path to `vim`:
 
 	git config --global core.editor $(which vim)
+
+## Appendix 2: Supe up your terminal game
+
+Working in the terminal is a crucial part of our workflow. So supe it up to make it something that you enjoy using. Here are a few *optional* things to do to enhance your terminal experience.
+
+### Add aliases to speed up your work
+
+Adding aliases to your `.zshrc` files allows you to type short commands for commands you frequently use. Here are a few aliases I use, followed by their descriptions. Paste the following into your `.zshrc` and edit them to your file paths. 
+
+```bash
+#Aliases
+alias edit="open -a /Applications/Sublime\ Text.app"
+alias ogit="open \`git remote -v | grep git@github.com | grep fetch | head -1 | cut -f2 | cut -d' ' -f1 | sed -e's/:/\//' -e 's/git@/http:\/\//'\`"
+alias sites="cd /PATH/TO/ANY/FREQUENTLY/USED/DIRECTORIES"
+```
+
+* `edit`: To open any file or folder in Sublime Text, type `edit file-or-folder/path`. You can replace the path there with any text editor you want to use.
+* `ogit`: If you're in a directory that is version controlled remotely on github, you can run `ogit` inside that directory to open up that github page in your default browser. For instance if I run `ogit` in my `dailygraphics-next` directory it will open up [https://github.com/nprapps/dailygraphics-next]().
+* The final example above is a boilerplate example of how you can set up shortcuts to commonly accessed directories. I have one for my sites folder and one for my daily graphics folder. 
+
+**TKTK section on .oh-my-zsh?**
+
+### Consider an alternative to the default terminal, like iTerm2
+Download [iTerm2](http://www.iterm2.com/#/section/home). The built-in terminal application which comes with your Mac is fine, but iTerm2 is slicker and more configurable. One of the better features is splitting your terminal into different horizontal and vertical panes: one for an active pane, another for any files you might want to have open, and a third for a local server.
+
+#### Solarized
+[Solarized](http://ethanschoonover.com/solarized/files/solarized.zip) is a set of nice, readable colors. Unzip the `solarized.zip` file.
+
+Now, inside iTerm2 go to iTerm > Preferences > Profiles and select "Default." Choose "Colors" and find the "Color Presets…" button in the lower-right-hand corner of the window. Select "Import" and navigate to `solarized/iterm2-colors-solarized/` and double-click on `Solarized Dark.itermcolors`. After it's been imported, you can find "Solarized Dark" on the "Load Presets" list. Click and select "Solarized Dark" to change the colors appropriately.
+
+![You can edit your theme from the Preferences menu](/img/posts/a2_solarized.png)
+
+See? Much nicer.
+
+
+## Appendix 3: Postgres and PostGIS
+
+**TKTK... to add link to blog about my talk at NACIS?**
+
+We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data.
+
+While you can install Postgres using Homebrew, the easiest way to manage Postgres on your Mac is with Postgres.app. This application provides a very basic GUI around the database, and sits in your menu bar to show whether the database is running. It also comes with useful extensions baked in, including PostGIS.
+
+[Download and install Postgres.app from its website.](https://postgresapp.com/)
 
 
 ## Conclusion
