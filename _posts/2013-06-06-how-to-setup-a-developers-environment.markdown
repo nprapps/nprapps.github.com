@@ -9,7 +9,7 @@ twitter: gerald_arthur
 
 After 8 years, and countless revisions, we're finally reposting our step by step guide to setting up your machine the way we do at NPR Apps. Like the [classic version](https://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html), first authored in 2013 by [Gerald Rich](https://twitter.com/newsroomdev), this will be a living document, repeatedly updated as systems and software update. 
 
-[Geoff Hing](https://twitter.com/geoffhing), [David Eads](https://twitter.com/eads), [Livia Labate](https://twitter.com/livlab), [Tyler Fisher](https://twitter.com/tylrfishr), [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua), [Miles Watkins](https://github.com/mileswwatkins) and [Thomas Wilburn](https://twitter.com/thomaswilburn) have also contributed to this post.
+[Geoff Hing](https://twitter.com/geoffhing), [David Eads](https://twitter.com/eads), [Livia Labate](https://twitter.com/livlab), [Tyler Fisher](https://twitter.com/tylrfishr), [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua), [Miles Watkins](https://github.com/mileswwatkins), [Thomas Wilburn](https://twitter.com/thomaswilburn) and [Daniel Wood]() have also contributed to this post.
 
 The following steps assume you're working on a new Mac with macOS Catalina 10.15 or more recent. These directions should generally be applicable for anything more recent than Catalina as well. 
 
@@ -258,16 +258,6 @@ After making a few python executables, this should create a new virtual environm
 	deactivate
 
 This will deactivate but not delete the test virtual environment. To delete the virtual environment, use `rmvirtualenv my_virtual_env_name`. -->
-
-### A note about virtual environments
-
-*April 18, 2016*: We recently learned that if you installed `virtualenv` before installing the Homebrew version of Python (and possibly even if you installed Python first), the virtual environments you create will use the macOS system version of Python. This is not cool because that version of Python is compiled without key features and libraries.
-
-To ensure you *always* are using your Homebrewed Python, always specify the `--python` flag when creating a virtual environment:
-
-    mkvirtualenv --python "$(which python2)" my_virtual_env_name
-
-This will make a virtual environment with the active Python version on your `PATH`.
 
 ## Chapter 3: Set up Node and install LESS
 
