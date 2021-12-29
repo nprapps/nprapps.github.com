@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title: "How to Setup Your Mac to Develop News Applications Like We Do"
@@ -88,7 +89,7 @@ You'll only need to source the `.zshrc` since we're editing the file right now. 
 
 **Note:** On older MacOS systems, the shell was `bash`, but MacOS changed it to `zsh` in v10.15 (Catalina). If you're using an older OS, instead of editing `~/.zshrc`, you'll want to `nano ~/.bash_profile`.
 
-## Chapter 2: Installing Python and Virtual environments.
+## Chapter 2: Installing Python and Virtual environments with anaconda
 
 Python is notoriously tricky to install and manage on your machine. XKCD did it justice with this cartoon...
 
@@ -96,168 +97,63 @@ Python is notoriously tricky to install and manage on your machine. XKCD did it 
 
 macOS comes with a system version of Python, and for a long time, we used this version. However, modifying the system Python is **a bad idea**; user alterations or installations may cause core macOS components to break, and macOS system updates may cause user projects to break.
 
-Thus, we need to utilize virtual environments to select our python versions, and allow easy swapping between environments, and tidy maintenance of dependencies and packages. Historically, many of our team's projects used **Python 2.7.x**, and you are likely to need it at access legacy tools. Modern tools and documentation tends to use **Python 3**, so it will be good to have that handy as well. 
+Thus, we need to utilize virtual environments to select our python versions, and allow easy swapping between environments, and tidy maintenance of dependencies and packages. Historically, many of our team's projects used **Python 2.7.x**, so if you're on our team, you will need to be able to access it for legacy projects. Modern tools and documentation tends to use **Python 3**, so it will be good to have that handy as well. 
 
-I used [this](https://opensource.com/article/19/6/python-virtual-environments-mac) tutorial and [this](https://opensource.com/article/19/6/python-virtual-environments-mac) and a lot of googling for getting `pyenv` and `virtualenvwrapper` running on my machine. Note that you probably need to change any references of `.bash_profile` to `.zshrc` if you're using macOS Catalina or more recent.
+To create well supported and fairly simple to install virtual environments, we're going to utilize [anaconda](https://docs.anaconda.com/). To start with, follow the instructions for the [graphical installer](https://docs.anaconda.com/anaconda/install/mac-os/). Here's a [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) for anaconda commands. 
 
-Here are the precise steps I used. **Hold onto your butts...**
+Open terminal to verify installation. Type `conda env list` to see a list of environments. At this point, the only environment should be your base environment. Next create an environment to run python 2.7.x in. I used 2.7.18 because that's what worked for me. 
 
-### Install pyenv and python 3
 
-First we will install [pyenv](https://github.com/pyenv/pyenv#command-reference) which will allow us to swap between python versions in a tidy way. Run:
+	conda create --name py2 python=2.7.18
 
-	brew install pyenv pyenv-virtualenv pyenv-virtualenvwrapper
 
-Next you'll want to add the following lines to .zshrc so pyenv will run whenever you open a terminal window.
-```bash	
-# put in your .zshrc or .bash_profile file
-if command -v pyenv 1>/dev/null 2>&1; then
-	eval "$(pyenv init -)"
-	eval "$(pyenv virtualenv-init -)"
-fi
-```
+You can name it whatever you want. I went with `py2`. This will take a moment. When prompted type `y` to proceed. Next, activate this environment. 
 
-To get this to work, run `source ~/.zshrc` or restart your terminal application. 
+	source activate py2
 
-Next we'll brew install a few things that pyenv needs to run. 
+To test that the correct python version is being used, type `python --version`. The result should be `Python 2.7.18 :: Anaconda, Inc.` or similar. If you see 3.x, something has gone wrong. 
 
-	brew install openssl readline sqlite3 xz zlib
+Deactivate this environment by running `source deactivate`.
 
-Then, run these exports in your terminal window to make sure the next couple steps work correctly. Run each sequentially in terminal:
+### Installing Jupyter notebook and pandas
 
-**tktk look through command line history to copy other similar flag commands I used, in case the next person needs those specialized commands.**
+It may be useful to install [Jupyter notebook](https://jupyter.org/index.html) for data analysis. Before doing this, let's create and and activate environment for this to live in. You can create a single environment to always run Jupyter notebook, or you can create a new environment each time you start a new Jupyter notebook project.
 
-**tktk also referenced these issues, https://github.com/pyenv/pyenv/issues/1643 and https://github.com/pyenv/pyenv/issues/1738**
 
-```bash
-export LDFLAGS="-L/usr/local/opt/zlib/lib -L/usr/local/opt/sqlite/lib"
-export CPPFLAGS="-I/usr/local/opt/zlib/include -I/usr/local/opt/sqlite/include"
-```
+	conda create --name jupyterExample python=3.9
+	souce activate jupyterExample
 
-Next we'll install a version of Python to use by default. 
+Now if you type `conda env list` you should see the following:
 
-```bash
-# download some version of 3.7.x or later. Whatever works ¯\_(ツ)_/¯
-pyenv install 3.9.1
-```
-*Note, running this command on 3.7.3, 3.8.1 and 2.7.1 threw errors for me. 3.9.1 worked, not sure why! If you hit errors, try installing different nearby versions. For our purposes 3.7.x is as good as 3.8.x or 3.9.x. And for older versions, 2.7.1 is as good as 2.7.16.*
 
-This will take a second. When that's complete, you can see the Python versions stored by pyenv by running:
+	# conda environments:
+	#
 
-	pyenv versions
+	base				 /Users/username/opt/anaconda3
+	jupyterExample	  *  /Users/username/opt/anaconda3/envs/jupyterExample
+	py2  		 		 /Users/username/opt/anaconda3/envs/py2
 
-After running this, the options available to me are "system" (which is 2.7.1 in my case) and 3.9.1. Let's update the global python environment to 3.9.1 by running
 
-```bash 
-pyenv global 3.9.1
-```
+Now its time to [install Jupyter](https://jupyter.org/install). I'm installing notebook here but feel free to experiment with JupyterLab as well. I followed this [installation guide](https://towardsdatascience.com/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way-de3b7623ea4a). 
 
-You can always change back! 
+	conda install -c conda-forge notebook  
+	conda install -c conda-forge nb_conda_kernels
 
-At this time, also install a version of Python 2.7.x. I used 2.7.16, because 2.7.1 didn't compile. 
-```bash 	
-# download some version of 2.7.x. Whatever works ¯\_(ツ)_/¯
-pyenv install 2.7.16
-```
+Hit `y` whenever prompted and let it run, which might take a moment. Then start up your notebook by running
 
-Now when you run `pyenv versions` you should see something that looks like the following:
+	jupyter notebook
 
-```bash
-  system
-  2.7.16
-* 3.9.1 (set by /Users/dwood/.python-version)
-```
-**tktk figure out what the difference between `pyenv global` and `pyenv local` are...not making sense at the moment**
+This should allow you to load up a graphical user interface at `http://localhost:8888/`. 
 
-To run  command with your set version of python, don't just run `python FILE.py`. This will simply use your system version of Python. Instead, you run 
+Next, install pandas for use within your notebook. 
+	
+	conda install pandas
 
-`pyenv exec FILE.py`
+Now you should be able to get started with pandas inside your notebook. 
 
+### Troubleshooting
 
-
-
-### Install virtual environments
-
-We've already installed `pyenv-virtualenv` and `pyenv-virtualenvwrapper`, two plugins for `pyenv` that give you access to the traditional commands that come with `virtualenv` and `virtualenvwrapper`. 
-
-These tools give you the ability to create virtual environments where you can tidily and separately store requirements for various Python projects, using whatever Python may be required by that project. 
-
-Practically speaking, these plugins give you access to the `mkvirtualenv`, `rmvirtualenv`, `lssitepackages` and `workon` commands, among others.
-
-**tktk find a list of commands now available** 
-
-Add the following line to your .zshrc
-
-	pyenv virtualenvwrapper
-
-This should give you access to the commands listed above, and others. 
-
-**TKTK section on how to create a virtual environment**
-
-To check if `virtualenv` is properly working, you can create a virtual environment to test it by running:
-
-	mkvirtualenv my_virtual_env_name
-
-After making a few python executables, this should create a new virtual environment for you. If you're in a virtual environment, you should see `(my_virtual_env_name)` inserted before each line in the terminal. Then, to exit out of the virtual environment, run:
-
-	deactivate
-
-This will deactivate but not delete the test virtual environment. To delete the virtual environment, use `rmvirtualenv my_virtual_env_name`. 
-
-
-<!-- 
-so we'll install that version instead of Python 3; following from this, we'll use the `python2` and `pip2` commands to invoke those tools in the terminal.
-
-	brew install python2
-
-You may have to update your `PATH` environment variable to tell your system to prefer the version of Python you just installed over the system version. The output of `brew install python2` should include some text like this:
-
-> This formula installs a python2 executable to /usr/local/bin.
-> If you wish to have this formula's python executable in your PATH then add
-> the following to ~/.zshrc:
-> `export PATH="/usr/local/opt/python/libexec/bin:$PATH"`
-
-I updated my path in `~/.zshrc` so that `/usr/local/opt/python/libexec/bin` was at the beginning of the path list and then made my current shell use the updated path by running `source ~/.zshrc`.
-
-
-**Note**: `pip2` is like Homebrew: it's sort of an app store but for [Python code](https://pypi.org/).
-
-Next, we'll install `virtualenv` and `virtualenvwrapper`. These tools help us isolate Python projects into their own little sandboxes, keeping your installed software neat and tidy.
-
-	pip2 install virtualenv virtualenvwrapper
-
-**Note**: `virtualenv` creates the actual environment that you'll be using, while `virtualwrapper` makes the interface to these virtual environments even simpler.
-
-Edit your `~/.zshrc` file again,
-
-	nano ~/.zshrc
-
-and add this line below the line you just added:
-
-	source /usr/local/bin/virtualenvwrapper_lazy.sh
-
-Save and exit out of `nano` using control + O, enter, and then control + X.
-
-**Sanity Check**: Double check your `~/.zshrc` file, and make sure you've properly saved your `PATH` variables.
-
-	less ~/.zshrc
-
-It should look like this:
-
-	export PATH=/usr/local/bin:$PATH
-	source /usr/local/bin/virtualenvwrapper_lazy.sh
-
-To exit `less`, press "Q".
-
-To check if `virtualenv` is properly working, you can create a virtual environment to test it by running:
-
-	mkvirtualenv my_virtual_env_name
-
-After making a few python executables, this should create a new virtual environment for you. If you're in a virtual environment, you should see `(my_virtual_env_name)` inserted before each line in the terminal. Then, to exit out of the virtual environment, run:
-
-	deactivate
-
-This will deactivate but not delete the test virtual environment. To delete the virtual environment, use `rmvirtualenv my_virtual_env_name`. -->
+Conda and conda-forge won't have every package you want for python, but they will have most. Whenever installing python packages inside a anaconda environment, use `conda install` or `conda install -c conda-forge` whenever possible. If this isn't possible, use `pip`. 
 
 ## Chapter 3: Set up Node and install LESS
 
