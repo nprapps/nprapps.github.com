@@ -3,9 +3,9 @@
 layout: post
 title: "How to Setup Your Mac to Develop News Applications Like We Do"
 description: "(Almost) everything you always wanted to know about working from the command line, but were too afraid to ask."
-author: NPR Apps
-email: tktk
-twitter: tktk
+author: NPR Apps Team
+email: nprapps@npr.org
+twitter: nprviz
 ---
 
 After 9 years, and countless revisions, we're overhauling our step by step guide to setting up your machine the way we do at NPR Apps. First authored in 2013 by [Gerald Rich](https://twitter.com/newsroomdev), this page continues to be a living document, repeatedly updated as systems and software update. 
