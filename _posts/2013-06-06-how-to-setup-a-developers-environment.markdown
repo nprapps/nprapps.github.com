@@ -3,14 +3,16 @@
 layout: post
 title: "How to Setup Your Mac to Develop News Applications Like We Do"
 description: "(Almost) everything you always wanted to know about working from the command line, but were too afraid to ask."
-author: Gerald Rich
-email: grich@npr.org
-twitter: gerald_arthur
+author: NPR Apps
+email: tktk
+twitter: tktk
 ---
 
-After 8 years, and countless revisions, we're finally reposting our step by step guide to setting up your machine the way we do at NPR Apps. Like the [classic version](https://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html), first authored in 2013 by [Gerald Rich](https://twitter.com/newsroomdev), this will be a living document, repeatedly updated as systems and software update. 
+After 9 years, and countless revisions, we're overhauling our step by step guide to setting up your machine the way we do at NPR Apps. First authored in 2013 by [Gerald Rich](https://twitter.com/newsroomdev), this page continues to be a living document, repeatedly updated as systems and software update. 
 
-[Geoff Hing](https://twitter.com/geoffhing), [David Eads](https://twitter.com/eads), [Livia Labate](https://twitter.com/livlab), [Tyler Fisher](https://twitter.com/tylrfishr), [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua), [Miles Watkins](https://github.com/mileswwatkins), [Thomas Wilburn](https://twitter.com/thomaswilburn) and [Daniel Wood]() have also contributed to this post.
+Thanks to [Gerald Rich](https://twitter.com/newsroomdev), [Geoff Hing](https://twitter.com/geoffhing), [David Eads](https://twitter.com/eads), [Livia Labate](https://twitter.com/livlab), [Tyler Fisher](https://twitter.com/tylrfishr), [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua), [Miles Watkins](https://github.com/mileswwatkins), and [Thomas Wilburn](https://twitter.com/thomaswilburn)  who have contributed to it over the years.
+
+This edition, let's call it 2.0, is by and [Daniel Wood](https://twitter.com/danielpwwood), with notes from Ruth Talbot, [Rina Torchinsky](https://twitter.com/rinatorchi), [Nick Underwood](https://twitter.com/mulletmapping) and Koko Nakajima. 
 
 The following steps assume you're working on a new Mac with macOS Catalina 10.15 or more recent. These directions should generally be applicable for anything more recent than Catalina as well. 
 
@@ -19,11 +21,9 @@ The following steps assume you're working on a new Mac with macOS Catalina 10.15
 ### Are you an administrator?
 We'll be installing a number of programs from the command line in this tutorial, so that means you must have administrative privileges. If you're not an admin, talk with your friendly IT Department.
 
-**tktk update this section with my own screenshot**
-
 Click on the Apple menu > System Preferences > Users & Groups and check your status against this handy screenshot.
 
-![Are you an admin?](/img/posts/c0_admin.png)
+![Are you an admin?](/img/posts/admin_dw.png)
 
 ### Update your software
 Go to the App Store and go to the updates tab. If there are system updates, install and reboot until there is nothing left to update.
@@ -39,15 +39,15 @@ Your laptop should prompt you to install the command line tools. Install the too
 
 If it doesn't install, or there isn't an update for Xcode to install the tools, you'll have to download the command line tools from [developer.apple.com/downloads/index.action](http://developer.apple.com/downloads/index.action). You have to register, or you can log in with your Apple ID.
 
-![In my case, it was Command Line Tools (macOS Mavericks).](/img/posts/download_clt.png)
+Search for "command line tools," and download the most recent package. Double click on the .dmg file in your downloads file, and proceed to install. 
 
-Search for "command line tools," and download the package appropriate to your version of macOS. Double click on the .dmg file in your downloads file, and proceed to install. In my case, I downloaded Command Line Tools (macOS Mavericks), which is highlighted in the screenshot above.
+![Screen cap of command line tools download page](/img/posts/commandlinetools-132.png)
 
-**Note**: If you ever run into some variation of a 'user does not have permission' error when running a command in the terminal, prefix the command with `sudo`. For example, the above command would be run as:
+**Note**: If you ever run into some variation of a 'user does not have permission' error when running a command in the terminal, you may want to prefix the command with `sudo`. For example, the above command would be run as:
 
 	sudo xcode-select --install
 
-After you enter in your administrator password, these installations should proceed as normal. You shouldn't have to encounter this problem much in the following steps, but it's good to know just in case.
+After you enter in your administrator password, these installations should proceed as normal.  But using sudo is powerful magic, and should be used with caution. Generally, you do not want to run `sudo pip ` or `sudo npm`. 
 
 ## Chapter 1: Install Homebrew
 
@@ -101,7 +101,9 @@ Thus, we need to utilize virtual environments to select our python versions, and
 
 To create well supported and fairly simple to install virtual environments, we're going to utilize [anaconda](https://docs.anaconda.com/). To start with, follow the instructions for the [graphical installer](https://docs.anaconda.com/anaconda/install/mac-os/). Here's a [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) for anaconda commands. 
 
-Open terminal to verify installation. If you already have a terminal window open, you'll have to restart terminal or type `source ~/.zshrc`. Type `conda env list` to see a list of environments. At this point, the only environment should be your base environment. Next create an environment to run python 2.7.x in. I used 2.7.18 because that's what worked for me. 
+Open terminal to verify installation. If you already have a terminal window open, you'll have to restart terminal or type `source ~/.zshrc`. 
+
+Then, type `conda env list` to see a list of environments. At this point, the only environment should be your base environment. Next create an environment to run python 2.7.x in. I used 2.7.18 because that's what worked for me. 
 
 
 	conda create --name py2 python=2.7.18
@@ -171,8 +173,7 @@ You may want to install a couple of helper libraries for working with our projec
 
 	npm install -g less grunt-cli grunt-init prettier
 
-After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR Visuals team. Next up we'll be getting into the nitty gritty of working with the template, including things like [GitHub](https://help.github.com/articles/set-up-git) and [Amazon Web Services](http://aws.amazon.com/).
-
+After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR Visuals team. Next we'll set up [GitHub](https://help.github.com/articles/set-up-git).
 ## Chapter 4: Configure git
 
 ### Set up SSH for Github
@@ -195,26 +196,27 @@ Since your code is stored entirely as text files on your computer, you'll want a
 
 ### Atom
 
-While I prefer vim (see below) as my editor of choice, many people prefer an editor that is less dependent on memorizing keystrokes and has a user interface that you can interact with using your mouse or trackpad. If this is you, [Atom](https://atom.io/) is a good choice because it's free and intuitive to use with its defaults, yet highly customizable.
+While I prefer Sublime Text (see below) as my editor of choice, many people prefer an editor that is less dependent on memorizing keystrokes and has a user interface that you can interact with using your mouse or trackpad. If this is you, [Atom](https://atom.io/) is a good choice because it's free and intuitive to use with its defaults, yet highly customizable.
 
 I have this installed on my system in case I'm pairing with someone who's not familiar with vim.
 
 ### Sublime Text
 [Sublime Text](https://www.sublimetext.com) is another GUI-based editor with a nice interface and some [customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland).
 
-**Note**: Speed up your use by making Sublime Text your default editor from the command line. Here's [how](http://stackoverflow.com/a/16495202/4548251). And [another way](http://olivierlacan.com/posts/launch-sublime-text-2-from-the-command-line/).
+**Note**: Speed up your use by making Sublime Text your default editor from the command line. See the terminal section below to see what to add to your `.zshrc`. 
 
 ### Vim
-Personally, I prefer vim &mdash; a terminal based editor that requires you to type rather than point-and-click to work on files. I learned this editor at one of my first jobs when the sysadmin pointed out that it was good to know vi (vim stands for "vi improved") because it was likely to be available on any Linux server to which you may find yourself connecting. There's a lot of little keyboard shortcuts you'll need to get comfy with before you can just dive-in. Here's a resource to become more acquainted with vim: [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki).
+Vim is a terminal based editor that requires you to type rather than point-and-click to work on files. vim and vi (vim stands for "vi improved") are likely to be available on any Linux server to which you may find yourself connecting, so it's not a bad idea to be familiar with how they work. 
 
-A version of vim is already on your computer, but I prefer to install it using Homebrew to get a more up-to-date version. You can do this by running
+There's a lot of little keyboard shortcuts you'll need to get comfy with before you can just dive-in. Here's a resource to become more acquainted with vim: [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki).
+
+A version of vim is already on your computer, but you can also install it using Homebrew to get a more up-to-date version. You can do this by running
 
 	brew install vim
 
-You can add all kinds of features by installing plugins, but our teammate Chris recommends [nerdtree](https://github.com/scrooloose/nerdtree) and [surround](https://github.com/tpope/vim-surround). Here are [some videos](http://net.tutsplus.com/sessions/vim-essential-plugins/) to help make vim and those particular add-ons.
-i
+You can add all kinds of features by installing plugins, but our former teammate Chris recommends [nerdtree](https://github.com/scrooloose/nerdtree) and [surround](https://github.com/tpope/vim-surround). Here are [some videos](http://net.tutsplus.com/sessions/vim-essential-plugins/) to help make vim and those particular add-ons.
 
-Some team members use [Janus](https://github.com/carlhuda/janus), a vim distribution that comes with a number of useful plugins preinstalled and with some useful configuration presets. For better or for worse, I've built up a vim configuration over the years, which you can find [here](https://github.com/ghing/vim-config/blob/master/vimrc). It uses [Vundle](https://github.com/VundleVim/Vundle.vim) to manage installing plugin packages. [Pathogen](https://github.com/tpope/vim-pathogen) is another popular option and Vim 8 has [built-in package management support](https://shapeshed.com/vim-packages/).
+There's also [Janus](https://github.com/carlhuda/janus), a vim distribution that comes with a number of useful plugins preinstalled and with some useful configuration presets. Former teammate Geoff Hing has built up a vim configuration over the years, which you can find [here](https://github.com/ghing/vim-config/blob/master/vimrc). It uses [Vundle](https://github.com/VundleVim/Vundle.vim) to manage installing plugin packages. [Pathogen](https://github.com/tpope/vim-pathogen) is another popular option and Vim 8 has [built-in package management support](https://shapeshed.com/vim-packages/).
 
 **Note**: In your terminal, type in `vim` to begin using the editor.
 
@@ -249,10 +251,11 @@ alias sites="cd /PATH/TO/ANY/FREQUENTLY/USED/DIRECTORIES"
 * `ogit`: If you're in a directory that is version controlled remotely on github, you can run `ogit` inside that directory to open up that github page in your default browser. For instance if I run `ogit` in my `dailygraphics-next` directory it will open up [https://github.com/nprapps/dailygraphics-next]().
 * The final example above is a boilerplate example of how you can set up shortcuts to commonly accessed directories. I have one for my sites folder and one for my daily graphics folder. 
 
-**TKTK section on .oh-my-zsh?**
+You can also use something like [oh-my-zsh](https://ohmyz.sh/) to format your terminal in helpful ways and provide good tab completion. There are many [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) to choose from. 
+
 
 ### Consider an alternative to the default terminal, like iTerm2
-Download [iTerm2](http://www.iterm2.com/#/section/home). The built-in terminal application which comes with your Mac is fine, but iTerm2 is slicker and more configurable. One of the better features is splitting your terminal into different horizontal and vertical panes: one for an active pane, another for any files you might want to have open, and a third for a local server.
+Alternatively, you can download an alternative terminal, like[iTerm2](http://www.iterm2.com/#/section/home). The built-in terminal application which comes with your Mac is fine, but iTerm2 is slicker and more configurable. One of the better features is splitting your terminal into different horizontal and vertical panes: one for an active pane, another for any files you might want to have open, and a third for a local server.
 
 #### Solarized
 [Solarized](http://ethanschoonover.com/solarized/files/solarized.zip) is a set of nice, readable colors. Unzip the `solarized.zip` file.
@@ -264,15 +267,30 @@ Now, inside iTerm2 go to iTerm > Preferences > Profiles and select "Default." Ch
 See? Much nicer.
 
 
-## Appendix 3: Postgres and PostGIS
+## Appendix 3: More helpful software
 
-**TKTK... to add link to blog about my talk at NACIS?**
+These are by no means required and should be added as needed, but here are some things our team frequently uses. 
 
-We occasionally make maps and analyze geographic information, so that requires some specialized tools. This appendix will show you how to install the Postgres database server and the PostGIS geography stack &mdash; which includes several pieces of software for reading and manipulating geographic data.
+Data Analysis:
+- [Postgres and PostGIS](https://postgresapp.com/), great for heavy duty data analysis.
+- [csvkit](https://github.com/wireservice/csvkit), originally developed by the NPR apps teams of yore, great for analyzing and working with large csvs.
+- [Tabula](https://tabula.technology/), great for getting data out of PDFs.
+- [SQLiteStudio](https://sqlitestudio.pl/)  if you particularly enjoy parsing data with SQL. 
 
-While you can install Postgres using Homebrew, the easiest way to manage Postgres on your Mac is with Postgres.app. This application provides a very basic GUI around the database, and sits in your menu bar to show whether the database is running. It also comes with useful extensions baked in, including PostGIS.
+Maps:  
+-   [QGIS](https://www.qgis.org/en/site/) of course!
+-   [Mapshaper](https://mapshaper.org/) website for simplifying geo layers
+-   [Mapshaper command line](https://github.com/mbloch/mapshaper/wiki/Command-Reference), even more cosmic power than the web interface. A ton of utilities for creating maps and map layers from the command line. 
+-   PostGIS (see above)
+-   [Blender](https://www.blender.org/) for hillshades or oblique views
+-   [GDAL](https://gdal.org/index.html) command line tools. Much of this is packaged inside of QGIS, but the command line tool can be useful, separately for scripting. [Here](https://github.com/dwtkns/gdal-cheat-sheet) a cheat sheet of useful commands. 
+- [Imagemagick](https://imagemagick.org/script/command-line-tools.php) and [ffmpeg](https://ffmpeg.org/ffmpeg.html) command line tools, great for optimizing images and videos. 
 
-[Download and install Postgres.app from its website.](https://postgresapp.com/)
+Design:
+- [Color Oracle](https://colororacle.org/) for helping test the color accessibility of your screen. 
+- [ai2html](http://ai2html.org/) for getting .ai into....uh... .html....it's right there in the name. 
+- [svg crowbar](https://nytimes.github.io/svg-crowbar/) for getting d3 and other svg graphics out of the browser.  
+
 
 
 ## Conclusion
