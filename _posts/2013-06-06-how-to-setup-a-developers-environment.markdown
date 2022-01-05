@@ -101,7 +101,7 @@ Thus, we need to utilize virtual environments to select our python versions, and
 
 To create well supported and fairly simple to install virtual environments, we're going to utilize [anaconda](https://docs.anaconda.com/). To start with, follow the instructions for the [graphical installer](https://docs.anaconda.com/anaconda/install/mac-os/). Here's a [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) for anaconda commands. 
 
-Open terminal to verify installation. Type `conda env list` to see a list of environments. At this point, the only environment should be your base environment. Next create an environment to run python 2.7.x in. I used 2.7.18 because that's what worked for me. 
+Open terminal to verify installation. If you already have a terminal window open, you'll have to restart terminal or type `source ~/.zshrc`. Type `conda env list` to see a list of environments. At this point, the only environment should be your base environment. Next create an environment to run python 2.7.x in. I used 2.7.18 because that's what worked for me. 
 
 
 	conda create --name py2 python=2.7.18
@@ -109,11 +109,11 @@ Open terminal to verify installation. Type `conda env list` to see a list of env
 
 You can name it whatever you want. I went with `py2`. This will take a moment. When prompted type `y` to proceed. Next, activate this environment. 
 
-	source activate py2
+	conda activate py2
 
 To test that the correct python version is being used, type `python --version`. The result should be `Python 2.7.18 :: Anaconda, Inc.` or similar. If you see 3.x, something has gone wrong. 
 
-Deactivate this environment by running `source deactivate`.
+Deactivate this environment by running `conda deactivate`.
 
 ### Installing Jupyter notebook and pandas
 
@@ -121,9 +121,9 @@ It may be useful to install [Jupyter notebook](https://jupyter.org/index.html) f
 
 
 	conda create --name jupyterExample python=3.9
-	souce activate jupyterExample
+	conda activate jupyterExample
 
-Now if you type `conda env list` you should see the following:
+Now if you type `conda env list` you should see the following (paths may be slightly different):
 
 
 	# conda environments:
@@ -161,7 +161,7 @@ Many of our tools require Node, which runs JavaScript on the desktop or server. 
 
 Install `nvm` with this line. It will ask you to update your shell config, or close and re-open your terminal after it completes.
 
-	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+	curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
 Once that's done, you can actually use `nvm` to install Node:
 
