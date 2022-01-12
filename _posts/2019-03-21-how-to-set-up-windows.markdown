@@ -99,5 +99,5 @@ Finally, for either environment, you may need the correct Visual C++ compiler in
 
 ## Happy hacking!
 
-There are some additional tools on a Windows machine that you may want to look into, such as the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/faq), which will let you run Linux programs (such as Ruby, web servers, or analysis tools). However, the above instructions are enough to get you started and ready to use our [Dailygraphics Next rig](https://github.com/nprapps/dailygraphics-next) or [the interactive template](https://github.com/nprapps/interactive-template). Good luck!
+There are some additional tools on a Windows machine that you may want to look into, such as the [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/faq), which will let you run Linux programs (such as Ruby, web servers, or analysis tools). You can also use our Vagrant configuration, [Cypher](https://github.com/nprapps/cypher), to run a Linux VM pre-configured for our older, Python-based tools. However, the above instructions are enough to get you started and ready to use our [Dailygraphics Next rig](https://github.com/nprapps/dailygraphics-next) or [the interactive template](https://github.com/nprapps/interactive-template). Good luck!
 
