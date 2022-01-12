@@ -292,7 +292,7 @@ alias sites="cd /PATH/TO/ANY/FREQUENTLY/USED/DIRECTORIES"
 ```
 
 * `edit`: To open any file or folder in Sublime Text, type `edit file-or-folder/path`. You can replace the path there with any text editor you want to use.
-* `ogit`: If you're in a directory that is version controlled remotely on github, you can run `ogit` inside that directory to open up that github page in your default browser. For instance if I run `ogit` in my `dailygraphics-next` directory it will open up [https://github.com/nprapps/dailygraphics-next]().
+* `ogit`: If you're in a directory that is version controlled remotely on github, you can run `ogit` inside that directory to open up that github page in your default browser. For instance if I run `ogit` in my `dailygraphics-next` directory it will open up https://github.com/nprapps/dailygraphics-next.
 * The final example above is a boilerplate example of how you can set up shortcuts to commonly accessed directories. I have one for my sites folder and one for my daily graphics folder.
 
 You can also use something like [oh-my-zsh](https://ohmyz.sh/) to format your terminal in helpful ways and provide good tab completion. There are many [themes](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes) to choose from.
