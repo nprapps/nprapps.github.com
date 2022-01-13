@@ -108,9 +108,9 @@ Python is notoriously tricky to install and manage on your machine. [XKCD did it
 
 [![](https://imgs.xkcd.com/comics/python_environment.png)](https://xkcd.com/1987/)
 
-macOS comes with a system version of Python, and for a long time, we used this version. However, modifying the system Python is **a bad idea**; user alterations or installations may cause core macOS components to break, and macOS system updates may cause user projects to break.
+macOS comes with a system version of Python, and for a long time, we used this version. However, modifying the system Python is **a bad idea**: User alterations or installations may cause core macOS components to break, and macOS system updates may cause user projects to break.
 
-Thus, we need to utilize virtual environments to select our Python versions, allow easy swapping between environments, and tidily maintain of dependencies and packages. Modern tools and documentation tend to use **Python 3**. If you're on our team, you'll also need **Python 2.7.x** for legacy projects.
+Thus, we need to utilize virtual environments to select our Python versions, allow easy swapping between environments, and tidily maintain dependencies and packages. Modern tools and documentation tend to use **Python 3**. If you're on our team, you'll also need **Python 2.7.x** for legacy projects.
 
 We're going to use [Anaconda](https://docs.anaconda.com/) to manage our virtual environments. Follow the instructions for the [graphical installer](https://docs.anaconda.com/anaconda/install/mac-os/). Here's a [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) for Anaconda commands.
 
