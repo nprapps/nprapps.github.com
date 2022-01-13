@@ -1,19 +1,19 @@
 ---
 layout: post
-title: "How to Setup Your Mac to Develop News Applications Like We Do"
+title: "How to Set Up Your Mac to Develop News Applications Like We Do"
 description: "(Almost) everything you always wanted to know about working from the command line, but were too afraid to ask."
 author: News Apps team
 email: nprapps@npr.org
 twitter: nprviz
 ---
 
-_**Last updated Jan. 11, 2022.** We've overhauled our step-by-step guide to setting up your machine the way we do on the NPR News Apps team. This edition is by [Daniel Wood](https://twitter.com/danielpwwood), with notes from Ruth Talbot, [Rina Torchinsky](https://twitter.com/rinatorchi), [Nick Underwood](https://twitter.com/mulletmapping) and Koko Nakajima._
+_**Last updated Jan. 12, 2022.** We've overhauled our step-by-step guide to setting up your machine the way we do on the NPR News Apps team. This edition is by [Daniel Wood](https://twitter.com/danielpwwood), with notes from Ruth Talbot, [Rina Torchinsky](https://twitter.com/rinatorchi), [Nick Underwood](https://twitter.com/mulletmapping) and Koko Nakajima._
 
 _First authored in 2013 by [Gerald Rich](https://twitter.com/newsroomdev), this page continues to be a living document, updated as systems and software update. [Geoff Hing](https://twitter.com/geoffhing), [David Eads](https://twitter.com/eads), [Livia Labate](https://twitter.com/livlab), [Tyler Fisher](https://twitter.com/tylrfishr), [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua), [Miles Watkins](https://github.com/mileswwatkins) and [Thomas Wilburn](https://twitter.com/thomaswilburn) have contributed over the years._
 
 The following steps assume you're working on a new Mac with macOS Catalina 10.15 or more recent. These directions should generally be applicable for anything more recent than Catalina as well.
 
-_**Note**: If there are two lines inside any of the code blocks in this article, paste them separately and hit enter after each of them._
+_**Note:** If there are two lines inside any of the code blocks in this article, paste them separately and hit enter after each of them._
 
 ## Chapter 0: Prerequisites
 
@@ -44,7 +44,7 @@ Search for "command line tools," and download the most recent package. Double cl
 
 ![Screen cap of command line tools download page](/img/posts/commandlinetools-132.png)
 
-_**Note**: If you ever run into some variation of a 'user does not have permission' error when running a command in the terminal, you may want to prefix the command with `sudo`. For example, the above command would be run as:_
+If you ever run into some variation of a 'user does not have permission' error when running a command in the terminal, you may want to prefix the command with `sudo`. For example, the above command would be run as:
 
 ```
 sudo xcode-select --install
@@ -62,13 +62,13 @@ Install Homebrew by pasting this command into your terminal and then hitting "en
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-It will ask for your password, so type that in and hit "enter" again. Now, paste this line to test Homebrew.
+It will ask for your password, so type that in and hit "enter" again. Now, paste this line to test Homebrew:
 
 ```
 brew doctor
 ```
 
-This will test your Homebrew setup, and any tools you've installed to make sure they're working properly. If they are, Homebrew tell you
+This will test your Homebrew setup, and any tools you've installed to make sure they're working properly. If they are, Homebrew will tell you:
 
 ```
 Your system is ready to brew.
@@ -78,7 +78,7 @@ If anything isn't working properly, follow their instructions to get things work
 
 Next you'll need to go in and edit  `~/.zshrc` to ensures you can use what you've just downloaded. `.zshrc` acts like a configuration file for your terminal.
 
-_**Note**: There are many editors available on your computer. You can use a pretty graphical editor like [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/), or you can use one built-in to your terminal, like [`vim`](http://www.vim.org/docs.php) or [`nano`](http://www.nano-editor.org/dist/v2.2/nano.html). We'll be using `nano` for this tutorial just to keep things simple. If you'd rather edit in Sublime Text, go to the [appendix](#appendix-2-supe-up-your-terminal-game) to learn how to open a file with the `edit FILE_NAME` command._
+_**Note:** There are many editors available on your computer. You can use a pretty graphical editor like [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/), or you can use one built-in to your terminal, like [`vim`](http://www.vim.org/docs.php) or [`nano`](http://www.nano-editor.org/dist/v2.2/nano.html). We'll be using `nano` for this tutorial just to keep things simple. If you'd rather edit in Sublime Text, go to the [appendix](#appendix-2-supe-up-your-terminal-game) to learn how to open a file with the `edit FILE_NAME` command._
 
 Open your `.zshrc` with the following command.
 
@@ -102,7 +102,7 @@ source ~/.zshrc
 
 You'll only need to source the `.zshrc` since we're editing the file right now. It's the equivalent of quitting your terminal application and opening it up again, but `source` lets you soldier forward and setup Python.
 
-## Chapter 2: Installing Python and Virtual environments with anaconda
+## Chapter 2: Installing Python and virtual environments with Anaconda
 
 Python is notoriously tricky to install and manage on your machine. [XKCD did it justice](https://xkcd.com/1987/) with this cartoon...
 
@@ -132,9 +132,9 @@ To test that the correct python version is being used, type `python --version`. 
 
 Deactivate this environment by running `conda deactivate`.
 
-### Installing Jupyter notebook and pandas
+### Installing Jupyter Notebook and pandas
 
-It may be useful to install [Jupyter notebook](https://jupyter.org/index.html) for data analysis. Before doing this, let's create and and activate environment for this to live in. You can create a single environment to always run Jupyter notebook, or you can create a new environment each time you start a new Jupyter notebook project.
+It may be useful to install [Jupyter Notebook](https://jupyter.org/index.html) for data analysis. Before doing this, let's create and and activate environment for this to live in. You can create a single environment to always run Jupyter notebook, or you can create a new environment each time you start a new Jupyter notebook project.
 
 ```
 conda create --name jupyterExample python=3.9
@@ -189,7 +189,7 @@ Install `nvm` with this line. It will ask you to update your shell config, or cl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
-Once that's done, you can actually use `nvm` to install Node:
+Once that's done, you can use `nvm` to install Node:
 
 ```
 nvm install stable
@@ -205,11 +205,11 @@ Next we'll set up [GitHub](https://help.github.com/articles/set-up-git).
 
 ## Chapter 4: Configure git
 
-### Set up SSH for Github
+### Set up SSH for GitHub
 
-Github has written a great guide for setting up SSH authentication for Github. You will want to do this so Github knows about your computer and will allow you to push to repositories you have access to.
+GitHub has written a great guide for setting up SSH authentication for GitHub. You will want to do this so GitHub knows about your computer and will allow you to push to repositories you have access to.
 
-Read that tutorial [here](https://help.github.com/articles/generating-ssh-keys). Start at "Step 1: Check for SSH keys".
+[Read that tutorial here](https://help.github.com/articles/generating-ssh-keys), starting at "Step 1: Check for SSH keys".
 
 ### Configure the default identity
 
@@ -220,7 +220,7 @@ git config --global user.email "$YOUR_EMAIL@npr.org"
 git config --global user.name "$YOUR_NAME"
 ```
 
-You can also make your Github client try to rebase instead of merge when you commit before syncing, which helps prevent extraneous merge commits in the history.
+You can also make your GitHub client try to rebase instead of merge when you commit before syncing, which helps prevent extraneous merge commits in the history.
 
 ```
 git config --global pull.rebase true
@@ -231,7 +231,7 @@ You can also use the [GitHub Desktop](https://desktop.github.com) app to manage 
 After that, you can treat yourself to a cup of coffee because you now have the basic tools for working like the NPR News Apps team.
 
 ## Appendix 1: The Text Editor
-Since your code is stored entirely as text files on your computer, you'll want a nice text editor. Our instructions showed you how to use `nano`, a text editor that you'll find on almost every computer. However, there are at least two others that the team uses. Text editors are like the Microsoft Word of the programming world, except they come packed with all kinds of handy dandy features to make writing code a cinch.
+Since your code is stored entirely as text files on your computer, you'll want a nice text editor. Our instructions showed you how to use `nano`, a terminal-based text editor that you'll find on almost every computer. However, there are a few others that the team uses. Text editors are like the Microsoft Word of the programming world, except they come packed with all kinds of handy dandy features to make writing code a cinch.
 
 ### Atom
 While I prefer Sublime Text (see below) as my editor of choice, many people prefer an editor that is less dependent on memorizing keystrokes and has a user interface that you can interact with using your mouse or trackpad. If this is you, [Atom](https://atom.io/) is a good choice because it's free and intuitive to use with its defaults, yet highly customizable.
@@ -241,14 +241,14 @@ Former teammate Geoff Hing kept Atom on hand in case he was pairing with someone
 ### Sublime Text
 [Sublime Text](https://www.sublimetext.com) is another GUI-based editor with a nice interface and some [customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland).
 
-**Note**: Speed up your use by making Sublime Text your default editor from the command line. See the terminal section below to see what to add to your `.zshrc`.
+_**Note:** Speed up your use by making Sublime Text your default editor from the command line. See the terminal section below to see what to add to your `.zshrc`._
 
 ### Vim
 Vim is a terminal based editor that requires you to type rather than point-and-click to work on files. vim and vi (vim stands for "vi improved") are likely to be available on any Linux server to which you may find yourself connecting, so it's not a bad idea to be familiar with how they work.
 
 There's a lot of little keyboard shortcuts you'll need to get comfy with before you can just dive-in. Here's a resource to become more acquainted with vim: [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki).
 
-A version of vim is already on your computer -- just type `vim` at in the terminal to get started. To get a more up-to-date version, install vim via Homebrew.
+A version of vim is already on your computer -- just type `vim` at in the terminal to get started. To get a more up-to-date version, install vim via Homebrew:
 
 ```
 brew install vim
