@@ -7,15 +7,13 @@ author: David Eads
 email: deads@npr.org
 twitter: eads
 ---
-_(This post was edited in July 2021.)_
+_(This post was edited in June 2022.)_
 
-We want to see your best work.
-
-Here’s how.
+We want to see your best work. Here’s how.
 
 ## Who's Eligible
 
-To be eligible for an internship with NPR, you must be a student (undergraduate or graduate) or a person who has graduated no more than 12 months prior to the start of the internship period. You must also be authorized to work in the United States.
+To be eligible for an internship with NPR, you must be a college student (undergraduate or graduate) or a person who has graduated no more than 12 months prior to the start of the internship period. You must be planning to work from the United States and authorized to work in the United States throughout the internship term.
 
 ## Cover letters
 
@@ -42,7 +40,7 @@ Portfolio projects and work samples should always include your role in the work 
 
 After you submit a resume and cover letter, our selection committee will read through all the applications. We’ll reduce the list to approximately 8-10 candidates by eliminating applications that don’t have a cover letter and resume or who clearly aren’t a good fit for the team.
 
-If you’re one of these candidates, a few folks from the Visuals team will conduct a short interview with you over video chat (such as Skype or Google Hangouts). Our interviews usually last 10 to 30 minutes, depending on the size of the applicant pool and our availability.
+If you’re one of these candidates, a few folks from the team will conduct a short interview with you over video chat (such as Zoom or Google Meet). Our interviews usually last 20 to 30 minutes, depending on the size of the applicant pool and our availability.
 
 You’ll get an email before your interview with outline of the questions you’ll be asked in the interview and also given the opportunity to ask any questions beforehand. The questions may vary a bit from interview to interview based on your professional experience, but we will be as consistent as possible.
 
@@ -62,6 +60,6 @@ We’re certain that we’re missing out on candidates with great talent and pot
 
 ## Current positions
 
-Our paid fall/winter 2021-22 internship program runs from Oct. 4 to April 14.  Check out [our careers site](https://www.npr.org/about-npr/181881227/internships-at-npr/) for more information. [Here are the internships available this term.](/2021/07/12/winter-2021-internships.html)
+Our paid fall/winter 2022-23 internship program runs from Oct. 3 to April 15.  Check out [our careers site](https://www.npr.org/about-npr/181881227/internships-at-npr/) for more information. [Here are the internships available this term.](/2022/06/29/winter-2022-internships.html)
 
 We hope to hear from you!

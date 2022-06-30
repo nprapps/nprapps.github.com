@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /2022/06/29/winter-2022-internships.html
+
 title: "Graphics, Photo and Video: Apply for Fall/Winter 2021 Internships at NPR"
 description: "NPR's extended fall/winter 2021 internship program includes several visually-oriented newsroom jobs, working with the News Apps, Visuals and Science teams. Come join us!"
 ---
