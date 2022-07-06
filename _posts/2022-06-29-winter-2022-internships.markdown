@@ -6,7 +6,7 @@ description: "NPR's extended fall/winter 2022 internship program includes severa
 
 [NPR's internship program](https://www.npr.org/about-npr/181881227/want-to-be-an-npr-intern) includes several visually-oriented newsroom jobs, working with the News Apps, Visuals and Science teams.
 
-Our paid fall/winter internship program runs from Oct. 3, 2022, to April 15, 2023. In this super-sized internship term, interns may have the opportunity to work with multiple teams in the NPR newsroom and develop a wider range of experience. **Applications are due Sunday, July 10, 2022 at 11:59pm ET.**
+Our paid fall/winter internship program runs from Oct. 3, 2022, to April 15, 2023. In this super-sized internship term, interns may have the opportunity to work with multiple teams in the NPR newsroom and develop a wider range of experience. **DEADLINE EXTENDED: Applications are due Sunday, July 17, 2022 at 11:59pm ET.**
 
 To be eligible, you must be a college student (undergraduate or graduate) or a person who has graduated no more than 12 months prior to the start of the internship period. You must be planning to work from the United States and authorized to work in the United States throughout the internship term.
 
