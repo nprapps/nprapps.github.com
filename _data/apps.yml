@@ -1613,3 +1613,23 @@
   date: June 30, 2022
   image: "https://apps.npr.org/best-books/assets/social-2022.jpg"
   url: https://apps.npr.org/best-books/#view=covers&year=2022
+- name: "There's a massive housing shortage across the U.S. Here's how bad it is where you live"
+  description: "Hundreds of cities and towns are seriously short of housing, both homes to buy and rentals, according to a new study. It's the main reason that home prices and rents are so high."
+  date: July 14, 2022
+  image: "https://media.npr.org/assets/img/2022/07/13/gettyimages-1241774963_wide.jpg?s=1000"
+  url: https://www.npr.org/2022/07/14/1109345201/theres-a-massive-housing-shortage-across-the-u-s-heres-how-bad-it-is-where-you-l
+- name: "The best games of 2022 so far, picked by the NPR staff"
+  description: "From critical hits like Elden Ring to indie darlings like Tunic, it's been a busy year for video games. NPR staffers and contributors round up their favorites so far."
+  date: July 20, 2022
+  image: "https://media.npr.org/assets/img/2022/07/19/games-we-love_wide.jpg?s=1000"
+  url: https://www.npr.org/2022/07/20/1111253916/2022-best-games-so-far
+- name: "A new Georgia voting law reduced ballot drop box access in places that used them most"
+  description: "Georgia lawmakers changed voting laws after 2020, including eliminating drop boxes in certain counties, making it harder for many voters in cities and suburbs, often people of color, to access them."
+  date: July 27, 2022
+  image: "https://media.npr.org/assets/img/2022/07/27/ga-dropbox-promo-2_wide.png?s=1000"
+  url: https://www.npr.org/2022/07/27/1112487312/georgia-voting-law-ballot-drop-box-access
+- name: "These hurricane flood maps reveal the climate future for Miami, NYC and D.C."
+  description: "National Hurricane Center data for Miami, Washington, D.C., and New York City show development happening in at-risk areas, even as climate change brings more frequent and intense storms."
+  date: July 28, 2022
+  image: "https://media.npr.org/assets/img/2022/07/26/map-promo_wide.jpg?s=1400"
+  url: https://www.npr.org/2022/07/28/1107518744/nyc-miami-dc-climate-change-flooding
