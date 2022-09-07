@@ -2,7 +2,6 @@
 layout: redirect
 redirect_url: /
 
-layout: post
 title: "Join NPR News Apps for Elections 2020"
 description: "We have three (3) open contract positions for the 2020 elections: interactives developer, data pipeline developer and digital cartographer/data visualization specialist."
 author: Constance Miller

@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "2 Job Openings With NPR's News Apps Team"
 description: "We're looking for a graphics editor (6-month contract/remote) and a team editor. Come join us!"
 ---
