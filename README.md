@@ -7,7 +7,9 @@ nprapps.github.com
 
 ### Getting Started
 
-Matt Stiles wrote a helpful post explaining [how to get set up](http://blog.apps.npr.org/2012/11/08/npr-news-apps-blog.html).
+Follow the [MacOS instructions on the Jekyll website](https://jekyllrb.com/docs/installation/macos/), including setting up the recommended version of Ruby.
+
+Matt Stiles wrote a helpful post explaining [how to get set up](http://blog.apps.npr.org/2012/11/08/npr-news-apps-blog.html). (The installation instructions are a bit dated, but the explanation about the overall setup of the teamblog still generally applies.)
 
 Once you have Jekyll installed, run this to install dependencies:
 
