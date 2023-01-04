@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "Join NPR's News Apps team for the 2022 election"
 description: "We're looking for a news apps developer (6-month contract/remote). Come join us!"
 ---

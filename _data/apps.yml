@@ -1148,6 +1148,7 @@
   url: https://apps.npr.org/best-books/
   blog_title: "Outside of a Dog: Rebuilding the NPR Book Concierge"
   blog_url: https://blog.apps.npr.org/2019/12/03/book-concierge.html
+  github_url: https://github.com/nprapps/book-concierge
 - name: How The Senate Impeachment Trial Works
   description: Now that the House has impeached President Trump, the process shifts to the Senate, which will vote on whether to convict him. Here is your guide to the steps and the people that matter.
   date: Dec. 31, 2019
@@ -1613,6 +1614,7 @@
   date: June 30, 2022
   image: "https://apps.npr.org/best-books/assets/social-2022.jpg"
   url: https://apps.npr.org/best-books/#view=covers&year=2022
+  github_url: https://github.com/nprapps/book-concierge
 - name: "There's a massive housing shortage across the U.S. Here's how bad it is where you live"
   description: "Hundreds of cities and towns are seriously short of housing, both homes to buy and rentals, according to a new study. It's the main reason that home prices and rents are so high."
   date: July 14, 2022
@@ -1633,3 +1635,105 @@
   date: July 28, 2022
   image: "https://media.npr.org/assets/img/2022/07/26/map-promo_wide.jpg?s=1400"
   url: https://www.npr.org/2022/07/28/1107518744/nyc-miami-dc-climate-change-flooding
+- name: "States with the toughest abortion laws have the weakest maternal supports, data shows"
+  description: "Many of the states that are moving to ban abortion tend to have less access to health care, worse maternal and infant health care outcomes and weaker social supports for children and families."
+  date: Aug. 18, 2022
+  image: "https://media.npr.org/assets/img/2022/08/18/promo-final_wide-s1400-c100.png"
+  url: https://www.npr.org/2022/08/18/1111344810/abortion-ban-states-social-safety-net-health-outcomes
+- name: "Why you should stop complimenting people for being 'resilient'"
+  description: "Is the ability to endure hardship and adapt to difficult life situations always a good thing? Psychotherapist and licensed clinical social worker Lourdes Dolores Follins revisits the concept of resilience — and explains why it&#039;s OK to let yourself feel angry or frustrated sometimes."
+  date: Aug. 25, 2022
+  image: "https://media.npr.org/assets/img/2022/08/18/life-kit-resilient_wide-s1400-c100.png"
+  url: https://www.npr.org/2022/08/16/1117725653/why-being-resilient-might-matter-less-than-you-think
+- name: "How well do you understand the economy? Take our Summer School final quiz to find out"
+  description: "Our quiz will test your knowledge of some key economic concepts and vocabulary — and how it applies to the real world."
+  date: Aug. 31, 2022
+  image: "https://media.npr.org/assets/img/2022/08/19/diploma12-01_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/08/31/1118328985/economics-quiz-questions-answers
+- name: "These are the new movies and TV shows we can't wait to watch this fall"
+  description: "Our critics&#039; guide lets you search by genre and where to watch — whether on your couch or in the theater. Here&#039;s what NPR critics are looking forward to after a busy blockbuster summer."
+  date: Sept. 15, 2022
+  image: "https://media.npr.org/assets/img/2022/09/15/fall-tv-2022_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/09/19/1123223178/best-fall-tv-movies-2022
+- name: "Shutting an agency managing sprawl might have put more people in Hurricane Ian's way"
+  description: "More than a decade ago, growth in Florida was managed under a statewide agency that provided checks and balances to prevent sprawl and protect natural resources. Then state leaders closed it."
+  date: Oct. 8, 2022
+  image: "https://media.npr.org/assets/img/2022/10/06/ap22279045364966_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/10/08/1127302954/shutting-an-agency-managing-sprawl-might-have-put-more-people-in-hurricane-ians-
+- name: "Those fake active shooter calls to schools? A similar thing happened before"
+  description: "As schools across the U.S. are targeted by false calls about active shooters, NPR has found evidence that a similar scheme took place in the spring."
+  date: Oct. 24, 2022
+  image: "https://media.npr.org/assets/img/2022/10/21/ohio-swat-school_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/10/24/1129919258/swatting-fake-school-shooter-calls-hoax-pattern
+- name: "Election 2022 Live Results"
+  description: "View interactive maps and live results for the 2022 U.S. election."
+  date: Nov. 8, 2022
+  image: "https://apps.npr.org/election-results-live-2022/assets/2022-live-results.png"
+  url: https://apps.npr.org/election-results-live-2022/
+  github_url: https://github.com/nprapps/elections22
+- name: "Louisiana voters rejected an antislavery ballot measure. The reasons are complicated"
+  description: "Voters in four states — Vermont, Oregon, Alabama and Tennessee — approved antislavery ballot measures in the 2022 elections. The Louisiana amendment may have failed, in part, because of confusion."
+  date: Nov. 17, 2022
+  image: "https://media.npr.org/assets/img/2022/11/17/la-seamus_wide-s1400-c100.png"
+  url: https://www.npr.org/2022/11/17/1137398039/louisiana-voters-rejected-an-antislavery-ballot-measure-the-reason-is-complicate
+- name: "Favorite family recipes and the stories that make them memorable"
+  description: "We all have that one dish that excites our palates and calls to mind special memories with Mom, Dad, Grandma or a favorite aunt who created delicious, comforting dishes."
+  date: Nov. 20, 2022
+  image: "https://media.npr.org/assets/img/2022/11/21/family-recipe-update-collection1_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/11/20/1137191467/recipes-food-holidays
+- name: "The next round of counting begins in Alaska. Here's how ranked-choice voting works"
+  description: "This process will decide two outstanding congressional races: Republican Lisa Murkowski&#039;s seat in the Senate and Democrat Mary Peltola&#039;s seat in the House."
+  date: Nov. 22, 2022
+  image: "https://media.npr.org/assets/img/2022/11/21/promo-min_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/11/22/1138422560/the-next-round-of-counting-begins-in-alaska-heres-how-ranked-choice-voting-works
+- name: "Here are the Books We Love: 400+ great 2022 reads recommended by NPR"
+  description: "Books We Love returns with 400+ new titles handpicked by NPR staff and trusted critics. Find 10 years of recommendations all in one place – that&#039;s more than 3,200 great reads."
+  date: Nov. 22, 2022
+  image: "https://media.npr.org/assets/img/2022/11/19/bwl-fall-2022_wide-s1400-c100.jpg"
+  url: https://apps.npr.org/best-books/#view=covers&year=2022
+  github_url: https://github.com/nprapps/book-concierge
+- name: "Bills targeting trans youth are growing more common — and radically reshaping lives"
+  description: "An NPR analysis finds that over the past two years, state lawmakers introduced more than 300 bills targeting trans people. Most of this legislation, 86%, takes aim at the rights of trans youth."
+  date: Nov. 28, 2022
+  image: "https://media.npr.org/assets/img/2022/11/21/anti-trans-leg-min_wide-s1400-c100.png"
+  url: https://www.npr.org/2022/11/28/1138396067/transgender-youth-bills-trans-sports
+- name: "Best Music of 2022"
+  description: "Read our lists of the 50 Best Albums and 100 Best Songs of the year, as well as lists covering the best rock, hip-hop, R&amp;amp;B and more."
+  date: Dec. 6, 2022
+  image: "https://media.npr.org/assets/img/2022/12/06/npr-music-best-of-2022_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/12/06/1138407917/best-music-of-2022
+- name: "What does the Respect for Marriage Act do? The answer will vary by state."
+  description: "The law came about in response to the Supreme Court overturning Roe v. Wade, which called other landmark civil liberties cases into question."
+  date: Dec. 8, 2022
+  image: "https://media.npr.org/assets/img/2022/12/06/rfma-seamus_wide-s1400-c100.png"
+  url: https://www.npr.org/2022/12/08/1140808263/what-does-the-respect-for-marriage-act-do-the-answer-will-vary-by-state
+- name: "There have been 50,000 alleged war crimes in Ukraine. We worked to solve one"
+  description: "Investigators in Ukraine have opened more than 50,000 inquiries into alleged Russian war crimes since the war began. NPR looked into the death of one man to show the challenges investigators face."
+  date: Dec. 10, 2022
+  image: "https://media.npr.org/assets/img/2022/11/27/french-legionnaire-067-edit_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/12/10/1138710652/russian-war-crimes-ukraine-investigation
+- name: "How I discovered a love for ballet as an adult"
+  description: "Sometimes you can find new interests in old places. For me, it was taking ballet classes alongside a group of around 20 Chinese ladies, all of them starting ballet as adults."
+  date: Dec. 12, 2022
+  image: "https://media.npr.org/assets/img/2022/12/09/adult-ballet_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/12/12/1116469045/ballet-classes
+- name: "Best games of 2022 chosen by NPR"
+  description: "From Elden Ring to Immortality, 2022 delivered long-anticipated titles and ambitious indie games. NPR staff and contributors list their favorites."
+  date: Dec. 16, 2022
+  image: "https://media.npr.org/assets/img/2022/12/15/games-we-love-promo-2_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/12/16/1143120382/2022-best-games
+- name: "The best movies and TV of 2022, picked for you by NPR critics"
+  description: "Whether you plan to head out to the theater, or binge from the couch, our critics have gathered together their favorite films and TV shows of the year. Happy watching!"
+  date: Dec. 20, 2022
+  image: "https://media.npr.org/assets/img/2022/12/16/movies-tvshows-composite2_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/12/20/1143084568/the-best-movies-and-tv-of-2022-picked-for-you-by-npr-critics
+- name: "Investigation: Many U.S. hospitals sue patients for debts or threaten their credit"
+  description: "An examination of billing policies and practices at more than 500 hospitals across the country shows widespread reliance on aggressive collection tactics."
+  date: Dec. 21, 2022
+  image: "https://media.npr.org/assets/img/2022/12/20/hospitalmeddebt3_wide-s1400-c100.jpg"
+  url: https://www.npr.org/sections/health-shots/2022/12/21/1144491711/investigation-many-u-s-hospitals-sue-patients-for-debts-or-threaten-their-credit
+- name: "LifeKit's Resolution Planner: 40+ ideas and tips to start your New Year"
+  description: "Scroll through Life Kit&#039;s expert guides to discover practical and inspiring ways to grow in 2023."
+  date: Dec. 26, 2022
+  image: "https://media.npr.org/assets/img/2022/12/15/untitled_artwork-10-_wide-s1400-c100.jpg"
+  url: https://www.npr.org/2022/12/26/1140731910/new-years-resolution-ideas
