@@ -7,7 +7,7 @@ email: nprapps@npr.org
 twitter: nprviz
 ---
 
-_**Last updated Jan. 12, 2022.** We've overhauled our step-by-step guide to setting up your machine the way we do on the NPR News Apps team. This edition is by [Daniel Wood](https://twitter.com/danielpwwood), with notes from Ruth Talbot, [Rina Torchinsky](https://twitter.com/rinatorchi), [Nick Underwood](https://twitter.com/mulletmapping) and Koko Nakajima._
+_**Last updated Jan. 3, 2023.** We've overhauled our step-by-step guide to setting up your machine the way we do on the NPR News Apps team. This edition is by [Daniel Wood](https://twitter.com/danielpwwood), with notes from Ruth Talbot, [Rina Torchinsky](https://twitter.com/rinatorchi), [Nick Underwood](https://twitter.com/mulletmapping) and Koko Nakajima._
 
 _First authored in 2013 by [Gerald Rich](https://twitter.com/newsroomdev), this page continues to be a living document, updated as systems and software update. [Geoff Hing](https://twitter.com/geoffhing), [David Eads](https://twitter.com/eads), [Livia Labate](https://twitter.com/livlab), [Tyler Fisher](https://twitter.com/tylrfishr), [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua), [Miles Watkins](https://github.com/mileswwatkins) and [Thomas Wilburn](https://twitter.com/thomaswilburn) have contributed over the years._
 
@@ -59,10 +59,12 @@ After you enter in your administrator password, these installations should proce
 Install Homebrew by pasting this command into your terminal and then hitting "enter."
 
 ```
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”
 ```
 
-It will ask for your password, so type that in and hit "enter" again. Now, paste this line to test Homebrew:
+It will ask for your password, so type that in and hit "enter" again. Pay attention to any prompts at the end of the process to add Homebrew to your PATH.
+
+Once that's done, paste this line to test Homebrew:
 
 ```
 brew doctor
@@ -78,7 +80,7 @@ If anything isn't working properly, follow their instructions to get things work
 
 Next you'll need to go in and edit  `~/.zshrc` to ensures you can use what you've just downloaded. `.zshrc` acts like a configuration file for your terminal.
 
-_**Note:** There are many editors available on your computer. You can use a pretty graphical editor like [Sublime Text](https://www.sublimetext.com/) or [Atom](https://atom.io/), or you can use one built-in to your terminal, like [`vim`](http://www.vim.org/docs.php) or [`nano`](http://www.nano-editor.org/dist/v2.2/nano.html). We'll be using `nano` for this tutorial just to keep things simple. If you'd rather edit in Sublime Text, go to the [appendix](#appendix-2-supe-up-your-terminal-game) to learn how to open a file with the `edit FILE_NAME` command._
+_**Note:** There are many editors available on your computer. You can use a pretty graphical editor like [Sublime Text](https://www.sublimetext.com/), or you can use one built-in to your terminal, like [`vim`](http://www.vim.org/docs.php) or [`nano`](http://www.nano-editor.org/dist/v2.2/nano.html). We'll be using `nano` for this tutorial just to keep things simple. If you'd rather edit in Sublime Text, go to the [appendix](#appendix-2-supe-up-your-terminal-game) to learn how to open a file with the `edit FILE_NAME` command._
 
 Open your `.zshrc` with the following command.
 
@@ -232,11 +234,6 @@ After that, you can treat yourself to a cup of coffee because you now have the b
 
 ## Appendix 1: The Text Editor
 Since your code is stored entirely as text files on your computer, you'll want a nice text editor. Our instructions showed you how to use `nano`, a terminal-based text editor that you'll find on almost every computer. However, there are a few others that the team uses. Text editors are like the Microsoft Word of the programming world, except they come packed with all kinds of handy dandy features to make writing code a cinch.
-
-### Atom
-While I prefer Sublime Text (see below) as my editor of choice, many people prefer an editor that is less dependent on memorizing keystrokes and has a user interface that you can interact with using your mouse or trackpad. If this is you, [Atom](https://atom.io/) is a good choice because it's free and intuitive to use with its defaults, yet highly customizable.
-
-Former teammate Geoff Hing kept Atom on hand in case he was pairing with someone not familiar with vim, his favored text editor.
 
 ### Sublime Text
 [Sublime Text](https://www.sublimetext.com) is another GUI-based editor with a nice interface and some [customizations](http://net.tutsplus.com/tutorials/tools-and-tips/sublime-text-2-tips-and-tricks/) available. You'll likely want to learn some [keyboard shortcuts](http://docs.sublimetext.info/en/latest/reference/keyboard_shortcuts_osx.html) to make yourself more efficient. You can also prettify it with the [Flatland theme](https://github.com/thinkpixellab/flatland).
