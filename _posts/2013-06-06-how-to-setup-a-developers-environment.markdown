@@ -59,7 +59,7 @@ After you enter in your administrator password, these installations should proce
 Install Homebrew by pasting this command into your terminal and then hitting "enter."
 
 ```
-/bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 It will ask for your password, so type that in and hit "enter" again. Pay attention to any prompts at the end of the process to add Homebrew to your PATH.
