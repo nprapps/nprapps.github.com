@@ -10,10 +10,19 @@ layout: base
                     <h1><img src="/img/nprlogo.gif" alt="NPR" /> visuals + news apps</h1>
                     <h2><a href="https://twitter.com/nprviz/lists/the-team/members" target="_blank">Photographers, videographers, coders and designers</a> in the NPR&nbsp;newsroom.</h2>
                     <p class="jobs">
-                        <span class="job">
+                      <span class="job">
+                        <strong>Join us for the 2024 elections!</strong>
+                        <a href="https://grnh.se/d55dda975us">Graphics reporter</a> |
+                        <a href="https://grnh.se/5623b8475us">News apps developer</a> |
+                        <a href="https://boards.greenhouse.io/nationalpublicradioinc/jobs/4310679005">Visuals editor</a> |
+                        <a href="https://boards.greenhouse.io/nationalpublicradioinc/jobs/4310671005">Associate producer</a>
+                      </span>
+<!-- 
+                      <span class="job">
                             <strong>Join Us!</strong>
                             <a href="https://boards.greenhouse.io/nationalpublicradioinc/jobs/4293783005">Senior News Apps Developer</a>
                         </span>
+ -->
 <!--
                         <span class="internship">
                             <strong>Internships:</strong>
@@ -112,7 +121,9 @@ layout: base
 
                     <h2><a href="/blog/">On The Team Blog</a></h2>
 
-                    {% for post in site.posts limit:3 %}
+                    {% assign filteredPosts = site.posts | where:"layout","post" %}
+
+                    {% for post in filteredPosts limit:3 %}
                         {% if post.redirect_url == nil %}
                             <article {% if post.external_url %}class="external"{% endif %}>
                                 <h6>{{ post.date | date: "%B %d, %Y" }}</h6>

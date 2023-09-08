@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Do Visual Stories Make People Care?"
+title: "Do visual stories make people care?"
 description: "A deep dive into user engagement on our sequential visual stories"
 author: Tyler Fisher
 email: tfisher@npr.org

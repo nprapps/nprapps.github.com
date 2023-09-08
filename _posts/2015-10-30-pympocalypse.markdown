@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Pympocalypse"
-description: "A News Nerd Horror Story"
+description: "A news nerd horror story"
 
 author: Christopher Groskopf
 email: cgroskopf@npr.org

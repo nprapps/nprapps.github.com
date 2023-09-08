@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Setup Windows to Develop News Apps"
+title: "How to setup Windows to develop news apps"
 description: "What you need to work on our new, Node-based projects"
 author: Thomas Wilburn
 email: twilburn@npr.org

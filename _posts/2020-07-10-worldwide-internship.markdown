@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Four Lessons From A 10,000-Mile Internship Journey"
+title: "Four lessons from a 10,000-mile internship journey"
 description: "From DC to Texas to Jakarta, Stephanie Adeline takes us through her internship in an age of coronavirus"
 author: Stephanie Adeline
 twitter: stephadeline

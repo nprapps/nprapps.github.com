@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Better Way To Track Listening"
+title: "A better way to track listening"
 description: "Let's stop using vanity metrics to make us look better for advertisers and start really learning about our users."
 
 author: Tyler Fisher

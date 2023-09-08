@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dailygraphics: Updates And Upgrades For 2019 And Beyond"
+title: "Dailygraphics: Updates and upgrades for 2019 and beyond"
 description: "We're rolling out updated and new versions of our dailygraphics rig."
 
 author: Thomas Wilburn

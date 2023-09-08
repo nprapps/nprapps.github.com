@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How We Built White Lies"
+title: "How we built White Lies"
 description: "Launching an investigative podcast with our first scrolling narrative"
 author: Thomas Wilburn
 email: twilburn@npr.org

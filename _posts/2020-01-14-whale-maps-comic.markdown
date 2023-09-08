@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How I Made This Graphic: A Comic"
+title: "How I made this graphic: a comic"
 description: "Creating an animated map of warming waters off the coast of Maine"
 author: Connie Hanzhang Jin
 email: cjin@npr.org

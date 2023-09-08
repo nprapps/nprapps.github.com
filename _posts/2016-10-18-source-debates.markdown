@@ -1,5 +1,5 @@
 ---
-title: "How NPR Transcribes and Fact-Checks the Debates, Live"
+title: "How NPR transcribes and fact-checks the debates, live"
 description: "Behind the scenes of the Visuals team’s most technically complex project yet"
 external_site: "Published At Source (source.opennews.org)"
 external_url: https://source.opennews.org/articles/how-npr-transcribes-and-fact-checks-debates-live/

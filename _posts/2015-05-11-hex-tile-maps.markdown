@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Let’s Tesselate: Hexagons For Tile Grid Maps"
+title: "Let’s tesselate: Hexagons for tile grid maps"
 description: "Bored with four-sided tiles for your grid map choropleths? Add two sides and amaze your friends!"
 author: Danny DeBelius
 email: ddebelius@npr.org

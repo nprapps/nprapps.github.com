@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Retrospective: WBEZ's Summer Recommendations"
+title: "Retrospective: WBEZ's summer recommendations"
 description: "Creating a community-driven activity guide"
 author: Paula Friedrich
 email: pfriedrich@npr.org

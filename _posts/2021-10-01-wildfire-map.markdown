@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building A Beautiful And Clear Map From Massive, Complex Data"
+title: "Building a beautiful and clear map from massive, complex data"
 description: "How we made the fire interval return map for our recent project about wildfire risk."
 author: Daniel Wood
 twitter: nprviz

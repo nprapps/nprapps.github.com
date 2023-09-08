@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Outside of a Dog: Rebuilding the NPR Book Concierge"
+title: "Outside of a dog: Rebuilding the NPR Book Concierge"
 description: "How we modernized and expanded our book recommendations"
 author: Thomas Wilburn
 email: twilburn@npr.org

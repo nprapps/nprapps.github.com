@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pym.js v1.3.0 release - Scroll&nbsp;Tracking"
+title: "Pym.js v1.3.0 release: scroll&nbsp;tracking"
 description: "Pym.js has a new release that includes an optional throttled scroll tracking"
 
 author: Juan Elosua

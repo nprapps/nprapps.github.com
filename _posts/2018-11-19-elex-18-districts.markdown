@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blue and Red America: How We Built It"
+title: "Blue and Red America: How we built it"
 description: Some QGIS, some Python and a whole lot of shapefiles
 
 author: Sean McMinn

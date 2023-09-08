@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Lunchbox Update: We're Dropping Support For Electron"
+title: "Lunchbox update: We're dropping support for electron"
 description: "As it turns out, corporate IT policies make distributing a newsroom tool as a native app really hard."
 
 author: Tyler Fisher

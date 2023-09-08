@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Science of the Science of Joy"
+title: "The science of the Science of Joy"
 description: "How we designed and built NPR's Joy Generator"
 author: Connie Jin and Thomas Wilburn
 twitter: nprviz

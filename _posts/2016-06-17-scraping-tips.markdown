@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Useful Scraping Techniques"
+title: "Useful scraping techniques"
 description: "How to scrape thousands of URLs in minutes."
 
 author: David Eads

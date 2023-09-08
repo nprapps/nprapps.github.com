@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pym.js v1.0.0 release - what do you need to know"
+title: "Pym.js v1.0.0 release: What do you need to know"
 description: "Pym.js has a new release that tackles some integration problems with CMSes. Let us break down the main goals and changes for this release"
 
 author: Juan Elosua

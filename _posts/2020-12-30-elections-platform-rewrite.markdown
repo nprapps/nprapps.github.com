@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How We Did It: The 2020 General Election Rig"
+title: "How we did it: The 2020 general election rig"
 description: "Redesigning and rewriting the NPR general election platform during an unexpected year."
 author: Ruth Talbot
 twitter: nprviz

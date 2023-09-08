@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How We Did It: Heat And Income In U.S. Cities"
+title: "How we did it: Heat and income in U.S. cities"
 description: "Using satellite and census data, along with on-the-ground reporting, to investigate heat in U.S. cities"
 author: Sean McMinn
 email: smcminn@npr.org
