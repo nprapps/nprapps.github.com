@@ -7,7 +7,7 @@ email: nprapps@npr.org
 twitter: nprviz
 ---
 
-_**Last updated Jan. 3, 2023.** We've overhauled our step-by-step guide to setting up your machine the way we do on the NPR News Apps team. This edition is by [Daniel Wood](https://twitter.com/danielpwwood), with notes from Ruth Talbot, [Rina Torchinsky](https://twitter.com/rinatorchi), [Nick Underwood](https://twitter.com/mulletmapping) and Koko Nakajima._
+_**Last updated Nov. 7, 2023.** We've overhauled our step-by-step guide to setting up your machine the way we do on the NPR News Apps team. This edition is by [Daniel Wood](https://twitter.com/danielpwwood), with notes from Ruth Talbot, [Rina Torchinsky](https://twitter.com/rinatorchi), [Nick Underwood](https://twitter.com/mulletmapping), Koko Nakajima and Brent Jones._
 
 _First authored in 2013 by [Gerald Rich](https://twitter.com/newsroomdev), this page continues to be a living document, updated as systems and software update. [Geoff Hing](https://twitter.com/geoffhing), [David Eads](https://twitter.com/eads), [Livia Labate](https://twitter.com/livlab), [Tyler Fisher](https://twitter.com/tylrfishr), [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua), [Miles Watkins](https://github.com/mileswwatkins) and [Thomas Wilburn](https://twitter.com/thomaswilburn) have contributed over the years._
 
@@ -122,6 +122,16 @@ Then, type `conda env list` to see a list of environments. At this point, the on
 
 ```
 conda create --name py2 python=2.7.18
+```
+
+If you're working with an M1- or M2-based Mac, you may get a `PackageNotFound` error when installing Python 2.7.X.
+
+To solve this ([per Stackoverflow](https://stackoverflow.com/a/67569068)), explicitly specify the environment by prefixing the command with `CONDA_SUBDIR=osx-64`
+
+The full command is:
+
+```
+CONDA_SUBDIR=osx-64 conda create --name py2 python=2.7.18
 ```
 
 You can name it whatever you want. I went with `py2`. This will take a moment. When prompted type `y` to proceed. Next, activate this environment.
