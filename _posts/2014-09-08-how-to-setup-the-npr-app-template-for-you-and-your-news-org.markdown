@@ -27,7 +27,7 @@ In this post, you will learn how to:
 
 Our app template relies on a UNIX-based development environment and working knowledge of the command line. We have a Python and Node-based stack. Thus, if you are new to all of this, you should probably read our [development environment blog post](http://blog.apps.npr.org/2013/06/06/how-to-setup-a-developers-environment.html) first and make sure your environment matches ours. Namely, you should have Python 2.7 and the latest version of Node installed.
 
-Also, all of our projects are deployed from the template to Amazon S3. You should have three buckets configured: one for production, one for staging and one for synchronizing large media assets (like images) across computers. For example, we use apps.npr.org, stage-apps.npr.org and assets.apps.npr.org for our three buckets, respectively.
+Also, all of our projects are deployed from the template to Amazon S3. You should have three buckets configured: one for production, one for staging and one for synchronizing large media assets (like images) across computers. For example, we use apps.npr.org, stage-apps.npr.org and assets.apps.npr.org for our three buckets, respectively. Each bucket will need to have [enabled website hosting](https://docs.aws.amazon.com/AmazonS3/latest/dev/EnableWebsiteHosting.html) and have a [bucket policy allowing website access].
 
 ## Cloning the template
 
