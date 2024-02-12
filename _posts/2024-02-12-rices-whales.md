@@ -121,7 +121,7 @@ Luckily, Nick's transit analysis flagged whether the boat was speeding, and crea
 Initially, I thought I'd split the data into daily chunks, and create a gif or looping video, to show the heavy traffic. Here's what that roughly would have looked like (without the speeding highlighted):
 
 <video width="100%"  controls>
-  <source src="/img/posts/2024-02-12-rices-whales/traffic-early-draft.mp4" type="video/mp4">
+  <source src="/img/posts/2024-02-12-rices-whales/traffic-early-draft.mov" type="video/mp4">
 </video>
 
 
