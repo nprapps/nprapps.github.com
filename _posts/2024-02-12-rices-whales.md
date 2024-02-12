@@ -2,7 +2,7 @@
 layout: post
 title: "How we used gigabytes of shipping data to show risks to endangered whales"
 description: "The Rice’s whales’ habitat in the Gulf of Mexico is a thoroughfare of massive, fast-moving ships. Here’s how we analyzed and visualized the potential impact of those ships."
-author: Daniel Wood, Nick McMillan, Chiara Eisner
+author: Daniel Wood, Nick McMillan and Chiara Eisner
 twitter: nprviz
 og_image: /img/posts/2024-02-12-rices-whales/mapFrame.png
 ---
@@ -25,7 +25,7 @@ Hey, this is Nick. I started out by breaking the problem into four parts:
 
 ### Locating Data
 
-Most large ships are required to have Automatic Identification Systems (AIS) devices that transmit location, speed and identity information. This data is available for download at [MarineCadastre.gov](https://marinecadastre.gov/ais/), a joint effort between the Bureau of Ocean Energy Management and NOAA, featuring data from the U.S. Coast Guard's AIS.
+Most large ships are required to have Automatic Identification System (AIS) devices that transmit location, speed and identity information. This data is available for download at [MarineCadastre.gov](https://marinecadastre.gov/ais/), a joint effort between the Bureau of Ocean Energy Management and NOAA, featuring data from the U.S. Coast Guard's AIS network.
 
 Their dataset provides ship location and speed details in 1-minute intervals within the U.S. exclusive economic zone – including the Gulf of Mexico.
 
@@ -76,7 +76,7 @@ The final piece of the analysis was determining the speed of each transit. I con
 
 The first methodology categorized a ship as speeding if there were two AIS points above 10 knots. Oceana,  an international ocean conservation organization, [uses this method](https://www.workboat.com/viewpoints/noaa-using-ais-in-vessel-speed-zones) in their [speed zone compliance analysis](https://oceana.org/press-releases/oceana-finds-most-boats-speeding-in-slow-zones-designed-to-protect-critically-endangered-north-atlantic-right-whales/) for the endangered North Atlantic right whale.
 
-The second method is a distanced weighted average speed for the entire transit and was used in a [vessel speed rule assessment](https://media.fisheries.noaa.gov/2021-01/FINAL_NARW_Vessel_Speed_Rule_Report_Jun_2020.pdf?null) published by NOAA. While both are valid techniques to measure speed, I went with this one because it controls for the fact that AIS transmission rates vary based on ships speed. Also, the average speed for a transit was easier to explain than two AIS points above 10 knots. However, I tested both methodologies and arrived at similar results. 
+The second method is a distanced weighted average speed for the entire transit and was used in a [vessel speed rule assessment](https://media.fisheries.noaa.gov/2021-01/FINAL_NARW_Vessel_Speed_Rule_Report_Jun_2020.pdf?null) published by NOAA. While both are valid techniques to measure speed, I went with this one because it controls for the fact that AIS transmission rates vary based on ships' speeds. Also, the average speed for a transit was easier to explain than two AIS points above 10 knots. However, I tested both methodologies and arrived at similar results. 
 
 For the distance-weighted average speed, I first calculated the distance traveled and speed for each segment between two AIS points. Then I multiplied the segment’s speed by its fraction of the total transit distance. Finally I summed the products to arrive at an average speed for the entire transit.
 
@@ -106,11 +106,9 @@ For this project, I took inspiration from their examples and tried to utilize co
 
 ### Building the animation
 
-Transform ship point data into hour by hour ship line data.
+In order to shore frenetic ship transits throughout the habitat, I needed to take ship point data and make it into ship _line_ data.
 
-In order to shore frenetic ship transits throughout the habitat, I needed to take ship point data and make it into ship line data.
-
-For any duration of a transit that was "speeding", I wanted the line to be colored red. Thus I needed to take these points, arrange them sequentially, and then split the lines into segments based on whether or not they were speeding.
+For any duration of a transit that was "speeding," I wanted the line to be colored red. Thus I needed to take these points, arrange them sequentially, and then split the lines into segments based on whether or not they were speeding.
 
 Looking at an example set of points representing two ships, here's what I needed:
 
@@ -160,7 +158,7 @@ Here's an example file, but it doesn't look like much yet.
 
 ### Create a basemap (outside of code workflow)
 
-I created an extremely simple basemap, using gray [earth from Natural Earth](https://www.naturalearthdata.com/downloads/10m-raster-data/), and some Natural Earth coastlines for added oomph. For the proposed critical habitat of the Rice's Whales, I got the data [from NOAA](http://link). To line it up, I used the same projection and bounding box that I used in the mapshaper script. Easy peasy.
+I created an extremely simple basemap, using gray [earth from Natural Earth](https://www.naturalearthdata.com/downloads/10m-raster-data/), and some Natural Earth coastlines for added oomph. For the proposed critical habitat of the Rice's whales, I got the data [from NOAA](https://noaa.maps.arcgis.com/home/item.html?id=f85d90527131406489ce721b2b71960b). To line it up, I used the same projection and bounding box that I used in the mapshaper script. Easy peasy.
 
 ![](/img/posts/2024-02-12-rices-whales/baseMap.png)
 
@@ -179,7 +177,7 @@ Placing the resulting data under the "active" data shows the relentless nature o
 
 With this, and a nifty legend in place, our map is pretty much done!
 
-To see how the analysis and map fit into the larger piece, read the story [here](https://www.npr.org/2023/11/13/1212690111/only-51-of-these-u-s-whales-remain-little-has-been-done-to-prevent-their-extinct?live=1).
+To see how the analysis and map fit into the larger piece, read the story [here](https://www.npr.org/2023/11/16/1212690111/only-51-of-these-u-s-whales-remain-little-has-been-done-to-prevent-their-extinct).
 
 <p data-pym-loader data-child-src="https://apps.npr.org/dailygraphics/graphics/rices-whales-20231115/ships.html" id="responsive-embed-rices-whales-20231115-ships2"> Loading... </p> <script src="https://pym.nprapps.org/npr-pym-loader.v2.min.js"></script>
 
