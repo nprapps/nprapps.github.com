@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: redirect
+redirect_url: /
+
 title: "Join us for the 2024 election"
 description: "We have four code/graphics/visuals-related contract positions open. Come join us!"
 author: Alyson Hurt
