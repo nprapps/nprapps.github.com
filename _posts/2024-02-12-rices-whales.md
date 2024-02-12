@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How we used gigabytes of shipping data to show risks to endangered whales"
-description: "The Rice's whales' habitat is a thoroughfare of massive, fast moving ships. Here's how we analyzed and visualized the impact of those ships.  "
+description: "The Rice’s whales’ habitat in the Gulf of Mexico is a thoroughfare of massive, fast-moving ships. Here’s how we analyzed and visualized the potential impact of those ships."
 author: Daniel Wood, Nick McMillan, Chiara Eisner
 twitter: nprviz
 og_image: /img/posts/2024-02-12-rices-whales/mapFrame.png
