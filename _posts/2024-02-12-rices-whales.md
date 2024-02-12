@@ -120,7 +120,10 @@ Luckily, Nick's transit analysis flagged whether the boat was speeding, and crea
 
 Initially, I thought I'd split the data into daily chunks, and create a gif or looping video, to show the heavy traffic. Here's what that roughly would have looked like (without the speeding highlighted):
 
-![](/img/posts/2024-02-12-rices-whales/draft1.gif)
+<video width="100%"  controls>
+  <source src="/img/posts/2024-02-12-rices-whales/traffic-early-draft.mp4" type="video/mp4">
+</video>
+
 
 To me, this was too busy, and not intelligible without some serious hand holding.
 
@@ -153,6 +156,7 @@ From there, I used the [npm svgexport module](https://www.npmjs.com/package/svge
 Here's an example file, but it doesn't look like much yet. 
 
 ![](/img/posts/2024-02-12-rices-whales/lines2.png)
+<small>Single hour of ship traffic in the gulf, without basemap</small>
 
 ### Create a basemap (outside of code workflow)
 
