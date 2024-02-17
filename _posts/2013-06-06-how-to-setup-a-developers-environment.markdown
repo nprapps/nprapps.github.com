@@ -104,6 +104,10 @@ source ~/.zshrc
 
 You'll only need to source the `.zshrc` since we're editing the file right now. It's the equivalent of quitting your terminal application and opening it up again, but `source` lets you soldier forward and setup Python.
 
+## TKTK 
+`brew install terminal-notifier`
+`alias notifyDone='terminal-notifier -title "Terminal" -message "Done with task! Exit status: $?"' -activate com.apple.Terminal`
+
 ## Chapter 2: Installing Python and virtual environments with Anaconda
 
 Python is notoriously tricky to install and manage on your machine. [XKCD did it justice](https://xkcd.com/1987/) with this cartoon...
