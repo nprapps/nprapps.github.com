@@ -333,7 +333,7 @@ Maps:
 -   [Mapshaper](https://mapshaper.org/) for simplifying geo layers
 -   [Mapshaper command line](https://github.com/mbloch/mapshaper/wiki/Command-Reference), even more cosmic power than the web interface. A ton of utilities for creating maps and map layers from the command line.
 -   PostGIS (see above)
--   [Blender](https://www.blender.org/) for hillshades or oblique views
+-   [Blender](https://www.blender.org/) for hillshades or oblique views (see [this](https://somethingaboutmaps.wordpress.com/2017/11/16/creating-shaded-relief-in-blender/) and [this](https://github.com/domlysz/BlenderGIS?tab=readme-ov-file))
 -   [GDAL](https://gdal.org/index.html) command line tools. Much of this is packaged inside of QGIS, but the command line tool can be useful, separately for scripting. [Here](https://github.com/dwtkns/gdal-cheat-sheet) a cheat sheet of useful commands.
 - [Imagemagick](https://imagemagick.org/script/command-line-tools.php) and [ffmpeg](https://ffmpeg.org/ffmpeg.html) command line tools, great for optimizing images and videos.
 
