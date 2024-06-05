@@ -609,3 +609,54 @@ footer ul li {
     .entry section { font-size:12px; }
     #disqus_thread { display:none; }
 }
+
+
+/* ANNOTATIONS Styles */
+
+section.annotation p.annotation {
+    position: relative;
+}
+
+section.annotation p li {
+    position: absolute;
+    right: -215px;
+    text-align: left;
+    font-size: 12px;
+    font-style: italic;
+    display: inline;
+    width: 200px;
+    color: #b634b6;
+}
+    
+section.annotation sup a {
+    color: #b634b6;
+}
+
+@media screen and (max-width:900px) {
+    section.annotation p li { 
+        right: -175px;
+        width: 170px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    section.annotation p li {
+        right: unset;
+        margin-top: 14px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    section.annotation p li.active {
+        opacity: 1;
+    }
+
+    section.annotation p li p {
+        background-color: #fff;
+        border: 1px solid;
+        padding: 3px;
+        width: fit-content;
+        max-width: 200px;
+        box-shadow: 2px 2px 1px 1px black;
+    }
+}

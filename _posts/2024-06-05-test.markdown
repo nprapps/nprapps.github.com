@@ -1,0 +1,25 @@
+---
+layout: post
+title: "TKTK"
+description: "TKTK"
+author: Daniel Wood
+twitter: nprviz
+og_image: /img/posts/2024-02-12-rices-whales/mapFrame.png
+annotation: true
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed lobortis urna, ornare varius orci. Suspendisse rutrum tellus ut nunc semper, ut pharetra nunc maximus. Suspendisse at diam pretium nunc ornare vestibulum. Etiam pretium sed ante in semper. Cras tempor vel ipsum ultricies condimentum. Donec laoreet sodales risus nec vestibulum. Morbi eget posuere lectus, nec volutpat nisi. Praesent blandit commodo lacus, in semper nibh elementum a. Curabitur et fermentum dui, quis interdum sapien. Integer non laoreet libero. Etiam quam nisl, maximus a dignissim eu, maximus a ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam condimentum lobortis mi ac gravida. Aliquam a nisi ut turpis vestibulum semper. Nunc rutrum turpis ex, vel pulvinar metus porttitor id. Suspendisse erat lectus, porta vel velit in, tempor varius urna.
+
+So OpenMapTiles fills an important role, allowing you to create free OpenStreetMap vector tilesets in your own style. You can trim the import to any number of predefined regions or countries.
+
+If you do want to go this route via the command line[^1], I suggest following this workshop (videos 1, 2, 3, 4) to understand the ecosystem. 
+
+[^1]: This is the first footnote.
+
+But, after diving into it, I got totally overwhelmed. Confession time: I have never used Docker before, and I avoid postGIS like the plague. I only recently[^2] learned what a makefile is. And that’s like…the whole thing.
+
+[^2]: This is the second footnote.
+
+Cras ullamcorper diam ac velit iaculis, ut sodales eros vulputate. Nam tincidunt iaculis mauris nec dictum. Integer volutpat augue at fermentum aliquam. Praesent ac eros in tortor congue eleifend. Donec gravida euismod dapibus. Aliquam hendrerit lectus sem. Cras pharetra justo metus, id pellentesque odio ultrices nec.[^3] Phasellus ornare volutpat ligula, vitae imperdiet eros tristique vitae. Nam vitae orci sit amet enim luctus luctus a a nisi. Morbi orci felis, feugiat ac aliquam at, scelerisque finibus mi. Aliquam tempor efficitur felis, gravida ullamcorper quam venenatis eget.
+
+[^3]: This is the third footnote. Cras ullamcorper diam ac velit iaculis, ut sodales eros vulputate. Nam tincidunt iaculis mauris nec dictum.

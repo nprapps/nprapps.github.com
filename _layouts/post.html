@@ -11,7 +11,11 @@ layout: default-footer
           {{ page.date | date: "%B %d, %Y" }}
         </p>
     </header>
-    <section>{{ content }}</section>
+    <section 
+      {% if page.annotation %} class="annotation" {% endif %}
+    >
+      {{ content }}
+    </section>
     <!-- <div class="vizgigs">
       <h2>Never miss a gig</h2>
       <form action="https://tinyletter.com/nprviz" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/nprviz', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
