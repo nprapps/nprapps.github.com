@@ -29,7 +29,7 @@
   url: http://www.npr.org/news/specials/2012/cushman/
   github_url: https://github.com/npr/cushman
 - name: "Election 2012 Early And Absentee Voting"
-  description: "Early and absentee voting are now options in most of the country, and roughly a third of all Americans casting a ballot in the 2012 presidential race are expected to do so before Nov. 6, Election Day. Here’s an early voting calendar and state deadlines for voter registration."
+  description: "Early and absentee voting are now options in most of the country, and roughly a third of all Americans casting a ballot in the 2012 presidential race are expected to do so before Nov. 6, Election Day. Here's an early voting calendar and state deadlines for voter registration."
   date: "Sept. 25, 2012"
   image: "http://media.npr.org/news/specials/2012/elections/early-voting_sq.gif"
   url: http://apps.npr.org/early-voting-2012/
@@ -215,7 +215,7 @@
   url: http://apps.npr.org/wolves/
   github_url: https://github.com/nprapps/wolves
 - name: "Grave Science"
-  description: "America’s effort to bring home its war dead is slow, inefficient and stymied by outdated methods."
+  description: "America's effort to bring home its war dead is slow, inefficient and stymied by outdated methods."
   date: "March 6, 2014"
   image: "http://apps.npr.org/grave-science/assets/img/jpac/promo-twitter.jpg"
   url: http://apps.npr.org/grave-science/
@@ -251,7 +251,7 @@
   url: "http://apps.npr.org/behind-the-civil-rights-act/"
   github_url: https://github.com/nprapps/civilrights
 - name: "The End Of Neighborhood Schools"
-  description: "New Orleans is home to the nation’s first all-charter district. Is this the future of education?"
+  description: "New Orleans is home to the nation's first all-charter district. Is this the future of education?"
   date: "September 2, 2014"
   image: "http://apps.npr.org/the-end-of-neighborhood-schools/assets/img/nola_share_image_sq.jpg"
   url: "http://apps.npr.org/the-end-of-neighborhood-schools/"
@@ -298,7 +298,7 @@
   url: http://apps.npr.org/lookatthis/posts/mystkowski-loves/
   github_url: https://github.com/nprapps/lookatthis
 - name: "NPR's Book Concierge"
-  description: "Visit the #bookconcierge, NPR’s guide to 2014's great reads."
+  description: "Visit the #bookconcierge, NPR's guide to 2014's great reads."
   date: "December 3, 2014"
   image: "http://apps.npr.org/best-books-2014/assets/img/covers.jpg"
   url: http://apps.npr.org/best-books-2014/
@@ -465,13 +465,13 @@
   url: http://apps.npr.org/best-books-2015/
   github_url:
 - name: "Songs We Love 2015"
-  description: "Put on your headphones, turn up the volume and enjoy all of NPR Music’s favorite songs of 2015."
+  description: "Put on your headphones, turn up the volume and enjoy all of NPR Music's favorite songs of 2015."
   date: "Dec. 15, 2015"
   image: "http://apps.npr.org/best-songs-2015/assets/img/facebook-share-15-2.jpg"
   url: http://apps.npr.org/best-songs-2015/
   github_url:
 - name: "Elections 2016"
-  description: "For every primary, caucus and convention, we’re here to help you get caught up and understand what matters this election season."
+  description: "For every primary, caucus and convention, we're here to help you get caught up and understand what matters this election season."
   date: "Feb. 1, 2016"
   image: "/img/apps/elections2016.png"
   url: http://elections2016.npr.org.s3-website-us-east-1.amazonaws.com/
@@ -590,7 +590,7 @@
   url: http://www.npr.org/sections/alltechconsidered/2016/06/17/482483537/semi-automatic-weapons-without-a-background-check-can-be-just-a-click-away
   github_url: https://github.com/nprapps/armslist-scraper
 - name: "Find Lead Pipes In Your Home"
-  description: "Do lead pipes bring water into your home? Find out in 10 minutes. All you’ll need is a key and a magnet."
+  description: "Do lead pipes bring water into your home? Find out in 10 minutes. All you'll need is a key and a magnet."
   date: "June 24, 2016"
   image: "/img/apps/lead-pipes.jpg"
   url: http://apps.npr.org/find-lead-pipes-in-your-home/
@@ -652,7 +652,7 @@
   url: http://www.npr.org/sections/ed/2016/08/16/486091625/racing-the-middle-school-brain
   github_url:
 - name: "A Silent Epidemic"
-  description: "Our public schools are struggling to handle millions of students with mental health problems. Here’s why."
+  description: "Our public schools are struggling to handle millions of students with mental health problems. Here's why."
   date: "Sept. 7, 2016"
   image: "/img/apps/mental-health.jpg"
   url: http://apps.npr.org/mental-health/
@@ -938,7 +938,7 @@
   image: "/img/apps/muslim-youth-camp.jpg"
   url: https://www.npr.org/2017/08/17/544145281/between-swimming-and-smores-young-muslim-campers-learn-to-cope-with-rising-hosti
 - name: "Live Coverage: Follow The Solar Eclipse"
-  description: "A total solar eclipse made its way from Oregon to South Carolina. Fourteen states were in the path of total darkness. See highlights from the astronomical phenomenon’s journey across America below."
+  description: "A total solar eclipse made its way from Oregon to South Carolina. Fourteen states were in the path of total darkness. See highlights from the astronomical phenomenon's journey across America below."
   date: "August 21, 2017"
   image: "/img/apps/eclipse.png"
   url: https://www.npr.org/sections/thetwo-way/2017/08/21/544239796/live-coverage-follow-the-solar-eclipse
@@ -1115,7 +1115,7 @@
   blog_title: "How We Built White Lies"
   blog_url: http://blog.apps.npr.org/2019/05/17/white-lies.html
 - name: "Losing The Eternal Blue Sky"
-  description: "Meet a changing Mongolia. Rivers are dry. Pastureland is giving way to mines. And wintertime smog obscures the famed blue sky. How did the country get here? It’s a story of internal migration and economic transformation in an era of climate change."
+  description: "Meet a changing Mongolia. Rivers are dry. Pastureland is giving way to mines. And wintertime smog obscures the famed blue sky. How did the country get here? It's a story of internal migration and economic transformation in an era of climate change."
   date: "Aug. 5, 2019"
   image: "/img/mongolia.jpg"
   url: https://apps.npr.org/mongolia/
@@ -1280,7 +1280,7 @@
   image: "https://media.npr.org/assets/img/2020/08/21/rnc_convention_liveblog_web-1-_wide.jpg"
   url: https://apps.npr.org/liveblogs/20200824-rnc/
 - name: "The Ghost Towns Behind The Gates"
-  description: "Fukushima was forever changed by one of the world’s biggest nuclear disasters nearly a decade ago. But what does recovery really mean?"
+  description: "Fukushima was forever changed by one of the world's biggest nuclear disasters nearly a decade ago. But what does recovery really mean?"
   date: Sept. 8, 2020
   image: "https://media.npr.org/assets/img/2020/08/27/_dsc3493-edit_wide-35a415f16f6c1b8554f43b18fd2a66251e2cf6f2-s1200.jpg"
   url: https://apps.npr.org/fukushima/
@@ -1413,7 +1413,7 @@
   image: "https://media.npr.org/assets/img/2021/02/18/park_dip_wide.jpg?s=1200"
   url: https://www.npr.org/2021/02/22/966428165/a-looming-disaster-new-data-reveal-where-flood-damage-is-an-existential-threat
 - name: "Enduring Loss"
-  description: "Grandma, Pop Pop, Butterfly, Coach, Tio, Bubbles &mdash; more than 550,000 people in all have died of COVID-19 in the United States. As the U.S. death rate declines and the rising pace of vaccinations offers hope of a post-pandemic life, we continue to remember those we’ve lost."
+  description: "Grandma, Pop Pop, Butterfly, Coach, Tio, Bubbles &mdash; more than 550,000 people in all have died of COVID-19 in the United States. As the U.S. death rate declines and the rising pace of vaccinations offers hope of a post-pandemic life, we continue to remember those we've lost."
   date: April 3, 2021
   image: "https://apps.npr.org/memorial-interactive/assets/promo.png"
   url: https://apps.npr.org/memorial-interactive/
@@ -1472,7 +1472,7 @@
   image: "https://media.npr.org/assets/img/2021/08/20/screen-shot-2021-08-20-at-2.42.53-pm_wide-s1200.png"
   url: https://www.npr.org/sections/health-shots/2021/07/28/1021795290/cdc-mask-guidelines-indoors-vaccinated-by-county-covid-spread
 - name: "United States of Wildfire"
-  description: "There’s a forgotten history that should serve as a warning — wildfire isn’t unique to the West. Now the warming climate is increasing the risk of major wildfires across America. And more people are moving to fire-prone areas without realizing the danger."
+  description: "There's a forgotten history that should serve as a warning — wildfire isn't unique to the West. Now the warming climate is increasing the risk of major wildfires across America. And more people are moving to fire-prone areas without realizing the danger."
   date: Aug. 10, 2021
   image: "https://apps.npr.org/us-wildfires-impact-environment-climate-change/assets/synced/images/map5-1000-7-social.jpg"
   url: https://apps.npr.org/us-wildfires-impact-environment-climate-change/
@@ -1798,17 +1798,17 @@
   image: "https://media.npr.org/assets/img/2023/04/11/kindergarten-trio_wide-552176436bdfae94424ff2f3fef0783388ad1eca-s1400-c100.jpg"
   url: https://apps.npr.org/arctic-ice-melting-climate-change/texas-galveston-sea-level-rise.html
 - name: "Why Texans need to know how fast Antarctica is melting"
-  description: "Ice in Antarctica is melting rapidly. That’s driving sea level rise around the world. But some places are threatened more than others, and Texas is in the crosshairs."
+  description: "Ice in Antarctica is melting rapidly. That's driving sea level rise around the world. But some places are threatened more than others, and Texas is in the crosshairs."
   date: April 19, 2023
   image: "https://apps.npr.org/arctic-ice-melting-climate-change/assets/synced/images/resized/antarctica.jpg"
   url: https://apps.npr.org/arctic-ice-melting-climate-change/texas-galveston-sea-level-rise.html
 - name: "The surprising connection between Arctic ice and Western wildfires"
-  description: "The planet’s ice is fundamentally tethered to weather patterns that stretch across the globe. Scientists are finding that as the climate changes, that connection could be helping fuel disasters."
+  description: "The planet's ice is fundamentally tethered to weather patterns that stretch across the globe. Scientists are finding that as the climate changes, that connection could be helping fuel disasters."
   date: April 19, 2023
   image: "https://apps.npr.org/arctic-ice-melting-climate-change/assets/synced/images/resized/ap_noah.jpg"
   url: https://apps.npr.org/arctic-ice-melting-climate-change/western-us-wildfires.html
-- name: "The unexpected link between imperiled whales and Greenland’s melting ice"
-  description: "Climate change is pushing already imperiled whales to the brink, a sign of deeper shifts in the oceans as the world’s ice melts."
+- name: "The unexpected link between imperiled whales and Greenland's melting ice"
+  description: "Climate change is pushing already imperiled whales to the brink, a sign of deeper shifts in the oceans as the world's ice melts."
   date: April 19, 2023
   image: "https://apps.npr.org/arctic-ice-melting-climate-change/assets/synced/images/resized/nea.jpg"
   url: https://apps.npr.org/arctic-ice-melting-climate-change/greenland-whales.html
@@ -1817,7 +1817,7 @@
   date: April 19, 2023
   image: "https://apps.npr.org/arctic-ice-melting-climate-change/assets/synced/images/resized/Nepal-42.jpg"
   url: https://apps.npr.org/arctic-ice-melting-climate-change/nepal-rolwaling-river-glacier.html
-- name: "The world’s melting ice has surprising impacts. Can you guess them?"
+- name: "The world's melting ice has surprising impacts. Can you guess them?"
   description: "Melting glaciers and ice caps are far from where most people live. But the impacts stretch across the planet. See if you can guess how."
   date: April 19, 2023
   image: "https://apps.npr.org/arctic-ice-melting-climate-change/assets/synced/images/resized/dyewide_ice.jpg"
@@ -2000,7 +2000,7 @@
   date: April 24, 2024
   image: "https://media.npr.org/assets/img/2024/04/24/marker-promo-min_wide-2264383105e89fc7496815a3ef8d9a5392857631.jpg?s=1400&c=100&f=jpeg"
   url: https://www.npr.org/2024/04/24/1246684546/comic-historical-marker-civil-rights-murder
-- name: "The USDA’s gardening zones shifted. This map shows you what’s changed in vivid detail"
+- name: "The USDA's gardening zones shifted. This map shows you what's changed in vivid detail"
   description: "There's a good chance your zone shifted when the USDA updated its plant hardiness map in 2023. Zoom in on what that means for your garden."
   date: May 13, 2024
   image: "https://apps.npr.org/plant-hardiness-garden-map/assets/synced/promo.jpg"
@@ -2010,7 +2010,7 @@
   date: May 28, 2024
   image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1017x572+290+150/resize/1400/quality/100/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F55%2F5a%2Ffec2c43e4674bc87fe0e51a011d7%2Fabortion-ballot-initiatives-promo-image-2.png"
   url: https://www.npr.org/2024/05/23/nx-s1-4977323/abortion-law-legal-florida-arizona-amendment
-- name: "With 'chronic absenteeism' soaring in schools, most parents aren’t sure what it is"
+- name: "With 'chronic absenteeism' soaring in schools, most parents aren't sure what it is"
   description: "Experts and educators are worried about students who miss big chunks of the school year, but a new NPR/Ipsos poll shows parents aren't quite sure what it is."
   date: June 10, 2024
   image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+0/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2b%2Fea%2F6de56af54c84bb5ef424a3662786%2Fydai-npr-chronic-absenteeism.jpg"
@@ -2056,7 +2056,7 @@
   image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3000x1688+0+0/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fc8%2Fee%2F778b8a814eac83765f9b2f24921c%2F3j4a9690.jpg"
   url: https://www.npr.org/2024/08/03/g-s1-14361/china-communist-party-con-netherlands
 - name: "Olivia Reeves is chasing gold in Paris. We break down how she lifts"
-  description: "Expectations are high that a member of the U.S. women’s weightlifting team could win gold at the Olympics. And among the team’s most promising athletes is 21-year-old Olivia Reeves."
+  description: "Expectations are high that a member of the U.S. women's weightlifting team could win gold at the Olympics. And among the team's most promising athletes is 21-year-old Olivia Reeves."
   date: Aug. 6, 2024
   image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/2306x1298+201+668/resize/1400/quality/100/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffd%2Fe6%2F10f434ad42ae9e1e5022f1d5bb9b%2Fsnatch-1.png"
   url: https://www.npr.org/2024/08/06/nx-s1-5060258/paris-olympics-weightlifting-olivia-reeves-usa
@@ -2070,13 +2070,13 @@
   date: Sept. 4, 2024
   image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/834x469+0+0/resize/1400/quality/100/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F2a%2F92%2F2e399296468d88b0c7621e8482e6%2Fplanet-money-debate-bingo.png"
   url: https://www.npr.org/sections/planet-money/2024/09/04/g-s1-20299/planet-money-debate-bingo
-- name: "Hello, Pennsylvania! Why Harris and Trump can’t get enough of the Keystone State"
+- name: "Hello, Pennsylvania! Why Harris and Trump can't get enough of the Keystone State"
   description: "Where presidential candidates go says a lot about how they think they can win. That&#039;s why Pennsylvania is getting a lot of face time with the candidates this year."
   date: Sept. 13, 2024
   image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3465x1949+0+0/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fea%2Fba%2F7fe519d34349a4015f776ab7d338%2Fap24251607643180.jpg"
   url: https://www.npr.org/2024/09/05/nx-s1-5010760/kamala-harris-donald-trump-pennsylvania-swing-states
 - name: "These states will decide the election. We went to all of them to talk to voters"
-  description: "Your guide to the six swing states that will decide this year’s presidential election: Georgia, Nevada, Wisconsin, Michigan, Arizona and Pennsylvania."
+  description: "Your guide to the six swing states that will decide this year's presidential election: Georgia, Nevada, Wisconsin, Michigan, Arizona and Pennsylvania."
   date: Sept. 16, 2024
   image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1668x938+258+265/resize/1400/quality/100/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3d%2F47%2F228c864049faaaf233aa7ebfc71d%2Fswing-state.png"
   url: https://www.npr.org/2024/09/16/g-s1-22212/election-harris-trump-swing-states
@@ -2085,3 +2085,50 @@
   date: Sept. 17, 2024
   image: "https://apps.npr.org/voter-registration-2024-mail/assets/synced/voter-registration-social.jpg"
   url: https://apps.npr.org/voter-registration-2024-mail/
+- name: "Hurricanes are dangerous far from the coast. Communities are struggling to prepare"
+  description: "Coastal cities often bear the brunt of hurricanes. But as Hurricane Helene showed, extreme rainfall can be life-threatening hundreds of miles away."
+  date: Oct. 2, 2024
+  image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1994x1122+0+112/resize/1400/quality/100/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F1f%2F4d%2F7c88d5e346e08beaead1e0699dad%2Fscreenshot-2024-10-01-at-10-19-46-pm.png"
+  url: https://www.npr.org/2024/10/01/nx-s1-5133530/hurricane-helene-rain-flooding-climate-change
+- name: "Tired of presidential politics? Here's where power could shift in state capitols, too"
+  description: "With so much focus on the presidential election, keep in mind these down-ballot races can lead to big changes in your state when it comes to policies like abortion, health care and criminal justice."
+  date: Oct. 3, 2024
+  image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/3258x1833+0+287/resize/1400/quality/100/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fbb%2Faf%2F95a850d3402b97a44034f450ea46%2Fgroup-9-1.png"
+  url: https://www.npr.org/2024/10/02/nx-s1-5129659/abortion-election-michigan-arizona-minnesota
+- name: "These maps and images show what's left of Gaza, 1 year into the Israel-Hamas war"
+  description: "Israel&#039;s war with Hamas has destroyed much of Gaza. Recent analyses find that nearly 60% of buildings, nearly 70% of orchards and 68% of roads have been damaged or destroyed by the conflict."
+  date: Oct. 10, 2024
+  image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/1067x600+13+0/resize/1400/quality/100/format/gif/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffd%2F33%2F7dd2313b43889bc48897ab3245bf%2Fpromo.gif"
+  url: https://www.npr.org/2024/10/09/g-s1-27175/israel-hamas-war-gaza-map
+- name: "'That’s a bloodbath': How a federal program kills wildlife for private interests"
+  description: "A federal program kills hundreds of thousands of wild animals a year. Documents obtained by NPR show that many of those animals were killed in places where no damage to livestock was reported."
+  date: Oct. 10, 2024
+  image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6633x3731+0+244/resize/1400/quality/100/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F54%2F63%2F25882cad4272870e7c8c52396e05%2Fcoyote.png"
+  url: https://www.npr.org/2024/10/10/g-s1-26426/wildlife-services-usda-wild-animals-killed-livestock
+- name: "COMIC: Science-backed mood boosters to (almost instantly) snap you out of a funk"
+  description: "Six techniques to energize you when you feel sluggish and relax you when you feel stressed. Feel the transformation in 15 minutes or less."
+  date: Oct. 16, 2024
+  image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4800x2700+0+0/resize/1400/quality/100/format/png/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F3c%2F31%2F839b27c64b7eb3edc124d8b34336%2Fpromo-min.PNG"
+  url: https://www.npr.org/2024/10/16/g-s1-27725/comic-science-backed-mood-boosters-to-almost-instantly-snap-you-out-of-a-funk
+- name: "Trump has made more than 100 threats to prosecute or punish perceived enemies"
+  description: "An NPR investigation has found that since 2022, Trump has repeatedly threatened to investigate, prosecute, jail or otherwise punish his political opponents, rivals and even private citizens."
+  date: Oct. 22, 2024
+  image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/6000x3375+0+313/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F94%2F55%2F31643b9d4c25bdb8102b4a485754%2Fgettyimages-2176516461.jpg"
+  url: https://www.npr.org/2024/10/21/nx-s1-5134924/trump-election-2024-kamala-harris-elizabeth-cheney-threat-civil-liberties
+- name: "Central Asia’s Ticking Time Bomb: Water"
+  description: "The Aral Sea has nearly disappeared over the last 60 years. Now, its source rivers are depleting."
+  date: Oct. 30, 2024
+  image: "https://apps.npr.org/aral-sea-shrinking-map/assets/synced/images/AralSea-Toned_DSC9138.jpg"
+  url: https://apps.npr.org/aral-sea-shrinking-map/
+- name: "These charts show how Trump's strategy to lose by less won back several swing states"
+  description: "President-elect Donald Trump won the election by flipping Georgia, Pennsylvania and Wisconsin after President Biden won them in 2020. Looking at how Democratic counties voted explains how he did it."
+  date: Nov. 9, 2024
+  image: "https://npr.brightspotcdn.com/dims3/default/strip/false/crop/4000x2250+0+208/resize/1400/quality/100/format/jpeg/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Ffd%2F96%2Ffb7b9ab94f0db119185587b774fd%2Fgettyimages-2182525713.jpg"
+  url: https://www.npr.org/2024/11/08/nx-s1-5183070/trump-swing-states-democratic-counties-red-shift-2024
+
+- name: "Live: Election Results 2024"
+  description: "View live results for the 2024 United States presidential election, as well as for House, Senate, governor races and major ballot measures across the country."
+  date: Nov. 5, 2024
+  image: "./img/election-2024.png"
+  url: https://apps.npr.org/2024-election-results/
+  github_url: https://github.com/nprapps/elections24-general
