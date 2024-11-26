@@ -1,11 +1,13 @@
 ---
 layout: post
 title: "Self-hosted slippy maps, for novices (like me)"
-description: "Learn how NPR built their own explorable tile map without paying a fortune."
+description: "How we built our own explorable tile map without paying a fortune."
 author: Daniel Wood, Brent Jones
 twitter: nprviz
 og_image: /img/posts/2024-11-26-slippy-maps/walker-title.jpg
 ---
+
+![](/img/posts/2024-11-26-slippy-maps/walker-title.jpg)
 
 <style>
   .flowchart {
@@ -119,6 +121,7 @@ Protomaps provides a [handy cost calculator](https://docs.protomaps.com/deploy/c
 Here are some topline things we learned:
 
 ### The *real* cost is transfer from S3 to the browser
+*(Caveat: All these estimates are based on prices and polices at the time of publishing.)*
 
 - About 90% of the costs are for bandwidth from Cloudfront (Amazon’s CDN) to the internet. This is the total data transferred to users, and it costs about a dime for every gigabyte transferred. (And remember, users aren’t downloading the whole giant PMTiles file — just a tiny range of it.) OSM and hillshade tiles each averaged about 100 KB per tile. Our custom tiles for garden zones were much smaller. *Transferring the data for about 100,000 tiles would cost $1.*  
 - About 8% of the costs are based on the total number of GET requests made by users. Each tile requested is one GET request. Each PMTiles file shows about 4 tiles per zoom level per layer displayed. *100,000 GET requests would cost about 9 cents.*  
