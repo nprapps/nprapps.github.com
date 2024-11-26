@@ -1930,6 +1930,7 @@
   date: Jan. 15, 2024
   image: "https://apps.npr.org/primary-election-results-2024/assets/synced/2024-primaries.jpg"
   url: https://apps.npr.org/primary-election-results-2024/
+  github_url: https://github.com/nprapps/elections24-primaries
 - name: "Delegate tracker: Trump leads GOP presidential candidates on road to nomination"
   description: "How many delegates does each candidate have in the 2024 Republican presidential nomination race? NPR keeps track."
   date: Jan. 25, 2024
@@ -2005,6 +2006,9 @@
   date: May 13, 2024
   image: "https://apps.npr.org/plant-hardiness-garden-map/assets/synced/promo.jpg"
   url: https://apps.npr.org/plant-hardiness-garden-map/
+  github_url: https://github.com/nprapps/usda-plant-hardiness
+  blog_title: "Self-hosted slippy maps, for novices (like me)"
+  blog_url: https://blog.apps.npr.org/2024/11/26/slippy-maps.html
 - name: "The abortion debate is headed to the ballot box. Here's where voters will decide"
   description: "Abortion rights will be on the ballot in 10 states this November, meaning millions of voters will decide whether to protect reproductive rights in their state constitutions."
   date: May 28, 2024
