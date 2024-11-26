@@ -183,7 +183,7 @@ If you’re using tiles generated from the Protomaps weekly builds the easiest s
 
 To add your preferred fonts to the style.json, you will need to create the appropriate .pbf files for each zoom level and style. The MapLibre [font maker](https://maplibre.org/font-maker/) makes this a cinch. Store the generated .pbf files on S3 and reference that location in your style.json. 
 
-Similarly, you may need to make a custom sprite sheet. A sprite sheet is a single png that contains all icons and symbols that you might see on a map. A json key tells the mapping software what section of the sprite sheet to slice and use for the desired symbol. 
+Similarly, you may need to make a custom sprite sheet. A sprite sheet is a [single png](https://github.com/nprapps/usda-plant-hardiness/blob/main/src/assets/zone_sprite.png) that contains all icons and symbols that you might see on a map. A [json key](https://github.com/nprapps/usda-plant-hardiness/blob/main/src/assets/zone_sprite.json) tells the mapping software what section of the sprite sheet to slice and use for the desired symbol. 
 
 In our case, we didn’t really have any conventional icons that were needed. But in order to avoid including a large legend on every map page, and for accessibility reasons, we wanted to include a layer that would show the hardiness zone names [repeated](https://maplibre.org/maplibre-gl-js/docs/examples/fill-pattern/) across the map.   
 
