@@ -112,7 +112,7 @@ Trimming the tiles by bounding box was fairly easy, and allowed us to store less
 
 Self-hosting maps, beyond being daunting, used to cost a lot more than it does now. Before the .pmtiles filetype existed, hosting vector tiles required either a server-side component (a “tile server”) or pre-baking every tile at every zoom level — and uploading and hosting all those individual tiles.
 
-But with .pmtiles you do not need to run a server to host and deliver vector tiles**.** Instead, you only need to drop the big .pmtiles file somewhere accessible (S3 for instance, and ideally behind a CDN like [Cloudfront](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/)). And Protomaps relies on the magic of HTTP range requests, where users only request the small portion of the .pmtiles file that they need at any given time. The result: You can self-host maps at a substantial savings.
+But with .pmtiles you do not need to run a server to host and deliver vector tiles. Instead, you only need to drop the big .pmtiles file somewhere accessible (S3 for instance, and ideally behind a CDN like [Cloudfront](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/)). And Protomaps relies on the magic of HTTP range requests, where users only request the small portion of the .pmtiles file that they need at any given time. The result: You can self-host maps at a substantial savings.
 
 Protomaps provides a [handy cost calculator](https://docs.protomaps.com/deploy/cost) to estimate a project’s costs versus other hosted options. I adapted this for my own calculator in [Google Sheets](https://docs.google.com/spreadsheets/d/1AmpyGgrZwPbKZwsNHU7O-YhJe9Ep5njjNlrNFeuJ5ts/edit#gid=0) .
 
@@ -126,7 +126,7 @@ Here are some topline things we learned:
 
 It’s hard to say precisely how well the estimates matched up with reality, but they seemed to be in the ballpark.
 
-**To compare, that’s about ⅓ the cost that similar traffic might cost with a hosted service.** 
+To compare, that’s about ⅓ the cost that similar traffic might cost with a hosted service. 
 
 ### Don’t fret about the large size of the world map. 
 
@@ -162,11 +162,11 @@ ChatGPT at least pretended to understand it perfectly. When asked what this code
 
 Helpful\!
 
-But beware: It can also lie\! For instance, I asked “Is there a way in Maplibre GL JS style to adjust the opacity only on the \`fill-outline`` ` `` property?” The correct answer is *no,* as far as I can tell. But ever the people pleaser, ChatGPT confidently told me:
+But beware: It can also lie\! For instance, I asked “Is there a way in Maplibre GL JS style to adjust the opacity only on the `fill-outline ` property?” The correct answer is *no,* as far as I can tell. But ever the people pleaser, ChatGPT confidently told me:
 
 ![](/img/posts/2024-11-26-slippy-maps/image22.png)
 
-The only problem is that `transparentize` does not exist in *either* style spec. It exists in [Sass](https://sass-lang.com/documentation/modules/color/#transparentize) and maybe elsewhere, but not here. I figured this out with some quick Googling, but similar stochastic parroting can lead to some weird wrong turns. Buyer beware. 
+The only problem is that `transparentize` does not exist in *either* style spec. It exists in [Sass](https://sass-lang.com/documentation/modules/color/#transparentize) and maybe elsewhere, but not here. I figured this out with some quick Googling, but similar stochastic parroting can lead to some weird wrong turns. Buyer beware. *(It's worth noting that this hallucination took place on GPT-3.5. When I recently asked the same question to GPT-4o, it provided a more reliable answer.)*
  
 ### Important notes for styling your basemap
 
