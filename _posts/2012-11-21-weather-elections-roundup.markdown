@@ -8,7 +8,7 @@ twitter: stiles
 ---
 We've been working together as a [team](/about/) for about four months now, with most of our projects focused on the presidential campaign and this month's elections. Here’s a rundown of some of our favorites:
 
-###Wildfires
+### Wildfires
 
 [<img class="img-left" src="../../../img/fire-forecast.png">](http://npr.org/wildfires)
 
@@ -18,7 +18,7 @@ But it morphed into something more useful: a [localizable map](http://npr.org/wi
 
 The app is responsive to various screen sizes, and functions nicely on (most) mobile devices. On the iPhone, there’s even a handy tool tip that allows users to bookmark the app to their home screens.
 
-###Drought
+### Drought
 
 [<img class="img-right" src="http://www.npr.org/buckets/news/2012/08/us-drought/img/maps/2012-08-21.png">](http://www.npr.org/2012/07/18/156989764/interactive-mapping-the-u-s-drought)
 
@@ -30,7 +30,7 @@ When the drought reached historic levels across the country, we used similar cod
 
 It has a play button so users can see the dry conditions expand across the country over time. The chart allows users to see the ground area covered by drought over the years.
 
-###Early voting
+### Early voting
 
 When the early voting periods drew closer, our elections team wanted a list of states and their rules. What resulted was a responsive page that gave readers information about key deadlines in their respective dates for registration and early or absentee voting, among other useful bits of information.
 
@@ -38,7 +38,7 @@ These calendars give the list visual elements and make the key date ranges more 
 
 [<img src="../../../img/early-voting.png">](http://apps.npr.org/early-voting-2012/)
 
-###Conventions/Debates
+### Conventions/Debates
 
 We covered the [Democratic](http://apps.npr.org/2012-democratic-national-convention/) and [Republican](http://apps.npr.org/2012-republican-national-convention/) party conventions with an app template originally dubbed 'Frankenstein'. It had a responsive layout and the now familiar simple footer/header design in our current app template, which is [open source](http://github.com/nprapps/app-template).
 
@@ -46,7 +46,7 @@ The apps featured audio of the key floor speeches and NPR's live coverage. They 
 
 We used a [similar feature](http://apps.npr.org/2012-third-presidential-debate/) for the presidential debates, but we added the "back channel," a curated [social media](http://nprbackchannel.tumblr.com/) stream, to the page. 
 
-###Elections
+### Elections
 
 [<img src="../../../img/electris.png">](http://elections.npr.org/)
 

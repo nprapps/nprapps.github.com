@@ -17,7 +17,7 @@ We're a new team, and we're trying something new (at least for us) as a blog pub
 
 This initial post is an introduction to Jekyll for the members of our team -- and anyone else who wants to get started with the tool and/or steal our simple code for their own site. 
 
-###Getting started
+### Getting started
 
 Jekyll eliminates the need for a traditional content management system, like WordPress. Instead, we're creating plain-old HTML pages and serving them from GitHub Pages, where we host our blog code.
 
@@ -27,7 +27,7 @@ Next, familiarize yourself with the [usage](http://jekyllrb.com/docs/usage/) and
 
 As you'll see, Jekyll uses your source directory templates and converts your [Markdown](http://daringfireball.net/projects/markdown/syntax) text and [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) tags to build a static website. The website -- and any posts you create -- then get published with a <code>git push</code> to GitHub.
 
-###Our configuration
+### Our configuration
 
 Our templates are built from scratch on top of the [Twitter Bootstrap](http://twitter.github.com/bootstrap/) framework, giving us responsive pages that we've customized for Jekyll. Your source directory should like something this:
 
@@ -51,7 +51,7 @@ Our templates are built from scratch on top of the [Twitter Bootstrap](http://tw
 
 This structure is explained in the [usage documentation](http://jekyllrb.com/docs/usage/), but here are the highlights. Never mind &#95;includes for now. The &#95;layout folder has the templates. We will inject posts into them with the <code>&#123;&#123; content &#125;&#125;</code> Liquid tag. The &#95;posts folder contains, well, posts. Notice the structure of the file names. The date and title are used for the default permalinks structure, and they also define the post date. The &#95;site folder contains the site generated when you run Jekyll.
 
-###Adding content
+### Adding content
 
 Below is the Markdown of [this post](http://blog.apps.npr.org/2012/11/08/npr-news-apps-blog.html): 
 
@@ -74,7 +74,7 @@ Below is the HTML for the post.html template. Posts also get injected into the d
 <script src="https://gist.github.com/3757582.js?file=post.html">
 </script>
 
-###Publishing to GitHub
+### Publishing to GitHub
 
 We've created a GitHub repo called "[nprapps.github.com](https://github.com/nprapps/nprapps.github.com)" (btw: see documentation for publishing to a custom domain [here](https://help.github.com/articles/setting-up-a-custom-domain-with-pages)). 
 
