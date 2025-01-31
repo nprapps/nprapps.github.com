@@ -22,17 +22,23 @@ This bot would offer 2 kinds of notifications:
 
 I utilized draw.io to create a flow diagram for this project, which helped me understand the essential steps needed for the notifier.
 
+<div style="max-width: 100%;">
 ![](/img/posts/bots-1.png)
+</div>
 
 AP’s elections API includes an endpoint for its [testing calendar](https://developer.ap.org/ap-elections-api/docs/index.html?#t=Customer_Testing_Schedule_Report.htm&rhsearch=calendar%20report&rhhlterm=calendar%20report&rhsyns=%20), which returns a list of dates and times. Since the endpoint does not have built-in filtering options, I wrote a function to return only the tests scheduled for that day. Another helper function checks if a test is scheduled to start within the next 20 minutes. If so, it dispatches a Slack notification for the team.
 
+<div style="max-width: 100%;">
 ![](/img/posts/bots-2.png)
+</div>
 
 The GitHub Actions [documentation](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule) notes that scheduled events can experience delays during high demand for workflow runs, especially at the start of every hour. To address this, I configured our cron job to run at the 25th and 55th minutes of each hour.
 
 For the daily digest of testing events, I created a new Github [workflow](https://github.com/nprapps/elections-bots/blob/main/.github/workflows/schedule.yml) with a cron job that ran once every day and sent a message if there were any tests.
 
+<div style="max-width: 100%;">
 ![](/img/posts/bots-3.png)
+</div>
 
 **Election tabulation status notifier**
 
