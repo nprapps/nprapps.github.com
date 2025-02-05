@@ -7,6 +7,10 @@ twitter: nprviz
 og_image: /img/posts/bots-2.png
 ---
 
+<style type="text/css">
+  .entry section img { max-width: 550px; }
+</style>
+
 I joined NPR as an elections developer earlier this year. As part of this work, one of my projects was to build [Slack bots](https://github.com/nprapps/elections-bots/tree/general-elections) to notify the team about AP testing sessions and changes in election tabulation status.
 
 **AP test notifier**
@@ -22,29 +26,17 @@ This bot would offer 2 kinds of notifications:
 
 I utilized draw.io to create a flow diagram for this project, which helped me understand the essential steps needed for the notifier.
 
-<div style="max-width: 500px;">
-
 ![](/img/posts/bots-1.png)
-
-</div>
 
 AP’s elections API includes an endpoint for its [testing calendar](https://developer.ap.org/ap-elections-api/docs/index.html?#t=Customer_Testing_Schedule_Report.htm&rhsearch=calendar%20report&rhhlterm=calendar%20report&rhsyns=%20), which returns a list of dates and times. Since the endpoint does not have built-in filtering options, I wrote a function to return only the tests scheduled for that day. Another helper function checks if a test is scheduled to start within the next 20 minutes. If so, it dispatches a Slack notification for the team.
 
-<div style="max-width: 500px;">
-  
 ![](/img/posts/bots-2.png)
-
-</div>
 
 The GitHub Actions [documentation](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule) notes that scheduled events can experience delays during high demand for workflow runs, especially at the start of every hour. To address this, I configured our cron job to run at the 25th and 55th minutes of each hour.
 
 For the daily digest of testing events, I created a new Github [workflow](https://github.com/nprapps/elections-bots/blob/main/.github/workflows/schedule.yml) with a cron job that ran once every day and sent a message if there were any tests.
 
-<div style="max-width: 500px;">
-  
 ![](/img/posts/bots-3.png)
-
-</div>
 
 **Election tabulation status notifier**
 
@@ -61,7 +53,9 @@ We iterated on which combinations of status messages felt most useful to surface
 After formatting the data and adding it to the Google Sheet, the next step was to set up Slack messages.
 
 The testing-schedule bot was a simple bullet-point list, but this message was a bit more complicated with many different categories. I used [Slack’s Block Kit Builder](https://app.slack.com/block-kit-builder/) to [format](https://github.com/nprapps/elections-bots/blob/main/elex-tabulation-data/slack/getMessage.js) the message.  
+
 ![](/img/posts/bots-4.png)  
+
 Lastly, I saved my environment variables as GitHub Actions secrets and passed them into my workflow file. I then set the cron job for the bot to run every 15 minutes.
 
 **Conserving Github Action minutes**
