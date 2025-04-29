@@ -2124,15 +2124,21 @@
   date: Oct. 30, 2024
   image: "https://apps.npr.org/aral-sea-shrinking-map/assets/synced/images/AralSea-Toned_DSC9138.jpg"
   url: https://apps.npr.org/aral-sea-shrinking-map/
-- name: "These charts show how Trump's strategy to lose by less won back several swing states"
-  description: "President-elect Donald Trump won the election by flipping Georgia, Pennsylvania and Wisconsin after President Biden won them in 2020. Looking at how Democratic counties voted explains how he did it."
-  date: Nov. 9, 2024
-  image: "https://blog.apps.npr.org/img/swings-2024.png"
-  url: https://www.npr.org/2024/11/08/nx-s1-5183070/trump-swing-states-democratic-counties-red-shift-2024
-
 - name: "Live: Election Results 2024"
   description: "View live results for the 2024 United States presidential election, as well as for House, Senate, governor races and major ballot measures across the country."
   date: Nov. 5, 2024
   image: "https://blog.apps.npr.org/img/election-2024.png"
   url: https://apps.npr.org/2024-election-results/
   github_url: https://github.com/nprapps/elections24-general
+- name: "These charts show how Trump's strategy to lose by less won back several swing states"
+  description: "President-elect Donald Trump won the election by flipping Georgia, Pennsylvania and Wisconsin after President Biden won them in 2020. Looking at how Democratic counties voted explains how he did it."
+  date: Nov. 9, 2024
+  image: "https://blog.apps.npr.org/img/swings-2024.png"
+  url: https://www.npr.org/2024/11/08/nx-s1-5183070/trump-swing-states-democratic-counties-red-shift-2024
+
+
+- name: "One family. One attack. 132 names."
+  description: "An Israeli strike on a Gaza apartment building killed 132 members of a single family last October. It was one of the deadliest strikes of the Israel-Hamas war. NPR reconstructed what happened. Available in English, Arabic and Hebrew."
+  date: March 4, 2025
+  image: "https://apps.npr.org/gaza-building-israel-strike-casualties/assets/synced/images/resized/0R9A8165.jpg"
+  url: https://apps.npr.org/gaza-building-israel-strike-casualties/
