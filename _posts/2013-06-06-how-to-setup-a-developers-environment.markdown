@@ -7,7 +7,9 @@ email: nprapps@npr.org
 twitter: nprviz
 ---
 
-_**Last updated Nov. 7, 2023.** We've overhauled our step-by-step guide to setting up your machine the way we do on the NPR News Apps team. This edition is by [Daniel Wood](https://twitter.com/danielpwwood), with notes from Ruth Talbot, [Rina Torchinsky](https://twitter.com/rinatorchi), [Nick Underwood](https://twitter.com/mulletmapping), Koko Nakajima and Brent Jones._
+_**Last updated May 14, 2025.** We've switched to using `uv` for environment management._
+
+_**New edition Nov. 7, 2023.** We've overhauled our step-by-step guide to setting up your machine the way we do on the NPR News Apps team. This edition is by [Daniel Wood](https://twitter.com/danielpwwood), with notes from Ruth Talbot, [Rina Torchinsky](https://twitter.com/rinatorchi), [Nick Underwood](https://twitter.com/mulletmapping), Koko Nakajima and Brent Jones._
 
 _First authored in 2013 by [Gerald Rich](https://twitter.com/newsroomdev), this page continues to be a living document, updated as systems and software update. [Geoff Hing](https://twitter.com/geoffhing), [David Eads](https://twitter.com/eads), [Livia Labate](https://twitter.com/livlab), [Tyler Fisher](https://twitter.com/tylrfishr), [Shelly Tan](https://twitter.com/Tan_Shelly), [Helga Salinas](https://twitter.com/Helga_Salinas), [Juan Elosua](https://twitter.com/jjelosua), [Miles Watkins](https://github.com/mileswwatkins) and [Thomas Wilburn](https://twitter.com/thomaswilburn) have contributed over the years._
 
@@ -104,7 +106,7 @@ source ~/.zshrc
 
 You'll only need to source the `.zshrc` since we're editing the file right now. It's the equivalent of quitting your terminal application and opening it up again, but `source` lets you soldier forward and setup Python.
 
-## Chapter 2: Installing Python and virtual environments with Anaconda
+## Chapter 2: Installing Python and virtual environments with uv
 
 Python is notoriously tricky to install and manage on your machine. [XKCD did it justice](https://xkcd.com/1987/) with this cartoon...
 
@@ -114,82 +116,32 @@ macOS comes with a system version of Python, and for a long time, we used this v
 
 Thus, we need to utilize virtual environments to select our Python versions, allow easy swapping between environments, and tidily maintain dependencies and packages. Modern tools and documentation tend to use **Python 3**. If you're on our team, you'll also need **Python 2.7.x** for legacy projects.
 
-We're going to use [Anaconda](https://docs.anaconda.com/) to manage our virtual environments. Follow the instructions for the [graphical installer](https://docs.anaconda.com/anaconda/install/mac-os/). Here's a [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf) for Anaconda commands.
+ We're going to use [uv](https://docs.astral.sh/uv/) to manage our virtual environments. Follow the [instructions](https://docs.astral.sh/uv/getting-started/installation/) to get it installed.
 
-Once you've run through those steps, open Terminal to verify installation. (If you already have a terminal window open, restart terminal or type `source ~/.zshrc`.)
+Once you've run through those steps, open Terminal to verify installation. (If you already have a terminal window open, restart terminal or type `source ~/.zshrc`.) Make sure it's available by running the command `uv` in terminal.
 
-Then, type `conda env list` to see a list of environments. At this point, the only environment should be your base environment. Next create an environment to run python 2.7.x in. I used 2.7.18 because that's what worked for me.
-
-```
-conda create --name py2 python=2.7.18
-```
-
-If you're working with an M1- or M2-based Mac, you may get a `PackageNotFound` error when installing Python 2.7.X.
-
-To solve this ([per Stackoverflow](https://stackoverflow.com/a/67569068)), explicitly specify the environment by prefixing the command with `CONDA_SUBDIR=osx-64`
-
-The full command is:
-
-```
-CONDA_SUBDIR=osx-64 conda create --name py2 python=2.7.18
-```
-
-You can name it whatever you want. I went with `py2`. This will take a moment. When prompted type `y` to proceed. Next, activate this environment.
-
-```
-conda activate py2
-```
-
-To test that the correct python version is being used, type `python --version`. The result should be `Python 2.7.18 :: Anaconda, Inc.` or similar. If you see 3.x, something has gone wrong.
-
-Deactivate this environment by running `conda deactivate`.
+Note that `uv` does not work with Python 2.x. For maintaining older projects, we fall back to `virtualenv`. See [appendix](#appendix-using-python2) for how to install python2 on current Mac hardware.
 
 ### Installing Jupyter Notebook and pandas
 
 It may be useful to install [Jupyter Notebook](https://jupyter.org/index.html) for data analysis. Before doing this, let's create and and activate environment for this to live in. You can create a single environment to always run Jupyter notebook, or you can create a new environment each time you start a new Jupyter notebook project.
 
 ```
-conda create --name jupyterExample python=3.9
-conda activate jupyterExample
+uv venv
+source .venv/bin/activate
 ```
 
-Now if you type `conda env list` you should see the following (paths may be slightly different):
+The first command created a new folder at `.venv` in whatever directory you were in with information about a virtual environment. The second command activated that virtual environment, so future commands will be run with respect to that environment. To exit the virtual environment, run `deactivate`.
 
-```
-# conda environments:
-#
+You can check to make sure you're operating in the virtual environment by running `which python`. This prints the current path to python, which in this case should be your current directory, followed by `/.venv/bin/python`.
 
-base                 /Users/username/opt/anaconda3
-jupyterExample	  *  /Users/username/opt/anaconda3/envs/jupyterExample
-py2                  /Users/username/opt/anaconda3/envs/py2
-```
+Note that most uv commands require a virtual environment. So even if you haven't explicitly activated it, the command will search for a virtual environment to operate in, and fail if it can't find one. 
 
-Now it's time to [install Jupyter](https://jupyter.org/install). I'm installing notebook here but feel free to experiment with JupyterLab as well. I followed this [installation guide](https://towardsdatascience.com/how-to-set-up-anaconda-and-jupyter-notebook-the-right-way-de3b7623ea4a).
+However, you'll probably need to run non-uv commands in the virtual environment, so it's important to know how to activate and deactivate an environment manually.
 
-```
-conda install -c conda-forge notebook  
-conda install -c conda-forge nb_conda_kernels
-```
+To install jupyter notebook, run `uv pip install jupyterlab`. After it's installed, you can run it with `jupyter notebook`.
 
-Hit `y` whenever prompted and let it run, which might take a moment. Then start up your notebook by running
-
-```
-jupyter notebook
-```
-
-This should allow you to load up a graphical user interface at `http://localhost:8888/`.
-
-Next, install pandas for use within your notebook.
-
-```
-conda install pandas
-```
-
-Now you should be able to get started with pandas inside your notebook.
-
-### Troubleshooting
-
-Conda and conda-forge won't have every package you want for Python, but they will have most. Whenever installing Python packages inside an Anaconda environment, use `conda install` or `conda install -c conda-forge` whenever possible. If this isn't possible, use `pip`.
+To install pandas, run `uv pip install pandas`.
 
 ## Chapter 3: Set up Node and install LESS
 
@@ -340,3 +292,37 @@ Design:
 
 ## Conclusion
 And with that you now have a sweet hackintosh. Happy hacking!
+
+---
+
+### Appendix: Using python2
+
+Installing python 2.x on ARM Macs.
+
+Some of our older projects use Python 2.x. Until these are updated, we'll need some way to maintain them. Current Mac hardware (ARM-based) uses Python 3.
+
+To install Python 2.x on ARM Macs, we'll use `pyenv`.
+
+Assuming you've already installed Homebrew (from our setup guide), run `brew install pyenv`
+
+After it's installed, you can run `pyenv versions` to see what Python versions pyenv can see. This might just be your system version.
+
+Next, run `pyenv install 2.7`. 
+
+Now `pyenv versions` should show 2.7.XX as available to pyenv.
+
+Run `pyenv init` and follow the instructions. This will ask you to update the config files for your shell. The relevant portion of mine looks like: 
+
+```
+PATH=$(pyenv root)/shims:$PATH
+
+ export PYENV_ROOT="$HOME/.pyenv"
+
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+
+eval "$(pyenv init - zsh)"
+```
+
+Save that and source it (`source ~/.zshrc`) or reload your shell.
+
+Now you can select Python 2 either for the current shell session or a folder by running `pyenv shell 2` or `pyenv local 2` respectively. Then you can check by running `python --version`.
