@@ -44,7 +44,7 @@ Before you can create OAuth credentials, you have to set up the project name for
 
 Once that's done, you can add the API.
 
-Enable the Drive API by clicking "Dashboard" in the left hand toolbar, and clicking the "Enable APIs and Services" button. Drive is often one of the "featured" APIs, but if not you can search for it.
+Enable the Drive API by clicking "Dashboard" in the left hand toolbar, and clicking the "Enable APIs and Services" button. Drive is often one of the "featured" APIs, but if not you can search for it. Complete the same steps for the Google Sheets API as well. 
 
 <img src="/img/posts/oauth-api-screen.png">
 
