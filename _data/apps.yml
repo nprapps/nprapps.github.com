@@ -2136,9 +2136,20 @@
   image: "https://blog.apps.npr.org/img/swings-2024.png"
   url: https://www.npr.org/2024/11/08/nx-s1-5183070/trump-swing-states-democratic-counties-red-shift-2024
 
-
 - name: "One family. One attack. 132 names."
   description: "An Israeli strike on a Gaza apartment building killed 132 members of a single family last October. It was one of the deadliest strikes of the Israel-Hamas war. NPR reconstructed what happened. Available in English, Arabic and Hebrew."
   date: March 4, 2025
   image: "https://apps.npr.org/gaza-building-israel-strike-casualties/assets/synced/images/resized/0R9A8165.jpg"
   url: https://apps.npr.org/gaza-building-israel-strike-casualties/
+- name: "2025 election results"
+  description: "View interactive maps and live results for key U.S. elections in New Jersey, Virginia, California, New York City and Colorado."
+  date: Nov. 4, 2025
+  image: "https://apps.npr.org/2025-election-results/assets/synced/2025-results.jpg"
+  url: https://apps.npr.org/2025-election-results/
+  github_url: https://github.com/nprapps/elections25-general
+
+- name: "Jan. 6, 2021: A visual archive of the Capitol attack"
+  description: "NPR’s Jan. 6 archive brings together reporting, video, documents and testimony to show what really happened during the Capitol riot. Explore the timeline, cases and evidence behind the attack."
+  date: Jan. 4, 2026
+  image: "https://apps.npr.org/jan-6-archive/assets/synced/images/resized/j6_promo-min.png"
+  url: https://apps.npr.org/jan-6-archive/
