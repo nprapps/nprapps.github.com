@@ -2153,3 +2153,15 @@
   date: Jan. 4, 2026
   image: "https://apps.npr.org/jan-6-archive/assets/synced/images/resized/j6_promo-min.png"
   url: https://apps.npr.org/jan-6-archive/
+
+- name: "How to register to vote in the 2026 primaries"
+  description: "For the 2026 primary elections, NPR has collected deadlines and information on how to register to vote — online, in person or by mail — in every U.S. state and territory."
+  date: Feb. 12, 2026
+  image: "https://apps.npr.org/voter-registration-2024-mail/assets/synced/voter-registration-social.jpg"
+  url: https://apps.npr.org/voter-registration-2026-mail/
+
+- name: "Election 2026: Primary election results"
+  description: "A calendar of key dates and events for the 2026 election cycle, including the congressional and gubernatorial races."
+  date: March 3, 2026
+  image: "https://apps.npr.org/primary-election-results-2026/assets/synced/2026-primaries.jpg"
+  url: https://apps.npr.org/primary-election-results-2026/
