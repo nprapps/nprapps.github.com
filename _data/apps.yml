@@ -2189,3 +2189,15 @@
   date: May 20, 2026
   image: "https://apps.npr.org/survivor-seasons-ranked/assets/synced/images/resized/promo-art.png"
   url: https://apps.npr.org/survivor-seasons-ranked/
+
+- name: "Troubled Waters"
+  description: "The largest conservation areas in the U.S. are in the Pacific Ocean. President Trump is rolling back their protections."
+  date: Aug. 3, 2026
+  image: "https://apps.npr.org/troubled-waters/assets/synced/images/resized/palmyra-30.jpg"
+  url: https://apps.npr.org/troubled-waters/
+
+- name: "How a road could change West Africa's urban future"
+  description: "A 600-mile journey along the shores of Nigeria, Benin, Togo, Ghana and Ivory Coast reveals one of the world’s most consequential transformations."
+  date: Aug. 12, 2026
+  image: "https://apps.npr.org/west-africa-trade-growth-economy-nigeria-ghana-lagos/assets/synced/images/resized/slide-1-ft-nig-econ-34.jpg"
+  url: https://apps.npr.org/west-africa-trade-growth-economy-nigeria-ghana-lagos/
